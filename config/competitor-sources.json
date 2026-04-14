@@ -1,0 +1,98 @@
+{
+  "competitors": [
+    {
+      "name": "Vonage",
+      "urls": {
+        "blog": "https://www.vonage.com/blog/",
+        "changelog": "https://www.vonage.com/changelog/",
+        "pricing": "https://www.vonage.com/pricing/sms/",
+        "security": "https://www.vonage.com/security/"
+      },
+      "focus_areas": [
+        "fraud detection features",
+        "SMS verification APIs",
+        "security announcements",
+        "pricing changes for verification services"
+      ]
+    },
+    {
+      "name": "MessageBird",
+      "urls": {
+        "blog": "https://www.messagebird.com/en/blog/",
+        "changelog": "https://developers.messagebird.com/changelog/",
+        "pricing": "https://www.messagebird.com/en/pricing/",
+        "documentation": "https://developers.messagebird.com/docs/"
+      },
+      "focus_areas": [
+        "fraud prevention tools",
+        "spam filtering capabilities",
+        "authentication features",
+        "API security updates"
+      ]
+    },
+    {
+      "name": "Plivo",
+      "urls": {
+        "blog": "https://www.plivo.com/blog/",
+        "changelog": "https://www.plivo.com/changelog/",
+        "pricing": "https://www.plivo.com/pricing/",
+        "documentation": "https://www.plivo.com/docs/"
+      },
+      "focus_areas": [
+        "carrier fraud prevention",
+        "SMS security features",
+        "verification API updates",
+        "compliance announcements"
+      ]
+    },
+    {
+      "name": "Bandwidth",
+      "urls": {
+        "blog": "https://www.bandwidth.com/blog/",
+        "changelog": "https://www.bandwidth.com/release-notes/",
+        "pricing": "https://www.bandwidth.com/pricing/",
+        "security": "https://www.bandwidth.com/security/"
+      },
+      "focus_areas": [
+        "network-level fraud detection",
+        "carrier security features",
+        "compliance updates",
+        "API authentication changes"
+      ]
+    },
+    {
+      "name": "Sinch",
+      "urls": {
+        "blog": "https://www.sinch.com/blog/",
+        "changelog": "https://developers.sinch.com/changelog/",
+        "pricing": "https://www.sinch.com/products/apis/messaging/pricing/",
+        "documentation": "https://developers.sinch.com/docs/"
+      },
+      "focus_areas": [
+        "fraud prevention solutions",
+        "verification platform updates",
+        "security feature launches",
+        "pricing model changes"
+      ]
+    }
+  ],
+  "extraction_settings": {
+    "max_items_per_source": 5,
+    "days_back": 14,
+    "fraud_keywords": [
+      "fraud",
+      "security",
+      "verification",
+      "authentication",
+      "scam",
+      "spam",
+      "abuse",
+      "compliance",
+      "protection",
+      "detection"
+    ],
+    "fetch_all_urls": true,
+    "timeout_per_url": 30
+  },
+  "_comment": "Add more competitors by adding objects with name, urls, and focus_areas. The skill will fetch all URLs and analyze them together."
+}

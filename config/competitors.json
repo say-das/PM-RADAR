@@ -1,0 +1,32 @@
+{
+  "competitors": [
+    {
+      "name": "Sinch",
+      "domain": "sinch.com",
+      "urls": {
+        "pricing": null,
+        "blog": null,
+        "changelog": null,
+        "api_docs": null,
+        "launch_page": null
+      },
+      "discovered": false,
+      "last_discovery": null,
+      "discovery_method": "manual"
+    },
+    {
+      "name": "Vonage",
+      "domain": "vonage.com",
+      "urls": {
+        "pricing": null,
+        "blog": null,
+        "changelog": null,
+        "api_docs": null,
+        "launch_page": null
+      },
+      "discovered": false,
+      "last_discovery": null,
+      "discovery_method": "manual"
+    }
+  ]
+}

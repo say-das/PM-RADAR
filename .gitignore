@@ -1,0 +1,54 @@
+# Secrets and API Keys
+.env
+*.key
+config/secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Project-specific
+# Runtime data and cache
+data/raw/.reddit_cache/
+data/raw/*.json
+data/reports/*.md
+data/reports/*.html
+data/reports/*.html.bak
+data/competitor-maps/
+
+# Backup files
+*.bak
+*.backup
+
+# Logs
+*.log
+logs/
+
+# Claude files (optional - keep if using Claude Code)
+.claude/skills/*
+!.claude/skills/.gitkeep

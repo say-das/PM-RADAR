@@ -1,0 +1,14 @@
+{
+  "sender": {
+    "email": "sd5288@gmail.com",
+    "name": "PM Radar"
+  },
+  "recipients": [
+    {
+      "email": "saydas@twilio.com",
+      "name": "Saydas"
+    }
+  ],
+  "subject_template": "PM Radar Weekly Intelligence Digest - {date}",
+  "_comment": "Sender email must be verified in Brevo dashboard at https://app.brevo.com/senders"
+}

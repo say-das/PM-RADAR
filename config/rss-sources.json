@@ -1,0 +1,82 @@
+{
+  "sources": [
+    {
+      "name": "Commsrisk",
+      "url": "https://commsrisk.com/feed/",
+      "category": "telecom_fraud",
+      "description": "Daily telecom fraud news: SMS blasters, scam blocks, callback fraud, IMSI-catchers"
+    },
+    {
+      "name": "CFCA",
+      "url": "https://cfca.org/category/news/feed/",
+      "category": "telecom_fraud",
+      "description": "Industry-standard telecom fraud, robocall reports, and global surveys"
+    },
+    {
+      "name": "Globe Teleservices",
+      "url": "https://globeteleservices.com/blog/category/telecom-fraud/feed/",
+      "category": "telecom_fraud",
+      "description": "A2P SMS fraud, AI-powered defense, network security for telcos"
+    },
+    {
+      "name": "CISA Advisories",
+      "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "category": "security_advisories",
+      "description": "Technical alerts on messaging app phishing and Vishing TTPs"
+    },
+    {
+      "name": "Mandiant (Google)",
+      "url": "https://www.mandiant.com/resources/blog/rss.xml",
+      "category": "threat_intelligence",
+      "description": "Advanced persistent threats (APTs) and high-end SIM swapping groups"
+    },
+    {
+      "name": "Unit 42 (Palo Alto)",
+      "url": "https://unit42.paloaltonetworks.com/feed/",
+      "category": "threat_intelligence",
+      "description": "Technical deep-dives into mobile malware and smishing infrastructure"
+    },
+    {
+      "name": "ZeroFox",
+      "url": "https://www.zerofox.com/feed/",
+      "category": "dark_web",
+      "description": "Dark web monitoring of vishing scripts and stolen phone number markets"
+    },
+    {
+      "name": "FTC Consumer Alerts",
+      "url": "https://www.ftc.gov/feeds/press-release.xml",
+      "category": "consumer_protection",
+      "description": "First-response reporting on new consumer-facing SMS and phone scams"
+    },
+    {
+      "name": "The Record",
+      "url": "https://therecord.media/feed/",
+      "category": "cybersecurity_news",
+      "description": "High-level cybersecurity news and geopolitical telecom incidents"
+    },
+    {
+      "name": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "category": "security_news",
+      "description": "Rapid reporting on mobile security breaches and active phishing kits"
+    },
+    {
+      "name": "Krebs on Security",
+      "url": "https://krebsonsecurity.com/feed/",
+      "category": "investigative",
+      "description": "Investigative reporting on SIM-swap rings and underground fraud forums"
+    },
+    {
+      "name": "FCA (UK) Warnings",
+      "url": "https://www.fca.org.uk/news/rss.xml",
+      "category": "regulatory",
+      "description": "Alerts on cloned firms and unauthorized communication fraud in finance"
+    },
+    {
+      "name": "FortiGuard Labs",
+      "url": "https://feeds.fortinet.com/fortinet/blog/threat-research",
+      "category": "threat_landscape",
+      "description": "Global threat landscape metrics, including mobile and IoT vectors"
+    }
+  ]
+}
