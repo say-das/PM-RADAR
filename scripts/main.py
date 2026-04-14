@@ -350,10 +350,10 @@ def generate_report(collected_data, analysis_results, date_str):
                 if isinstance(changes, list):
                     report += "**Regulatory & Market Changes:**\n\n"
                     for i, change in enumerate(changes, 1):
-                        # Handle dict with nested description
+                        # Handle dict with nested description/details
                         if isinstance(change, dict):
                             incident = change.get('incident', change.get('change', ''))
-                            description = change.get('description', '')
+                            description = change.get('description', '') or change.get('details', '')
                             report += f"{i}. **{incident}**: {description}\n"
                         else:
                             report += f"{i}. {change}\n"
@@ -369,10 +369,10 @@ def generate_report(collected_data, analysis_results, date_str):
                 if isinstance(items, list):
                     report += "**Immediate Attention Required:**\n\n"
                     for i, item in enumerate(items, 1):
-                        # Handle dict with nested description
+                        # Handle dict with nested description/details
                         if isinstance(item, dict):
                             issue = item.get('issue', item.get('action', ''))
-                            description = item.get('description', '')
+                            description = item.get('description', '') or item.get('details', '')
                             report += f"{i}. **{issue}**: {description}\n"
                         else:
                             report += f"{i}. {item}\n"
