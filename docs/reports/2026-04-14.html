@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radar Intelligence Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* Twilio Brand Colors */
+        :root {
+            --twilio-red: #F22F46;
+            --twilio-blue: #0263E0;
+            --twilio-dark-blue: #001489;
+            --twilio-blue-60: #0D61D8;
+            --twilio-blue-10: #E1EFFC;
+            --twilio-gray-100: #121C2D;
+            --twilio-gray-90: #18222E;
+            --twilio-gray-80: #1F2933;
+            --twilio-gray-70: #3E4C59;
+            --twilio-gray-60: #606B85;
+            --twilio-gray-50: #8891AA;
+            --twilio-gray-40: #C4C7D1;
+            --twilio-gray-30: #D9DBE5;
+            --twilio-gray-20: #E8EAED;
+            --twilio-gray-10: #F4F5F6;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0.75in 1in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--twilio-gray-90);
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 24px 32px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Typography with Twilio Red Start */
+        h1 {
+            color: var(--twilio-red);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h1 + p {
+            color: var(--twilio-gray-60);
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--twilio-red);
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--twilio-blue-60);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 24px 0 8px 0;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: var(--twilio-gray-90);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 16px 0 6px 0;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs with hierarchy */
+        p {
+            margin: 6px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        /* Section labels like "Executive Summary:" */
+        p strong:first-child {
+            color: var(--twilio-gray-80);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Default strong styling - subtle */
+        strong {
+            font-weight: 500;
+            color: var(--twilio-gray-70);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+        }
+
+        /* Compact lists */
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 4px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        li::marker {
+            color: var(--twilio-gray-40);
+            font-weight: 400;
+        }
+
+        /* All strong tags in lists should be normal weight by default */
+        li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Only the very first strong in a list item gets emphasis */
+        li > strong:first-child {
+            font-weight: 500;
+            color: var(--twilio-gray-80);
+            font-size: 14px;
+        }
+
+        /* Executive Summary - Twilio branded */
+        #executive-summary + ul {
+            background: var(--twilio-blue-10);
+            padding: 16px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--twilio-red);
+            margin: 12px 0 20px 0;
+        }
+
+        #executive-summary + ul li {
+            font-weight: 600;
+            color: var(--twilio-gray-90);
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        #executive-summary + ul li strong {
+            font-weight: 700;
+            color: var(--twilio-red);
+        }
+
+        /* Blockquotes with Twilio accent */
+        blockquote {
+            margin: 12px 0;
+            padding: 10px 16px;
+            border-left: 4px solid var(--twilio-blue);
+            background: var(--twilio-blue-10);
+            font-style: italic;
+            color: var(--twilio-gray-70);
+            line-height: 1.4;
+        }
+
+        /* Code styling */
+        code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            background-color: var(--twilio-gray-10);
+            color: var(--twilio-dark-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--twilio-gray-10);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--twilio-gray-20);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Links - Twilio primary blue */
+        a {
+            color: var(--twilio-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--twilio-blue-60);
+            text-decoration: underline;
+        }
+
+        /* Compact horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid var(--twilio-gray-30);
+            margin: 16px 0;
+        }
+
+        /* Table styling with Twilio colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--twilio-gray-30);
+            line-height: 1.4;
+        }
+
+        th {
+            font-weight: 700;
+            color: white;
+            background: var(--twilio-red);
+        }
+
+        tr:hover {
+            background: var(--twilio-blue-10);
+        }
+
+        /* Inline Citations - smaller and clickable */
+        a[href^="#"] {
+            color: var(--twilio-blue);
+            font-size: 10px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            padding: 0 1px;
+            transition: all 0.2s ease;
+        }
+
+        a[href^="#"]:hover {
+            color: var(--twilio-red);
+            text-decoration: underline;
+        }
+
+        /* Make citation brackets appear as superscript links */
+        p a[href^="#"],
+        li a[href^="#"] {
+            font-size: 10px;
+            line-height: 0;
+        }
+
+        /* Glossary emphasis */
+        #glossary + p {
+            color: var(--twilio-gray-50);
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #glossary + p + ul li {
+            margin: 5px 0;
+        }
+
+        /* Glossary terms should stand out */
+        #glossary + p + ul li > strong:first-child {
+            color: var(--twilio-red);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* But the rest of glossary text should be normal */
+        #glossary + p + ul li strong:not(:first-child) {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Sources section - everything smaller and lighter */
+        #sources + p + ul li {
+            font-size: 12px;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 3px 0;
+            scroll-margin-top: 20px; /* Offset for smooth scroll */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+
+        #sources + p + ul li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-50);
+        }
+
+        #sources + p + ul li a {
+            font-weight: 500;
+            color: var(--twilio-blue);
+        }
+
+        /* Citation reference targets in sources list */
+        #sources + p + ul li[id] {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+
+        #sources + p + ul li[id]:target {
+            background: var(--twilio-blue-10);
+            padding: 4px 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        body > p:last-of-type {
+            text-align: center;
+            color: var(--twilio-gray-60);
+            font-size: 11px;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--twilio-gray-30);
+        }
+
+        /* Print optimizations */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            a {
+                color: var(--twilio-blue) !important;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pm-radar-weekly-intelligence-digest">PM Radar Weekly Intelligence Digest</h1>
+<p><strong>Date:</strong> 2026-04-14
+<strong>Generated:</strong> 2026-04-14 14:58:55 UTC</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<ul>
+<li><strong>37</strong> industry articles reviewed</li>
+<li><strong>25</strong> Reddit discussions analyzed</li>
+<li><strong>3</strong> items categorized as Telecom Fraud</li>
+<li><strong>17</strong> items categorized as General Fraud</li>
+<li><strong>0</strong> items categorized as Competitive Intelligence</li>
+</ul>
+<hr />
+<h2 id="telecom-fraud-digest">Telecom Fraud Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent developments in telecom fraud include the arrest of an SMS blaster gang in Kazakhstan, marking a significant step in combating telecom fraud in the CIS region <a href="#a1">[A1]</a>. Additionally, the Global Fraud Dashboard has secured funding to continue its operations, which is crucial for ongoing fraud monitoring and prevention efforts <a href="#a2">[A2]</a>.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li><strong>Increased Law Enforcement Collaboration</strong>: The arrest of the SMS blaster gang in Kazakhstan highlights the effectiveness of collaboration between telecom operators and law enforcement in tackling fraud <a href="#a1">[A1]</a>.</li>
+<li><strong>Sustainability of Fraud Monitoring Tools</strong>: The successful funding of the Global Fraud Dashboard ensures the continued availability of a critical tool for monitoring and analyzing fraud trends globally <a href="#a2">[A2]</a>.</li>
+<li><strong>Advancements in AI for Fraud Detection</strong>: The competition between Ericsson and Amdocs in providing business support systems for AI data centers suggests a trend towards more sophisticated AI-driven fraud detection solutions <a href="#a3">[A3]</a>.</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li><strong>Arrest of SMS Blaster Gang</strong>: Kazakhstan's arrest of an SMS blaster gang is a notable regulatory enforcement action in the CIS region, setting a precedent for other countries to follow <a href="#a1">[A1]</a>.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li><strong>Potential Increase in SMS Fraud</strong>: With the arrest of the SMS blaster gang, there may be a temporary disruption in SMS fraud activities, but operators should remain vigilant for potential resurgence or adaptation of tactics <a href="#a1">[A1]</a>.</li>
+</ol>
+<hr />
+<h2 id="general-fraud-security-digest">General Fraud &amp; Security Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent developments in General Fraud &amp; Security highlight critical vulnerabilities across various sectors, including industrial control systems and cloud services. Notable incidents involve data breaches and active exploitation of known vulnerabilities, posing significant risks to organizations worldwide <a href="#a1">[A1]</a><a href="#a6">[A6]</a><a href="#a12">[A12]</a>.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li><strong>Exploitation of Industrial Control Systems</strong>: Vulnerabilities in industrial control systems, such as those in Contemporary Controls BASC 20T and GPL Odorizers GPL750, are being actively exploited, allowing attackers to manipulate system functionalities and potentially disrupt critical infrastructure <a href="#a1">[A1]</a><a href="#a2">[A2]</a>.</li>
+<li><strong>Data Breaches and Extortion</strong>: The ShinyHunters group's breach of Rockstar Games highlights the ongoing threat of data breaches and extortion, with stolen data being leaked to pressure victims into paying ransoms <a href="#a6">[A6]</a><a href="#a7">[A7]</a>.</li>
+<li><strong>Supply Chain Attacks</strong>: Supply chain vulnerabilities continue to be a significant threat, as evidenced by the Axios attack on OpenAI's code-signing workflow, which necessitated certificate rotation to mitigate potential risks <a href="#a9">[A9]</a>.</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li><strong>CISA's Known Exploited Vulnerabilities Catalog Update</strong>: CISA has updated its Known Exploited Vulnerabilities Catalog, adding a new vulnerability related to Ivanti Endpoint Manager Mobile, emphasizing the need for organizations to address these high-risk vulnerabilities promptly <a href="#a3">[A3]</a>.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li><strong>Critical Vulnerabilities in SSL/TLS Libraries</strong>: A critical flaw in the wolfSSL library allows for the use of forged certificates, posing a significant risk to secure communications and requiring immediate patching <a href="#a8">[A8]</a>.</li>
+<li><strong>Active Exploitation of Marimo RCE Flaw</strong>: The Marimo pre-auth RCE vulnerability is under active exploitation, necessitating urgent remediation to prevent credential theft and further exploitation <a href="#a12">[A12]</a>.</li>
+</ol>
+<hr />
+<h2 id="twilio-community-discussions-reddit">Twilio Community Discussions (Reddit)</h2>
+<pre class="codehilite"><code class="language-json">{
+  &quot;trending_concerns&quot;: [
+    {
+      &quot;topic&quot;: &quot;Fraudulent Charges&quot;,
+      &quot;description&quot;: &quot;Users report unauthorized charges on their accounts, often resulting in significant financial loss.&quot;,
+      &quot;examples&quot;: [
+        &quot;experience with fraud takeover? *personally* on hook for $30k+, Twilio unresponsive&quot; [\[R2\]](#r2),
+        &quot;Twilio charged me $10k in one day for fraudulent sms verifications - I can't get a reply from them.&quot; [\[R14\]](#r14),
+        &quot;Haven't used Twilio for ages and charged out of nowhere?!&quot; [\[R15\]](#r15)
+      ]
+    },
+    {
+      &quot;topic&quot;: &quot;Support Responsiveness&quot;,
+      &quot;description&quot;: &quot;Many users express frustration with Twilio's slow or unresponsive customer support, especially in resolving urgent issues.&quot;,
+      &quot;examples&quot;: [
+        &quot;I’ve been round and round with fraud team trying to get my business account activated.&quot; [\[R1\]](#r1),
+        &quot;Impossible to talk unless you upgrade to support tier … we spend $3k per month on sms … tickets take forever to resolve&quot; [\[R14\]](#r14),
+        &quot;Twilio support is utter trash. They leave so much money on the table with their non-existent support.&quot; [\[R14\]](#r14)
+      ]
+    },
+    {
+      &quot;topic&quot;: &quot;Account Security and Breaches&quot;,
+      &quot;description&quot;: &quot;Concerns about account security and breaches, including unauthorized access and hacking incidents.&quot;,
+      &quot;examples&quot;: [
+        &quot;Authy hacked tonight&quot; [\[R3\]](#r3),
+        &quot;Twilio and Authy HACKED?&quot; [\[R11\]](#r11),
+        &quot;Twilio forces users to set up insecure 2FA method prone to hacker attacks&quot; [\[R8\]](#r8)
+      ]
+    },
+    {
+      &quot;topic&quot;: &quot;Account Verification Issues&quot;,
+      &quot;description&quot;: &quot;Users face difficulties in getting their accounts verified, leading to delays and operational challenges.&quot;,
+      &quot;examples&quot;: [
+        &quot;Twilio Fraud Operations suspended my solo‑dev account, any alternatives in USA?&quot; [\[R1\]](#r1),
+        &quot;I’ve been round and round with fraud team trying to get my business account activated.&quot; [\[R1\]](#r1)
+      ]
+    },
+    {
+      &quot;topic&quot;: &quot;Security Measures and Recommendations&quot;,
+      &quot;description&quot;: &quot;Discussions around security practices and recommendations to prevent fraud and unauthorized access.&quot;,
+      &quot;examples&quot;: [
+        &quot;Help preventing and stopping OTP attacks&quot; [\[R6\]](#r6),
+        &quot;SMS fraud... Spam... DOS...&quot; [\[R7\]](#r7),
+        &quot;Twilio forces users to set up insecure 2FA method prone to hacker attacks&quot; [\[R8\]](#r8)
+      ]
+    }
+  ],
+  &quot;overall_sentiment&quot;: &quot;Frustrated&quot;,
+  &quot;sentiment_details&quot;: {
+    &quot;frustrations&quot;: [
+      &quot;Users are most frustrated about unauthorized charges and the lack of responsive support to resolve these issues. Many express dissatisfaction with the security measures and account verification processes.&quot;,
+      &quot;Example: 'Twilio support is utter trash. They leave so much money on the table with their non-existent support.' [\[R14\]](#r14)&quot;,
+      &quot;Example: 'experience with fraud takeover? *personally* on hook for $30k+, Twilio unresponsive' [\[R2\]](#r2)&quot;
+    ],
+    &quot;praises&quot;: [
+      &quot;Some users acknowledge Twilio's direct connections to major carriers, which can improve deliverability compared to other providers.&quot;,
+      &quot;Example: 'I believe twilio has direct connections to the big 3 carrier whereas others go through aggregators so deliverability may not be as good' [\[R1\]](#r1)&quot;
+    ]
+  },
+  &quot;key_insights&quot;: [
+    &quot;Fraudulent charges and account security are major issues, with users experiencing significant financial losses and struggling to get support. [\[R2\]](#r2)[\[R14\]](#r14)&quot;,
+    &quot;Competitors like Infobip and Vonage are mentioned as alternatives, with some users switching due to better support. [\[R1\]](#r1)[\[R14\]](#r14)&quot;,
+    &quot;Users share workarounds such as manually reloading accounts to avoid unauthorized charges. [\[R14\]](#r14)&quot;,
+    &quot;Both solo developers and businesses are affected, indicating widespread issues across different user types. [\[R1\]](#r1)[\[R14\]](#r14)&quot;,
+    &quot;Security recommendations include restricting geographic permissions and setting up alerts for suspicious activities. [\[R7\]](#r7)&quot;
+  ]
+}
+</code></pre>
+
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p><em>Technical terms and abbreviations used in this report:</em></p>
+<ul>
+<li><strong>CISA</strong>: Cybersecurity and Infrastructure Security Agency (U.S. government)</li>
+<li><strong>DoS</strong>: Denial of Service - attack that makes a system unavailable</li>
+<li><strong>SMS</strong>: Short Message Service - text messaging protocol</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p><strong>Articles:</strong></p>
+<ul>
+<li><a id="a1"></a>[A1]: <a href="https://commsrisk.com/kazakhstan-becomes-first-cis-country-to-arrest-sms-blaster-gang/">Kazakhstan Becomes First CIS Country to Arrest SMS Blaster Gang</a> - Commsrisk (2026-04-13T03:25:36)</li>
+<li><a id="a2"></a>[A2]: <a href="https://commsrisk.com/we-made-it-thanks-to-all-our-donors/">We Made It! Thanks to All Our Donors</a> - Commsrisk (2026-04-10T03:25:56)</li>
+<li><a id="a3"></a>[A3]: <a href="https://commsrisk.com/ericsson-1-in-bss-for-telcos-building-ai-data-centers-but-amdocs-soon-to-overtake/">Ericsson #1 in BSS for Telcos Building AI Data Centers but Amdocs Soon to Overtake</a> - Commsrisk (2026-04-08T03:25:02)</li>
+<li><a id="a6"></a>[A6]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-099-02">GPL Odorizers GPL750</a> - CISA Advisories (2026-04-09T12:00:00)</li>
+<li><a id="a7"></a>[A7]: <a href="https://www.cisa.gov/news-events/alerts/2026/04/08/cisa-adds-one-known-exploited-vulnerability-catalog">CISA Adds One Known Exploited Vulnerability to Catalog</a> - CISA Advisories (2026-04-08T12:00:00)</li>
+<li><a id="a8"></a>[A8]: <a href="https://unit42.paloaltonetworks.com/exploit-of-aws-agentcore-iam-god-mode/">Cracks in the Bedrock: Agent God Mode</a> - Unit 42 (Palo Alto) (2026-04-08T22:00:51)</li>
+<li><a id="a9"></a>[A9]: <a href="https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/">Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox</a> - Unit 42 (Palo Alto) (2026-04-07T22:00:11)</li>
+<li><a id="a12"></a>[A12]: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/publishingcom-pay-15-million-misleading-consumers-about-how-much-income-they-could-earn-using">Publishing.com to Pay $1.5 Million for Misleading Consumers about How Much Income They Could Earn Using the Company’s Products and Services</a> - FTC Consumer Alerts (2026-04-13T12:00:00)</li>
+</ul>
+<p><strong>Reddit Discussions:</strong></p>
+<ul>
+<li><a id="r1"></a>[R1]: <a href="https://www.reddit.com/r/twilio/comments/1s0bmjf/twilio_fraud_operations_suspended_my_solodev/">r/twilio - Twilio Fraud Operations suspended my solo‑dev account, any alternatives in USA?</a> (Score: 0)</li>
+<li><a id="r2"></a>[R2]: <a href="https://www.reddit.com/r/twilio/comments/su72c0/experience_with_fraud_takeover_personally_on_hook/">r/twilio - experience with fraud takeover? <em>personally</em> on hook for $30k+, Twilio unresponsive</a> (Score: 0)</li>
+<li><a id="r3"></a>[R3]: <a href="https://www.reddit.com/r/twilio/comments/10sftuc/authy_hacked_tonight/">r/twilio - Authy hacked tonight</a> (Score: 0)</li>
+<li><a id="r6"></a>[R6]: <a href="https://www.reddit.com/r/twilio/comments/ozk81e/help_preventing_and_stopping_otp_attacks/">r/twilio - Help preventing and stopping OTP attacks</a> (Score: 0)</li>
+<li><a id="r7"></a>[R7]: <a href="https://www.reddit.com/r/twilio/comments/vhs60a/sms_fraud_spam_dos/">r/twilio - SMS fraud... Spam... DOS...</a> (Score: 0)</li>
+<li><a id="r8"></a>[R8]: <a href="https://www.reddit.com/r/twilio/comments/nf5b30/twilio_forces_users_to_set_up_insecure_2fa_method/">r/twilio - Twilio forces users to set up insecure 2FA method prone to hacker attacks</a> (Score: 0)</li>
+<li><a id="r11"></a>[R11]: <a href="https://www.reddit.com/r/twilio/comments/lg6z6k/twilio_and_authy_hacked/">r/twilio - Twilio and Authy HACKED?</a> (Score: 0)</li>
+<li><a id="r14"></a>[R14]: <a href="https://www.reddit.com/r/twilio/comments/1ptcgtm/twilio_charged_me_10k_in_one_day_for_fraudulent/">r/twilio - Twilio charged me $10k in one day for fraudulent sms verifications - I can't get a reply from them.</a> (Score: 0)</li>
+<li><a id="r15"></a>[R15]: <a href="https://i.redd.it/2udgackcavpg1.png">r/twilio - Haven't used Twilio for ages and charged out of nowhere?!</a> (Score: 0)</li>
+</ul>
+<hr />
+<p><em>Generated by PM Radar • 2026-04-14</em></p>
+    </div>
+
+    <!-- Twilio Branding Footer -->
+    <div style="margin-top: 3em; padding: 1.5em 0; text-align: center; border-top: 2px solid #E1E3EA;">
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.5;">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM8.4 8.4C9.6 8.4 10.8 9.6 10.8 10.8C10.8 12 9.6 13.2 8.4 13.2C7.2 13.2 6 12 6 10.8C6 9.6 7.2 8.4 8.4 8.4ZM15.6 8.4C16.8 8.4 18 9.6 18 10.8C18 12 16.8 13.2 15.6 13.2C14.4 13.2 13.2 12 13.2 10.8C13.2 9.6 14.4 8.4 15.6 8.4ZM8.4 15.6C9.6 15.6 10.8 16.8 10.8 18C10.8 19.2 9.6 20.4 8.4 20.4C7.2 20.4 6 19.2 6 18C6 16.8 7.2 15.6 8.4 15.6ZM15.6 15.6C16.8 15.6 18 16.8 18 18C18 19.2 16.8 20.4 15.6 20.4C14.4 20.4 13.2 19.2 13.2 18C13.2 16.8 14.4 15.6 15.6 15.6Z" fill="#F22F46"/>
+        </svg>
+        <p style="margin: 0.5em 0 0 0; font-size: 9pt; color: #606B85;">Powered by PM Radar • Twilio Product Intelligence</p>
+    </div>
+</body>
+</html>
