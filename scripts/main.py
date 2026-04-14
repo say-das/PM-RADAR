@@ -266,8 +266,9 @@ def generate_report(collected_data, analysis_results, date_str):
     citations = {}
 
     # Map articles (ARTICLE_1, ARTICLE_2, etc.)
+    # Map ALL articles (no limit) to ensure all citations resolve
     if "rss_articles" in collected_data:
-        for i, article in enumerate(collected_data["rss_articles"][:15], 1):
+        for i, article in enumerate(collected_data["rss_articles"], 1):
             citations[f"ARTICLE_{i}"] = {
                 "title": article["title"],
                 "source": article["source"],
