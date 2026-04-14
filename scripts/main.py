@@ -673,8 +673,16 @@ def generate_report(collected_data, analysis_results, date_str):
                         report += f"{description}\n\n"
                     if examples:
                         report += f"**Examples:**\n\n"
-                        for example in examples[:2]:  # Show top 2 examples
-                            report += f"- {example}\n"
+                        for example in examples[:3]:  # Show top 3 examples
+                            # Handle both old format (string) and new format (object with quote and post_num)
+                            if isinstance(example, dict):
+                                quote = example.get('quote', '')
+                                post_num = example.get('post_num', 0)
+                                if quote and post_num:
+                                    report += f"- \"{quote}\" [\[R{post_num}\]](#r{post_num})\n"
+                            else:
+                                # Legacy format - already has citations
+                                report += f"- {example}\n"
                         report += "\n"
 
             # Overall Sentiment
@@ -711,7 +719,17 @@ def generate_report(collected_data, analysis_results, date_str):
                 insights = reddit_analysis['key_insights']
                 if isinstance(insights, list):
                     for insight in insights:
-                        report += f"- {insight}\n"
+                        # Handle both old format (string with citations) and new format (object with insight and post_nums)
+                        if isinstance(insight, dict):
+                            insight_text = insight.get('insight', '')
+                            post_nums = insight.get('post_nums', [])
+                            if insight_text:
+                                # Add citations at the end
+                                citations = ''.join([f'[\[R{num}\]](#r{num})' for num in post_nums])
+                                report += f"- {insight_text} {citations}\n"
+                        else:
+                            # Legacy format - already has citations
+                            report += f"- {insight}\n"
                 else:
                     report += f"{insights}\n"
                 report += "\n"

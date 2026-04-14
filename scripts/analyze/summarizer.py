@@ -357,28 +357,30 @@ Provide a comprehensive analysis with:
 1. **Trending Concerns/Topics** (Top 5-7):
    - What are the most frequently discussed issues or concerns?
    - Group similar concerns together (e.g., "Account Verification Issues", "Fraudulent Charges", "Support Responsiveness")
-   - For each concern, cite specific posts using [REDDIT_N] notation
-   - Include verbatim quotes from posts or comments that exemplify the concern
+   - For each concern, include 2-3 example quotes from posts/comments
+   - For each quote, note which post number it came from (as an integer, not [REDDIT_N] format)
 
 2. **Community Sentiment**:
    - Overall sentiment: Frustrated / Neutral / Positive
    - What are users most frustrated about?
    - What are users praising (if anything)?
    - Common pain points mentioned across multiple posts
-   - Include specific quotes with [REDDIT_N] citations
+   - Include specific quotes with post numbers (as integers)
 
 3. **Key Insights**:
    - What product/service issues are repeatedly mentioned?
    - What competitors or alternatives are being discussed?
    - What workarounds or solutions are users sharing?
    - Any patterns in the types of users affected (solo devs, businesses, etc.)?
-   - IMPORTANT: Use [REDDIT_N] notation for citations (e.g., [REDDIT_1], [REDDIT_2])
+   - Note relevant post numbers (as integers, not [REDDIT_N] format)
 
-Format as JSON with keys: trending_concerns (list of objects with 'topic', 'description', 'examples'),
-overall_sentiment (string), sentiment_details (object with 'frustrations', 'praises'),
-key_insights (list of strings with citations).
+Format as JSON with these keys:
+- trending_concerns: list of objects with 'topic', 'description', 'examples' (where examples is a list of objects with 'quote' string and 'post_num' integer)
+- overall_sentiment: string
+- sentiment_details: object with 'frustrations' (list of strings) and 'praises' (list of strings)
+- key_insights: list of objects with 'insight' string and 'post_nums' (list of integers)
 
-CITATION FORMAT: Always use [REDDIT_N] notation (e.g., [REDDIT_1], [REDDIT_14]) in all text fields."""
+CRITICAL: Do NOT use [REDDIT_N] notation anywhere in the JSON. Use plain integers for post numbers (e.g., 2, 14, not [REDDIT_2])."""
 
         response = client.chat.completions.create(
             model="gpt-4o",
