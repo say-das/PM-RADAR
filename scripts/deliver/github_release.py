@@ -14,8 +14,11 @@ class GitHubReleasePublisher:
     """Publishes PM Radar reports via GitHub Releases and Pages."""
 
     def __init__(self):
-        self.repo = "twilio-internal/ig-fraud-research"
-        self.pages_base = "https://twilio-internal.github.io/ig-fraud-research/reports"
+        # Auto-detect repo from git remote
+        self.repo = self._get_repo_from_git()
+        # Extract owner and repo name for Pages URL
+        owner, repo_name = self.repo.split('/')
+        self.pages_base = f"https://{owner}.github.io/{repo_name}/reports"
 
     def publish_report(self, report_md_path, date_str):
         """
@@ -218,6 +221,32 @@ You'll get an email notification every Monday when new reports are published!
             # Cleanup temp file
             if notes_file.exists():
                 notes_file.unlink()
+
+    def _get_repo_from_git(self):
+        """Extract repository owner/name from git remote."""
+        try:
+            result = subprocess.run(
+                ["git", "remote", "get-url", "origin"],
+                check=True,
+                capture_output=True,
+                text=True
+            )
+            url = result.stdout.strip()
+
+            # Parse GitHub URL: https://github.com/owner/repo.git
+            if "github.com" in url:
+                if url.endswith('.git'):
+                    url = url[:-4]
+                # Extract owner/repo from URL
+                parts = url.split('github.com/')[-1]
+                return parts
+            else:
+                raise Exception(f"Not a GitHub URL: {url}")
+
+        except Exception as e:
+            # Fallback to default
+            print(f"⚠ Could not detect repo from git: {e}")
+            return "say-das/PM-RADAR"
 
     def check_prerequisites(self):
         """Check if required tools are available."""
