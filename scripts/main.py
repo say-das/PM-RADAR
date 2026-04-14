@@ -160,35 +160,7 @@ def main():
     except Exception as e:
         print(f"⚠ HTML generation failed: {e}")
 
-    # GitHub Release & Pages delivery
-    print("\nPublishing to GitHub Release & Pages...")
-    try:
-        from scripts.deliver.github_release import GitHubReleasePublisher
-        github_publisher = GitHubReleasePublisher()
-
-        # Check prerequisites
-        issues = github_publisher.check_prerequisites()
-        if issues:
-            print(f"⚠ GitHub Release skipped - prerequisites not met:")
-            for issue in issues:
-                print(f"  • {issue}")
-            github_result = {"success": False}
-        else:
-            github_result = github_publisher.publish_report(report_path, date_str)
-
-            if github_result["success"]:
-                print(f"✓ GitHub Release created: {github_result['release_url']}")
-                print(f"✓ Report published at: {github_result['pages_url']}")
-            else:
-                print(f"✗ GitHub Release failed: {github_result.get('error', 'Unknown error')}")
-
-    except Exception as e:
-        print(f"✗ GitHub Release failed: {e}")
-        import traceback
-        traceback.print_exc()
-        github_result = {"success": False}
-
-    # Email delivery (optional fallback)
+    # Email delivery
     print("\nSending email...")
     try:
         email_sender = EmailSender()
@@ -224,11 +196,6 @@ def main():
         print(f"  • Competitive Intelligence items: {analysis_results['categorized_counts']['competitive']}")
     print(f"  • Analysis: {'✓ Complete' if analysis_results else '✗ Skipped'}")
     print(f"  • Report: {report_path}")
-    if 'github_result' in locals() and github_result["success"]:
-        print(f"  • GitHub Release: ✓ Published")
-        print(f"  • Pages URL: {github_result['pages_url']}")
-    else:
-        print(f"  • GitHub Release: ✗ Not published")
     if 'email_result' in locals() and email_result["success"]:
         print(f"  • Email: ✓ Delivered to {email_result['recipients']} recipient(s)")
     else:
@@ -266,9 +233,8 @@ def generate_report(collected_data, analysis_results, date_str):
     citations = {}
 
     # Map articles (ARTICLE_1, ARTICLE_2, etc.)
-    # Map ALL articles (no limit) to ensure all citations resolve
     if "rss_articles" in collected_data:
-        for i, article in enumerate(collected_data["rss_articles"], 1):
+        for i, article in enumerate(collected_data["rss_articles"][:15], 1):
             citations[f"ARTICLE_{i}"] = {
                 "title": article["title"],
                 "source": article["source"],
@@ -674,16 +640,8 @@ def generate_report(collected_data, analysis_results, date_str):
                         report += f"{description}\n\n"
                     if examples:
                         report += f"**Examples:**\n\n"
-                        for example in examples[:3]:  # Show top 3 examples
-                            # Handle both old format (string) and new format (object with quote and post_num)
-                            if isinstance(example, dict):
-                                quote = example.get('quote', '')
-                                post_num = example.get('post_num', 0)
-                                if quote and post_num:
-                                    report += f"- \"{quote}\" [\[R{post_num}\]](#r{post_num})\n"
-                            else:
-                                # Legacy format - already has citations
-                                report += f"- {example}\n"
+                        for example in examples[:2]:  # Show top 2 examples
+                            report += f"- {example}\n"
                         report += "\n"
 
             # Overall Sentiment
@@ -720,17 +678,7 @@ def generate_report(collected_data, analysis_results, date_str):
                 insights = reddit_analysis['key_insights']
                 if isinstance(insights, list):
                     for insight in insights:
-                        # Handle both old format (string with citations) and new format (object with insight and post_nums)
-                        if isinstance(insight, dict):
-                            insight_text = insight.get('insight', '')
-                            post_nums = insight.get('post_nums', [])
-                            if insight_text:
-                                # Add citations at the end
-                                citations = ''.join([f'[\[R{num}\]](#r{num})' for num in post_nums])
-                                report += f"- {insight_text} {citations}\n"
-                        else:
-                            # Legacy format - already has citations
-                            report += f"- {insight}\n"
+                        report += f"- {insight}\n"
                 else:
                     report += f"{insights}\n"
                 report += "\n"
