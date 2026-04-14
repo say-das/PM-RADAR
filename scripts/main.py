@@ -160,7 +160,35 @@ def main():
     except Exception as e:
         print(f"⚠ HTML generation failed: {e}")
 
-    # Email delivery
+    # GitHub Release & Pages delivery
+    print("\nPublishing to GitHub Release & Pages...")
+    try:
+        from scripts.deliver.github_release import GitHubReleasePublisher
+        github_publisher = GitHubReleasePublisher()
+
+        # Check prerequisites
+        issues = github_publisher.check_prerequisites()
+        if issues:
+            print(f"⚠ GitHub Release skipped - prerequisites not met:")
+            for issue in issues:
+                print(f"  • {issue}")
+            github_result = {"success": False}
+        else:
+            github_result = github_publisher.publish_report(report_path, date_str)
+
+            if github_result["success"]:
+                print(f"✓ GitHub Release created: {github_result['release_url']}")
+                print(f"✓ Report published at: {github_result['pages_url']}")
+            else:
+                print(f"✗ GitHub Release failed: {github_result.get('error', 'Unknown error')}")
+
+    except Exception as e:
+        print(f"✗ GitHub Release failed: {e}")
+        import traceback
+        traceback.print_exc()
+        github_result = {"success": False}
+
+    # Email delivery (optional fallback)
     print("\nSending email...")
     try:
         email_sender = EmailSender()
@@ -196,6 +224,11 @@ def main():
         print(f"  • Competitive Intelligence items: {analysis_results['categorized_counts']['competitive']}")
     print(f"  • Analysis: {'✓ Complete' if analysis_results else '✗ Skipped'}")
     print(f"  • Report: {report_path}")
+    if 'github_result' in locals() and github_result["success"]:
+        print(f"  • GitHub Release: ✓ Published")
+        print(f"  • Pages URL: {github_result['pages_url']}")
+    else:
+        print(f"  • GitHub Release: ✗ Not published")
     if 'email_result' in locals() and email_result["success"]:
         print(f"  • Email: ✓ Delivered to {email_result['recipients']} recipient(s)")
     else:
