@@ -35,9 +35,7 @@ jobs:
         SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        cd "Experiments/PM Radar"
-        python scripts/main.py
+      run: python scripts/main.py
 
     - name: Commit and push report
       run: |
