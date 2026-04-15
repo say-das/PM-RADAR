@@ -7,7 +7,7 @@ requests==2.31.0                # HTTP requests (for SociaVault, web scraping)
 beautifulsoup4==4.12.2          # Web scraping (future phases)
 
 # AI/Analysis
-openai==1.12.0                  # OpenAI GPT-4o (Content Analyzer Agent)
+openai>=1.40.0                  # OpenAI GPT-4o (Content Analyzer Agent)
 anthropic==0.18.1               # Claude SDK (for AI agents: Source Discovery, Quality Monitor, Internal Data Collection)
 boto3==1.34.0                   # AWS SDK (if using Bedrock for agents)
 
