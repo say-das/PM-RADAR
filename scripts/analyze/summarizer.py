@@ -19,6 +19,57 @@ class ContentAnalyzerAgent:
                 "Set OPENAI_API_KEY in .env file"
             )
 
+    def _load_fallback_data(self, category_name, days_back=7):
+        """
+        Load articles from previous raw data files as fallback when current collection fails.
+
+        Args:
+            category_name: 'telecom_fraud' or 'competitor'
+            days_back: Number of days to look back for data
+
+        Returns:
+            List of articles from previous collections, or empty list if none found
+        """
+        from pathlib import Path
+        from datetime import datetime, timedelta
+
+        fallback_articles = []
+        raw_data_dir = Path("data/raw")
+
+        if not raw_data_dir.exists():
+            return []
+
+        try:
+            # Get date range to check
+            today = datetime.now()
+            date_range = [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(1, days_back + 1)]
+
+            # Check each date's raw data file
+            for date_str in date_range:
+                raw_file = raw_data_dir / f"{date_str}.json"
+
+                if not raw_file.exists():
+                    continue
+
+                # Load and extract articles with matching category
+                with open(raw_file, 'r') as f:
+                    data = json.load(f)
+
+                if "rss_articles" in data:
+                    for article in data["rss_articles"]:
+                        if article.get('category') == category_name:
+                            fallback_articles.append(article)
+
+                # If we found articles, return up to 10 most recent
+                if fallback_articles:
+                    return fallback_articles[:10]
+
+        except Exception as e:
+            # Silently fail - fallback is optional
+            pass
+
+        return []
+
     def _categorize_content(self, collected_data):
         """
         Categorize collected data into Telecom Fraud, General Fraud, and Competitive Intelligence.
@@ -92,6 +143,22 @@ class ContentAnalyzerAgent:
 
         # Reddit posts are NOT categorized into Telecom/General
         # They will be analyzed separately as Twilio Community Discussions
+
+        # Fallback: Use previous week's data if current collection failed
+        if len(categorized['telecom']['articles']) == 0:
+            print("    → No telecom articles found, checking fallback data...")
+            fallback_articles = self._load_fallback_data('telecom_fraud', days_back=7)
+            if fallback_articles:
+                categorized['telecom']['articles'].extend(fallback_articles)
+                print(f"    ✓ Loaded {len(fallback_articles)} telecom articles from fallback")
+            else:
+                print("    ⚠ No fallback data available")
+
+        if len(categorized['competitive']['articles']) == 0:
+            fallback_articles = self._load_fallback_data('competitor', days_back=7)
+            if fallback_articles:
+                categorized['competitive']['articles'].extend(fallback_articles)
+                print(f"    ✓ Loaded {len(fallback_articles)} competitive articles from fallback")
 
         return categorized
 
