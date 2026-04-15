@@ -16,6 +16,7 @@ sib-api-v3-sdk==7.6.0           # Brevo email
 
 # Utilities
 python-dateutil==2.8.2
+markdown==3.5.1                 # Markdown to HTML conversion
 
 # PDF Export
 markdown-pdf==1.2.0             # Markdown to PDF conversion
