@@ -121,7 +121,7 @@ class GitHubReleasePublisher:
 
 ## 📊 View Full Report
 
-**[Click here to view the full HTML report](https://twilio-internal.github.io/ig-fraud-research/reports/{date_str}.html)**
+**[Click here to view the full HTML report]({self.pages_base}/{date_str}.html)**
 
 Or download the attachments below:
 - `{date_str}.html` - Styled HTML report with clickable citations
