@@ -1,0 +1,357 @@
+{
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Three Arrested in Toronto after First SMS\u00a0Blaster Detected in North America",
+      "url": "https://commsrisk.com/three-arrested-in-toronto-after-first-sms-blaster-detected-in-north-america/",
+      "published": "2026-04-27T03:25:57",
+      "summary": "Dafeng Lin, Junmin Shi and Weitong Hu have been charged with 44 offenses in total."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Investigation Shows Telcos in Israel, UK and Jersey Enable Spying on Phones Worldwide",
+      "url": "https://commsrisk.com/new-investigation-finds-israel-uk-and-jersey-telcos-enable-spying-on-phones-worldwide/",
+      "published": "2026-04-23T12:00:41",
+      "summary": "The privacy of phone users is under attack, as proven with SS7 and Diameter signaling data examined by The Citizen Lab."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Wacky Call Increments Reveal Deeper Issues with Restoring Trust",
+      "url": "https://commsrisk.com/wacky-call-increments-reveal-deeper-issues-with-restoring-trust/",
+      "published": "2026-04-22T03:25:00",
+      "summary": "Complicated changes to wholesale prices are being communicated with minimal notice."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-04-24T12:00:00",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-7399 Samsung MagicINFO 9 Server Path Traversal Vulnerability CVE-2024-57726 SimpleHelp Missing Authorization Vulnerability CVE-2024-57728 SimpleHelp Path Traversal Vulnerability CVE-2025-29635 D-Link DIR-823X Command Injection Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks t"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Carlson Software VASCO-B GNSS Receiver",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-02",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could enable a remote attacker to alter critical system functions or disrupt device operation. The following versions of Carlson Software VASCO-B GNSS Receiver are affected: VASCO-B GNSS Receiver <1.4.0 (CVE-2026-3893) CVSS Vendor Equipment Vulnerabilities v3 9.4 Carlson Software Carlson Software VASCO-B GNSS Receiver Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Critical Manufacturing Coun"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-05",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to bypass authentication and have remote access to sensitive information on the device. The following versions of Hangzhou Xiongmai Technology Co., Ltd XM530 IP Camera are affected: IP Camera XM530V200_X6-WEQ_8M firmware V5.00.R02.000807D8.10010.346624.S.ONVIF_21.06 (CVE-2025-65856) CVSS Vendor Equipment Vulnerabilities v3 9.8 Hangzhou Xiongmai Technology Co., Ltd Hangzhou Xiongmai Technology Co., Ltd XM530 I"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/23/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-23T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-39987 Marimo Remote Code Execution Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vul"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "FIRESTARTER Backdoor",
+      "url": "https://www.cisa.gov/news-events/analysis-reports/ar26-113a",
+      "published": "2026-04-23T12:00:00",
+      "summary": "Malware Analysis Report at a Glance Malware Name FIRESTARTER Original Publication April 23, 2026 Executive Summary The Cybersecurity and Infrastructure Security Agency (CISA) analyzed a sample of FIRESTARTER malware obtained from a forensic investigation. CISA and the United Kingdom National Cyber Security Centre (NCSC) assess advanced persistent threat (APT) actors are using FIRESTARTER malware for persistence, specifically targeting publicly accessible Cisco Firepower and Secure Firewall devic"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Yadea T5 Electric Bicycle",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-01",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could result in an attacker being able to unlock and start the bicycle, leading to vehicle theft. The following versions of Yadea T5 Electric Bicycle are affected: T5 Electric Bicycle vers:all/* (CVE-2025-70994) CVSS Vendor Equipment Vulnerabilities v3 7.3 Yadea Yadea T5 Electric Bicycle Weak Authentication Background Critical Infrastructure Sectors: Transportation Systems Countries/Areas Deployed: Worldwide Company Headquarters Loc"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Defending Against China-Nexus Covert Networks of Compromised Devices",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-113a",
+      "published": "2026-04-23T12:00:00",
+      "summary": "Defending against china-nexus covert networks of compromised devices executive summary Defending against China-nexus covert networks of compromised devices Explaining the widespread shift in tactics, techniques and procedures (TTPs) towards networks of compromised infrastructure, and how to defend against it Summary With support from the UK Cyber League, this advisory has been jointly released by the National Cyber Security Centre (NCSC-UK) and international partners: Australian Signals Director"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Milesight Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-03",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could crash the device being accessed or allow remote code execution. The following versions of Milesight Cameras are affected: MS-Cxx63-PD <=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766) MS-Cxx64-xPD <=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026-32649, CVE-2026-20766) MS-Cxx73-xPD <=51.7.0.77-r12 (CVE-2026-28747, CVE-2026-27785, CVE-2026-32644, CVE-2026"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "SpiceJet Online Booking System",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-04",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to disclose sensitive information. The following versions of SpiceJet Online Booking System are affected: Online Booking System vers:all/* (CVE-2026-6375, CVE-2026-6376) CVSS Vendor Equipment Vulnerabilities v3 7.5 SpiceJet SpiceJet Online Booking System Authorization Bypass Through User-Controlled Key, Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Transportation "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Intrado 911 Emergency Gateway (EGW)",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-113-06",
+      "published": "2026-04-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to read, modify, or delete files. The following versions of Intrado 911 Emergency Gateway (EGW) are affected: Emergency Gateway 7.x (CVE-2026-6074) Emergency Gateway 6.x (CVE-2026-6074) Emergency Gateway 5.x (CVE-2026-6074) CVSS Vendor Equipment Vulnerabilities v3 9.8 Intrado Intrado 911 Emergency Gateway (EGW) Path Traversal: '.../...//' Background Critical Infrastructure Sectors: Emergency Services Countrie"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/22/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-22T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-33825 Microsoft Defender Insufficient Granularity of Access Control Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as "
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "published": "2026-04-24T21:40:33",
+      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "TGR-STA-1030: New Activity in Central and South America",
+      "url": "https://unit42.paloaltonetworks.com/new-activity-central-south-america/",
+      "published": "2026-04-24T20:30:19",
+      "summary": "Unit 42 research reports that TGR-STA-1030 remains an active threat, particularly in Central and South America. The post TGR-STA-1030: New Activity in Central and South America appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Frontier AI and the Future of Defense: Your Top Questions Answered",
+      "url": "https://unit42.paloaltonetworks.com/frontier-ai-top-questions-answered/",
+      "published": "2026-04-23T20:45:50",
+      "summary": "What are the next steps for security leaders in this new age of frontier AI? We answer the top 10 questions customers are asking. The post Frontier AI and the Future of Defense: Your Top Questions Answered appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Can AI Attack the Cloud? Lessons From Building an Autonomous Cloud Offensive Multi-Agent System",
+      "url": "https://unit42.paloaltonetworks.com/autonomous-ai-cloud-attacks/",
+      "published": "2026-04-23T10:00:31",
+      "summary": "Unit 42 reveals how multi-agent AI systems can autonomously attack cloud environments. Learn critical insights and vital lessons for proactive security. The post Can AI Attack the Cloud? Lessons From Building an Autonomous Cloud Offensive Multi-Agent System appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When Wi-Fi Encryption Fails: Protecting Your Enterprise from AirSnitch Attacks",
+      "url": "https://unit42.paloaltonetworks.com/air-snitch-enterprise-wireless-attacks/",
+      "published": "2026-04-22T10:00:22",
+      "summary": "Unit 42 research reveals AirSnitch attacks bypass WPA2/3 Wi-Fi encryption and client isolation, exposing critical infrastructure vulnerabilities. The post When Wi-Fi Encryption Fails: Protecting Your Enterprise from AirSnitch Attacks appeared first on Unit 42."
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Takes Action Against High-Level MLM Participants who Deceived Workers About the Amount of Money They Can Earn",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-takes-action-against-high-level-mlm-participants-who-deceived-workers-about-amount-money-they",
+      "published": "2026-04-27T12:00:00",
+      "summary": "FTC order settling the agency\u2019s allegations will prohibit Steven and Gina Merritt from making deceptive earnings claims The Federal Trade Commission is taking action against high-level participants in a multilevel marketing (MLM) company over allegations they used false or baseless earning claims to recruit workers, most of whom did not earn any money.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "New FTC Data Show People Have Lost Billions to Social Media Scams",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/new-ftc-data-show-people-have-lost-billions-social-media-scams",
+      "published": "2026-04-27T12:00:00",
+      "summary": "Social media was the costliest fraud contact method in 2025 and reported losses increased eightfold since 2020 New data from the Federal Trade Commission show that, in 2025, nearly 30% of people who reported losing money to a scam said that it started on social media, with reported losses reaching a staggering $2.1 billion.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Charts Path to Restore Competition in Texas Anesthesia Markets in USAP Litigation",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-charts-path-restore-competition-texas-anesthesia-markets-usap-litigation",
+      "published": "2026-04-23T12:00:00",
+      "summary": "The Federal Trade Commission has reached an agreement in principle with U.S. Anesthesia Partners Inc. (USAP) to settle the litigation and restore competition for anesthesia services in Texas.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Sues to Stop Deceptive Health Care Scheme",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-sues-stop-deceptive-health-care-scheme",
+      "published": "2026-04-22T12:00:00",
+      "summary": "FTC alleges scheme has generated millions of dollars by deceiving consumers seeking comprehensive health plans or those who already have coverage At the Federal Trade Commission\u2019s request, a U.S.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Supreme Court signals location data searches should require a warrant",
+      "url": "https://therecord.media/supreme-court-signals-location-data-searches-require-warrant",
+      "published": "2026-04-27T20:52:00",
+      "summary": "Privacy advocates had worried that the high court would rule that geofencing does not qualify as a constitutionally protected search, opening the door to much broader use of warrantless reverse searches of all types."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Tennessee becomes second state to ban cryptocurrency ATMs over scam concerns",
+      "url": "https://therecord.media/tennessee-bans-cryptocurrency-atms-over-scams",
+      "published": "2026-04-27T20:06:00",
+      "summary": "State officials said they observed overseas criminals carrying out government impersonation or tech support cons, as well as romance and pig butchering scams using cryptocurrency ATMs."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Money launderer for crypto thieves given 5-year sentence",
+      "url": "https://therecord.media/cryptocurrency-launderer-sentenced-californai",
+      "published": "2026-04-27T18:45:00",
+      "summary": "A California man was sentenced to more than five years in prison for his role in supporting a cybercriminal organization that stole about $260 million worth of cryptocurrency from victims."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Disinformation campaign targeted Tibetan parliament-in-exile elections",
+      "url": "https://therecord.media/disinformation-campaign-targeted-tibetan-elections",
+      "published": "2026-04-27T15:28:00",
+      "summary": "The operation, identified by the Digital Forensic Research Lab (DFRLab), was part of Spamouflage, a long-running influence network linked to Beijing."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Italy extradites alleged Chinese state hacker to US",
+      "url": "https://therecord.media/chinese-hacker-italy-extradited",
+      "published": "2026-04-27T15:15:00",
+      "summary": "A Chinese national accused of being a member of a state-backed hacking group that allegedly broke into systems to steal COVID-19 vaccine information has been extradited to the U.S. from Milan."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft asks iPhone users to reauthenticate after Outlook outage",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-asks-iphone-users-to-re-enter-credentials-after-outlook-outage/",
+      "published": "2026-04-28T08:37:12",
+      "summary": "After addressing a widespread outage that affected Outlook.com users worldwide on Monday, Microsoft has asked iPhone users to re-enter their credentials to regain access to their Outlook and Hotmail accounts via the default Mail app. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Robinhood account creation flaw abused to send phishing emails",
+      "url": "https://www.bleepingcomputer.com/news/security/robinhood-account-creation-flaw-abused-to-send-phishing-emails/",
+      "published": "2026-04-27T23:11:01",
+      "summary": "Online trading platform Robinhood's account creation process was exploited by threat actors to inject phishing messages into legitimate emails, tricking users into believing their accounts had suspicious activity. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "GlassWorm malware attacks return via 73 OpenVSX \"sleeper\" extensions",
+      "url": "https://www.bleepingcomputer.com/news/security/glassworm-malware-attacks-return-via-73-openvsx-sleeper-extensions/",
+      "published": "2026-04-27T21:41:01",
+      "summary": "A new wave of the Glassworm campaign is targeting the OpenVSX ecosystem with 73 \"sleeper\" extensions that turn malicious after an update. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Canada arrests three for operating \u201cSMS blaster\u201d device in Toronto",
+      "url": "https://www.bleepingcomputer.com/news/security/canada-arrests-three-for-operating-sms-blaster-device-in-toronto/",
+      "published": "2026-04-27T20:00:31",
+      "summary": "Canadian authorities have arrested three men for operating an \"SMS blaster\" device that pretends to be a cellular tower to send phishing texts to nearby phones. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Alleged Silk Typhoon hacker extradited to US for cyberespionage",
+      "url": "https://www.bleepingcomputer.com/news/security/alleged-silk-typhoon-hacker-extradited-to-us-for-cyberespionage/",
+      "published": "2026-04-27T19:56:03",
+      "summary": "A Chinese national accused of carrying out cyberespionage operations for China's intelligence services has been extradited from Italy to the United States to face criminal charges. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FTC: Americans lost over $2.1 billion to social media scams in 2025",
+      "url": "https://www.bleepingcomputer.com/news/security/ftc-americans-lost-over-21-billion-to-social-media-scams-in-2025/",
+      "published": "2026-04-27T16:27:53",
+      "summary": "The U.S. Federal Trade Commission (FTC) warned of a massive increase in losses from social media scams since 2020, exceeding $2.1 billion in 2025. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "PyPI package with 1.1M monthly downloads hacked to push infostealer",
+      "url": "https://www.bleepingcomputer.com/news/security/pypi-package-with-11m-monthly-downloads-hacked-to-push-infostealer/",
+      "published": "2026-04-27T15:17:37",
+      "summary": "An attacker pushed a malicious version of the popular elementary-data package Python Package Index (PyPI) to steal sensitive developer data and cryptocurrency wallets. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Home security giant ADT data breach affects 5.5 million people",
+      "url": "https://www.bleepingcomputer.com/news/security/home-security-giant-adt-data-breach-affects-55-million-people/",
+      "published": "2026-04-27T14:43:11",
+      "summary": "The ShinyHunters extortion group stole the personal information of 5.5 million individuals after breaching the systems of home security giant ADT earlier this month, according to data breach notification service Have I Been Pwned. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Webinar: Spotting cyberattacks before they begin",
+      "url": "https://www.bleepingcomputer.com/news/security/webinar-spotting-cyberattacks-before-they-begin/",
+      "published": "2026-04-27T14:25:35",
+      "summary": "On Thursday, April 30 at 2:00 PM ET, BleepingComputer will host a live webinar with threat intelligence company Flare and threat intelligence researcher Tammy Harper, exploring how security teams can identify early warning signs of attacks before they escalate into incidents. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Medtronic confirms breach after hackers claim 9 million records theft",
+      "url": "https://www.bleepingcomputer.com/news/security/medtronic-confirms-breach-after-hackers-claim-9-million-records-theft/",
+      "published": "2026-04-27T13:50:42",
+      "summary": "Medical device giant Medtronic disclosed last week that hackers breached its network and accessed data in \"certain corporate IT systems.\" [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Money launderer linked to $230M crypto heist gets 70 months in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/money-launderer-linked-to-230m-crypto-heist-gets-70-months-in-prison/",
+      "published": "2026-04-27T13:01:38",
+      "summary": "\u200b22-year-old Evan Tangeman of Newport Beach, California, was sentenced to 70 months in prison for laundering funds stolen in a massive $230 million cryptocurrency heist. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Deepfake Voice Attacks are Outpacing Defenses: What Security Leaders Should Know",
+      "url": "https://www.bleepingcomputer.com/news/security/deepfake-voice-attacks-are-outpacing-defenses-what-security-leaders-should-know/",
+      "published": "2026-04-27T13:00:09",
+      "summary": "Three seconds of audio is all it takes to clone a voice for fraud. Adaptive Security shows how deepfake calls trick employees into sending real money\u2014and why most defenses don't catch them. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft says Outlook.com outage is causing sign\u2011in failures",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-says-outlookcom-outage-is-causing-sign-in-failures/",
+      "published": "2026-04-27T12:03:46",
+      "summary": "Microsoft is investigating an ongoing Outlook.com outage that is causing intermittent signing issues and preventing customers from accessing their mailboxes. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "American utility firm Itron discloses breach of internal IT network",
+      "url": "https://www.bleepingcomputer.com/news/security/american-utility-firm-itron-discloses-breach-of-internal-it-network/",
+      "published": "2026-04-26T14:22:34",
+      "summary": "Itron, Inc. has disclosed, via an 8-K filing with the U.S. Securities and Exchange Commission (SEC), a cybersecurity incident in which an unauthorized third party accessed certain internal systems. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft rolls out revamped Windows Insider Program",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-revamped-windows-insider-program/",
+      "published": "2026-04-25T17:07:13",
+      "summary": "Microsoft says it's rolling out a revamped Windows Insider Program experience as part of the broader plans to address performance and reliability concerns affecting Windows 11. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "\u2018Scattered Spider\u2019 Member \u2018Tylerb\u2019 Pleads Guilty",
+      "url": "https://krebsonsecurity.com/2026/04/scattered-spider-member-tylerb-pleads-guilty/",
+      "published": "2026-04-21T14:53:59",
+      "summary": "A 24-year-old British national and senior member of the cybercrime group \"Scattered Spider\" has pleaded guilty to wire fraud conspiracy and aggravated identity theft. Tyler Robert Buchanan admitted his role in a series of text-message phishing attacks in the summer of 2022 that allowed the group to hack into at least a dozen major technology companies and steal tens of millions of dollars worth of cryptocurrency from investors."
+    }
+  ],
+  "reddit_posts": []
+}

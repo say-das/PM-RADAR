@@ -35,7 +35,7 @@ Thumbs.db
 # Project-specific
 # Runtime data and cache
 data/raw/.reddit_cache/
-data/raw/*.json
+# data/raw/*.json  # ALLOW: Need raw data in repo for fallback system
 data/reports/*.md
 data/reports/*.html
 data/reports/*.html.bak
