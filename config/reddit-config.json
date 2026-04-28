@@ -14,7 +14,7 @@
         "attack",
         "phishing"
       ],
-      "timeframe": "month",
+      "timeframe": "week",
       "limit": 25
     }
   ],

@@ -1,0 +1,343 @@
+{
+  "collection_date": "2026-04-06",
+  "rss_articles": [
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SICAM 8 Products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-01",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SICAM 8 Products are affected: CPCI85 Ce"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Yokogawa CENTUM VP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-02",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. The following versions of Yokogawa CENTUM VP are affected: CENTUM VP >=R5.01.00| CENTUM VP >=R6.01.00| CENTUM VP vR7.01.00 (CVE-2025-7741) CVSS Vendor Equipment Vulnerabilities v3 4 Yokogawa Yokogawa CENTUM VP Use of Hard-coded Password Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture Countries/Areas Deployed: Wo"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/02/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-02T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a livi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy Ellipse",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-03",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. This vulnerability can be exploited to carry out remote code execution (RCE) attack on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy Ellipse are affected: Ellipse vers:Ellipse/<=9.0.50 (CVE-2025-10492) CVSS Vendor Equipment Vulnerabilities v"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-01T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-5281 Google Dawn Use-After-Free Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulner"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Anritsu Remote Spectrum Monitor",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-090-01",
+      "published": "2026-03-31T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers with network access to alter operational settings, obtain sensitive signal data, or disrupt device availability. The following versions of Anritsu Remote Spectrum Monitor are affected: Remote Spectrum Monitor MS27100A vers:all/* (CVE-2026-3356) Remote Spectrum Monitor MS27101A vers:all/* (CVE-2026-3356) Remote Spectrum Monitor MS27102A vers:all/* (CVE-2026-3356) Remote Spectrum Monitor MS27103A vers:all/* (CVE-"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "PX4 Autopilot",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-090-02",
+      "published": "2026-03-31T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker with access to the MAVLink interface to execute arbitrary shell commands without cryptographic authentication. The following versions of PX4 Autopilot are affected: Autopilot v1.16.0_SITL_latest_stable (CVE-2026-1579) CVSS Vendor Equipment Vulnerabilities v3 9.8 PX4 PX4 Autopilot Missing Authentication for Critical Function Background Critical Infrastructure Sectors: Transportation Systems, Emergency Services"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "vSphere and BRICKSTORM Malware: A Defender's Guide",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vsphere-brickstorm-defender-guide/",
+      "published": "2026-04-02T14:00:00",
+      "summary": "Written by: Stuart Carrera Introduction Building on recent BRICKSTORM research from Google Threat Intelligence Group (GTIG), this post explores the evolving threats facing virtualized environments. These operations directly target the VMware vSphere ecosystem, specifically the vCenter Server Appliance (VCSA) and ESXi hypervisors. To help organizations stay ahead of these risks, we will focus on the essential hardening strategies and mitigating controls necessary to secure these critical assets. "
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "North Korea-Nexus Threat Actor Compromises Widely Used Axios NPM Package in Supply Chain Attack",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/north-korea-threat-actor-targets-axios-npm-package/",
+      "published": "2026-03-31T14:00:00",
+      "summary": "Written by: Austin Larsen, Dima Lenz, Adrian Hernandez, Tyler McLellan, Christopher Gardner, Ashley Zaya, Michael Rudden, Mon Liclican Introduction Google Threat Intelligence Group (GTIG) is tracking an active software supply chain attack targeting the popular Node Package Manager (NPM) package \"axios.\" Between March 31, 2026, 00:21 and 03:20 UTC, an attacker introduced a malicious dependency named \"plain-crypto-js\" into axios NPM releases versions 1.14.1 and 0.30.4. Axios is the most popular Ja"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+      "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+      "published": "2026-04-03T22:00:38",
+      "summary": "Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications. The post When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Widespread Impact of the Axios Supply Chain Attack",
+      "url": "https://unit42.paloaltonetworks.com/axios-supply-chain-attack/",
+      "published": "2026-04-01T18:30:10",
+      "summary": "Unit 42 discusses the supply chain attack targeting Axios. Learn about the full attack chain, from the dropper to forensic cleanup. The post Threat Brief: Widespread Impact of the Axios Supply Chain Attack appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Weaponizing the Protectors: TeamPCP\u2019s Multi-Stage Supply Chain Attack on Security Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/teampcp-supply-chain-attacks/",
+      "published": "2026-03-31T21:00:39",
+      "summary": "TeamPCP continues its string of supply chain attacks, and announces a partnership with Vect ransomware group. The post Weaponizing the Protectors: TeamPCP\u2019s Multi-Stage Supply Chain Attack on Security Infrastructure appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Double Agents: Exposing Security Blind Spots in GCP Vertex AI",
+      "url": "https://unit42.paloaltonetworks.com/double-agents-vertex-ai/",
+      "published": "2026-03-31T10:00:56",
+      "summary": "Unit 42 uncovers a \"double agent\" flaw in Google Cloud's Vertex AI, demonstrating how overprivileged AI agents can compromise cloud environments. The post Double Agents: Exposing Security Blind Spots in GCP Vertex AI appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "How to Quantify the Business Value of ZeroFox Threat Intelligence (And Why Forrester Did It For You)",
+      "url": "https://www.zerofox.com/blog/quantify-the-business-value-of-zerofox-forrester-tei",
+      "published": "2026-04-01T12:27:09",
+      "summary": "Let&#8217;s get the uncomfortable truth out of the way first: proving the value of threat intelligence is hard. Not because the value isn&#8217;t real, but because the best outcomes in security are the things that didn&#8217;t happen. There\u2019s value in the avoided incidents. Takedowns that stopped a phishing campaign before it touched a single customer. [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Submits Annual Budget Request to Congress",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-submits-annual-budget-request-congress",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission submitted to Congress its Fiscal Year 2027 budget request, in support of the President\u2019s FY 2027 budget for the federal government.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Publishes New Strategic Plan",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-publishes-new-strategic-plan",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission has published its FY 2026-2030 Strategic Plan, which will guide the agency over the next five years.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Staff Warn Tennessee Legislature of Risks to Patients if Ballad Health COPA Expires and Support Proposed Repeal of Certificate of Need Requirements",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-staff-warn-tennessee-legislature-risks-patients-if-ballad-health-copa-expires-support-proposed",
+      "published": "2026-04-02T12:00:00",
+      "summary": "Federal Trade Commission staff warned Tennessee legislators of the potential harm to patients if it passes proposed legislation that would terminate a Certificate of Public Advantage (COPA) that providesView Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC, Maryland Attorney General Secure Full Refunds and Additional Penalties Against Lindsay Auto Group for Deceptive Pricing Practices and Unwanted Add-ons",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-maryland-attorney-general-secure-full-refunds-additional-penalties-against-lindsay-auto-group",
+      "published": "2026-04-02T12:00:00",
+      "summary": "More than $75 million in charges may be eligible for refunds The Federal Trade Commission and Maryland Attorney General today announced Lindsay Automotive Group and its executives will return money to resolve allegations that they deceived consumers for years with falsely advertised low prices and unwanted add-ons that led to buyers paying thousands of dollars more for their vehicles.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Seeks Public Comment on Petition to Modify Northrop Grumman Final Order",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-seeks-public-comment-petition-modify-northrop-grumman-final-order",
+      "published": "2026-04-02T12:00:00",
+      "summary": "The Federal Trade Commission is seeking public comment on a petition filed by Northrop Grumman Corporation requesting that the Commission reopen and set aside a finaView Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Endorses Florida Supreme Court Action  Eliminating the ABA\u2019s Bar Admission Monopoly",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/03/ftc-endorses-florida-supreme-court-action-eliminating-abas-bar-admission-monopoly",
+      "published": "2026-03-31T12:00:00",
+      "summary": "Federal Trade Commission staff on Tuesday endorsed the Florida Supreme Court\u2019s decision to eliminate the American Bar Association\u2019s (ABA) status as the sole accrediting agency dictating the educational requirements to take the bar exam and become a licensed attorney in Florida.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "FCC proposes $4.5 million fine for voice service provider hosting \u2018suspicious\u2019 foreign call traffic",
+      "url": "https://therecord.media/fcc-proposes-5-million-fine-robocall",
+      "published": "2026-04-03T20:12:00",
+      "summary": "Voxbeam\u2019s actions allegedly led to \u201cfinancial impersonation robocalls\u201d that were made to American consumers \u201c using \u201cnon-compliant and long dormant accounts,\u201d the FCC said."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "CISA gives agencies two weeks to patch video conferencing bug exploited by Chinese hackers",
+      "url": "https://therecord.media/trueconf-cyberattack-cisa-hackers",
+      "published": "2026-04-03T19:45:00",
+      "summary": "A bug in a popular line of video conferencing software is being exploited by hackers, prompting the U.S. government to order all agencies to patch the vulnerability within two weeks."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "EU cyber agency attributes major data breach to TeamPCP hacking group",
+      "url": "https://therecord.media/european-commission-cyberattack-teampcp",
+      "published": "2026-04-03T18:15:00",
+      "summary": "The European Union\u2019s cybersecurity agency said the hacking group TeamPCP was behind a massive recent data breach at the European Commission."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Massachusetts emergency communications system impacted by cyberattack",
+      "url": "https://therecord.media/massachusetts-emergency-alert-cyberattack",
+      "published": "2026-04-03T14:00:00",
+      "summary": "An emergency communications system used across a handful of small towns in northern Massachusetts was impacted by a cyberattack."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Ukraine warns Russian hackers are revisiting past breaches to prepare new attacks",
+      "url": "https://therecord.media/ukraine-warns-russian-hackers-revisiting-old-attacks",
+      "published": "2026-04-03T13:20:00",
+      "summary": "In a new report, CERT-UA said attackers are revisiting previously breached infrastructure to check whether access is still available, whether exploited vulnerabilities have been patched and whether previously obtained credentials remain valid."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Traffic violation scams switch to QR codes in new phishing texts",
+      "url": "https://www.bleepingcomputer.com/news/security/traffic-violation-scams-switch-to-qr-codes-in-new-phishing-texts/",
+      "published": "2026-04-05T19:44:10",
+      "summary": "Scammers are sending fake \"Notice of Default\" traffic violation text messages impersonating state courts across the U.S., pressuring recipients to scan a QR code that leads to a phishing site demanding a $6.99 payment while stealing personal and financial information. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New FortiClient EMS flaw exploited in attacks, emergency patch released",
+      "url": "https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/",
+      "published": "2026-04-05T18:45:17",
+      "summary": "Fortinet has released an emergency weekend security update for a new critical FortiClient Enterprise Management Server (EMS) vulnerability that is actively exploited in attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploit React2Shell in automated credential theft campaign",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-react2shell-in-automated-credential-theft-campaign/",
+      "published": "2026-04-05T14:17:23",
+      "summary": "Hackers are running a large-scale campaign to steal credentials in an automated way after exploiting React2Shell (CVE-2025-55182) in vulnerable Next.js apps. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Axios npm hack used fake Teams error fix to hijack maintainer account",
+      "url": "https://www.bleepingcomputer.com/news/security/axios-npm-hack-used-fake-teams-error-fix-to-hijack-maintainer-account/",
+      "published": "2026-04-04T20:30:42",
+      "summary": "The maintainers of the popular Axios HTTP client have published a detailed post-mortem describing how one of its developers was targeted by a social engineering campaign believed to have been conducted by North Korean threat actors. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Device code phishing attacks surge 37x as new kits spread online",
+      "url": "https://www.bleepingcomputer.com/news/security/device-code-phishing-attacks-surge-37x-as-new-kits-spread-online/",
+      "published": "2026-04-04T14:17:38",
+      "summary": "Device code phishing attacks that abuse the OAuth 2.0 Device Authorization Grant flow to hijack accounts have surged more than 37 times this year. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "LinkedIn secretly scans for 6,000+ Chrome extensions, collects data",
+      "url": "https://www.bleepingcomputer.com/news/security/linkedin-secretly-scans-for-6-000-plus-chrome-extensions-collects-data/",
+      "published": "2026-04-03T20:40:22",
+      "summary": "A new report dubbed \"BrowserGate\" warns that Microsoft's LinkedIn is using hidden JavaScript scripts on its website to scan visitors' browsers for installed extensions and collect device data. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hims & Hers warns of data breach after Zendesk support ticket breach",
+      "url": "https://www.bleepingcomputer.com/news/security/hims-and-hers-warns-of-data-breach-after-zendesk-support-ticket-breach/",
+      "published": "2026-04-03T17:41:11",
+      "summary": "Telehealth giant Hims & Hers Health is warning that it suffered a data breach after support tickets were stolen from a third-party customer service platform. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Die Linke German political party confirms data stolen by Qilin ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/die-linke-german-political-party-confirms-data-stolen-by-qilin-ransomware/",
+      "published": "2026-04-03T16:36:44",
+      "summary": "The Qilin ransomware group has claimed responsibility for an attack against Die Linke ('The Left'), forcing an IT systems outage at the political party, and threatening sensitive data leak. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Evolution of Ransomware: Multi-Extortion Ransomware Attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/evolution-of-ransomware-multi-extortion-ransomware-attacks/",
+      "published": "2026-04-03T14:05:15",
+      "summary": "Multi-extortion ransomware relies on stolen data to pressure victims with public leaks. Penta Security explains how its D.AMO platform keeps exfiltrated files encrypted and useless to attackers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft still working to fix Exchange Online mailbox access issues",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-still-working-to-fix-exchange-online-mailbox-access-issues/",
+      "published": "2026-04-03T11:25:20",
+      "summary": "Microsoft is investigating and working to resolve Exchange Online mailbox access issues that have intermittently affected Outlook mobile and macOS users for weeks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Man admits to locking thousands of Windows devices in extortion plot",
+      "url": "https://www.bleepingcomputer.com/news/security/man-admits-to-extortion-plot-locking-coworkers-out-of-thousands-of-windows-devices/",
+      "published": "2026-04-03T09:04:54",
+      "summary": "A former core infrastructure engineer has pleaded guilty to locking Windows admins out of 254 servers as part of a failed extortion plot targeting his employer, an industrial company headquartered in Somerset County, New Jersey. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft now force upgrades unmanaged Windows 11 24H2 PCs",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-now-force-upgrades-unmanaged-windows-11-24h2-pcs/",
+      "published": "2026-04-03T07:55:40",
+      "summary": "Starting this week, Microsoft has begun force-upgrading unmanaged devices running Windows 11 24H2 Home and Pro editions to Windows 11 25H2. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CERT-EU: European Commission hack exposes data of 30 EU entities",
+      "url": "https://www.bleepingcomputer.com/news/security/cert-eu-european-commission-hack-exposes-data-of-30-eu-entities/",
+      "published": "2026-04-03T06:33:34",
+      "summary": "The European Union's Cybersecurity Service (CERT-EU) has attributed the European Commission cloud hack to the TeamPCP threat group, saying the resulting breach exposed the data of at least 29 other Union entities. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Claude Code leak used to push infostealer malware on GitHub",
+      "url": "https://www.bleepingcomputer.com/news/security/claude-code-leak-used-to-push-infostealer-malware-on-github/",
+      "published": "2026-04-02T20:30:55",
+      "summary": "Threat actors are exploiting the recent Claude Code source code leak by using fake GitHub repositories to deliver Vidar information-stealing malware. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Drift loses $280 million as North Korean hackers seize Security Council powers",
+      "url": "https://www.bleepingcomputer.com/news/security/drift-loses-280-million-north-korean-hackers-seize-security-council-powers/",
+      "published": "2026-04-02T19:03:39",
+      "summary": "The Drift Protocol lost at least $280 million after a threat actor took control of its Security Council administrative powers in a planned, sophisticated operation. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Germany Doxes \u201cUNKN,\u201d Head of RU Ransomware Gangs REvil, GandCrab",
+      "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+      "published": "2026-04-06T02:07:17",
+      "summary": "An elusive hacker who went by the handle \"UNKN\" and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "DPRK-Related Campaigns with LNK and GitHub C2",
+      "url": "https://feeds.fortinet.com/~/953053052/0/fortinet/blog/threat-research~DPRKRelated-Campaigns-with-LNK-and-GitHub-C",
+      "published": "2026-04-02T13:00:00",
+      "summary": "Analysis of DPRK-linked LNK-based attacks using GitHub as covert C2 infrastructure, detailing multi-stage PowerShell execution, persistence mechanisms, and data exfiltration techniques targeting Windows environments.&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": []
+}

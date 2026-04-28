@@ -1,0 +1,335 @@
+{
+  "collection_date": "2026-04-07",
+  "rss_articles": [
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Mitsubishi Electric GENESIS64 and ICONICS Suite products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-097-01",
+      "published": "2026-04-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a local attacker to disclose SQL Server credentials used by the affected products and use them to disclose, tamper with, or destroy data, or to cause a denial-of-service (DoS) condition on the system. The following versions of Mitsubishi Electric GENESIS64 and ICONICS Suite products are affected: GENESIS64 <=10.97.3 (CVE-2025-14815, CVE-2025-14816) ICONICS Suite <=10.97.3 (CVE-2025-14815, CVE-2025-14816) MobileHMI <=1"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+      "published": "2026-04-07T12:00:00",
+      "summary": "Advisory at a Glance Title Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure Original Publication April 7, 2026 Executive Summary Iran-affiliated advanced persistent threat (APT) actors are conducting exploitation activity targeting internet-facing operational technology (OT) devices, including programmable logic controllers (PLCs) manufactured by Rockwell Automation/Allen-Bradley. This activity has led to PLC disruptions across several U.S."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-06T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-35616 - Fortinet FortiClient EMS Improper Access Control Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living li"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/02/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-02T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-3502 TrueConf Client Download of Code Without Integrity Check Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a livi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy Ellipse",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-03",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of a Jasper Report vulnerability that affects the Ellipse product versions mentioned in this document below. This vulnerability can be exploited to carry out remote code execution (RCE) attack on the product. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy Ellipse are affected: Ellipse vers:Ellipse/<=9.0.50 (CVE-2025-10492) CVSS Vendor Equipment Vulnerabilities v"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SICAM 8 Products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-01",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Multiple SICAM 8 products are affected by multiple vulnerabilities that could lead to denial of service, namely: - SICAM A8000 Device firmware - CPCI85 for CP-8031/CP-8050 - SICORE for CP-8010/CP-8012 - RTUM85 for CP-8010/CP-8012 - SICAM EGS Device firmware - CPCI85 - SICAM S8000 - SICORE - RTUM85 Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens SICAM 8 Products are affected: CPCI85 Ce"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Yokogawa CENTUM VP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-092-02",
+      "published": "2026-04-02T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to login as the PROG user and modify permissions. The following versions of Yokogawa CENTUM VP are affected: CENTUM VP >=R5.01.00| CENTUM VP >=R6.01.00| CENTUM VP vR7.01.00 (CVE-2025-7741) CVSS Vendor Equipment Vulnerabilities v3 4 Yokogawa Yokogawa CENTUM VP Use of Hard-coded Password Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Food and Agriculture Countries/Areas Deployed: Wo"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-01T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-5281 Google Dawn Use-After-Free Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Common Vulner"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "vSphere and BRICKSTORM Malware: A Defender's Guide",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/vsphere-brickstorm-defender-guide/",
+      "published": "2026-04-02T14:00:00",
+      "summary": "Written by: Stuart Carrera Introduction Building on recent BRICKSTORM research from Google Threat Intelligence Group (GTIG), this post explores the evolving threats facing virtualized environments. These operations directly target the VMware vSphere ecosystem, specifically the vCenter Server Appliance (VCSA) and ESXi hypervisors. To help organizations stay ahead of these risks, we will focus on the essential hardening strategies and mitigating controls necessary to secure these critical assets. "
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Understanding Current Threats to Kubernetes Environments",
+      "url": "https://unit42.paloaltonetworks.com/modern-kubernetes-threats/",
+      "published": "2026-04-06T22:00:08",
+      "summary": "Unit 42 uncovers escalating Kubernetes attacks, detailing how threat actors exploit identities and critical vulnerabilities to compromise cloud environments. The post Understanding Current Threats to Kubernetes Environments appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+      "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+      "published": "2026-04-03T22:00:38",
+      "summary": "Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications. The post When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Widespread Impact of the Axios Supply Chain Attack",
+      "url": "https://unit42.paloaltonetworks.com/axios-supply-chain-attack/",
+      "published": "2026-04-01T18:30:10",
+      "summary": "Unit 42 discusses the supply chain attack targeting Axios. Learn about the full attack chain, from the dropper to forensic cleanup. The post Threat Brief: Widespread Impact of the Axios Supply Chain Attack appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "How to Quantify the Business Value of ZeroFox Threat Intelligence (And Why Forrester Did It For You)",
+      "url": "https://www.zerofox.com/blog/quantify-the-business-value-of-zerofox-forrester-tei",
+      "published": "2026-04-01T12:27:09",
+      "summary": "Let&#8217;s get the uncomfortable truth out of the way first: proving the value of threat intelligence is hard. Not because the value isn&#8217;t real, but because the best outcomes in security are the things that didn&#8217;t happen. There\u2019s value in the avoided incidents. Takedowns that stopped a phishing campaign before it touched a single customer. [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Publishes New Strategic Plan",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-publishes-new-strategic-plan",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission has published its FY 2026-2030 Strategic Plan, which will guide the agency over the next five years.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Submits Annual Budget Request to Congress",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-submits-annual-budget-request-congress",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission submitted to Congress its Fiscal Year 2027 budget request, in support of the President\u2019s FY 2027 budget for the federal government.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Staff Warn Tennessee Legislature of Risks to Patients if Ballad Health COPA Expires and Support Proposed Repeal of Certificate of Need Requirements",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-staff-warn-tennessee-legislature-risks-patients-if-ballad-health-copa-expires-support-proposed",
+      "published": "2026-04-02T12:00:00",
+      "summary": "Federal Trade Commission staff warned Tennessee legislators of the potential harm to patients if it passes proposed legislation that would terminate a Certificate of Public Advantage (COPA) that providesView Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC, Maryland Attorney General Secure Full Refunds and Additional Penalties Against Lindsay Auto Group for Deceptive Pricing Practices and Unwanted Add-ons",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-maryland-attorney-general-secure-full-refunds-additional-penalties-against-lindsay-auto-group",
+      "published": "2026-04-02T12:00:00",
+      "summary": "More than $75 million in charges may be eligible for refunds The Federal Trade Commission and Maryland Attorney General today announced Lindsay Automotive Group and its executives will return money to resolve allegations that they deceived consumers for years with falsely advertised low prices and unwanted add-ons that led to buyers paying thousands of dollars more for their vehicles.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Seeks Public Comment on Petition to Modify Northrop Grumman Final Order",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-seeks-public-comment-petition-modify-northrop-grumman-final-order",
+      "published": "2026-04-02T12:00:00",
+      "summary": "The Federal Trade Commission is seeking public comment on a petition filed by Northrop Grumman Corporation requesting that the Commission reopen and set aside a finaView Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "National security veterans warn against delays in FISA 702 reauthorization",
+      "url": "https://therecord.media/national-security-vets-warn-section-702-authorization-delay",
+      "published": "2026-04-07T16:29:00",
+      "summary": "The missive, obtained by Recorded Future News, arrives days before policymakers return from recess next week and aim for a quick extension Section 702 of the Foreign Intelligence Surveillance Act (FISA) for another 18 months."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Massachusetts hospital turning ambulances away after cyberattack",
+      "url": "https://therecord.media/massachusetts-hospital-turning-ambulances-away-cyberattack",
+      "published": "2026-04-07T15:52:00",
+      "summary": "Signature Healthcare and Signature Healthcare Brockton Hospital said on Monday that the cyber incident is impacting many of their information systems."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "UK exposes Russian cyber unit hacking home routers to hijack internet traffic",
+      "url": "https://therecord.media/uk-exposes-russian-cyber-unit-hacking-home-routers",
+      "published": "2026-04-07T14:00:00",
+      "summary": "Officials said the activity centers on compromising small office and home office routers and similar network devices exposed to the internet, often because of weak security settings or outdated software."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cyberattack hits Northern Ireland\u2019s centralized school network, disrupting access for thousands",
+      "url": "https://therecord.media/cyberattack-hits-northern-ireland-schools",
+      "published": "2026-04-07T12:04:00",
+      "summary": "The Education Authority (EA), which oversees school support services in Northern Ireland, said in an official statement it became aware of the incident affecting the \u201cC2K\u201d system last week and took immediate steps to contain the breach."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cyberattack on telecom giant Rostelecom disrupts internet services across Russia",
+      "url": "https://therecord.media/rostelecom-cyberattack-disrupts-russian-internet-access",
+      "published": "2026-04-06T23:00:00",
+      "summary": "A \u201clarge-scale\u201d distributed denial-of-service (DDoS) attack targeted the network of Russian state-run telecom giant Rostelecom on Monday evening, temporarily disrupting online banking, government platforms and other digital services across dozens of cities."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "US warns of Iranian hackers targeting critical infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-iranian-hackers-targeting-critical-infrastructure/",
+      "published": "2026-04-07T18:02:26",
+      "summary": "Iranian-linked hackers are targeting Internet-exposed Rockwell/Allen-Bradley programmable logic controllers (PLCs) on the networks of U.S. critical infrastructure organizations. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Max severity Flowise RCE vulnerability now exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/max-severity-flowise-rce-vulnerability-now-exploited-in-attacks/",
+      "published": "2026-04-07T17:02:05",
+      "summary": "Hackers are exploiting a maximum-severity vulnerability, tracked as CVE-2025-59528, in the open-source platform Flowise for building custom LLM apps and agentic systems to execute arbitrary code. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Authorities disrupt router DNS hijacks used to steal Microsoft 365 logins",
+      "url": "https://www.bleepingcomputer.com/news/security/authorities-disrupt-dns-hijacks-used-to-steal-microsoft-365-logins/",
+      "published": "2026-04-07T15:51:22",
+      "summary": "An international operation from law enforcement authorities in partnership with private companies has disrupted FrostArmada, an APT28 campaign hijacking local traffic from MikroTik and TP-Link routers to steal Microsoft account credentials. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Why Your Automated Pentesting Tool Just Hit a Wall",
+      "url": "https://www.bleepingcomputer.com/news/security/why-your-automated-pentesting-tool-just-hit-a-wall/",
+      "published": "2026-04-07T14:01:11",
+      "summary": "Automated pentesting tools deliver strong early results, then quickly plateau. Picus Security explains how the \"PoC cliff\" leaves major attack surfaces untested and creates a dangerous validation gap. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "German authorities identify REvil and GandCrab ransomware bosses",
+      "url": "https://www.bleepingcomputer.com/news/security/german-authorities-identify-revil-and-gangcrab-ransomware-bosses/",
+      "published": "2026-04-06T23:54:04",
+      "summary": "The Federal Police in Germany (BKA) has identified two Russian nationals as the leaders of GandCrab and REvil ransomware operations between 2019 and 2021. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New GPUBreach attack enables system takeover via GPU rowhammer",
+      "url": "https://www.bleepingcomputer.com/news/security/new-gpubreach-attack-enables-system-takeover-via-gpu-rowhammer/",
+      "published": "2026-04-06T21:44:15",
+      "summary": "A new attack, dubbed GPUBreach, can induce Rowhammer bit-flips on GPU GDDR6 memories to escalate privileges and lead to a full system compromise. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Disgruntled researcher leaks \u201cBlueHammer\u201d Windows zero-day exploit",
+      "url": "https://www.bleepingcomputer.com/news/security/disgruntled-researcher-leaks-bluehammer-windows-zero-day-exploit/",
+      "published": "2026-04-06T19:19:27",
+      "summary": "Exploit code has been released for an unpatched Windows privilege escalation flaw reported privately to Microsoft, allowing attackers to gain SYSTEM or elevated administrator permissions. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft fixes Classic Outlook bug causing email delivery issues",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-classic-outlook-bug-causing-email-delivery-issues/",
+      "published": "2026-04-06T19:19:24",
+      "summary": "Microsoft has resolved a known issue that was preventing some Classic Outlook users from sending emails via Outlook.com. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft removes Support and Recovery Assistant from Windows",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-removes-support-and-recovery-assistant-from-windows/",
+      "published": "2026-04-06T17:45:57",
+      "summary": "Microsoft has deprecated and removed the Support and Recovery Assistant (SaRA) command-line utility from all in-support versions of Windows updates starting March 10. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft links Medusa ransomware affiliate to zero-day attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-links-medusa-ransomware-affiliate-to-zero-day-attacks/",
+      "published": "2026-04-06T16:56:01",
+      "summary": "Microsoft says that Storm-1175, a China-based financially motivated cybercriminal group known for deploying Medusa ransomware payloads, has been deploying n-day and zero-day exploits in high-velocity attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Drift $280M crypto theft linked to 6-month in-person operation",
+      "url": "https://www.bleepingcomputer.com/news/security/drift-280m-crypto-theft-linked-to-6-month-in-person-operation/",
+      "published": "2026-04-06T16:35:03",
+      "summary": "The Drift Protocol says that the $280+ million hack it suffered last week was the result of a long-term, carefully planned operation that included building \"a functioning operational presence inside the Drift ecosystem.\" [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA orders feds to patch exploited Fortinet EMS flaw by Friday",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-fortinet-flaw-exploited-in-attacks-by-friday/",
+      "published": "2026-04-06T16:02:14",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered federal agencies to secure FortiClient Enterprise Management Server (EMS) instances against an actively exploited vulnerability by Friday. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Why Simple Breach Monitoring is No Longer Enough",
+      "url": "https://www.bleepingcomputer.com/news/security/why-simple-breach-monitoring-is-no-longer-enough/",
+      "published": "2026-04-06T14:02:12",
+      "summary": "Infostealers are harvesting credentials and session cookies at scale, bypassing traditional defenses. Lunar explains why simple breach monitoring alone can't keep up with modern credential-based attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Traffic violation scams switch to QR codes in new phishing texts",
+      "url": "https://www.bleepingcomputer.com/news/security/traffic-violation-scams-switch-to-qr-codes-in-new-phishing-texts/",
+      "published": "2026-04-05T19:44:10",
+      "summary": "Scammers are sending fake \"Notice of Default\" traffic violation text messages impersonating state courts across the U.S., pressuring recipients to scan a QR code that leads to a phishing site demanding a $6.99 payment while stealing personal and financial information. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New FortiClient EMS flaw exploited in attacks, emergency patch released",
+      "url": "https://www.bleepingcomputer.com/news/security/new-fortinet-forticlient-ems-flaw-cve-2026-35616-exploited-in-attacks/",
+      "published": "2026-04-05T18:45:17",
+      "summary": "Fortinet has released an emergency weekend security update for a new critical FortiClient Enterprise Management Server (EMS) vulnerability that is actively exploited in attacks. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
+      "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
+      "published": "2026-04-07T17:02:44",
+      "summary": "Hackers linked to Russia's military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code."
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Germany Doxes \u201cUNKN,\u201d Head of RU Ransomware Gangs REvil, GandCrab",
+      "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+      "published": "2026-04-06T02:07:17",
+      "summary": "An elusive hacker who went by the handle \"UNKN\" and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "DPRK-Related Campaigns with LNK and GitHub C2",
+      "url": "https://feeds.fortinet.com/~/953053052/0/fortinet/blog/threat-research~DPRKRelated-Campaigns-with-LNK-and-GitHub-C",
+      "published": "2026-04-02T13:00:00",
+      "summary": "Analysis of DPRK-linked LNK-based attacks using GitHub as covert C2 infrastructure, detailing multi-stage PowerShell execution, persistence mechanisms, and data exfiltration techniques targeting Windows environments.&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": []
+}

@@ -1,0 +1,1101 @@
+{
+  "collection_date": "2026-04-09",
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Ericsson #1 in BSS for Telcos Building AI Data Centers but Amdocs Soon to Overtake",
+      "url": "https://commsrisk.com/ericsson-1-in-bss-for-telcos-building-ai-data-centers-but-amdocs-soon-to-overtake/",
+      "published": "2026-04-08T03:25:02",
+      "summary": "This is the ranking of the providers of business support systems for those telcos which build AI data centers."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Brazilian Authorities Find Another SMS Blaster in S\u00e3o Paulo",
+      "url": "https://commsrisk.com/brazilian-authorities-find-another-sms-blaster-in-sao-paulo/",
+      "published": "2026-04-06T03:25:18",
+      "summary": "This is the eighth SMS&#160;blaster found in the city since July 2024."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "41,387 Phone Numbers Disconnected Since South Korea Introduced 10-Minute Scam Blocks",
+      "url": "https://commsrisk.com/41387-phone-numbers-disconnected-since-south-korea-introduced-10-minute-scam-blocking/",
+      "published": "2026-04-03T03:25:08",
+      "summary": "The figure was shared in private correspondence from the National Counter-Scam Bureau of Korea."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/08/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-08T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-1340 Ivanti Endpoint Manager Mobile (EPMM) Code Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living l"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Mitsubishi Electric GENESIS64 and ICONICS Suite products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-097-01",
+      "published": "2026-04-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a local attacker to disclose SQL Server credentials used by the affected products and use them to disclose, tamper with, or destroy data, or to cause a denial-of-service (DoS) condition on the system. The following versions of Mitsubishi Electric GENESIS64 and ICONICS Suite products are affected: GENESIS64 <=10.97.3 (CVE-2025-14815, CVE-2025-14816) ICONICS Suite <=10.97.3 (CVE-2025-14815, CVE-2025-14816) MobileHMI <=1"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure",
+      "url": "https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-097a",
+      "published": "2026-04-07T12:00:00",
+      "summary": "Advisory at a Glance Title Iranian-Affiliated Cyber Actors Exploit Programmable Logic Controllers Across US Critical Infrastructure Original Publication April 7, 2026 Executive Summary Iran-affiliated advanced persistent threat (APT) actors are conducting exploitation activity targeting internet-facing operational technology (OT) devices, including programmable logic controllers (PLCs) manufactured by Rockwell Automation/Allen-Bradley. This activity has led to PLC disruptions across several U.S."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/06/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-06T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-35616 - Fortinet FortiClient EMS Improper Access Control Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living li"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Cracks in the Bedrock: Agent God Mode",
+      "url": "https://unit42.paloaltonetworks.com/exploit-of-aws-agentcore-iam-god-mode/",
+      "published": "2026-04-08T22:00:51",
+      "summary": "Unit 42 reveals \"Agent God Mode\" in Amazon Bedrock AgentCore. Broad IAM permissions lead to privilege escalation and data exfiltration risks. The post Cracks in the Bedrock: Agent God Mode appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox",
+      "url": "https://unit42.paloaltonetworks.com/bypass-of-aws-sandbox-network-isolation-mode/",
+      "published": "2026-04-07T22:00:11",
+      "summary": "Unit 42 uncovers critical vulnerabilities in Amazon Bedrock AgentCore's sandbox, demonstrating DNS tunneling and credential exposure. The post Cracks in the Bedrock: Escaping the AWS AgentCore Sandbox appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Understanding Current Threats to Kubernetes Environments",
+      "url": "https://unit42.paloaltonetworks.com/modern-kubernetes-threats/",
+      "published": "2026-04-06T22:00:08",
+      "summary": "Unit 42 uncovers escalating Kubernetes attacks, detailing how threat actors exploit identities and critical vulnerabilities to compromise cloud environments. The post Understanding Current Threats to Kubernetes Environments appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock's Multi-Agent Applications",
+      "url": "https://unit42.paloaltonetworks.com/amazon-bedrock-multiagent-applications/",
+      "published": "2026-04-03T22:00:38",
+      "summary": "Unit 42 research on multi-agent AI systems on Amazon Bedrock reveals new attack surfaces and prompt injection risks. Learn how to secure your AI applications. The post When an Attacker Meets a Group of Agents: Navigating Amazon Bedrock&#039;s Multi-Agent Applications appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Seeing Risk Isn&#8217;t Stopping Risk: What to Consider When Choosing an ASM Solution",
+      "url": "https://www.zerofox.com/blog/seeing-risk-isnt-stopping-risk-what-to-consider-when-choosing-an-asm-solution",
+      "published": "2026-04-08T10:48:54",
+      "summary": "Your security team just got another report. Hundreds of exposed assets with dozens of flagged vulnerabilities. A dashboard full of findings, color-coded by severity, timestamped, and ready for review. None of them have been fixed yet. This is the reality for most SOC teams operating with an attack surface management tool today. Somewhere between &#8220;we [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Publishes New Strategic Plan",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-publishes-new-strategic-plan",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission has published its FY 2026-2030 Strategic Plan, which will guide the agency over the next five years.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Submits Annual Budget Request to Congress",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-submits-annual-budget-request-congress",
+      "published": "2026-04-03T12:00:00",
+      "summary": "The Federal Trade Commission submitted to Congress its Fiscal Year 2027 budget request, in support of the President\u2019s FY 2027 budget for the federal government.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cybercriminals target accountants to drain Russian firms\u2019 bank accounts",
+      "url": "https://therecord.media/cybercriminals-hack-russian-accountants-to-steal-millions",
+      "published": "2026-04-08T23:00:00",
+      "summary": "Cybercriminals have stolen millions from Russian companies by hacking accountants\u2019 computers and disguising transfers as salary payments, with the largest confirmed theft exceeding 14 million rubles."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "TikTok removes covert networks ahead of Hungary vote as disinformation concerns grow",
+      "url": "https://therecord.media/tiktok-removes-covert-networks-hungary-vote",
+      "published": "2026-04-08T20:20:00",
+      "summary": "The company said the networks used fake accounts to post and amplify political content aimed at Hungarian users, including material critical of opposition leader P\u00e9ter Magyar and his Tisza Party as well as content targeting Prime Minister Viktor Orb\u00e1n\u2019s ruling Fidesz."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Passport numbers for more than 300,000 leaked during December Eurail data breach",
+      "url": "https://therecord.media/eurail-reports-data-breach-impacting-over-300000",
+      "published": "2026-04-08T17:46:00",
+      "summary": "In February, a hacker claimed the attack and said they stole 1.3 TB of data that included source code, database backups and Zendesk support tickets."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Breach exposes sensitive LAPD files stored in city attorney system",
+      "url": "https://therecord.media/breach-exposes-lapd-files-city-attorney-systems",
+      "published": "2026-04-08T17:42:00",
+      "summary": "The LA Times reported that social media posts allegedly featuring information about the stolen material \u2014 some of which have since been taken down \u2014 revealed there were 7.7 terabytes of data available for download."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Minnesota governor sends national guard to county after cyberattack",
+      "url": "https://therecord.media/minnesota-sends-national-guard-after-local-cyberattack",
+      "published": "2026-04-08T17:10:00",
+      "summary": "Minnesota governor Tim Walz issued an executive order on Tuesday, writing that Winona county experienced a cyberattack on critical systems that began on Monday."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Eurail says December data breach impacts 300,000 individuals",
+      "url": "https://www.bleepingcomputer.com/news/security/eurail-says-december-data-breach-impacts-300-000-individuals/",
+      "published": "2026-04-09T10:31:54",
+      "summary": "Eurail B.V., a European travel operator that provides digital passes covering 33 national railways, says attackers stole the personal information of over 300,000 individuals in a December 2025 data breach. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploiting Acrobat Reader zero-day flaw since December",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploiting-acrobat-reader-zero-day-flaw-since-december/",
+      "published": "2026-04-09T09:22:35",
+      "summary": "Attackers have been exploiting a zero-day vulnerability in Adobe Reader using maliciously crafted PDF documents since at least December. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers steal $3.6 million from crypto ATM giant Bitcoin Depot",
+      "url": "https://www.bleepingcomputer.com/news/security/crypto-atm-giant-bitcoin-depot-says-hackers-stole-36-million-from-its-wallets/",
+      "published": "2026-04-09T07:44:55",
+      "summary": "Bitcoin Depot, which operates one of the largest Bitcoin ATM networks, says attackers stole $3.665 million worth of Bitcoin from its crypto wallets after breaching its systems last month. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft suspends dev accounts for high-profile open source projects",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-suspends-dev-accounts-for-high-profile-open-source-projects/",
+      "published": "2026-04-09T06:46:26",
+      "summary": "Microsoft has suspended developer accounts used to maintain multiple high-profile open-source projects without proper notification and no way to quickly reinstate them, effectively blocking them from publishing new software builds and security patches for Windows users. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers use pixel-large SVG trick to hide credit card stealer",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-use-pixel-large-svg-trick-to-hide-credit-card-stealer/",
+      "published": "2026-04-08T22:34:26",
+      "summary": "A massive campaign impacting nearly 100 online stores using the Magento e-commerce platform hides credit card-stealing code in a pixel-sized Scalable Vector Graphics (SVG) image. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Google: New UNC6783 hackers steal corporate Zendesk support tickets",
+      "url": "https://www.bleepingcomputer.com/news/security/google-new-unc6783-hackers-steal-corporate-zendesk-support-tickets/",
+      "published": "2026-04-08T21:46:27",
+      "summary": "A threat actor tracked as UNC6783 is compromising business process outsourcing (BPO) providers to gain access to high-value companies across multiple sectors. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New macOS stealer campaign uses Script Editor in ClickFix attack",
+      "url": "https://www.bleepingcomputer.com/news/security/new-macos-stealer-campaign-uses-script-editor-in-clickfix-attack/",
+      "published": "2026-04-08T18:55:43",
+      "summary": "A new campaign delivering the Atomic Stealer malware to macOS users abuses the Script Editor in a variation of the ClickFix attack that tricked users into executing commands in Terminal. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA orders feds to patch exploited Ivanti EPMM flaw by Sunday",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-exploited-ivanti-epmm-flaw-by-sunday/",
+      "published": "2026-04-08T18:15:27",
+      "summary": "CISA has given U.S. government agencies four days to secure their systems against a critical-severity vulnerability in Ivanti Endpoint Manager Mobile (EPMM) that has been exploited in attacks since January. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "13-year-old bug in ActiveMQ lets hackers remotely execute commands",
+      "url": "https://www.bleepingcomputer.com/news/security/13-year-old-bug-in-activemq-lets-hackers-remotely-execute-commands/",
+      "published": "2026-04-08T17:26:40",
+      "summary": "Security researchers discovered a remote code execution (RCE) vulnerability in Apache ActiveMQ Classic that has gone undetected for 13 years and could be exploited to execute arbitrary commands. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Is a $30,000 GPU Good at Password Cracking?",
+      "url": "https://www.bleepingcomputer.com/news/security/is-a-30-000-gpu-good-at-password-cracking/",
+      "published": "2026-04-08T14:00:10",
+      "summary": "A $30,000 AI GPU doesn't outperform consumer GPUs at password cracking. Specops explains why attackers don't need exotic hardware to break weak passwords. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft rolls out fix for broken Windows Start Menu search",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-rolls-out-fix-for-broken-windows-start-menu-search/",
+      "published": "2026-04-08T07:00:55",
+      "summary": "Microsoft has pushed a server-side fix for a known issue that broke the Windows Start Menu search feature on some Windows 11 23H2 devices. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploit critical flaw in Ninja Forms WordPress plugin",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-critical-flaw-in-ninja-forms-wordpress-plugin/",
+      "published": "2026-04-07T22:03:01",
+      "summary": "A critical vulnerability in the Ninja Forms File Uploads premium add-on for WordPress allows uploading arbitrary files without authentication, which can lead to remote code execution. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FBI: Americans lost a record $21 billion to cybercrime last year",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-americans-lost-a-record-21-billion-to-cybercrime-last-year/",
+      "published": "2026-04-07T20:41:52",
+      "summary": "U.S. victims lost nearly $21 billion to cyber-enabled crimes last year, driven primarily by investment scams, business email compromise, tech support fraud, and data breaches, the Federal Bureau of Investigation says. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Snowflake customers hit in data theft attacks after SaaS integrator breach",
+      "url": "https://www.bleepingcomputer.com/news/security/snowflake-customers-hit-in-data-theft-attacks-after-saas-integrator-breach/",
+      "published": "2026-04-07T19:39:18",
+      "summary": "Over a dozen companies have suffered data theft attacks after a SaaS integration provider was breached and authentication tokens stolen. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "US warns of Iranian hackers targeting critical infrastructure",
+      "url": "https://www.bleepingcomputer.com/news/security/us-warns-of-iranian-hackers-targeting-critical-infrastructure/",
+      "published": "2026-04-07T18:02:26",
+      "summary": "Iranian-linked hackers are targeting Internet-exposed Rockwell/Allen-Bradley programmable logic controllers (PLCs) on the networks of U.S. critical infrastructure organizations. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Russia Hacked Routers to Steal Microsoft Office Tokens",
+      "url": "https://krebsonsecurity.com/2026/04/russia-hacked-routers-to-steal-microsoft-office-tokens/",
+      "published": "2026-04-07T17:02:44",
+      "summary": "Hackers linked to Russia's military intelligence units are using known flaws in older Internet routers to mass harvest authentication tokens from Microsoft Office users, security experts warned today. The spying campaign allowed state-backed Russian hackers to quietly siphon authentication tokens from users on more than 18,000 networks without deploying any malicious software or code."
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Germany Doxes \u201cUNKN,\u201d Head of RU Ransomware Gangs REvil, GandCrab",
+      "url": "https://krebsonsecurity.com/2026/04/germany-doxes-unkn-head-of-ru-ransomware-gangs-revil-gandcrab/",
+      "published": "2026-04-06T02:07:17",
+      "summary": "An elusive hacker who went by the handle \"UNKN\" and ran the early Russian ransomware groups GandCrab and REvil now has a name and a face. Authorities in Germany say 31-year-old Russian Daniil Maksimovich Shchukin headed both cybercrime gangs and helped carry out at least 130 acts of computer sabotage and extortion against victims across the country between 2019 and 2021."
+    }
+  ],
+  "reddit_posts": [
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio Fraud Operations suspended my solo\u2011dev account, any alternatives in USA?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 8,
+      "created_utc": "2026-04-09T09:47:41.632625",
+      "url": "https://www.reddit.com/r/twilio/comments/1s0bmjf/twilio_fraud_operations_suspended_my_solodev/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "harvey_croat",
+          "body": "Infobip",
+          "score": 2,
+          "created_utc": 1774289397.0
+        },
+        {
+          "author": "PacificPermit",
+          "body": "Blooio no a2p and you\u2019ll be sending instantly. No approvals no wait period no bs",
+          "score": 2,
+          "created_utc": 1774403528.0
+        },
+        {
+          "author": "exquisitevision",
+          "body": "I've used twilio for years. Never had any issues. They require the items from ctia best practices iirc. That's the same for all providers in the US. Before them I used another provider where deliverability wasn't as good. I believe twilio has direct connections to the big 3 carrier whereas others go through aggregators so deliverability may not be as good  ",
+          "score": 1,
+          "created_utc": 1774551327.0
+        },
+        {
+          "author": "Apprehensive_Bat_141",
+          "body": "I\u2019ve been round and round with fraud team trying to get my business account activated. \n\nProvided my EIN paperwork 3x. Provided my articles of incorporation and other paperwork 3x.  Provided screenshots of the state website showing business (they say the state website isn\u2019t accessible).  Provided my business email, phone and address. \n\nStuck. They want to see me posting my business in my LinkedIn. That\u2019s just absurd.  \n\nCannot get my legit business approved.  Going on 3 weeks. ",
+          "score": 1,
+          "created_utc": 1774566072.0
+        },
+        {
+          "author": "MrPap",
+          "body": "Twilio\u2019s support is overseas. If your site is behind security that restricts connection from overseas, then they can\u2019t access your site.\n\nTwilio also prefers users use their authy product for 2fa so will make it hard for your use case.\n",
+          "score": 1,
+          "created_utc": 1774288757.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "experience with fraud takeover? *personally* on hook for $30k+, Twilio unresponsive",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 55,
+      "created_utc": "2026-04-09T09:47:43.418298",
+      "url": "https://www.reddit.com/r/twilio/comments/su72c0/experience_with_fraud_takeover_personally_on_hook/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "HeronPlus5566",
+          "body": "Surely you built some abuse prevention of your own into your environment ?  Yeah the ticket response isn\u2019t great",
+          "score": 5,
+          "created_utc": 1645052897.0
+        },
+        {
+          "author": "CSisFreeStress",
+          "body": "I know the feeling I had something similar for Google Cloud. They've just now started introducing webhooks on payment in AWS so hopefully GCP and the other autoscaling SaaS companies will too.",
+          "score": 2,
+          "created_utc": 1645055602.0
+        },
+        {
+          "author": "Talloakster",
+          "body": "Only sorta. Got inconsistent info and some reversals but other damages we just to live with. No matter terrible their support is - and they wouldn't respond at all for days even with the scope of the problem, I guess I wouldn't recommend starting the chargeback process. Once I did that they stopped offering any support- apparently they really don't like that.",
+          "score": 1,
+          "created_utc": 1651534795.0
+        },
+        {
+          "author": "Extra_Air2013",
+          "body": "Just had a similar issue happen with my company and now I have a balance of $4300 on my account and they won't let me close the account.  Curious what the resolution was for you and if you were able to get the funds reversed.  Ironically enough, I don't even use the Twilio service anymore, it was originally set up on a non profit website to spread kindness of all things, but someone hacked into the Twilio side of things and apparently send a billion messages that I'm not on the hook for.  Ugh.",
+          "score": 1,
+          "created_utc": 1726240710.0
+        },
+        {
+          "author": "Intelligent_Horse297",
+          "body": "Hello all,\n\nI just wanted to share an experience I had seen on Reddit that I hoped would never happen.\n\nOver the last two months, I have had two instances where my account with Twilio was suspended. I was told each time to do the \"Sanitation steps\" which are\n\n* [Delete your auth token(s)](https://help.twilio.com/hc/en-us/articles/223136027-Auth-Tokens-and-How-to-Change-Them)(including for sub-accounts if you have any)\n* Change the password\u00a0for all users associated with your account\n* [Delete all existing API keys](https://help.twilio.com/hc/en-us/articles/9318455807771-API-Keys-and-How-to-Change-Them)\n\nThen, I had to create an RCA report to send in so my account could be verified as protected and reactivated. I have an app that sends out automatic reminders; thus, Twilio is needed. This was resolved both times, with the most recent date being the 15th of October.\n\nThen, today, Oct 21st, I got a bunch of emails from Twilio and banking messages indicating reloading charges from Twilio. My fear came true, and I rushed home to turn off the auto charge, and my bank turned off my card. I now have a sitting balance of $3600 with Twilio. This all happened in a matter of 10 minutes. Being a smaller account that is only usually charged $20-30 per month, I do not have phone support and rely on slow emails to figure this out.\n\nI can only locate the subaccounts if I go to Account Billing -&gt; Usage By Subaccount, where I find two random accounts not connected to my main account with phone numbers created today.\n\nI am trying to figure out what to do from this point on. I am confused because I followed their security steps. I have deleted my Auth tokens, changed passwords, and deleted all existing API tokens twice. I have 2FA by text message on and have never received any messages notifying off an IP address from other countries trying to log in. When I ask Twilio Fraud support, they simply say, \"Unfortunately, it seems your account was not secure, and you have not mitigated the root cause factor on your end.\"\n\nThen why did you read my RCA twice and approve that my account was secure? How else could I make it more secure?\n\nI have found 2 things others can do to help. I firmly believe this issue lies with Twilio exclusively, but this is ridiculous\n\n1. Deactivate activity to other countries.\u00a0[https://www.twilio.com/docs/sip-trunking/voice-dialing-geographic-permissions](https://www.twilio.com/docs/sip-trunking/voice-dialing-geographic-permissions)\n2. Do not auto-renew. This service is not trustworthy for those who cannot afford a hack, even when you follow all the steps.\n\nAs I figure this out, I will not be able to send reminders to my customers for a couple of weeks, and I am now out $1500 of needed money during my business off-season.",
+          "score": 1,
+          "created_utc": 1729539442.0
+        },
+        {
+          "author": "Large_Papaya_1322",
+          "body": "This just happened to me now! In a few days Twilio charged $16k to my expired cc that somehow went thru and I\u2019m not on autopay or anything! I\u2019m trying to contact them now wish me luck :(",
+          "score": 1,
+          "created_utc": 1732073373.0
+        },
+        {
+          "author": "Objective_Spot7997",
+          "body": "Something similar just happened to me. The auto-recharge drained my business account, and now my Twilio balance is showing -$200. I'm confident my credentials weren\u2019t leaked, so I\u2019m left wondering how this could have happened. It\u2019s concerning, and I\u2019m starting to question Twilio\u2019s systems.",
+          "score": 1,
+          "created_utc": 1733171310.0
+        },
+        {
+          "author": "i_use_this_for_work",
+          "body": "While what happened to you sucks, this happens across services to all sorts of people.\n\nTwilio is not responsible to monitor your account, nor are they responsible for the security breach that led to your account being accessed.\n\nTwilio has significant security controls available, just line AWS and Google.\n\nWork on reinforcing your security to prevent this, and work with twilio and your credit card company.\n\nSide note- if it\u2019s a surprise to you that you\u2019re responsible for your business credit card, it may be a good point in your start-up to pause and look at the whole circumstances and assess your risk profile. It seems like you\u2019re uncomfortable being on the hook for a credit card bill, what happens when you get sued by an employee or client and have a $10k bill just to respond to the suit?",
+          "score": 1,
+          "created_utc": 1645106041.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Authy hacked tonight",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 5,
+      "created_utc": "2026-04-09T09:47:45.471108",
+      "url": "https://www.reddit.com/r/twilio/comments/10sftuc/authy_hacked_tonight/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "philnash",
+          "body": "That sounds horrible. Get on to Authy support here: https://authy.com/help/. They might be able to help.",
+          "score": 3,
+          "created_utc": 1675415102.0
+        },
+        {
+          "author": "Same_Particular6349",
+          "body": "you ever figure this out?",
+          "score": 1,
+          "created_utc": 1681245429.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Will downloading twilio on my personal phone compromise my personal information, or should my company supply me a company phone to use for work purposes?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 4,
+      "created_utc": "2026-04-09T09:47:47.045823",
+      "url": "https://www.reddit.com/r/twilio/comments/11m1mbd/will_downloading_twilio_on_my_personal_phone/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "BitcoinCitadel",
+          "body": "Certain company apps take over your phone but I think that's just a client. See what it asks for",
+          "score": 1,
+          "created_utc": 1678378384.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Should Authy users be concerned about the recent Twilio breach?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 7,
+      "created_utc": "2026-04-09T09:47:48.578544",
+      "url": "https://www.reddit.com/r/twilio/comments/wv4j97/should_authy_users_be_concerned_about_the_recent/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "frankimbur",
+          "body": "They have been eerily silent about it\u2026.",
+          "score": 1,
+          "created_utc": 1661207552.0
+        },
+        {
+          "author": "getatmethough",
+          "body": "Ha ha ha\u2026. Wait till someone hacks your account even with 2fa enabled sends 10,000,000 messages in the course of an hour and twilio tells you that you still have to pay\u2026. Also, don\u2019t forget to read your agreement letting you know that ALL conversations and texts are monitored. Fawk twilio",
+          "score": -3,
+          "created_utc": 1661211154.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Help preventing and stopping OTP attacks",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 12,
+      "created_utc": "2026-04-09T09:47:50.175847",
+      "url": "https://www.reddit.com/r/twilio/comments/ozk81e/help_preventing_and_stopping_otp_attacks/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "thegrif",
+          "body": "**Work on getting better at detecting and isolating synthetic traffic.** Use a layered approach that combines fingerprinting ([botd](https://github.com/fingerprintjs/botd) is a decent place to start) and ip address intelligence (i've had success using the [ipinfo.io proxy/vpn detection solution](https://ipinfo.io/products/proxy-vpn-detection-api)).\n\n**Flip the script.** You could, in theory, rely on an alternate approach where users text a specific six-digit code to a specific phone number - and only then will the phone number be associated with the account being created. If these attacks are truly sinking your fleet, pivot to this - it doesn't sacrifice any of the validity of the verification.",
+          "score": 1,
+          "created_utc": 1628379928.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "SMS fraud... Spam... DOS...",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 4,
+      "created_utc": "2026-04-09T09:47:51.811858",
+      "url": "https://www.reddit.com/r/twilio/comments/vhs60a/sms_fraud_spam_dos/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "seg492",
+          "body": "Here's a great overview one of our security-focused teammates put together recently: [https://www.twilio.com/blog/basic-api-security-guide](https://www.twilio.com/blog/basic-api-security-guide)\n\nThat covers the basics like enabling MFA on your account, using secure access tokens, etc. Like any API-based service, make sure to protect your admin/user accounts and the ability to make calls to the platform.\n\nOne in particular to call out for SMS is restricting [Geo Permissions](https://support.twilio.com/hc/en-us/articles/223180168-What-Are-Geographic-Permissions-and-Why-do-They-Exist-) to only the countries you operate in. Bad actors may try to use your token to trigger SMS &amp; rack up a bunch of charges in a foreign country, footing you with the bill.\n\nAfter restricting sending to other countries, set up email alerts ([should be here in your console](https://console.twilio.com/us1/monitor/alarms/create)) to let you know if you experience [a 21408 error](https://www.twilio.com/docs/api/errors/21408) \\- this means there was an attempted send to a country you did not allow. Could be fraud, but could also be real, so worth keeping tabs on.",
+          "score": 2,
+          "created_utc": 1655906439.0
+        },
+        {
+          "author": "seg492",
+          "body": "@TheSaltyB - unclear on whether you\u2019re exposing your auth token. Are you calling Twilio from JavaScript on that landing page? If you came across an integration with Marketo, it\u2019s likely that your token isn\u2019t exposed and only exists in Marketo\u2019s backend.\n\nTwilio aside, could this form be embedded somewhere like an internet website/intranet users have to sign into? If not, tools like Recaptcha can be help reduce spam. Also, it sounds like you don\u2019t need this to be findable/searchable, so if Marketo lets you customize the url where it\u2019s hosted, you could set the url path to a long randomized string (ie \u201cmarketo.com/forms/ogecni358db42yu\u201d rather than \u201cmarketo.com/forms/employee-intake-form\u201d). \u201cSecurity by obscurity\u201d isn\u2019t exactly a silver billet, but still decreases the odds some random person would stumble across the form if it\u2019s hosted at a publicly-accesible url.",
+          "score": 1,
+          "created_utc": 1664191568.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio forces users to set up insecure 2FA method prone to hacker attacks",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 10,
+      "created_utc": "2026-04-09T09:47:53.352561",
+      "url": "https://www.reddit.com/r/twilio/comments/nf5b30/twilio_forces_users_to_set_up_insecure_2fa_method/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "mjg123",
+          "body": "Hi there. The setup flow is a bit unexpected here because you do have to set it up as SMS-based initially, but you can immediately disable that in favour of Authy or any other authenticator app (here: [https://www.twilio.com/console/user/settings](https://www.twilio.com/console/user/settings)).",
+          "score": 8,
+          "created_utc": 1621331604.0
+        },
+        {
+          "author": "men2000",
+          "body": "I enabled two factor authentication and not having this type of problem. I setup when they enforced this feature. But for this type of issue, you can directly contact the Twilio support.",
+          "score": 2,
+          "created_utc": 1621328896.0
+        },
+        {
+          "author": "Stryker1-1",
+          "body": "I've always had the option from the very beginning to switch from sms to an authenticator app for 2FA.",
+          "score": 2,
+          "created_utc": 1621357162.0
+        },
+        {
+          "author": "garaktailor",
+          "body": "Its embarrassing that twilio doesn't support WebAuthn",
+          "score": 0,
+          "created_utc": 1621363539.0
+        },
+        {
+          "author": "rsyncnet",
+          "body": "You are all thinking of this backwards.\n\nTwilio didn't do this for you or for your security or to help you.  This has nothing to do with you.\n\nTwilio has a big, monster spam/scam problem - I'll bet a new abuser signs up for a Twilio account every 60 seconds.  Requiring a *physical SIM card number* for every account is just a blunt mechanism to slow this process down and, at the very least, weed out the least sophisticated offenders.  They're just attaching some small cost(s) to creating a Twilio account and firing off 1000 spam SMS (or whatever abusers do).\n\nOf course this won't stop sophisticated abusers of Twilio service and it mostly just annoys and inconveniences legitimate users but this is a *really hard problem to solve* and it doesn't surprise me that they resorted to this.\n\nFor the record, I hate it.",
+          "score": 1,
+          "created_utc": 1621558343.0
+        },
+        {
+          "author": "recolick",
+          "body": "I don't care it's secure or not at all.\n\nI'm just annoyed that Twilio is forcing me to be secure. twilio don't care if their customer is happy, they just want themselves to be happy.\n\nTwilio when will you force every user to use \\`30 digit password (no english word allowed) + fingerprint + face recognition + SMS verification + voice verification + yubikey\\` to log into their account? It's even more secure than your current 2fa, right?",
+          "score": 1,
+          "created_utc": 1687827602.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio discloses data breach after SMS phishing attack on employees",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2026-04-09T09:47:54.962194",
+      "url": "https://www.twilio.com/blog/august-2022-social-engineering-attack",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "API Key Hacked",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2026-04-09T09:47:54.962231",
+      "url": "https://www.reddit.com/r/twilio/comments/vwzltd/api_key_hacked/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio and Authy HACKED?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 7,
+      "created_utc": "2026-04-09T09:47:54.962238",
+      "url": "https://www.reddit.com/r/twilio/comments/lg6z6k/twilio_and_authy_hacked/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Plivo unique email leaked. Was Plivo or Twilio Hacked?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 5,
+      "created_utc": "2026-04-09T09:47:56.578468",
+      "url": "https://www.reddit.com/r/twilio/comments/i9umlt/plivo_unique_email_leaked_was_plivo_or_twilio/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "TopCow0",
+          "body": "What does this have to do with Twilio?",
+          "score": 3,
+          "created_utc": 1597475048.0
+        },
+        {
+          "author": "philnash",
+          "body": "Twilio developer evangelist here. I'm unaware of any breaches at Twilio. Also, not sure why Twilio would leak your Plivo address? Unless you are using that one for both services?",
+          "score": 2,
+          "created_utc": 1597464034.0
+        },
+        {
+          "author": "SirMoist394",
+          "body": "Those stupid spam calls I get come back as plivo owned. Companies like that make it so our information gets stolen. Just gather everyone's information and if someone takes it, \"oops\".",
+          "score": 1,
+          "created_utc": 1607373114.0
+        },
+        {
+          "author": "wodny85",
+          "body": "Same with unique addresses here. Just received a scam SPAM message as well. Apparently Polish users were targeted. The CC list is quite long.",
+          "score": 1,
+          "created_utc": 1610580049.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "\ud83c\udf83 \ud83d\udc7a Spooky Hack-o-ween \ud83d\udc7a \ud83c\udf83",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 3,
+      "created_utc": "2026-04-09T09:47:58.155393",
+      "url": "https://www.reddit.com/r/twilio/comments/di9hh7/spooky_hackoween/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "mjg123",
+          "body": "As for me, I bought a cheap 2nd-hand electric heater for my home office which is basically a shed and very cold in winter. I'm going to wire up a remote control power switch to an Arduino GSM module with a Twilio SIM in it so that I can turn the heater on or off by SMS. It's a weekend project that's getting more and more urgent as the days pass.",
+          "score": 1,
+          "created_utc": 1571154898.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio charged me $10k in one day for fraudulent sms verifications - I can't get a reply from them.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 44,
+      "created_utc": "2026-04-09T09:47:59.748326",
+      "url": "https://www.reddit.com/r/twilio/comments/1ptcgtm/twilio_charged_me_10k_in_one_day_for_fraudulent/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "Intelligent_Horse297",
+          "body": "This happened to me a while back. I took off my payment info, and filed for new phone number under a new account and was without texting on my app for over a month. They are of no help, now I reload the account manually $50 every month.\u00a0",
+          "score": 4,
+          "created_utc": 1766444441.0
+        },
+        {
+          "author": "DisastrousJoke3426",
+          "body": "I dropped Twilio, did a chargeback on my payment method for non-response or movement on my issue, and went to Vonage.  \n\nVonage responds quickly to my inquiries, which allows me to focus on more important things than plumbing an API. \n\nLike my customers.",
+          "score": 3,
+          "created_utc": 1766462262.0
+        },
+        {
+          "author": "Empty-Mulberry1047",
+          "body": "that's what happens when you vibecode an endpoint, open it to the public, and fail to understand the implications of doing so. it's unlikely twilio will give you a refund.",
+          "score": 3,
+          "created_utc": 1766506789.0
+        },
+        {
+          "author": "helloween123",
+          "body": "Can you publicly tag them on LinkedIn?",
+          "score": 2,
+          "created_utc": 1766443783.0
+        },
+        {
+          "author": "Beerstud",
+          "body": "Sorry to hear. Have experienced the same issue - Twilio used to have SMS Traffic Pumping Protection which covered you for loss in this circumstance. Potentially not the whole amount, but some. I went through standard support channels and got a response but it wasn't fast - our service was down for a few weeks while we tried to sort it out.",
+          "score": 2,
+          "created_utc": 1766444644.0
+        },
+        {
+          "author": "galapagos7",
+          "body": "Impossible to talk unless you upgrade to support tier \u2026 we spend $3k per month on sms \u2026 tickets take forever to resolve",
+          "score": 2,
+          "created_utc": 1766468510.0
+        },
+        {
+          "author": "AyyRickay",
+          "body": "Normally I would remove this post, because we're NOT a support channel and can't really escalate things like this - the support thread is typically the place for posts like this to go.\n\nI'll keep it up, though, because this is generally an issue people are running into on the platform.\nUltimately, I know it sucks, but if you're spending thousands on a platform, consider paid support. I'm thinking of your next provider as well. It's the clearest way for you to make sure you get heard and have an SLA.\n\nI also know this is just a fundamental issue on a pay-as-you-go platform, and we need better guardrails and monitoring. I'm sorry this happened, and we need a better way of helping you set up alerts when anomalies happen, and making sure customers who are at your kind of scale can keep an eye on this kind of anomalous traffic.",
+          "score": 6,
+          "created_utc": 1766442794.0
+        },
+        {
+          "author": "isit2amalready",
+          "body": "Twilio support is utter trash. They leave so much money on the table with their non-existent support.\n\nI had the same issue with Sendgrid (acquired by Twilio) where my monthly bill 10x'd to $7,000. No support at all, I had to switch credit cards and bail like a criminal because I couldn't speak to a single human. Super trash.\n\nGood luck!",
+          "score": 3,
+          "created_utc": 1766465588.0
+        },
+        {
+          "author": "PsychologyFull6085",
+          "body": "Yeah the fact the solution is to spend thousands of dollars for support is laughable, especially when there are other companies that offer messaging APIs that don\u2019t charge for support.",
+          "score": 1,
+          "created_utc": 1766444504.0
+        },
+        {
+          "author": "PetrisCy",
+          "body": "Cant you chargeback and use the no support as an excuse? Like call bank say some scum happened and they are not responding and no way to communicate? I think you are way too chill for 10k for nothing",
+          "score": 1,
+          "created_utc": 1766494922.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Haven't used Twilio for ages and charged out of nowhere?!",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 12,
+      "created_utc": "2026-04-09T09:48:01.462407",
+      "url": "https://i.redd.it/2udgackcavpg1.png",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Is someone impersonating me?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 2,
+      "created_utc": "2026-04-09T09:48:02.982508",
+      "url": "https://www.reddit.com/gallery/1rt6g3i",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio for Mixed Use (Personal + Business) - Account Suspended",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 10,
+      "created_utc": "2026-04-09T09:48:02.982603",
+      "url": "https://www.reddit.com/r/twilio/comments/1pc9nuo/twilio_for_mixed_use_personal_business_account/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "Baconwader",
+          "body": "Looks like you're going to need to start over. Would try Textla for your SMS and Rebrandly to make sure your links/content don't get flagged as spam.",
+          "score": 6,
+          "created_utc": 1764700637.0
+        },
+        {
+          "author": "gc1",
+          "body": "Well you told them it was for personal use not business and then provided examples that clearly included client business. I\u2019m not sure what the non-US frameworks for messaging are, but in the US, P2P definitionally excludes the business use case, and A2P registration including proof you exist as a business is required. \u00a0\n\nIt looks to me like you are being caught in a loop of trying to get this number approved for non-business use when a) their framework is business use is the primary use case, and P2P for personal use is an exception case, and b) you are not describing a strict personal use case.\u00a0",
+          "score": 3,
+          "created_utc": 1764690019.0
+        },
+        {
+          "author": "t0x0",
+          "body": "They literally don't want that sort of business. It is what it is.",
+          "score": 1,
+          "created_utc": 1764706404.0
+        },
+        {
+          "author": "ZacaBala",
+          "body": "I'm in fallback mode. I just need a mobile UK number that's capable of sending and receiving SMSs and calls and works with Groundwire. That's all.\n\n[Voip.ms](http://Voip.ms) \\&gt; Can't find mobile UK numbers, just sent a message to their support.\n\nSuggestions are appreciated...",
+          "score": 1,
+          "created_utc": 1764721695.0
+        },
+        {
+          "author": "O1O1O1O",
+          "body": "Funny I did a similar thing with Twilio about 8 years ago at a time when I was also using their telephony stack in my day job.  I'm guessing they have been deluged with people using their service to build wrong number scam systems and the like.  Your emails were probably never even seen by a real person who could determine you are a real person.",
+          "score": 1,
+          "created_utc": 1764743373.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Does the billing area in console display all usage?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 3,
+      "created_utc": "2026-04-09T09:48:04.632972",
+      "url": "https://www.reddit.com/r/twilio/comments/1qx6q6f/does_the_billing_area_in_console_display_all_usage/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "AyyRickay",
+          "body": "Is it possible you have another account in your organization where the billing is coming from? [https://help.twilio.com/articles/8963038518299-Introduction-to-Twilio-Organizations](https://help.twilio.com/articles/8963038518299-Introduction-to-Twilio-Organizations)\n\nAs far as I know you get a breakdown of all of the product usage in your account, which is why my initial thought was that maybe the problem is that the charge isn't on this account, but another one in the same org. Worst case, it's just a different account entirely and somebody got access to your card.\n\n  \nCurious to hear what the resolution is!",
+          "score": 1,
+          "created_utc": 1770474314.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio deactivated my account. Any idea why? I don\u2019t understand\u2026",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 14,
+      "created_utc": "2026-04-09T09:48:06.167335",
+      "url": "https://www.reddit.com/gallery/1g40uxl",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "covati",
+          "body": "Yea, unfortunately A LOT of telecom abuse comes from Russia. So unless you can prove you\u2019re legit it\u2019s not worth the risk to approve you.",
+          "score": 5,
+          "created_utc": 1728991871.0
+        },
+        {
+          "author": "swagszg",
+          "body": "Yes, I\u2019m from Russia \nI probably won\u2019t be able to prove that I will use the product for good purposes\nThis is sad, thanks everyone for the answers",
+          "score": 3,
+          "created_utc": 1729004096.0
+        },
+        {
+          "author": "Meaxis",
+          "body": "The US banned commercial activity with Russia in parts.",
+          "score": 5,
+          "created_utc": 1729096221.0
+        },
+        {
+          "author": "Quebell",
+          "body": "Man, I had this happen to me and I am in the states. I just signed up and everything about their support makes me not want to use their service.",
+          "score": 3,
+          "created_utc": 1739238672.0
+        },
+        {
+          "author": "Confident-Lead4337",
+          "body": "Also if you get reported for being a spam call they deactivate your account if someone reports your number",
+          "score": 2,
+          "created_utc": 1729560202.0
+        },
+        {
+          "author": "Auser1452",
+          "body": "Try vonage",
+          "score": 2,
+          "created_utc": 1729617322.0
+        },
+        {
+          "author": "walking_pigeon_",
+          "body": "And I was just deactivated. No clue why. I'm an indie-dev. They've got $20bucks of mine. Did they just pocket my money?",
+          "score": 1,
+          "created_utc": 1734546040.0
+        },
+        {
+          "author": "Altruistic-Sea-9541",
+          "body": "Twilio sucks, just check their trustpilot scores. They banned me for no reason as well. Using Telnyx instead, great platform.",
+          "score": 2,
+          "created_utc": 1729135783.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "OKTA BYOT - Why is \"Send Feedback to Twilio Verify\" for?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 0,
+      "created_utc": "2026-04-09T09:48:08.556997",
+      "url": "https://www.reddit.com/r/twilio/comments/1k7lwy4/okta_byot_why_is_send_feedback_to_twilio_verify/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Authy closing 2FA service?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 28,
+      "created_utc": "2026-04-09T09:48:08.557096",
+      "url": "https://www.reddit.com/r/twilio/comments/11glwnt/authy_closing_2fa_service/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "philnash",
+          "body": "The Authy API is closing soon, but the Authy application will continue to work so you should have nothing to worry about.\n\nServices that use the Authy API have been notified and encouraged to upgrade to the Twilio Verify API: https://www.twilio.com/blog/migrate-authy-to-verify. I don\u2019t know what the Uphold email says, but they should be going through this process in order to keep your account secured with 2FA.",
+          "score": 6,
+          "created_utc": 1677832135.0
+        },
+        {
+          "author": "bishnumahali",
+          "body": "I thought the same thing. It's just an upgrade to a different version I believe. Thanks, everyone for shedding light on this.",
+          "score": 2,
+          "created_utc": 1678190410.0
+        },
+        {
+          "author": "BrCapoeira",
+          "body": "any update?",
+          "score": 2,
+          "created_utc": 1686221030.0
+        },
+        {
+          "author": "itoldusoandso",
+          "body": "As of November 2022, Twilio no longer provides support for Authy SMS/Voice-only customers. Customers who were also using Authy TOTP or Push prior to March 1, 2023 are still supported. The Authy API is now closed to new customers and will be fully deprecated in the future.\n\nThis means they closing the service to new customers for API but they are continuing running for the existing customers using the 2FA app verification, at least for the time being and they did not announce any date for sunset yet.\n\nThe fact Twilio purchased Authy was perhaps a good thing because Authy would not have survived as a free service and would not survive as a stand-alone business solution either given how the drive to integrate authentication. \n\nIt doesn't look like Twilio will provide any consumer type of solution. They just seem to focus where the money is. I do use Twilio for cheap VOIP number and forward calls but I am not their typical customer business so I wouldn't be surprised they completely shut down the consumer business and only focus on commercial customers. Given how much some providers charge for VOIP numbers, Twilio is quite cheap and reliable service. \n\nThe Authy app has been running reliably but they haven't invested in it for years and there were things about it that sucked really.\n\nWhat apps are you going to use when you move from Authy? I never liked the idea to use the 2FA app from the same company that stores my passwords (Lastpass here as example was hacked not once but multiple times), or by company that provides essential services to me (Google).\n\nThere are a couple of additional concerns, mainly around account recovery. If all of my devices are lost can I still log into the service? If I lose the phone number, email etc, can I still access it if needed etc? The advantage of Authy was it enabled me to login using phone or email and it works pretty well across devices if I don't make changes / deletion to passwords which was sometimes troublesome. \n\nAn additional concern is if you use hardware keys along with Authy like Yobikey etc. I have no experience with these.\n\n Here are some alternatives:\n\n  \nGoogle Authenticator\n\nandOTP \n\nLastPass Authenticator \n\nMicrosoft Authenticator\n\n&amp;#x200B;\n\nWhat else?",
+          "score": 2,
+          "created_utc": 1688924999.0
+        },
+        {
+          "author": "MaximusPanin",
+          "body": "Desktop app sunset notice\n\nOn **March 19, 2024**, we will no longer support the Twilio Authy Desktop apps.\n\nHere's what you need to know &gt; [https://help.twilio.com/articles/19753631228315](https://help.twilio.com/articles/19753631228315)\n\nTo continue using Authy, please install the Authy Android or iOS mobile app.",
+          "score": 1,
+          "created_utc": 1709902725.0
+        },
+        {
+          "author": "FreedomTechHQ",
+          "body": "Authy shut the Desktop app without export ability and it is unacceptable. Please sign our petition to get export functionality. [https://www.change.org/p/twilio-authy-implement-data-export-now](https://www.change.org/p/twilio-authy-implement-data-export-now)",
+          "score": 1,
+          "created_utc": 1740412227.0
+        },
+        {
+          "author": "acedtect",
+          "body": "I can confirm that I was able to add Authy as a \"new\" 2FA provider. The only difference is a 6 digit code vs. a 7 digit code.",
+          "score": 1,
+          "created_utc": 1678218056.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Account credentials exposed? Unauthorized use of API key.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 0,
+      "created_utc": "2026-04-09T09:48:10.251406",
+      "url": "https://www.reddit.com/r/twilio/comments/1huo3m5/account_credentials_exposed_unauthorized_use_of/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Question about large negative balance due to fraudulent activity",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 15,
+      "created_utc": "2026-04-09T09:48:10.251508",
+      "url": "https://www.reddit.com/r/twilio/comments/v43djf/question_about_large_negative_balance_due_to/",
+      "selftext": "",
+      "is_self": false,
+      "comments": [
+        {
+          "author": "quasi635",
+          "body": "In the same boat as you. My account was hacked just a couple weeks ago and the hacker sent thousands of dollars of messages in a couple of hours. Twilio wants to hold me responsible for the charges. Their support credited a small percentage of it but left me with the majority of the balance. I don't have the funds to pay so we'll see what happens.",
+          "score": 2,
+          "created_utc": 1658725569.0
+        },
+        {
+          "author": "aweyrich",
+          "body": "I am in the exact same boot as you all. This just happened to me last week. Did you all cancel your account? Do they let you cancel your account with a large remaining balance on it?  \n\nBesides the very large balance the website charged $452 worth of fraudulent charges on my credit card from the hack before I realized what was going on.  Did this happen to anyone else....where your actual credit card kept getting reupped and charged again and again?   Did they credit you back al the charges to your actual credit card?",
+          "score": 2,
+          "created_utc": 1669273170.0
+        },
+        {
+          "author": "philnash",
+          "body": "If this is fraud then I can only recommend taking it up with Twilio support, which you already have done. I don\u2019t think we can fix anything here on Reddit.",
+          "score": 1,
+          "created_utc": 1654325767.0
+        },
+        {
+          "author": "Eskibro830",
+          "body": "Any update on this?",
+          "score": 1,
+          "created_utc": 1660779250.0
+        },
+        {
+          "author": "PuzzleheadedCod9587",
+          "body": "Do you have any update on this? Did they chase you up for the balance later? I'm in the same boat now - how they are able to be allowed to be in business as an API provider with no rate limits and continue to charge customers after emptying our bank account is beyond me.",
+          "score": 1,
+          "created_utc": 1673027255.0
+        },
+        {
+          "author": "Reddit_Man_Up",
+          "body": "This now the 3rd time its happened to me. Im a very low volume user, about $20 per month. First time, they refunded me as I had auto charge turned on and they said they'd only do it the one time. I turned auto-charge off thinking that their system wouldn't allow a negative balance if the credit in my account ran out. Was I wrong about that. I had to pay over $900 to get them to turn my account back on. They said as long as I had a positive balance, any marketing text session that is started (so long as it had a positive balance when it started), their system would send out how ever many texts were in that session until it ended and my account would go negative. They wouldn't budge on zeroing out my account and said pay up if I wanted my account access backI asked if I could set my account to limit the amount if texts sent out in one session and they said no. Its intentional guys, they could easily limit this but choose not to. And to add insult to injury, the insist the breach is on my end. I have 3 Devs all frustrated with Twilio because Twilio is basically blaming them saying that our website was hacked when it was not. This time to the tune of $6250 worth. And most of the texts were pretty much all blocked by twilio due to the new government text-opt in rules.I Got an email from Twilio saying that my account has been compromised and has been suspended. When I logged in, it was at negative $138. Im thinking great, at least its not $900. But then when my dev. logged in, he told me that it wasn't $138, it was $250. So I opened another duplicate tab and it went to $388. I was watching the amount go up live in real time, $338, $440 and all the way up to $6250 when it stopped. Nothing stopped it. My Dev. changed the Auth Token, but the amount kept climbing. We saw that about 9 other telephone numbers we added by the hackers so my Dev. deleted them but still, the texts continued to go out and the spend amount kept climbing. I want to know why if I got an email from Twilio that said my account had been suspended, then did the spend continue to go up? Fortunately, I was video screenshotting this live in real time. I decided for the lousy amount that I spend each month with Twilio, the stress is not worth using a texting discount code system as this crap has happened now for the third time. I smell a class action here. I can only imaging that a boat load of people like us have paid the hundreds of dollar in negative balances just to get our accounts out of suspension and back working again. For Twilio to not allow us to put limits on our accounts is an intentional move by them and I believe that it's to put the squeeze on us.  They have lost nothing tangible, it's just ones and zeros getting together to send out texts yet they still want to collect money from us even though they know it wasnt us that sent them.  Again, they could do something about it but choose not to.",
+          "score": 1,
+          "created_utc": 1698376413.0
+        }
+      ]
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "What is with this site? I was using my trial account just fine, then as soon as I deposited money my account got suspended.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2026-04-09T09:48:11.847885",
+      "url": "https://www.reddit.com/r/twilio/comments/168d625/what_is_with_this_site_i_was_using_my_trial/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Fraud & Security Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Parallel calls with ability to switch between them? (JavaScript/Node.js)",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 2,
+      "created_utc": "2026-04-09T09:48:11.847928",
+      "url": "https://www.reddit.com/r/twilio/comments/157zzzz/parallel_calls_with_ability_to_switch_between/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    }
+  ],
+  "competitor_maps": []
+}
