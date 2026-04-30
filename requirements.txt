@@ -6,6 +6,7 @@ feedparser==6.0.10              # RSS feeds
 requests==2.31.0                # HTTP requests (for SociaVault, web scraping)
 beautifulsoup4==4.12.2          # Web scraping (future phases)
 playwright==1.59.0              # Headless browser for JS-rendered pages (competitor changelogs)
+scrapling==0.4.7                # Adaptive scraper with stealth (bypasses Cloudflare, handles JS)
 
 # AI/Analysis
 openai>=2.0.0                   # OpenAI GPT-4o (Content Analyzer Agent) - v2.x fixes all httpx compatibility issues
