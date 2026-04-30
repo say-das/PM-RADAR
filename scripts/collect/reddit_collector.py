@@ -69,9 +69,15 @@ class RedditCollector:
             with open(cache_file, 'r') as f:
                 cached = json.load(f)
 
-            # Check if cache is less than 24 hours old
+            # Check if cache is less than 24 hours old AND less than 7 days old
             cached_time = datetime.fromisoformat(cached["cached_at"])
             age = datetime.now() - cached_time
+
+            # Reject cache older than 7 days (stale data protection)
+            if age >= timedelta(days=7):
+                print(f"  → Cache too old (age: {age.days} days), deleting")
+                cache_file.unlink()
+                return None
 
             if age < timedelta(hours=24):
                 return cached["posts"]
@@ -226,7 +232,8 @@ class RedditCollector:
 
                     # Check response
                     if response.status_code != 200:
-                        print(f"✗ API error: {response.status_code}")
+                        error_msg = response.text[:200] if response.text else "No error message"
+                        print(f"✗ API error: {response.status_code} - {error_msg}")
                         continue
 
                     data = response.json()
@@ -291,10 +298,12 @@ class RedditCollector:
                         query_posts.append(post_data)
 
                 except requests.exceptions.RequestException as e:
-                    print(f"✗ Network error: {e}")
+                    print(f"✗ Network error: {str(e)[:100]}")
                     continue
                 except Exception as e:
-                    print(f"✗ Error: {e}")
+                    print(f"✗ Error: {type(e).__name__}: {str(e)[:100]}")
+                    import traceback
+                    print(f"      Details: {traceback.format_exc()[:200]}")
                     continue
 
             # Add all posts from this query to main list
@@ -306,6 +315,16 @@ class RedditCollector:
             print(f"  ✓ Cached for 24 hours")
 
         print(f"\nTotal collected: {len(posts)} posts")
+
+        # Warn if no posts collected
+        if len(posts) == 0:
+            print("\n⚠️  WARNING: No Reddit posts collected!")
+            print("   Possible causes:")
+            print("   - API errors (check logs above)")
+            print("   - No posts matching query in timeframe")
+            print("   - SociaVault API rate limit")
+            print("   - API key issues")
+
         return posts
 
 
