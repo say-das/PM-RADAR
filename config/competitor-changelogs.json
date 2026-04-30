@@ -1,0 +1,57 @@
+{
+  "competitors": [
+    {
+      "id": "vonage",
+      "name": "Vonage",
+      "urls": [
+        {
+          "url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+          "product": "Fraud Defender",
+          "enabled": true,
+          "scrape_mode": "full",
+          "reason": "Dedicated fraud product - all updates relevant"
+        },
+        {
+          "url": "https://developer.vonage.com/en/verify/release-notes",
+          "product": "Verify API",
+          "enabled": true,
+          "scrape_mode": "keyword_filter",
+          "reason": "General product - filter for fraud/security only"
+        }
+      ]
+    },
+    {
+      "id": "bandwidth",
+      "name": "Bandwidth",
+      "urls": [
+        {
+          "url": "https://www.bandwidth.com/release-notes/",
+          "product": "Platform",
+          "enabled": true,
+          "scrape_mode": "keyword_filter",
+          "reason": "Platform changelog - filter for fraud/security"
+        }
+      ]
+    }
+  ],
+  "extraction_settings": {
+    "lookback_days": 90,
+    "keywords": [
+      "fraud",
+      "security",
+      "verification",
+      "authentication",
+      "2FA",
+      "OTP",
+      "anti-spam",
+      "rate limit",
+      "abuse prevention",
+      "phishing",
+      "spoofing",
+      "threat",
+      "AIT"
+    ],
+    "cache_hours": 168,
+    "max_tokens_per_page": 10000
+  }
+}
