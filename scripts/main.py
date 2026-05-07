@@ -20,6 +20,7 @@ MAX_REDDIT_POSTS_FOR_ANALYSIS = 15  # Must match limit in summarizer.py _analyze
 # Import collectors
 from scripts.collect.rss_collector import RSSCollector
 from scripts.collect.reddit_collector import RedditCollector
+from scripts.collect.changelog_scraper_v3 import ChangelogScraperV3
 
 # Import analyzers
 from scripts.analyze.summarizer import ContentAnalyzerAgent
@@ -52,7 +53,8 @@ def main():
         "collection_date": date_str,
         "rss_articles": [],
         "reddit_posts": [],
-        "competitor_maps": []
+        "competitor_maps": [],
+        "competitor_changelogs": []
     }
 
     # Collect RSS feeds
@@ -76,8 +78,17 @@ def main():
     except Exception as e:
         print(f"✗ Reddit collection failed: {e}")
 
+    # Collect competitor changelogs
+    print("\n[1.3] COMPETITOR CHANGELOGS")
+    print("-" * 70)
+    try:
+        changelog_scraper = ChangelogScraperV3()
+        collected_data["competitor_changelogs"] = changelog_scraper.collect_all()
+    except Exception as e:
+        print(f"✗ Changelog collection failed: {e}")
+
     # Source Discovery Agent (Phase 2 - not yet implemented)
-    print("\n[1.3] SOURCE DISCOVERY")
+    print("\n[1.4] SOURCE DISCOVERY")
     print("-" * 70)
     print("⚠ Source Discovery Agent not yet implemented (Phase 2)")
     print("  Will automatically find new competitors, analysts, and community sources")
@@ -327,9 +338,11 @@ def generate_report(collected_data, analysis_results, date_str):
     # Collection stats
     rss_count = len(collected_data["rss_articles"])
     reddit_count = len(collected_data["reddit_posts"])
+    changelog_count = len(collected_data.get("competitor_changelogs", []))
 
     report += f"- **{rss_count}** industry articles reviewed\n"
     report += f"- **{reddit_count}** Reddit discussions analyzed\n"
+    report += f"- **{changelog_count}** competitor updates tracked\n"
 
     if analysis_results and "categorized_counts" in analysis_results:
         telecom_count = analysis_results["categorized_counts"]["telecom"]
@@ -747,8 +760,8 @@ def generate_report(collected_data, analysis_results, date_str):
                             insight_text = insight.get('insight', '')
                             post_nums = insight.get('post_nums', [])
                             if insight_text:
-                                citations = ''.join([f"[\[R{num}\]](#r{num})" for num in post_nums])
-                                report += f"- {insight_text} {citations}\n"
+                                citation_links = ''.join([f"[\[R{num}\]](#r{num})" for num in post_nums])
+                                report += f"- {insight_text} {citation_links}\n"
                         else:
                             # String format (legacy)
                             report += f"- {insight}\n"
@@ -759,6 +772,43 @@ def generate_report(collected_data, analysis_results, date_str):
         else:
             # Fallback to raw text if parsing fails
             report += f"{analysis_results['reddit_community_summary']}\n\n"
+
+        report += "---\n\n"
+
+    # Competition Watch (Competitor Changelogs)
+    if collected_data.get("competitor_changelogs"):
+        report += "## Competition Watch\n\n"
+        report += "*Recent fraud & security developments from messaging competitors*\n\n"
+
+        changelogs = collected_data["competitor_changelogs"]
+
+        # Add changelogs to citations (COMP_1, COMP_2, etc.)
+        for i, change in enumerate(changelogs, 1):
+            citations[f"COMP_{i}"] = {
+                "competitor": change['competitor'],
+                "product": change['product'],
+                "date": change.get('date', 'Unknown'),
+                "title": change.get('title', 'No title'),
+                "url": change.get('source_url', '')
+            }
+
+        # Filter high and medium relevance updates, limit to 6
+        relevant_updates = [c for c in changelogs if c.get('relevance_to_fraud') in ['high', 'medium']][:6]
+
+        if relevant_updates:
+            for change in relevant_updates:
+                # Find citation number
+                citation_num = changelogs.index(change) + 1
+
+                date = change.get('date', 'Unknown')
+                title = change.get('title', 'No title')
+                comp = change['competitor']
+                product = change['product']
+                description = change.get('description', 'No description')
+                relevance = change.get('relevance_to_fraud', 'unknown')
+
+                report += f"**{comp} {product}** ({date}): *{title}* [COMP_{citation_num}]\n\n"
+                report += f"{description}\n\n"
 
         report += "---\n\n"
 
@@ -832,7 +882,7 @@ def generate_report(collected_data, analysis_results, date_str):
         report += "\n"
 
     # Convert long citations to short format with anchor links
-    # ARTICLE_1 -> [A1](#a1) and REDDIT_1 -> [R1](#r1)
+    # ARTICLE_1 -> [A1](#a1), REDDIT_1 -> [R1](#r1), COMP_1 -> [C1](#c1)
 
     # First, handle comma-separated citations like [REDDIT_2, REDDIT_14] -> [REDDIT_2][REDDIT_14]
     def expand_comma_citations(match):
@@ -840,21 +890,22 @@ def generate_report(collected_data, analysis_results, date_str):
         citations = [c.strip() for c in content.split(',')]
         return ''.join(f'[{c}]' for c in citations)
 
-    report = re.sub(r'\[((?:REDDIT|ARTICLE)_\d+(?:,\s*(?:REDDIT|ARTICLE)_\d+)+)\]', expand_comma_citations, report)
+    report = re.sub(r'\[((?:REDDIT|ARTICLE|COMP)_\d+(?:,\s*(?:REDDIT|ARTICLE|COMP)_\d+)+)\]', expand_comma_citations, report)
 
     # Now convert to anchor link format
     report = re.sub(r'\[ARTICLE_(\d+)\]', r'[\[A\1\]](#a\1)', report)
     report = re.sub(r'\[REDDIT_(\d+)\]', r'[\[R\1\]](#r\1)', report)
+    report = re.sub(r'\[COMP_(\d+)\]', r'[\[C\1\]](#c\1)', report)
 
     # Clean up extra commas/spaces between adjacent citations
     # [\[R2\]](#r2), [\[R14\]](#r14) -> [\[R2\]](#r2)[\[R14\]](#r14)
-    report = re.sub(r'(\]\(\#[ar]\d+\)),\s*\[', r'\1[', report)
+    report = re.sub(r'(\]\(\#[arc]\d+\)),\s*\[', r'\1[', report)
 
     # Sources section - append citation references
     # Find all citations used in the report by looking for anchor links
-    # Pattern: (#a1), (#r3) etc. in the markdown links
-    anchor_matches = re.findall(r'#([ar]\d+)\)', report)
-    # Convert to citation format: a1 -> [A1], r3 -> [R3]
+    # Pattern: (#a1), (#r3), (#c1) etc. in the markdown links
+    anchor_matches = re.findall(r'#([arc]\d+)\)', report)
+    # Convert to citation format: a1 -> [A1], r3 -> [R3], c1 -> [C1]
     used_citations = set([f'[{m.upper()}]' for m in anchor_matches])
 
     if used_citations:
@@ -863,6 +914,7 @@ def generate_report(collected_data, analysis_results, date_str):
         # Group by type
         article_citations = sorted([c for c in used_citations if c.startswith('[A')], key=lambda x: int(x[2:-1]))
         reddit_citations = sorted([c for c in used_citations if c.startswith('[R')], key=lambda x: int(x[2:-1]))
+        comp_citations = sorted([c for c in used_citations if c.startswith('[C')], key=lambda x: int(x[2:-1]))
 
         if article_citations:
             report += "**Articles:**\n\n"
@@ -890,6 +942,20 @@ def generate_report(collected_data, analysis_results, date_str):
                     # citation_key is [R3], we want anchor id to be just "r3"
                     anchor_id = citation_key[1:-1].lower()  # [R3] -> r3
                     report += f"- <a id=\"{anchor_id}\"></a>{citation_key}: [r/{c['subreddit']} - {c['title']}]({c['url']}) (Score: {c['score']})\n"
+            report += "\n"
+
+        if comp_citations:
+            report += "**Competitor Changelogs:**\n\n"
+            for citation_key in comp_citations:
+                # Convert short format back to long for lookup (C1 -> COMP_1)
+                num = citation_key[2:-1]
+                key = f"COMP_{num}"
+                if key in citations:
+                    c = citations[key]
+                    # Add anchor link for inline citations to reference
+                    # citation_key is [C1], we want anchor id to be just "c1"
+                    anchor_id = citation_key[1:-1].lower()  # [C1] -> c1
+                    report += f"- <a id=\"{anchor_id}\"></a>{citation_key}: [{c['competitor']} {c['product']} - {c['title']}]({c['url']}) ({c['date']})\n"
             report += "\n"
 
     # Footer

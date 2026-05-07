@@ -5,7 +5,7 @@ Uses OpenAI GPT-4o to analyze, categorize, and summarize collected research data
 
 import json
 import os
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 
 class ContentAnalyzerAgent:
@@ -239,12 +239,29 @@ class ContentAnalyzerAgent:
         # Analyze Twilio Reddit Community Discussions (separate section)
         reddit_posts = collected_data.get('reddit_posts', [])
         if reddit_posts:
-            print("  → Analyzing Twilio Reddit Community...")
-            analysis["reddit_community_summary"] = self._analyze_reddit_community(
-                client,
-                reddit_posts
-            )
-            print("    ✓ Twilio Reddit Community analysis complete")
+            # Filter to only recent posts (last 30 days)
+            cutoff = datetime.now(timezone.utc) - timedelta(days=30)
+
+            recent_posts = []
+            for post in reddit_posts:
+                created = post.get('created_utc')
+                if created:
+                    try:
+                        dt = datetime.fromisoformat(created.replace('Z', '+00:00'))
+                        if dt >= cutoff:
+                            recent_posts.append(post)
+                    except:
+                        pass
+
+            if recent_posts:
+                print(f"  → Analyzing Twilio Reddit Community ({len(recent_posts)} recent posts)...")
+                analysis["reddit_community_summary"] = self._analyze_reddit_community(
+                    client,
+                    recent_posts
+                )
+                print("    ✓ Twilio Reddit Community analysis complete")
+            else:
+                print("  → No recent Reddit posts (last 30 days) - skipping community analysis")
 
         return analysis
 
@@ -359,7 +376,7 @@ IMPORTANT INSTRUCTIONS:
 
 Provide:
 1. Executive summary (2-3 sentences) - what's happening in {category_name}. Include [ARTICLE_N] citations.
-2. Top 3 trends or threats specific to {category_name}. Each trend must cite sources with [ARTICLE_N].
+2. Top 5 trends or threats specific to {category_name} (if available). Each trend must cite sources with [ARTICLE_N].
 3. Notable incidents, attacks, or regulatory changes. Include [ARTICLE_N] citations.
 4. Anything requiring immediate attention. Include [ARTICLE_N] citations.
 5. If Reddit discussions present: key concerns with VERBATIM QUOTES from posts AND comments using [REDDIT_N] citations.
