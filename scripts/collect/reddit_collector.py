@@ -155,7 +155,7 @@ class RedditCollector:
                         'author': comment_data.get('author', '[deleted]'),
                         'body': body,
                         'score': comment_data.get('score', 0),
-                        'created_utc': comment_data.get('created_utc', '')
+                        'created_utc': comment_data.get('created_at_iso', '')
                     })
 
             return comments
@@ -275,7 +275,7 @@ class RedditCollector:
                             "score": score,
                             "upvote_ratio": item.get("upvote_ratio", 0.0),
                             "num_comments": num_comments,
-                            "created_utc": item.get("created_utc", datetime.now().isoformat()),
+                            "created_utc": item.get("created_at_iso", datetime.now().isoformat()),
                             "url": post_url,
                             "selftext": item.get("selftext", "") or item.get("body", ""),  # No truncation
                             "is_self": item.get("is_self", False),
