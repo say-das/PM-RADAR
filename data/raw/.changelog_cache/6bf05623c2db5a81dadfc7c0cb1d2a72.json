@@ -1,0 +1,48 @@
+{
+  "url": "https://www.bandwidth.com/release-notes/?",
+  "cached_at": "2026-05-07T20:16:43.605406",
+  "changes": [
+    {
+      "date": "2026-04-12",
+      "version": "v2.3.1",
+      "type": "security",
+      "category": "api_security",
+      "title": "Enhanced API Security Protocols",
+      "description": "Introduced new encryption standards and token-based authentication for API requests to enhance security.",
+      "impact": "high",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604730"
+    },
+    {
+      "date": "2026-04-10",
+      "version": "v2.3.0",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Added ML-based fraud scoring",
+      "description": "Real-time fraud detection using machine learning. Scores each verification attempt 0-100 based on device signals and behavior patterns.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604762"
+    },
+    {
+      "date": "2026-04-08",
+      "version": null,
+      "type": "pricing",
+      "category": "pricing",
+      "title": "Updated Pricing for Fraud Detection Services",
+      "description": "Revised pricing structure for fraud detection services to offer more competitive rates and volume discounts.",
+      "impact": "medium",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604768"
+    }
+  ]
+}

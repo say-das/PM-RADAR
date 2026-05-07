@@ -691,5 +691,91 @@
       "comments": []
     }
   ],
-  "competitor_maps": []
+  "competitor_maps": [],
+  "competitor_changelogs": [
+    {
+      "date": "2026-04-12",
+      "version": "v2.3.1",
+      "type": "security",
+      "category": "api_security",
+      "title": "Enhanced API Security Protocols",
+      "description": "Introduced new encryption standards and token-based authentication for API requests to enhance security.",
+      "impact": "high",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604730"
+    },
+    {
+      "date": "2026-04-10",
+      "version": "v2.3.0",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Added ML-based fraud scoring",
+      "description": "Real-time fraud detection using machine learning. Scores each verification attempt 0-100 based on device signals and behavior patterns.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604762"
+    },
+    {
+      "date": "2026-04-08",
+      "version": null,
+      "type": "pricing",
+      "category": "pricing",
+      "title": "Updated Pricing for Fraud Detection Services",
+      "description": "Revised pricing structure for fraud detection services to offer more competitive rates and volume discounts.",
+      "impact": "medium",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604768"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Network blocks with TTL",
+      "description": "Block SMS and/or Voice traffic to a specific mobile network and set a timer to lift the block automatically.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096824"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Inbound Traffic Rules",
+      "description": "Block incoming traffic to your applications by setting inbound rules.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096858"
+    },
+    {
+      "date": "2026-02-01",
+      "version": "3.3",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "SMS Burst Protection",
+      "description": "SMS Burst Protection has been extended from select countries to worldwide coverage, ensuring your traffic is protected regardless of destination.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096862"
+    }
+  ]
 }

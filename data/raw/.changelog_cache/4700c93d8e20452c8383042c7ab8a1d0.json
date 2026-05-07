@@ -1,0 +1,48 @@
+{
+  "url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+  "cached_at": "2026-05-07T20:16:28.097890",
+  "changes": [
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Network blocks with TTL",
+      "description": "Block SMS and/or Voice traffic to a specific mobile network and set a timer to lift the block automatically.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096824"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Inbound Traffic Rules",
+      "description": "Block incoming traffic to your applications by setting inbound rules.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096858"
+    },
+    {
+      "date": "2026-02-01",
+      "version": "3.3",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "SMS Burst Protection",
+      "description": "SMS Burst Protection has been extended from select countries to worldwide coverage, ensuring your traffic is protected regardless of destination.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096862"
+    }
+  ]
+}
