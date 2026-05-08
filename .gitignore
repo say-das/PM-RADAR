@@ -1,23 +1,30 @@
-# Secrets and API Keys
-.env
-*.key
-config/secrets/
-
 # Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-.pytest_cache/
-*.egg-info/
-dist/
 build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual Environments
+# Virtual environments
 venv/
-env/
+test_env/
 ENV/
+env/
 
 # IDE
 .vscode/
@@ -28,27 +35,34 @@ ENV/
 
 # OS
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
-.AppleDouble
-.LSOverride
 
-# Project-specific
-# Runtime data and cache
+# Environment variables
+.env
+
+# Cache directories
 data/raw/.reddit_cache/
-# data/raw/*.json  # ALLOW: Need raw data in repo for fallback system
-data/reports/*.md
-data/reports/*.html
-data/reports/*.html.bak
-data/competitor-maps/
+data/raw/.changelog_cache/
 
-# Backup files
-*.bak
-*.backup
+# Test files
+data/raw/test-*.json
+data/raw/reddit-*.json
 
-# Logs
+# Temporary files
+*.tmp
 *.log
-logs/
+.pytest_cache/
+htmlcov/
+.coverage
+.tox/
 
-# Claude files (optional - keep if using Claude Code)
-.claude/skills/*
-!.claude/skills/.gitkeep
+# Reports (keep structure, ignore content in some cases)
+# Uncomment below if you don't want to track generated reports
+# data/reports/*.html
+# data/reports/*.md
+# data/reports/*.pdf

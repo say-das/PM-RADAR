@@ -84,6 +84,7 @@ class ChangelogScraperV3:
         """Fetch page content using Scrapling (handles JS + anti-bot)"""
         try:
             from scrapling.fetchers import StealthyFetcher
+            from bs4 import BeautifulSoup
 
             # Enable adaptive mode for resilient scraping
             StealthyFetcher.adaptive = True
@@ -96,8 +97,15 @@ class ChangelogScraperV3:
                 timeout=30000
             )
 
+            # Parse HTML body with BeautifulSoup (page.text returns empty)
+            soup = BeautifulSoup(page.body, 'html.parser')
+
+            # Remove scripts, styles, navigation, etc.
+            for tag in soup(['script', 'style', 'nav', 'footer', 'header', 'aside']):
+                tag.decompose()
+
             # Get text content
-            text_content = page.text
+            text_content = soup.get_text(separator='\n', strip=True)
 
             return text_content
 

@@ -25,7 +25,7 @@
       "name": "Bandwidth",
       "urls": [
         {
-          "url": "https://www.bandwidth.com/release-notes/",
+          "url": "https://www.bandwidth.com/release-notes/?",
           "product": "Platform",
           "enabled": true,
           "scrape_mode": "keyword_filter",
@@ -35,7 +35,7 @@
     }
   ],
   "extraction_settings": {
-    "lookback_days": 90,
+    "lookback_days": 30,
     "keywords": [
       "fraud",
       "security",
