@@ -26,7 +26,8 @@ jobs:
 
     - name: Install Playwright browsers
       run: |
-        patchright install chromium
+        python -m playwright install-deps
+        python -m patchright install chromium
 
     - name: Install GitHub CLI
       run: |
