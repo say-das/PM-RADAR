@@ -1,0 +1,840 @@
+{
+  "collection_date": "2026-05-18",
+  "rss_articles": [
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/15/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-05-15T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-42897 Microsoft Exchange Server Cross-Site Scripting Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list o"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Siemens ROS#",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-08",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary ROS# contains a ROS service file_server, that before version 2.2.2 contains a path traversal vulnerability which could allow an attacker to access, i.e. read and write, arbitrary files, which are accessible with the user rights of the user that runs the service, on the system that hosts service. Siemens has released a new version for ROS# and recommends to update to the latest version. The following versions of Siemens Siemens ROS# are affected: ROS# vers:intdot/<2.2.2 CVSS Ven"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens gWAP",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-01",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Siemens gPROMS Web Applications Publisher (gWAP) is affected by a remote code execution vulnerability introduced through a third-party component, namely the Axios HTTP client library. The vulnerability stems from a specific \"Gadget\" attack chain that allows prototype pollution in other third-party libraries, potentially allowing an attacker to execute arbitrary code. Siemens has released a new version for gWAP and recommends to update to the latest version. The following versio"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIMATIC",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-10",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary SIMATIC CN 4100 contains multiple vulnerabilities which could potentially lead to a compromise in availability, integrity and confidentiality. Siemens has released a new version for SIMATIC CN 4100 and recommends to update to the latest version. The following versions of Siemens SIMATIC are affected: SIMATIC CN 4100 vers:intdot/<5.0 CVSS Vendor Equipment Vulnerabilities v3 9.6 Siemens Siemens SIMATIC NULL Pointer Dereference, Reachable Assertion, Use After Free, Out-of-bounds W"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Ruggedcom Rox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-12",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox contains an input validation vulnerability in the Scheduler functionality that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Ruggedcom Rox are affected: RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1 RUGGEDCOM ROX MX5000RE vers:intdot/<2.17.1 RU"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Ruggedcom Rox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-16",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox before v2.17.1 contain multiple third-party vulnerabilities. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Ruggedcom Rox are affected: RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1 (CVE-2019-13103, CVE-2019-13104, CVE-2019-13106, CVE-2019-14192, CVE-2019-14193, CVE-2019-14194, CVE-2019-14195, CVE-2019-14196, CVE-2019-14197, CVE-2019-14198, CVE-2019-14199, CVE-2019-14200, CV"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Simcenter Femap",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-05",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Simcenter Femap is affected by heap based buffer overflow vulnerability in Datakit library that could be triggered when the application reads files in IPT format. If a user is tricked to open a malicious file with the affected application, an attacker could leverage the vulnerability to perform remote code execution in the context of the current process. Siemens has released a new version for Simcenter Femap and recommends to update to the latest version. The following versions"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Universal Robots Polyscope 5",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-17",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and execute code. The following versions of Universal Robots Polyscope 5 are affected: Polyscope 5 <5.25.1 CVSS Vendor Equipment Vulnerabilities v3 9.8 Universal Robots Universal Robots Polyscope 5 Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Wo"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Ruggedcom Rox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-11",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox contains an input validation vulnerability in the feature key installation process that could allow an authenticated remote attacker to execute arbitrary commands with root privileges on the underlying operating system. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Ruggedcom Rox are affected: RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1 RUGGEDCOM ROX MX5000RE vers:intdot/<"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Teamcenter",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-04",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Siemens Teamcenter is affected by multiple vulnerabilities which could potentially lead to a compromise in availability, integrity and confidentiality. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Teamcenter are affected: Teamcenter V2312 vers:intdot/<2312.0014, vers:intdot/<2312.0009 (CVE-2026-33862, CVE-2026-33893, CVE-2024-4367) Teamcenter V2406 vers:intdot/<2406.0012, vers:intd"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Solid Edge",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-03",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Solid Edge SE2026 before Update 5 is affected by two file parsing vulnerabilities that could be triggered when the application reads specially crafted files in PAR format. This could allow an attacker to crash the application or execute arbitrary code. Siemens has released a new version for Solid Edge SE2026 and recommends to update to the latest version. The following versions of Siemens Solid Edge are affected: Solid Edge vers:intdot/<226.0.5 CVSS Vendor Equipment Vulnerabili"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SENTRON 7KT PAC1261 Data Manager",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-14",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary The web server in SENTRON 7KT PAC1261 Data Manager Before V2.1.0 contains a request smuggling vulnerability in the Go Project's net/http package that could allow an attacker to retrieve authorization tokens that can be used to gain administrative control over the device. Siemens has released a new version for SENTRON 7KT PAC1261 Data Manager and recommends to update to the latest version. The following versions of Siemens SENTRON 7KT PAC1261 Data Manager are affected: SENTRON 7"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Opcenter RDnL",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-09",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Opcenter RDnL is affected by missing authentication in critical function in \u2018ActiveMQ Artemis\u2019. An unauthenticated attacker within the adjacent network could use the Core protocol to force a target broker to establish an outbound Core federation connection to an attacker-controlled rogue broker. This could potentially result in availability impacts or message injection into any queue via the rogue broker. Breaking the integrity of a message has a low impact due to missing auto "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Ruggedcom Rox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-02",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Ruggedcom Rox contains an improper access control vulnerability that could allow an authenticated remote attacker to read arbitrary files with root privileges from the underlying operating system's filesystem. Siemens has released new versions for the affected products and recommends to update to the latest versions. The following versions of Siemens Ruggedcom Rox are affected: RUGGEDCOM ROX MX5000 vers:intdot/<2.17.1 RUGGEDCOM ROX MX5000RE vers:intdot/<2.17.1 RUGGEDCOM ROX RX1"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIMATIC S7 PLC Web Server",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-15",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary SIMATIC S7 PLCs contain multiple vulnerabilities in the web server that could allow an attacker to perform cross-site scripting attacks. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens SIMATIC S7 PLC Web Server are affected: SIMATIC Drive Contro"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/05/14/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-05-14T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-20182 Cisco Catalyst SD-WAN Controller Authentication Bypass Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Note: Please adhere to CISA\u2019s guidelines to assess exposure and mitigate risks associated with Cisco SD-WAN devices as outlined in Emergency Direc"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIMATIC",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-07",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary SIMATIC HMI Unified Comfort Panels before V21.0 are affected by a vulnerability that allows an unauthenticated attacker to access the web browser via the help link. This vulnerability allows an attacker to access the web browser through the Control Panel if it is not protected by the corresponding security mechanisms. This opens the possibility for the attacker to find backdoors, which might lead to unwanted misconfigurations. Siemens has released new versions for the affected "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Industrial Devices",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-06",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary Multiple industrial devices contain a vulnerability that could allow an attacker to cause a denial of service condition. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Industrial Devices are affected: IE/PB LINK HA (6GK1411-5BB00) vers:all/* (C"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIPROTEC 5",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-134-13",
+      "published": "2026-05-14T12:00:00",
+      "summary": "View CSAF Summary The SIPROTEC 5 devices do not use sufficiently random numbers to generate session identifiers. This could facilitate a brute-force attack against a valid session identifier which could allow an unauthenticated remote attacker to hijack a valid user session. The affected session identifiers are only used in a subset of the endpoints that are provided by the affected products. Siemens is preparing fix versions and recommends countermeasures for products where fixes are not, or no"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Fuji Electric Tellus",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-01",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to elevate privileges from user to system, which may then enable the attacker to cause a temporary denial of service, open files, or delete files. The following versions of Fuji Electric Tellus are affected: Tellus 5.0.2 CVSS Vendor Equipment Vulnerabilities v3 7.8 Fuji Electric Fuji Electric Tellus Exposed Dangerous Method or Function Background Critical Infrastructure Sectors: Critical Manufacturing Countri"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB WebPro SNMP Card PowerValue Multiple Vulnerabilities",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-06",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary ABB became aware of multiple internally discovered vulnerabilities in the WebPro SNMP card PowerValue for the product versions listed as affected in the advisory. Depending upon the vulnerability, an attacker with access to local network who successfully exploited this vulnerability could have - Unauthorized access - Insufficient Session Expiration leading to resource unavailability - Uncontrolled Resource Consumption leading to DOS attack ABB strongly advises customers to upda"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Automation Builder Gateway for Windows",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-04",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary ABB became aware of severe vulnerability in the products versions listed as affected in the advisory. The Windows gateway is accessible remotely by default. Unauthenticated attackers can therefore search for PLCs, but the user management of the PLCs prevents the actual access to the PLCs \u2013 unless it is disabled The following versions of ABB Automation Builder Gateway for Windows are affected: Automation Builder <2.9.0, 2.9.0 CVSS Vendor Equipment Vulnerabilities v3 5.3 ABB ABB "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Subnet Solutions PowerSYSTEM Center",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-02",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an authenticated attacker to expose sensitive information or cause a CRLF injection. The following versions of Subnet Solutions PowerSYSTEM Center are affected: PowerSYSTEM Center 2020 <=5.28.x (CVE-2026-35504) PowerSYSTEM Center 2020 >=5.8.x|<=5.28.x (CVE-2026-26289) PowerSYSTEM Center 2020 >=5.11.x|<=5.28.x (CVE-2026-33570) PowerSYSTEM Center 2024 >=6.0.x|<=6.1.x (CVE-2026-26289, CVE-2026-35555, CVE-2026-35504) Powe"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB AC500 V3 Multiple Vulnerabilities",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-03",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary ABB became aware of severe vulnerability in the products versions listed as affected in the advisory. An update is available that resolves these vulnerabilities. An attacker who successfully exploited these vulnerabilities could bypass the user management and read visualization files (CVE-2025-2595), read and write certificates and keys (CVE-2025-41659) or cause a denial-of-service (DoS) (CVE-2025-41691). The following versions of ABB AC500 V3 Multiple Vulnerabilities are affec"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-132-05",
+      "published": "2026-05-12T12:00:00",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the products versions listed as affected in the advisory. An update is available that resolves publicly reported vulnerability. An attacker who successfully exploited these vulnerabilities could cause a crash, denial-of-service (DoS), or potentially remote code execution. The following versions of ABB AC500 V3 Stack Buffer Overflow in Cryptographic Message Syntax are affected: AC500 V3 PM5xxx 3.9.0, 3.9.0_HF1 CVSS Vendor Equipment Vulnerabil"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Software Bill of Materials for AI - Minimum Elements",
+      "url": "https://www.cisa.gov/resources-tools/resources/software-bill-materials-ai-minimum-elements",
+      "published": "2026-05-12T12:00:00",
+      "summary": "CISA and the Group of Seven (G7) international partners\u2014Germany, Canada, France, Italy, Japan, the United Kingdom, and the European Union\u2014have released joint guidance, Software Bill of Materials for AI \u2013 Minimum Elements, to help public and private sector stakeholders improve transparency in their artificial intelligence (AI) systems and supply chains. A software bill of materials (SBOM) acts as an \u201cingredients list\u201d for software that better positions organizations to understand their supply cha"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "Welcome to BlackFile: Inside a Vishing Extortion Operation",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/blackfile-vishing-extortion-operation/",
+      "published": "2026-05-15T14:00:00",
+      "summary": "Written by: Austin Larsen, Tyler McLellan, Genevieve Stark, Dan Ebreo Introduction Google Threat Intelligence Group (GTIG) has continued to track an expansive extortion campaign by UNC6671, a threat actor operating under the \"BlackFile\" brand, that targets organizations via sophisticated voice phishing (vishing) and single sign-on (SSO) compromise. By leveraging adversary-in-the-middle (AiTM) techniques to bypass traditional perimeter defenses and multi-factor authentication (MFA), UNC6671 gains"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "GTIG AI Threat Tracker: Adversaries Leverage AI for Vulnerability Exploitation, Augmented Operations, and Initial Access",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access/",
+      "published": "2026-05-11T14:00:00",
+      "summary": "Executive Summary Since our February 2026 report on AI-related threat activity, Google Threat Intelligence Group (GTIG) has continued to track a maturing transition from nascent AI-enabled operations to the industrial-scale application of generative models within adversarial workflows. This report, based on insights derived from Mandiant incident response engagements, Gemini, and GTIG\u2019s proactive research, highlights the dual nature of the current threat environment where AI serves as both a sop"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Gremlin Stealer's Evolved Tactics: Hiding in Plain Sight With Resource Files",
+      "url": "https://unit42.paloaltonetworks.com/gremlin-stealer-evolution/",
+      "published": "2026-05-15T10:00:52",
+      "summary": "Unit 42 analyzes the evolution of Gremlin stealer. This variant uses advanced obfuscation, crypto clipping and session hijacking to compromise data. The post Gremlin Stealer&#039;s Evolved Tactics: Hiding in Plain Sight With Resource Files appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Inside AD CS Escalation: Unpacking Advanced Misuse Techniques and Tools",
+      "url": "https://unit42.paloaltonetworks.com/active-directory-certificate-services-exploitation/",
+      "published": "2026-05-11T22:00:43",
+      "summary": "Unit 42 analyzes AD CS exploitation through template misconfigurations and shadow credential misuse while offering behavioral detection for defenders. The post Inside AD CS Escalation: Unpacking Advanced Misuse Techniques and Tools appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "When Data Means Conversations and Code: How AI-Powered Adversaries Are Rewriting the Rules of Targeted Attacks",
+      "url": "https://www.zerofox.com/blog/ai-powered-adversaries",
+      "published": "2026-05-13T10:10:04",
+      "summary": "For years, the security industry drew a fairly clear line around what &#8220;sensitive data&#8221; meant. Personal information, financial records, health data: the structured, regulated categories that compliance frameworks were built to protect. Encrypt it, tokenize it, and restrict access to it. The threat model was straightforward: if you protect the database, you protect the business. [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "Lead Defendants in the IM Mastery Academy MLM Scheme to Turn Over Tens of Millions of Dollars in Assets to Settle FTC Charges",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/lead-defendants-im-mastery-academy-mlm-scheme-turn-over-tens-millions-dollars-assets-settle-ftc",
+      "published": "2026-05-13T12:00:00",
+      "summary": "FTC alleged Chris and Isis Terry and their companies used false or baseless earnings claims to promote their training services and MLM venture The Federal Trade Commission and State of Nevada will require five individual and corporate IM Mastery Academy defendants, including ringleaders Chris and Isis Terry, to surrender assets valued at nearly $90 million to resolve charges that they used false or baseless earnings claims to persuade people to pay for financial training programs and a multi-lev"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "Shutterstock to Pay $35 Million to Settle FTC Allegations Over  Illegal Subscription and Cancellation Practices",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/shutterstock-pay-35-million-settle-ftc-allegations-over-illegal-subscription-cancellation-practices",
+      "published": "2026-05-13T12:00:00",
+      "summary": "Online licensing platform allegedly charged consumers without their consent, failed to disclose auto-renewals and cancellation charges, and made cancelling difficult Shutterstock Inc. will pay $35 million to settle Federal Trade Commission allegations that the online digital photo and video platform illegally made tens of millions of dollars from a range of unfair and deceptive practices, including charging consumers for products without their informed consent and making it difficult to cancel s"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Chairman Ferguson\u202fAdvises Companies to Comply with the Take It Down Act",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-chairman-ferguson-advises-companies-comply-take-it-down-act",
+      "published": "2026-05-11T12:00:00",
+      "summary": "Federal Trade Commission Chairman Andrew N. Ferguson sent letters today to more than a dozen prominent technology companies reminding businesses of their obligation to comply fully with the Take It Down Act (TIDA) no later than May 19. Signed into law last year by President Donald J.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC and Illinois Take Action to Stop Deceptive Conduct by Company that Created Thousands of Business Listings of Fake Local Home Repair Businesses",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/05/ftc-illinois-take-action-stop-deceptive-conduct-company-created-thousands-business-listings-fake",
+      "published": "2026-05-11T12:00:00",
+      "summary": "Premium Home Service also used fake online reviews to boost ratings and siphon customers from true local businesses The U.S. Department of Justice, on behalf of the Federal Trade Commission, and the state of Illinois sued Chicago-based company Premium Home Service (PHS) and its owner for fraudulently creating thousands of fake online business listings for home repair companies to deceive consumers into thinking they were choosing reputable local companies for home repairs.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "More than $10 million stolen from crypto platform THORChain",
+      "url": "https://therecord.media/more-than-10-million-stolen-crypto-platform-thorchain",
+      "published": "2026-05-15T19:31:00",
+      "summary": "THORChain officials said the investigation into the incident is ongoing but explained that one of their six vaults was compromised, leading to a loss of about $10.7 million."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "CISA orders all federal agencies to patch exploited bug in Cisco SD-WAN systems by Sunday",
+      "url": "https://therecord.media/cisa-orders-all-federal-agencies-to-patch-cisco-sd-wan-bug",
+      "published": "2026-05-15T13:16:00",
+      "summary": "Cisco released a patch for the vulnerability on Thursday, writing in an advisory that it could \u201callow an unauthenticated, remote attacker to bypass authentication and obtain administrative privileges on an affected system.\u201d"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "OpenAI asks macOS users to update after TanStack npm supply chain attack",
+      "url": "https://therecord.media/openai-asks-macos-users-to-update-tanstack-npm",
+      "published": "2026-05-14T20:26:00",
+      "summary": "The actions are being taken in light of an expanding supply chain campaign impacting the popular open-source library TanStack and additional npm and PyPI packages tied to several AI companies."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "ODNI taps officials to coordinate response to foreign election threats",
+      "url": "https://therecord.media/odni-taps-officials-to-coordinate-response-to-election-threats",
+      "published": "2026-05-14T18:21:00",
+      "summary": "Director of National Intelligence Tulsi Gabbard has tapped two individuals to coordinate work across U.S. spy agencies to monitor threats to the 2026 elections, according to multiple sources familiar with the matter."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Alleged Dream Market admin arrested in Germany after US indictment",
+      "url": "https://therecord.media/dream-market-admin-arrested-in-germany",
+      "published": "2026-05-13T19:54:00",
+      "summary": "Court documents said Dream Market was launched in 2013 by Owe Martin Andresen and others before becoming one of the biggest criminal marketplaces online."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft confirms Windows 11 security update install issues",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-kb5089549-windows-11-security-update-install-issues/",
+      "published": "2026-05-18T08:33:14",
+      "summary": "Microsoft has confirmed that the May 2026 Windows 11 security update (KB5089549) fails to install on some systems and triggers 0x800f0922 errors. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Exploit available for new DirtyDecrypt Linux root escalation flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/exploit-available-for-new-dirtydecrypt-linux-root-escalation-flaw/",
+      "published": "2026-05-18T07:18:33",
+      "summary": "A recently patched local privilege escalation vulnerability in the Linux kernel's rxgk module now has a proof-of-concept exploit that allows attackers to gain root access on some Linux systems. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers earn $1,298,250 for 47 zero-days at Pwn2Own Berlin 2026",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-earn-1-298-250-for-47-zero-days-at-pwn2own-berlin-2026/",
+      "published": "2026-05-18T05:33:20",
+      "summary": "The Pwn2Own Berlin 2026 hacking contest has concluded, with security researchers collecting $1,298,250 in rewards after exploiting 47 zero-day flaws. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New Windows 'MiniPlasma' zero-day exploit gives SYSTEM access, PoC released",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/new-windows-miniplasma-zero-day-exploit-gives-system-access-poc-released/",
+      "published": "2026-05-17T22:30:08",
+      "summary": "A cybersecurity researcher has released a proof-of-concept exploit for a Windows privilege escalation zero-day dubbed \"MiniPlasma\" that lets attackers gain SYSTEM privileges on fully patched Windows systems. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Tycoon2FA hijacks Microsoft 365 accounts via device-code phishing",
+      "url": "https://www.bleepingcomputer.com/news/security/tycoon2fa-hijacks-microsoft-365-accounts-via-device-code-phishing/",
+      "published": "2026-05-17T14:43:10",
+      "summary": "The Tycoon2FA phishing kit now supports device-code phishing attacks and abuses Trustifi click-tracking URLs to hijack Microsoft 365 accounts. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft rejects critical Azure vulnerability report, no CVE issued",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-rejects-critical-azure-vulnerability-report-no-cve-issued/",
+      "published": "2026-05-16T20:55:44",
+      "summary": "A security researcher claims Microsoft quietly fixed an Azure Backup for AKS vulnerability after rejecting his report, and without issuing a CVE. Microsoft disputes the claim, telling BleepingComputer the behavior was expected and that \"no product changes were made,\" despite the researcher documenting a silent fix. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Russian hackers turn Kazuar backdoor into modular P2P botnet",
+      "url": "https://www.bleepingcomputer.com/news/security/russian-hackers-turn-kazuar-backdoor-into-modular-p2p-botnet/",
+      "published": "2026-05-16T14:15:37",
+      "summary": "The Russian hacker group Secret Blizzard has developed its long-running Kazuar backdoor into a modular peer-to-peer (P2P) botnet designed for long-term persistence, stealth, and data collection. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Funnel Builder WordPress plugin bug exploited to steal credit cards",
+      "url": "https://www.bleepingcomputer.com/news/security/funnel-builder-wordpress-plugin-bug-exploited-to-steal-credit-cards/",
+      "published": "2026-05-15T19:30:33",
+      "summary": "A critical vulnerability in the Funnel Builder plugin for WordPress is being actively exploited to inject malicious JavaScript snippets into WooCommerce checkout pages. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft Exchange, Windows 11 hacked on second day of Pwn2Own",
+      "url": "https://www.bleepingcomputer.com/news/security/pwn2own-day-two-hackers-demo-microsoft-exchange-windows-11-red-had-enterprise-linux-zero-days/",
+      "published": "2026-05-15T17:47:25",
+      "summary": "\u200bDuring the second day of Pwn2Own Berlin 2026, competitors collected $385,750 in cash awards after exploiting 15 unique zero-day vulnerabilities in multiple products, including Windows 11, Microsoft Exchange, and Red Hat Enterprise Linux for Workstations. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Popular node-ipc npm package compromised to steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/popular-node-ipc-npm-package-compromised-to-steal-credentials/",
+      "published": "2026-05-15T17:10:42",
+      "summary": "Hackers have injected credential-stealing malware into newly published versions of node-ipc, a popular inter-process communication package, in a new supply chain attack targeting npm. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Avada Builder WordPress plugin flaws allow site credential theft",
+      "url": "https://www.bleepingcomputer.com/news/security/avada-builder-wordpress-plugin-flaws-allow-site-credential-theft/",
+      "published": "2026-05-15T15:56:56",
+      "summary": "Two vulnerabilities in the Avada Builder plugin for WordPress, with an estimated one million active installations, allow hackers to read arbitrary files and extract sensitive information from the database. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft backpedals: Edge to stop loading passwords into memory",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-edge-to-stop-loading-cleartext-passwords-in-memory-on-startup/",
+      "published": "2026-05-15T14:49:39",
+      "summary": "Microsoft is updating the Edge web browser to ensure it no longer loads saved passwords into process memory in clear text at startup after previously stating it was \"by design.\" [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Inside the REMUS Infostealer: Session Theft, MaaS, and Rapid Evolution",
+      "url": "https://www.bleepingcomputer.com/news/security/inside-the-remus-infostealer-session-theft-maas-and-rapid-evolution/",
+      "published": "2026-05-15T14:02:12",
+      "summary": "Stolen browser sessions and authentication tokens are becoming more valuable than stolen passwords. Flare explains how the REMUS infostealer evolved around session theft and operational scalability. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft to automatically roll back faulty Windows drivers",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-to-automatically-roll-back-faulty-windows-drivers/",
+      "published": "2026-05-15T12:29:48",
+      "summary": "Microsoft is introducing a new capability that will allow it to remotely roll back problematic Windows drivers delivered through Windows Update. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft warns of Exchange zero-day flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-warns-of-exchange-zero-day-flaw-exploited-in-attacks/",
+      "published": "2026-05-15T09:40:42",
+      "summary": "On Thursday, Microsoft shared mitigations for a high-severity Exchange Server vulnerability exploited in attacks that allow threat actors to execute arbitrary code via cross-site scripting (XSS) while targeting Outlook on the web users. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Patch Tuesday, May 2026 Edition",
+      "url": "https://krebsonsecurity.com/2026/05/patch-tuesday-may-2026-edition/",
+      "published": "2026-05-12T21:46:45",
+      "summary": "Artificial intelligence platforms may be just as susceptible to social engineering as human beings, but they are proving remarkably good at finding security vulnerabilities in human-made computer code. That reality is on full display this month with some of the more widely-used software makers -- including Apple, Google, Microsoft, Mozilla and Oracle -- fixing near record volumes of security bugs, and/or quickening the tempo of their patch releases."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "PureLogs: Delivery via PawsRunner Steganography",
+      "url": "https://feeds.fortinet.com/~/956103044/0/fortinet/blog/threat-research~PureLogs-Delivery-via-PawsRunner-Steganography",
+      "published": "2026-05-15T13:00:00",
+      "summary": "FortiGuard Labs has analyzed a steganography-based malware campaign that uses PawsRunner to deliver the PureLogs infostealer, highlighting evolving delivery methods and detection strategies.&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio Fraud Operations suspended my solo\u2011dev account, any alternatives in USA?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 15,
+      "created_utc": "2026-03-22T03:51:44.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1s0bmjf/twilio_fraud_operations_suspended_my_solodev/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "experience with fraud takeover? *personally* on hook for $30k+, Twilio unresponsive",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 55,
+      "created_utc": "2022-02-16T21:34:10.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/su72c0/experience_with_fraud_takeover_personally_on_hook/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Authy hacked tonight",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 5,
+      "created_utc": "2023-02-03T09:02:03.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/10sftuc/authy_hacked_tonight/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Will downloading twilio on my personal phone compromise my personal information, or should my company supply me a company phone to use for work purposes?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 4,
+      "created_utc": "2023-03-08T17:00:13.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/11m1mbd/will_downloading_twilio_on_my_personal_phone/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Should Authy users be concerned about the recent Twilio breach?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 7,
+      "created_utc": "2022-08-22T20:40:00.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/wv4j97/should_authy_users_be_concerned_about_the_recent/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Help preventing and stopping OTP attacks",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 12,
+      "created_utc": "2021-08-07T01:43:46.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/ozk81e/help_preventing_and_stopping_otp_attacks/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "SMS fraud... Spam... DOS...",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 4,
+      "created_utc": "2022-06-22T00:41:38.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/vhs60a/sms_fraud_spam_dos/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio forces users to set up insecure 2FA method prone to hacker attacks",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 10,
+      "created_utc": "2021-05-18T08:35:05.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/nf5b30/twilio_forces_users_to_set_up_insecure_2fa_method/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio discloses data breach after SMS phishing attack on employees",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2022-08-09T13:37:23.000Z",
+      "url": "https://www.twilio.com/blog/august-2022-social-engineering-attack",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "API Key Hacked",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2022-07-12T02:05:23.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/vwzltd/api_key_hacked/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio and Authy HACKED?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 7,
+      "created_utc": "2021-02-09T16:25:38.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/lg6z6k/twilio_and_authy_hacked/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Plivo unique email leaked. Was Plivo or Twilio Hacked?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 5,
+      "created_utc": "2020-08-14T21:22:44.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/i9umlt/plivo_unique_email_leaked_was_plivo_or_twilio/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "\ud83c\udf83 \ud83d\udc7a Spooky Hack-o-ween \ud83d\udc7a \ud83c\udf83",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 3,
+      "created_utc": "2019-10-15T15:27:45.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/di9hh7/spooky_hackoween/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio charged me $10k in one day for fraudulent sms verifications - I can't get a reply from them.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 44,
+      "created_utc": "2025-12-22T22:07:56.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1ptcgtm/twilio_charged_me_10k_in_one_day_for_fraudulent/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Haven't used Twilio for ages and charged out of nowhere?!",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 12,
+      "created_utc": "2026-03-18T21:02:02.000Z",
+      "url": "https://i.redd.it/2udgackcavpg1.png",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Is someone impersonating me?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 2,
+      "created_utc": "2026-03-14T01:40:05.000Z",
+      "url": "https://www.reddit.com/gallery/1rt6g3i",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio for Mixed Use (Personal + Business) - Account Suspended",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 10,
+      "created_utc": "2025-12-02T14:21:07.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1pc9nuo/twilio_for_mixed_use_personal_business_account/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Does the billing area in console display all usage?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 3,
+      "created_utc": "2026-02-06T03:32:02.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1qx6q6f/does_the_billing_area_in_console_display_all_usage/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Twilio deactivated my account. Any idea why? I don\u2019t understand\u2026",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 14,
+      "created_utc": "2024-10-15T05:47:20.000Z",
+      "url": "https://www.reddit.com/gallery/1g40uxl",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "OKTA BYOT - Why is \"Send Feedback to Twilio Verify\" for?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 0,
+      "created_utc": "2025-04-25T14:11:15.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1k7lwy4/okta_byot_why_is_send_feedback_to_twilio_verify/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Authy closing 2FA service?",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 28,
+      "created_utc": "2023-03-03T00:28:29.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/11glwnt/authy_closing_2fa_service/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Account credentials exposed? Unauthorized use of API key.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 0,
+      "created_utc": "2025-01-06T02:10:00.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/1huo3m5/account_credentials_exposed_unauthorized_use_of/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Question about large negative balance due to fraudulent activity",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 15,
+      "created_utc": "2022-06-03T16:37:11.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/v43djf/question_about_large_negative_balance_due_to/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "What is with this site? I was using my trial account just fine, then as soon as I deposited money my account got suspended.",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 1,
+      "created_utc": "2023-09-02T20:39:07.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/168d625/what_is_with_this_site_i_was_using_my_trial/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    },
+    {
+      "query": "Twilio Fraud Monitoring",
+      "search_terms": "fraud OR scam OR hacked OR breach OR compromise OR vulnerability OR attack OR phishing",
+      "subreddit": "twilio",
+      "title": "Parallel calls with ability to switch between them? (JavaScript/Node.js)",
+      "author": "[deleted]",
+      "score": 0,
+      "upvote_ratio": 0.0,
+      "num_comments": 2,
+      "created_utc": "2023-07-24T04:21:56.000Z",
+      "url": "https://www.reddit.com/r/twilio/comments/157zzzz/parallel_calls_with_ability_to_switch_between/",
+      "selftext": "",
+      "is_self": false,
+      "comments": []
+    }
+  ],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}
