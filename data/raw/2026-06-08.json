@@ -1,0 +1,392 @@
+{
+  "collection_date": "2026-06-08",
+  "rss_articles": [
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Detecting Synthetic Mule Accounts Starts with Better Identity Context",
+      "url": "https://cfca.org/detecting-synthetic-mule-accounts-starts-with-better-identity-context/",
+      "published": "2026-06-02T20:45:33",
+      "summary": "Synthetic mule accounts are not accidental anomalies. They are intentionally constructed identities designed to move fraud proceeds through the financial system while appearing legitimate. A traditional money mule uses a [&#8230;]"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/05/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-05T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-28318 SolarWinds Serv-U Uncontrolled Resource Consumption Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living l"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "NAVTOR NavBox",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-01",
+      "published": "2026-06-04T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a local attacker to gain unauthorized access to SOAP methods, resulting in a disruption of operations. The following versions of NAVTOR NavBox are affected: NavBox 4.16.1.20 (CVE-2026-21404) CVSS Vendor Equipment Vulnerabilities v3 6.3 NAVTOR NAVTOR NavBox Use of Hard-coded Credentials Background Critical Infrastructure Sectors: Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: Nor"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy MACH HiDraw",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-05",
+      "published": "2026-06-04T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of a buffer overflow vulnerability that affects MACH HiDraw product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service) and possible arbitrary code execution. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy MACH HiDraw are affect"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy RTU500",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-04",
+      "published": "2026-06-04T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect RTU500 product versions listed in this document. If exploited, these vulnerabilities primarily impact product availability, with potential secondary impacts on confidentiality and integrity. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy RTU500 are affected: RTU500 series CMU Firmware vers:RTU500_series_CMU_Firmware/>=12.7.1|<=12.7"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "B&R PPT30 Operating System",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-03",
+      "published": "2026-06-04T12:00:00",
+      "summary": "View CSAF Summary B&R is aware of a vulnerability in the product versions listed as affected in the advisory. An attacker who successfully exploits this vulnerability could make the OPC-UA server of the product inaccessible. The following versions of B&R PPT30 Operating System are affected: PPT30 Operating System <1.8.0, 1.8.0 (CVE-2025-11482) CVSS Vendor Equipment Vulnerabilities v3 7.5 B&R Industrial Automation GmbH B&R PPT30 Operating System Allocation of Resources Without Limits or Throttlin"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy ITT600 Explorer",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-155-02",
+      "published": "2026-06-04T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of vulnerabilities that affect ITT600 Explorer product versions listed in this document. These vulnerabilities can be exploited to carry out Denial of Service (DoS) attack on the product. The vulnerabilities only affect Hitachi Energy Integrated Testing Tool ITT600 SA Explorer without affecting IEC 61850 system endpoints. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/03/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-03T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-45247 Mirasvit Full Page Cache Warmer Deserialization of Untrusted Data Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/02/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-02T12:00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2022-0492 Linux Kernel Improper Authentication Vulnerability CVE-2025-48595 Android Framework Integer Overflow Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vul"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems",
+      "url": "https://www.cisa.gov/resources-tools/resources/cisa-and-partners-urge-hardening-automatic-tank-gauge-systems",
+      "published": "2026-06-02T12:00:00",
+      "summary": "CISA and Partners Urge Hardening Automatic Tank Gauge Systems Overview The Cybersecurity and Infrastructure Security Agency (CISA), the Federal Bureau of Investigation (FBI), the National Security Agency (NSA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Transportation Security Administration (TSA), the Department of Transportation (DOT), and the U.S. Department of Agriculture (USDA)\u2014hereafter referred to as \u201cthe authoring organizations\u201d\u2014are aware of malicious "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/01/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-01T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-21182 Oracle WebLogic Server Unspecified Vulnerability This type of vulnerability is a frequent attack vectors for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities established the KEV Catalog as a living list of known Com"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "Seeking Counsel: Ongoing Targeted Campaign Against US Law Firms",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/targeted-campaign-us-law-firms/",
+      "published": "2026-06-05T14:00:00",
+      "summary": "Written by: Chad Reams, Tufail Ahmed, Keith Knapp, Ashley Frazer, Tyler McLellan Introduction From January through May 2026, Mandiant identified a financially motivated data theft extortion campaign executed by the threat cluster UNC3753 (also tracked as \"Luna Moth,\" \u201cChatty Spider,\u201d and \"Silent Ransom Group\") targeting dozens of organizations across professional, legal, and financial services in the United States. UNC3753 leverages voice phishing (vishing) and social engineering deception techn"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+      "published": "2026-06-05T14:05:42",
+      "summary": "We include indicators of activity and mitigations for PAN-OS vulnerability CVE-2026-0257. The post Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2)",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "published": "2026-06-02T17:30:33",
+      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations (Updated June 2) appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Operation FlutterBridge: macOS Malvertising Campaign Spreads New FlutterShell Backdoor",
+      "url": "https://unit42.paloaltonetworks.com/flutterbridge-new-fluttershell-backdoor/",
+      "published": "2026-06-02T10:00:31",
+      "summary": "Operation FlutterBridge is a malvertising campaign targeting macOS users. It distributed the new backdoor FlutterShell, built using the Flutter framework. The post Operation FlutterBridge: macOS Malvertising Campaign Spreads New FlutterShell Backdoor appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Security Threats at the 2026 FIFA World Cup: What Intelligence Reveals Before Kickoff",
+      "url": "https://www.zerofox.com/blog/security-threats-at-the-2026-fifa-world-cup-what-intelligence-reveals-before-kickoff",
+      "published": "2026-06-05T11:19:16",
+      "summary": "Tickets for the 2026 FIFA World Cup are being sold on Telegram and credentials tied to fifa.com accounts are circulating on dark web marketplaces. A threat actor is even advertising server access allegedly linked to New York FIFA infrastructure. And the tournament hasn&#8217;t even started yet. The 2026 FIFA World Cup will be the biggest [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malware Attacks: More Than Just Ransomware",
+      "url": "https://www.zerofox.com/blog/malware-attacks-more-than-just-ransomware",
+      "published": "2026-06-03T10:08:05",
+      "summary": "Ransomware is all the buzz, but it isn&#8217;t the only malware attack. Take a closer look at malware to better understand the risks and how they work together."
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "\u2018Architect\u2019 of Law Firm DEI Programs Dissolves",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/architect-law-firm-dei-programs-dissolves",
+      "published": "2026-06-05T12:00:00",
+      "summary": "Diversity Lab LLC, a for-profit diversity, equity and inclusion (DEI) consultancy, has permanently ceased operations following a Federal Trade Commission investigation. The company informed the FTC that it filed paperwork to dissolve itself as a business entity with the California Secretary of State on Friday.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Gives Final Approval to Order Against Illuminate Settling Allegations It Failed to Secure Students\u2019 Personal Data",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-gives-final-approval-order-against-illuminate-settling-allegations-it-failed-secure-students",
+      "published": "2026-06-05T12:00:00",
+      "summary": "Following a public comment period, the Federal Trade Commission finalized a modified order requiring Illuminate Education Inc. to implement a data security program, limit collection and retention of consumer data, and delete unnecessary data to settle charges that the company\u2019s data security failures led to a major data breach involving the personal data of millions of students.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Issues Report to Congress on Adoption Practices",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-issues-report-congress-adoption-practices",
+      "published": "2026-06-04T12:00:00",
+      "summary": "Report details Commission efforts to ensure honest advertising among adoption intermediaries The Federal Trade Commission issued a report to Congress detailing the agency\u2019s efforts to protect consumers interested in private adoption.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Seeks Comment on X Corp. Petition to Set Aside or Modify FTC Order Concerning Twitter",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-seeks-comment-x-corp-petition-set-aside-or-modify-ftc-order-concerning-twitter",
+      "published": "2026-06-03T12:00:00",
+      "summary": "The Federal Trade Commission is seeking public comment on a petition from X Corp., formerly known as Twitter, to set aside or modify its 2022 settlemenView Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Sues to Stop Deceptive Mortgage Assistance Relief Operation that Targets Homeowners",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-deceptive-mortgage-assistance-relief-operation-targets-homeowners",
+      "published": "2026-06-03T12:00:00",
+      "summary": "Defendants allegedly misled consumers into paying unlawful upfront fees by claiming their mortgage relief program was associated with the federal CARES Act At the Federal Trade Commission\u2019s request, a U.S. district court in California has temporarily halted an allegedly deceptive mortgage assistance relief operation that claims it can provide mortgage relief assistance under the Coronavirus Aid, Relief and Economic Security (CARES) Act to lure and scam homeowners.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Sues to Stop Amare Global Holdings from Misrepresenting the Health Benefits of Its Dietary Supplements for Children and Adults",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-sues-stop-amare-global-holdings-misrepresenting-health-benefits-its-dietary-supplements-children",
+      "published": "2026-06-02T12:00:00",
+      "summary": "Commission also alleges Amare deceived consumers about how much income they could generate selling Amare\u2019s products The Federal Trade Commission today sued multilevel marketer (MLM) Amare Global Holdings Inc.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC, Nevada Will Require Tax-Relief Scammers to Pay Cash and Turn Over Assets Worth Nearly $10 Million to Settle Charges They Misled Consumers about Tax-Relief Services",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-nevada-will-require-tax-relief-scammers-pay-cash-turn-over-assets-worth-nearly-10-million-settle",
+      "published": "2026-06-02T12:00:00",
+      "summary": "Settlement bans individual defendants from debt relief services, tax preparation services, telemarketing and impersonation The operators of a tax debt relief scheme will surrender over $8 million in cash and turn over additional assets to settle the Federal Trade Commission and State of Nevada\u2019s charges that the defendants pocketed millions from consumers by impersonating federal and state government tax authorities and promising tax debt relief.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Requires Divestiture of Ambulatory Surgery Centers to Protect Patients from Anticompetitive Effects of Ascension Health-AmSurg Deal",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-requires-divestiture-ambulatory-surgery-centers-protect-patients-anticompetitive-effects",
+      "published": "2026-06-02T12:00:00",
+      "summary": "Proposed FTC order seeks to protect Americans from higher surgery costs, lower quality care The Federal Trade Commission took action to protect American patients from higher outpatient surgery costs by requiring national nonprofit health system Ascension Health Alliance (Ascension) to divest several surgery center facilities to complete its proposed $3.9 billion acquisition of AmSurg LLC.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "EU unveils tech sovereignty package to cut reliance on US, Chinese suppliers",
+      "url": "https://therecord.media/eu-unveils-tech-sovereignty-package-cut-reliance-us-china",
+      "published": "2026-06-05T13:38:00",
+      "summary": "The package bundles two draft laws \u2014 a Chips Act 2.0 and a Cloud and AI Development Act (CADA) \u2014 alongside an Open Source Strategy and a roadmap for digitalizing the energy system."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Apple removes Russia\u2019s state-backed messaging app Max from its store",
+      "url": "https://therecord.media/apple-removes-russian-app-max-from-app-store",
+      "published": "2026-06-04T23:00:00",
+      "summary": "Russian authorities have promoted Max as a domestic alternative to foreign messaging platforms such as Telegram and WhatsApp."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Trump considers Palantir exec to lead CISA",
+      "url": "https://therecord.media/trump-considers-palantir-exec-to-lead-cisa",
+      "published": "2026-06-04T20:40:00",
+      "summary": "Shyam Sankar, the chief technology officer at Palantir Technologies, has emerged as a lead contender for the long vacant Cybersecurity and Infrastructure Security Agency (CISA) director role, according to the sources, who requested anonymity to discuss the administration\u2019s search."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "FTC considers setting aside or modifying $150 million privacy penalty against X",
+      "url": "https://therecord.media/ftc-considers-modifying-150-million-twitter-privacy-fine",
+      "published": "2026-06-04T19:42:00",
+      "summary": "Twitter, renamed X in 2023, filed a petition saying that the settlement terms are unfair because the order was issued against a company that \u201cno longer exists,\u201d the workers responsible for the scheme no longer work for X and the firm has since established a \u201cworld class\u201d privacy and data protection program."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russia seeks to label two anti-Kremlin hacker groups as \u2018extremist\u2019",
+      "url": "https://therecord.media/russia-seeks-extremist-label-for-hacker-groups",
+      "published": "2026-06-04T18:04:00",
+      "summary": "The groups have previously claimed responsibility for cyberattacks targeting critical infrastructure and government institutions in Russia and Belarus."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Over 20,000 Instagram accounts stolen in Meta AI support hack",
+      "url": "https://www.bleepingcomputer.com/news/security/meta-ai-support-data-breach-affects-20-000-instagram-accounts/",
+      "published": "2026-06-08T06:00:27",
+      "summary": "Meta has revealed that 20,225 Instagram users had their accounts hijacked in a recent incident where attackers used Meta's AI-powered support system to reset passwords. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hands on with Intelligent Terminal, an AI-powered Windows Terminal",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/hands-on-with-intelligent-terminal-an-ai-powered-windows-terminal/",
+      "published": "2026-06-07T23:20:02",
+      "summary": "Microsoft has created an open-source fork of Windows Terminal called \"Intelligent Terminal,\" and it allows you to use AI directly inside Terminal without interfering with the regular session. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "C0XMO botnet spreads via DD-WRT router flaw, kills rival malware",
+      "url": "https://www.bleepingcomputer.com/news/security/c0xmo-botnet-spreads-via-dd-wrt-router-flaw-kills-rival-malware/",
+      "published": "2026-06-07T14:17:46",
+      "summary": "A new variant of the Gafgyt botnet called C0XMO is targeting DD-WRT router firmware and can move to other device types with various CPU architectures. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Silent Ransom Group targets law firms with fake IT support calls",
+      "url": "https://www.bleepingcomputer.com/news/security/silent-ransom-group-targets-law-firms-with-fake-it-support-calls/",
+      "published": "2026-06-07T14:09:19",
+      "summary": "The Silent Ransom Group extortion gang is actively targeting U.S. law firms and professional services organizations in social engineering attacks that often lead to data theft within hours of initial contact, according to a new report by cybersecurity firm Mandiant. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Critical Everest Forms Pro flaw exploited to take over WordPress sites",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/",
+      "published": "2026-06-06T14:09:26",
+      "summary": "Hackers are actively exploiting a critical vulnerability (CVE-2026-3300) in the Everest Forms Pro plugin, which lets them take complete control of a WordPress website. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Suspicious Polyfill login prompts pop up on Toshiba, Muji websites",
+      "url": "https://www.bleepingcomputer.com/news/security/suspicious-polyfill-login-prompts-pop-up-on-toshiba-muji-websites/",
+      "published": "2026-06-05T21:54:42",
+      "summary": "Tech giant Toshiba and mega-retailer Muji warned visitors that suspicious sign-in screens popping up on their websites could collect credentials. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA: Hackers now exploit SolarWinds Serv-U flaw to crash servers",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-solarwinds-serv-u-flaw-to-crash-servers/",
+      "published": "2026-06-05T19:15:30",
+      "summary": "CISA warned today that hackers are now actively exploiting a recently patched high-severity SolarWinds Serv-U flaw to crash servers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Chinese APT deploys new malware to keep access to hacked networks",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-apt-deploys-new-malware-to-keep-access-to-hacked-networks/",
+      "published": "2026-06-05T18:09:47",
+      "summary": "A Chinese espionage group tracked as UNC5221 has been accessing Microsoft 365 environments using the Brickstorm backdoor and previously undocumented malware named Plenet and AgentPSD. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Dark web Nemesis Market vendor gets 26 years for selling drugs",
+      "url": "https://www.bleepingcomputer.com/news/security/dark-web-nemesis-market-vendor-gets-26-years-for-selling-drugs/",
+      "published": "2026-06-05T17:50:58",
+      "summary": "A California man was sentenced to more than 26 years in federal prison for trafficking fentanyl and methamphetamine through Nemesis Market, one of the world's largest dark web marketplaces. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Over 900 US gas station tank gauge systems exposed to attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/over-900-us-gas-station-tank-gauge-systems-exposed-to-attacks/",
+      "published": "2026-06-05T14:50:15",
+      "summary": "Over 900 automatic tank gauge (ATG) systems across the United States, used to monitor fuel and chemical storage tanks across various critical infrastructure sectors, have been found exposed online and are vulnerable to ongoing attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "What 2026 DBIR Confirms: Attacks Are Living in the Browser",
+      "url": "https://www.bleepingcomputer.com/news/security/what-2026-dbir-confirms-attacks-are-living-in-the-browser/",
+      "published": "2026-06-05T14:00:10",
+      "summary": "Phishing, shadow AI, malicious extensions, and credential theft increasingly happen inside the browser. Keep Aware explains what the 2026 Verizon DBIR reveals about browser-layer security gaps and modern attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Cisco warns of unpatched SD-WAN zero-day exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
+      "published": "2026-06-05T06:24:20",
+      "summary": "On Thursday, Cisco warned of a high-severity, unpatched zero-day in the Cisco Catalyst SD-WAN Manager (tracked as CVE-2026-20245) actively exploited in attacks enabling root privilege escalation. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Brave Software releases Origin for a paid, bloat-free browsing experience",
+      "url": "https://www.bleepingcomputer.com/news/software/brave-software-releases-origin-for-a-paid-bloat-free-browsing-experience/",
+      "published": "2026-06-04T21:37:10",
+      "summary": "Brave has announced the public release of Brave Origin, a paid minimalist version of its browser that strips out cryptocurrency, AI, rewards, and other monetization-focused features. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hola Browser for Windows compromised to deliver cryptominer",
+      "url": "https://www.bleepingcomputer.com/news/security/hola-browser-for-windows-compromised-to-deliver-cryptominer/",
+      "published": "2026-06-04T21:27:25",
+      "summary": "The Windows version of the Hola Browser has been compromised in a supply chain attack that delivered an undeclared executable identified by researchers as a cryptocurrency miner. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Credit card theft campaign abuses Stripe to host stolen payment info",
+      "url": "https://www.bleepingcomputer.com/news/security/credit-card-theft-campaign-abuses-stripe-to-host-stolen-payment-info/",
+      "published": "2026-06-04T20:47:16",
+      "summary": "A new Magecart campaign is using Stripe's API infrastructure to host the credit card-stealing payload and the data exfiltrated from checkout pages. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Hackers Used Meta\u2019s AI Support Bot to Seize Instagram Accounts",
+      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+      "published": "2026-06-01T17:32:50",
+      "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Cybercriminals Are Targeting the FIFA World Cup 2026",
+      "url": "https://feeds.fortinet.com/~/957732002/0/fortinet/blog/threat-research~Cybercriminals-Are-Targeting-the-FIFA-World-Cup",
+      "published": "2026-06-04T13:00:00",
+      "summary": "FortiGuard Labs research shows how cybercriminals are exploiting the demand for the FIFA World Cup 2026 through phishing, fake tickets, malware, impersonation, and credential theft.&#160;&#160;&#160;&#160; &#160;"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO",
+      "url": "https://feeds.fortinet.com/~/957685901/0/fortinet/blog/threat-research~Inside-the-CrossPlatform-Propagation-of-a-New-Gafgyt-Variant-CXMO",
+      "published": "2026-06-03T13:00:00",
+      "summary": "FortiGuard Labs analyzes C0XMO, a new Gafgyt variant leveraging DD-WRT exploitation and multi-architecture propagation to expand IoT botnet infections.&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}
