@@ -1,0 +1,352 @@
+{
+  "collection_date": "2026-06-15",
+  "rss_articles": [
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/12/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-12T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-35273 Oracle PeopleSoft Enterprise PeopleTools Missing Authentication for Critical Function Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability ma"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Yarbo Android/iOS Mobile Application and Cloud Infrastructure",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-01",
+      "published": "2026-06-11T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to obtain hard-coded credentials, gain access to telemetry data, and potentially send operational commands to the robot fleet. The following versions of Yarbo Android/iOS Mobile Application and Cloud Infrastructure are affected: Yarbo Android/IOS mobile application Cloud MQTT infrastructure vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8 Yarbo Yarbo Android/iOS Mobile Application and Cloud Infrastr"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Naxclow IoT Platform",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-02",
+      "published": "2026-06-11T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to impersonate devices, intercept or manipulate communications, harvest sensitive credentials at scale, or gain unauthorized access. The following versions of Naxclow IoT Platform are affected: Smart Doorbell X3 vers:all/* X Smart Home vers:all/* V720 vers:all/* ix cam vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.8 Naxclow Naxclow IoT Platform Authorization Bypass Through User-Controlled Key, Miss"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Brickcom Cameras",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-162-03",
+      "published": "2026-06-11T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a remote unauthenticated attacker to gain unauthorized access to live video feeds, retrieve sensitive visual information from affected premises, and obtain administrative control of the device. The following versions of Brickcom Cameras are affected: Brickcom Cube 3.2.3.5.6 Brickcom Dome 3.2.3.5.6 Brickcom Bullet 3.2.3.5.6 Brickcom Box 3.2.3.5.6 CVSS Vendor Equipment Vulnerabilities v3 7.7 Brickcom Brickcom Cameras Mi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/11/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-06-11T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-10520 Ivanti Sentry OS Command Injection Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executiv"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/09/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-09T12:00:00",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-7473 Arista Extensible Operating System Incomplete Comparison with Missing Factors Vulnerability CVE-2026-11645 Google Chromium V8 Out-of-Bounds Read and Write Vulnerability CVE-2026-20245 Cisco Catalyst SD-WAN Manager Improper Encoding or Escaping of Output Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber a"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens KACO Blueplanet Inverters",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-02",
+      "published": "2026-06-09T12:00:00",
+      "summary": "View CSAF Summary KACO blueplanet Inverters contain multiple vulnerabilities that could allow an attacker to derive the credentials from the devices serial number and misuse them to gain unauthorized access. KACO new energy GmbH has released new versions for several affected products and recommends to update to the latest versions. KACO new energy GmbH is preparing further fix versions and recommends countermeasures for products where fixes are not, or not yet available. The following versions o"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric EcoStruxure Panel Server",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-03",
+      "published": "2026-06-09T12:00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of its vulnerability in its EcoStruxure Panel Server offer. The EcoStruxure Panel Server is a high performance, modular gateway with enhanced cybersecurity that provides easy and fast connections to multiple concurrent edge control or cloud applications. Failure to apply the remediations provided below may risk unauthorized authentication, which could lead to access to sensitive information. The following versions of Schneider Electric EcoStruxure Pa"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric Modicon Network Managed Switches",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-160-01",
+      "published": "2026-06-09T12:00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a RADIUS protocol vulnerability affecting its Modicon Network Managed Switch product. The Modicon Network Managed Switch product provides connectivity for multiple Ethernet devices, network management, enhanced cyber security and more advanced switching features. Failure to apply the mitigation provided below may risk forgery attacks in RADIUS Protocol, which could result in modification of any valid Response (Access-Accept, Access-Reject, or Acce"
+    },
+    {
+      "source": "Mandiant (Google)",
+      "category": "threat_intelligence",
+      "title": "ShinyHunters Targets Education Sector with Oracle PeopleSoft Exploit",
+      "url": "https://cloud.google.com/blog/topics/threat-intelligence/shinyhunters-targets-education-sector-oracle-exploit/",
+      "published": "2026-06-11T14:00:00",
+      "summary": "Introduction Mandiant and Google Threat Intelligence Group (GTIG) have identified an active compromise and extortion campaign attributed to UNC6240 (ShinyHunters) targeting Oracle PeopleSoft application infrastructure. The activity was observed between May 27, 2026, and June 9, 2026 and is consistent with the exploitation of CVE-2026-35273, a critical remote code execution vulnerability (CVSS 9.8) in the Environment Management component. The exploitation of this vulnerability directly aligns wit"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered",
+      "url": "https://unit42.paloaltonetworks.com/new-macos-artifact-discovered/",
+      "published": "2026-06-12T22:00:14",
+      "summary": "Unit 42 has discovered a new macOS Tahoe 26 forensic artifact that tracks user menu selections across the operating system. Learn more here. The post Tracing Digital Intent: New MacOS Tahoe 26 Artifact Discovered appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Trust No Skill: Integrity Verification for AI Agent Supply Chains",
+      "url": "https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/",
+      "published": "2026-06-11T10:00:24",
+      "summary": "Protect enterprise AI agents from supply chain risks by auditing third-party skills for hidden vulnerabilities and multi-stage attack chains. The post Trust No Skill: Integrity Verification for AI Agent Supply Chains appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility",
+      "url": "https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/",
+      "published": "2026-06-09T22:00:21",
+      "summary": "Unit 42 research examines attack scenarios targeting cloud logging services. Learn how to defend against log manipulation and defense evasion. The post Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+      "published": "2026-06-09T14:05:42",
+      "summary": "We include indicators of activity and mitigations for PAN-OS vulnerability CVE-2026-0257. The post Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257 appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When \u201cHi, This Is IT\u201d Comes Through Microsoft Teams",
+      "url": "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/",
+      "published": "2026-06-08T23:00:45",
+      "summary": "Attackers are increasingly targeting collaboration platforms like Microsoft Teams. Learn the risks and key steps to strengthen your organization's security. The post When \u201cHi, This Is IT\u201d Comes Through Microsoft Teams appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malicious Insider Threats: How Trusted Employees Turn Into Attackers",
+      "url": "https://www.zerofox.com/blog/malicious-insider-threats-how-trusted-employees-turn-into-attackers",
+      "published": "2026-06-11T10:31:03",
+      "summary": "TL;DR on Malicious Insiders What Are Malicious Insider Threats? Intentional, or malicious, insider threats represent a significant attack vector in which likely disgruntled employees compromise organizations by misusing access to sensitive networks and data or abusing advantageous positioning to enact harm against their employer. Unlike accidental insider threats, intentional insider threat actors take deliberate and [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malware Sandboxing for SOC Teams: How to Detonate Files and URLs Safely",
+      "url": "https://www.zerofox.com/blog/malware-sandboxing-detonate-files",
+      "published": "2026-06-10T09:03:41",
+      "summary": "Most SOC shifts start the same way: a queue full of artifacts that might be malicious and not enough time to investigate every one deeply. A flagged attachment, a URL from a newly registered domain. Each one needs a verdict. Most are clean, but the one that isn&#8217;t could be the beginning of a breach, [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Files Contempt Motion Against Amare Global and Three Individuals Over Unsubstantiated Health Claims",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-contempt-motion-against-amare-global-three-individuals-over-unsubstantiated-health-claims",
+      "published": "2026-06-12T12:00:00",
+      "summary": "Motion alleges Shawn Talbott, Amare Global, Patrick Hintze and Hiep Tran violated FTC order in connection with the marketing and sale of dietary supplements for children and adults The Federal Trade Commission has asked a federal court to hold in contempt dietary supplement provider Amare Global Holdings, its former Chief Science Officer Shawn Talbott and two others over allegations they violated an FTC order that banned Talbott and those who work with him from making false, deceptive or unsubst"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Finalizes Consent Order in Sevita, BrightSpring Acquisition",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-finalizes-consent-order-sevita-brightspring-acquisition",
+      "published": "2026-06-10T12:00:00",
+      "summary": "The Federal Trade Commission finalized a consent order involving Sevita Health\u2019s acquisition of BrightSpring Health Services Inc.\u2019s community living business.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Returns Nearly $3 Million to Consumers Deceived by Mortgage Relief Scheme",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-returns-nearly-3-million-consumers-deceived-mortgage-relief-scheme",
+      "published": "2026-06-09T12:00:00",
+      "summary": "The Federal Trade Commission is returning nearly $3 million to consumers deceived by the Golden Home Services, also known as Home Matters USA, mortgage relief scheme, which falsely promised to reduce homeowners\u2019 mortgage payments and prevent foreclosures.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Belarus-linked hackers target Gmail accounts of Polish public figures and their families",
+      "url": "https://therecord.media/ghostwriter-targets-personal-gmail-accounts-in-poland",
+      "published": "2026-06-14T23:00:00",
+      "summary": "Poland has warned that Ghostwriter, the Belarus-linked hacker group, has expanded its phishing operations to target personal Gmail accounts belonging to senior public figures and their relatives."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Bankruptcy admin approves settlement fund of $47 million for 23andMe data breach victims",
+      "url": "https://therecord.media/bankruptcy-admin-approves-settlement-for-23andme-breach-victims",
+      "published": "2026-06-12T17:12:00",
+      "summary": "About 7 million customers of the genetics testing company had their data stolen by hackers starting in April 2023, and many had their information posted on the dark web."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Major US surveillance program poised to lapse after legislative deadlock",
+      "url": "https://therecord.media/major-us-surveillance-program-set-to-lapse-702-fisa",
+      "published": "2026-06-12T17:08:00",
+      "summary": "It is the first lapse of the spy program, known as Section 702 of the Foreign Intelligence Surveillance Act (FISA), since it was passed into law in 2008."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "South Korea hits Coupang with record $409 million fine over data breach",
+      "url": "https://therecord.media/south-korea-data-breach-record-fine-coupang",
+      "published": "2026-06-12T15:56:00",
+      "summary": "The penalty is the largest ever issued by the commission for a personal data breach, surpassing the record 134.8 billion won ($88.8 million) fine levied against SK Telecom earlier this year."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cyber Force not included in Senate defense policy roadmap",
+      "url": "https://therecord.media/cyber-force-not-included-senate-defense-roadmap",
+      "published": "2026-06-11T16:47:00",
+      "summary": "An amendment by Sen. Kirsten Gillibrand (D-NY) to the chamber\u2019s fiscal 2027 national defense authorization bill that would have created the digital-focused service was defeated 14-13 when the Senate Armed Services Committee took up the nearly $1.2 trillion legislation behind closed doors this week."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Webinar: How behavioral AI stops phishing and account takeovers",
+      "url": "https://www.bleepingcomputer.com/news/security/webinar-how-behavioral-ai-stops-phishing-and-account-takeovers/",
+      "published": "2026-06-15T12:12:20",
+      "summary": "Modern phishing, BEC, and account takeover attacks increasingly bypass traditional email defenses and create operational strain for security teams. This webinar explores how behavioral AI can help automate detection, investigation, and remediation to reduce alert fatigue and accelerate response times. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FBI disrupts massive AI-powered phishing service using a million URLs",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/",
+      "published": "2026-06-14T14:36:23",
+      "summary": "In a coordinated effort, the FBI, working with Google and Black Lotus Labs, has dismantled a massive Chinese phishing-as-a-service operation called Outsider Enterprise with thousands of phishing websites used to steal credit card data and passwords. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Ex-school district employee jailed for hacks on former employer",
+      "url": "https://www.bleepingcomputer.com/news/security/ex-school-district-employee-jailed-for-hacks-on-former-employer/",
+      "published": "2026-06-13T20:53:13",
+      "summary": "A former IT employee at an Iowa school district was sentenced to 21 months in prison after conducting a prolonged cyberattack against the former employer that disrupted classroom operations, deleted accounts, and caused tens of thousands of dollars in damages. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Chinese hackers hijack auth flow, spy on isolated network for a decade",
+      "url": "https://www.bleepingcomputer.com/news/security/chinese-hackers-hijack-auth-flow-spy-on-isolated-network-for-a-decade/",
+      "published": "2026-06-13T14:06:42",
+      "summary": "Chinese hackers took control of a target organization's authentication stack and maintained persistence for 10 years, with full visibility into the administrative activity. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "US Gov asks Anthropic to ban 'foreign national' access to Fable, Mythos",
+      "url": "https://www.bleepingcomputer.com/news/security/us-gov-asks-anthropic-to-ban-foreign-national-access-to-fable-mythos/",
+      "published": "2026-06-13T10:01:32",
+      "summary": "The US government has ordered Anthropic to block all foreign nationals from accessing Fable 5 and Mythos 5, forcing the company to suspend both models worldwide. Anthropic is complying but disputes the basis, calling the cited jailbreak narrow and the capability widely available elsewhere. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Maine disables data breach notification portal after fake disclosures",
+      "url": "https://www.bleepingcomputer.com/news/security/maine-disables-data-breach-notification-portal-after-fake-disclosures/",
+      "published": "2026-06-12T19:33:32",
+      "summary": "Maine has taken its public data breach reporting portal offline after fraudulent breach disclosures were published on the state's website, prompting a review of procedures to prevent abuse in the future. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "phpBB forum fixes auth bypass bug lurking for a decade",
+      "url": "https://www.bleepingcomputer.com/news/security/phpbb-forum-fixes-auth-bypass-bug-lurking-for-a-decade/",
+      "published": "2026-06-12T18:19:34",
+      "summary": "A 10-year-old authentication bypass vulnerability discovered in the phpBB forum software allows an attacker to log in as any user, including administrators. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Ukrainian national pleads guilty to role in Conti ransomware operation",
+      "url": "https://www.bleepingcomputer.com/news/security/ukrainian-national-pleads-guilty-to-role-in-conti-ransomware-operation/",
+      "published": "2026-06-12T17:54:28",
+      "summary": "A Ukrainian national extradited from Ireland to the United States last year has pleaded guilty to conspiracy charges tied to the Conti ransomware operation. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
+      "url": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
+      "published": "2026-06-12T17:03:55",
+      "summary": "More than 400 packages in the Arch User Repository (AUR) are distributing a Linux rootkit and infostealer malware targeting credentials and access tokens. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Early Warning Signs of Supply-Chain Attacks Live in the Dark Web",
+      "url": "https://www.bleepingcomputer.com/news/security/early-warning-signs-of-supply-chain-attacks-live-in-the-dark-web/",
+      "published": "2026-06-12T14:01:11",
+      "summary": "GitHub access sales, leaked repositories, and stolen API keys can all become supply-chain attack footholds. Flare explores how underground forums expose early signals tied to software supply-chain risk. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft fixes Windows update failures linked to WUSA installer",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-windows-update-failures-linked-to-wusa-installer/",
+      "published": "2026-06-12T11:44:58",
+      "summary": "Microsoft has fixed a known issue that caused Windows updates released since May 2025 to fail when installed via the Windows Update Standalone Installer (WUSA) from a network share. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Pharma giant Novo Nordisk discloses breach of clinical trials data",
+      "url": "https://www.bleepingcomputer.com/news/security/pharmaceutical-giant-novo-nordisk-discloses-security-breach/",
+      "published": "2026-06-12T10:13:19",
+      "summary": "Danish pharmaceutical giant Novo Nordisk, the world's largest producer of insulin, disclosed a data breach affecting patient information from some clinical trials. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA orders feds to patch actively exploited Ivanti flaw by Sunday",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-3-days-to-patch-ivanti-flaw-exploited-in-attacks/",
+      "published": "2026-06-12T08:26:55",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) ordered government agencies to patch an actively exploited Ivanti Sentry flaw within three days, as mandated by the newly issued Binding Operational Directive (BOD) 26-04. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Over 73,000 French govt employees affected in Tchap messenger breach",
+      "url": "https://www.bleepingcomputer.com/news/security/french-govt-says-tchap-breach-affected-over-73-000-accounts/",
+      "published": "2026-06-12T07:09:11",
+      "summary": "The French government revealed that a recent breach of its Tchap encrypted messaging platform affects the accounts of over 73,000 employees in the French public sector. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Japanese energy firm loses drive with data of 10.9 million clients",
+      "url": "https://www.bleepingcomputer.com/news/security/japanese-energy-firm-loses-drive-with-data-of-109-million-clients/",
+      "published": "2026-06-11T23:14:16",
+      "summary": "Kyushu Electric Power Co., Inc. has disclosed a physical security incident that affects private data of more than 10 million customers. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Who Runs the Ransomware Group \u2018The Gentlemen?\u2019",
+      "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+      "published": "2026-06-10T14:03:44",
+      "summary": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group."
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "A Record-Breaking Patch Tuesday for June 2026",
+      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+      "published": "2026-06-09T22:07:28",
+      "summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft's most dire \"critical\" rating, and exploit code for at least three of the weaknesses is now publicly available."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Threat Actors Weaponize AI Hype to Deliver AsyncRAT",
+      "url": "https://feeds.fortinet.com/~/957950855/0/fortinet/blog/threat-research~Threat-Actors-Weaponize-AI-Hype-to-Deliver-AsyncRAT",
+      "published": "2026-06-11T13:00:00",
+      "summary": "FortiGuard Labs analyzes a multi-stage malware campaign that uses fake AI-themed documents, hidden PowerShell scripts, AutoHotkey loaders, and process injection to deploy AsyncRAT and maintain remote access.&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}
