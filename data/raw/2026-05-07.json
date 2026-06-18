@@ -2,6 +2,30 @@
   "collection_date": "2026-05-07",
   "rss_articles": [
     {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "How a Sailing Club Hacked Ireland\u2019s SMS Sender\u00a0ID Registry",
+      "url": "https://commsrisk.com/how-a-sailing-club-hacked-irelands-sms-sender-id-registry/",
+      "published": "2026-05-06T03:25:57",
+      "summary": "It is not just criminals who look for loopholes in anti-scam controls."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Two Chinese Arrested for Operating an SMS Blaster around Bangkok",
+      "url": "https://commsrisk.com/two-chinese-arrested-for-operating-an-sms-blaster-around-bangkok/",
+      "published": "2026-05-04T03:25:46",
+      "summary": "Few details were provided but the crime fits a well-established pattern."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Users Only Allowed Banking Apps on One Device; Transaction Limits for New App Users in Nigeria",
+      "url": "https://commsrisk.com/users-only-allowed-banking-apps-on-one-device-transaction-limits-for-new-app-users-in-nigeria/",
+      "published": "2026-05-01T03:25:05",
+      "summary": "The Central Bank of Nigeria has demanded new anti-crime controls on mobile banking."
+    },
+    {
       "source": "CFCA",
       "category": "telecom_fraud",
       "title": "The Most Common Fraud Threats Facing Financial Institutions (and How to Fight Back)",
@@ -196,6 +220,14 @@
     {
       "source": "BleepingComputer",
       "category": "security_news",
+      "title": "Ivanti warns of new EPMM flaw exploited in zero-day attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/ivanti-warns-of-new-epmm-flaw-exploited-in-zero-day-attacks/",
+      "published": "2026-05-07T15:20:51",
+      "summary": "Ivanti warned customers today to patch a high-severity remote code execution vulnerability in Endpoint Manager Mobile (EPMM) exploited in zero-day attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
       "title": "The Browser Is Breaking Your DLP: How Data Slips Past Modern Controls",
       "url": "https://www.bleepingcomputer.com/news/security/the-browser-is-breaking-your-dlp-how-data-slips-past-modern-controls/",
       "published": "2026-05-07T14:01:11",
@@ -304,14 +336,6 @@
       "url": "https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-actively-exploited-firewall-zero-day/",
       "published": "2026-05-06T09:18:16",
       "summary": "Palo Alto Networks warned customers today that a critical-severity unpatched vulnerability in the PAN-OS User-ID Authentication Portal is being exploited in attacks. [...]"
-    },
-    {
-      "source": "BleepingComputer",
-      "category": "security_news",
-      "title": "New stealthy Quasar Linux malware targets software developers",
-      "url": "https://www.bleepingcomputer.com/news/security/new-stealthy-quasar-linux-malware-targets-software-developers/",
-      "published": "2026-05-05T22:01:39",
-      "summary": "A previously undocumented Linux implant named Quasar Linux (QLNX) is targeting developers' systems with a mix of rootkit, backdoor, and credential-stealing capabilities. [...]"
     }
   ],
   "reddit_posts": [
@@ -328,7 +352,44 @@
       "url": "https://www.reddit.com/r/twilio/comments/1s0bmjf/twilio_fraud_operations_suspended_my_solodev/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "harvey_croat",
+          "body": "Infobip",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "PacificPermit",
+          "body": "Blooio no a2p and you\u2019ll be sending instantly. No approvals no wait period no bs",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "exquisitevision",
+          "body": "I've used twilio for years. Never had any issues. They require the items from ctia best practices iirc. That's the same for all providers in the US. Before them I used another provider where deliverability wasn't as good. I believe twilio has direct connections to the big 3 carrier whereas others go through aggregators so deliverability may not be as good  ",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Apprehensive_Bat_141",
+          "body": "I\u2019ve been round and round with fraud team trying to get my business account activated. \n\nProvided my EIN paperwork 3x. Provided my articles of incorporation and other paperwork 3x.  Provided screenshots of the state website showing business (they say the state website isn\u2019t accessible).  Provided my business email, phone and address. \n\nStuck. They want to see me posting my business in my LinkedIn. That\u2019s just absurd.  \n\nCannot get my legit business approved.  Going on 3 weeks. ",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Fluffy_Compote_4969",
+          "body": "Twilio's customer support is the worst I've ever seen for a software. Use Plivo, we've migrated both calling and SMS to Plivo after pulling our hair out over Twilio",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "MrPap",
+          "body": "Twilio\u2019s support is overseas. If your site is behind security that restricts connection from overseas, then they can\u2019t access your site.\n\nTwilio also prefers users use their authy product for 2fa so will make it hard for your use case.\n",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -343,7 +404,56 @@
       "url": "https://www.reddit.com/r/twilio/comments/su72c0/experience_with_fraud_takeover_personally_on_hook/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "HeronPlus5566",
+          "body": "Surely you built some abuse prevention of your own into your environment ?  Yeah the ticket response isn\u2019t great",
+          "score": 6,
+          "created_utc": ""
+        },
+        {
+          "author": "CSisFreeStress",
+          "body": "I know the feeling I had something similar for Google Cloud. They've just now started introducing webhooks on payment in AWS so hopefully GCP and the other autoscaling SaaS companies will too.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "Talloakster",
+          "body": "Only sorta. Got inconsistent info and some reversals but other damages we just to live with. No matter terrible their support is - and they wouldn't respond at all for days even with the scope of the problem, I guess I wouldn't recommend starting the chargeback process. Once I did that they stopped offering any support- apparently they really don't like that.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Extra_Air2013",
+          "body": "Just had a similar issue happen with my company and now I have a balance of $4300 on my account and they won't let me close the account.  Curious what the resolution was for you and if you were able to get the funds reversed.  Ironically enough, I don't even use the Twilio service anymore, it was originally set up on a non profit website to spread kindness of all things, but someone hacked into the Twilio side of things and apparently send a billion messages that I'm not on the hook for.  Ugh.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Intelligent_Horse297",
+          "body": "Hello all,\n\nI just wanted to share an experience I had seen on Reddit that I hoped would never happen.\n\nOver the last two months, I have had two instances where my account with Twilio was suspended. I was told each time to do the \"Sanitation steps\" which are\n\n* [Delete your auth token(s)](https://help.twilio.com/hc/en-us/articles/223136027-Auth-Tokens-and-How-to-Change-Them)(including for sub-accounts if you have any)\n* Change the password\u00a0for all users associated with your account\n* [Delete all existing API keys](https://help.twilio.com/hc/en-us/articles/9318455807771-API-Keys-and-How-to-Change-Them)\n\nThen, I had to create an RCA report to send in so my account could be verified as protected and reactivated. I have an app that sends out automatic reminders; thus, Twilio is needed. This was resolved both times, with the most recent date being the 15th of October.\n\nThen, today, Oct 21st, I got a bunch of emails from Twilio and banking messages indicating reloading charges from Twilio. My fear came true, and I rushed home to turn off the auto charge, and my bank turned off my card. I now have a sitting balance of $3600 with Twilio. This all happened in a matter of 10 minutes. Being a smaller account that is only usually charged $20-30 per month, I do not have phone support and rely on slow emails to figure this out.\n\nI can only locate the subaccounts if I go to Account Billing -&gt; Usage By Subaccount, where I find two random accounts not connected to my main account with phone numbers created today.\n\nI am trying to figure out what to do from this point on. I am confused because I followed their security steps. I have deleted my Auth tokens, changed passwords, and deleted all existing API tokens twice. I have 2FA by text message on and have never received any messages notifying off an IP address from other countries trying to log in. When I ask Twilio Fraud support, they simply say, \"Unfortunately, it seems your account was not secure, and you have not mitigated the root cause factor on your end.\"\n\nThen why did you read my RCA twice and approve that my account was secure? How else could I make it more secure?\n\nI have found 2 things others can do to help. I firmly believe this issue lies with Twilio exclusively, but this is ridiculous\n\n1. Deactivate activity to other countries.\u00a0[https://www.twilio.com/docs/sip-trunking/voice-dialing-geographic-permissions](https://www.twilio.com/docs/sip-trunking/voice-dialing-geographic-permissions)\n2. Do not auto-renew. This service is not trustworthy for those who cannot afford a hack, even when you follow all the steps.\n\nAs I figure this out, I will not be able to send reminders to my customers for a couple of weeks, and I am now out $1500 of needed money during my business off-season.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Large_Papaya_1322",
+          "body": "This just happened to me now! In a few days Twilio charged $16k to my expired cc that somehow went thru and I\u2019m not on autopay or anything! I\u2019m trying to contact them now wish me luck :(",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Objective_Spot7997",
+          "body": "Something similar just happened to me. The auto-recharge drained my business account, and now my Twilio balance is showing -$200. I'm confident my credentials weren\u2019t leaked, so I\u2019m left wondering how this could have happened. It\u2019s concerning, and I\u2019m starting to question Twilio\u2019s systems.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "i_use_this_for_work",
+          "body": "While what happened to you sucks, this happens across services to all sorts of people.\n\nTwilio is not responsible to monitor your account, nor are they responsible for the security breach that led to your account being accessed.\n\nTwilio has significant security controls available, just line AWS and Google.\n\nWork on reinforcing your security to prevent this, and work with twilio and your credit card company.\n\nSide note- if it\u2019s a surprise to you that you\u2019re responsible for your business credit card, it may be a good point in your start-up to pause and look at the whole circumstances and assess your risk profile. It seems like you\u2019re uncomfortable being on the hook for a credit card bill, what happens when you get sued by an employee or client and have a $10k bill just to respond to the suit?",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -358,7 +468,20 @@
       "url": "https://www.reddit.com/r/twilio/comments/10sftuc/authy_hacked_tonight/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "philnash",
+          "body": "That sounds horrible. Get on to Authy support here: https://authy.com/help/. They might be able to help.",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "Same_Particular6349",
+          "body": "you ever figure this out?",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -373,7 +496,14 @@
       "url": "https://www.reddit.com/r/twilio/comments/11m1mbd/will_downloading_twilio_on_my_personal_phone/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "BitcoinCitadel",
+          "body": "Certain company apps take over your phone but I think that's just a client. See what it asks for",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -388,7 +518,20 @@
       "url": "https://www.reddit.com/r/twilio/comments/wv4j97/should_authy_users_be_concerned_about_the_recent/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "frankimbur",
+          "body": "They have been eerily silent about it\u2026.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "getatmethough",
+          "body": "Ha ha ha\u2026. Wait till someone hacks your account even with 2fa enabled sends 10,000,000 messages in the course of an hour and twilio tells you that you still have to pay\u2026. Also, don\u2019t forget to read your agreement letting you know that ALL conversations and texts are monitored. Fawk twilio",
+          "score": -3,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -403,7 +546,14 @@
       "url": "https://www.reddit.com/r/twilio/comments/ozk81e/help_preventing_and_stopping_otp_attacks/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "thegrif",
+          "body": "**Work on getting better at detecting and isolating synthetic traffic.** Use a layered approach that combines fingerprinting ([botd](https://github.com/fingerprintjs/botd) is a decent place to start) and ip address intelligence (i've had success using the [ipinfo.io proxy/vpn detection solution](https://ipinfo.io/products/proxy-vpn-detection-api)).\n\n**Flip the script.** You could, in theory, rely on an alternate approach where users text a specific six-digit code to a specific phone number - and only then will the phone number be associated with the account being created. If these attacks are truly sinking your fleet, pivot to this - it doesn't sacrifice any of the validity of the verification.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -418,7 +568,20 @@
       "url": "https://www.reddit.com/r/twilio/comments/vhs60a/sms_fraud_spam_dos/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "seg492",
+          "body": "Here's a great overview one of our security-focused teammates put together recently: [https://www.twilio.com/blog/basic-api-security-guide](https://www.twilio.com/blog/basic-api-security-guide)\n\nThat covers the basics like enabling MFA on your account, using secure access tokens, etc. Like any API-based service, make sure to protect your admin/user accounts and the ability to make calls to the platform.\n\nOne in particular to call out for SMS is restricting [Geo Permissions](https://support.twilio.com/hc/en-us/articles/223180168-What-Are-Geographic-Permissions-and-Why-do-They-Exist-) to only the countries you operate in. Bad actors may try to use your token to trigger SMS &amp; rack up a bunch of charges in a foreign country, footing you with the bill.\n\nAfter restricting sending to other countries, set up email alerts ([should be here in your console](https://console.twilio.com/us1/monitor/alarms/create)) to let you know if you experience [a 21408 error](https://www.twilio.com/docs/api/errors/21408) \\- this means there was an attempted send to a country you did not allow. Could be fraud, but could also be real, so worth keeping tabs on.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "seg492",
+          "body": "@TheSaltyB - unclear on whether you\u2019re exposing your auth token. Are you calling Twilio from JavaScript on that landing page? If you came across an integration with Marketo, it\u2019s likely that your token isn\u2019t exposed and only exists in Marketo\u2019s backend.\n\nTwilio aside, could this form be embedded somewhere like an internet website/intranet users have to sign into? If not, tools like Recaptcha can be help reduce spam. Also, it sounds like you don\u2019t need this to be findable/searchable, so if Marketo lets you customize the url where it\u2019s hosted, you could set the url path to a long randomized string (ie \u201cmarketo.com/forms/ogecni358db42yu\u201d rather than \u201cmarketo.com/forms/employee-intake-form\u201d). \u201cSecurity by obscurity\u201d isn\u2019t exactly a silver billet, but still decreases the odds some random person would stumble across the form if it\u2019s hosted at a publicly-accesible url.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -433,7 +596,44 @@
       "url": "https://www.reddit.com/r/twilio/comments/nf5b30/twilio_forces_users_to_set_up_insecure_2fa_method/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "mjg123",
+          "body": "Hi there. The setup flow is a bit unexpected here because you do have to set it up as SMS-based initially, but you can immediately disable that in favour of Authy or any other authenticator app (here: [https://www.twilio.com/console/user/settings](https://www.twilio.com/console/user/settings)).",
+          "score": 9,
+          "created_utc": ""
+        },
+        {
+          "author": "men2000",
+          "body": "I enabled two factor authentication and not having this type of problem. I setup when they enforced this feature. But for this type of issue, you can directly contact the Twilio support.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "Stryker1-1",
+          "body": "I've always had the option from the very beginning to switch from sms to an authenticator app for 2FA.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "garaktailor",
+          "body": "Its embarrassing that twilio doesn't support WebAuthn",
+          "score": 0,
+          "created_utc": ""
+        },
+        {
+          "author": "rsyncnet",
+          "body": "You are all thinking of this backwards.\n\nTwilio didn't do this for you or for your security or to help you.  This has nothing to do with you.\n\nTwilio has a big, monster spam/scam problem - I'll bet a new abuser signs up for a Twilio account every 60 seconds.  Requiring a *physical SIM card number* for every account is just a blunt mechanism to slow this process down and, at the very least, weed out the least sophisticated offenders.  They're just attaching some small cost(s) to creating a Twilio account and firing off 1000 spam SMS (or whatever abusers do).\n\nOf course this won't stop sophisticated abusers of Twilio service and it mostly just annoys and inconveniences legitimate users but this is a *really hard problem to solve* and it doesn't surprise me that they resorted to this.\n\nFor the record, I hate it.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "recolick",
+          "body": "I don't care it's secure or not at all.\n\nI'm just annoyed that Twilio is forcing me to be secure. twilio don't care if their customer is happy, they just want themselves to be happy.\n\nTwilio when will you force every user to use \\`30 digit password (no english word allowed) + fingerprint + face recognition + SMS verification + voice verification + yubikey\\` to log into their account? It's even more secure than your current 2fa, right?",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -493,7 +693,32 @@
       "url": "https://www.reddit.com/r/twilio/comments/i9umlt/plivo_unique_email_leaked_was_plivo_or_twilio/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "TopCow0",
+          "body": "What does this have to do with Twilio?",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "philnash",
+          "body": "Twilio developer evangelist here. I'm unaware of any breaches at Twilio. Also, not sure why Twilio would leak your Plivo address? Unless you are using that one for both services?",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "SirMoist394",
+          "body": "Those stupid spam calls I get come back as plivo owned. Companies like that make it so our information gets stolen. Just gather everyone's information and if someone takes it, \"oops\".",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "wodny85",
+          "body": "Same with unique addresses here. Just received a scam SPAM message as well. Apparently Polish users were targeted. The CC list is quite long.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -508,7 +733,14 @@
       "url": "https://www.reddit.com/r/twilio/comments/di9hh7/spooky_hackoween/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "mjg123",
+          "body": "As for me, I bought a cheap 2nd-hand electric heater for my home office which is basically a shed and very cold in winter. I'm going to wire up a remote control power switch to an Arduino GSM module with a Twilio SIM in it so that I can turn the heater on or off by SMS. It's a weekend project that's getting more and more urgent as the days pass.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -523,7 +755,68 @@
       "url": "https://www.reddit.com/r/twilio/comments/1ptcgtm/twilio_charged_me_10k_in_one_day_for_fraudulent/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "Intelligent_Horse297",
+          "body": "This happened to me a while back. I took off my payment info, and filed for new phone number under a new account and was without texting on my app for over a month. They are of no help, now I reload the account manually $50 every month.\u00a0",
+          "score": 4,
+          "created_utc": ""
+        },
+        {
+          "author": "DisastrousJoke3426",
+          "body": "I dropped Twilio, did a chargeback on my payment method for non-response or movement on my issue, and went to Vonage.  \n\nVonage responds quickly to my inquiries, which allows me to focus on more important things than plumbing an API. \n\nLike my customers.",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "Empty-Mulberry1047",
+          "body": "that's what happens when you vibecode an endpoint, open it to the public, and fail to understand the implications of doing so. it's unlikely twilio will give you a refund.",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "helloween123",
+          "body": "Can you publicly tag them on LinkedIn?",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "Beerstud",
+          "body": "Sorry to hear. Have experienced the same issue - Twilio used to have SMS Traffic Pumping Protection which covered you for loss in this circumstance. Potentially not the whole amount, but some. I went through standard support channels and got a response but it wasn't fast - our service was down for a few weeks while we tried to sort it out.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "galapagos7",
+          "body": "Impossible to talk unless you upgrade to support tier \u2026 we spend $3k per month on sms \u2026 tickets take forever to resolve",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "AyyRickay",
+          "body": "Normally I would remove this post, because we're NOT a support channel and can't really escalate things like this - the support thread is typically the place for posts like this to go.\n\nI'll keep it up, though, because this is generally an issue people are running into on the platform.\nUltimately, I know it sucks, but if you're spending thousands on a platform, consider paid support. I'm thinking of your next provider as well. It's the clearest way for you to make sure you get heard and have an SLA.\n\nI also know this is just a fundamental issue on a pay-as-you-go platform, and we need better guardrails and monitoring. I'm sorry this happened, and we need a better way of helping you set up alerts when anomalies happen, and making sure customers who are at your kind of scale can keep an eye on this kind of anomalous traffic.",
+          "score": 7,
+          "created_utc": ""
+        },
+        {
+          "author": "isit2amalready",
+          "body": "Twilio support is utter trash. They leave so much money on the table with their non-existent support.\n\nI had the same issue with Sendgrid (acquired by Twilio) where my monthly bill 10x'd to $7,000. No support at all, I had to switch credit cards and bail like a criminal because I couldn't speak to a single human. Super trash.\n\nGood luck!",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "PsychologyFull6085",
+          "body": "Yeah the fact the solution is to spend thousands of dollars for support is laughable, especially when there are other companies that offer messaging APIs that don\u2019t charge for support.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "PetrisCy",
+          "body": "Cant you chargeback and use the no support as an excuse? Like call bank say some scum happened and they are not responding and no way to communicate? I think you are way too chill for 10k for nothing",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -568,7 +861,38 @@
       "url": "https://www.reddit.com/r/twilio/comments/1pc9nuo/twilio_for_mixed_use_personal_business_account/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "Baconwader",
+          "body": "Looks like you're going to need to start over. Would try Textla for your SMS and Rebrandly to make sure your links/content don't get flagged as spam.",
+          "score": 7,
+          "created_utc": ""
+        },
+        {
+          "author": "gc1",
+          "body": "Well you told them it was for personal use not business and then provided examples that clearly included client business. I\u2019m not sure what the non-US frameworks for messaging are, but in the US, P2P definitionally excludes the business use case, and A2P registration including proof you exist as a business is required. \u00a0\n\nIt looks to me like you are being caught in a loop of trying to get this number approved for non-business use when a) their framework is business use is the primary use case, and P2P for personal use is an exception case, and b) you are not describing a strict personal use case.\u00a0",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "t0x0",
+          "body": "They literally don't want that sort of business. It is what it is.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "ZacaBala",
+          "body": "I'm in fallback mode. I just need a mobile UK number that's capable of sending and receiving SMSs and calls and works with Groundwire. That's all.\n\n[Voip.ms](http://Voip.ms) \\&gt; Can't find mobile UK numbers, just sent a message to their support.\n\nSuggestions are appreciated...",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "O1O1O1O",
+          "body": "Funny I did a similar thing with Twilio about 8 years ago at a time when I was also using their telephony stack in my day job.  I'm guessing they have been deluged with people using their service to build wrong number scam systems and the like.  Your emails were probably never even seen by a real person who could determine you are a real person.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -583,7 +907,14 @@
       "url": "https://www.reddit.com/r/twilio/comments/1qx6q6f/does_the_billing_area_in_console_display_all_usage/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "AyyRickay",
+          "body": "Is it possible you have another account in your organization where the billing is coming from? [https://help.twilio.com/articles/8963038518299-Introduction-to-Twilio-Organizations](https://help.twilio.com/articles/8963038518299-Introduction-to-Twilio-Organizations)\n\nAs far as I know you get a breakdown of all of the product usage in your account, which is why my initial thought was that maybe the problem is that the charge isn't on this account, but another one in the same org. Worst case, it's just a different account entirely and somebody got access to your card.\n\n  \nCurious to hear what the resolution is!",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -598,7 +929,56 @@
       "url": "https://www.reddit.com/gallery/1g40uxl",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "covati",
+          "body": "Yea, unfortunately A LOT of telecom abuse comes from Russia. So unless you can prove you\u2019re legit it\u2019s not worth the risk to approve you.",
+          "score": 5,
+          "created_utc": ""
+        },
+        {
+          "author": "swagszg",
+          "body": "Yes, I\u2019m from Russia \nI probably won\u2019t be able to prove that I will use the product for good purposes\nThis is sad, thanks everyone for the answers",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "Meaxis",
+          "body": "The US banned commercial activity with Russia in parts.",
+          "score": 5,
+          "created_utc": ""
+        },
+        {
+          "author": "Quebell",
+          "body": "Man, I had this happen to me and I am in the states. I just signed up and everything about their support makes me not want to use their service.",
+          "score": 3,
+          "created_utc": ""
+        },
+        {
+          "author": "Confident-Lead4337",
+          "body": "Also if you get reported for being a spam call they deactivate your account if someone reports your number",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "Auser1452",
+          "body": "Try vonage",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "walking_pigeon_",
+          "body": "And I was just deactivated. No clue why. I'm an indie-dev. They've got $20bucks of mine. Did they just pocket my money?",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Altruistic-Sea-9541",
+          "body": "Twilio sucks, just check their trustpilot scores. They banned me for no reason as well. Using Telnyx instead, great platform.",
+          "score": 2,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -628,7 +1008,50 @@
       "url": "https://www.reddit.com/r/twilio/comments/11glwnt/authy_closing_2fa_service/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "philnash",
+          "body": "The Authy API is closing soon, but the Authy application will continue to work so you should have nothing to worry about.\n\nServices that use the Authy API have been notified and encouraged to upgrade to the Twilio Verify API: https://www.twilio.com/blog/migrate-authy-to-verify. I don\u2019t know what the Uphold email says, but they should be going through this process in order to keep your account secured with 2FA.",
+          "score": 5,
+          "created_utc": ""
+        },
+        {
+          "author": "bishnumahali",
+          "body": "I thought the same thing. It's just an upgrade to a different version I believe. Thanks, everyone for shedding light on this.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "BrCapoeira",
+          "body": "any update?",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "itoldusoandso",
+          "body": "As of November 2022, Twilio no longer provides support for Authy SMS/Voice-only customers. Customers who were also using Authy TOTP or Push prior to March 1, 2023 are still supported. The Authy API is now closed to new customers and will be fully deprecated in the future.\n\nThis means they closing the service to new customers for API but they are continuing running for the existing customers using the 2FA app verification, at least for the time being and they did not announce any date for sunset yet.\n\nThe fact Twilio purchased Authy was perhaps a good thing because Authy would not have survived as a free service and would not survive as a stand-alone business solution either given how the drive to integrate authentication. \n\nIt doesn't look like Twilio will provide any consumer type of solution. They just seem to focus where the money is. I do use Twilio for cheap VOIP number and forward calls but I am not their typical customer business so I wouldn't be surprised they completely shut down the consumer business and only focus on commercial customers. Given how much some providers charge for VOIP numbers, Twilio is quite cheap and reliable service. \n\nThe Authy app has been running reliably but they haven't invested in it for years and there were things about it that sucked really.\n\nWhat apps are you going to use when you move from Authy? I never liked the idea to use the 2FA app from the same company that stores my passwords (Lastpass here as example was hacked not once but multiple times), or by company that provides essential services to me (Google).\n\nThere are a couple of additional concerns, mainly around account recovery. If all of my devices are lost can I still log into the service? If I lose the phone number, email etc, can I still access it if needed etc? The advantage of Authy was it enabled me to login using phone or email and it works pretty well across devices if I don't make changes / deletion to passwords which was sometimes troublesome. \n\nAn additional concern is if you use hardware keys along with Authy like Yobikey etc. I have no experience with these.\n\n Here are some alternatives:\n\n  \nGoogle Authenticator\n\nandOTP \n\nLastPass Authenticator \n\nMicrosoft Authenticator\n\n&amp;#x200B;\n\nWhat else?",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "MaximusPanin",
+          "body": "Desktop app sunset notice\n\nOn **March 19, 2024**, we will no longer support the Twilio Authy Desktop apps.\n\nHere's what you need to know &gt; [https://help.twilio.com/articles/19753631228315](https://help.twilio.com/articles/19753631228315)\n\nTo continue using Authy, please install the Authy Android or iOS mobile app.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "FreedomTechHQ",
+          "body": "Authy shut the Desktop app without export ability and it is unacceptable. Please sign our petition to get export functionality. [https://www.change.org/p/twilio-authy-implement-data-export-now](https://www.change.org/p/twilio-authy-implement-data-export-now)",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "acedtect",
+          "body": "I can confirm that I was able to add Authy as a \"new\" 2FA provider. The only difference is a 6 digit code vs. a 7 digit code.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -658,7 +1081,44 @@
       "url": "https://www.reddit.com/r/twilio/comments/v43djf/question_about_large_negative_balance_due_to/",
       "selftext": "",
       "is_self": false,
-      "comments": []
+      "comments": [
+        {
+          "author": "quasi635",
+          "body": "In the same boat as you. My account was hacked just a couple weeks ago and the hacker sent thousands of dollars of messages in a couple of hours. Twilio wants to hold me responsible for the charges. Their support credited a small percentage of it but left me with the majority of the balance. I don't have the funds to pay so we'll see what happens.",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "aweyrich",
+          "body": "I am in the exact same boot as you all. This just happened to me last week. Did you all cancel your account? Do they let you cancel your account with a large remaining balance on it?  \n\nBesides the very large balance the website charged $452 worth of fraudulent charges on my credit card from the hack before I realized what was going on.  Did this happen to anyone else....where your actual credit card kept getting reupped and charged again and again?   Did they credit you back al the charges to your actual credit card?",
+          "score": 2,
+          "created_utc": ""
+        },
+        {
+          "author": "philnash",
+          "body": "If this is fraud then I can only recommend taking it up with Twilio support, which you already have done. I don\u2019t think we can fix anything here on Reddit.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Eskibro830",
+          "body": "Any update on this?",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "PuzzleheadedCod9587",
+          "body": "Do you have any update on this? Did they chase you up for the balance later? I'm in the same boat now - how they are able to be allowed to be in business as an API provider with no rate limits and continue to charge customers after emptying our bank account is beyond me.",
+          "score": 1,
+          "created_utc": ""
+        },
+        {
+          "author": "Reddit_Man_Up",
+          "body": "This now the 3rd time its happened to me. Im a very low volume user, about $20 per month. First time, they refunded me as I had auto charge turned on and they said they'd only do it the one time. I turned auto-charge off thinking that their system wouldn't allow a negative balance if the credit in my account ran out. Was I wrong about that. I had to pay over $900 to get them to turn my account back on. They said as long as I had a positive balance, any marketing text session that is started (so long as it had a positive balance when it started), their system would send out how ever many texts were in that session until it ended and my account would go negative. They wouldn't budge on zeroing out my account and said pay up if I wanted my account access backI asked if I could set my account to limit the amount if texts sent out in one session and they said no. Its intentional guys, they could easily limit this but choose not to. And to add insult to injury, the insist the breach is on my end. I have 3 Devs all frustrated with Twilio because Twilio is basically blaming them saying that our website was hacked when it was not. This time to the tune of $6250 worth. And most of the texts were pretty much all blocked by twilio due to the new government text-opt in rules.I Got an email from Twilio saying that my account has been compromised and has been suspended. When I logged in, it was at negative $138. Im thinking great, at least its not $900. But then when my dev. logged in, he told me that it wasn't $138, it was $250. So I opened another duplicate tab and it went to $388. I was watching the amount go up live in real time, $338, $440 and all the way up to $6250 when it stopped. Nothing stopped it. My Dev. changed the Auth Token, but the amount kept climbing. We saw that about 9 other telephone numbers we added by the hackers so my Dev. deleted them but still, the texts continued to go out and the spend amount kept climbing. I want to know why if I got an email from Twilio that said my account had been suspended, then did the spend continue to go up? Fortunately, I was video screenshotting this live in real time. I decided for the lousy amount that I spend each month with Twilio, the stress is not worth using a texting discount code system as this crap has happened now for the third time. I smell a class action here. I can only imaging that a boat load of people like us have paid the hundreds of dollar in negative balances just to get our accounts out of suspension and back working again. For Twilio to not allow us to put limits on our accounts is an intentional move by them and I believe that it's to put the squeeze on us.  They have lost nothing tangible, it's just ones and zeros getting together to send out texts yet they still want to collect money from us even though they know it wasnt us that sent them.  Again, they could do something about it but choose not to.",
+          "score": 1,
+          "created_utc": ""
+        }
+      ]
     },
     {
       "query": "Twilio Fraud Monitoring",
@@ -691,5 +1151,91 @@
       "comments": []
     }
   ],
-  "competitor_maps": []
+  "competitor_maps": [],
+  "competitor_changelogs": [
+    {
+      "date": "2026-04-12",
+      "version": "v2.3.1",
+      "type": "security",
+      "category": "api_security",
+      "title": "Enhanced API Security Protocols",
+      "description": "Introduced new encryption standards and token-based authentication for API requests to enhance security.",
+      "impact": "high",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604730"
+    },
+    {
+      "date": "2026-04-10",
+      "version": "v2.3.0",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Added ML-based fraud scoring",
+      "description": "Real-time fraud detection using machine learning. Scores each verification attempt 0-100 based on device signals and behavior patterns.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604762"
+    },
+    {
+      "date": "2026-04-08",
+      "version": null,
+      "type": "pricing",
+      "category": "pricing",
+      "title": "Updated Pricing for Fraud Detection Services",
+      "description": "Revised pricing structure for fraud detection services to offer more competitive rates and volume discounts.",
+      "impact": "medium",
+      "relevance_to_fraud": "high",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/?",
+      "extracted_at": "2026-05-07T20:16:43.604768"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Network blocks with TTL",
+      "description": "Block SMS and/or Voice traffic to a specific mobile network and set a timer to lift the block automatically.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096824"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Inbound Traffic Rules",
+      "description": "Block incoming traffic to your applications by setting inbound rules.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096858"
+    },
+    {
+      "date": "2026-02-01",
+      "version": "3.3",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "SMS Burst Protection",
+      "description": "SMS Burst Protection has been extended from select countries to worldwide coverage, ensuring your traffic is protected regardless of destination.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-05-07T20:16:28.096862"
+    }
+  ]
 }
