@@ -335,22 +335,27 @@ def generate_report(collected_data, analysis_results, date_str):
 
 """
 
-    # Collection stats
-    rss_count = len(collected_data["rss_articles"])
-    reddit_count = len(collected_data["reddit_posts"])
+    # Outcome-focused metrics
     changelog_count = len(collected_data.get("competitor_changelogs", []))
+    relevant_changelogs = len([c for c in collected_data.get("competitor_changelogs", []) if c.get('relevance_to_fraud') in ['high', 'medium']])
 
-    report += f"- **{rss_count}** industry articles reviewed\n"
-    report += f"- **{reddit_count}** Reddit discussions analyzed\n"
-    report += f"- **{changelog_count}** competitor updates tracked\n"
+    report += f"**This Week's Intelligence:**\n\n"
 
     if analysis_results and "categorized_counts" in analysis_results:
         telecom_count = analysis_results["categorized_counts"]["telecom"]
         general_count = analysis_results["categorized_counts"]["general"]
-        competitive_count = analysis_results["categorized_counts"]["competitive"]
-        report += f"- **{telecom_count}** items categorized as Telecom Fraud\n"
-        report += f"- **{general_count}** items categorized as General Fraud\n"
-        report += f"- **{competitive_count}** items categorized as Competitive Intelligence\n"
+
+        report += f"- 🔴 **{telecom_count} telecom fraud threats** identified\n"
+        report += f"- 🟡 **{general_count} general security threats** identified\n"
+        report += f"- 📊 **{relevant_changelogs} competitor features** analyzed (high/medium relevance)\n"
+    else:
+        rss_count = len(collected_data["rss_articles"])
+        report += f"- 📰 **{rss_count} industry sources** scanned\n"
+        report += f"- 📊 **{relevant_changelogs} competitor features** tracked\n"
+
+    reddit_count = len(collected_data["reddit_posts"])
+    if reddit_count > 0:
+        report += f"- 💬 **{reddit_count} community discussions** reviewed\n"
 
     report += "\n---\n\n"
 
@@ -368,32 +373,59 @@ def generate_report(collected_data, analysis_results, date_str):
             if 'top_trends' in telecom_analysis and telecom_analysis['top_trends']:
                 trends = telecom_analysis['top_trends']
                 if isinstance(trends, list):
-                    report += "**Top Threats & Trends:**\n\n"
-                    for i, trend in enumerate(trends, 1):
-                        # Handle dict with nested description/details
+                    # Filter out items with empty descriptions
+                    valid_trends = []
+                    for trend in trends:
                         if isinstance(trend, dict):
-                            trend_name = trend.get('trend', '')
+                            trend_name = trend.get('trend', '') or trend.get('title', '')
                             description = trend.get('description', '') or trend.get('details', '')
-                            report += f"{i}. **{trend_name}**: {description}\n"
-                        else:
-                            report += f"{i}. {trend}\n"
-                    report += "\n"
+                            # Only include if both title and description are present
+                            if trend_name and description and description.strip():
+                                valid_trends.append(trend)
+                        elif isinstance(trend, str) and trend.strip():
+                            valid_trends.append(trend)
+
+                    if valid_trends:
+                        report += "**Top Threats & Trends:**\n\n"
+                        for i, trend in enumerate(valid_trends, 1):
+                            if isinstance(trend, dict):
+                                trend_name = trend.get('trend', '') or trend.get('title', '')
+                                description = trend.get('description', '') or trend.get('details', '')
+                                report += f"{i}. **{trend_name}**: {description}\n\n"
+                            else:
+                                report += f"{i}. {trend}\n\n"
+                        report += "\n"
                 elif isinstance(trends, str) and trends.lower() not in ['none', 'n/a', 'no trends']:
                     report += f"**Top Threats & Trends:**\n\n{trends}\n\n"
 
             if 'regulatory_changes' in telecom_analysis and telecom_analysis['regulatory_changes']:
                 changes = telecom_analysis['regulatory_changes']
                 if isinstance(changes, list):
-                    report += "**Regulatory & Market Changes:**\n\n"
-                    for i, change in enumerate(changes, 1):
-                        # Handle dict with nested description/details
+                    # Filter out items with empty descriptions
+                    valid_changes = []
+                    for change in changes:
                         if isinstance(change, dict):
-                            incident = change.get('incident', change.get('change', ''))
+                            # Sometimes GPT returns just description without title
                             description = change.get('description', '') or change.get('details', '')
-                            report += f"{i}. **{incident}**: {description}\n"
-                        else:
-                            report += f"{i}. {change}\n"
-                    report += "\n"
+                            if description and description.strip():
+                                valid_changes.append(change)
+                        elif isinstance(change, str) and change.strip():
+                            valid_changes.append(change)
+
+                    if valid_changes:
+                        report += "**Regulatory & Market Changes:**\n\n"
+                        for i, change in enumerate(valid_changes, 1):
+                            if isinstance(change, dict):
+                                description = change.get('description', '') or change.get('details', '')
+                                # Check if there's a title/incident field
+                                title = change.get('incident', change.get('change', change.get('title', '')))
+                                if title:
+                                    report += f"{i}. **{title}**: {description}\n\n"
+                                else:
+                                    report += f"{i}. {description}\n\n"
+                            else:
+                                report += f"{i}. {change}\n\n"
+                        report += "\n"
                 elif isinstance(changes, str):
                     # Check if it's a "no changes" message
                     lower_changes = changes.lower()
@@ -403,16 +435,31 @@ def generate_report(collected_data, analysis_results, date_str):
             if 'immediate_attention' in telecom_analysis and telecom_analysis['immediate_attention']:
                 items = telecom_analysis['immediate_attention']
                 if isinstance(items, list):
-                    report += "**Immediate Attention Required:**\n\n"
-                    for i, item in enumerate(items, 1):
-                        # Handle dict with nested description/details
+                    # Filter out items with empty descriptions
+                    valid_items = []
+                    for item in items:
                         if isinstance(item, dict):
-                            issue = item.get('issue', item.get('action', ''))
+                            # Sometimes GPT returns just description without title
                             description = item.get('description', '') or item.get('details', '')
-                            report += f"{i}. **{issue}**: {description}\n"
-                        else:
-                            report += f"{i}. {item}\n"
-                    report += "\n"
+                            if description and description.strip():
+                                valid_items.append(item)
+                        elif isinstance(item, str) and item.strip():
+                            valid_items.append(item)
+
+                    if valid_items:
+                        report += "**Immediate Attention Required:**\n\n"
+                        for i, item in enumerate(valid_items, 1):
+                            if isinstance(item, dict):
+                                description = item.get('description', '') or item.get('details', '')
+                                # Check if there's a title field
+                                title = item.get('issue', item.get('action', item.get('title', '')))
+                                if title:
+                                    report += f"{i}. **{title}**: {description}\n\n"
+                                else:
+                                    report += f"{i}. {description}\n\n"
+                            else:
+                                report += f"{i}. {item}\n\n"
+                        report += "\n"
                 elif isinstance(items, str):
                     # Check if it's a "no action needed" message
                     lower_items = items.lower()
@@ -503,32 +550,56 @@ def generate_report(collected_data, analysis_results, date_str):
             if 'top_trends' in general_analysis and general_analysis['top_trends']:
                 trends = general_analysis['top_trends']
                 if isinstance(trends, list):
-                    report += "**Top Threats & Trends:**\n\n"
-                    for i, trend in enumerate(trends, 1):
-                        # Handle dict with nested description
+                    # Filter out items with empty descriptions
+                    valid_trends = []
+                    for trend in trends:
                         if isinstance(trend, dict):
-                            trend_name = trend.get('trend', '')
+                            trend_name = trend.get('trend', '') or trend.get('title', '')
                             description = trend.get('description', trend.get('details', ''))
-                            report += f"{i}. **{trend_name}**: {description}\n"
-                        else:
-                            report += f"{i}. {trend}\n"
-                    report += "\n"
+                            if trend_name and description and description.strip():
+                                valid_trends.append(trend)
+                        elif isinstance(trend, str) and trend.strip():
+                            valid_trends.append(trend)
+
+                    if valid_trends:
+                        report += "**Top Threats & Trends:**\n\n"
+                        for i, trend in enumerate(valid_trends, 1):
+                            if isinstance(trend, dict):
+                                trend_name = trend.get('trend', '') or trend.get('title', '')
+                                description = trend.get('description', trend.get('details', ''))
+                                report += f"{i}. **{trend_name}**: {description}\n\n"
+                            else:
+                                report += f"{i}. {trend}\n\n"
+                        report += "\n"
                 elif isinstance(trends, str) and trends.lower() not in ['none', 'n/a', 'no trends']:
                     report += f"**Top Threats & Trends:**\n\n{trends}\n\n"
 
             if 'regulatory_changes' in general_analysis and general_analysis['regulatory_changes']:
                 changes = general_analysis['regulatory_changes']
                 if isinstance(changes, list):
-                    report += "**Regulatory & Market Changes:**\n\n"
-                    for i, change in enumerate(changes, 1):
-                        # Handle dict with nested description
+                    # Filter out items with empty descriptions
+                    valid_changes = []
+                    for change in changes:
                         if isinstance(change, dict):
-                            incident = change.get('incident', change.get('change', ''))
                             description = change.get('description', change.get('details', ''))
-                            report += f"{i}. **{incident}**: {description}\n"
-                        else:
-                            report += f"{i}. {change}\n"
-                    report += "\n"
+                            if description and description.strip():
+                                valid_changes.append(change)
+                        elif isinstance(change, str) and change.strip():
+                            valid_changes.append(change)
+
+                    if valid_changes:
+                        report += "**Regulatory & Market Changes:**\n\n"
+                        for i, change in enumerate(valid_changes, 1):
+                            if isinstance(change, dict):
+                                description = change.get('description', change.get('details', ''))
+                                title = change.get('incident', change.get('change', change.get('title', '')))
+                                if title:
+                                    report += f"{i}. **{title}**: {description}\n\n"
+                                else:
+                                    report += f"{i}. {description}\n\n"
+                            else:
+                                report += f"{i}. {change}\n\n"
+                        report += "\n"
                 elif isinstance(changes, str):
                     # Check if it's a "no changes" message
                     lower_changes = changes.lower()
@@ -538,16 +609,29 @@ def generate_report(collected_data, analysis_results, date_str):
             if 'immediate_attention' in general_analysis and general_analysis['immediate_attention']:
                 items = general_analysis['immediate_attention']
                 if isinstance(items, list):
-                    report += "**Immediate Attention Required:**\n\n"
-                    for i, item in enumerate(items, 1):
-                        # Handle dict with nested description
+                    # Filter out items with empty descriptions
+                    valid_items = []
+                    for item in items:
                         if isinstance(item, dict):
-                            issue = item.get('issue', item.get('action', ''))
                             description = item.get('description', item.get('details', ''))
-                            report += f"{i}. **{issue}**: {description}\n"
-                        else:
-                            report += f"{i}. {item}\n"
-                    report += "\n"
+                            if description and description.strip():
+                                valid_items.append(item)
+                        elif isinstance(item, str) and item.strip():
+                            valid_items.append(item)
+
+                    if valid_items:
+                        report += "**Immediate Attention Required:**\n\n"
+                        for i, item in enumerate(valid_items, 1):
+                            if isinstance(item, dict):
+                                description = item.get('description', item.get('details', ''))
+                                title = item.get('issue', item.get('action', item.get('title', '')))
+                                if title:
+                                    report += f"{i}. **{title}**: {description}\n\n"
+                                else:
+                                    report += f"{i}. {description}\n\n"
+                            else:
+                                report += f"{i}. {item}\n\n"
+                        report += "\n"
                 elif isinstance(items, str):
                     # Check if it's a "no action needed" message
                     lower_items = items.lower()
@@ -795,6 +879,14 @@ def generate_report(collected_data, analysis_results, date_str):
         # Filter high and medium relevance updates, limit to 6
         relevant_updates = [c for c in changelogs if c.get('relevance_to_fraud') in ['high', 'medium']][:6]
 
+        # Try to use AI-generated analysis if available
+        competitor_analysis = analysis_results.get('competitor_analysis', []) if analysis_results else []
+        analysis_by_key = {}
+        if competitor_analysis:
+            for item in competitor_analysis:
+                key = f"{item.get('competitor', '')}_{item.get('product', '')}_{item.get('title', '')}"
+                analysis_by_key[key] = item.get('analysis', '')
+
         if relevant_updates:
             for change in relevant_updates:
                 # Find citation number
@@ -805,10 +897,18 @@ def generate_report(collected_data, analysis_results, date_str):
                 comp = change['competitor']
                 product = change['product']
                 description = change.get('description', 'No description')
-                relevance = change.get('relevance_to_fraud', 'unknown')
 
-                report += f"**{comp} {product}** ({date}): *{title}* [COMP_{citation_num}]\n\n"
-                report += f"{description}\n\n"
+                # Check if we have AI analysis for this item
+                key = f"{comp}_{product}_{title}"
+                ai_analysis = analysis_by_key.get(key, '')
+
+                report += f"**{comp} {product}** ({date}): *{title}* [\[C{citation_num}\]](#c{citation_num})\n\n"
+
+                # Use AI analysis if available, otherwise fallback to description
+                if ai_analysis and ai_analysis.strip():
+                    report += f"{ai_analysis}\n\n"
+                else:
+                    report += f"{description}\n\n"
 
         report += "---\n\n"
 

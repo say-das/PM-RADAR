@@ -29,49 +29,15 @@ class EmailSender:
 
     def markdown_to_html(self, markdown_content):
         """
-        Convert markdown to basic HTML for email.
-        Simple conversion - handles common markdown patterns.
+        Convert markdown to HTML for email using markdown library.
         """
-        html = markdown_content
+        import markdown
 
-        # Headers
-        html = html.replace("# ", "<h1>")
-        html = html.replace("\n## ", "</h1>\n<h2>")
-        html = html.replace("\n### ", "</h2>\n<h3>")
-
-        # Close headers at end of line
-        lines = []
-        for line in html.split("\n"):
-            if line.startswith("<h1>") and not line.endswith("</h1>"):
-                line = line + "</h1>"
-            elif line.startswith("<h2>") and not line.endswith("</h2>"):
-                line = line + "</h2>"
-            elif line.startswith("<h3>") and not line.endswith("</h3>"):
-                line = line + "</h3>"
-            lines.append(line)
-        html = "\n".join(lines)
-
-        # Bold
-        import re
-        html = re.sub(r'\*\*(.+?)\*\*', r'<strong>\1</strong>', html)
-
-        # Italic
-        html = re.sub(r'\*(.+?)\*', r'<em>\1</em>', html)
-
-        # Links
-        html = re.sub(r'\[(.+?)\]\((.+?)\)', r'<a href="\2">\1</a>', html)
-
-        # Horizontal rules
-        html = html.replace("\n---\n", "\n<hr>\n")
-
-        # Lists - numbered
-        html = re.sub(r'\n(\d+)\. ', r'\n<li>', html)
-
-        # Lists - bullets
-        html = re.sub(r'\n- ', r'\n<li>', html)
-
-        # Paragraphs (double line breaks)
-        html = html.replace("\n\n", "</p>\n<p>")
+        # Convert markdown to HTML
+        html = markdown.markdown(
+            markdown_content,
+            extensions=['extra', 'nl2br']
+        )
 
         # Wrap in HTML structure
         html = f"""
@@ -82,32 +48,49 @@ class EmailSender:
     <style>
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+            font-size: 14px;
             line-height: 1.6;
             color: #333;
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            background-color: #ffffff;
         }}
         h1 {{
+            font-size: 20px;
+            font-weight: 600;
             color: #2c3e50;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+            margin: 20px 0 15px 0;
         }}
         h2 {{
+            font-size: 16px;
+            font-weight: 600;
             color: #34495e;
-            margin-top: 30px;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 8px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #ecf0f1;
+            padding-bottom: 6px;
         }}
         h3 {{
+            font-size: 14px;
+            font-weight: 600;
             color: #7f8c8d;
-            margin-top: 20px;
+            margin-top: 15px;
+            margin-bottom: 10px;
         }}
         strong {{
             color: #2c3e50;
+            font-weight: 600;
+        }}
+        ul, ol {{
+            margin: 10px 0;
+            padding-left: 25px;
         }}
         li {{
-            margin: 8px 0;
+            margin: 6px 0;
+            font-size: 14px;
         }}
         a {{
             color: #3498db;
@@ -119,15 +102,16 @@ class EmailSender:
         hr {{
             border: none;
             border-top: 1px solid #ecf0f1;
-            margin: 30px 0;
+            margin: 25px 0;
         }}
         p {{
-            margin: 10px 0;
+            margin: 8px 0;
+            font-size: 14px;
         }}
     </style>
 </head>
 <body>
-    <p>{html}</p>
+    {html}
 </body>
 </html>
 """
@@ -172,6 +156,19 @@ class EmailSender:
             "subject": subject,
             "htmlContent": html_content
         }
+
+        # Check for HTML report attachment
+        html_report_path = report_path.parent / f"{date_str}.html"
+        if html_report_path.exists():
+            print("  → Attaching HTML report...")
+            import base64
+            with open(html_report_path, 'rb') as f:
+                html_content_base64 = base64.b64encode(f.read()).decode()
+
+            email_data["attachment"] = [{
+                "content": html_content_base64,
+                "name": f"PM-Radar-Report-{date_str}.html"
+            }]
 
         print(f"  → Sending to {len(self.config['recipients'])} recipient(s)...")
 

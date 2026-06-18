@@ -263,6 +263,16 @@ class ContentAnalyzerAgent:
             else:
                 print("  → No recent Reddit posts (last 30 days) - skipping community analysis")
 
+        # Analyze Competitor Changelogs
+        competitor_changelogs = collected_data.get('competitor_changelogs', [])
+        if competitor_changelogs:
+            print(f"  → Analyzing Competitor Changelogs ({len(competitor_changelogs)} changes)...")
+            analysis["competitor_analysis"] = self._analyze_competitor_changelogs(
+                client,
+                competitor_changelogs
+            )
+            print("    ✓ Competitor Changelog analysis complete")
+
         return analysis
 
     def _analyze_competitive(self, client, category_data):
@@ -318,6 +328,65 @@ Format as JSON with keys: executive_summary, product_launches, customer_wins, te
         )
 
         return response.choices[0].message.content
+
+    def _analyze_competitor_changelogs(self, client, changelogs):
+        """
+        Analyze competitor changelogs and add business context.
+        Returns enriched changelog items with analysis.
+        """
+        if not changelogs:
+            return []
+
+        # Prepare changelog summaries
+        changelog_text = "\n\n".join([
+            f"[{c['competitor']} {c['product']}] ({c.get('date', 'Unknown')})\n"
+            f"Feature: {c.get('title', 'No title')}\n"
+            f"Description: {c.get('description', 'No description')}\n"
+            f"Type: {c.get('type', 'unknown')}\n"
+            f"Relevance: {c.get('relevance_to_fraud', 'unknown')}"
+            for c in changelogs[:10]  # Limit to 10 most relevant
+        ])
+
+        prompt = f"""Analyze these competitor fraud/security feature releases and provide business context.
+
+{changelog_text}
+
+For each feature, provide a 2-3 sentence analysis answering:
+- What does this feature do in practical terms?
+- Why would customers want this?
+- How does it compare to Twilio's capabilities? (if you can infer)
+- What's the competitive implication?
+
+Return JSON array with format:
+[
+  {{
+    "competitor": "Vonage",
+    "product": "Fraud Defender",
+    "title": "Network blocks with TTL",
+    "analysis": "Allows customers to temporarily block traffic to specific networks without permanent configuration changes. Useful for responding to fraud spikes or attacks with automatic rollback. Twilio currently requires manual rule changes or API calls for similar functionality."
+  }}
+]
+
+Focus on practical business value, not just technical descriptions. Skip features with insufficient information."""
+
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are a competitive intelligence analyst for Twilio. Provide concise, actionable analysis of competitor features with business context. Write for product managers, not engineers."},
+                    {"role": "user", "content": prompt}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.3,
+                max_tokens=1500
+            )
+
+            result = json.loads(response.choices[0].message.content)
+            return result.get('features', result.get('analysis', []))
+
+        except Exception as e:
+            print(f"      ✗ Competitor analysis error: {type(e).__name__}: {str(e)[:100]}")
+            return []
 
     def _analyze_category(self, client, category_data, category_name):
         """Analyze content for a specific fraud category (Telecom or General)."""
@@ -375,13 +444,24 @@ IMPORTANT INSTRUCTIONS:
 3. Cite multiple sources when applicable (e.g., [ARTICLE_1][ARTICLE_3])
 
 Provide:
-1. Executive summary (2-3 sentences) - what's happening in {category_name}. Include [ARTICLE_N] citations.
-2. Top 5 trends or threats specific to {category_name} (if available). Each trend must cite sources with [ARTICLE_N].
-3. Notable incidents, attacks, or regulatory changes. Include [ARTICLE_N] citations.
-4. Anything requiring immediate attention. Include [ARTICLE_N] citations.
+1. Executive summary (4-5 sentences) - what's happening in {category_name}. Write in news brief style: lead with the key development, then provide context. Include [ARTICLE_N] citations.
+
+2. Top 5 trends or threats specific to {category_name} (if available):
+   - Each trend MUST have a descriptive title AND a 4-5 sentence explanation
+   - Explanation format: What is it? → Why does it matter? → What's the business impact? → What should teams consider?
+   - If you cannot write a meaningful 4-5 sentence description, DO NOT include the item
+   - Each description must cite sources with [ARTICLE_N]
+   - Skip items with insufficient information rather than writing empty descriptions
+
+3. Notable incidents, attacks, or regulatory changes (4-5 sentences each with context). Include [ARTICLE_N] citations.
+
+4. Anything requiring immediate attention (4-5 sentences explaining urgency and recommended action). Include [ARTICLE_N] citations.
+
 5. If Reddit discussions present: key concerns with VERBATIM QUOTES from posts AND comments using [REDDIT_N] citations.
    - Pay special attention to comments as they reveal additional customer pain points, workarounds, and validation of issues
    - Include actual user text snippets in quotes from both posts and comments
+
+CRITICAL: Every item must have substantive content (4-5 sentences). Do not generate titles without descriptions. Skip low-confidence items entirely.
 
 Format as JSON with keys: executive_summary, top_trends, regulatory_changes, immediate_attention, community_sentiment (if applicable).
 Each text value must include inline [ARTICLE_N] or [REDDIT_N] citations."""
@@ -389,11 +469,11 @@ Each text value must include inline [ARTICLE_N] or [REDDIT_N] citations."""
         response = client.chat.completions.create(
             model="gpt-4o",
             messages=[
-                {"role": "system", "content": f"You are a fraud intelligence analyst specializing in {category_name}. Provide actionable insights for product and security teams."},
+                {"role": "system", "content": f"You are a fraud intelligence analyst specializing in {category_name}. Write in clear, direct news brief style for product managers and executives. Skip jargon, avoid passive voice, and focus on actionable insights."},
                 {"role": "user", "content": prompt}
             ],
             temperature=0.3,
-            max_tokens=1500
+            max_tokens=2500
         )
 
         return response.choices[0].message.content
