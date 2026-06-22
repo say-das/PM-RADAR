@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radar Intelligence Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* Twilio Brand Colors */
+        :root {
+            --twilio-red: #F22F46;
+            --twilio-blue: #0263E0;
+            --twilio-dark-blue: #001489;
+            --twilio-blue-60: #0D61D8;
+            --twilio-blue-10: #E1EFFC;
+            --twilio-gray-100: #121C2D;
+            --twilio-gray-90: #18222E;
+            --twilio-gray-80: #1F2933;
+            --twilio-gray-70: #3E4C59;
+            --twilio-gray-60: #606B85;
+            --twilio-gray-50: #8891AA;
+            --twilio-gray-40: #C4C7D1;
+            --twilio-gray-30: #D9DBE5;
+            --twilio-gray-20: #E8EAED;
+            --twilio-gray-10: #F4F5F6;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0.75in 1in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--twilio-gray-90);
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 24px 32px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Typography with Twilio Red Start */
+        h1 {
+            color: var(--twilio-red);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h1 + p {
+            color: var(--twilio-gray-60);
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--twilio-red);
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--twilio-blue-60);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 24px 0 8px 0;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: var(--twilio-gray-90);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 16px 0 6px 0;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs with hierarchy */
+        p {
+            margin: 6px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        /* Section labels like "Executive Summary:" */
+        p strong:first-child {
+            color: var(--twilio-gray-80);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Default strong styling - subtle */
+        strong {
+            font-weight: 500;
+            color: var(--twilio-gray-70);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+        }
+
+        /* Compact lists */
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 4px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        li::marker {
+            color: var(--twilio-gray-40);
+            font-weight: 400;
+        }
+
+        /* All strong tags in lists should be normal weight by default */
+        li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Only the very first strong in a list item gets emphasis */
+        li > strong:first-child {
+            font-weight: 500;
+            color: var(--twilio-gray-80);
+            font-size: 14px;
+        }
+
+        /* Executive Summary - Twilio branded */
+        #executive-summary + ul {
+            background: var(--twilio-blue-10);
+            padding: 16px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--twilio-red);
+            margin: 12px 0 20px 0;
+        }
+
+        #executive-summary + ul li {
+            font-weight: 600;
+            color: var(--twilio-gray-90);
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        #executive-summary + ul li strong {
+            font-weight: 700;
+            color: var(--twilio-red);
+        }
+
+        /* Blockquotes with Twilio accent */
+        blockquote {
+            margin: 12px 0;
+            padding: 10px 16px;
+            border-left: 4px solid var(--twilio-blue);
+            background: var(--twilio-blue-10);
+            font-style: italic;
+            color: var(--twilio-gray-70);
+            line-height: 1.4;
+        }
+
+        /* Code styling */
+        code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            background-color: var(--twilio-gray-10);
+            color: var(--twilio-dark-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--twilio-gray-10);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--twilio-gray-20);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Links - Twilio primary blue */
+        a {
+            color: var(--twilio-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--twilio-blue-60);
+            text-decoration: underline;
+        }
+
+        /* Compact horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid var(--twilio-gray-30);
+            margin: 16px 0;
+        }
+
+        /* Table styling with Twilio colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--twilio-gray-30);
+            line-height: 1.4;
+        }
+
+        th {
+            font-weight: 700;
+            color: white;
+            background: var(--twilio-red);
+        }
+
+        tr:hover {
+            background: var(--twilio-blue-10);
+        }
+
+        /* Inline Citations - smaller and clickable */
+        a[href^="#"] {
+            color: var(--twilio-blue);
+            font-size: 10px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            padding: 0 1px;
+            transition: all 0.2s ease;
+        }
+
+        a[href^="#"]:hover {
+            color: var(--twilio-red);
+            text-decoration: underline;
+        }
+
+        /* Make citation brackets appear as superscript links */
+        p a[href^="#"],
+        li a[href^="#"] {
+            font-size: 10px;
+            line-height: 0;
+        }
+
+        /* Glossary emphasis */
+        #glossary + p {
+            color: var(--twilio-gray-50);
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #glossary + p + ul li {
+            margin: 5px 0;
+        }
+
+        /* Glossary terms should stand out */
+        #glossary + p + ul li > strong:first-child {
+            color: var(--twilio-red);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* But the rest of glossary text should be normal */
+        #glossary + p + ul li strong:not(:first-child) {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Sources section - everything smaller and lighter */
+        #sources + p + ul li {
+            font-size: 12px;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 3px 0;
+            scroll-margin-top: 20px; /* Offset for smooth scroll */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+
+        #sources + p + ul li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-50);
+        }
+
+        #sources + p + ul li a {
+            font-weight: 500;
+            color: var(--twilio-blue);
+        }
+
+        /* Citation reference targets in sources list */
+        #sources + p + ul li[id] {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+
+        #sources + p + ul li[id]:target {
+            background: var(--twilio-blue-10);
+            padding: 4px 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        body > p:last-of-type {
+            text-align: center;
+            color: var(--twilio-gray-60);
+            font-size: 11px;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--twilio-gray-30);
+        }
+
+        /* Print optimizations */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            a {
+                color: var(--twilio-blue) !important;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pm-radar-weekly-intelligence-digest">PM Radar Weekly Intelligence Digest</h1>
+<p><strong>Date:</strong> 2026-06-22
+<strong>Generated:</strong> 2026-06-22 12:10:28 UTC</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p><strong>This Week's Intelligence:</strong></p>
+<ul>
+<li>🔴 <strong>1 telecom fraud threats</strong> identified</li>
+<li>🟡 <strong>28 general security threats</strong> identified</li>
+<li>📊 <strong>0 competitor features</strong> analyzed (high/medium relevance)</li>
+</ul>
+<hr />
+<h2 id="telecom-fraud-digest">Telecom Fraud Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>The Federal Trade Commission (FTC) has taken legal action against Genesis Tech, a company accused of operating deceptive subscription schemes that misled consumers with unauthorized billing and complex cancellation processes <a href="#a1">[A1]</a>. This move highlights ongoing challenges in the telecom industry related to fraudulent billing practices. The court's intervention underscores the importance of regulatory oversight to protect consumers from hidden costs and recurring charges. Telecom companies must remain vigilant and ensure compliance with consumer protection laws to avoid similar legal repercussions.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li><strong>Rise of Deceptive Subscription Schemes</strong>: Deceptive subscription schemes are becoming increasingly prevalent, with companies like Genesis Tech facing legal action for unauthorized billing and complex cancellation processes <a href="#a1">[A1]</a>. These schemes exploit consumers by hiding costs and making it difficult to opt out, leading to significant financial losses. The business impact includes potential legal liabilities and damage to brand reputation. Telecom companies should prioritize transparent billing practices and provide easy cancellation options to maintain consumer trust and avoid regulatory scrutiny.</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li>The FTC's lawsuit against Genesis Tech marks a significant regulatory intervention aimed at curbing deceptive subscription practices in the telecom industry <a href="#a1">[A1]</a>. This action reflects a broader regulatory focus on protecting consumers from fraudulent billing practices. Companies in the telecom sector must ensure compliance with consumer protection laws to avoid similar legal challenges. The case serves as a reminder of the importance of transparency and accountability in subscription-based services.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li>Telecom companies should immediately review their subscription and billing practices in light of the FTC's lawsuit against Genesis Tech <a href="#a1">[A1]</a>. Ensuring that billing processes are transparent and that consumers can easily cancel subscriptions is crucial to avoid legal repercussions. Companies should conduct internal audits to identify and rectify any practices that could be deemed deceptive. Proactive measures will help mitigate the risk of regulatory action and maintain consumer trust.</li>
+</ol>
+<hr />
+<h2 id="general-fraud-security-digest">General Fraud &amp; Security Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent advisories from CISA highlight significant vulnerabilities across various industries, with critical impacts on both infrastructure and consumer devices. AzeoTech DAQFactory and Apollo Pharmacy's Blood Glucose Monitoring System face vulnerabilities that could lead to arbitrary code execution and unauthorized access to sensitive health data, respectively <a href="#a1">[A1]</a><a href="#a2">[A2]</a>. Mitsubishi Electric and Rockwell Automation products are also at risk of denial-of-service attacks, which could disrupt operations in critical manufacturing sectors <a href="#a3">[A3]</a><a href="#a4">[A4]</a><a href="#a7">[A7]</a><a href="#a11">[A11]</a>. Additionally, CISA has added new vulnerabilities to its Known Exploited Vulnerabilities Catalog, emphasizing the need for immediate security updates <a href="#a6">[A6]</a><a href="#a12">[A12]</a>. These developments underscore the ongoing challenges in maintaining cybersecurity across diverse technological landscapes.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li>
+<p><strong>Rise in Denial-of-Service Vulnerabilities</strong>: Denial-of-service (DoS) vulnerabilities have been identified in several products, including Mitsubishi Electric's MELSEC iQ-F Series and Rockwell Automation's CompactLogix <a href="#a3">[A3]</a><a href="#a4">[A4]</a><a href="#a11">[A11]</a>. These vulnerabilities allow attackers to disrupt operations by overwhelming systems with traffic or exploiting connection management flaws. The business impact is significant, potentially halting production lines and affecting service delivery. Teams should prioritize patching these vulnerabilities and consider implementing network traffic monitoring to detect and mitigate DoS attacks early.</p>
+</li>
+<li>
+<p><strong>Exploitation of Medical Device Vulnerabilities</strong>: Apollo Pharmacy's Blood Glucose Monitoring System is vulnerable to attacks that could expose sensitive health data and disrupt device functionality <a href="#a2">[A2]</a>. This is critical as it directly impacts patient safety and privacy. Healthcare providers and device manufacturers must urgently address these vulnerabilities by deploying patches and enhancing device security protocols. This trend highlights the increasing need for robust cybersecurity measures in the healthcare sector.</p>
+</li>
+<li>
+<p><strong>Increased Focus on Known Exploited Vulnerabilities</strong>: CISA's addition of new vulnerabilities to the Known Exploited Vulnerabilities Catalog, such as those affecting Splunk Enterprise and Joomla, reflects a proactive approach to cybersecurity <a href="#a6">[A6]</a><a href="#a12">[A12]</a>. These vulnerabilities are frequently targeted by attackers, posing significant risks to federal and enterprise systems. Organizations must prioritize these vulnerabilities in their patch management strategies to mitigate potential breaches. This trend emphasizes the importance of staying informed about actively exploited vulnerabilities.</p>
+</li>
+<li>
+<p><strong>Unauthorized Access Risks in Industrial Systems</strong>: Rockwell Automation's FLEX I/O EtherNet/IP Adapters and Schneider Electric's EasyLogic T150 face vulnerabilities that could lead to unauthorized access and account takeovers <a href="#a9">[A9]</a><a href="#a8">[A8]</a>. Such breaches can compromise critical infrastructure, leading to operational disruptions and data theft. Businesses should enhance access controls and regularly audit system access logs to detect unauthorized activities. This trend underscores the need for stringent security measures in industrial control systems.</p>
+</li>
+<li>
+<p><strong>Credential Attacks on the Rise</strong>: Recent reports indicate a surge in large-scale credential attacks targeting security vendors' devices <a href="#a13">[A13]</a>. These attacks exploit weak authentication mechanisms, leading to unauthorized access and potential data breaches. The business impact includes financial losses and reputational damage. Companies should implement multi-factor authentication and conduct regular security training to mitigate these risks. This trend highlights the evolving tactics of cybercriminals and the need for robust authentication solutions.</p>
+</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li>CISA has updated its Known Exploited Vulnerabilities Catalog to include new vulnerabilities affecting Splunk Enterprise and Joomla <a href="#a6">[A6]</a><a href="#a12">[A12]</a>. This update is part of a broader effort to enhance federal cybersecurity by prioritizing the remediation of actively exploited vulnerabilities. Organizations are advised to align their security practices with CISA's guidelines to protect against these threats.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li>Immediate action is required to address the vulnerabilities in AzeoTech DAQFactory, which could lead to arbitrary code execution if exploited <a href="#a1">[A1]</a>. Organizations using affected versions should apply available patches and review their security configurations to prevent potential breaches. Failure to act could result in significant operational disruptions and data loss.</li>
+</ol>
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p><em>Technical terms and abbreviations used in this report:</em></p>
+<ul>
+<li><strong>CISA</strong>: Cybersecurity and Infrastructure Security Agency (U.S. government)</li>
+<li><strong>DoS</strong>: Denial of Service - attack that makes a system unavailable</li>
+<li><strong>Exploit</strong>: Code or technique taking advantage of a security vulnerability</li>
+<li><strong>Patch</strong>: Software update fixing security vulnerabilities or bugs</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p><strong>Articles:</strong></p>
+<ul>
+<li><a id="a1"></a>[A1]: <a href="https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-urges-hardening-fortinet-devices-after-reports-credential-exposure">CISA Urges Hardening Fortinet Devices After Reports of Credential Exposure</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a2"></a>[A2]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-02">AzeoTech DAQFactory</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a3"></a>[A3]: <a href="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-169-01">Apollo Pharmacy Blood Glucose Monitoring System APG-01 BT</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a4"></a>[A4]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-06">Mitsubishi Electric Co.'s MELSEC iQ-F Series FX5-ENET/IP Ethernet Module</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a6"></a>[A6]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-07">Schneider Electric Easergy, EcoStruxture, PowerLogic, and Saitel Products</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a7"></a>[A7]: <a href="https://www.cisa.gov/news-events/alerts/2026/06/18/cisa-adds-one-known-exploited-vulnerability-catalog">CISA Adds One Known Exploited Vulnerability to Catalog</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a8"></a>[A8]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-03">Rockwell Automation FactoryTalk Historian Site Edition</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a9"></a>[A9]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-169-01">AVer PTC cameras</a> - CISA Advisories (2026-06-18T12:00:00)</li>
+<li><a id="a11"></a>[A11]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-05">Rockwell Automation FLEX I/O EtherNet/IP Adapters</a> - CISA Advisories (2026-06-16T12:00:00)</li>
+<li><a id="a12"></a>[A12]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-03">Rockwell Automation Logix 5370 &amp; 5570 Controllers Vulnerable To Denial of Service Via CIP</a> - CISA Advisories (2026-06-16T12:00:00)</li>
+<li><a id="a13"></a>[A13]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-167-02">Rockwell Automation RSLinx</a> - CISA Advisories (2026-06-16T12:00:00)</li>
+</ul>
+<hr />
+<p><em>Generated by PM Radar • 2026-06-22</em></p>
+    </div>
+
+    <!-- Twilio Branding Footer -->
+    <div style="margin-top: 3em; padding: 1.5em 0; text-align: center; border-top: 2px solid #E1E3EA;">
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.5;">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM8.4 8.4C9.6 8.4 10.8 9.6 10.8 10.8C10.8 12 9.6 13.2 8.4 13.2C7.2 13.2 6 12 6 10.8C6 9.6 7.2 8.4 8.4 8.4ZM15.6 8.4C16.8 8.4 18 9.6 18 10.8C18 12 16.8 13.2 15.6 13.2C14.4 13.2 13.2 12 13.2 10.8C13.2 9.6 14.4 8.4 15.6 8.4ZM8.4 15.6C9.6 15.6 10.8 16.8 10.8 18C10.8 19.2 9.6 20.4 8.4 20.4C7.2 20.4 6 19.2 6 18C6 16.8 7.2 15.6 8.4 15.6ZM15.6 15.6C16.8 15.6 18 16.8 18 18C18 19.2 16.8 20.4 15.6 20.4C14.4 20.4 13.2 19.2 13.2 18C13.2 16.8 14.4 15.6 15.6 15.6Z" fill="#F22F46"/>
+        </svg>
+        <p style="margin: 0.5em 0 0 0; font-size: 9pt; color: #606B85;">Powered by PM Radar • Twilio Product Intelligence</p>
+    </div>
+</body>
+</html>
