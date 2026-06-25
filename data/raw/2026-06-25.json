@@ -1,0 +1,336 @@
+{
+  "collection_date": "2026-06-25",
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "The Future of Commsrisk",
+      "url": "https://commsrisk.com/the-future-of-commsrisk/",
+      "published": "2026-06-23T11:08:15",
+      "summary": "Future Commsrisk articles will focus on the Global Fraud Dashboard: new graphs, noteworthy data, related news, and insights based on objective data. The post The Future of Commsrisk appeared first on Commsrisk."
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Why Our Work Matters: Highlights from the CFCA Summer Educational Event 2026",
+      "url": "https://cfca.org/why-our-work-matters-highlights-from-the-cfca-summer-educational-event-2026/",
+      "published": "2026-06-24T16:13:12",
+      "summary": "Earlier this month CFCA Summer Educational Event 2026 brought together fraud management professionals, communications providers, technology vendors, and industry experts from around the world for two days of learning, collaboration, [&#8230;]"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Using SASE in a Modern TIC 3.0 Solution",
+      "url": "https://www.cisa.gov/resources-tools/resources/using-sase-modern-tic-30-solution",
+      "published": "2026-06-24T12:00:00",
+      "summary": "Using SASE in a Modern TIC 3.0 Solution CISA\u2019s guidance, The Journey to Zero Trust \u2013 Using Secure Access Service Edge in a Modern TIC 3.0 Solution, details how the Trusted Internet Connections (TIC) 3.0 initiative is helping agencies modernize the way their users connect to applications, data and services. While federal agencies are the target audience, any organization looking to modernize its perimeter-based architectures, advance zero trust adoption, and improve visibility and control across "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hubbell Aclara Metrum Cellular Web Interface",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-07",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to manipulate critical device settings and repeatedly disrupt operations, potentially causing a loss of communications to the device. The following versions of Hubbell Aclara Metrum Cellular Web Interface are affected: Aclara Metrum Cellular Web Interface CVSS Vendor Equipment Vulnerabilities v3 7.5 Hubbell Hubbell Aclara Metrum Cellular Web Interface Missing Authentication for Critical Function Background Crit"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens WinCC Certificate Manager",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-01",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary WinCC Certificate Manager insufficiently protects key material that could allow an attacker to extract sensitive information. Siemens has released a new version for SIMATIC WinCC Unified PC Runtime V21 and recommends to update to the latest version. Siemens recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens WinCC Certificate Manager are affected: SIMATIC WinCC Unified PC Runtime V16 vers:all/* SIMATIC Wi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Freelance Security Lock",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-05",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow access to underlying OS functions even when Freelance Operations is active, depending on system configuration and user permissions. The following versions of ABB Freelance Security Lock are affected: ABB System Version (<=Freelance 2013) installed with ABB Freelance Security Lock(All versions) vers:all/* ABB System Version (Freelance 2013 SP1) installed with ABB Freelance Security Lock(All versions) vers:all/* ABB System"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SINEC INS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-04",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary SINEC INS before V1.0 SP2 Update 6 is affected by multiple vulnerabilities. Siemens has released a new version for SINEC INS and recommends to update to the latest version. The following versions of Siemens SINEC INS are affected: SINEC INS vers:intdot/<1.0.2.6 CVSS Vendor Equipment Vulnerabilities v3 8.8 Siemens Siemens SINEC INS Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Path Traversal: '/dir/../filename', Execution with Unnece"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Impact of Linux Kernel vulnerabilities on B&R products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-06",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary B&R is aware of publicly reported vulnerabilities affecting the Linux kernel versions shipped with the products listed as affected in the advisory. Successful local exploitation of these vulnerabilities could allow an attacker to escalate privileges on the affected system. Public proof-of-concept exploits are available for the vulnerabilities described herein. At the time of publication of this advisory, B&R had no evidence of active exploitation targeting B&R products. The fol"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIPROTEC 5 Using DIGSI5 Protocol",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-02",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary SIPROTEC 5 is vulnerable to arbitrary file uploads by authenticated users using the DIGSI 5 protocol. This could allow an attacker to upload malicious configuration files, potentially causing a permanent denial of service condition. As a mitigation measure, users of the CP050 and CP150 device models are advised to upgrade to version 9.90 or later. For CP300 device models, devices 7ST85 and 7ST86 are advised to upgrade to version 10.00 or later, while the remaining models should"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/23/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-23T12:00:00",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-67038 Lantronix EDS5000 Code Injection Vulnerability CVE-2026-34908 Ubiquiti UniFi OS Improper Access Control Vulnerability CVE-2026-34909 Ubiquiti UniFi OS Path Traversal Vulnerability CVE-2026-34910 Ubiquiti UniFi OS Improper Input Validation Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose s"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Products using OpenSSL",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-03",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary OpenSSL has published a stack based buffer overflow vulnerability that allows a remote attacker to cause a denial of service (DoS) or potentially allow for remote code execution. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Products using Ope"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat",
+      "url": "https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/",
+      "published": "2026-06-23T22:00:51",
+      "summary": "Unit 42's analysis of ClawHub revealed evasive malicious skills bypassing automated scanners to deploy infostealers and execute agentic financial fraud. The post OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration",
+      "url": "https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/",
+      "published": "2026-06-22T22:00:04",
+      "summary": "Unit 42 research details how attackers could exploit global name uniqueness in bucket hijacking to redirect cloud data streams across major CSPs. The post The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
+      "published": "2026-06-20T02:05:33",
+      "summary": "We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. The post Threat Brief: Mitigating Large-Scale Credential Attacks appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Disrupting the Phish-Hunters: Inside a Coordinated Impersonation of the Brand Protection Industry",
+      "url": "https://www.zerofox.com/blog/coordinated-impersonation-of-the-brand-protection-industry",
+      "published": "2026-06-25T10:14:15",
+      "summary": "TL;DR ZeroFox&#8217;s Signals Research Program has uncovered a sustained domain impersonation operation aimed squarely at the brand protection and threat intelligence industry. Seventy-three correlated domains, registered between July 2025 and June 2026, impersonate ZeroFox and at least four peer vendors (Corsearch (including its Incopro brand), Red Points, MarkScan, and Group-IB) alongside a long tail of [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "The Patch Will Not Save You: Why IoT Defense Is Becoming an Intelligence Problem",
+      "url": "https://www.zerofox.com/blog/iot-defense-becoming-intelligence-problem",
+      "published": "2026-06-24T12:53:00",
+      "summary": "Attackers are not waiting for your vulnerability management program to catch up. They are mining twenty years of forgotten flaws, automating exploitation at machine speed, and walking through segmentation that was never built to hold. The organizations that survive the next wave of IoT-targeted attacks will be the ones watching the adversary, not just the [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Zerofox Joins eco &#8211; Association of the Internet Industry",
+      "url": "https://www.zerofox.com/blog/zerofox-joins-eco",
+      "published": "2026-06-22T12:36:27",
+      "summary": "Disrupting abuse starts with being in the room where relevant standards get made. When ZeroFox identifies a phishing site, a fraudulent social media profile, or an impersonation domain targeting one of our clients, the threat doesn&#8217;t disappear on its own. Someone has to get it removed. That means working directly with the registrars, hosting providers, [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Files Amicus Brief to Protect Consumers from Pharmaceutical Monopolies",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-amicus-brief-protect-consumers-pharmaceutical-monopolies",
+      "published": "2026-06-23T12:00:00",
+      "summary": "The Federal Trade Commission filed an amicus brief in an antitrust case alleging that drug manufacturer Johnson & Johnson illegally maintained a monopoly through anticompetitive conduct.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Approves Final Consent Order in Pest-Control Noncompete Matter",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-approves-final-consent-order-pest-control-noncompete-matter",
+      "published": "2026-06-22T12:00:00",
+      "summary": "The Federal Trade Commission finalized a consent order that requires Rollins Inc.\u2014one of the largest pest-control companies in the United States\u2014to stop enforcing noncompete agreements against more than 18,000 employees nationwide.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Another Russian dairy company reportedly disrupted by cyberattack",
+      "url": "https://therecord.media/russia-dairy-producter-cyberattack-ufa",
+      "published": "2026-06-25T14:45:00",
+      "summary": "A dairy products manufacturer in Russia's republic of Bashkortostan is the latest such company to have its operations snarled by a cyberattack."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Ukraine's state postal operator reports app disruption after cyberattack",
+      "url": "https://therecord.media/ukraine-state-postal-operator-reports-disruption",
+      "published": "2026-06-25T12:16:00",
+      "summary": "Ukraine's state-owned postal operator said it was experiencing disruptions to some of its app services due to a suspected cyberattack, but did not say who was behind it."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russia used Cellebrite phone-hacking tool to crack down on dissident after firm cut off country",
+      "url": "https://therecord.media/russia-used-cellebrite-tool-after-company-pulled-out-of-country",
+      "published": "2026-06-25T12:15:00",
+      "summary": "The continued use of the powerful data extraction product soon after the company in March 2021 said it would stop working with Russia suggests the firm has been unable to pull back its technology from authoritarian government customers, researchers say."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Three \u2018cybercrime as a service\u2019 operations undercut by Microsoft, law enforcement",
+      "url": "https://therecord.media/stealc-amadey-socgholish-malware-takedown-europol-microsoft",
+      "published": "2026-06-24T20:00:00",
+      "summary": "Microsoft touted its latest action against malware infrastructure as a new approach aimed at the full cybercrime \"supply chain.\" Europol said more than 300 servers were targeted."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "German rail services resume after wireless communications outage",
+      "url": "https://therecord.media/deutsche-bahn-railroad-gsmr-outage",
+      "published": "2026-06-24T14:15:37",
+      "summary": "Deutsche Bahn said a nationwide disruption of railway services was tied to a malfunction in its 2G-based GSM-R communications system."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "PirloTV sports piracy network disrupted as 44 domains seized",
+      "url": "https://www.bleepingcomputer.com/news/security/pirlotv-sports-piracy-network-disrupted-as-44-domains-seized/",
+      "published": "2026-06-25T15:36:56",
+      "summary": "A major sports piracy ring linked to the illegal PirloTV streaming platform has been disrupted in an action that targeted 44 domains. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Bluekit phishing kit adopts browser-in-the-middle for login theft",
+      "url": "https://www.bleepingcomputer.com/news/security/bluekit-phishing-kit-adopts-browser-in-the-middle-for-login-theft/",
+      "published": "2026-06-25T15:00:00",
+      "summary": "The Bluekit phishing-as-a-service platform continues to evolve with nearly 70 new hostnames identified over the past week and by adding browser-in-the-middle capabilities for improved data theft. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "The Four Elevations of Effective Fraud Prevention",
+      "url": "https://www.bleepingcomputer.com/news/security/the-four-elevations-of-effective-fraud-prevention/",
+      "published": "2026-06-25T14:01:11",
+      "summary": "Fraudsters don't attack just one transaction. They target accounts, platforms, and entire ecosystems. IPQS explains the four elevations of fraud prevention and why broader visibility improves fraud detection. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Webinar: Why account takeovers remain one of the hardest threats to stop",
+      "url": "https://www.bleepingcomputer.com/news/security/webinar-why-account-takeovers-remain-one-of-the-hardest-threats-to-stop/",
+      "published": "2026-06-25T12:12:20",
+      "summary": "Account takeover attacks continue to challenge security teams because attackers often operate through legitimate accounts and trusted services. This webinar explores how behavioral AI can help organizations identify compromised accounts faster and automate response workflows. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Google releases new privacy controls for activity history, personalization",
+      "url": "https://www.bleepingcomputer.com/news/google/google-releases-new-privacy-controls-for-activity-history-personalization/",
+      "published": "2026-06-24T23:46:17",
+      "summary": "Google is rolling out new privacy controls for Search services and Google Play, giving you more control over saved history and personalized recommendations. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "DraftKings hacker 'Snoopy' sentenced to 18 months in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/draftkings-hacker-snoopy-sentenced-to-18-months-in-prison/",
+      "published": "2026-06-24T21:55:43",
+      "summary": "A 21-year-old using the alias \"Snoopy\" was sentenced to 18 months in prison for his role in hacking DraftKings accounts in the November 2022 cyberattack. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Mandiant reveals how Cisco SD-WAN zero-day attacks gained root access",
+      "url": "https://www.bleepingcomputer.com/news/security/mandiant-reveals-how-cisco-sd-wan-zero-day-attacks-gained-root-access/",
+      "published": "2026-06-24T21:29:10",
+      "summary": "New details have been revealed on how hackers exploited a Cisco Catalyst SD-WAN vulnerability tracked as CVE-2026-20245 in zero-day attacks to create rogue root accounts on targeted devices. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Malicious Edge extension abuses Native Messaging as bridge to malware",
+      "url": "https://www.bleepingcomputer.com/news/security/malicious-edge-extension-abuses-native-messaging-as-bridge-to-malware/",
+      "published": "2026-06-24T20:58:22",
+      "summary": "A malicious Microsoft Edge extension dubbed 'Edgecution' has been used in a ransomware attack to escape the browser sandbox and deploy a Python-based backdoor. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA warns of max severity Ubiquiti flaws exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-max-severity-ubiquiti-flaws-exploited-in-attacks/",
+      "published": "2026-06-24T14:35:15",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of hackers actively exploiting flaws in Ubiquity UniFi OS and Lantronix serial-to-ethernet servers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Amadey, StealC malware operations disrupted in Operation Endgame action",
+      "url": "https://www.bleepingcomputer.com/news/security/amadey-stealc-malware-operations-disrupted-in-operation-endgame-action/",
+      "published": "2026-06-24T14:35:11",
+      "summary": "Microsoft, Europol, and international partners have disrupted infrastructure used by the Amadey and StealC malware operations as part of Operation Endgame, which targets cybercriminal services and ransomware gangs. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Securing the service desk: Why social engineering attacks keep succeeding",
+      "url": "https://www.bleepingcomputer.com/news/security/securing-the-service-desk-why-social-engineering-attacks-keep-succeeding/",
+      "published": "2026-06-24T14:02:12",
+      "summary": "Service desks have become a favored target for attackers seeking password resets, MFA changes, and access to corporate accounts. Specops Software breaks down how service desk social engineering attacks work and how organizations can defend against them. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Stealthy Mistic backdoor linked to ransomware access broker KongTuke",
+      "url": "https://www.bleepingcomputer.com/news/security/stealthy-mistic-backdoor-linked-to-ransomware-access-broker-kongtuke/",
+      "published": "2026-06-24T10:41:51",
+      "summary": "A new backdoor dubbed Mistic has been observed in financially motivated attacks targeting organizations in the insurance, education, IT, and professional services sectors. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Cisco Unified CM flaw CVE-2026-20230 now exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-unified-cm-sme-flaw-cve-2026-20230-now-exploited-in-attacks/",
+      "published": "2026-06-23T21:48:32",
+      "summary": "A high-severity SSRF vulnerability, tracked as CVE-2026-20230, in Cisco Unified Communications Manager Server is now being exploited in attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Tata Electronics confirms cyberattack as hackers leak data",
+      "url": "https://www.bleepingcomputer.com/news/security/tata-electronics-confirms-cyberattack-as-hackers-leak-data/",
+      "published": "2026-06-23T21:06:32",
+      "summary": "Tata Electronics has confirmed in a statement to BleepingComputer that it was the target of a cyberattack that impacted parts of its IT infrastructure. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Windows 11 KB5095093 update rolls out new Point-in-Time restore feature",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/windows-11-kb5095093-update-rolls-out-new-point-in-time-restore-feature/",
+      "published": "2026-06-23T20:22:21",
+      "summary": "\u200b\u200bMicrosoft has released the KB5095093 preview cumulative update for Windows 11 24H2 and 25H2, which fixes numerous bugs and begins rolling out new features, including the new Point-in-Time restore feature. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial",
+      "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+      "published": "2026-06-23T16:12:49",
+      "summary": "Two men pleaded guilty in the United Kingdom this week to criminal charges stemming from an August 2024 cyberattack that crippled Transport for London, the entity responsible for the public transport network in the Greater London area. The duo were key members of a prolific cybercrime group known as Scattered Spider, and their guilty pleas came on the first day of what was expected to be a six-week trial."
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "\u2018Popa\u2019 Botnet Linked to Publicly-Traded Israeli Firm",
+      "url": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+      "published": "2026-06-18T17:37:58",
+      "summary": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut, a \"residential proxy\" provider operated by the publicly-traded Israeli firm Alarum Technologies Ltd [NASDAQ: ALAR]."
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}

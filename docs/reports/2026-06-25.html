@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radar Intelligence Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* Twilio Brand Colors */
+        :root {
+            --twilio-red: #F22F46;
+            --twilio-blue: #0263E0;
+            --twilio-dark-blue: #001489;
+            --twilio-blue-60: #0D61D8;
+            --twilio-blue-10: #E1EFFC;
+            --twilio-gray-100: #121C2D;
+            --twilio-gray-90: #18222E;
+            --twilio-gray-80: #1F2933;
+            --twilio-gray-70: #3E4C59;
+            --twilio-gray-60: #606B85;
+            --twilio-gray-50: #8891AA;
+            --twilio-gray-40: #C4C7D1;
+            --twilio-gray-30: #D9DBE5;
+            --twilio-gray-20: #E8EAED;
+            --twilio-gray-10: #F4F5F6;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0.75in 1in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--twilio-gray-90);
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 24px 32px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Typography with Twilio Red Start */
+        h1 {
+            color: var(--twilio-red);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h1 + p {
+            color: var(--twilio-gray-60);
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--twilio-red);
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--twilio-blue-60);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 24px 0 8px 0;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: var(--twilio-gray-90);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 16px 0 6px 0;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs with hierarchy */
+        p {
+            margin: 6px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        /* Section labels like "Executive Summary:" */
+        p strong:first-child {
+            color: var(--twilio-gray-80);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Default strong styling - subtle */
+        strong {
+            font-weight: 500;
+            color: var(--twilio-gray-70);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+        }
+
+        /* Compact lists */
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 4px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        li::marker {
+            color: var(--twilio-gray-40);
+            font-weight: 400;
+        }
+
+        /* All strong tags in lists should be normal weight by default */
+        li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Only the very first strong in a list item gets emphasis */
+        li > strong:first-child {
+            font-weight: 500;
+            color: var(--twilio-gray-80);
+            font-size: 14px;
+        }
+
+        /* Executive Summary - Twilio branded */
+        #executive-summary + ul {
+            background: var(--twilio-blue-10);
+            padding: 16px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--twilio-red);
+            margin: 12px 0 20px 0;
+        }
+
+        #executive-summary + ul li {
+            font-weight: 600;
+            color: var(--twilio-gray-90);
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        #executive-summary + ul li strong {
+            font-weight: 700;
+            color: var(--twilio-red);
+        }
+
+        /* Blockquotes with Twilio accent */
+        blockquote {
+            margin: 12px 0;
+            padding: 10px 16px;
+            border-left: 4px solid var(--twilio-blue);
+            background: var(--twilio-blue-10);
+            font-style: italic;
+            color: var(--twilio-gray-70);
+            line-height: 1.4;
+        }
+
+        /* Code styling */
+        code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            background-color: var(--twilio-gray-10);
+            color: var(--twilio-dark-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--twilio-gray-10);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--twilio-gray-20);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Links - Twilio primary blue */
+        a {
+            color: var(--twilio-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--twilio-blue-60);
+            text-decoration: underline;
+        }
+
+        /* Compact horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid var(--twilio-gray-30);
+            margin: 16px 0;
+        }
+
+        /* Table styling with Twilio colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--twilio-gray-30);
+            line-height: 1.4;
+        }
+
+        th {
+            font-weight: 700;
+            color: white;
+            background: var(--twilio-red);
+        }
+
+        tr:hover {
+            background: var(--twilio-blue-10);
+        }
+
+        /* Inline Citations - smaller and clickable */
+        a[href^="#"] {
+            color: var(--twilio-blue);
+            font-size: 10px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            padding: 0 1px;
+            transition: all 0.2s ease;
+        }
+
+        a[href^="#"]:hover {
+            color: var(--twilio-red);
+            text-decoration: underline;
+        }
+
+        /* Make citation brackets appear as superscript links */
+        p a[href^="#"],
+        li a[href^="#"] {
+            font-size: 10px;
+            line-height: 0;
+        }
+
+        /* Glossary emphasis */
+        #glossary + p {
+            color: var(--twilio-gray-50);
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #glossary + p + ul li {
+            margin: 5px 0;
+        }
+
+        /* Glossary terms should stand out */
+        #glossary + p + ul li > strong:first-child {
+            color: var(--twilio-red);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* But the rest of glossary text should be normal */
+        #glossary + p + ul li strong:not(:first-child) {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Sources section - everything smaller and lighter */
+        #sources + p + ul li {
+            font-size: 12px;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 3px 0;
+            scroll-margin-top: 20px; /* Offset for smooth scroll */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+
+        #sources + p + ul li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-50);
+        }
+
+        #sources + p + ul li a {
+            font-weight: 500;
+            color: var(--twilio-blue);
+        }
+
+        /* Citation reference targets in sources list */
+        #sources + p + ul li[id] {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+
+        #sources + p + ul li[id]:target {
+            background: var(--twilio-blue-10);
+            padding: 4px 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        body > p:last-of-type {
+            text-align: center;
+            color: var(--twilio-gray-60);
+            font-size: 11px;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--twilio-gray-30);
+        }
+
+        /* Print optimizations */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            a {
+                color: var(--twilio-blue) !important;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pm-radar-weekly-intelligence-digest">PM Radar Weekly Intelligence Digest</h1>
+<p><strong>Date:</strong> 2026-06-25
+<strong>Generated:</strong> 2026-06-25 15:59:17 UTC</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p><strong>This Week's Intelligence:</strong></p>
+<ul>
+<li>🔴 <strong>2 telecom fraud threats</strong> identified</li>
+<li>🟡 <strong>27 general security threats</strong> identified</li>
+<li>📊 <strong>0 competitor features</strong> analyzed (high/medium relevance)</li>
+</ul>
+<hr />
+<h2 id="telecom-fraud-digest">Telecom Fraud Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>The telecom fraud landscape is evolving with a focus on data-driven insights and collaboration among industry stakeholders. Commsrisk is enhancing its Global Fraud Dashboard to provide more detailed analytics and insights, which will aid in identifying emerging threats <a href="#a1">[A1]</a>. Meanwhile, the CFCA Summer Educational Event highlighted the importance of global cooperation among fraud management professionals and technology vendors to combat telecom fraud effectively <a href="#a2">[A2]</a>. These developments underscore the industry's commitment to leveraging data and collaboration to stay ahead of fraudsters.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li>
+<p><strong>Data-Driven Fraud Detection</strong>: The Global Fraud Dashboard by Commsrisk is set to introduce new graphs and noteworthy data insights, focusing on objective data to detect fraud <a href="#a1">[A1]</a>. This shift towards data-driven fraud detection is crucial as it allows for more precise identification of fraud patterns and trends. For businesses, this means improved risk management and potentially reduced financial losses. Teams should consider integrating these insights into their existing fraud detection systems to enhance their capabilities.</p>
+</li>
+<li>
+<p><strong>Global Collaboration in Fraud Management</strong>: The CFCA Summer Educational Event emphasized the importance of global collaboration among fraud management professionals, communications providers, and technology vendors <a href="#a2">[A2]</a>. This collaboration is vital as it fosters the sharing of knowledge and best practices, which can lead to more effective fraud prevention strategies. The business impact includes a stronger defense against fraud and enhanced industry standards. Companies should actively participate in such events to stay informed and contribute to the collective effort against telecom fraud.</p>
+</li>
+</ol>
+<hr />
+<h2 id="general-fraud-security-digest">General Fraud &amp; Security Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent developments in General Fraud &amp; Security highlight significant vulnerabilities across various industries. Siemens and Hubbell Aclara have released advisories on critical vulnerabilities in their systems that could lead to data breaches and operational disruptions if exploited <a href="#a1">[A1]</a><a href="#a2">[A2]</a>. Meanwhile, Unit 42 has identified emerging threats in AI supply chains and cloud data exfiltration techniques, emphasizing the need for enhanced security measures <a href="#a8">[A8]</a><a href="#a9">[A9]</a>. Additionally, CISA has added new vulnerabilities to its Known Exploited Vulnerabilities Catalog, underscoring the ongoing threat landscape <a href="#a6">[A6]</a>. Organizations must prioritize updates and adopt proactive security strategies to mitigate these risks effectively.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li>
+<p><strong>Critical Vulnerabilities in Industrial Systems</strong>: Siemens and Hubbell Aclara have reported vulnerabilities in their industrial systems, which could allow attackers to manipulate device settings or extract sensitive information <a href="#a1">[A1]</a><a href="#a2">[A2]</a>. These vulnerabilities matter because they can lead to significant operational disruptions and data breaches. The business impact includes potential financial losses and reputational damage. Teams should prioritize patching affected systems and implementing additional security measures to protect critical infrastructure.</p>
+</li>
+<li>
+<p><strong>Emerging AI Supply Chain Threats</strong>: Unit 42 has identified threats in AI supply chains, where malicious skills bypass automated scanners to deploy infostealers <a href="#a8">[A8]</a>. This is crucial as AI systems become integral to business operations, making them attractive targets for cybercriminals. The business impact includes potential data theft and unauthorized access to sensitive information. Organizations should enhance AI security protocols and monitor AI supply chains for unusual activities.</p>
+</li>
+<li>
+<p><strong>Cloud Data Exfiltration via Bucket Hijacking</strong>: Attackers are exploiting global name uniqueness in cloud storage to redirect data streams, posing a significant risk to data security <a href="#a9">[A9]</a>. This trend is important as cloud services are widely used for data storage and processing. The business impact includes potential data loss and unauthorized access to sensitive information. Companies should review their cloud security configurations and implement stricter access controls to prevent such attacks.</p>
+</li>
+<li>
+<p><strong>IoT Defense Challenges</strong>: ZeroFox reports that attackers are exploiting long-standing IoT vulnerabilities, automating attacks at machine speed <a href="#a12">[A12]</a>. This trend highlights the growing challenge of securing IoT devices, which are often overlooked in security strategies. The business impact includes increased risk of unauthorized access and data breaches. Organizations should focus on comprehensive IoT security strategies, including regular updates and monitoring for unusual activities.</p>
+</li>
+<li>
+<p><strong>Large-Scale Credential Attacks</strong>: Recent campaigns have targeted security vendors' devices with large-scale credential attacks, as reported by Unit 42 <a href="#a10">[A10]</a>. This trend is significant as it highlights the vulnerability of even security-focused organizations. The business impact includes potential unauthorized access and data breaches. Companies should strengthen their authentication mechanisms and educate employees on recognizing phishing attempts.</p>
+</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li>CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities Catalog, emphasizing the need for organizations to stay updated on emerging threats <a href="#a6">[A6]</a>. This addition highlights the dynamic nature of the threat landscape and the importance of proactive vulnerability management. Organizations should regularly review the KEV Catalog and prioritize patching known vulnerabilities to mitigate risks.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li>Siemens and Hubbell Aclara's advisories on critical vulnerabilities require immediate attention to prevent potential exploitation <a href="#a1">[A1]</a><a href="#a2">[A2]</a>. Organizations using affected systems should prioritize updating to the latest versions and implementing recommended countermeasures. Failure to address these vulnerabilities could result in significant operational disruptions and data breaches.</li>
+</ol>
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p><em>Technical terms and abbreviations used in this report:</em></p>
+<ul>
+<li><strong>CISA</strong>: Cybersecurity and Infrastructure Security Agency (U.S. government)</li>
+<li><strong>IoT</strong>: Internet of Things - network of connected physical devices</li>
+<li><strong>KEV</strong>: Known Exploited Vulnerabilities - CISA's catalog of actively exploited security flaws</li>
+<li><strong>Phishing</strong>: Fraudulent attempt to obtain sensitive information by disguising as trustworthy entity</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p><strong>Articles:</strong></p>
+<ul>
+<li><a id="a1"></a>[A1]: <a href="https://commsrisk.com/the-future-of-commsrisk/">The Future of Commsrisk</a> - Commsrisk (2026-06-23T11:08:15)</li>
+<li><a id="a2"></a>[A2]: <a href="https://cfca.org/why-our-work-matters-highlights-from-the-cfca-summer-educational-event-2026/">Why Our Work Matters: Highlights from the CFCA Summer Educational Event 2026</a> - CFCA (2026-06-24T16:13:12)</li>
+<li><a id="a6"></a>[A6]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-05">ABB Freelance Security Lock</a> - CISA Advisories (2026-06-23T12:00:00)</li>
+<li><a id="a8"></a>[A8]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-06">Impact of Linux Kernel vulnerabilities on B&amp;R products</a> - CISA Advisories (2026-06-23T12:00:00)</li>
+<li><a id="a9"></a>[A9]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-02">Siemens SIPROTEC 5 Using DIGSI5 Protocol</a> - CISA Advisories (2026-06-23T12:00:00)</li>
+<li><a id="a10"></a>[A10]: <a href="https://www.cisa.gov/news-events/alerts/2026/06/23/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA Adds Four Known Exploited Vulnerabilities to Catalog</a> - CISA Advisories (2026-06-23T12:00:00)</li>
+<li><a id="a12"></a>[A12]: <a href="https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/">OpenClaw’s Skill Marketplace and the Emerging AI Supply Chain Threat</a> - Unit 42 (Palo Alto) (2026-06-23T22:00:51)</li>
+</ul>
+<hr />
+<p><em>Generated by PM Radar • 2026-06-25</em></p>
+    </div>
+
+    <!-- Twilio Branding Footer -->
+    <div style="margin-top: 3em; padding: 1.5em 0; text-align: center; border-top: 2px solid #E1E3EA;">
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.5;">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM8.4 8.4C9.6 8.4 10.8 9.6 10.8 10.8C10.8 12 9.6 13.2 8.4 13.2C7.2 13.2 6 12 6 10.8C6 9.6 7.2 8.4 8.4 8.4ZM15.6 8.4C16.8 8.4 18 9.6 18 10.8C18 12 16.8 13.2 15.6 13.2C14.4 13.2 13.2 12 13.2 10.8C13.2 9.6 14.4 8.4 15.6 8.4ZM8.4 15.6C9.6 15.6 10.8 16.8 10.8 18C10.8 19.2 9.6 20.4 8.4 20.4C7.2 20.4 6 19.2 6 18C6 16.8 7.2 15.6 8.4 15.6ZM15.6 15.6C16.8 15.6 18 16.8 18 18C18 19.2 16.8 20.4 15.6 20.4C14.4 20.4 13.2 19.2 13.2 18C13.2 16.8 14.4 15.6 15.6 15.6Z" fill="#F22F46"/>
+        </svg>
+        <p style="margin: 0.5em 0 0 0; font-size: 9pt; color: #606B85;">Powered by PM Radar • Twilio Product Intelligence</p>
+    </div>
+</body>
+</html>
