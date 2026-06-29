@@ -1,0 +1,440 @@
+{
+  "collection_date": "2026-06-29",
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "The Future of Commsrisk",
+      "url": "https://commsrisk.com/the-future-of-commsrisk/",
+      "published": "2026-06-23T11:08:15",
+      "summary": "Future Commsrisk articles will focus on the Global Fraud Dashboard: new graphs, noteworthy data, related news, and insights based on objective data. The post The Future of Commsrisk appeared first on Commsrisk."
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "How Are You?\u00a0 Really?",
+      "url": "https://cfca.org/how-are-you-really/",
+      "published": "2026-06-25T20:50:28",
+      "summary": "By Stacy Graham, President, CFCA Every day we work to protect consumers, investigate fraud, solve complex problems, and support our organizations. We juggle deadlines, travel, long meetings, and the ever-changing [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Why Our Work Matters: Highlights from the CFCA Summer Educational Event 2026",
+      "url": "https://cfca.org/why-our-work-matters-highlights-from-the-cfca-summer-educational-event-2026/",
+      "published": "2026-06-24T16:13:12",
+      "summary": "Earlier this month CFCA Summer Educational Event 2026 brought together fraud management professionals, communications providers, technology vendors, and industry experts from around the world for two days of learning, collaboration, [&#8230;]"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Russian Intelligence Services Continue to Target Commercial Messaging Applications",
+      "url": "https://www.cisa.gov/resources-tools/resources/russian-intelligence-services-continue-target-commercial-messaging-applications",
+      "published": "2026-06-26T12:00:00",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) issued an updated Public Service Announcement (PSA) warning of Russian Intelligence Services (RIS) cyber threat actors targeting commercial messaging applications in ongoing phishing campaigns. This PSA is an update to the March 2026 Russian Intelligence Services Target Commercial Messaging Application Accounts and provides recent tactics, recommended mitigations, and samples of phishing messages."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-25T12:00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-12569 PTC Windchill and FlexPLM Improper Input Validation Vulnerability CVE-2026-20230 Cisco Unified Communications Manager Server-Side Request Forgery (SSRF) Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Daktronics Controller Firmware",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-04",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could could provide an unauthenticated user with complete root-level access and control of the system. The following versions of Daktronics Controller Firmware are affected: VFC-DMP-5000 <v8.117.x.x VFC-DMP-5000 <v9.43.x.x VFC-DMP-5000 <v10.34.x.x DMP-5000 <v10.34.x.x DMP-5000 <v8.117.x.x DMP-5000 <v9.43.x.x DMP-8000 <v10.34.x.x DMP-8000 <v8.117.x.x DMP-8000 <v9.43.x.x CVSS Vendor Equipment Vulnerabilities v3 8.1 Daktronics Daktr"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Delta Electronics DTM Soft",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-06",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to execute arbitrary code. The following versions of Delta Electronics DTM Soft are affected: DTMSoft vers:all/* CVSS Vendor Equipment Vulnerabilities v3 7.8 Delta Electronics Delta Electronics DTM Soft Deserialization of Untrusted Data Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: Taiwan Vulnerabilities Expand All + CVE-2"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "OHIF Viewers DICOM",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-176-02",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability in a custom integration version could allow an attacker to steal an authenticated clinician's token via a crafted link. The following versions of OHIF Viewers DICOM are affected: OHIF DICOM Web Viewer Framework <=v3.12.0 CVSS Vendor Equipment Vulnerabilities v3 8.2 Open Health Imaging Foundation (OHIF) OHIF Viewers DICOM Server-Side Request Forgery (SSRF) Background Critical Infrastructure Sectors: Healthcare and Public Health Count"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "H.VIEW HV-500S6 IP Camera",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-05",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to execute arbitrary code and upload malicious files to the affected device. The following versions of H.VIEW HV-500S6 IP Camera are affected: H.VIEW HV-500S6 IP Camera IPCAM_V4.06.88.251229 CVSS Vendor Equipment Vulnerabilities v3 7.2 H.VIEW H.VIEW HV-500S6 IP Camera Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Unrestricted Upload of File with Dangerous Type "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "pydicom pynetdicom Library",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-176-01",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an unauthenticated attacker to write to arbitrary file paths. The following versions of pydicom pynetdicom Library are affected: pynetdicom >=v1.0.0|<v3.0.4 CVSS Vendor Equipment Vulnerabilities v3 9.1 pydicom pydicom pynetdicom Library Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Background Critical Infrastructure Sectors: Healthcare and Public Health Countries/Areas Deployed: Worldwide"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric PowerLogic P7",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-07",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its PowerLogic\u2122 P7 product. The PowerLogic\u2122 P7 is a protection and control platform designed for complex and advanced electrical network applications. Failure to apply the remediation provided below may risk unauthorized execution of privileged commands or loss of HMI operability and configuration functionality, which could result in loss of control over system operations and disruption of critical services. The following versio"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "EVoke Systems Charging Station Management System",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-02",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could enable attackers to gain unauthorized administrative control over vulnerable charging stations or disrupt charging services through denial-of-service attacks. The following versions of EVoke Systems Charging Station Management System are affected: EVoke CSMS vers:all/* CVSS Vendor Equipment Vulnerabilities v3 9.4 EVoke Systems EVoke Systems Charging Station Management System Missing Authentication for Critical Function, Imp"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Horner Automation Cscape",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-03",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow a local attacker to disclose information and execute arbitrary code. The following versions of Horner Automation Cscape are affected: Cscape <10.2_SP3 CVSS Vendor Equipment Vulnerabilities v3 7.8 Horner Automation Horner Automation Cscape Out-of-bounds Read Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Ex"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Yokogawa FAST/TOOLS and CI Server",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-176-01",
+      "published": "2026-06-25T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability may return a response containing the CI Server setting information. The following versions of Yokogawa FAST/TOOLS and CI Server are affected: FAST/TOOLS >=R9.01|<=R10.04 Collaborative Information Server (CI Server) >=R1.01|<=R1.04 CVSS Vendor Equipment Vulnerabilities v3 7.5 Yokogawa Yokogawa FAST/TOOLS and CI Server Cleartext Transmission of Sensitive Information Background Critical Infrastructure Sectors: Critical Manufacturing, E"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Using SASE in a Modern TIC 3.0 Solution",
+      "url": "https://www.cisa.gov/resources-tools/resources/using-sase-modern-tic-30-solution",
+      "published": "2026-06-24T12:00:00",
+      "summary": "Using SASE in a Modern TIC 3.0 Solution CISA\u2019s guidance, The Journey to Zero Trust \u2013 Using Secure Access Service Edge in a Modern TIC 3.0 Solution, details how the Trusted Internet Connections (TIC) 3.0 initiative is helping agencies modernize the way their users connect to applications, data and services. While federal agencies are the target audience, any organization looking to modernize its perimeter-based architectures, advance zero trust adoption, and improve visibility and control across "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hubbell Aclara Metrum Cellular Web Interface",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-07",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow attackers to manipulate critical device settings and repeatedly disrupt operations, potentially causing a loss of communications to the device. The following versions of Hubbell Aclara Metrum Cellular Web Interface are affected: Aclara Metrum Cellular Web Interface CVSS Vendor Equipment Vulnerabilities v3 7.5 Hubbell Hubbell Aclara Metrum Cellular Web Interface Missing Authentication for Critical Function Background Crit"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens WinCC Certificate Manager",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-01",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary WinCC Certificate Manager insufficiently protects key material that could allow an attacker to extract sensitive information. Siemens has released a new version for SIMATIC WinCC Unified PC Runtime V21 and recommends to update to the latest version. Siemens recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens WinCC Certificate Manager are affected: SIMATIC WinCC Unified PC Runtime V16 vers:all/* SIMATIC Wi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Freelance Security Lock",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-05",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow access to underlying OS functions even when Freelance Operations is active, depending on system configuration and user permissions. The following versions of ABB Freelance Security Lock are affected: ABB System Version (<=Freelance 2013) installed with ABB Freelance Security Lock(All versions) vers:all/* ABB System Version (Freelance 2013 SP1) installed with ABB Freelance Security Lock(All versions) vers:all/* ABB System"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SINEC INS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-04",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary SINEC INS before V1.0 SP2 Update 6 is affected by multiple vulnerabilities. Siemens has released a new version for SINEC INS and recommends to update to the latest version. The following versions of Siemens SINEC INS are affected: SINEC INS vers:intdot/<1.0.2.6 CVSS Vendor Equipment Vulnerabilities v3 8.8 Siemens Siemens SINEC INS Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection'), Path Traversal: '/dir/../filename', Execution with Unnece"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Impact of Linux Kernel vulnerabilities on B&R products",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-06",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary B&R is aware of publicly reported vulnerabilities affecting the Linux kernel versions shipped with the products listed as affected in the advisory. Successful local exploitation of these vulnerabilities could allow an attacker to escalate privileges on the affected system. Public proof-of-concept exploits are available for the vulnerabilities described herein. At the time of publication of this advisory, B&R had no evidence of active exploitation targeting B&R products. The fol"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SIPROTEC 5 Using DIGSI5 Protocol",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-02",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary SIPROTEC 5 is vulnerable to arbitrary file uploads by authenticated users using the DIGSI 5 protocol. This could allow an attacker to upload malicious configuration files, potentially causing a permanent denial of service condition. As a mitigation measure, users of the CP050 and CP150 device models are advised to upgrade to version 9.90 or later. For CP300 device models, devices 7ST85 and 7ST86 are advised to upgrade to version 10.00 or later, while the remaining models should"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Products using OpenSSL",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-174-03",
+      "published": "2026-06-23T12:00:00",
+      "summary": "View CSAF Summary OpenSSL has published a stack based buffer overflow vulnerability that allows a remote attacker to cause a denial of service (DoS) or potentially allow for remote code execution. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends specific countermeasures for products where fixes are not, or not yet available. The following versions of Siemens Products using Ope"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/06/23/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-06-23T12:00:00",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2025-67038 Lantronix EDS5000 Code Injection Vulnerability CVE-2026-34908 Ubiquiti UniFi OS Improper Access Control Vulnerability CVE-2026-34909 Ubiquiti UniFi OS Path Traversal Vulnerability CVE-2026-34910 Ubiquiti UniFi OS Improper Input Validation Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose s"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
+      "published": "2026-06-26T19:05:33",
+      "summary": "We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. The post Threat Brief: Mitigating Large-Scale Credential Attacks appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/",
+      "published": "2026-06-25T22:00:52",
+      "summary": "Government entities and critical infrastructure were targeted for espionage in SE Asia by attackers using a hybrid toolkit, including custom TinyRCT backdoor. The post CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat",
+      "url": "https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/",
+      "published": "2026-06-23T22:00:51",
+      "summary": "Unit 42's analysis of ClawHub revealed evasive malicious skills bypassing automated scanners to deploy infostealers and execute agentic financial fraud. The post OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration",
+      "url": "https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/",
+      "published": "2026-06-22T22:00:04",
+      "summary": "Unit 42 research details how attackers could exploit global name uniqueness in bucket hijacking to redirect cloud data streams across major CSPs. The post The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Disrupting the Phish-Hunters: Inside a Coordinated Impersonation of the Brand Protection Industry",
+      "url": "https://www.zerofox.com/blog/coordinated-impersonation-of-the-brand-protection-industry",
+      "published": "2026-06-25T10:14:15",
+      "summary": "TL;DR ZeroFox&#8217;s Signals Research Program has uncovered a sustained domain impersonation operation aimed squarely at the brand protection and threat intelligence industry. Seventy-three correlated domains, registered between July 2025 and June 2026, impersonate ZeroFox and at least four peer vendors (Corsearch (including its Incopro brand), Red Points, MarkScan, and Group-IB) alongside a long tail of [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "The Patch Will Not Save You: Why IoT Defense Is Becoming an Intelligence Problem",
+      "url": "https://www.zerofox.com/blog/iot-defense-becoming-intelligence-problem",
+      "published": "2026-06-24T12:53:00",
+      "summary": "Attackers are not waiting for your vulnerability management program to catch up. They are mining twenty years of forgotten flaws, automating exploitation at machine speed, and walking through segmentation that was never built to hold. The organizations that survive the next wave of IoT-targeted attacks will be the ones watching the adversary, not just the [&hellip;]"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Zerofox Joins eco &#8211; Association of the Internet Industry",
+      "url": "https://www.zerofox.com/blog/zerofox-joins-eco",
+      "published": "2026-06-22T12:36:27",
+      "summary": "Disrupting abuse starts with being in the room where relevant standards get made. When ZeroFox identifies a phishing site, a fraudulent social media profile, or an impersonation domain targeting one of our clients, the threat doesn&#8217;t disappear on its own. Someone has to get it removed. That means working directly with the registrars, hosting providers, [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Files Amicus Brief to Protect Consumers from Pharmaceutical Monopolies",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-files-amicus-brief-protect-consumers-pharmaceutical-monopolies",
+      "published": "2026-06-23T12:00:00",
+      "summary": "The Federal Trade Commission filed an amicus brief in an antitrust case alleging that drug manufacturer Johnson & Johnson illegally maintained a monopoly through anticompetitive conduct.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Approves Final Consent Order in Pest-Control Noncompete Matter",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/06/ftc-approves-final-consent-order-pest-control-noncompete-matter",
+      "published": "2026-06-22T12:00:00",
+      "summary": "The Federal Trade Commission finalized a consent order that requires Rollins Inc.\u2014one of the largest pest-control companies in the United States\u2014to stop enforcing noncompete agreements against more than 18,000 employees nationwide.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russia accuses Apple of \u2018political censorship\u2019 after VK apps removed from App Store",
+      "url": "https://therecord.media/russia-accuses-apple-of-political-censorship-after-vk-removal",
+      "published": "2026-06-26T13:42:00",
+      "summary": "Apple removed VK's flagship social network VKontakte, often described as Russia's equivalent of Facebook, along with VK Music, VK Messenger, VK Video, Odnoklassniki and Mail.ru services, including its email application."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Turla group adds more malware to Russia\u2019s espionage efforts against Ukraine",
+      "url": "https://therecord.media/russia-turla-espionage-ukraine-stockstay-malware",
+      "published": "2026-06-26T13:30:00",
+      "summary": "Threat intelligence researchers at Google described StockStay, the latest malware developed by the Russian cyber-espionage group known as Turla."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russia used social engineering to breach prominent messaging accounts, Ukraine says",
+      "url": "https://therecord.media/russia-ukraine-social-engineering-messaging-accounts",
+      "published": "2026-06-26T13:10:00",
+      "summary": "Ukraine's SBU described a long-running Russian operation that used fake tech-support workers to persuade people to hand over credentials to their messaging apps."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "FCC votes to toughen rules in bid to better protect undersea cables",
+      "url": "https://therecord.media/fcc-votes-to-toughen-rules-undersea-cables",
+      "published": "2026-06-26T12:10:00",
+      "summary": "In an unprecedented move, the FCC also said it plans to mandate that owners and operators of submarine line terminal equipment (SLTE) be licensed."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "DHS chief says president has met with likely CISA nominee; agency plans to hire 600",
+      "url": "https://therecord.media/cisa-director-nominee-workforce-hires-mullin-house-hearing",
+      "published": "2026-06-25T18:47:51",
+      "summary": "Once a new CISA director is in place, the agency will ramp up hiring efforts, Homeland Security Secretary Markwayne Mullin told lawmakers. The White House has not yet announced a nominee."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Data breach exposes up to 14.2 million email logins at six ISPs",
+      "url": "https://www.bleepingcomputer.com/news/security/data-breach-exposes-up-to-142-million-email-logins-at-six-isps/",
+      "published": "2026-06-28T14:13:46",
+      "summary": "Japanese telecommunications operator KDDI Corporation disclosed a data breach where threat actors gained access to one of its email systems used by five other internet service providers (ISPs) in the country. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Clean GitHub repo tricks AI coding agents into running malware",
+      "url": "https://www.bleepingcomputer.com/news/security/clean-github-repo-tricks-ai-coding-agents-into-running-malware/",
+      "published": "2026-06-27T14:22:36",
+      "summary": "An agentic coding tool tasked with cloning and setting up a seemingly benign GitHub repository could execute a malicious payload that remains invisible to security scanners, AI agents, and human reviewers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FBI: Russian hackers now target Signal backup recovery keys",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-russian-hackers-now-target-signal-backup-recovery-keys/",
+      "published": "2026-06-26T22:06:17",
+      "summary": "The FBI and CISA are warning that a phishing campaign targeting Signal users tied to Russian intelligence services has evolved to steal Signal Backup Recovery Keys, allowing attackers to access victims' historical messages. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA sets urgent deadline to fix Cisco flaw exploited in attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
+      "published": "2026-06-26T19:43:06",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is giving federal agencies until Sunday to patch a vulnerability in Cisco Unified Communications Manager Server that is being actively exploited. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Polymarket customers lose $3 million in supply-chain attack",
+      "url": "https://www.bleepingcomputer.com/news/security/polymarket-customers-lose-3-million-in-supply-chain-attack/",
+      "published": "2026-06-26T18:04:12",
+      "summary": "Polymarket says it will fully reimburse customers who lost an estimated $3 million after hackers injected a malicious script into the platform's frontend following a breach at a third-party vendor. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Cybersecurity firms targeted by fraudulent OpenAI organization invites",
+      "url": "https://www.bleepingcomputer.com/news/security/cybersecurity-firms-targeted-by-fraudulent-openai-organization-invites/",
+      "published": "2026-06-26T17:49:07",
+      "summary": "Threat actors are creating OpenAI tenants that impersonate legitimate companies and inviting employees to join them, in what appears to be a ploy to trick targets into submitting sensitive company information in chats and projects. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Your First GRC Agent: A Red Teamer's Walkthrough",
+      "url": "https://www.bleepingcomputer.com/news/security/your-first-grc-agent-a-red-teamers-walkthrough/",
+      "published": "2026-06-26T14:01:11",
+      "summary": "AI won't replace GRC analysts, but it can eliminate much of the repetitive work they do. Anecdotes walks through building an agent that continuously monitors controls, identifies evidence gaps, and opens remediation tasks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Anthropic is testing desktop-like Claude Cowork for mobile",
+      "url": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-testing-desktop-like-claude-cowork-for-mobile/",
+      "published": "2026-06-25T22:53:32",
+      "summary": "Anthropic appears to be testing Claude Cowork support on mobile, allowing you to manage long-running Claude tasks from your phone. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Poland busts SIM-swapping gang tied to millions in crypto theft",
+      "url": "https://www.bleepingcomputer.com/news/security/poland-busts-sim-swapping-gang-tied-to-millions-in-crypto-theft/",
+      "published": "2026-06-25T22:37:42",
+      "summary": "Authorities in Poland have arrested four members of an organized cybercrime group accused of breaching telecommunications partners and hijacking email accounts to carry out SIM-swapping attacks. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Order-tracking app Shop abused to push callback phishing attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/order-tracking-app-shop-abused-to-push-callback-phishing-attacks/",
+      "published": "2026-06-25T19:45:48",
+      "summary": "Threat actors are increasingly abusing Shop, the order-tracking app from Shopify, by adding fake purchase receipts in users' order histories to trick them into providing sensitive data or installing remote access software. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft quietly extends free Windows 10 ESU support to October 2027",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-quietly-extends-free-windows-10-esu-support-to-october-2027/",
+      "published": "2026-06-25T18:29:20",
+      "summary": "Microsoft has quietly extended its free Windows 10 Extended Security Updates (ESU) program for consumers by an additional year, allowing enrolled devices to continue receiving security updates until October 12, 2027. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New macOS malware embeds fake errors to confuse AI analysis tools",
+      "url": "https://www.bleepingcomputer.com/news/security/new-macos-malware-embeds-fake-errors-to-confuse-ai-analysis-tools/",
+      "published": "2026-06-25T16:23:19",
+      "summary": "A newly discovered macOS malware dubbed \"Gaslight\" is designed to confuse AI-assisted malware analysis tools by hiding prompt injection strings and fake debugging data within the executable. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "PirloTV sports piracy network disrupted as 44 domains seized",
+      "url": "https://www.bleepingcomputer.com/news/security/pirlotv-sports-piracy-network-disrupted-as-44-domains-seized/",
+      "published": "2026-06-25T15:36:56",
+      "summary": "A major sports piracy ring linked to the illegal PirloTV streaming platform has been disrupted in an action that targeted 44 domains. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Bluekit phishing kit adopts browser-in-the-middle for login theft",
+      "url": "https://www.bleepingcomputer.com/news/security/bluekit-phishing-kit-adopts-browser-in-the-middle-for-login-theft/",
+      "published": "2026-06-25T15:00:00",
+      "summary": "The Bluekit phishing-as-a-service platform continues to evolve with nearly 70 new hostnames identified over the past week and by adding browser-in-the-middle capabilities for improved data theft. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "The Four Elevations of Effective Fraud Prevention",
+      "url": "https://www.bleepingcomputer.com/news/security/the-four-elevations-of-effective-fraud-prevention/",
+      "published": "2026-06-25T14:01:11",
+      "summary": "Fraudsters don't attack just one transaction. They target accounts, platforms, and entire ecosystems. IPQS explains the four elevations of fraud prevention and why broader visibility improves fraud detection. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial",
+      "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+      "published": "2026-06-23T16:12:49",
+      "summary": "Two men pleaded guilty in the United Kingdom this week to criminal charges stemming from an August 2024 cyberattack that crippled Transport for London, the entity responsible for the public transport network in the Greater London area. The duo were key members of a prolific cybercrime group known as Scattered Spider, and their guilty pleas came on the first day of what was expected to be a six-week trial."
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach",
+      "url": "https://feeds.fortinet.com/~/958459373/0/fortinet/blog/threat-research~From-CICD-to-Cloud-Data-How-Shai-Hulud-Persistence-Leads-to-Redshift-Breach",
+      "published": "2026-06-26T13:00:00",
+      "summary": "See how Shai Hulud-linked CI/CD compromise exposed Jenkins credentials, enabled AWS escalation, and led to Redshift breach activity detected by FortiCNAPP&#160;&#160;&#160;&#160; &#160;"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}
