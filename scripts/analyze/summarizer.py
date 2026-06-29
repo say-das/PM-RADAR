@@ -70,76 +70,135 @@ class ContentAnalyzerAgent:
 
         return []
 
+    def _gpt_categorize_articles(self, client, articles):
+        """
+        Use GPT-4o to score and categorize articles with deduplication.
+
+        Returns:
+            List of scored articles with category and deduplication info
+        """
+        if not articles:
+            return []
+
+        # Prepare articles for GPT (limit summary to 300 chars)
+        article_list = []
+        for i, article in enumerate(articles, 1):
+            article_list.append(
+                f"Article {i}:\n"
+                f"Title: {article['title']}\n"
+                f"Source: {article['source']}\n"
+                f"Summary: {article['summary'][:300]}...\n"
+            )
+
+        combined_articles = "\n".join(article_list)
+
+        prompt = f"""Score these articles for relevance to fraud prevention, security, and communications platforms.
+
+{combined_articles}
+
+Rate each article 0-10:
+- 8-10: Highly relevant (fraud, security breaches, account takeover, telecom/messaging threats)
+- 5-7: Moderately relevant (general security, vulnerabilities, compliance)
+- 0-4: Low relevance (product updates, general tech news)
+
+DEDUPLICATION (CRITICAL): Aggressively consolidate similar topics:
+- If 3+ articles are from the SAME vendor/product (e.g., "Rockwell Automation"), keep ONLY the most critical one
+- If articles cover the same incident/breach/advisory, keep ONLY the most detailed
+- Mark duplicates with score=0 and "duplicate_of" field
+- Examples to consolidate:
+  * Multiple vulnerabilities from same vendor on same day → keep 1
+  * Same data breach reported by different outlets → keep 1
+  * Generic "CISA adds vulnerability" articles → mark as duplicates
+
+CATEGORIZATION:
+- telecom: SMS, messaging platforms, SIM swap, robocalls, telecom fraud
+- general: Breaches, vulnerabilities, authentication, fraud, security threats
+
+Return JSON:
+{{
+  "articles": [
+    {{"id": 1, "score": 9, "category": "general", "reason": "OAuth breach affects enterprise auth"}},
+    {{"id": 2, "score": 0, "duplicate_of": 1, "reason": "Same OAuth incident"}},
+    {{"id": 3, "score": 7, "category": "telecom", "reason": "SMS verification fraud"}}
+  ]
+}}
+
+Only include articles scoring >= 6 unless they're duplicates."""
+
+        try:
+            response = client.chat.completions.create(
+                model="gpt-4o",
+                messages=[
+                    {"role": "system", "content": "You are a fraud intelligence analyst. Score articles for relevance to fraud prevention, security threats, and communications platform security. Be strict - only high scores for truly relevant content."},
+                    {"role": "user", "content": prompt}
+                ],
+                response_format={"type": "json_object"},
+                temperature=0.2,
+                max_tokens=2000
+            )
+
+            result = json.loads(response.choices[0].message.content)
+            return result.get('articles', [])
+
+        except Exception as e:
+            print(f"      ✗ GPT categorization error: {type(e).__name__}: {str(e)[:100]}")
+            return []
+
     def _categorize_content(self, collected_data):
         """
-        Categorize collected data into Telecom Fraud, General Fraud, and Competitive Intelligence.
+        Categorize collected data using GPT-4o scoring (keyword matching disabled).
 
         Returns:
             Dictionary with 'telecom', 'general', and 'competitive' keys, each containing articles and posts
         """
-        # Define telecom-specific keywords (checked first for prioritization)
-        telecom_keywords = [
-            # Core telecom fraud
-            'telecom fraud', 'sms pumping', 'irsf', 'iprn', 'toll fraud',
-            'premium rate fraud', 'wangiri', 'international revenue share fraud',
-
-            # Messaging platforms & protocols
-            'sms', 'mms', 'rcs', 'a2p', 'p2p messaging', 'whatsapp',
-            'messaging platform', 'text message', 'mobile messaging',
-            'sms blaster', 'text spam',
-
-            # Voice/calling fraud
-            'robocall', 'call spoofing', 'caller id spoofing', 'voip fraud',
-            'vishing', 'phone scam', 'telemarketing fraud', 'scam call',
-            'phone fraud', 'phone number disconnected', 'scam block',
-
-            # Mobile/SIM fraud
-            'sim swap', 'sim box', 'sim card fraud', 'mobile number',
-            'phone number fraud', 'burner phone',
-
-            # SMS-specific fraud
-            'smishing', 'sms fraud', 'sms spam', 'sms verification fraud',
-            'otp fraud', 'one-time password', 'verification code fraud',
-
-            # Telecom infrastructure
-            'carrier fraud', 'mobile network fraud', 'grey route',
-            'telecom carrier', 'mobile operator fraud'
-        ]
-
-        # Define general fraud keywords (checked after telecom)
-        fraud_keywords = [
-            'fraud', 'security', 'authentication', 'verification', 'scam',
-            'spam', 'abuse', 'prevention', 'detection',
-            'risk', 'compliance', 'protection', 'threat', 'attack'
-        ]
-
         categorized = {
             'telecom': {'articles': [], 'posts': []},
             'general': {'articles': [], 'posts': []},
             'competitive': {'articles': [], 'posts': []}
         }
 
-        # Categorize RSS articles
+        # Use GPT-4o to score and categorize articles
         if "rss_articles" in collected_data:
-            for article in collected_data["rss_articles"]:
-                text = (article['title'] + ' ' + article['summary']).lower()
-                article_category = article.get('category', '')
+            articles = collected_data["rss_articles"]
 
-                # Priority 1: Check source category first
-                # Articles from telecom_fraud sources (Commsrisk, CFCA, Globe) → always telecom
-                if article_category == 'telecom_fraud':
-                    categorized['telecom']['articles'].append(article)
-                # Priority 2: Competitor content (only if fraud-related)
-                elif article_category == 'competitor':
-                    if any(keyword in text for keyword in telecom_keywords + fraud_keywords):
-                        categorized['competitive']['articles'].append(article)
-                # Priority 3: Keyword-based classification for other sources
-                # Check telecom keywords FIRST (priority over general)
-                elif any(keyword in text for keyword in telecom_keywords):
-                    categorized['telecom']['articles'].append(article)
-                elif any(keyword in text for keyword in fraud_keywords):
-                    categorized['general']['articles'].append(article)
-                # If no keywords match, skip the article (don't categorize)
+            # Always include telecom_fraud source articles
+            telecom_source_articles = [a for a in articles if a.get('category') == 'telecom_fraud']
+            other_articles = [a for a in articles if a.get('category') != 'telecom_fraud']
+
+            print("    → Using GPT-4o to score and categorize articles...")
+
+            # Score non-telecom-source articles with GPT
+            from openai import OpenAI
+            client = OpenAI(api_key=self.api_key)
+
+            scored_articles = self._gpt_categorize_articles(client, other_articles)
+
+            # Map scored articles back to original articles
+            for score_info in scored_articles:
+                article_id = score_info.get('id', 0)
+                score = score_info.get('score', 0)
+                category = score_info.get('category', 'general')
+                is_duplicate = score_info.get('duplicate_of') is not None
+
+                # Skip duplicates and low scores
+                if is_duplicate or score < 6:
+                    continue
+
+                # Get original article (id is 1-indexed)
+                if 1 <= article_id <= len(other_articles):
+                    article = other_articles[article_id - 1]
+                    article['_gpt_score'] = score
+                    article['_gpt_reason'] = score_info.get('reason', '')
+
+                    if category == 'telecom':
+                        categorized['telecom']['articles'].append(article)
+                    else:
+                        categorized['general']['articles'].append(article)
+
+            # Add telecom source articles directly
+            categorized['telecom']['articles'].extend(telecom_source_articles)
+
+            print(f"    ✓ GPT scored {len(scored_articles)} articles, kept {len(categorized['telecom']['articles']) + len(categorized['general']['articles'])} (filtered {len(other_articles) - (len(categorized['telecom']['articles']) + len(categorized['general']['articles']) - len(telecom_source_articles))} as low-relevance/duplicates)")
 
         # Reddit posts are NOT categorized into Telecom/General
         # They will be analyzed separately as Twilio Community Discussions
@@ -204,7 +263,8 @@ class ContentAnalyzerAgent:
                 "telecom": telecom_count,
                 "general": general_count,
                 "competitive": competitive_count
-            }
+            },
+            "filtered_articles": categorized['telecom']['articles'] + categorized['general']['articles']
         }
 
         # Analyze Telecom Fraud content
@@ -357,15 +417,17 @@ For each feature, provide a 2-3 sentence analysis answering:
 - How does it compare to Twilio's capabilities? (if you can infer)
 - What's the competitive implication?
 
-Return JSON array with format:
-[
-  {{
-    "competitor": "Vonage",
-    "product": "Fraud Defender",
-    "title": "Network blocks with TTL",
-    "analysis": "Allows customers to temporarily block traffic to specific networks without permanent configuration changes. Useful for responding to fraud spikes or attacks with automatic rollback. Twilio currently requires manual rule changes or API calls for similar functionality."
-  }}
-]
+Return JSON object with "features" array:
+{{
+  "features": [
+    {{
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "title": "Network blocks with TTL",
+      "analysis": "Allows customers to temporarily block traffic to specific networks without permanent configuration changes. Useful for responding to fraud spikes or attacks with automatic rollback. Twilio currently requires manual rule changes or API calls for similar functionality."
+    }}
+  ]
+}}
 
 Focus on practical business value, not just technical descriptions. Skip features with insufficient information."""
 
@@ -447,24 +509,41 @@ Provide:
 1. Executive summary (4-5 sentences) - what's happening in {category_name}. Write in news brief style: lead with the key development, then provide context. Include [ARTICLE_N] citations.
 
 2. Top 5 trends or threats specific to {category_name} (if available):
-   - Each trend MUST have a descriptive title AND a 4-5 sentence explanation
-   - Explanation format: What is it? → Why does it matter? → What's the business impact? → What should teams consider?
-   - If you cannot write a meaningful 4-5 sentence description, DO NOT include the item
-   - Each description must cite sources with [ARTICLE_N]
-   - Skip items with insufficient information rather than writing empty descriptions
+   - REQUIRED FORMAT: {{"title": "Short headline", "description": "4-5 sentences explaining the threat"}}
+   - The "description" field is MANDATORY and must contain 4-5 complete sentences
+   - Description format: What is it? → Why does it matter? → What's the business impact? → What should teams consider?
+   - Citations go in the description text, NOT in the title
+   - If you cannot write a meaningful 4-5 sentence description, DO NOT include that item at all
+   - NEVER return just a title without a description field
+   - NEVER put citations at the end of titles (wrong: "Title [ARTICLE_1].:")
 
-3. Notable incidents, attacks, or regulatory changes (4-5 sentences each with context). Include [ARTICLE_N] citations.
+3. Notable incidents, attacks, or regulatory changes:
+   - REQUIRED FORMAT: {{"description": "4-5 sentences with full context and citations"}}
+   - Each must be 4-5 sentences with [ARTICLE_N] citations
 
-4. Anything requiring immediate attention (4-5 sentences explaining urgency and recommended action). Include [ARTICLE_N] citations.
+4. Anything requiring immediate attention:
+   - REQUIRED FORMAT: {{"description": "4-5 sentences explaining urgency, impact, and recommended action"}}
+   - Each must be 4-5 sentences with [ARTICLE_N] citations
 
 5. If Reddit discussions present: key concerns with VERBATIM QUOTES from posts AND comments using [REDDIT_N] citations.
    - Pay special attention to comments as they reveal additional customer pain points, workarounds, and validation of issues
    - Include actual user text snippets in quotes from both posts and comments
 
-CRITICAL: Every item must have substantive content (4-5 sentences). Do not generate titles without descriptions. Skip low-confidence items entirely.
+CRITICAL RULES:
+- Every "description" field must contain 4-5 complete sentences
+- Do NOT generate placeholder text like "Title [citation].:" with no explanation
+- Skip items entirely if you cannot write proper descriptions
+- Put citations INSIDE descriptions, not in titles
 
 Format as JSON with keys: executive_summary, top_trends, regulatory_changes, immediate_attention, community_sentiment (if applicable).
-Each text value must include inline [ARTICLE_N] or [REDDIT_N] citations."""
+
+EXAMPLE of correct top_trends format:
+"top_trends": [
+  {{
+    "title": "Synthetic Mule Accounts",
+    "description": "Fraudsters are creating sophisticated fake identities to move money [ARTICLE_2]. These accounts pass basic checks but are designed for laundering. This increases financial risk and compliance burden. Companies should enhance identity verification and deploy behavioral analytics to catch these accounts early."
+  }}
+]"""
 
         response = client.chat.completions.create(
             model="gpt-4o",

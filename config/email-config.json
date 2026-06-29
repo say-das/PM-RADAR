@@ -9,6 +9,7 @@
       "name": "Saydas"
     }
   ],
+  "_comment_team": "Team members (disabled for testing): rlohan@twilio.com, tkilam@twilio.com, jhasan@twilio.com, vsharma@twilio.com",
   "subject_template": "PM Radar Weekly Intelligence Digest - {date}",
   "_comment": "Sender email must be verified in Brevo dashboard at https://app.brevo.com/senders"
 }

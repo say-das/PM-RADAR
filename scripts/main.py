@@ -300,14 +300,20 @@ def generate_report(collected_data, analysis_results, date_str):
     citations = {}
 
     # Map articles (ARTICLE_1, ARTICLE_2, etc.)
-    if "rss_articles" in collected_data:
-        for i, article in enumerate(collected_data["rss_articles"][:15], 1):
-            citations[f"ARTICLE_{i}"] = {
-                "title": article["title"],
-                "source": article["source"],
-                "url": article["url"],
-                "published": article["published"]
-            }
+    # Use GPT-filtered articles if available, otherwise use raw collection
+    articles_to_map = []
+    if analysis_results and "filtered_articles" in analysis_results:
+        articles_to_map = analysis_results["filtered_articles"][:15]
+    elif "rss_articles" in collected_data:
+        articles_to_map = collected_data["rss_articles"][:15]
+
+    for i, article in enumerate(articles_to_map, 1):
+        citations[f"ARTICLE_{i}"] = {
+            "title": article["title"],
+            "source": article["source"],
+            "url": article["url"],
+            "published": article["published"]
+        }
 
     # Map Reddit posts (REDDIT_1, REDDIT_2, etc.) with URLs
     # Note: Must match the limit used in Reddit Community analysis
@@ -531,8 +537,9 @@ def generate_report(collected_data, analysis_results, date_str):
                                 # Add bullet point for each insight
                                 report += f"- {line}\n\n"
         else:
-            # Fallback to raw text if parsing fails
-            report += f"{analysis_results['telecom_fraud_summary']}\n\n"
+            # Parsing failed - show error instead of raw JSON
+            report += "**Analysis Error:** Unable to parse AI-generated analysis. The raw data may contain formatting issues.\n\n"
+            print(f"  ⚠ Warning: Failed to parse telecom_fraud_summary JSON")
 
         report += "---\n\n"
 
@@ -703,8 +710,9 @@ def generate_report(collected_data, analysis_results, date_str):
                                 # Add bullet point for each insight
                                 report += f"- {line}\n\n"
         else:
-            # Fallback to raw text if parsing fails
-            report += f"{analysis_results['general_fraud_summary']}\n\n"
+            # Parsing failed - show error instead of raw JSON
+            report += "**Analysis Error:** Unable to parse AI-generated analysis. The raw data may contain formatting issues.\n\n"
+            print(f"  ⚠ Warning: Failed to parse general_fraud_summary JSON")
 
         report += "---\n\n"
 

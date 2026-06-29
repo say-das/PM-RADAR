@@ -8,7 +8,7 @@
     },
     {
       "name": "CFCA",
-      "url": "https://cfca.org/category/news/feed/",
+      "url": "https://cfca.org/feed/",
       "category": "telecom_fraud",
       "description": "Industry-standard telecom fraud, robocall reports, and global surveys"
     },
@@ -77,6 +77,24 @@
       "url": "https://feeds.fortinet.com/fortinet/blog/threat-research",
       "category": "threat_landscape",
       "description": "Global threat landscape metrics, including mobile and IoT vectors"
+    },
+    {
+      "name": "Telecom Ramblings",
+      "url": "https://www.telecomramblings.com/feed/",
+      "category": "telecom_fraud",
+      "description": "Telecom industry news, infrastructure, and carrier developments"
+    },
+    {
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "category": "security_news",
+      "description": "Breaking cybersecurity news, vulnerabilities, and hacking incidents"
+    },
+    {
+      "name": "Help Net Security",
+      "url": "https://www.helpnetsecurity.com/feed/",
+      "category": "security_news",
+      "description": "Enterprise security news, product reviews, and industry analysis"
     }
   ]
 }
