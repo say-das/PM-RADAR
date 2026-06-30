@@ -74,7 +74,7 @@ def main():
         collected_data["reddit_posts"] = reddit_collector.collect()
     except ValueError as e:
         print(f"⚠ Reddit collection skipped: {e}")
-        print("  (SociaVault API key not configured)")
+        print("  (SocialCrawl API key not configured)")
     except Exception as e:
         print(f"✗ Reddit collection failed: {e}")
 

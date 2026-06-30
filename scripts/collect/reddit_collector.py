@@ -1,6 +1,6 @@
 """
 Reddit Collector
-Searches Reddit for relevant posts using SociaVault API.
+Searches Reddit for relevant posts using SocialCrawl API.
 """
 
 import json
@@ -33,18 +33,18 @@ class RedditCollector:
         })
         self.max_comments_per_post = self.config.get("max_comments_per_post", 10)
 
-        # Check for SociaVault API key
-        self.api_key = os.getenv("SOCIAVAULT_API_KEY")
+        # Check for SocialCrawl API key
+        self.api_key = os.getenv("SOCIALCRAWL_API_KEY")
 
         if not self.api_key:
             raise ValueError(
-                "SociaVault API key not found. "
-                "Set SOCIAVAULT_API_KEY in .env file"
+                "SocialCrawl API key not found. "
+                "Set SOCIALCRAWL_API_KEY in .env file"
             )
 
-        # CORRECT endpoint per SociaVault docs: /subreddit/search (not /search)
-        # This endpoint requires separate API call per subreddit
-        self.base_url = "https://api.sociavault.com/v1/scrape/reddit/subreddit/search"
+        # SocialCrawl endpoint: /v1/reddit/subreddit/search
+        # Requires separate API call per subreddit (like SociaVault)
+        self.base_url = "https://www.socialcrawl.dev/v1/reddit/subreddit/search"
 
     def _get_cache_key(self, query_config):
         """Generate a cache key based on query parameters."""
@@ -200,7 +200,7 @@ class RedditCollector:
                 continue
 
             # No valid cache, make API call
-            # IMPORTANT: SociaVault API requires separate call per subreddit
+            # SocialCrawl API requires separate call per subreddit (same as SociaVault)
             print(f"  → Making API calls (one per subreddit)...")
 
             query_posts = []  # Collect posts from all subreddits for this query
@@ -210,21 +210,24 @@ class RedditCollector:
 
                 try:
                     # Build request parameters
-                    # NOTE: subreddit format is "Twilio" not "r/Twilio" per API docs
+                    # NOTE: subreddit format is "twilio" not "r/twilio"
+                    import uuid
+
                     params = {
                         "subreddit": subreddit,
                         "query": search_query,
                         "timeframe": timeframe,
                         "sort": "relevance",
-                        "filter": "posts"
+                        "cursor": ""  # For pagination (empty = first page)
                     }
 
                     # Make API request
                     response = requests.get(
                         self.base_url,
                         headers={
-                            "X-API-Key": self.api_key,
-                            "Content-Type": "application/json"
+                            "x-api-key": self.api_key,  # lowercase for SocialCrawl
+                            "Cache-Control": "no-cache",
+                            "Idempotency-Key": f"pmradar-{uuid.uuid4()}"
                         },
                         params=params,
                         timeout=30
@@ -238,47 +241,53 @@ class RedditCollector:
 
                     data = response.json()
 
-                    # Parse SociaVault response structure
-                    inner_data = data.get("data", {})
-                    posts_data = inner_data.get("posts", {})
+                    # Parse SocialCrawl response structure
+                    items = data.get("data", {}).get("items", [])
 
-                    # Convert dict with numeric keys to list
-                    if isinstance(posts_data, dict):
-                        sorted_keys = sorted(posts_data.keys(), key=lambda x: int(x) if x.isdigit() else 0)
-                        posts_list = [posts_data[k] for k in sorted_keys]
-                    elif isinstance(posts_data, list):
-                        posts_list = posts_data
-                    else:
-                        posts_list = []
-
-                    print(f"✓ {len(posts_list)} posts")
+                    print(f"✓ {len(items)} posts")
 
                     # Map posts to our format
-                    for item in posts_list[:limit]:
-                        # Extract subreddit name (API returns object with 'name' field)
-                        subreddit_data = item.get("subreddit", {})
-                        if isinstance(subreddit_data, dict):
-                            subreddit_name = subreddit_data.get("name", subreddit)
-                        else:
-                            subreddit_name = subreddit_data or subreddit
+                    for item in items[:limit]:
+                        # SocialCrawl response structure: nested post object
+                        post = item.get("post", {})
 
-                        post_url = item.get("url", "") or item.get("permalink", "")
-                        score = item.get("score", 0)
-                        num_comments = item.get("num_comments", 0)
+                        # Extract data from nested structure
+                        post_id = post.get("id", "")
+                        subreddit_name = post.get("ext", {}).get("subreddit", subreddit)
+
+                        # Construct Reddit URL (not provided by SocialCrawl)
+                        post_url = f"https://reddit.com/r/{subreddit_name}/comments/{post_id}" if post_id else ""
+
+                        # Extract engagement data
+                        engagement = post.get("engagement", {})
+                        score = engagement.get("likes", 0)
+                        num_comments = engagement.get("comments", 0)
+
+                        # Convert Unix timestamp to ISO format
+                        published_at = post.get("published_at", 0)
+                        created_utc = datetime.fromtimestamp(published_at).isoformat() if published_at else datetime.now().isoformat()
+
+                        # Extract content
+                        content = post.get("content", {})
+                        text = content.get("text", "")
+
+                        # Extract author
+                        author_data = post.get("author", {})
+                        author = author_data.get("username", "[deleted]")
 
                         post_data = {
                             "query": query_name,
                             "search_terms": search_query,
                             "subreddit": subreddit_name,
-                            "title": item.get("title", ""),
-                            "author": item.get("author", "[deleted]"),
+                            "title": text[:200] if text else "",  # Use first 200 chars as title
+                            "author": author,
                             "score": score,
-                            "upvote_ratio": item.get("upvote_ratio", 0.0),
+                            "upvote_ratio": None,  # Not provided by SocialCrawl
                             "num_comments": num_comments,
-                            "created_utc": item.get("created_at_iso", datetime.now().isoformat()),
+                            "created_utc": created_utc,
                             "url": post_url,
-                            "selftext": item.get("selftext", "") or item.get("body", ""),  # No truncation
-                            "is_self": item.get("is_self", False),
+                            "selftext": text,  # Full text
+                            "is_self": True,  # Assume all are self posts
                             "comments": []  # Will be populated if enabled
                         }
 
@@ -400,8 +409,8 @@ def main():
         print(f"\n✗ Configuration error: {e}")
         print("\nTo fix:")
         print("1. Copy .env.example to .env")
-        print("2. Get SociaVault API key from: https://sociavault.com")
-        print("3. Add SOCIAVAULT_API_KEY to .env")
+        print("2. Get SocialCrawl API key from: https://socialcrawl.dev")
+        print("3. Add SOCIALCRAWL_API_KEY to .env")
 
     except Exception as e:
         print(f"\n✗ Error: {e}")
