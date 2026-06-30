@@ -308,6 +308,9 @@ Only include articles scoring >= 6 unless they're duplicates."""
                 if created:
                     try:
                         dt = datetime.fromisoformat(created.replace('Z', '+00:00'))
+                        # Make timezone-aware if naive (SocialCrawl returns naive timestamps)
+                        if dt.tzinfo is None:
+                            dt = dt.replace(tzinfo=timezone.utc)
                         if dt >= cutoff:
                             recent_posts.append(post)
                     except:
