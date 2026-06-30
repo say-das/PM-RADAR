@@ -83,7 +83,7 @@ This plan builds PM Radar v2 in the `feature/v2-multi-topic-platform` branch whi
 - Create: `config/global.yaml`
 - Test: `tests/core/test_config_loader.py`
 
-- [ ] **Step 1.1: Write failing test for config loader**
+- [x] **Step 1.1: Write failing test for config loader**
 
 ```python
 # tests/core/test_config_loader.py
@@ -117,12 +117,12 @@ def test_load_nonexistent_topic_raises_error():
         loader.load_topic_config("nonexistent")
 ```
 
-- [ ] **Step 1.2: Run test to verify it fails**
+- [x] **Step 1.2: Run test to verify it fails**
 
 Run: `pytest tests/core/test_config_loader.py -v`
 Expected: ModuleNotFoundError: No module named 'core'
 
-- [ ] **Step 1.3: Create core package init**
+- [x] **Step 1.3: Create core package init**
 
 ```python
 # core/__init__.py
@@ -133,7 +133,7 @@ PM Radar v2 - Multi-Topic Platform Core
 __version__ = "2.0.0"
 ```
 
-- [ ] **Step 1.4: Create global config file**
+- [x] **Step 1.4: Create global config file**
 
 ```yaml
 # config/global.yaml
@@ -160,7 +160,7 @@ templates:
   email_css: "templates/email-styles.css"
 ```
 
-- [ ] **Step 1.5: Implement config loader**
+- [x] **Step 1.5: Implement config loader**
 
 ```python
 # core/config_loader.py
@@ -256,19 +256,19 @@ class ConfigLoader:
         return sorted(topics)
 ```
 
-- [ ] **Step 1.6: Run tests to verify they pass**
+- [x] **Step 1.6: Run tests to verify they pass**
 
 Run: `pytest tests/core/test_config_loader.py -v`
 Expected: 2 tests pass (global config test will fail until we create topic config)
 
-- [ ] **Step 1.7: Create test directory structure**
+- [x] **Step 1.7: Create test directory structure**
 
 ```bash
 mkdir -p tests/core
 touch tests/__init__.py tests/core/__init__.py
 ```
 
-- [ ] **Step 1.8: Commit**
+- [x] **Step 1.8: Commit**
 
 ```bash
 git add core/ config/global.yaml tests/core/
