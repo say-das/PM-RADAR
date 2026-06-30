@@ -290,7 +290,7 @@ git commit -m "feat(core): add config loader with YAML support
 - Create: `core/collectors/base.py`
 - Test: `tests/core/collectors/test_base.py`
 
-- [ ] **Step 2.1: Write failing test for base collector**
+- [x] **Step 2.1: Write failing test for base collector**
 
 ```python
 # tests/core/collectors/test_base.py
@@ -333,12 +333,12 @@ def test_collect_returns_list():
     assert len(result) == 1
 ```
 
-- [ ] **Step 2.2: Run test to verify it fails**
+- [x] **Step 2.2: Run test to verify it fails**
 
 Run: `pytest tests/core/collectors/test_base.py -v`
 Expected: ModuleNotFoundError: No module named 'core.collectors'
 
-- [ ] **Step 2.3: Create collectors package**
+- [x] **Step 2.3: Create collectors package**
 
 ```python
 # core/collectors/__init__.py
@@ -351,7 +351,7 @@ from .base import BaseCollector
 __all__ = ["BaseCollector"]
 ```
 
-- [ ] **Step 2.4: Implement base collector**
+- [x] **Step 2.4: Implement base collector**
 
 ```python
 # core/collectors/base.py
@@ -464,19 +464,19 @@ class BaseCollector(ABC):
             json.dump(cache_data, f, indent=2)
 ```
 
-- [ ] **Step 2.5: Run tests to verify they pass**
+- [x] **Step 2.5: Run tests to verify they pass**
 
 Run: `pytest tests/core/collectors/test_base.py -v`
 Expected: All 3 tests pass
 
-- [ ] **Step 2.6: Create test directory**
+- [x] **Step 2.6: Create test directory**
 
 ```bash
 mkdir -p tests/core/collectors
 touch tests/core/collectors/__init__.py
 ```
 
-- [ ] **Step 2.7: Commit**
+- [x] **Step 2.7: Commit**
 
 ```bash
 git add core/collectors/ tests/core/collectors/
