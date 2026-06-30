@@ -1,0 +1,20 @@
+# Fraud & Security Intelligence Topic
+
+id: fraud
+name: "Fraud & Security Intelligence"
+enabled: true
+feature_flag_v2: false  # Start with v1, migrate gradually
+
+llm:
+  provider: openai
+  model: gpt-4o
+  api_key_env: OPENAI_API_KEY
+
+sources:
+  - type: rss
+    config_path: rss.yaml
+  - type: reddit
+    api_key_env: SOCIALCRAWL_API_KEY
+    config_path: reddit.yaml
+  - type: changelog
+    config_path: changelogs.yaml

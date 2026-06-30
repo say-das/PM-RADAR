@@ -1,0 +1,20 @@
+# PM Radar v2 - Global Configuration
+# Shared settings across all topics
+
+branding:
+  primary_color: "#F22F46"      # Twilio red
+  secondary_color: "#0263E0"    # Twilio blue
+  font_family: "Inter, sans-serif"
+
+styling:
+  h1_size: "20px"
+  h2_size: "16px"
+  h3_size: "14px"
+  body_size: "14px"
+  citation_format: "[A{id}]"
+
+email:
+  smtp_provider: "brevo"
+  smtp_key_env: "BREVO_API_KEY"
+  from_email: "sd5288@gmail.com"
+  from_name: "PM Radar"
