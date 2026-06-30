@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radar Intelligence Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* Twilio Brand Colors */
+        :root {
+            --twilio-red: #F22F46;
+            --twilio-blue: #0263E0;
+            --twilio-dark-blue: #001489;
+            --twilio-blue-60: #0D61D8;
+            --twilio-blue-10: #E1EFFC;
+            --twilio-gray-100: #121C2D;
+            --twilio-gray-90: #18222E;
+            --twilio-gray-80: #1F2933;
+            --twilio-gray-70: #3E4C59;
+            --twilio-gray-60: #606B85;
+            --twilio-gray-50: #8891AA;
+            --twilio-gray-40: #C4C7D1;
+            --twilio-gray-30: #D9DBE5;
+            --twilio-gray-20: #E8EAED;
+            --twilio-gray-10: #F4F5F6;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0.75in 1in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--twilio-gray-90);
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 24px 32px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Typography with Twilio Red Start */
+        h1 {
+            color: var(--twilio-red);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h1 + p {
+            color: var(--twilio-gray-60);
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--twilio-red);
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--twilio-blue-60);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 24px 0 8px 0;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: var(--twilio-gray-90);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 16px 0 6px 0;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs with hierarchy */
+        p {
+            margin: 6px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        /* Section labels like "Executive Summary:" */
+        p strong:first-child {
+            color: var(--twilio-gray-80);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Default strong styling - subtle */
+        strong {
+            font-weight: 500;
+            color: var(--twilio-gray-70);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+        }
+
+        /* Compact lists */
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 4px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        li::marker {
+            color: var(--twilio-gray-40);
+            font-weight: 400;
+        }
+
+        /* All strong tags in lists should be normal weight by default */
+        li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Only the very first strong in a list item gets emphasis */
+        li > strong:first-child {
+            font-weight: 500;
+            color: var(--twilio-gray-80);
+            font-size: 14px;
+        }
+
+        /* Executive Summary - Twilio branded */
+        #executive-summary + ul {
+            background: var(--twilio-blue-10);
+            padding: 16px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--twilio-red);
+            margin: 12px 0 20px 0;
+        }
+
+        #executive-summary + ul li {
+            font-weight: 600;
+            color: var(--twilio-gray-90);
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        #executive-summary + ul li strong {
+            font-weight: 700;
+            color: var(--twilio-red);
+        }
+
+        /* Blockquotes with Twilio accent */
+        blockquote {
+            margin: 12px 0;
+            padding: 10px 16px;
+            border-left: 4px solid var(--twilio-blue);
+            background: var(--twilio-blue-10);
+            font-style: italic;
+            color: var(--twilio-gray-70);
+            line-height: 1.4;
+        }
+
+        /* Code styling */
+        code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            background-color: var(--twilio-gray-10);
+            color: var(--twilio-dark-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--twilio-gray-10);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--twilio-gray-20);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Links - Twilio primary blue */
+        a {
+            color: var(--twilio-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--twilio-blue-60);
+            text-decoration: underline;
+        }
+
+        /* Compact horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid var(--twilio-gray-30);
+            margin: 16px 0;
+        }
+
+        /* Table styling with Twilio colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--twilio-gray-30);
+            line-height: 1.4;
+        }
+
+        th {
+            font-weight: 700;
+            color: white;
+            background: var(--twilio-red);
+        }
+
+        tr:hover {
+            background: var(--twilio-blue-10);
+        }
+
+        /* Inline Citations - smaller and clickable */
+        a[href^="#"] {
+            color: var(--twilio-blue);
+            font-size: 10px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            padding: 0 1px;
+            transition: all 0.2s ease;
+        }
+
+        a[href^="#"]:hover {
+            color: var(--twilio-red);
+            text-decoration: underline;
+        }
+
+        /* Make citation brackets appear as superscript links */
+        p a[href^="#"],
+        li a[href^="#"] {
+            font-size: 10px;
+            line-height: 0;
+        }
+
+        /* Glossary emphasis */
+        #glossary + p {
+            color: var(--twilio-gray-50);
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #glossary + p + ul li {
+            margin: 5px 0;
+        }
+
+        /* Glossary terms should stand out */
+        #glossary + p + ul li > strong:first-child {
+            color: var(--twilio-red);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* But the rest of glossary text should be normal */
+        #glossary + p + ul li strong:not(:first-child) {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Sources section - everything smaller and lighter */
+        #sources + p + ul li {
+            font-size: 12px;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 3px 0;
+            scroll-margin-top: 20px; /* Offset for smooth scroll */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+
+        #sources + p + ul li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-50);
+        }
+
+        #sources + p + ul li a {
+            font-weight: 500;
+            color: var(--twilio-blue);
+        }
+
+        /* Citation reference targets in sources list */
+        #sources + p + ul li[id] {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+
+        #sources + p + ul li[id]:target {
+            background: var(--twilio-blue-10);
+            padding: 4px 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        body > p:last-of-type {
+            text-align: center;
+            color: var(--twilio-gray-60);
+            font-size: 11px;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--twilio-gray-30);
+        }
+
+        /* Print optimizations */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            a {
+                color: var(--twilio-blue) !important;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pm-radar-weekly-intelligence-digest">PM Radar Weekly Intelligence Digest</h1>
+<p><strong>Date:</strong> 2026-04-30
+<strong>Generated:</strong> 2026-04-30 23:15:22 UTC</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<ul>
+<li><strong>37</strong> industry articles reviewed</li>
+<li><strong>0</strong> Reddit discussions analyzed</li>
+<li><strong>3</strong> items categorized as Telecom Fraud</li>
+<li><strong>27</strong> items categorized as General Fraud</li>
+<li><strong>0</strong> items categorized as Competitive Intelligence</li>
+</ul>
+<hr />
+<h2 id="telecom-fraud-digest">Telecom Fraud Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent developments in telecom fraud highlight significant security challenges. The repatriation of 400 Kenyans from scam compounds in Asia underscores the global nature of telecom fraud and the risks posed by fraudulent job adverts on social media <a href="#a1">[A1]</a>. In North America, the detection and arrest of individuals operating an SMS blaster in Toronto marks a new frontier in telecom fraud tactics <a href="#a2">[A2]</a>.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li><strong>Repatriation of individuals involved in scams is emerging as a security risk, with governments concerned about the potential for these individuals to engage in fraudulent activities upon return <a href="#a1">[A1]</a>.</strong>: </li>
+<li><strong>The use of SMS blasters for mass fraud campaigns is on the rise, as evidenced by the first detection and arrests in North America, indicating a shift towards more aggressive and widespread fraud tactics <a href="#a2">[A2]</a>.</strong>: </li>
+<li><strong>Vulnerabilities in communication protocols used in automation control systems, such as the IEC 61850, present potential risks for telecom infrastructure, though current reports suggest limited impact <a href="#a3">[A3]</a>.</strong>: </li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li><strong>The Kenyan government's response to the repatriation of scammers highlights a regulatory focus on preventing re-engagement in fraud activities and securing national interests <a href="#a1">[A1]</a>.</strong>: </li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li><strong>Telecom companies should be vigilant about the use of SMS blasters, as their detection in North America suggests a potential increase in similar fraud attempts. Enhanced monitoring and preventive measures are recommended <a href="#a2">[A2]</a>.</strong>: </li>
+<li><strong>Security teams should assess the impact of vulnerabilities in the IEC 61850 communication stack on their systems, especially for those using ABB products, to mitigate any potential exploitation <a href="#a3">[A3]</a>.</strong>: </li>
+</ol>
+<hr />
+<h2 id="general-fraud-security-digest">General Fraud &amp; Security Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Recent advisories highlight critical vulnerabilities in ABB products, posing significant risks to industrial control systems. Additionally, the FBI reports a surge in cyber-enabled cargo theft, and the FTC reveals substantial financial losses from social media scams <a href="#a1">[A1]</a><a href="#a15">[A15]</a><a href="#a12">[A12]</a>.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li><strong>Industrial Control System Vulnerabilities</strong>: Multiple vulnerabilities have been identified in ABB products, including the Ability Symphony Plus Engineering, AWIN Gateways, Edgenius Management Portal, OPTIMAX, and PCM600, which could allow attackers to execute arbitrary code or bypass authentication <a href="#a1">[A1]</a><a href="#a2">[A2]</a><a href="#a3">[A3]</a><a href="#a4">[A4]</a><a href="#a5">[A5]</a>.</li>
+<li><strong>Rise in Cyber-Enabled Cargo Theft</strong>: The FBI has linked cybercriminals to a sharp increase in cargo theft attacks, with losses in the U.S. and Canada reaching nearly $725 million in 2025 <a href="#a15">[A15]</a>.</li>
+<li><strong>Social Media Scams Leading to Significant Financial Losses</strong>: The FTC reports that social media scams were the costliest fraud method in 2025, with losses reaching $2.1 billion, highlighting the need for increased vigilance on these platforms <a href="#a12">[A12]</a>.</li>
+</ol>
+<p><strong>Regulatory &amp; Market Changes:</strong></p>
+<ol>
+<li><strong>Zero Trust Principles for Operational Technology</strong>: CISA released guidance on applying zero trust principles to operational technology, aiming to enhance cybersecurity by eliminating implicit trust and continuously validating access <a href="#a6">[A6]</a>.</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li><strong>Critical Vulnerabilities in ABB Products</strong>: Immediate action is required to address vulnerabilities in ABB products, as they pose a risk of arbitrary code execution and system compromise <a href="#a1">[A1]</a><a href="#a2">[A2]</a><a href="#a3">[A3]</a><a href="#a4">[A4]</a><a href="#a5">[A5]</a>.</li>
+</ol>
+<hr />
+<h2 id="competition-watch">Competition Watch</h2>
+<p><em>Recent fraud &amp; security developments from messaging competitors</em></p>
+<p><strong>High-Impact Updates:</strong></p>
+<p><strong>Bandwidth Platform</strong> (2026-03-25): <em>Real-time Fraud Alerts</em> <a href="#c2">[C2]</a></p>
+<p>Introduced real-time alerts for suspicious activities detected during transactions, allowing immediate action.</p>
+<p><strong>Vonage Verify API</strong> (2026-02-28): <em>Advanced Fraud Detection Algorithms</em> <a href="#c5">[C5]</a></p>
+<p>Implemented advanced algorithms for detecting fraudulent verification attempts, improving accuracy by 30%.</p>
+<p><strong>Vonage Fraud Defender</strong> (2026-02-25): <em>Introduced anomaly detection alerts</em> <a href="#c6">[C6]</a></p>
+<p>Implemented real-time alerts for unusual patterns in verification attempts, helping to quickly identify potential fraud.</p>
+<p><strong>Bandwidth Platform</strong> (2026-02-15): <em>Updated Pricing for Fraud Detection Services</em> <a href="#c8">[C8]</a></p>
+<p>Revised pricing model for fraud detection services to offer more competitive rates and flexible plans.</p>
+<p><strong>Vonage Verify API</strong> (2026-01-30): <em>Updated Pricing for Fraud Detection Services</em> <a href="#c11">[C11]</a></p>
+<p>Revised pricing structure for fraud detection services to offer more competitive rates.</p>
+<p><strong>Recent Updates by Competitor:</strong></p>
+<ul>
+<li><strong>Bandwidth</strong>: 4 updates (2 high-relevance)</li>
+<li><em>Platform</em> (2026-04-10): Enhanced API Security Protocols <a href="#c1">[C1]</a></li>
+<li><em>Platform</em> (2026-03-25): Real-time Fraud Alerts <a href="#c2">[C2]</a></li>
+<li><em>Platform</em> (2026-02-15): Updated Pricing for Fraud Detection Services <a href="#c8">[C8]</a></li>
+<li><strong>Vonage</strong>: 7 updates (3 high-relevance)</li>
+<li><em>Verify API</em> (2026-03-20): Enhanced API Security Protocols <a href="#c3">[C3]</a></li>
+<li><em>Fraud Defender</em> (2026-03-10): Enhanced API request validation <a href="#c4">[C4]</a></li>
+<li><em>Verify API</em> (2026-02-28): Advanced Fraud Detection Algorithms <a href="#c5">[C5]</a></li>
+</ul>
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p><em>Technical terms and abbreviations used in this report:</em></p>
+<ul>
+<li><strong>API</strong>: Application Programming Interface - software intermediary allowing applications to communicate</li>
+<li><strong>CISA</strong>: Cybersecurity and Infrastructure Security Agency (U.S. government)</li>
+<li><strong>SMS</strong>: Short Message Service - text messaging protocol</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p><strong>Articles:</strong></p>
+<ul>
+<li><a id="a1"></a>[A1]: <a href="https://commsrisk.com/repatriated-scammers-are-a-security-risk-says-kenyan-government/">Repatriated Scammers Are a Security Risk, Says Kenyan Government</a> - Commsrisk (2026-04-29T03:25:29)</li>
+<li><a id="a2"></a>[A2]: <a href="https://commsrisk.com/three-arrested-in-toronto-after-first-sms-blaster-detected-in-north-america/">Three Arrested in Toronto after First SMS Blaster Detected in North America</a> - Commsrisk (2026-04-27T03:25:57)</li>
+<li><a id="a3"></a>[A3]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-06">ABB Ability Symphony Plus Engineering</a> - CISA Advisories (2026-04-30T12:00:00)</li>
+<li><a id="a4"></a>[A4]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-05">ABB AWIN Gateways</a> - CISA Advisories (2026-04-30T12:00:00)</li>
+<li><a id="a5"></a>[A5]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-03">ABB Edgenius Management Portal</a> - CISA Advisories (2026-04-30T12:00:00)</li>
+<li><a id="a6"></a>[A6]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-01">ABB System 800xA, Symphony Plus IEC 61850</a> - CISA Advisories (2026-04-30T12:00:00)</li>
+<li><a id="a12"></a>[A12]: <a href="https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog">CISA Adds Four Known Exploited Vulnerabilities to Catalog</a> - CISA Advisories (2026-04-24T12:00:00)</li>
+<li><a id="a15"></a>[A15]: <a href="https://www.ftc.gov/news-events/news/press-releases/2026/04/new-ftc-data-show-people-have-lost-billions-social-media-scams">New FTC Data Show People Have Lost Billions to Social Media Scams</a> - FTC Consumer Alerts (2026-04-27T12:00:00)</li>
+</ul>
+<p><strong>Competitor Changelogs:</strong></p>
+<ul>
+<li><a id="c1"></a>[C1]: <a href="https://www.bandwidth.com/release-notes/">Bandwidth Platform - Enhanced API Security Protocols</a> (2026-04-10)</li>
+<li><a id="c2"></a>[C2]: <a href="https://www.bandwidth.com/release-notes/">Bandwidth Platform - Real-time Fraud Alerts</a> (2026-03-25)</li>
+<li><a id="c3"></a>[C3]: <a href="https://developer.vonage.com/en/verify/release-notes">Vonage Verify API - Enhanced API Security Protocols</a> (2026-03-20)</li>
+<li><a id="c4"></a>[C4]: <a href="https://developer.vonage.com/en/fraud-defender/release-notes">Vonage Fraud Defender - Enhanced API request validation</a> (2026-03-10)</li>
+<li><a id="c5"></a>[C5]: <a href="https://developer.vonage.com/en/verify/release-notes">Vonage Verify API - Advanced Fraud Detection Algorithms</a> (2026-02-28)</li>
+<li><a id="c6"></a>[C6]: <a href="https://developer.vonage.com/en/fraud-defender/release-notes">Vonage Fraud Defender - Introduced anomaly detection alerts</a> (2026-02-25)</li>
+<li><a id="c8"></a>[C8]: <a href="https://www.bandwidth.com/release-notes/">Bandwidth Platform - Updated Pricing for Fraud Detection Services</a> (2026-02-15)</li>
+<li><a id="c11"></a>[C11]: <a href="https://developer.vonage.com/en/verify/release-notes">Vonage Verify API - Updated Pricing for Fraud Detection Services</a> (2026-01-30)</li>
+</ul>
+<hr />
+<p><em>Generated by PM Radar • 2026-04-30</em></p>
+    </div>
+
+    <!-- Twilio Branding Footer -->
+    <div style="margin-top: 3em; padding: 1.5em 0; text-align: center; border-top: 2px solid #E1E3EA;">
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.5;">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM8.4 8.4C9.6 8.4 10.8 9.6 10.8 10.8C10.8 12 9.6 13.2 8.4 13.2C7.2 13.2 6 12 6 10.8C6 9.6 7.2 8.4 8.4 8.4ZM15.6 8.4C16.8 8.4 18 9.6 18 10.8C18 12 16.8 13.2 15.6 13.2C14.4 13.2 13.2 12 13.2 10.8C13.2 9.6 14.4 8.4 15.6 8.4ZM8.4 15.6C9.6 15.6 10.8 16.8 10.8 18C10.8 19.2 9.6 20.4 8.4 20.4C7.2 20.4 6 19.2 6 18C6 16.8 7.2 15.6 8.4 15.6ZM15.6 15.6C16.8 15.6 18 16.8 18 18C18 19.2 16.8 20.4 15.6 20.4C14.4 20.4 13.2 19.2 13.2 18C13.2 16.8 14.4 15.6 15.6 15.6Z" fill="#F22F46"/>
+        </svg>
+        <p style="margin: 0.5em 0 0 0; font-size: 9pt; color: #606B85;">Powered by PM Radar • Twilio Product Intelligence</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+{
+  "success": true,
+  "platform": "reddit",
+  "endpoint": "/v1/reddit/search",
+  "data": {
+    "items": [
+      {
+        "post": {
+          "id": "1uj3ykf",
+          "url": null,
+          "content": {
+            "text": "Securence possible attack/hack/security breach in progress",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "MorseScience",
+            "display_name": "t2_1hq1pfzq73",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "comments": 3,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782764936,
+          "ext": {
+            "subreddit": "EmailSecurity"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uejaay",
+          "url": null,
+          "content": {
+            "text": "Hacked by Mrbeast Scam",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "7KNZ",
+            "display_name": "t2_dvasjogy",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 11,
+            "comments": 19,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782320545,
+          "ext": {
+            "subreddit": "computerviruses"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": null,
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uefoas",
+          "url": null,
+          "content": {
+            "text": "Account compromised \u2014 attacker getting login codes despite all security measures. How",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Novel-Awareness7582",
+            "display_name": "t2_bahkw2p0",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "comments": 22,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782312651,
+          "ext": {
+            "subreddit": "cybersecurity_help"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uf2sfg",
+          "url": null,
+          "content": {
+            "text": "fb elon musk phishing scam",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Lonely-Interview327",
+            "display_name": "t2_2aayh4dlcl",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 2,
+            "comments": 15,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782371048,
+          "ext": {
+            "subreddit": "CryptoScams"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": null,
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1udefvz",
+          "url": null,
+          "content": {
+            "text": "WhatsApp phishing attack uses fake business docs to hack PCs",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Doug24",
+            "display_name": "t2_9ubf2",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 34,
+            "comments": 2,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782213879,
+          "ext": {
+            "subreddit": "cybersecurity"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "business",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uefw8i",
+          "url": null,
+          "content": {
+            "text": "I was hacked on discord and now I'm sending the Mr Beast scam message.",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "StainyStudio",
+            "display_name": "t2_fu0hzsjr",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 27,
+            "comments": 19,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782313155,
+          "ext": {
+            "subreddit": "computerviruses"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1udeb0y",
+          "url": null,
+          "content": {
+            "text": "London Hydro Breach Exposes 160k Customers, Fuels Targeted Phishing Risk",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Street_Grab7609",
+            "display_name": "t2_ahto1ayz",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 7,
+            "comments": 1,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782213458,
+          "ext": {
+            "subreddit": "pwnhub"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      }
+    ],
+    "next_cursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiM1wiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIzXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiN1wiLFwic2VjdGlvbl8zX3BpcGVsaW5lXzBfc3VicmVkZGl0X3NlYXJjaFwiOlwiNVwiLFwic2VjdGlvbl8zX3BpcGVsaW5lXzFfYXV0aG9yX3NlYXJjaFwiOlwiMFwifSIsImV4cGVyaWVuY2Vfc2VsZWN0aW9uIjoicG9zdF93aXRoX3NpZGViYXIiLCJleHBlcmllbmNlX3ZlcnNpb24iOiJkZWZhdWx0Iiwic2VjdGlvbl8yX3BpcGVsaW5lXzhfcG9zdF9zZWFyY2giOiI3In0=",
+    "total": 7,
+    "_warnings": [
+      "post.url: upstream path 'permalink' did not resolve",
+      "post.flags.nsfw: upstream path 'over_18' did not resolve",
+      "post.flags.spoiler: upstream path 'spoiler' did not resolve"
+    ]
+  },
+  "credits_used": 1,
+  "credits_remaining": 98,
+  "request_id": "req-siari3HYs4m9KLMJ",
+  "cached": false
+}

@@ -1,0 +1,307 @@
+{
+  "success": true,
+  "platform": "reddit",
+  "endpoint": "/v1/reddit/search",
+  "data": {
+    "items": [
+      {
+        "post": {
+          "id": "1ui92i8",
+          "url": null,
+          "content": {
+            "text": "Can I pay someone to deal with this for me?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "LossPreventionGuy",
+            "display_name": "t2_91wic",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 3,
+            "comments": 14,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782681448,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uhx9zt",
+          "url": null,
+          "content": {
+            "text": "Twilio Voice Geo Permissions can be changed via API - 2FA did not stop toll fraud",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Jamira40",
+            "display_name": "t2_2ytdk2ul",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 2,
+            "comments": 22,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782653183,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "tech",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uev78w",
+          "url": null,
+          "content": {
+            "text": "Startup Founders & Developers: What are you using instead of Twilio for sending authentication codes?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Forward_Importance64",
+            "display_name": "t2_23ncs79las",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "comments": 14,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782348091,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "tech",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uhazxs",
+          "url": null,
+          "content": {
+            "text": "Quin ha usado twilio aqui en vzla para agentes IA de Whatsapp?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "TelephoneIcy6479",
+            "display_name": "t2_utr2nizu",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 4,
+            "comments": 11,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782587068,
+          "ext": {
+            "subreddit": "dev_venezuela"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "es",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1udzg83",
+          "url": null,
+          "content": {
+            "text": "Feel so scammed",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "DefiantFruit6860",
+            "display_name": "t2_1zsickoiee",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 46,
+            "comments": 34,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782263703,
+          "ext": {
+            "subreddit": "telus"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": null,
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uebayl",
+          "url": null,
+          "content": {
+            "text": "Terminated for Fraud 30 characters",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "s373n_w0rds",
+            "display_name": "t2_10f9egucrk",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 70,
+            "comments": 94,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782301796,
+          "ext": {
+            "subreddit": "BPOinPH"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1ue61zp",
+          "url": null,
+          "content": {
+            "text": "Fairly Freaked Out by Voicemail- is this just phishing?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "sheltie_furnado",
+            "display_name": "t2_ferib6ex",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 8,
+            "comments": 17,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": null,
+            "spoiler": null,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782283837,
+          "ext": {
+            "subreddit": "phishing"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      }
+    ],
+    "next_cursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiM1wiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIzXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfMTBfcXVlcnlfc3VnZ2VzdGlvbnNcIjpcIjRcIixcInNlY3Rpb25fMl9waXBlbGluZV84X3Bvc3Rfc2VhcmNoXCI6XCI3XCIsXCJzZWN0aW9uXzNfcGlwZWxpbmVfMF9zdWJyZWRkaXRfc2VhcmNoXCI6XCI1XCIsXCJzZWN0aW9uXzNfcGlwZWxpbmVfMV9hdXRob3Jfc2VhcmNoXCI6XCI0XCJ9IiwiZXhwZXJpZW5jZV9zZWxlY3Rpb24iOiJwb3N0X3dpdGhfc2lkZWJhciIsImV4cGVyaWVuY2VfdmVyc2lvbiI6ImRlZmF1bHQiLCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaCI6IjcifQ==",
+    "total": 7,
+    "_warnings": [
+      "post.url: upstream path 'permalink' did not resolve",
+      "post.flags.nsfw: upstream path 'over_18' did not resolve",
+      "post.flags.spoiler: upstream path 'spoiler' did not resolve"
+    ]
+  },
+  "credits_used": 1,
+  "credits_remaining": 99,
+  "request_id": "req-HL1OQopH2uQ49MAd",
+  "cached": false
+}

@@ -1,0 +1,397 @@
+{
+  "collection_date": "2026-05-01",
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Repatriated Scammers Are a Security Risk, Says Kenyan Government",
+      "url": "https://commsrisk.com/repatriated-scammers-are-a-security-risk-says-kenyan-government/",
+      "published": "2026-04-29T03:25:29",
+      "summary": "Around 400 Kenyans have been repatriated from scam compounds in Asia after being lured by fraudulent job adverts on social media platforms including Facebook and Instagram."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Three Arrested in Toronto after First SMS\u00a0Blaster Detected in North America",
+      "url": "https://commsrisk.com/three-arrested-in-toronto-after-first-sms-blaster-detected-in-north-america/",
+      "published": "2026-04-27T03:25:57",
+      "summary": "Dafeng Lin, Junmin Shi and Weitong Hu have been charged with 44 offenses in total."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB AWIN Gateways",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-05",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to remotely reboot the device or complete an unauthenticated query to reveal system configuration, including sensitive details. The following versions of ABB AWIN Gateways are affected: ABB AWIN Firmware (2.0-0) installed on ABB AWIN GW100 rev.2 2.0-0 ABB AWIN Firmware (2.0-1) installed on ABB AWIN GW100 rev.2 2.0-1 ABB AWIN Firmware (1.2-0) installed on ABB AWIN GW120 1.2-0 ABB AWIN Firmware (1.2-1) insta"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Ability OPTIMAX",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-04",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to bypass user authentication on OPTIMAX installations that make use of the Azure Active Directory Single-Sign On integration. The following versions of ABB Ability OPTIMAX are affected: ABB Ability OPTIMAX 6.1 vers:all/* ABB Ability OPTIMAX 6.2 vers:all/* ABB Ability OPTIMAX 6.3 <6.3.1-251120 ABB Ability OPTIMAX 6.4 <6.4.1-251120 CVSS Vendor Equipment Vulnerabilities v3 8.1 ABB ABB Ability OPTIMAX Incorrect "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB PCM600",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-02",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to send specially crafted messages to the system node resulting in execution of arbitrary code. The following versions of ABB PCM600 are affected: PCM600 >=1.5|<=2.13 CVSS Vendor Equipment Vulnerabilities v3 4.4 ABB ABB PCM600 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') Background Critical Infrastructure Sectors: Critical Manufacturing Countries/Areas Deployed: Worldwide Com"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Edgenius Management Portal",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-03",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to send a specially crafted message to the system node allowing the attacker to install and run arbitrary code, uninstall applications, and modify the configuration of installed applications. The following versions of ABB Edgenius Management Portal are affected: Edgenius Management Portal 3.2.0.0|3.2.1.1 CVSS Vendor Equipment Vulnerabilities v3 9.6 ABB ABB Edgenius Management Portal Authentication Bypass Usin"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/30/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-04-30T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-41940 WebPros cPanel & WHM and WP2 (WordPress Squared) Missing Authentication for Critical Function Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Known Exploited Vulnerabilities"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB Ability Symphony Plus Engineering",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-06",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary ABB became aware of vulnerability in the products versions listed as affected in the advisory. The ABB S+ Engineering product versions are affected by vulnerabilities in PostgreSQL version 13.11 and earlier versions. If an attacker gains access to a site\u2019s S+ Client Server network, they could exploit such vulnerabilities by executing arbitrary code and potentially compromising the entire system. The following versions of ABB Ability Symphony Plus Engineering are affected: Abili"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "ABB System 800xA, Symphony Plus IEC 61850",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-120-01",
+      "published": "2026-04-30T12:00:00",
+      "summary": "View CSAF Summary This vulnerability was privately reported relating to ABB\u2019s implementation of the IEC 61850 communication stack for MMS client applications used in some Automation control system products. Note: IEC 61850 communication typically supports MMS and GOOSE protocols. Some ABB products support both, others only MMS (e.g. S+ Operations and PM 877). In any case, GOOSE communication is not impacted by this reported vulnerability. If an attacker gains access to a site\u2019s IEC 61850 network"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Adapting Zero Trust Principles to Operational Technology",
+      "url": "https://www.cisa.gov/resources-tools/resources/adapting-zero-trust-principles-operational-technology",
+      "published": "2026-04-29T12:00:00",
+      "summary": "Adapting Zero Trust Principles to Operational Technology CISA, in coordination with the Department of War, Department of Energy, Federal Bureau of Investigation, and Department of State, released Adapting Zero Trust Principles to Operational Technology, joint guidance for organizations applying zero trust (ZT) principles to operational technology (OT). Zero trust is a modern, adaptive approach to cybersecurity that eliminates implicit trust and requires continuously validating access based on id"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "NSA GRASSMARLIN",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-118-01",
+      "published": "2026-04-28T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an attacker to disclose sensitive information. The following versions of NSA GRASSMARLIN are affected: GRASSMARLIN vers:all/* CVSS Vendor Equipment Vulnerabilities v3 5.5 NSA NSA GRASSMARLIN Improper Restriction of XML External Entity Reference Background Critical Infrastructure Sectors: Information Technology Countries/Areas Deployed: Worldwide Company Headquarters Location: United States Vulnerabilities Expand All + CV"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/28/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "published": "2026-04-28T12:00:00",
+      "summary": "CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-1708 ConnectWise ScreenConnect Path Traversal Vulnerability CVE-2026-32202 Microsoft Windows Protection Mechanism Failure Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks to the federal enterprise. Binding Operational Directive (BOD) 22-01: Reducing the Significant Risk of Know"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Four Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/04/24/cisa-adds-four-known-exploited-vulnerabilities-catalog",
+      "published": "2026-04-24T12:00:00",
+      "summary": "CISA has added four new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2024-7399 Samsung MagicINFO 9 Server Path Traversal Vulnerability CVE-2024-57726 SimpleHelp Missing Authorization Vulnerability CVE-2024-57728 SimpleHelp Path Traversal Vulnerability CVE-2025-29635 D-Link DIR-823X Command Injection Vulnerability These types of vulnerabilities are frequent attack vectors for malicious cyber actors and pose significant risks t"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The npm Threat Landscape: Attack Surface and Mitigations",
+      "url": "https://unit42.paloaltonetworks.com/monitoring-npm-supply-chain-attacks/",
+      "published": "2026-04-24T21:40:33",
+      "summary": "Unit 42 analyzes npm supply chain evolution post-Shai Hulud. Discover wormable malware, CI/CD persistence, multi-stage attacks and more. The post The npm Threat Landscape: Attack Surface and Mitigations appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "TGR-STA-1030: New Activity in Central and South America",
+      "url": "https://unit42.paloaltonetworks.com/new-activity-central-south-america/",
+      "published": "2026-04-24T20:30:19",
+      "summary": "Unit 42 research reports that TGR-STA-1030 remains an active threat, particularly in Central and South America. The post TGR-STA-1030: New Activity in Central and South America appeared first on Unit 42."
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "New FTC Data Show People Have Lost Billions to Social Media Scams",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/new-ftc-data-show-people-have-lost-billions-social-media-scams",
+      "published": "2026-04-27T12:00:00",
+      "summary": "Social media was the costliest fraud contact method in 2025 and reported losses increased eightfold since 2020 New data from the Federal Trade Commission show that, in 2025, nearly 30% of people who reported losing money to a scam said that it started on social media, with reported losses reaching a staggering $2.1 billion.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Takes Action Against High-Level MLM Participants who Deceived Workers About the Amount of Money They Can Earn",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/04/ftc-takes-action-against-high-level-mlm-participants-who-deceived-workers-about-amount-money-they",
+      "published": "2026-04-27T12:00:00",
+      "summary": "FTC order settling the agency\u2019s allegations will prohibit Steven and Gina Merritt from making deceptive earnings claims The Federal Trade Commission is taking action against high-level participants in a multilevel marketing (MLM) company over allegations they used false or baseless earning claims to recruit workers, most of whom did not earn any money.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Zambia cancels global digital freedoms conference days before start",
+      "url": "https://therecord.media/zabia-cancels-global-digital-freedoms-conference-shortly-before-start",
+      "published": "2026-04-30T17:11:00",
+      "summary": "On Tuesday, Zambia\u2019s Minister of Technology and Science offered the first hint that the conference would be cancelled, telling a Zambian news outlet that participants\u2019 security clearances were incomplete and that the government has concerns about the conference\u2019s \u201cdialogue.\u201d"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Trump\u2019s cyber ambassador nominee advances to full Senate vote",
+      "url": "https://therecord.media/trump-cyber-ambassador-nominee-advances-to-senate",
+      "published": "2026-04-30T16:34:00",
+      "summary": "Adam Cassady, who was nominated last month to helm the State Department\u2019s Bureau of Cyberspace and Digital Policy, was approved by a vote of 17-5."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "France investigates 15-year-old over alleged hack of national ID agency",
+      "url": "https://therecord.media/france-investigates-teen-over-national-id-agency-hack",
+      "published": "2026-04-30T16:28:00",
+      "summary": "The minor was taken into police custody on April 25 on suspicion of involvement in a data breach affecting the National Agency for Secure Documents (ANTS), which processes applications for passports, national identity cards, residence permits and driver\u2019s licenses."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Moldova\u2019s health insurance agency reports possible data leak after cyberattack",
+      "url": "https://therecord.media/moldova-health-insurance-agency-reports-possible-data-leak-cyberattack",
+      "published": "2026-04-30T13:37:00",
+      "summary": "The agency said the incident occurred several weeks ago and that technical assessments indicated a possible theft of limited information."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "House approves spy program on second attempt, Senate fate murky",
+      "url": "https://therecord.media/house-approves-spy-program-on-second-attempt",
+      "published": "2026-04-29T22:41:00",
+      "summary": "The bill, which passed 235-191, would renew Section 702 of the Foreign Intelligence Surveillance Act for three years."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New Bluekit phishing service includes an AI assistant, 40 templates",
+      "url": "https://www.bleepingcomputer.com/news/security/new-bluekit-phishing-service-includes-an-ai-assistant-40-templates/",
+      "published": "2026-04-30T18:58:50",
+      "summary": "A new phishing kit named Bluekit offers more than 40 templates targeting popular services and includes basic AI features for generating campaign drafts. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Romanian leader of online swatting ring gets 4 years in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/romanian-leader-of-online-swatting-ring-gets-4-years-in-prison/",
+      "published": "2026-04-30T17:45:12",
+      "summary": "A Romanian national who led an online swatting ring that targeted more than 75 public officials, multiple journalists, and four religious institutions was sentenced to 4 years in federal prison. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FBI links cybercriminals to sharp surge in cargo theft attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-links-cybercriminals-to-sharp-surge-in-cargo-theft-attacks/",
+      "published": "2026-04-30T16:32:18",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) warned the transportation and logistics industry of a sharp rise in cyber-enabled cargo theft, with estimated losses in the United States and Canada reaching nearly $725 million in 2025. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "April KB5083769 Windows 11 update causes backup software failures",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/april-kb5083769-windows-11-update-causes-backup-software-failures/",
+      "published": "2026-04-30T15:23:03",
+      "summary": "The April 2026 KB5083769 security update breaks third-party backup applications from multiple vendors on systems running Windows 11 24H2 and 25H2. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "What Happens in the First 24 Hours After a New Asset Goes Live",
+      "url": "https://www.bleepingcomputer.com/news/security/what-happens-in-the-first-24-hours-after-a-new-asset-goes-live/",
+      "published": "2026-04-30T14:02:12",
+      "summary": "When a new asset goes live, attackers start scanning within minutes. Sprocket Security shows how automated attacks move from discovery to compromise in under 24 hours. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New Linux \u2018Copy Fail\u2019 flaw gives hackers root on major distros",
+      "url": "https://www.bleepingcomputer.com/news/security/new-linux-copy-fail-flaw-gives-hackers-root-on-major-distros/",
+      "published": "2026-04-30T13:54:47",
+      "summary": "An exploit has been published for a local privilege escalation vulnerability dubbed \"Copy Fail\" that impacts Linux kernels released since 2017, allowing an unprivileged local attacker to gain root permissions. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Critical cPanel and WHM bug exploited as a zero-day, PoC now available",
+      "url": "https://www.bleepingcomputer.com/news/security/critical-cpanel-and-whm-bug-exploited-as-a-zero-day-poc-now-available/",
+      "published": "2026-04-30T11:40:31",
+      "summary": "The critical CVE-2026-41940 authentication bypass vulnerability in cPanel, WHM, and WP Squared is being actively exploited in the wild and has been leveraged in attempts since late February. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Police dismantles 9 crypto scam centers, arrests 276 suspects",
+      "url": "https://www.bleepingcomputer.com/news/security/police-dismantles-9-crypto-investment-scam-centers-arrests-276-suspects/",
+      "published": "2026-04-30T11:21:02",
+      "summary": "A joint international operation involving U.S. and Chinese authorities arrested at least 276 suspects and shut down nine cryptocurrency investment fraud centers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Official SAP npm packages compromised to steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/official-sap-npm-packages-compromised-to-steal-credentials/",
+      "published": "2026-04-29T22:43:44",
+      "summary": "Multiple official SAP npm packages were compromised in what is believed to be a TeamPCP supply-chain attack to steal credentials and authentication tokens from developers' systems. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Popular WordPress redirect plugin hid dormant backdoor for years",
+      "url": "https://www.bleepingcomputer.com/news/security/popular-wordpress-redirect-plugin-hid-dormant-backdoor-for-years/",
+      "published": "2026-04-29T22:13:15",
+      "summary": "The Quick Page/Post Redirect plugin, installed on more than 70,000 WordPress sites, had a backdoor added five years ago that allows injecting arbitrary code into users' sites. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-rce-flaws-in-qinglong-task-scheduler-for-cryptomining/",
+      "published": "2026-04-29T20:50:35",
+      "summary": "Hackers are exploiting two authentication bypass vulnerabilities in the Qinglong open-source task scheduling tool to deploy cryptominers on developers' servers. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers arrested for hijacking and selling 610,000 Roblox accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-arrested-for-hijacking-and-selling-610-000-roblox-accounts/",
+      "published": "2026-04-29T18:32:15",
+      "summary": "The Ukrainian police have arrested three individuals who hacked more than 610,000 Roblox gaming accounts and sold them for a profit of $225,000. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "cPanel, WHM emergency update fixes critical auth bypass bug",
+      "url": "https://www.bleepingcomputer.com/news/security/cpanel-whm-emergency-update-fixes-critical-auth-bypass-bug/",
+      "published": "2026-04-29T15:51:44",
+      "summary": "A critical vulnerability affecting all but the latest versions of cPanel and the WebHost Manager (WHM) dashboard could be exploited to obtain access to the control panel without authentication. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "European police dismantles \u20ac50 million crypto investment fraud ring",
+      "url": "https://www.bleepingcomputer.com/news/security/european-police-dismantles-50-million-crypto-investment-fraud-ring/",
+      "published": "2026-04-29T14:27:36",
+      "summary": "Austrian and Albanian authorities dismantled a criminal ring accused of running a large-scale cryptocurrency investment fraud operation that caused estimated losses of over \u20ac50 million ($58.5 million) to victims worldwide. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Learning from the Vercel breach: Shadow AI & OAuth sprawl",
+      "url": "https://www.bleepingcomputer.com/news/security/learning-from-the-vercel-breach-shadow-ai-and-oauth-sprawl/",
+      "published": "2026-04-29T13:05:14",
+      "summary": "A single third-party OAuth integration can become a direct path into your environment. Push explains how the Vercel breach shows a compromised OAuth app can lead to widespread impact across downstream customers. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Anti-DDoS Firm Heaped Attacks on Brazilian ISPs",
+      "url": "https://krebsonsecurity.com/2026/04/anti-ddos-firm-heaped-attacks-on-brazilian-isps/",
+      "published": "2026-04-30T14:04:26",
+      "summary": "A Brazilian tech firm that specializes in protecting networks from distributed denial-of-service (DDoS) attacks has been enabling a botnet responsible for an extended campaign of massive DDoS attacks against other network operators in Brazil, KrebsOnSecurity has learned. The firm's chief executive says the malicious activity resulted from a security breach and was likely the work of a competitor trying to tarnish his company's public image."
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": [
+    {
+      "date": "2026-04-28",
+      "version": null,
+      "type": "feature",
+      "category": "anti_spam",
+      "title": "Introducing Dynamic Number Intelligence",
+      "description": "Launch of Dynamic Number Intelligence (DNI) offering advanced phone number data features like carrier assignment and deactivation reports, enhancing sender reputation and ensuring message delivery to valid destinations.",
+      "impact": "medium",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/",
+      "extracted_at": "2026-04-30T23:59:30.754830"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Network blocks with TTL",
+      "description": "Block SMS and/or Voice traffic to a specific mobile network and set a timer to lift the block automatically.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-04-30T23:58:40.731483"
+    },
+    {
+      "date": "2026-03-01",
+      "version": "3.4",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "Inbound Traffic Rules",
+      "description": "Block incoming traffic to your applications by setting inbound rules.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-04-30T23:58:40.731494"
+    },
+    {
+      "date": "2026-02-02",
+      "version": null,
+      "type": "feature",
+      "category": "anti_spam",
+      "title": "Number Reputation Management Expansion",
+      "description": "Expanded Number Reputation Management to support monitoring and remediation for a broader range of phone numbers, including non-Bandwidth US numbers, to address spam labeling and improve answer rates.",
+      "impact": "medium",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/",
+      "extracted_at": "2026-04-30T23:59:30.754849"
+    },
+    {
+      "date": "2026-02-01",
+      "version": "3.3",
+      "type": "feature",
+      "category": "fraud_detection",
+      "title": "SMS Burst Protection",
+      "description": "SMS Burst Protection extended to worldwide coverage, ensuring protection regardless of destination. Performance optimizations trigger protection within seconds of the limit being reached.",
+      "impact": "high",
+      "relevance_to_fraud": "high",
+      "competitor": "Vonage",
+      "product": "Fraud Defender",
+      "source_url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+      "extracted_at": "2026-04-30T23:58:40.731495"
+    },
+    {
+      "date": "2026-01-13",
+      "version": null,
+      "type": "feature",
+      "category": "verification",
+      "title": "Campaign Verify Token now available",
+      "description": "Added campaign verify token field (cvToken) to Toll Free Verification endpoints for political verification requests.",
+      "impact": "medium",
+      "relevance_to_fraud": "medium",
+      "competitor": "Bandwidth",
+      "product": "Platform",
+      "source_url": "https://www.bandwidth.com/release-notes/",
+      "extracted_at": "2026-04-30T23:59:30.754852"
+    }
+  ]
+}

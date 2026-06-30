@@ -1,0 +1,302 @@
+{
+  "success": true,
+  "platform": "reddit",
+  "endpoint": "/v1/reddit/subreddit/search",
+  "data": {
+    "items": [
+      {
+        "post": {
+          "id": "1ui92i8",
+          "url": "https://www.reddit.com/r/twilio/comments/1ui92i8/can_i_pay_someone_to_deal_with_this_for_me/",
+          "content": {
+            "text": "Can I pay someone to deal with this for me?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "LossPreventionGuy",
+            "display_name": "t2_91wic",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 3,
+            "comments": 14,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782681448,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uhx9zt",
+          "url": "https://www.reddit.com/r/twilio/comments/1uhx9zt/twilio_voice_geo_permissions_can_be_changed_via/",
+          "content": {
+            "text": "Twilio Voice Geo Permissions can be changed via API - 2FA did not stop toll fraud",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Jamira40",
+            "display_name": "t2_2ytdk2ul",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 2,
+            "comments": 22,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782653183,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "tech",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1ugln6q",
+          "url": "https://www.reddit.com/r/twilio/comments/1ugln6q/ingenieros_y_programadores_c\u00f3mo_puedo_aumentar_mi/",
+          "content": {
+            "text": "Ingenieros y programadores. \u00bfC\u00f3mo puedo aumentar mi n\u00famero de llamadas salientes desde Twilio?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Twilio5435",
+            "display_name": "t2_2hbzr7oytx",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 1,
+            "comments": 2,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782514190,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "es",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1ug6giz",
+          "url": "https://www.reddit.com/r/twilio/comments/1ug6giz/stop_giving_out_your_number_5_lines_no_voip/",
+          "content": {
+            "text": "Stop Giving Out Your Number - 5 Lines, No VoIP",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Fit-Sky8697",
+            "display_name": "t2_208j3whhz3",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 4,
+            "comments": 0,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782479483,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "fr",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1uev78w",
+          "url": "https://www.reddit.com/r/twilio/comments/1uev78w/startup_founders_developers_what_are_you_using/",
+          "content": {
+            "text": "Startup Founders & Developers: What are you using instead of Twilio for sending authentication codes?",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "Forward_Importance64",
+            "display_name": "t2_23ncs79las",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 6,
+            "comments": 14,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782348091,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "tech",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1udtzzw",
+          "url": "https://www.reddit.com/r/twilio/comments/1udtzzw/stuck_on_new_console_login_loop_the_cultprit_was/",
+          "content": {
+            "text": "Stuck on new console login loop, the cultprit was CB-trustwallet extensions",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "sarcasmme",
+            "display_name": "t2_ams2rjl1",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 1,
+            "comments": 2,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1782249843,
+          "ext": {
+            "subreddit": "twilio"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "fr",
+          "content_category": "gaming",
+          "estimated_reach": null
+        }
+      },
+      {
+        "post": {
+          "id": "1tjy43h",
+          "url": "https://www.reddit.com/r/SaaS/comments/1tjy43h/after_5_rejected_twilio_a2p_10dlc_submissions_the/",
+          "content": {
+            "text": "After 5 rejected Twilio A2P 10DLC submissions, the fix was upstream of Twilio entirely",
+            "media_urls": null,
+            "thumbnail_url": null,
+            "duration_seconds": null
+          },
+          "author": {
+            "username": "goflameai",
+            "display_name": "t2_298f1clcmy",
+            "avatar_url": null,
+            "verified": null
+          },
+          "engagement": {
+            "views": null,
+            "likes": 1,
+            "comments": 3,
+            "shares": null,
+            "saves": null
+          },
+          "flags": {
+            "nsfw": false,
+            "spoiler": false,
+            "pinned": null,
+            "deleted": false
+          },
+          "published_at": 1779397990,
+          "ext": {
+            "subreddit": "SaaS"
+          }
+        },
+        "computed": {
+          "engagement_rate": null,
+          "language": "en",
+          "content_category": "other",
+          "estimated_reach": null
+        }
+      }
+    ],
+    "next_cursor": "eyJjYW5kaWRhdGVzX3JldHVybmVkIjoie1wic2VjdGlvbl8xX3BpcGVsaW5lXzBfZ2xvYmFsX21vZGlmaWVyc1wiOlwiMlwiLFwic2VjdGlvbl8xX3BpcGVsaW5lXzFfbG9jYWxfbW9kaWZpZXJzXCI6XCIyXCIsXCJzZWN0aW9uXzJfcGlwZWxpbmVfOF9wb3N0X3NlYXJjaFwiOlwiN1wiLFwic2VjdGlvbl8zX3BpcGVsaW5lXzBfc2lkZWJhcl9jb21tdW5pdHlfaW5mb1wiOlwiMFwifSIsImV4cGVyaWVuY2Vfc2VsZWN0aW9uIjoicG9zdF93aXRoX2NvbW11bml0eV9zaWRlYmFyIiwiZXhwZXJpZW5jZV92ZXJzaW9uIjoiZGVmYXVsdCIsInNlY3Rpb25fMl9waXBlbGluZV84X3Bvc3Rfc2VhcmNoIjoiNyJ9",
+    "total": 7
+  },
+  "credits_used": 1,
+  "credits_remaining": 92,
+  "request_id": "req-DXP9UB0nFypr0puj",
+  "cached": false
+}
