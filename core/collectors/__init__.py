@@ -1,5 +1,6 @@
 """Collectors - Data ingestion plugins"""
 
 from .base import BaseCollector
+from .rss import RSSCollector
 
-__all__ = ["BaseCollector"]
+__all__ = ["BaseCollector", "RSSCollector"]
