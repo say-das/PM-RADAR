@@ -1,0 +1,89 @@
+# Analysis Prompts for Fraud Topic
+
+categorization: |
+  Score these articles for relevance to fraud prevention, security, and communications platforms.
+
+  Rate each article 0-10:
+  - 8-10: Highly relevant (fraud, security breaches, account takeover, telecom/messaging threats)
+  - 5-7: Moderately relevant (general security, vulnerabilities, compliance)
+  - 0-4: Low relevance (product updates, general tech news)
+
+  DEDUPLICATION (CRITICAL): Aggressively consolidate similar topics:
+  - If 3+ articles are from the SAME vendor/product, keep ONLY the most critical one
+  - If articles cover the same incident/breach/advisory, keep ONLY the most detailed
+  - Mark duplicates with score=0 and "duplicate_of" field
+
+  CATEGORIZATION:
+  - telecom: SMS, messaging platforms, SIM swap, robocalls, telecom fraud
+  - general: Breaches, vulnerabilities, authentication, fraud, security threats
+
+  Return JSON with articles array containing id, score, category, reason fields.
+  Only include articles scoring >= 6 unless they're duplicates.
+
+analysis:
+  telecom_fraud: |
+    Identify telecom-specific fraud threats from these articles.
+    For each threat: describe attack pattern (4-5 sentences with editorial room),
+    affected systems, business impact, and mitigation strategies.
+
+    Focus on: SMS fraud, SIM swapping, robocalls, A2P messaging abuse,
+    verification bypass, telecom infrastructure attacks.
+
+    Format: JSON array of {"title", "description", "citation_ids"}
+
+  general_fraud: |
+    Identify general security threats relevant to communications platforms.
+    For each threat: describe vulnerability (4-5 sentences with editorial room),
+    exploitation method, affected systems, and defensive measures.
+
+    Focus on: Authentication bypass, API abuse, credential stuffing,
+    account takeover, phishing, data breaches affecting communication platforms.
+
+    Format: JSON array of {"title", "description", "citation_ids"}
+
+  regulatory: |
+    Identify regulatory changes affecting fraud prevention and data security.
+    For each change: summarize regulation (4-5 sentences with editorial room),
+    compliance requirements, affected parties, and implementation deadlines.
+
+    Focus on: TCPA, STIR/SHAKEN, KYC requirements, data privacy laws,
+    telecom security mandates, international fraud regulations.
+
+    Format: JSON array of {"title", "description", "citation_ids"}
+
+executive_summary: |
+  Create an executive summary for a VP of Product covering this week's fraud landscape.
+
+  Focus on:
+  - Business impact of emerging threats
+  - Immediate risks to communication platforms
+  - Competitive threats and market positioning
+  - Regulatory developments requiring action
+
+  4-5 sentences, outcome-focused, actionable insights.
+  Assume audience has limited technical background but high business context.
+
+competitive_intel: |
+  Analyze competitive intelligence from messaging/communications competitors
+  focusing on fraud prevention and security features.
+
+  Provide:
+  1. Executive summary - What are competitors doing in fraud prevention?
+  2. New product launches or features (fraud/security related)
+  3. API changes or technical updates (fraud detection, verification, etc.)
+  4. Competitive positioning - How are they messaging fraud prevention capabilities?
+
+  Focus ONLY on fraud, security, verification, and authentication topics.
+  Ignore general product updates unrelated to fraud prevention.
+
+reddit_community: |
+  Analyze Twilio community discussions on Reddit for fraud and security themes.
+
+  Identify:
+  - Customer pain points with fraud or security features
+  - Feature requests related to fraud prevention
+  - Incidents or breaches mentioned by users
+  - Sentiment toward Twilio's fraud prevention tools
+
+  Provide actionable insights for product team.
+  3-4 key themes with supporting evidence from posts.

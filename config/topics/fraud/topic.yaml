@@ -18,3 +18,41 @@ sources:
     config_path: reddit.yaml
   - type: changelog
     config_path: changelogs.yaml
+
+categories:
+  - telecom_fraud
+  - general_fraud
+  - regulatory
+
+prompts_path: prompts.yaml
+
+report:
+  sections:
+    - type: executive_summary
+
+    - type: top_items
+      config:
+        title: "🔴 Top Threats"
+        category: "telecom_fraud"
+        limit: 5
+
+    - type: top_items
+      config:
+        title: "🟡 General Security"
+        category: "general_fraud"
+        limit: 3
+
+    - type: regulatory_changes
+
+    - type: competitive_intel
+      config:
+        sources: ["competitor_changelogs"]
+
+email:
+  recipients:
+    - saydas@twilio.com
+  # Production recipients (disabled for testing):
+  # - rlohan@twilio.com
+  # - tkilam@twilio.com
+  # - jhasan@twilio.com
+  # - vsharma@twilio.com

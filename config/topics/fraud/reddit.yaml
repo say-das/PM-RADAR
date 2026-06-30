@@ -1,0 +1,37 @@
+# Reddit Monitoring Configuration for Fraud Topic
+
+subreddits:
+  - twilio
+
+# Additional subreddits for future expansion:
+# - telecom
+# - fraud
+# - SaaS
+# - VOIP
+# - programming
+# - cybersecurity
+# - netsec
+# - smallbusiness
+
+queries:
+  - name: "Twilio Fraud Monitoring"
+    keywords:
+      - fraud
+      - scam
+      - hacked
+      - breach
+      - compromise
+      - vulnerability
+      - attack
+      - phishing
+    timeframe: week
+    limit: 25
+
+user_agent: "ProductResearch/1.0"
+fetch_comments: true
+
+comments_threshold:
+  min_score: 5
+  min_comments: 3
+
+max_comments_per_post: 10
