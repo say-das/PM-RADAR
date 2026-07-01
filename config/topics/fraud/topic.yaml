@@ -48,6 +48,8 @@ report:
       config:
         sources: ["competitor_changelogs"]
 
+    - type: sources
+
 email:
   recipients:
     - saydas@twilio.com
