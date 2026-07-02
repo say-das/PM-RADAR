@@ -1,0 +1,321 @@
+{
+  "analyzed_at": "2026-07-02T15:38:58.597013",
+  "telecom_fraud_summary": "```json\n{\n  \"executive_summary\": \"Russian Intelligence Services continue to target commercial messaging applications, posing significant threats to user privacy and data security [ARTICLE_1][ARTICLE_3]. WhatsApp's introduction of usernames aims to enhance user privacy by reducing the need to share phone numbers [ARTICLE_2]. The FBI warns that Russian hackers are now targeting Signal Backup Recovery Keys, which could lead to account takeovers [ARTICLE_4]. Additionally, SMS blasters remain a concern, with new methods to detect them being shared [ARTICLE_5]. These developments highlight the ongoing and evolving threats in the telecom sector, necessitating proactive measures from companies and regulators.\",\n  \"top_trends\": [\n    {\n      \"title\": \"Russian Phishing Campaigns Target Messaging Apps\",\n      \"description\": \"Russian Intelligence Services are actively targeting commercial messaging applications through phishing campaigns [ARTICLE_1]. This is a critical threat as it compromises the security of sensitive communications across various sectors. The business impact includes potential data breaches and loss of customer trust. Companies should implement robust security protocols and educate users on recognizing phishing attempts to mitigate these risks.\"\n    },\n    {\n      \"title\": \"WhatsApp Usernames Enhance Privacy\",\n      \"description\": \"WhatsApp is rolling out usernames to help users keep their phone numbers private [ARTICLE_2]. This development is significant as it addresses privacy concerns for over three billion users. By allowing connections through usernames, the risk of phone number exposure and related fraud is reduced. Teams should consider integrating similar privacy features to enhance user trust and security.\"\n    },\n    {\n      \"title\": \"Signal Backup Recovery Key Exploits\",\n      \"description\": \"Russian hackers are exploiting Signal Backup Recovery Keys to take over accounts [ARTICLE_4]. This method allows attackers to access message history and control accounts, posing severe privacy risks. The business impact includes potential legal liabilities and reputational damage. Companies should advise users to safeguard their recovery keys and consider additional security layers for account recovery processes.\"\n    },\n    {\n      \"title\": \"Detection of SMS Blasters\",\n      \"description\": \"SMS blasters, operating outside legitimate networks, can be detected through radio, signaling, and location anomalies [ARTICLE_5]. This is crucial for maintaining network integrity and preventing fraudulent activities. The business impact involves reduced fraud losses and improved customer satisfaction. Telecom operators should invest in technologies to identify and mitigate these threats effectively.\"\n    }\n  ],\n  \"regulatory_changes\": [],\n  \"immediate_attention\": [\n    {\n      \"description\": \"The FBI and CISA's updated warning about Russian phishing attacks on Signal accounts requires immediate attention [ARTICLE_4]. The exploitation of Backup Recovery Keys can lead to significant data breaches and account takeovers. Companies must urgently review their security measures and educate users on the importance of protecting recovery keys. Failure to act could result in severe reputational and financial damage.\"\n    }\n  ],\n  \"community_sentiment\": []\n}\n```",
+  "general_fraud_summary": "```json\n{\n  \"executive_summary\": \"The past week in General Fraud & Security has seen a surge in vulnerabilities across critical infrastructure and software platforms. Notably, the Frangoteam FUXA SCADA/HMI vulnerability allows remote attackers to enumerate user accounts, posing a significant risk to sectors like manufacturing and energy [ARTICLE_1]. Additionally, Mitsubishi Electric's MELSOFT Update Manager is vulnerable to local attacks that could lead to data tampering and denial-of-service conditions [ARTICLE_2]. Meanwhile, Phantom Squatting has emerged as a new threat vector, exploiting AI-generated domain hallucinations to compromise supply chains [ARTICLE_8]. Moreover, large-scale credential attacks are increasingly targeting security vendors, necessitating enhanced mitigation strategies [ARTICLE_9].\",\n\n  \"top_trends\": [\n    {\n      \"title\": \"Phantom Squatting Threat\",\n      \"description\": \"Phantom Squatting involves exploiting AI-generated domain hallucinations to target software supply chains [ARTICLE_8]. This threat is significant because it leverages AI's ability to create plausible yet fake domains, which can be used to deceive users and infiltrate systems. The business impact includes potential data breaches and supply chain disruptions. Companies should consider implementing domain monitoring and verification processes to mitigate these risks.\"\n    },\n    {\n      \"title\": \"Exploitation of Microsoft SharePoint RCE Flaw\",\n      \"description\": \"A high-severity remote code execution vulnerability in Microsoft SharePoint is now actively exploited [ARTICLE_12]. This vulnerability allows attackers to execute arbitrary code, posing a severe risk to organizations using SharePoint for collaboration and document management. The business impact includes potential data loss and unauthorized access to sensitive information. Organizations should prioritize applying the latest security patches to protect against this threat.\"\n    },\n    {\n      \"title\": \"ConsentFix and ClickFix Attacks on Microsoft 365\",\n      \"description\": \"ConsentFix and ClickFix attacks exploit OAuth flows to hijack Microsoft 365 accounts in seconds [ARTICLE_10]. These attacks bypass multi-factor authentication, making them particularly dangerous. The business impact includes unauthorized access to corporate emails and data, leading to potential data breaches. Companies should educate employees on recognizing phishing attempts and consider implementing additional security measures like conditional access policies.\"\n    },\n    {\n      \"title\": \"FortiBleed Credential-Theft Campaign\",\n      \"description\": \"The FortiBleed campaign is linked to Lynx ransomware operations, targeting Fortinet credentials for future network intrusions [ARTICLE_14]. This campaign highlights the growing trend of using stolen credentials to facilitate ransomware attacks. The business impact is significant, as compromised credentials can lead to widespread network infiltration and data encryption. Organizations should enhance credential management and monitor for unusual login activities.\"\n    },\n    {\n      \"title\": \"ChocoPoC Malware Targeting Researchers\",\n      \"description\": \"ChocoPoC is a new malware targeting cybersecurity researchers via trojanized proof-of-concept exploits [ARTICLE_15]. This malware can execute commands and steal sensitive data, posing a threat to research integrity and security. The business impact includes potential data leaks and compromised research findings. Security teams should verify the source of PoC exploits and use sandbox environments for testing.\"\n    }\n  ],\n\n  \"regulatory_changes\": [],\n\n  \"immediate_attention\": [\n    {\n      \"description\": \"The vulnerability in Frangoteam FUXA SCADA/HMI requires immediate attention due to its potential impact on critical infrastructure sectors like manufacturing and energy [ARTICLE_1]. Unauthenticated remote attackers can enumerate user accounts, leading to unauthorized access and control. Organizations using affected versions should apply patches or mitigations provided by the vendor to secure their systems.\"\n    }\n  ],\n\n  \"community_sentiment\": []\n}\n```",
+  "competitive_intelligence_summary": null,
+  "categorized_counts": {
+    "telecom": 5,
+    "general": 26,
+    "competitive": 0
+  },
+  "filtered_articles": [
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Russian Intelligence Services Continue to Target Commercial Messaging Applications",
+      "url": "https://www.cisa.gov/resources-tools/resources/russian-intelligence-services-continue-target-commercial-messaging-applications",
+      "published": "2026-06-26T12:00:00",
+      "summary": "CISA and the Federal Bureau of Investigation (FBI) issued an updated Public Service Announcement (PSA) warning of Russian Intelligence Services (RIS) cyber threat actors targeting commercial messaging applications in ongoing phishing campaigns. This PSA is an update to the March 2026 Russian Intelligence Services Target Commercial Messaging Application Accounts and provides recent tactics, recommended mitigations, and samples of phishing messages.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Targeting of messaging applications by state actors"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "WhatsApp is Finally Getting Usernames to Help Keep Phone Numbers Private",
+      "url": "https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html",
+      "published": "2026-06-29T16:09:21",
+      "summary": "WhatsApp on Monday officially announced the start of global reservations of usernames with an aim to protect the privacy of more than three billion users on the messaging platform. The optional feature is designed to help users connect with someone on the service through usernames, as opposed to directly sharing their phone numbers. Username reservations will start rolling out starting today,",
+      "_gpt_score": 8,
+      "_gpt_reason": "WhatsApp privacy feature to protect phone numbers"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ukraine Says Russian Intelligence Used Fake Support Texts to Steal Messaging Credentials",
+      "url": "https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html",
+      "published": "2026-06-27T17:27:11",
+      "summary": "The Security Service of Ukraine (SSU) said it, together with the U.S. Federal Bureau of Investigation (FBI), uncovered a long-running campaign orchestrated by Russian intelligence services to break into the messaging accounts of government officials, military personnel, politicians, and activists in Ukraine, Europe, and the U.S. The systematic cyber attacks aimed at stealing sensitive",
+      "_gpt_score": 9,
+      "_gpt_reason": "Russian intelligence targeting messaging credentials"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "FBI Warns Russian Intelligence Hackers Target Signal Backup Recovery Keys",
+      "url": "https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html",
+      "published": "2026-06-26T19:38:29",
+      "summary": "The FBI and CISA have updated their March warning about Russian intelligence phishing Signal accounts, and the operators have added a step: they now coax targets into handing over their Signal Backup Recovery Key. Hand it over once, and the attacker can restore the account's backup, read the private and group message history, and take over the account. Worse, the key keeps working.",
+      "_gpt_score": 9,
+      "_gpt_reason": "Phishing targeting Signal backup recovery keys"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "How to Detect SMS Blasters",
+      "url": "https://commsrisk.com/how-to-detect-sms-blasters/",
+      "published": "2026-06-30T03:25:01",
+      "summary": "SMS blasters operate outside legitimate mobile networks, but their activity can still be detected. This article explains how operators and regulators can identify false base stations by looking for radio, signalling and location anomalies. The post How to Detect SMS Blasters appeared first on Commsrisk."
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Frangoteam FUXA SCADA/HMI",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-02",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an unauthenticated remote attacker to enumerate all user accounts and role assignments on a FUXA SCADA/HMI instance. The following versions of Frangoteam FUXA SCADA/HMI are affected: FUXA SCADA/HMI <=1.3.1 (CVE-2026-13207) CVSS Vendor Equipment Vulnerabilities v3 7.5 Frangoteam Frangoteam FUXA SCADA/HMI Authentication Bypass by Spoofing Background Critical Infrastructure Sectors: Critical Manufacturing, Energy, Water and",
+      "_gpt_score": 6,
+      "_gpt_reason": "Vulnerability in SCADA systems"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Mitsubishi Electric MELSOFT Update Manager SW1DND-UDM-M",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-01",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow a local attacker to tamper with or destroy information in the affected product, cause a denial-of-service condition in the affected product, or execute arbitrary code when a specially crafted archive file is decompressed by the 7-Zip component included in MELSOFT Update Manager. The following versions of Mitsubishi Electric MELSOFT Update Manager SW1DND-UDM-M are affected: MELSOFT Update Manager SW1DND-UDM-M >=1.000A|",
+      "_gpt_score": 6,
+      "_gpt_reason": "Vulnerability in industrial control systems"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "OFFIS DCMTK Toolkit",
+      "url": "https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-181-01",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to write files, access unauthorized information, exhaust memory, or crash affected DCMTK client or server processes. The following versions of OFFIS DCMTK Toolkit are affected: DCMTK <=3.7.0 (CVE-2026-50003, CVE-2026-50254, CVE-2026-35505, CVE-2026-52868, CVE-2026-44628) CVSS Vendor Equipment Vulnerabilities v3 9.8 OFFIS OFFIS DCMTK Toolkit Improper Limitation of a Pathname to a Restricted Directory ('Path",
+      "_gpt_score": 6,
+      "_gpt_reason": "Vulnerability in medical toolkit"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric EcoStruxure IT Data Center Expert",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-03",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its EcoStruxure\u2122 IT Data Center Expert. The EcoStruxure\u2122 IT Data Center Expert product is a scalable monitoring software that collects, organizes, and distributes critical device information providing a comprehensive view of equipment. Failure to apply the remediation provided below may risk information disclosure. The following versions of Schneider Electric EcoStruxure IT Data Center Expert are affected: EcoStruxure IT Data Ce",
+      "_gpt_score": 6,
+      "_gpt_reason": "Vulnerability in data center management software"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "StoneFly Storage Concentrator",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-06",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to gain broad unauthorized access, execute arbitrary commands with root privileges, steal sensitive data, and perform actions on behalf of legitimate users across interconnected systems. The following versions of StoneFly Storage Concentrator are affected: Storage Concentrator <8.0.4.22 (CVE-2026-56415, CVE-2026-55721, CVE-2026-50040) Storage Concentrator Virtual Machine <8.0.4.22 (CVE-2026-56415, CVE-2026-5",
+      "_gpt_score": 7,
+      "_gpt_reason": "Broad unauthorized access vulnerability"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Delta Electronics DVP12SE PLC",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-07",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to remotely issue commands, modify operational values, interfere with control logic, and alter device behavior without authentication or privilege enforcement. The following versions of Delta Electronics DVP12SE PLC are affected: DVP12SE PLC vers:all/* (CVE-2026-12819, CVE-2026-12818) CVSS Vendor Equipment Vulnerabilities v3 9.8 Delta Electronics Delta Electronics DVP12SE PLC Missing Authentication for Cri",
+      "_gpt_score": 6,
+      "_gpt_reason": "Vulnerability in PLC systems"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric EasyLogic T150 and Saitel DP RTU",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-04",
+      "published": "2026-06-30T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities can allow an attacker to cause unauthorized access and exposure of sensitive information when the unauthenticated attacker accesses credentials stored within firmware or system files. The following versions of Schneider Electric EasyLogic T150 and Saitel DP RTU are affected: EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & Controller <=11.06.30 (CVE-2026-9650) EasyLogic T150 (formerly Saitel DR) Remote Terminal Unit & C",
+      "_gpt_score": 6,
+      "_gpt_reason": "Unauthorized access vulnerability"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector",
+      "url": "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/",
+      "published": "2026-07-01T01:00:11",
+      "summary": "Attackers can exploit LLM domain hallucinations through phantom squatting to target supply chains. Read the analysis to learn more. The post Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector appeared first on Unit 42.",
+      "_gpt_score": 8,
+      "_gpt_reason": "AI domain hallucination used for phishing"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
+      "published": "2026-06-26T19:05:33",
+      "summary": "We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. The post Threat Brief: Mitigating Large-Scale Credential Attacks appeared first on Unit 42.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Mitigation of large-scale credential attacks"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "ConsentFix and ClickFix: How Microsoft 365 Accounts are Hijacked in 3 Seconds",
+      "url": "https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/",
+      "published": "2026-07-02T14:00:10",
+      "summary": "ConsentFix and ClickFix attacks steal Microsoft 365 tokens in seconds using fake prompts and OAuth flows. Learn how these MFA bypass tactics work and how to defend against them. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Microsoft 365 account hijacking vulnerability"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Cisco finally confirms attackers exploiting Unified CM flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-finally-confirms-attackers-exploiting-unified-cm-flaw/",
+      "published": "2026-07-02T11:35:25",
+      "summary": "Cisco confirmed that attackers are now exploiting a Unified Communications Manager (Unified CM) vulnerability patched in early June. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "Exploitation of Cisco Unified CM vulnerability"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA: Microsoft SharePoint RCE flaw now actively exploited",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-microsoft-sharepoint-rce-flaw-now-actively-exploited/",
+      "published": "2026-07-02T10:52:43",
+      "summary": "CISA warned on Wednesday that attackers have begun exploiting a high-severity Microsoft SharePoint remote code execution vulnerability patched in May. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Active exploitation of SharePoint RCE vulnerability"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Opera rolls out Paste Protect feature to fight ClickFix attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/opera-rolls-out-paste-protect-feature-to-fight-clickfix-attacks/",
+      "published": "2026-07-02T10:46:58",
+      "summary": "Opera has introduced Paste Protect, a security feature designed to block ClickFix-style attacks that trick users into executing malicious commands through social engineering. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "New security feature against ClickFix attacks"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "FortiBleed credential-theft campaign linked to Lynx ransomware",
+      "url": "https://www.bleepingcomputer.com/news/security/fortibleed-credential-theft-campaign-linked-to-lynx-ransomware/",
+      "published": "2026-07-01T21:37:24",
+      "summary": "The massive FortiBleed credential theft campaign has been linked to the INC and Lynx ransomware operations, suggesting the stolen Fortinet credentials were intended to fuel future network intrusions. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "Credential theft campaign linked to ransomware"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New ChocoPoC malware targets researchers via trojanized PoC exploits",
+      "url": "https://www.bleepingcomputer.com/news/security/new-chocopoc-malware-targets-researchers-via-trojanized-poc-exploits/",
+      "published": "2026-07-01T20:08:13",
+      "summary": "Multiple weaponized proof-of-concept (PoC) exploits on GitHub were found delivering a Python-based remote access trojan (RAT) named ChocoPoC that can execute commands and steal sensitive data in a campaign believed to target cybersecurity researchers. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "Malware targeting vulnerability researchers"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "DHS confirms hackers breached HSIN info-sharing platform",
+      "url": "https://www.bleepingcomputer.com/news/security/dhs-confirms-hackers-breached-hsin-info-sharing-platform/",
+      "published": "2026-07-01T17:32:22",
+      "summary": "The Department of Homeland Security is investigating a cyberattack that compromised the Homeland Security Information Network (HSIN), a sensitive information-sharing platform used by federal, state, local, and private-sector partners. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Breach of sensitive information-sharing platform"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers target Microsoft 365 accounts with 81 million login attempts",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-target-microsoft-365-accounts-with-81-million-login-attempts/",
+      "published": "2026-07-01T16:38:01",
+      "summary": "An aggressive password-spraying campaign targeting Microsoft 365 environments generated more than 81 million login attempts over a two-week period. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "Massive password-spraying attack on Microsoft 365"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "ToddyCat-Linked Umbrij Malware Abuses OAuth to Access Gmail via Google API",
+      "url": "https://thehackernews.com/2026/07/toddycat-linked-umbrij-malware-abuses.html",
+      "published": "2026-07-02T13:04:13",
+      "summary": "The threat actor known as ToddyCat has been attributed to a new malware called Umbrij that's designed to gain surreptitious access to a victim's email correspondence via the Google API. \"In this campaign, the attackers focused their attention on corporate email communications hosted on Gmail, targeting access compromise via APIs,\" Kaspersky said in a detailed report published this week. \"",
+      "_gpt_score": 8,
+      "_gpt_reason": "Malware abusing OAuth for email access"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "AI Agent Exploits Langflow RCE to Automate Database Ransomware Attack",
+      "url": "https://thehackernews.com/2026/07/ai-agent-exploits-langflow-rce-to.html",
+      "published": "2026-07-02T09:13:13",
+      "summary": "Security firm Sysdig says it has found what it believes is the first ransomware attack run from start to finish by an AI agent. Its Threat Research Team calls the operator JADEPUFFER and says a large language model handled the whole job: breaking in, stealing credentials, moving deeper into the network, then encrypting and wiping a company's production database. Ransomware has always",
+      "_gpt_score": 8,
+      "_gpt_reason": "AI agent used in ransomware attack"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Unpatched Argo CD Repo-Server Flaw Could Let Attackers Take Over Kubernetes Clusters",
+      "url": "https://thehackernews.com/2026/07/unpatched-argo-cd-repo-server-flaw.html",
+      "published": "2026-07-01T19:40:06",
+      "summary": "Argo CD, a widely used tool for deploying software to Kubernetes, has an unpatched flaw in its repo-server component that lets an unauthenticated attacker run code, provided they can reach the component's internal network port. Synacktiv, which found the bug, says it can lead to a full cluster takeover. There is no fix and no CVE. The firm says it reported the flaw to Argo CD's maintainers in",
+      "_gpt_score": 8,
+      "_gpt_reason": "Unpatched Kubernetes vulnerability"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "SEO-Poisoned Software Sites Abuse ScreenConnect to Deploy AsyncRAT",
+      "url": "https://thehackernews.com/2026/07/seo-poisoned-software-sites-abuse.html",
+      "published": "2026-07-01T17:53:06",
+      "summary": "Unknown threat actors are leveraging the ScreenConnect remote access tool as a way to deploy and execute AsyncRAT. Kaspersky said the activity is part of a \"massive, multi-domain, multi-language\" campaign that distributes malicious installer archives hosted on spoofed websites. These installers masquerade as popular software like OBS Studio, DNS Jumper, DS4Windows, and Bandicam, among others.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Malware using remote access tool for RAT deployment"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "VEIL#DROP Malware Chain Uses Blogger Platform to Deliver PureLogs Stealer",
+      "url": "https://thehackernews.com/2026/07/veildrop-malware-chain-uses-blogger.html",
+      "published": "2026-07-01T17:18:50",
+      "summary": "Cybersecurity researchers have flagged a new multi-stage malware delivery attack chain that uses social engineering and Blogger pages to deliver an information stealer called PureLogs. The activity has been codenamed VEIL#DROP by Securonix. It's suspected that the initial payloads are distributed either via spear-phishing or a drive-by compromise, which occurs when an unsuspecting user lands on",
+      "_gpt_score": 8,
+      "_gpt_reason": "Malware delivery using social engineering"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ousaban Banking Trojan Targets Iberian Bank Users with Fake PDF Lures",
+      "url": "https://thehackernews.com/2026/07/ousaban-banking-trojan-targets-iberian.html",
+      "published": "2026-07-01T15:26:55",
+      "summary": "A Brazilian banking trojan called Ousaban is going after Windows users who bank in Spain and Portugal. Fortinet's FortiGuard Labs identified the campaign in May 2026. It opens with a phishing PDF disguised as a corrupted file, checks that the visitor is really in Spain or Portugal, and hides its real payload inside an image. The goal is the usual one: steal banking logins and take",
+      "_gpt_score": 8,
+      "_gpt_reason": "Banking trojan targeting users with phishing"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Progress Kemp LoadMaster Pre-Auth RCE Flaw Faces Active Exploitation Attempts",
+      "url": "https://thehackernews.com/2026/07/latest-progress-kemp-loadmaster-pre.html",
+      "published": "2026-07-01T13:56:18",
+      "summary": "A recently disclosed critical security flaw impacting Progress Kemp LoadMaster is seeing active exploitation attempts, according to an advisory from eSentire's Threat Response Unit (TRU). The Canadian cybersecurity company said it identified exploitation attempts targeting CVE-2026-8037 (CVSS score: 9.6), an operating system (OS) command injection flaw that could be exploited to achieve",
+      "_gpt_score": 8,
+      "_gpt_reason": "Active exploitation of LoadMaster vulnerability"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Azure CLI Password Spray Hits at Least 78 Microsoft Accounts in 81M+ Attempts",
+      "url": "https://thehackernews.com/2026/07/azure-cli-password-spray-hits-at-least.html",
+      "published": "2026-07-01T05:46:03",
+      "summary": "Cybersecurity researchers have warned of a \"massive, ongoing, automated password spray attack\" aimed at Microsoft's Azure command-line interface (CLI), compromising dozens of accounts in the process. The activity, per Huntress, originates from an IPv6 address range (2a0a:d683::/32) controlled by internet infrastructure provider LSHIY LLC (AS32167). \"Between June 12 and June 26, the threat",
+      "_gpt_score": 8,
+      "_gpt_reason": "Password spray attack on Azure CLI"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Attackers Exploit SimpleHelp CVE-2026-48558 to Deploy TaskWeaver and Djinn Stealer",
+      "url": "https://thehackernews.com/2026/06/attackers-exploit-simplehelp-cve-2026.html",
+      "published": "2026-06-30T11:18:47",
+      "summary": "An unknown threat actor has been observed exploiting a recently disclosed maximum-severity security flaw in SimpleHelp to deliver two previously unreported malware families, TaskWeaver and Djinn Stealer. The intrusion involves the exploitation of CVE-2026-48558 (CVSS score: 10.0), a critical authentication bypass vulnerability impacting the OpenID Connect (OIDC) flow that an unauthenticated",
+      "_gpt_score": 9,
+      "_gpt_reason": "Exploitation of SimpleHelp vulnerability for malware"
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PM Radar Intelligence Report</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+
+        /* Twilio Brand Colors */
+        :root {
+            --twilio-red: #F22F46;
+            --twilio-blue: #0263E0;
+            --twilio-dark-blue: #001489;
+            --twilio-blue-60: #0D61D8;
+            --twilio-blue-10: #E1EFFC;
+            --twilio-gray-100: #121C2D;
+            --twilio-gray-90: #18222E;
+            --twilio-gray-80: #1F2933;
+            --twilio-gray-70: #3E4C59;
+            --twilio-gray-60: #606B85;
+            --twilio-gray-50: #8891AA;
+            --twilio-gray-40: #C4C7D1;
+            --twilio-gray-30: #D9DBE5;
+            --twilio-gray-20: #E8EAED;
+            --twilio-gray-10: #F4F5F6;
+        }
+
+        @page {
+            size: Letter;
+            margin: 0.75in 1in;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+            color: var(--twilio-gray-90);
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 40px 60px;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+
+        @media screen and (max-width: 992px) {
+            body {
+                padding: 12px;
+            }
+            .container {
+                padding: 24px 32px;
+            }
+        }
+
+        @media print {
+            body {
+                padding: 0;
+                background: white;
+            }
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+        }
+
+        /* Typography with Twilio Red Start */
+        h1 {
+            color: var(--twilio-red);
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 0 0 6px 0;
+            letter-spacing: -0.02em;
+        }
+
+        h1 + p {
+            color: var(--twilio-gray-60);
+            font-size: 13px;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--twilio-red);
+            line-height: 1.3;
+        }
+
+        h2 {
+            color: var(--twilio-blue-60);
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin: 24px 0 8px 0;
+            page-break-after: avoid;
+        }
+
+        h3 {
+            color: var(--twilio-gray-90);
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin: 16px 0 6px 0;
+            page-break-after: avoid;
+        }
+
+        /* Paragraphs with hierarchy */
+        p {
+            margin: 6px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        /* Section labels like "Executive Summary:" */
+        p strong:first-child {
+            color: var(--twilio-gray-80);
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        /* Default strong styling - subtle */
+        strong {
+            font-weight: 500;
+            color: var(--twilio-gray-70);
+        }
+
+        em {
+            font-style: italic;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+        }
+
+        /* Compact lists */
+        ul, ol {
+            margin: 8px 0;
+            padding-left: 24px;
+        }
+
+        li {
+            margin: 4px 0;
+            line-height: 1.5;
+            color: var(--twilio-gray-60);
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        li::marker {
+            color: var(--twilio-gray-40);
+            font-weight: 400;
+        }
+
+        /* All strong tags in lists should be normal weight by default */
+        li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Only the very first strong in a list item gets emphasis */
+        li > strong:first-child {
+            font-weight: 500;
+            color: var(--twilio-gray-80);
+            font-size: 14px;
+        }
+
+        /* Executive Summary - Twilio branded */
+        #executive-summary + ul {
+            background: var(--twilio-blue-10);
+            padding: 16px 20px;
+            border-radius: 6px;
+            border-left: 4px solid var(--twilio-red);
+            margin: 12px 0 20px 0;
+        }
+
+        #executive-summary + ul li {
+            font-weight: 600;
+            color: var(--twilio-gray-90);
+            font-size: 14px;
+            margin: 3px 0;
+        }
+
+        #executive-summary + ul li strong {
+            font-weight: 700;
+            color: var(--twilio-red);
+        }
+
+        /* Blockquotes with Twilio accent */
+        blockquote {
+            margin: 12px 0;
+            padding: 10px 16px;
+            border-left: 4px solid var(--twilio-blue);
+            background: var(--twilio-blue-10);
+            font-style: italic;
+            color: var(--twilio-gray-70);
+            line-height: 1.4;
+        }
+
+        /* Code styling */
+        code {
+            font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+            background-color: var(--twilio-gray-10);
+            color: var(--twilio-dark-blue);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.9em;
+        }
+
+        pre {
+            background: var(--twilio-gray-10);
+            padding: 16px;
+            border-radius: 8px;
+            overflow-x: auto;
+            border: 1px solid var(--twilio-gray-20);
+        }
+
+        pre code {
+            background: transparent;
+            padding: 0;
+        }
+
+        /* Links - Twilio primary blue */
+        a {
+            color: var(--twilio-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: var(--twilio-blue-60);
+            text-decoration: underline;
+        }
+
+        /* Compact horizontal rules */
+        hr {
+            border: none;
+            border-top: 1px solid var(--twilio-gray-30);
+            margin: 16px 0;
+        }
+
+        /* Table styling with Twilio colors */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+
+        th, td {
+            padding: 8px 10px;
+            text-align: left;
+            border-bottom: 1px solid var(--twilio-gray-30);
+            line-height: 1.4;
+        }
+
+        th {
+            font-weight: 700;
+            color: white;
+            background: var(--twilio-red);
+        }
+
+        tr:hover {
+            background: var(--twilio-blue-10);
+        }
+
+        /* Inline Citations - smaller and clickable */
+        a[href^="#"] {
+            color: var(--twilio-blue);
+            font-size: 10px;
+            font-weight: 600;
+            vertical-align: super;
+            text-decoration: none;
+            padding: 0 1px;
+            transition: all 0.2s ease;
+        }
+
+        a[href^="#"]:hover {
+            color: var(--twilio-red);
+            text-decoration: underline;
+        }
+
+        /* Make citation brackets appear as superscript links */
+        p a[href^="#"],
+        li a[href^="#"] {
+            font-size: 10px;
+            line-height: 0;
+        }
+
+        /* Glossary emphasis */
+        #glossary + p {
+            color: var(--twilio-gray-50);
+            font-style: italic;
+            margin-bottom: 8px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+
+        #glossary + p + ul li {
+            margin: 5px 0;
+        }
+
+        /* Glossary terms should stand out */
+        #glossary + p + ul li > strong:first-child {
+            color: var(--twilio-red);
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        /* But the rest of glossary text should be normal */
+        #glossary + p + ul li strong:not(:first-child) {
+            font-weight: 400;
+            color: var(--twilio-gray-60);
+        }
+
+        /* Sources section - everything smaller and lighter */
+        #sources + p + ul li {
+            font-size: 12px;
+            color: var(--twilio-gray-50);
+            font-weight: 400;
+            line-height: 1.4;
+            margin: 3px 0;
+            scroll-margin-top: 20px; /* Offset for smooth scroll */
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+        }
+
+        #sources + p + ul li strong {
+            font-weight: 400;
+            color: var(--twilio-gray-50);
+        }
+
+        #sources + p + ul li a {
+            font-weight: 500;
+            color: var(--twilio-blue);
+        }
+
+        /* Citation reference targets in sources list */
+        #sources + p + ul li[id] {
+            background: transparent;
+            transition: background 0.3s ease;
+        }
+
+        #sources + p + ul li[id]:target {
+            background: var(--twilio-blue-10);
+            padding: 4px 8px;
+            margin-left: -8px;
+            border-radius: 4px;
+        }
+
+        /* Footer */
+        body > p:last-of-type {
+            text-align: center;
+            color: var(--twilio-gray-60);
+            font-size: 11px;
+            margin-top: 24px;
+            padding-top: 12px;
+            border-top: 1px solid var(--twilio-gray-30);
+        }
+
+        /* Print optimizations */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        h1, h2, h3 {
+            page-break-after: avoid;
+        }
+
+        @media print {
+            body {
+                background: white;
+            }
+            a {
+                color: var(--twilio-blue) !important;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="pm-radar-weekly-intelligence-digest">PM Radar Weekly Intelligence Digest</h1>
+<p><strong>Date:</strong> 2026-07-02
+<strong>Generated:</strong> 2026-07-02 15:39:12 UTC</p>
+<hr />
+<h2 id="executive-summary">Executive Summary</h2>
+<p><strong>This Week's Intelligence:</strong></p>
+<ul>
+<li>🔴 <strong>5 telecom fraud threats</strong> identified</li>
+<li>🟡 <strong>26 general security threats</strong> identified</li>
+<li>📊 <strong>0 competitor features</strong> analyzed (high/medium relevance)</li>
+</ul>
+<hr />
+<h2 id="telecom-fraud-digest">Telecom Fraud Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>Russian Intelligence Services continue to target commercial messaging applications, posing significant threats to user privacy and data security <a href="#a1">[A1]</a><a href="#a3">[A3]</a>. WhatsApp's introduction of usernames aims to enhance user privacy by reducing the need to share phone numbers <a href="#a2">[A2]</a>. The FBI warns that Russian hackers are now targeting Signal Backup Recovery Keys, which could lead to account takeovers <a href="#a4">[A4]</a>. Additionally, SMS blasters remain a concern, with new methods to detect them being shared <a href="#a5">[A5]</a>. These developments highlight the ongoing and evolving threats in the telecom sector, necessitating proactive measures from companies and regulators.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li>
+<p><strong>Russian Phishing Campaigns Target Messaging Apps</strong>: Russian Intelligence Services are actively targeting commercial messaging applications through phishing campaigns <a href="#a1">[A1]</a>. This is a critical threat as it compromises the security of sensitive communications across various sectors. The business impact includes potential data breaches and loss of customer trust. Companies should implement robust security protocols and educate users on recognizing phishing attempts to mitigate these risks.</p>
+</li>
+<li>
+<p><strong>WhatsApp Usernames Enhance Privacy</strong>: WhatsApp is rolling out usernames to help users keep their phone numbers private <a href="#a2">[A2]</a>. This development is significant as it addresses privacy concerns for over three billion users. By allowing connections through usernames, the risk of phone number exposure and related fraud is reduced. Teams should consider integrating similar privacy features to enhance user trust and security.</p>
+</li>
+<li>
+<p><strong>Signal Backup Recovery Key Exploits</strong>: Russian hackers are exploiting Signal Backup Recovery Keys to take over accounts <a href="#a4">[A4]</a>. This method allows attackers to access message history and control accounts, posing severe privacy risks. The business impact includes potential legal liabilities and reputational damage. Companies should advise users to safeguard their recovery keys and consider additional security layers for account recovery processes.</p>
+</li>
+<li>
+<p><strong>Detection of SMS Blasters</strong>: SMS blasters, operating outside legitimate networks, can be detected through radio, signaling, and location anomalies <a href="#a5">[A5]</a>. This is crucial for maintaining network integrity and preventing fraudulent activities. The business impact involves reduced fraud losses and improved customer satisfaction. Telecom operators should invest in technologies to identify and mitigate these threats effectively.</p>
+</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li>The FBI and CISA's updated warning about Russian phishing attacks on Signal accounts requires immediate attention <a href="#a4">[A4]</a>. The exploitation of Backup Recovery Keys can lead to significant data breaches and account takeovers. Companies must urgently review their security measures and educate users on the importance of protecting recovery keys. Failure to act could result in severe reputational and financial damage.</li>
+</ol>
+<hr />
+<h2 id="general-fraud-security-digest">General Fraud &amp; Security Digest</h2>
+<p><strong>Executive Summary:</strong></p>
+<p>The past week in General Fraud &amp; Security has seen a surge in vulnerabilities across critical infrastructure and software platforms. Notably, the Frangoteam FUXA SCADA/HMI vulnerability allows remote attackers to enumerate user accounts, posing a significant risk to sectors like manufacturing and energy <a href="#a1">[A1]</a>. Additionally, Mitsubishi Electric's MELSOFT Update Manager is vulnerable to local attacks that could lead to data tampering and denial-of-service conditions <a href="#a2">[A2]</a>. Meanwhile, Phantom Squatting has emerged as a new threat vector, exploiting AI-generated domain hallucinations to compromise supply chains <a href="#a8">[A8]</a>. Moreover, large-scale credential attacks are increasingly targeting security vendors, necessitating enhanced mitigation strategies <a href="#a9">[A9]</a>.</p>
+<p><strong>Top Threats &amp; Trends:</strong></p>
+<ol>
+<li>
+<p><strong>Phantom Squatting Threat</strong>: Phantom Squatting involves exploiting AI-generated domain hallucinations to target software supply chains <a href="#a8">[A8]</a>. This threat is significant because it leverages AI's ability to create plausible yet fake domains, which can be used to deceive users and infiltrate systems. The business impact includes potential data breaches and supply chain disruptions. Companies should consider implementing domain monitoring and verification processes to mitigate these risks.</p>
+</li>
+<li>
+<p><strong>Exploitation of Microsoft SharePoint RCE Flaw</strong>: A high-severity remote code execution vulnerability in Microsoft SharePoint is now actively exploited <a href="#a12">[A12]</a>. This vulnerability allows attackers to execute arbitrary code, posing a severe risk to organizations using SharePoint for collaboration and document management. The business impact includes potential data loss and unauthorized access to sensitive information. Organizations should prioritize applying the latest security patches to protect against this threat.</p>
+</li>
+<li>
+<p><strong>ConsentFix and ClickFix Attacks on Microsoft 365</strong>: ConsentFix and ClickFix attacks exploit OAuth flows to hijack Microsoft 365 accounts in seconds <a href="#a10">[A10]</a>. These attacks bypass multi-factor authentication, making them particularly dangerous. The business impact includes unauthorized access to corporate emails and data, leading to potential data breaches. Companies should educate employees on recognizing phishing attempts and consider implementing additional security measures like conditional access policies.</p>
+</li>
+<li>
+<p><strong>FortiBleed Credential-Theft Campaign</strong>: The FortiBleed campaign is linked to Lynx ransomware operations, targeting Fortinet credentials for future network intrusions <a href="#a14">[A14]</a>. This campaign highlights the growing trend of using stolen credentials to facilitate ransomware attacks. The business impact is significant, as compromised credentials can lead to widespread network infiltration and data encryption. Organizations should enhance credential management and monitor for unusual login activities.</p>
+</li>
+<li>
+<p><strong>ChocoPoC Malware Targeting Researchers</strong>: ChocoPoC is a new malware targeting cybersecurity researchers via trojanized proof-of-concept exploits <a href="#a15">[A15]</a>. This malware can execute commands and steal sensitive data, posing a threat to research integrity and security. The business impact includes potential data leaks and compromised research findings. Security teams should verify the source of PoC exploits and use sandbox environments for testing.</p>
+</li>
+</ol>
+<p><strong>Immediate Attention Required:</strong></p>
+<ol>
+<li>The vulnerability in Frangoteam FUXA SCADA/HMI requires immediate attention due to its potential impact on critical infrastructure sectors like manufacturing and energy <a href="#a1">[A1]</a>. Unauthenticated remote attackers can enumerate user accounts, leading to unauthorized access and control. Organizations using affected versions should apply patches or mitigations provided by the vendor to secure their systems.</li>
+</ol>
+<hr />
+<h2 id="glossary">Glossary</h2>
+<p><em>Technical terms and abbreviations used in this report:</em></p>
+<ul>
+<li><strong>CISA</strong>: Cybersecurity and Infrastructure Security Agency (U.S. government)</li>
+<li><strong>Exploit</strong>: Code or technique taking advantage of a security vulnerability</li>
+<li><strong>Malware</strong>: Malicious software designed to damage or gain unauthorized access</li>
+<li><strong>OAuth</strong>: Open Authorization - standard for access delegation</li>
+<li><strong>Phishing</strong>: Fraudulent attempt to obtain sensitive information by disguising as trustworthy entity</li>
+<li><strong>Ransomware</strong>: Malware that encrypts data and demands payment for decryption</li>
+<li><strong>SMS</strong>: Short Message Service - text messaging protocol</li>
+</ul>
+<h2 id="sources">Sources</h2>
+<p><strong>Articles:</strong></p>
+<ul>
+<li><a id="a1"></a>[A1]: <a href="https://www.cisa.gov/resources-tools/resources/russian-intelligence-services-continue-target-commercial-messaging-applications">Russian Intelligence Services Continue to Target Commercial Messaging Applications</a> - CISA Advisories (2026-06-26T12:00:00)</li>
+<li><a id="a2"></a>[A2]: <a href="https://thehackernews.com/2026/06/whatsapp-is-finally-getting-usernames.html">WhatsApp is Finally Getting Usernames to Help Keep Phone Numbers Private</a> - The Hacker News (2026-06-29T16:09:21)</li>
+<li><a id="a3"></a>[A3]: <a href="https://thehackernews.com/2026/06/ukraine-says-russian-intelligence-used.html">Ukraine Says Russian Intelligence Used Fake Support Texts to Steal Messaging Credentials</a> - The Hacker News (2026-06-27T17:27:11)</li>
+<li><a id="a4"></a>[A4]: <a href="https://thehackernews.com/2026/06/fbi-warns-russian-intelligence-hackers.html">FBI Warns Russian Intelligence Hackers Target Signal Backup Recovery Keys</a> - The Hacker News (2026-06-26T19:38:29)</li>
+<li><a id="a5"></a>[A5]: <a href="https://commsrisk.com/how-to-detect-sms-blasters/">How to Detect SMS Blasters</a> - Commsrisk (2026-06-30T03:25:01)</li>
+<li><a id="a8"></a>[A8]: <a href="https://www.cisa.gov/news-events/ics-medical-advisories/icsma-26-181-01">OFFIS DCMTK Toolkit</a> - CISA Advisories (2026-06-30T12:00:00)</li>
+<li><a id="a9"></a>[A9]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-03">Schneider Electric EcoStruxure IT Data Center Expert</a> - CISA Advisories (2026-06-30T12:00:00)</li>
+<li><a id="a10"></a>[A10]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-06">StoneFly Storage Concentrator</a> - CISA Advisories (2026-06-30T12:00:00)</li>
+<li><a id="a12"></a>[A12]: <a href="https://www.cisa.gov/news-events/ics-advisories/icsa-26-181-04">Schneider Electric EasyLogic T150 and Saitel DP RTU</a> - CISA Advisories (2026-06-30T12:00:00)</li>
+<li><a id="a14"></a>[A14]: <a href="https://unit42.paloaltonetworks.com/large-scale-credential-attacks/">Threat Brief: Mitigating Large-Scale Credential Attacks</a> - Unit 42 (Palo Alto) (2026-06-26T19:05:33)</li>
+<li><a id="a15"></a>[A15]: <a href="https://www.bleepingcomputer.com/news/security/consentfix-and-clickfix-how-microsoft-365-accounts-are-hijacked-in-3-seconds/">ConsentFix and ClickFix: How Microsoft 365 Accounts are Hijacked in 3 Seconds</a> - BleepingComputer (2026-07-02T14:00:10)</li>
+</ul>
+<hr />
+<p><em>Generated by PM Radar • 2026-07-02</em></p>
+    </div>
+
+    <!-- Twilio Branding Footer -->
+    <div style="margin-top: 3em; padding: 1.5em 0; text-align: center; border-top: 2px solid #E1E3EA;">
+        <svg width="80" height="24" viewBox="0 0 80 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="opacity: 0.5;">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM8.4 8.4C9.6 8.4 10.8 9.6 10.8 10.8C10.8 12 9.6 13.2 8.4 13.2C7.2 13.2 6 12 6 10.8C6 9.6 7.2 8.4 8.4 8.4ZM15.6 8.4C16.8 8.4 18 9.6 18 10.8C18 12 16.8 13.2 15.6 13.2C14.4 13.2 13.2 12 13.2 10.8C13.2 9.6 14.4 8.4 15.6 8.4ZM8.4 15.6C9.6 15.6 10.8 16.8 10.8 18C10.8 19.2 9.6 20.4 8.4 20.4C7.2 20.4 6 19.2 6 18C6 16.8 7.2 15.6 8.4 15.6ZM15.6 15.6C16.8 15.6 18 16.8 18 18C18 19.2 16.8 20.4 15.6 20.4C14.4 20.4 13.2 19.2 13.2 18C13.2 16.8 14.4 15.6 15.6 15.6Z" fill="#F22F46"/>
+        </svg>
+        <p style="margin: 0.5em 0 0 0; font-size: 9pt; color: #606B85;">Powered by PM Radar • Twilio Product Intelligence</p>
+    </div>
+</body>
+</html>
