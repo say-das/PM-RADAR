@@ -1,0 +1,443 @@
+{
+  "analyzed_at": "2026-07-09T16:13:02.155533",
+  "telecom_fraud_summary": "```json\n{\n  \"executive_summary\": \"Telecom fraud continues to evolve with increasing sophistication in SMS firewall activity and trust framework implementation. Recent data highlights which countries have the busiest SMS firewalls, indicating heightened efforts to block fraudulent messages [ARTICLE_1]. Meanwhile, industry discussions emphasize the importance of trust in customer interactions, as fraud risks rise, particularly in voice communications [ARTICLE_2]. These developments underscore the need for robust fraud prevention strategies and cross-industry collaboration to maintain customer trust and security.\",\n  \"top_trends\": [\n    {\n      \"title\": \"Rising SMS Firewall Activity\",\n      \"description\": \"Countries are ramping up their SMS firewall operations to combat the surge in fraudulent messaging [ARTICLE_1]. This trend is crucial as it reflects a proactive stance against telecom fraud, which can severely impact customer trust and network integrity. The business impact includes potential cost savings from reduced fraud and improved customer satisfaction. Telecom operators should consider investing in advanced firewall technologies and continuously updating their fraud detection algorithms.\"\n    },\n    {\n      \"title\": \"Trust Frameworks in Telecom\",\n      \"description\": \"The application of trust frameworks across industries is gaining traction as a defense against rising fraud and spoofing risks [ARTICLE_2]. This matters because trust is foundational to customer relationships, and its erosion can lead to significant business losses. The impact on businesses includes the need for enhanced security measures and transparent communication with customers. Companies should collaborate across sectors to develop and implement effective trust frameworks that address these challenges.\"\n    }\n  ],\n  \"regulatory_changes\": [],\n  \"immediate_attention\": [],\n  \"community_sentiment\": []\n}\n```",
+  "general_fraud_summary": "```json\n{\n  \"executive_summary\": \"Recent developments in General Fraud & Security highlight significant vulnerabilities and cyber threats across various sectors. Schneider Electric and OpenPLC have disclosed critical vulnerabilities that could allow unauthorized access and code execution [ARTICLE_1][ARTICLE_2]. Meanwhile, a global anti-fraud operation has led to the arrest of over 5,800 suspects and the seizure of $293 million in illicit assets, showcasing international efforts to combat fraud [ARTICLE_9]. Additionally, a new phishing platform, Forg365, is using AI to target Microsoft 365 accounts, posing a significant threat to businesses [ARTICLE_8]. These incidents underscore the need for enhanced security measures and vigilance across industries.\"\n\n  \"top_trends\": [\n    {\n      \"title\": \"Critical Vulnerabilities in Industrial Systems\",\n      \"description\": \"Schneider Electric and OpenPLC have reported vulnerabilities that could allow attackers to gain unauthorized access and execute arbitrary code [ARTICLE_1][ARTICLE_2]. These vulnerabilities pose significant risks to industrial operations, potentially leading to service disruptions and data breaches. Businesses relying on these systems should prioritize patch management and conduct thorough security assessments to mitigate risks.\"\n    },\n    {\n      \"title\": \"AI-Driven Phishing Threats\",\n      \"description\": \"The new Forg365 phishing platform leverages AI to enhance its attack vectors against Microsoft 365 accounts [ARTICLE_8]. This evolution in phishing tactics increases the sophistication and effectiveness of attacks, making it harder for traditional security measures to detect. Organizations must invest in advanced threat detection solutions and educate employees on recognizing AI-driven phishing attempts.\"\n    },\n    {\n      \"title\": \"Global Anti-Fraud Crackdown\",\n      \"description\": \"A coordinated global operation has resulted in the arrest of 5,811 suspects and the seizure of $293 million in illicit assets [ARTICLE_9]. This demonstrates the effectiveness of international collaboration in tackling fraud. Companies should remain vigilant and collaborate with law enforcement to protect against fraud and recover assets.\"\n    },\n    {\n      \"title\": \"Data Breach Exposes Millions\",\n      \"description\": \"AssuranceAmerica disclosed a data breach affecting nearly 7 million drivers, highlighting vulnerabilities in data protection [ARTICLE_10]. Such breaches can lead to identity theft and financial fraud, impacting both individuals and businesses. Organizations must strengthen their cybersecurity frameworks and ensure compliance with data protection regulations to prevent similar incidents.\"\n    },\n    {\n      \"title\": \"Malicious Packages in Software Repositories\",\n      \"description\": \"Fake SDKs on npm and PyPI have been used to distribute credential-stealing malware [ARTICLE_11]. This threat targets developers and users of popular payment applications, risking data theft and financial loss. Development teams should implement rigorous code review processes and use trusted sources for software dependencies.\"\n    }\n  ],\n\n  \"regulatory_changes\": [\n    {\n      \"description\": \"Block, Inc., owner of Cash App, has agreed to pay $45 million to settle allegations of misleading users about security protections [ARTICLE_7]. This settlement underscores the importance of transparency and compliance with financial regulations. Companies must ensure their security claims are accurate and align with industry standards to avoid legal repercussions.\"\n    }\n  ],\n\n  \"immediate_attention\": [\n    {\n      \"description\": \"Organizations using Schneider Electric PowerChute and OpenPLC should immediately apply available patches to address critical vulnerabilities [ARTICLE_1][ARTICLE_2]. Failure to do so could result in unauthorized access and operational disruptions. Security teams must prioritize these updates and monitor systems for any signs of exploitation.\"\n    }\n  ],\n\n  \"community_sentiment\": []\n}\n```",
+  "competitive_intelligence_summary": null,
+  "categorized_counts": {
+    "telecom": 5,
+    "general": 39,
+    "competitive": 0
+  },
+  "filtered_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Which Countries Have the Busiest SMS Firewalls?",
+      "url": "https://commsrisk.com/which-countries-operate-the-busiest-sms-firewalls/",
+      "published": "2026-07-07T07:13:51",
+      "summary": "A new map in the Commsrisk Global Fraud Dashboard compares published SMS-blocking figures using a population-adjusted score. The post Which Countries Have the Busiest SMS Firewalls? appeared first on Commsrisk."
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Webinar Recap: Collaborating for Confidence: Applying the Trust Framework Across Industries",
+      "url": "https://cfca.org/webinar-recap-collaborating-for-confidence-applying-the-trust-framework-across-industries/",
+      "published": "2026-07-02T20:49:09",
+      "summary": "Trust is the foundation of every successful customer interaction. But as fraud and spoofing risks keep rising, trust is harder to earn and easier to lose, especially across voice and [&#8230;]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Fiber Bytes: euNetworks, Lightpath, Kirkwood IG",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaX8iXGtoa6W-BCtHhrZJhjm?utm_source=follow.it",
+      "published": "2026-07-09T12:08:10",
+      "summary": "Three interesting new regional fiber projects, one by a new name: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Infra Bytes: VFE, DE-CIX, South Front, Duos, Lumen",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWvHkLdkPY0MPhg6exDPqRd?utm_source=follow.it",
+      "published": "2026-07-08T11:40:44",
+      "summary": "Three metro expansion projects and one bit of M&A news: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Tuesday Roundup: RETN, Nokia, DE-CIX, Nscale",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaUmFRgeBsPRZ5fa9AtxhdHe?utm_source=follow.it",
+      "published": "2026-07-07T12:37:24",
+      "summary": "A few items from around the world: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric PowerChute Serial Shutdown",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
+      "published": "2026-07-09T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to overwrite critical files, forge or inject malicious log data, gain unauthorized account access, trigger denial\u2011of\u2011service conditions, truncate or alter logging information, reset user credentials, or expose sensitive information. The following versions of Schneider Electric PowerChute Serial Shutdown are affected: PowerChute Serial Shutdown <=1.4 CVSS Vendor Equipment Vulnerabilities v3 6.1 SuSE, Schneide",
+      "_gpt_score": 7,
+      "_gpt_reason": "Vulnerabilities in critical infrastructure systems"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "OpenPLC v3",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-01",
+      "published": "2026-07-09T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an authenticated attacker to write arbitrary files to the filesystem and escalate this into arbitrary native code execution through the normal OpenPLC program compilation process, potentially resulting in code execution as the OpenPLC runtime user. The following versions of OpenPLC v3 are affected: OpenPLC v3 CVSS Vendor Equipment Vulnerabilities v3 9.9 OpenPLC OpenPLC v3 External Control of File Name or Path Background ",
+      "_gpt_score": 7,
+      "_gpt_reason": "Vulnerability allowing arbitrary code execution"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy PROMOD V",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-02",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of insecure HTTP transmission vulnerability in PROMOD V product versions listed in this document. This vulnerability could allow attackers to intercept or manipulate sensitive data in transit, potentially leading to credential theft, session hijacking, or unauthorized access. The following versions of Hitachi Energy PROMOD V are affected: PROMOD V vers:PROMOD_V/<=1.0.10 CVSS Vendor Equipment Vulnerabilities v3 7.1 Hitachi Energy Hitachi Energy PROMOD V R",
+      "_gpt_score": 8,
+      "_gpt_reason": "Insecure transmission vulnerability leading to credential theft"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Digi International PortServer TS, Digi One SP IA",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-07",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and gain access to restricted resources, obtain credentials, and inject malicious scripts. The following versions of Digi International PortServer TS, Digi One SP IA are affected: PortServer TS Digi One SP Digi One SP IA Digi One IA CVSS Vendor Equipment Vulnerabilities v3 5.9 Digi International Digi International PortServer TS, Digi One SP IA Incorrect Authorization, Improper Neut",
+      "_gpt_score": 8,
+      "_gpt_reason": "Authentication bypass and credential theft"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Vidar Stealer Unmasked: Code Signing Abuse, Go Loaders and File Inflation",
+      "url": "https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/",
+      "published": "2026-07-07T22:00:21",
+      "summary": "A cybercrime campaign combined a loader-as-a-service framework and DLL sideloading via a Go-compiled fake MpClient.dll, a novel evasion layer combination. The post Vidar Stealer Unmasked: Code Signing Abuse, Go Loaders and File Inflation appeared first on Unit 42.",
+      "_gpt_score": 9,
+      "_gpt_reason": "Fraud campaign using code signing abuse"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Latvian forestry company still restoring systems weeks after ransomware attack",
+      "url": "https://therecord.media/latvia-state-owned-foresty-company-lvm-ransomware",
+      "published": "2026-07-09T14:20:00",
+      "summary": "A foreign, financially motivated group was responsible for a cyberattack on state-owned forestry company Latvijas Valsts Mezi (LVM), officials said.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Ransomware attack on critical infrastructure"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cash App owner to pay $45 million to settle allegations of lax security",
+      "url": "https://therecord.media/cash-app-owner-to-pay-45-million-security-allegations",
+      "published": "2026-07-08T20:14:00",
+      "summary": "State attorneys general announced the bipartisan agreement with Block, Inc. on Wednesday, saying that the company incorrectly promised users that Cash App offered the same protections as a bank.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Settlement over lax security measures"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New Forg365 phishing platform uses AI to target Microsoft 365 accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
+      "published": "2026-07-09T14:39:51",
+      "summary": "A new phishing-as-a-service (PhaaS) operation called Forg365 focuses on stealing Microsoft 365 accounts by combining adversary-in-the-middle (AiTM) and device code methods with AI-assisted lure generation. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Phishing platform targeting Microsoft 365 accounts"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Police arrests 5,800 suspects in global anti-fraud crackdown",
+      "url": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/",
+      "published": "2026-07-09T09:47:28",
+      "summary": "Law enforcement agencies have arrested 5,811 suspects and seized $293 million in illicit assets in a global anti-fraud operation spanning 97 countries. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Global anti-fraud operation with significant arrests"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "AssuranceAmerica data breach exposes records of 6.9 million drivers",
+      "url": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+      "published": "2026-07-09T07:47:16",
+      "summary": "American insurance company AssuranceAmerica has disclosed a data breach impacting nearly 7 million drivers after attackers gained access to its systems earlier this year. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Data breach exposing millions of records"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Fake Paysafe, Skrill SDKs on NPM and PyPi steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/",
+      "published": "2026-07-08T19:54:59",
+      "summary": "Malicious packages on the Node Package Manager (npm) and the Python Package Index (PyPI) delivered stealer malware to developers and users of Paysafe, Skrill, and Neteller payment applications. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Malicious packages stealing credentials"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploit Roundcube flaw to spy on academic researchers",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-roundcube-flaw-to-spy-on-academic-researchers/",
+      "published": "2026-07-08T18:56:02",
+      "summary": "A China-linked threat cluster has been exploiting vulnerable Roundcube servers at U.S. and Canadian universities to steal credentials and deploy backdoor malware. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Exploitation of academic institutions for credential theft"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Entra passkey enrollment vishing targets Microsoft 365 users",
+      "url": "https://www.bleepingcomputer.com/news/security/entra-passkey-enrollment-vishing-targets-microsoft-365-users/",
+      "published": "2026-07-08T16:47:25",
+      "summary": "A threat actor has been targeting organizations across multiple sectors with voice-based fake security requests that ask Microsoft 365 users to enroll a new Entra passkey. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Vishing attack targeting Microsoft 365 users"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
+      "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+      "published": "2026-07-08T12:31:39",
+      "summary": "A cybersecurity startup dangling millions of dollars to acquire zero-day security vulnerabilities in popular software is run by a pair of far-right conspiracy theorists and convicted felons whose most recent ventures included fake intelligence companies and a now-defunct AI-based lobbying platform they operated under assumed names.",
+      "_gpt_score": 9,
+      "_gpt_reason": "Fraudulent cybersecurity startup"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
+      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+      "published": "2026-07-02T19:27:33",
+      "summary": "The Federal Bureau of Investigation (FBI) said today it worked with industry partners to seize hundreds of domains associated with NetNut, a sprawling residential proxy service operated by the publicly-traded Israeli company Alarum Technologies [NASDAQ: ALAR]. The action comes roughly two weeks after KrebsOnSecurity published findings from multiple security firms connecting NetNut to the Popa botnet, a collection of at least two million devices that have been compromised by malicious software wi",
+      "_gpt_score": 9,
+      "_gpt_reason": "FBI operation against proxy and botnet services"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
+      "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+      "published": "2026-07-09T10:43:09",
+      "summary": "Cybersecurity researchers have flagged a new ransomware family called GodDamn that employs the PoisonX kernel driver to neutralize security software as part of its defense evasion strategy. According to a new report published by the Threat Hunter Team from Symantec, the ransomware was first publicly spotted in the wild on May 21, 2026. It's assessed to be a rebrand of the Beast ransomware,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Ransomware using advanced evasion techniques"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Ghost Phishing Wave Is Breaking Traditional Email Security",
+      "url": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
+      "published": "2026-07-08T13:00:00",
+      "summary": "A recent EvilTokens campaign targeting businesses across the US and Europe is exposing a new email security blind spot. This \u201cghost phishing\u201d technique keeps the malicious page hidden until it decrypts and comes to life inside the victim\u2019s browser. For security leaders, the risk is clear: traditional URL checks may miss the attack while Microsoft 365 access, sensitive data, and response time",
+      "_gpt_score": 9,
+      "_gpt_reason": "New phishing technique bypassing email security"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "SCMBANKER Malware Uses ClickFix Lures to Target Mexican Banking Users",
+      "url": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
+      "published": "2026-07-08T12:52:15",
+      "summary": "A new banking fraudulent operation is targeting customers of Mexican banks, fintech, payment processors, and cryptocurrency exchanges using ClickFix lures. The activity cluster, tracked by Elastic Security Labs under the moniker REF6045, involves infecting victims through fake CAPTCHA verification pages that deceive them into running a malicious command that installs a PowerShell toolkit dubbed",
+      "_gpt_score": 9,
+      "_gpt_reason": "Fraud operation targeting banking users"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+      "url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
+      "published": "2026-07-07T17:10:15",
+      "summary": "A new Android malware operation called RedWing is being rented out on Telegram as a ready-made bank-fraud service. It lets even low-skill criminals take over a victim's phone, steal their banking logins, and capture the one-time codes that protect their accounts. Zimperium's zLabs, which found the operation, says it looks like a new variant of Oblivion, a $300-a-month rent-a-malware tool",
+      "_gpt_score": 9,
+      "_gpt_reason": "Android malware service targeting banking credentials"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Rogue Agent Flaw Could Have Let Attackers Hijack Google Dialogflow CX Chatbots",
+      "url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
+      "published": "2026-07-07T16:37:33",
+      "summary": "A critical flaw in Google's Dialogflow CX could have let an attacker with edit rights on one Code Block-enabled agent compromise other Code Block-enabled agents in the same Google Cloud project. From there, they could read live conversations, steal the data users shared, and make the bots send attacker-written messages, including requests to re-enter a password. Security firm Varonis found it",
+      "_gpt_score": 9,
+      "_gpt_reason": "Flaw in Google Dialogflow CX allowing data theft"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "DEBULL Tooling Abuses Microsoft Device-Code Flow to Target M365 Accounts",
+      "url": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html",
+      "published": "2026-07-07T15:14:14",
+      "summary": "A Microsoft 365 device code phishing campaign has been observed leveraging collaboration-themed lures to take control of victim accounts between the last week of June 2026 and into early July, per findings from ZeroBEC. \"The campaign did not depend on a fake Microsoft password page. It used a malicious collaboration-style lure to push users into the legitimate Microsoft device login experience,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Phishing campaign targeting Microsoft 365 accounts"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+      "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+      "published": "2026-07-07T09:10:51",
+      "summary": "A suspected China-aligned threat activity cluster has been observed exploiting Roundcube webmail software belonging to physics and engineering departments of U.S. and Canadian universities as part of a new campaign. The activity involves the exploitation of now-patched, critical security flaws in the open-source email solution, such as CVE-2024-42009 (CVSS score: 9.3), to siphon credentials,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Exploitation of Roundcube flaws by threat actors"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
+      "published": "2026-07-07T06:40:47",
+      "summary": "Several versions of firmware released by Chinese network device manufacturer Tenda have been found to embed an undocumented authentication backdoor that enables administrative access to the devices' web management interfaces, the CERT Coordination Center (CERT/CC) warned Monday. \"An attacker can exploit this vulnerability, tracked as CVE-2026-11405, to bypass the password verification process",
+      "_gpt_score": 9,
+      "_gpt_reason": "Backdoor in router firmware allowing unauthorized access"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+      "url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+      "published": "2026-07-07T05:16:51",
+      "summary": "BeyondTrust has released updates to address two critical security flaws affecting Remote Support (RS) and Privileged Remote Access (PRA) products that, if successfully exploited, could allow unauthenticated attackers to take control of susceptible devices. The vulnerabilities are listed below - CVE-2026-40138 (CVSS score: 9.2) - A pre-authentication vulnerability exists in the",
+      "_gpt_score": 9,
+      "_gpt_reason": "Critical auth bypass flaws in remote access products"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
+      "url": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html",
+      "published": "2026-07-06T10:58:16",
+      "summary": "A suspected China-nexus threat activity cluster has been observed targeting Indian taxpayers, tax professionals, and corporate finance teams to deliver a remote access trojan designed to steal sensitive data from compromised hosts. The multi-stage campaign, codenamed Operation DragonReturn by Seqrite Labs, involves sending spear-phishing emails impersonating the Income Tax Department of India.",
+      "_gpt_score": 9,
+      "_gpt_reason": "China-linked campaign targeting Indian financial sector"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New TrojPix Attack Leaks Data From Air-Gapped Systems via Video Cable Emissions",
+      "url": "https://thehackernews.com/2026/07/new-trojpix-attack-leaks-data-from-air.html",
+      "published": "2026-07-06T08:50:54",
+      "summary": "Researchers at Shandong University have shown a fast new way to pull data off computers that are cut off from every network. The technique, called TrojPix, tweaks on-screen pixels in ways the eye cannot see, so that the video cable carrying them radiates a faint radio signal a nearby receiver can decode. But TrojPix works only once malware is already on the target machine, so it",
+      "_gpt_score": 9,
+      "_gpt_reason": "Data exfiltration technique from air-gapped systems"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Opera GX Flaw Let Malicious Sites Auto-Install Mods to Steal Data From Visited Pages",
+      "url": "https://thehackernews.com/2026/07/opera-gx-flaw-let-malicious-sites-auto.html",
+      "published": "2026-07-06T07:27:50",
+      "summary": "Researchers found a flaw in Opera GX, the gaming-focused version of the Opera browser, that let a malicious website silently install a browser add-on and use it to lift specific data from the pages a victim visits. In a proof of concept, they reconstructed a signed-in user's full Gmail address from a single visit, with no click. Opera has patched the flaw and says it found no evidence that",
+      "_gpt_score": 9,
+      "_gpt_reason": "Browser flaw allowing data theft from visited pages"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign",
+      "url": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
+      "published": "2026-07-04T11:17:24",
+      "summary": "The North Korean threat actors linked to the Contagious Interview campaign have been observed publishing 108 unique packages and web browser extensions spanning npm, Packagist, Go, and Google Chrome as part of an ongoing activity referred to as PolinRider. \"The campaign remains active, and new malicious packages are likely to continue appearing as threat actors compromise maintainer accounts,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Malicious packages and extensions by North Korean actors"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Unpatched Flaws Disclosed in Filesystem Bundled Into Millions of Embedded Devices",
+      "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
+      "published": "2026-07-03T20:19:31",
+      "summary": "Security firm runZero has disclosed seven vulnerabilities in FatFs, a small filesystem library that lets a device read and write the FAT and exFAT formats used on USB drives and SD cards. The flaws matter because FatFs is nearly everywhere. It ships inside the firmware that runs security cameras, drones, industrial controllers, hardware crypto wallets, and other devices built on",
+      "_gpt_score": 9,
+      "_gpt_reason": "Unpatched flaws in widely used filesystem library"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New \"Bad Epoll\" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Hits Android",
+      "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+      "published": "2026-07-03T19:40:01",
+      "summary": "A newly disclosed Linux kernel flaw called Bad Epoll (CVE-2026-46242) lets an ordinary user with no special access take full control of a machine as root. It affects Linux desktops, servers, and Android, and a fix is out. Bad Epoll sits in the same small stretch of kernel code where Anthropic's most powerful AI model, Mythos, recently found a different bug. The AI caught one flaw and missed",
+      "_gpt_score": 9,
+      "_gpt_reason": "Linux kernel flaw allowing root access"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Avalon Malware Framework Packs CrownX Ransomware Capabilities",
+      "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
+      "published": "2026-07-03T18:55:24",
+      "summary": "Cybersecurity researchers have discovered a previously undocumented modular malware framework codenamed Avalon that's distributed by means of a multi-stage phishing chain capable of bypassing traditional security controls. Avalon combines credential collection, lateral movement, remote access, recovery disruption, and ransomware execution, bringing together diverse functions under one",
+      "_gpt_score": 9,
+      "_gpt_reason": "Modular malware framework with ransomware capabilities"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets",
+      "url": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
+      "published": "2026-07-03T16:07:15",
+      "summary": "Threat actors with ties to North Korea have been linked to a fresh set of malicious npm packages that masquerade as Rollup polyfill tooling to facilitate remote access and data theft. According to JFrog, the packages \"rollup-packages-polyfill-core\" and \"rollup-runtime-polyfill-core\" mimic the legitimate \"rollup-plugin-polyfill-node\" project, down to the description, repository metadata, and",
+      "_gpt_score": 9,
+      "_gpt_reason": "North Korean packages mimicking legitimate tools for data theft"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Armored Likho Targets Government Agencies, Power Sector with BusySnake Stealer",
+      "url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
+      "published": "2026-07-03T13:36:33",
+      "summary": "A previously undocumented threat actor known as Armored Likho has been attributed to cyber attacks targeting government agencies and the electric power sector across Russia, Brazil, and Kazakhstan. \"Armored Likho blends financially motivated campaigns targeting private individuals with targeted cyber espionage aimed at organizations,\" Kaspersky said in a technical analysis published today. \"",
+      "_gpt_score": 9,
+      "_gpt_reason": "Cyber attacks targeting government and power sectors"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "European Parliament Member Investigating Spyware Was Hacked With Pegasus",
+      "url": "https://thehackernews.com/2026/07/european-parliament-member.html",
+      "published": "2026-07-03T11:05:43",
+      "summary": "A new report from the Citizen Lab has revealed that former Member of the European Parliament Stelios Kouloglou had his mobile device repeatedly hacked with the notorious Pegasus spyware while serving on a committee that was tasked with investigating the abuse of such commercial surveillance tools in the bloc. \"Through forensic analysis of his device, we found that the attackers could have had",
+      "_gpt_score": 9,
+      "_gpt_reason": "Spyware attack on European Parliament member"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "PamStealer Uses Fake Maccy Sites and PAM Checks to Steal Mac Login Passwords",
+      "url": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
+      "published": "2026-07-03T08:03:37",
+      "summary": "Cybersecurity researchers have flagged a new macOS information stealer called PamStealer that employs a series of clever tricks to infect systems and siphon sensitive data. The stealer, discovered by Jamf Threat Labs, is distributed as a compiled AppleScript (.scpt) file impersonating Maccy, a legitimate open-source clipboard manager. It has been codenamed PamStealer owing to its ability to",
+      "_gpt_score": 9,
+      "_gpt_reason": "MacOS stealer targeting login credentials"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Google Disrupts NetNut Residential Proxy Network Spanning 2 Million Home Devices",
+      "url": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
+      "published": "2026-07-02T18:54:06",
+      "summary": "Google has significantly degraded NetNut, one of the biggest networks that turns home devices into rented relays for other people's traffic. Working with the FBI, Lumen, and others, Google's Threat Intelligence Group (GTIG) said this week it had reduced the network's pool of usable devices by millions. Google identifies NetNut, also tracked as Popa, as a network spread across home",
+      "_gpt_score": 9,
+      "_gpt_reason": "Disruption of large proxy network by Google"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ransomware Groups Turn to Citrix Bleed 2, BYOVD, and Supply Chain Credentials",
+      "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+      "published": "2026-07-02T18:30:33",
+      "summary": "Threat actors associated with the Anubis ransomware operation have been observed exploiting the Citrix Bleed 2 (CVE-2025-5777) vulnerability to obtain initial access. \"Although tactics differ between affiliates, common patterns emerged in tradecraft through use of legitimate Remote Management and Monitoring (RMM) tooling, credential access, and hands-on-keyboard procedures used for lateral",
+      "_gpt_score": 9,
+      "_gpt_reason": "Ransomware exploiting Citrix vulnerability"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Extortion crew hijacks Microsoft 365 accounts via fake passkey setup",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/microsoft-365-fake-passkey-setup-enrollment/",
+      "published": "2026-07-09T14:22:35",
+      "summary": "The Pink cyber extortion crew is tricking employees into giving them access to their Microsoft 365 accounts by faking Entra passkey enrollment requests. The attack The attack starts with a vishing call to an employee. The caller poses as IT and says it&#8217;s time to set up a passkey. Everything after that is theater, built to keep the victim occupied while the attacker finalizes everything. The attackers instruct the target to visit a subdomain that &#8230; More &#8594; The post Extortion crew",
+      "_gpt_score": 9,
+      "_gpt_reason": "Extortion crew hijacking Microsoft 365 accounts"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "The fake report message that ends with a stolen Reddit account",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/reddit-false-report-scam-direct-message/",
+      "published": "2026-07-09T05:30:10",
+      "summary": "A direct message arrives on Reddit from a stranger, and it invites a reply. That reply is the point. This scheme runs on social engineering, with no malware and no malicious links, and it has spread across Reddit, Discord, and similar platforms. The goal is a single piece of information: a login or verification code that hands your account to someone else. &#8220;The conversation usually starts with one of two claims. Either the person says &#8230; More &#8594; The post The fake report message t",
+      "_gpt_score": 9,
+      "_gpt_reason": "Social engineering attack on Reddit and similar platforms"
+    }
+  ]
+}

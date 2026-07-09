@@ -1,0 +1,848 @@
+{
+  "collection_date": "2026-07-09",
+  "rss_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Which Countries Have the Busiest SMS Firewalls?",
+      "url": "https://commsrisk.com/which-countries-operate-the-busiest-sms-firewalls/",
+      "published": "2026-07-07T07:13:51",
+      "summary": "A new map in the Commsrisk Global Fraud Dashboard compares published SMS-blocking figures using a population-adjusted score. The post Which Countries Have the Busiest SMS Firewalls? appeared first on Commsrisk."
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Webinar Recap: Collaborating for Confidence: Applying the Trust Framework Across Industries",
+      "url": "https://cfca.org/webinar-recap-collaborating-for-confidence-applying-the-trust-framework-across-industries/",
+      "published": "2026-07-02T20:49:09",
+      "summary": "Trust is the foundation of every successful customer interaction. But as fraud and spoofing risks keep rising, trust is harder to earn and easier to lose, especially across voice and [&#8230;]"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric PowerChute Serial Shutdown",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-02",
+      "published": "2026-07-09T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow attackers to overwrite critical files, forge or inject malicious log data, gain unauthorized account access, trigger denial\u2011of\u2011service conditions, truncate or alter logging information, reset user credentials, or expose sensitive information. The following versions of Schneider Electric PowerChute Serial Shutdown are affected: PowerChute Serial Shutdown <=1.4 CVSS Vendor Equipment Vulnerabilities v3 6.1 SuSE, Schneide"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "OpenPLC v3",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-01",
+      "published": "2026-07-09T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of this vulnerability could allow an authenticated attacker to write arbitrary files to the filesystem and escalate this into arbitrary native code execution through the normal OpenPLC program compilation process, potentially resulting in code execution as the OpenPLC runtime user. The following versions of OpenPLC v3 are affected: OpenPLC v3 CVSS Vendor Equipment Vulnerabilities v3 9.9 OpenPLC OpenPLC v3 External Control of File Name or Path Background "
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Schneider Electric Easergy MiCOM Px40 Series",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-190-03",
+      "published": "2026-07-09T12:00:00",
+      "summary": "View CSAF Summary Schneider Electric is aware of a vulnerability in its Easergy MiCOM Px40 Series products. The [Easergy MiCOM Px40](https://www.se.com/ww/en/product-subcategory/4725-easergy-micom-px40-series/?filter=business-6-medium-voltage-distribution-and-grid-automation) is a protection relay series for Medium Voltage, High Voltage and Extra High Voltage protection. Failure to apply the mitigations provided below may risk unauthorized exposure of basic device identification through the SNMP"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds Three Known Exploited Vulnerabilities to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/07/07/cisa-adds-three-known-exploited-vulnerabilities-catalog",
+      "published": "2026-07-07T12:00:00",
+      "summary": "CISA has added three new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48908 JoomShaper SP Page Builder Unrestricted Upload of File with Dangerous Type Vulnerability CVE-2026-55255 Langflow Authorization Bypass Through User-Controlled Key Vulnerability CVE-2026-56290 Joomlack Page Builder Improper Access Control Vulnerability These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose s"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy PROMOD V",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-02",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of insecure HTTP transmission vulnerability in PROMOD V product versions listed in this document. This vulnerability could allow attackers to intercept or manipulate sensitive data in transit, potentially leading to credential theft, session hijacking, or unauthorized access. The following versions of Hitachi Energy PROMOD V are affected: PROMOD V vers:PROMOD_V/<=1.0.10 CVSS Vendor Equipment Vulnerabilities v3 7.1 Hitachi Energy Hitachi Energy PROMOD V R"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens SINEC OS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-05",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary SINEC OS before V4.0 contains multiple vulnerabilities. Siemens has released a new version for RUGGEDCOM RST2428P and recommends to update to the latest version. The following versions of Siemens SINEC OS are affected: RUGGEDCOM RST2428P (6GK6242-6PA00) vers:intdot/<4.0 CVSS Vendor Equipment Vulnerabilities v3 9.8 Siemens Siemens SINEC OS Improper Restriction of Operations within the Bounds of a Memory Buffer, Improper Resource Shutdown or Release, Integer Overflow or Wraparoun"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "CISA Adds One Known Exploited Vulnerability to Catalog",
+      "url": "https://www.cisa.gov/news-events/alerts/2026/07/07/cisa-adds-one-known-exploited-vulnerability-catalog",
+      "published": "2026-07-07T12:00:00",
+      "summary": "CISA has added one new vulnerability to its Known Exploited Vulnerabilities (KEV) Catalog, based on evidence of active exploitation. CVE-2026-48282 Adobe ColdFusion Path Traversal Vulnerability This type of vulnerability is a frequent attack vector for malicious cyber actors and poses significant risks to the federal enterprise. Binding Operational Directive (BOD) 26-04: Prioritizing Security Updates Based on Risk establishes vulnerability management requirements for Federal Civilian Executive B"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hydro-Qu\u00e9bec Le Circuit Electrique charging station backend",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-01",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could lead to privilege escalation, or result in a denial-of-service attack. The following versions of Hydro-Qu\u00e9bec Le Circuit Electrique charging station backend are affected: Le Circuit Electrique charging station backend CVSS Vendor Equipment Vulnerabilities v3 9.8 Hydro-Qu\u00e9bec Hydro-Qu\u00e9bec Le Circuit Electrique charging station backend Improper Access Control, Improper Restriction of Excessive Authentication Attempts, Insuffi"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Siemens Mendix Studio Pro",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-04",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Mendix Studio Pro versions before V11.12 are affected by a file parsing vulnerability that could be triggered when the application reads specially crafted malicious project during the build pipeline. This could allow an attacker to execute arbitrary code in the context of that user. Siemens has released new versions for several affected products and recommends to update to the latest versions. Siemens is preparing further fix versions and recommends countermeasures for products"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Labcenter Proteus 9",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-06",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could disclose information and allow a malicious user to execute arbitrary code on affected installations. The following versions of Labcenter Proteus 9 are affected: Proteus 9.1_SP4_Build_42914 CVSS Vendor Equipment Vulnerabilities v3 7.8 Labcenter Electronics Labcenter Proteus 9 Out-of-bounds Write, Stack-based Buffer Overflow, Use After Free Background Critical Infrastructure Sectors: Communications, Critical Manufacturing, De"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Hitachi Energy e-mesh EMS",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-03",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Hitachi Energy is aware of a buffer overflow vulnerability that affects e-mesh EMS product versions listed in this document. Successful exploitation of this vulnerability could lead to a buffer overflow condition, potentially resulting in application outages (denial of service) and possible arbitrary code execution. Please refer to the Recommended Immediate Actions for information about the mitigation/remediation. The following versions of Hitachi Energy e-mesh EMS are affected"
+    },
+    {
+      "source": "CISA Advisories",
+      "category": "security_advisories",
+      "title": "Digi International PortServer TS, Digi One SP IA",
+      "url": "https://www.cisa.gov/news-events/ics-advisories/icsa-26-188-07",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View CSAF Summary Successful exploitation of these vulnerabilities could allow an attacker to bypass authentication and gain access to restricted resources, obtain credentials, and inject malicious scripts. The following versions of Digi International PortServer TS, Digi One SP IA are affected: PortServer TS Digi One SP Digi One SP IA Digi One IA CVSS Vendor Equipment Vulnerabilities v3 5.9 Digi International Digi International PortServer TS, Digi One SP IA Incorrect Authorization, Improper Neut"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Vidar Stealer Unmasked: Code Signing Abuse, Go Loaders and File Inflation",
+      "url": "https://unit42.paloaltonetworks.com/vidar-stealer-xmrig-miner-campaign-analysis/",
+      "published": "2026-07-07T22:00:21",
+      "summary": "A cybercrime campaign combined a loader-as-a-service framework and DLL sideloading via a Go-compiled fake MpClient.dll, a novel evasion layer combination. The post Vidar Stealer Unmasked: Code Signing Abuse, Go Loaders and File Inflation appeared first on Unit 42."
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "How We Added WebAuthn to a Browser-Based RDP Client",
+      "url": "https://unit42.paloaltonetworks.com/webauthn-added-to-browser-based-rdp/",
+      "published": "2026-07-02T22:00:39",
+      "summary": "A look inside the reverse-engineering journey of building the first RDP client outside of Windows to support WebAuthn redirection. The post How We Added WebAuthn to a Browser-Based RDP Client appeared first on Unit 42."
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "How to Choose the Best Data Broker Removal Service for Your Organization",
+      "url": "https://www.zerofox.com/blog/best-data-broker-removal-service",
+      "published": "2026-07-08T10:08:34",
+      "summary": "The market for data broker removal runs the full range, from free do-it-yourself opt-out guides to consumer subscriptions like DeleteMe to enterprise platforms built for corporate security teams. For an individual cleaning up their own digital footprint, almost any of these can help. For a security team responsible for protecting executives, their families, and a [&hellip;]"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC, States Secure Settlement with Deere & Company, Advancing Farmers\u2019 Right to Repair",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-secure-settlement-deere-company-advancing-farmers-right-repair",
+      "published": "2026-07-08T12:00:00",
+      "summary": "Settlement resolves FTC and states\u2019 lawsuit alleging Deere unfairly restricted the ability of farmers and independent technicians to repair John Deere farm equipment The Federal Trade Commission, along with five states, secured an important settlement in an antitrust lawsuit against farm equipment manufacturer Deere & Company that will ensure farmers can enjoy the right to repair their own John Deere tractors and farm equipment.View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Sends More Than $2.7 Million to Consumers Harmed by Handy Technologies",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-sends-more-27-million-consumers-harmed-handy-technologies",
+      "published": "2026-07-07T12:00:00",
+      "summary": "View Press Release"
+    },
+    {
+      "source": "FTC Consumer Alerts",
+      "category": "consumer_protection",
+      "title": "FTC Warns Companies Making Questionable \u2018Made in the USA\u2019 Claims",
+      "url": "https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-warns-companies-making-questionable-made-usa-claims",
+      "published": "2026-07-06T12:00:00",
+      "summary": "Warning letters sent to seven companies urge compliance with FTC\u2019s Made in the USA Standard The Federal Trade Commission today issued warning letters to seven companies that appear to have misrepresented certain products as \u201cMade in the USA,\u201d and one company that appears to have misrepresented certain products as \u201cMade in Texas,\u201d despite indications that such products were imported, in whole or in significant part.View Press Release"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Latvian forestry company still restoring systems weeks after ransomware attack",
+      "url": "https://therecord.media/latvia-state-owned-foresty-company-lvm-ransomware",
+      "published": "2026-07-09T14:20:00",
+      "summary": "A foreign, financially motivated group was responsible for a cyberattack on state-owned forestry company Latvijas Valsts Mezi (LVM), officials said."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "NSA revives 'Tailored Access Operations' name for elite hacking unit",
+      "url": "https://therecord.media/nsa-revives-tao-name-for-elite-hacking-unit",
+      "published": "2026-07-09T13:20:00",
+      "summary": "NSA last week changed the moniker of its Office of Computer Network Operations (CNO) back to Tailored Access Operations (TAO), a name that is sure to elicit nostalgia among the broader digital community for a group with roots in the early 1990s."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "EU takes member states to court over unimplemented cybersecurity law",
+      "url": "https://therecord.media/eu-cyber-filing-ireland-spain-france-netherlands-nis2",
+      "published": "2026-07-09T13:10:02",
+      "summary": "Ireland, Spain, France and the Netherlands are more than 20 months late in transposing the NIS2 Directive for the cybersecurity of critical infrastructure."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Greek victims file lawsuit against Intellexa over Predator spyware",
+      "url": "https://therecord.media/greek-victims-file-lawsuit-against-intellexa-spyware",
+      "published": "2026-07-08T20:20:00",
+      "summary": "The use of the spyware came to light in 2022, with traces of Predator found on dozens of phones. The scandal led to the resignation of Greece\u2019s intelligence service chief and the prime minister\u2019s chief of staff."
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Cash App owner to pay $45 million to settle allegations of lax security",
+      "url": "https://therecord.media/cash-app-owner-to-pay-45-million-security-allegations",
+      "published": "2026-07-08T20:14:00",
+      "summary": "State attorneys general announced the bipartisan agreement with Block, Inc. on Wednesday, saying that the company incorrectly promised users that Cash App offered the same protections as a bank."
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New Forg365 phishing platform uses AI to target Microsoft 365 accounts",
+      "url": "https://www.bleepingcomputer.com/news/security/new-forg365-phishing-platform-uses-ai-to-target-microsoft-365-accounts/",
+      "published": "2026-07-09T14:39:51",
+      "summary": "A new phishing-as-a-service (PhaaS) operation called Forg365 focuses on stealing Microsoft 365 accounts by combining adversary-in-the-middle (AiTM) and device code methods with AI-assisted lure generation. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "The Hidden Security Risks of Reduced Summer IT Coverage",
+      "url": "https://www.bleepingcomputer.com/news/security/the-hidden-security-risks-of-reduced-summer-it-coverage/",
+      "published": "2026-07-09T14:02:12",
+      "summary": "Security operations don't slow down when IT teams take vacation, but staffing levels often do. Kaseya explains how AI-driven automation can help organizations maintain consistent security operations and reduce reliance on manual processes year-round. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft to retire the OWA Light client in Exchange Server",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-announces-owa-light-retirement-in-exchange-server/",
+      "published": "2026-07-09T11:00:35",
+      "summary": "Microsoft has announced plans to disable Outlook Web Access (OWA) Light, the lightweight version of the Outlook Web App email client, in a future Exchange Server update. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Police arrests 5,800 suspects in global anti-fraud crackdown",
+      "url": "https://www.bleepingcomputer.com/news/security/police-arrests-5-800-suspects-in-global-anti-fraud-crackdown/",
+      "published": "2026-07-09T09:47:28",
+      "summary": "Law enforcement agencies have arrested 5,811 suspects and seized $293 million in illicit assets in a global anti-fraud operation spanning 97 countries. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "AssuranceAmerica data breach exposes records of 6.9 million drivers",
+      "url": "https://www.bleepingcomputer.com/news/security/assuranceamerica-data-breach-exposes-records-of-69-million-drivers/",
+      "published": "2026-07-09T07:47:16",
+      "summary": "American insurance company AssuranceAmerica has disclosed a data breach impacting nearly 7 million drivers after attackers gained access to its systems earlier this year. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Microsoft patches RoguePlanet Defender zero-day vulnerability",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-patches-rogueplanet-defender-zero-day-vulnerability/",
+      "published": "2026-07-09T05:42:49",
+      "summary": "Microsoft has released a security patch to address a Defender zero-day vulnerability known as \"RoguePlanet,\" disclosed after the June 2026 Patch Tuesday. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Mount Royal University confirms breach as hackers claim attack",
+      "url": "https://www.bleepingcomputer.com/news/security/mount-royal-university-confirms-breach-as-hackers-claim-attack/",
+      "published": "2026-07-08T21:26:59",
+      "summary": "Mount Royal University in Calgary says hackers stole and then deleted data from its file storage systems after breaching the university's network. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Fake Paysafe, Skrill SDKs on NPM and PyPi steal credentials",
+      "url": "https://www.bleepingcomputer.com/news/security/fake-paysafe-skrill-sdks-on-npm-and-pypi-steal-credentials/",
+      "published": "2026-07-08T19:54:59",
+      "summary": "Malicious packages on the Node Package Manager (npm) and the Python Package Index (PyPI) delivered stealer malware to developers and users of Paysafe, Skrill, and Neteller payment applications. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers exploit Roundcube flaw to spy on academic researchers",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-roundcube-flaw-to-spy-on-academic-researchers/",
+      "published": "2026-07-08T18:56:02",
+      "summary": "A China-linked threat cluster has been exploiting vulnerable Roundcube servers at U.S. and Canadian universities to steal credentials and deploy backdoor malware. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Entra passkey enrollment vishing targets Microsoft 365 users",
+      "url": "https://www.bleepingcomputer.com/news/security/entra-passkey-enrollment-vishing-targets-microsoft-365-users/",
+      "published": "2026-07-08T16:47:25",
+      "summary": "A threat actor has been targeting organizations across multiple sectors with voice-based fake security requests that ask Microsoft 365 users to enroll a new Entra passkey. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "3 Ways AI Powers Service Desk Attacks and How to Prevent Them",
+      "url": "https://www.bleepingcomputer.com/news/security/3-ways-ai-powers-service-desk-attacks-and-how-to-prevent-them/",
+      "published": "2026-07-08T14:01:11",
+      "summary": "Specops Software explains how AI is making service desk impersonation attacks more convincing, personalized, and scalable, along with practical steps organizations can take to strengthen onboarding and identity verification. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "DuckDuckGo browser now blocks YouTube video ads",
+      "url": "https://www.bleepingcomputer.com/news/software/duckduckgo-browser-now-blocks-youtube-video-ads/",
+      "published": "2026-07-08T12:00:00",
+      "summary": "DuckDuckGo announced that its browser can now block most video ads on YouTube, including those shown before the video starts playing and during playback. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Telco giant KDDI says data breach affects over 12 million people",
+      "url": "https://www.bleepingcomputer.com/news/security/japanese-telecom-giant-kddi-says-data-breach-affects-12-million-people/",
+      "published": "2026-07-08T11:24:16",
+      "summary": "Japanese telecommunications giant KDDI says that millions of people had their email addresses and passwords exposed after attackers breached an email platform used by five internet service providers (ISPs) in the country. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA orders feds to prioritize patching Langflow auth bypass flaw",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-prioritize-patching-langflow-auth-bypass-flaw/",
+      "published": "2026-07-08T09:58:11",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) gave federal agencies until Friday to patch an actively exploited vulnerability in the Langflow visual framework for building AI agents. [...]"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Ubiquiti warns of new max severity  UniFi OS vulnerability",
+      "url": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
+      "published": "2026-07-08T08:15:20",
+      "summary": "Ubiquiti has released security updates to patch seven critical vulnerabilities in UniFi OS, including a maximum-severity flaw that can be exploited in command injection attacks. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
+      "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+      "published": "2026-07-08T12:31:39",
+      "summary": "A cybersecurity startup dangling millions of dollars to acquire zero-day security vulnerabilities in popular software is run by a pair of far-right conspiracy theorists and convicted felons whose most recent ventures included fake intelligence companies and a now-defunct AI-based lobbying platform they operated under assumed names."
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
+      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+      "published": "2026-07-02T19:27:33",
+      "summary": "The Federal Bureau of Investigation (FBI) said today it worked with industry partners to seize hundreds of domains associated with NetNut, a sprawling residential proxy service operated by the publicly-traded Israeli company Alarum Technologies [NASDAQ: ALAR]. The action comes roughly two weeks after KrebsOnSecurity published findings from multiple security firms connecting NetNut to the Popa botnet, a collection of at least two million devices that have been compromised by malicious software wi"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Fiber Bytes: euNetworks, Lightpath, Kirkwood IG",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaX8iXGtoa6W-BCtHhrZJhjm?utm_source=follow.it",
+      "published": "2026-07-09T12:08:10",
+      "summary": "Three interesting new regional fiber projects, one by a new name: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Infra Bytes: VFE, DE-CIX, South Front, Duos, Lumen",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWvHkLdkPY0MPhg6exDPqRd?utm_source=follow.it",
+      "published": "2026-07-08T11:40:44",
+      "summary": "Three metro expansion projects and one bit of M&A news: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Tuesday Roundup: RETN, Nokia, DE-CIX, Nscale",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaUmFRgeBsPRZ5fa9AtxhdHe?utm_source=follow.it",
+      "published": "2026-07-07T12:37:24",
+      "summary": "A few items from around the world: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "AI Attacks Move in Minutes. Join This Webinar on Building a Defense That Keeps Up",
+      "url": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html",
+      "published": "2026-07-09T12:26:58",
+      "summary": "AI has changed how fast attacks move. Work that once took an attacker days now takes minutes. Using models like Mythos, attackers write tailored bait, pick targets, test what lands, and jump to the next host before your team clears the first alert. That is the gap, and it is not your fault. The tools and runbooks most teams run on were built for attackers who work at human speed. AI-driven"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Summer of Clearinghouses",
+      "url": "https://thehackernews.com/2026/07/summer-of-clearinghouses.html",
+      "published": "2026-07-09T11:00:00",
+      "summary": "Everyone seems to have announced a clearinghouse over the past few weeks. We did too. Ours is called Athena, and the main thing that sets it apart is that it was already real and running when we announced it \u2014 built quietly months earlier, heads down, taking findings and shipping fixes, because customers kept asking us to. We only announced it now because everyone else started announcing theirs,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
+      "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+      "published": "2026-07-09T10:43:09",
+      "summary": "Cybersecurity researchers have flagged a new ransomware family called GodDamn that employs the PoisonX kernel driver to neutralize security software as part of its defense evasion strategy. According to a new report published by the Threat Hunter Team from Symantec, the ransomware was first publicly spotted in the wild on May 21, 2026. It's assessed to be a rebrand of the Beast ransomware,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges",
+      "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+      "published": "2026-07-09T08:48:48",
+      "summary": "Microsoft has released security updates for a Defender vulnerability known as RoguePlanet, nearly a month after details of the flaw became public. The vulnerability, tracked as CVE-2026-50656 (CVSS score: 7.8), is a privilege escalation issue in the Microsoft Malware Protection Engine (\"mpengine.dll\"), which provides scanning, detection, and cleaning capabilities for its antivirus and"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Meta's New AI Image Tool Lets Others Use Your Public Instagram Photos in AI Images",
+      "url": "https://thehackernews.com/2026/07/metas-new-ai-image-tool-lets-others-use.html",
+      "published": "2026-07-09T07:21:06",
+      "summary": "Meta has announced that its new artificial intelligence (AI) model Muse Image lets people use public Instagram posts and reels to generate AI content, and it's enabled by default. \"You can also @-mention Instagram accounts in the Meta AI app to bring specific Instagram profiles right into your images,\" the social media giant said in a post. \"Whether you want to design a custom event invitation"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Top\u00a0AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It",
+      "url": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
+      "published": "2026-07-09T05:15:02",
+      "summary": "Ask an AI coding agent to scan open-source code for security holes, and it might run the attacker's code on your own machine instead. That is the finding in a proof-of-concept published Wednesday by the AI Now Institute, an attack it calls \"Friendly Fire.\" It works against Anthropic's Claude Code and OpenAI's Codex when either is running in an autonomous mode that approves its own"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GhostApproval Symlink Flaws Could Let Malicious Repos Run Code in AI Coding Agents",
+      "url": "https://thehackernews.com/2026/07/ghostapproval-symlink-flaws-could-let.html",
+      "published": "2026-07-09T04:27:18",
+      "summary": "Researchers at Wiz found that a flaw in six popular AI coding assistants lets a booby-trapped code project quietly take control of a developer's computer. The assistant asks permission to edit one harmless-looking file, but the write lands on a sensitive one instead. The affected tools are Amazon Q Developer, Anthropic's Claude Code, Augment, Cursor, Google Antigravity, and Windsurf."
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Fake 7-Zip Installers Turn Devices Into Residential Proxy Nodes",
+      "url": "https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html",
+      "published": "2026-07-09T04:01:49",
+      "summary": "Cybersecurity researchers have disclosed details of a new threat actor dubbed Lurking Lizard that has been operating an end-to-end malicious residential proxy business using an infrastructure comprising more than 230 lookalike domains. The activity dates back to at least August 2022, according to DNS threat intelligence firm Infoblox. Once such campaign, observed earlier this year, involved the"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers",
+      "url": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
+      "published": "2026-07-08T17:02:12",
+      "summary": "Sophos looked at a week of its own endpoint data and found that AI coding agents such as Claude Code, Cursor, and OpenAI Codex are setting off detection rules written to catch human intruders. The agents are not malicious. They just do a lot of things that, to a behavioral engine, look exactly like an attack. Decrypting browser credentials, listing what sits in Windows' credential store,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware",
+      "url": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
+      "published": "2026-07-08T15:07:24",
+      "summary": "AI coding assistants have a habit of making things up. Ask one to fetch a popular tool, and it will sometimes hand back a real-sounding name for a project that does not exist. New research, which its authors call HalluSquatting, turns that habit into an attack: work out the fake names an AI reliably invents, register them first, and wait for the assistant to fetch your trap on a user's"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ubiquiti Patches Critical UniFi Flaws Across Connect, Talk, Access, Protect, and OS",
+      "url": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
+      "published": "2026-07-08T14:38:05",
+      "summary": "Ubiquiti has shipped updates to address multiple critical security flaws impacting UniFi Connect, UniFi Talk, UniFi Access, UniFi Protect, and UniFi OS that could result in privilege escalation and arbitrary command execution. The list of vulnerabilities is as follows - CVE-2026-50746 (CVSS score: 10.0) - An improper access control vulnerability in UniFi Connect Application that an attacker"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Ghost Phishing Wave Is Breaking Traditional Email Security",
+      "url": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
+      "published": "2026-07-08T13:00:00",
+      "summary": "A recent EvilTokens campaign targeting businesses across the US and Europe is exposing a new email security blind spot. This \u201cghost phishing\u201d technique keeps the malicious page hidden until it decrypts and comes to life inside the victim\u2019s browser. For security leaders, the risk is clear: traditional URL checks may miss the attack while Microsoft 365 access, sensitive data, and response time"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "SCMBANKER Malware Uses ClickFix Lures to Target Mexican Banking Users",
+      "url": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
+      "published": "2026-07-08T12:52:15",
+      "summary": "A new banking fraudulent operation is targeting customers of Mexican banks, fintech, payment processors, and cryptocurrency exchanges using ClickFix lures. The activity cluster, tracked by Elastic Security Labs under the moniker REF6045, involves infecting victims through fake CAPTCHA verification pages that deceive them into running a malicious command that installs a PowerShell toolkit dubbed"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GitHub 'Verified' Commits Can Be Rewritten Into New Hashes Without Breaking Signatures",
+      "url": "https://thehackernews.com/2026/07/github-verified-commits-can-be.html",
+      "published": "2026-07-08T11:51:24",
+      "summary": "New research shows that a signed Git commit's hash is not the one-of-a-kind name that much of the software world assumes it to be. Given any signed commit, someone without the signing key can mint a second commit with the same files, author, and date, and a valid signature, GitHub still stamps \"Verified.\" Everything a reviewer would check matches. The commit's hash does not. That matters"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "The Verification Step Is the New ATO Battleground in 2026",
+      "url": "https://thehackernews.com/2026/07/the-verification-step-is-new-ato.html",
+      "published": "2026-07-08T11:30:00",
+      "summary": "For years, account takeover (ATO) followed a predictable script. Attackers bought stolen credentials in bulk, ran them through automated tools, and waited for matches. Credential stuffing was cheap, scalable, and for defenders, relatively well understood. That era is ending. Not because attackers gave up, but because the front door finally got harder to kick in. Passkeys are now mainstream."
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GitHub Copilot Refuses Harmful Requests in Chat, Then Writes Them in Code",
+      "url": "https://thehackernews.com/2026/07/github-copilot-refuses-harmful-requests.html",
+      "published": "2026-07-08T11:21:07",
+      "summary": "An AI coding assistant that refuses to answer a dangerous request in its chat box can answer it anyway if the same request is broken into small, ordinary-looking steps inside a code editor. That is the finding of a new study of GitHub Copilot by researchers Abhishek Kumar and Carsten Maple. The models they tested through Copilot, Claude from Anthropic, and Gemini from Google, refused"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "China-Linked UAT-7810 Expands ORB Network With New LONGLEASH Malware",
+      "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html",
+      "published": "2026-07-08T09:04:33",
+      "summary": "A Chinese threat actor tracked as UAT-7810 is actively refining its bespoke malware to expand its Operational Relay Box (ORB) network by breaking into internet-facing networking devices. According to findings from Cisco Talos, UAT-7810 is an advanced persistent threat (APT) actor that's responsible for maintaining and proliferating LapDogs, an ORB network that first came to light in June 2025."
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+      "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+      "published": "2026-07-08T06:16:44",
+      "summary": "Researchers at Nebula Security have disclosed GhostLock (CVE-2026-43499), a 15-year-old Linux kernel flaw that lets any logged-in user take full root control of a machine that has not been patched. The vulnerable code has shipped by default in essentially every mainstream distribution since 2011. The flaw needs no special permission, no unusual settings, and no network"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "published": "2026-07-08T05:33:12",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation. The vulnerabilities are listed below - CVE-2026-48282 (CVSS score: 10.0) - A path traversal vulnerability in Adobe ColdFusion that could lead to arbitrary code execution in the context of the"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+      "url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
+      "published": "2026-07-07T17:10:15",
+      "summary": "A new Android malware operation called RedWing is being rented out on Telegram as a ready-made bank-fraud service. It lets even low-skill criminals take over a victim's phone, steal their banking logins, and capture the one-time codes that protect their accounts. Zimperium's zLabs, which found the operation, says it looks like a new variant of Oblivion, a $300-a-month rent-a-malware tool"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Rogue Agent Flaw Could Have Let Attackers Hijack Google Dialogflow CX Chatbots",
+      "url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
+      "published": "2026-07-07T16:37:33",
+      "summary": "A critical flaw in Google's Dialogflow CX could have let an attacker with edit rights on one Code Block-enabled agent compromise other Code Block-enabled agents in the same Google Cloud project. From there, they could read live conversations, steal the data users shared, and make the bots send attacker-written messages, including requests to re-enter a password. Security firm Varonis found it"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "DEBULL Tooling Abuses Microsoft Device-Code Flow to Target M365 Accounts",
+      "url": "https://thehackernews.com/2026/07/debull-tooling-abuses-microsoft-device.html",
+      "published": "2026-07-07T15:14:14",
+      "summary": "A Microsoft 365 device code phishing campaign has been observed leveraging collaboration-themed lures to take control of victim accounts between the last week of June 2026 and into early July, per findings from ZeroBEC. \"The campaign did not depend on a fake Microsoft password page. It used a malicious collaboration-style lure to push users into the legitimate Microsoft device login experience,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Public GitHub Issue Could Trick GitHub Agentic Workflows Into Leaking Private Repo Data",
+      "url": "https://thehackernews.com/2026/07/public-github-issue-could-trick-github.html",
+      "published": "2026-07-07T14:04:50",
+      "summary": "A public issue can trick GitHub Agentic Workflows into leaking the contents of an organization's private repositories, researchers at Noma Security have shown. The attacker needs only to open a normal-looking issue on a public repository, with no stolen credentials and no access to the organization. If that organization has given the agent read access across its repositories, private ones"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Court Filing Reveals Windows Device ID Helped FBI Trace Alleged Scattered Spider Hacker",
+      "url": "https://thehackernews.com/2026/07/court-filing-reveals-windows-device-id.html",
+      "published": "2026-07-07T13:27:20",
+      "summary": "U.S. prosecutors linked an alleged Scattered Spider hacker to a break-in at a luxury jewelry retailer using a persistent Windows device ID, according to a newly unsealed federal complaint. Microsoft records tied that ID first to the account the attackers used to keep access during the May 2025 intrusion, then to online accounts prosecutors say belong to 19-year-old Peter Stokes. Stokes is"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Writer AI Flaw Could Let Agent Previews Leak Session Tokens Across Tenants",
+      "url": "https://thehackernews.com/2026/07/writer-ai-flaw-could-let-agent-previews.html",
+      "published": "2026-07-07T13:27:09",
+      "summary": "Cybersecurity researchers have disclosed details of a now-patched critical session isolation vulnerability in Writer, an enterprise generative artificial intelligence (AI) platform, that could result in cross-tenant compromise. The one-click vulnerability has been codenamed WriteOut by the Sand Security Research team. \"An outsider could go from having no access to taking over any Writer AI"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "What Changes When Your Software Supply Chain Includes AI Writing Your Code?",
+      "url": "https://thehackernews.com/2026/07/what-changes-when-your-software-supply.html",
+      "published": "2026-07-07T11:30:00",
+      "summary": "Software supply chain security was hard enough. Then AI joined the build pipeline. For five years, \"software supply chain security\" meant one question: what's in your code? Which open-source packages, which versions, which transitive dependencies three layers deep that nobody chose on purpose? SolarWinds, Log4Shell, and XZ Utils all taught the same lesson: the risk lives less in the code a"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Suspected China-Aligned Hackers Exploit Roundcube Flaws Against Universities",
+      "url": "https://thehackernews.com/2026/07/suspected-china-aligned-hackers-exploit.html",
+      "published": "2026-07-07T09:10:51",
+      "summary": "A suspected China-aligned threat activity cluster has been observed exploiting Roundcube webmail software belonging to physics and engineering departments of U.S. and Canadian universities as part of a new campaign. The activity involves the exploitation of now-patched, critical security flaws in the open-source email solution, such as CVE-2024-42009 (CVSS score: 9.3), to siphon credentials,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "url": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
+      "published": "2026-07-07T06:40:47",
+      "summary": "Several versions of firmware released by Chinese network device manufacturer Tenda have been found to embed an undocumented authentication backdoor that enables administrative access to the devices' web management interfaces, the CERT Coordination Center (CERT/CC) warned Monday. \"An attacker can exploit this vulnerability, tracked as CVE-2026-11405, to bypass the password verification process"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+      "url": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+      "published": "2026-07-07T05:16:51",
+      "summary": "BeyondTrust has released updates to address two critical security flaws affecting Remote Support (RS) and Privileged Remote Access (PRA) products that, if successfully exploited, could allow unauthenticated attackers to take control of susceptible devices. The vulnerabilities are listed below - CVE-2026-40138 (CVSS score: 9.2) - A pre-authentication vulnerability exists in the"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Iran-Linked Hackers Use New Cavern C2 Framework to Target Israeli Organizations",
+      "url": "https://thehackernews.com/2026/07/iran-linked-hackers-use-new-cavern-c2.html",
+      "published": "2026-07-06T18:34:26",
+      "summary": "An Iranian hacking group affiliated with Iran's Ministry of Intelligence and Security (MOIS) has been wielding a previously undocumented modular command-and-control (C2) framework dubbed Cavern (aka Cav3rn) targeting Israeli organizations. The activity, which has primarily singled out IT providers and government sectors, has been attributed to a threat cluster tracked by Check Point Research"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
+      "url": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
+      "published": "2026-07-06T17:37:01",
+      "summary": "A use-after-free bug in Linux's KVM hypervisor can be triggered from a guest virtual machine to corrupt the shadow-page state of the host kernel that runs it. Dubbed 'Januscape' and tracked as CVE-2026-53359, the flaw sits in the shadow MMU code that KVM shares across both Intel and AMD. The public proof-of-concept panics the host; the researcher claims that a separate, unreleased exploit"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Threat Actors Probe Gitea Docker Flaw CVE-2026-20896 13 Days After Disclosure",
+      "url": "https://thehackernews.com/2026/07/threat-actors-probe-gitea-docker-flaw.html",
+      "published": "2026-07-06T16:28:59",
+      "summary": "Threat actors have been observed attempting to exploit a recently patched critical security flaw in Gitea Docker images, according to Sysdig. The vulnerability in question is CVE-2026-20896 (CVSS score: 9.8), a vulnerability that stems from the DevOps platform trusting the \"X-WEBAUTH-USER\" header from any source IP address, effectively allowing an unauthenticated internet client to get elevated"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "\u26a1 Weekly Recap: Proxy Botnets, Browser Ransomware, AI Agent Tricks, Fake PoC Malware and More",
+      "url": "https://thehackernews.com/2026/07/monday-recap-proxy-botnets-browser.html",
+      "published": "2026-07-06T13:01:14",
+      "summary": "A streaming box should not need a threat model. Neither should a username field, a demo repo, a reset flow, or a browser permission prompt. That is the irritating part this week: the risky pieces were ordinary. Home devices became a routing cover. Clean code pulled dirt from a dependency. Identity shortcuts aged badly. AI systems trusted the wrong instructions. Same soft spot throughout: trust"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "How to Evaluate an AI SOC Platform in 2026: 6 Capabilities That Separate Leaders from Bolt-On AI solutions",
+      "url": "https://thehackernews.com/2026/07/how-to-evaluate-ai-soc-platform-in-2026.html",
+      "published": "2026-07-06T11:30:02",
+      "summary": "Building a shortlist for an AI SOC evaluation can be tough. SIEM, SOAR, and pureplay AI SOC vendors are all saying the same thing. But behind the identical label sit very different products, from chat assistants bolted onto a legacy SIEM to agent platforms that run detection, triage, investigation, and response on their own data foundation. Whether a platform will materially change outcomes for"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Suspected China-Nexus Hackers Use Fake Indian Tax Filing Utility to Deploy DcRAT",
+      "url": "https://thehackernews.com/2026/07/suspected-china-nexus-hackers-use-fake.html",
+      "published": "2026-07-06T10:58:16",
+      "summary": "A suspected China-nexus threat activity cluster has been observed targeting Indian taxpayers, tax professionals, and corporate finance teams to deliver a remote access trojan designed to steal sensitive data from compromised hosts. The multi-stage campaign, codenamed Operation DragonReturn by Seqrite Labs, involves sending spear-phishing emails impersonating the Income Tax Department of India."
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New TrojPix Attack Leaks Data From Air-Gapped Systems via Video Cable Emissions",
+      "url": "https://thehackernews.com/2026/07/new-trojpix-attack-leaks-data-from-air.html",
+      "published": "2026-07-06T08:50:54",
+      "summary": "Researchers at Shandong University have shown a fast new way to pull data off computers that are cut off from every network. The technique, called TrojPix, tweaks on-screen pixels in ways the eye cannot see, so that the video cable carrying them radiates a faint radio signal a nearby receiver can decode. But TrojPix works only once malware is already on the target machine, so it"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Java-Based QuimaRAT MaaS Built to Run on Windows, Linux, and macOS",
+      "url": "https://thehackernews.com/2026/07/new-java-based-quimarat-maas-built-to.html",
+      "published": "2026-07-06T08:13:33",
+      "summary": "Cybersecurity researchers have flagged a novel Java-based remote access trojan (RAT) called QuimaRAT that's capable of targeting Windows, Linux, and macOS environments. According to LevelBlue, the cross-platform malware is advertised under a malware-as-a-service (MaaS) model, costing anywhere between $150 for one month to $1,200 for lifetime access. Other subscription tiers include $300 for"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Opera GX Flaw Let Malicious Sites Auto-Install Mods to Steal Data From Visited Pages",
+      "url": "https://thehackernews.com/2026/07/opera-gx-flaw-let-malicious-sites-auto.html",
+      "published": "2026-07-06T07:27:50",
+      "summary": "Researchers found a flaw in Opera GX, the gaming-focused version of the Opera browser, that let a malicious website silently install a browser add-on and use it to lift specific data from the pages a victim visits. In a proof of concept, they reconstructed a signed-in user's full Gmail address from a single visit, with no click. Opera has patched the flaw and says it found no evidence that"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "SkillCloak Lets Malicious AI Agent Skills Evade Static Scanners with Self-Extracting Packing",
+      "url": "https://thehackernews.com/2026/07/new-skillcloak-technique-lets-malicious.html",
+      "published": "2026-07-06T06:33:56",
+      "summary": "Scanners meant to catch malicious add-on \"skills\" for AI coding agents can be fooled by a few simple changes that leave the malware working, according to a new study from researchers at the Hong Kong University of Science and Technology. Their strongest trick slipped past every scanner tested more than 90% of the time, and the same team built a runtime checker that catches most of the"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "U.S. Government Entity Paid Kairos $1 Million in Data-Theft Extortion Case",
+      "url": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
+      "published": "2026-07-04T12:47:53",
+      "summary": "A U.S. government entity paid about $1 million to keep stolen files from being leaked, according to a new case study by Rakesh Krishnan for Ransom-ISAC, built on a leaked negotiation chat and the blockchain trail the payment left. The odd part: the group that took the money calls itself Kairos, but it may not be a ransomware gang at all. Krishnan found no sign that it ever locked a single"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "North Korean Hackers Publish 108 Malicious Packages and Extensions in PolinRider Campaign",
+      "url": "https://thehackernews.com/2026/07/north-korean-hackers-publish-108.html",
+      "published": "2026-07-04T11:17:24",
+      "summary": "The North Korean threat actors linked to the Contagious Interview campaign have been observed publishing 108 unique packages and web browser extensions spanning npm, Packagist, Go, and Google Chrome as part of an ongoing activity referred to as PolinRider. \"The campaign remains active, and new malicious packages are likely to continue appearing as threat actors compromise maintainer accounts,"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Unpatched Flaws Disclosed in Filesystem Bundled Into Millions of Embedded Devices",
+      "url": "https://thehackernews.com/2026/07/unpatched-flaws-disclosed-in-filesystem.html",
+      "published": "2026-07-03T20:19:31",
+      "summary": "Security firm runZero has disclosed seven vulnerabilities in FatFs, a small filesystem library that lets a device read and write the FAT and exFAT formats used on USB drives and SD cards. The flaws matter because FatFs is nearly everywhere. It ships inside the firmware that runs security cameras, drones, industrial controllers, hardware crypto wallets, and other devices built on"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New \"Bad Epoll\" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Hits Android",
+      "url": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+      "published": "2026-07-03T19:40:01",
+      "summary": "A newly disclosed Linux kernel flaw called Bad Epoll (CVE-2026-46242) lets an ordinary user with no special access take full control of a machine as root. It affects Linux desktops, servers, and Android, and a fix is out. Bad Epoll sits in the same small stretch of kernel code where Anthropic's most powerful AI model, Mythos, recently found a different bug. The AI caught one flaw and missed"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Avalon Malware Framework Packs CrownX Ransomware Capabilities",
+      "url": "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html",
+      "published": "2026-07-03T18:55:24",
+      "summary": "Cybersecurity researchers have discovered a previously undocumented modular malware framework codenamed Avalon that's distributed by means of a multi-stage phishing chain capable of bypassing traditional security controls. Avalon combines credential collection, lateral movement, remote access, recovery disruption, and ransomware execution, bringing together diverse functions under one"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "North Korea-Linked npm Packages Mimic Rollup Polyfills to Steal Developer Secrets",
+      "url": "https://thehackernews.com/2026/07/north-korea-linked-npm-packages-mimic.html",
+      "published": "2026-07-03T16:07:15",
+      "summary": "Threat actors with ties to North Korea have been linked to a fresh set of malicious npm packages that masquerade as Rollup polyfill tooling to facilitate remote access and data theft. According to JFrog, the packages \"rollup-packages-polyfill-core\" and \"rollup-runtime-polyfill-core\" mimic the legitimate \"rollup-plugin-polyfill-node\" project, down to the description, repository metadata, and"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Armored Likho Targets Government Agencies, Power Sector with BusySnake Stealer",
+      "url": "https://thehackernews.com/2026/07/armored-likho-targets-government.html",
+      "published": "2026-07-03T13:36:33",
+      "summary": "A previously undocumented threat actor known as Armored Likho has been attributed to cyber attacks targeting government agencies and the electric power sector across Russia, Brazil, and Kazakhstan. \"Armored Likho blends financially motivated campaigns targeting private individuals with targeted cyber espionage aimed at organizations,\" Kaspersky said in a technical analysis published today. \""
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "European Parliament Member Investigating Spyware Was Hacked With Pegasus",
+      "url": "https://thehackernews.com/2026/07/european-parliament-member.html",
+      "published": "2026-07-03T11:05:43",
+      "summary": "A new report from the Citizen Lab has revealed that former Member of the European Parliament Stelios Kouloglou had his mobile device repeatedly hacked with the notorious Pegasus spyware while serving on a committee that was tasked with investigating the abuse of such commercial surveillance tools in the bloc. \"Through forensic analysis of his device, we found that the attackers could have had"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "PamStealer Uses Fake Maccy Sites and PAM Checks to Steal Mac Login Passwords",
+      "url": "https://thehackernews.com/2026/07/pamstealer-uses-fake-maccy-sites-and.html",
+      "published": "2026-07-03T08:03:37",
+      "summary": "Cybersecurity researchers have flagged a new macOS information stealer called PamStealer that employs a series of clever tricks to infect systems and siphon sensitive data. The stealer, discovered by Jamf Threat Labs, is distributed as a compiled AppleScript (.scpt) file impersonating Maccy, a legitimate open-source clipboard manager. It has been codenamed PamStealer owing to its ability to"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Google Disrupts NetNut Residential Proxy Network Spanning 2 Million Home Devices",
+      "url": "https://thehackernews.com/2026/07/google-disrupts-netnut-residential.html",
+      "published": "2026-07-02T18:54:06",
+      "summary": "Google has significantly degraded NetNut, one of the biggest networks that turns home devices into rented relays for other people's traffic. Working with the FBI, Lumen, and others, Google's Threat Intelligence Group (GTIG) said this week it had reduced the network's pool of usable devices by millions. Google identifies NetNut, also tracked as Popa, as a network spread across home"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ransomware Groups Turn to Citrix Bleed 2, BYOVD, and Supply Chain Credentials",
+      "url": "https://thehackernews.com/2026/07/ransomware-groups-turn-to-citrix-bleed.html",
+      "published": "2026-07-02T18:30:33",
+      "summary": "Threat actors associated with the Anubis ransomware operation have been observed exploiting the Citrix Bleed 2 (CVE-2025-5777) vulnerability to obtain initial access. \"Although tactics differ between affiliates, common patterns emerged in tradecraft through use of legitimate Remote Management and Monitoring (RMM) tooling, credential access, and hands-on-keyboard procedures used for lateral"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Extortion crew hijacks Microsoft 365 accounts via fake passkey setup",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/microsoft-365-fake-passkey-setup-enrollment/",
+      "published": "2026-07-09T14:22:35",
+      "summary": "The Pink cyber extortion crew is tricking employees into giving them access to their Microsoft 365 accounts by faking Entra passkey enrollment requests. The attack The attack starts with a vishing call to an employee. The caller poses as IT and says it&#8217;s time to set up a passkey. Everything after that is theater, built to keep the victim occupied while the attacker finalizes everything. The attackers instruct the target to visit a subdomain that &#8230; More &#8594; The post Extortion crew"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Citrix launches MCP Gateway to secure enterprise AI agents",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/citrix-mcp-gateway/",
+      "published": "2026-07-09T13:49:56",
+      "summary": "Citrix has announced updates to its high-performance application delivery and security platform NetScaler, introducing MCP Gateway functionality to allow enterprises to securely route, govern and observe agent traffic to backend Model Context Protocol (MCP) servers. In addition, the company unveiled other enhancements to NetScaler AI Gateway, that extend model routing and token-level usage tracking for LLM traffic. Together, the capabilities enable organizations to govern both sides of enterpris"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Vectogate debuts platform to secure and govern autonomous AI agents",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/vectogate-ai-governance-platform/",
+      "published": "2026-07-09T13:38:40",
+      "summary": "Vectogate has launched an AI governance platform designed to give organizations centralized control over AI agents as they increasingly take on autonomous tasks with access to sensitive data and internal business systems. The company aims to address one of the key governance challenges posed by enterprise AI. The platform is initially available in private beta, with companies able to apply for early access immediately. AI agents are evolving into autonomous digital employees: they no longer &#82"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Microsoft releases fix for RoguePlanet Defender flaw (CVE-2026-50656)",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/microsoft-releases-fix-for-rogueplanet-defender-flaw-cve-2026-50656/",
+      "published": "2026-07-09T12:14:57",
+      "summary": "Microsoft has finally released a security update for its Microsoft Malware Protection Engine, which fixes CVE-2026-50656, the Windows Defender local privilege escalation vulnerability triggered by the RoguePlanet exploit. The vulnerability and the fix CVE-2026-50656 is due to improper link resolution before file access, affects Windows 10 and Windows 11, and may allow authenticated attackers to achieve SYSTEM-level privileges on vulnerable machines by launching low-complexity attacks. The flaw&#"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "5,811 arrests, $293 million seized over social engineering scams",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/interpol-fraud-bust-social-engineering-scams/",
+      "published": "2026-07-09T11:14:56",
+      "summary": "Criminals who pose as police officers, romantic partners, and business suppliers have built fraud operations that reach across continents. A four-month enforcement campaign against these schemes wrapped up, and police in 97 countries and territories took part. Thousands of arrests The campaign, called Operation First Light 2026, centered on social engineering scams and the money laundering that moves their proceeds. Arrests reached 5,811. Investigators intercepted $293 million in illicit assets."
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Your coding agent says no in chat and yes in the code",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/github-coding-agent-jailbreak/",
+      "published": "2026-07-09T10:44:29",
+      "summary": "Millions of developers share their keyboard with GitHub Copilot. Inside Visual Studio Code, it opens their files, writes and edits code, runs scripts, and reworks its own output across many turns. The safety testing that vets these agents still runs on chatbot rules: one harmful prompt, one response, graded alone. That rulebook misses where the real danger sits, according to a study from the Alan Turing Institute in London. The researchers, Abhishek Kumar and Carsten &#8230; More &#8594; The pos"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "AWS centralizes access, spending, and governance for Claude",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/aws-claude-apps-gateway-governance/",
+      "published": "2026-07-09T08:37:07",
+      "summary": "Claude apps gateway for AWS is a self-hosted control plane that gives organizations a single point of control over access, costs, and policies for Claude Code and Claude Desktop. It replaces per-developer cloud credentials, manual distribution of managed settings to developer laptops, and centralizes usage attribution and spending controls. The gateway can be deployed with Amazon Bedrock or Claude Platform on AWS, providing the same capabilities in either environment. Claude apps gateway archite"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "NetSPI pairs AI pentesting with expert-validated security findings",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/netspi-expands-continuous-pentesting-platform/",
+      "published": "2026-07-09T08:13:43",
+      "summary": "NetSPI has announced the expansion of its AI-powered continuous pentesting platform, broadening the suite of services that organizations can use to ensure critical assets are always protected. The new services comprise continuous web application penetration testing, continuous AI penetration testing, continuous internal penetration testing and continuous AI findings validation which applies expert human judgement to AI-generated security findings. With an expanding number of new attack surfaces,"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Malicious AI agent skills can slip past the scanners built to stop them",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/malicious-ai-agent-skills-scan/",
+      "published": "2026-07-09T06:00:33",
+      "summary": "Developers who build with AI coding agents grab capabilities off public marketplaces the same way they grab packages from npm or PyPI. The add-ons are called agent skills. Each one is a little bundle of plain-English instructions, scripts, and files that a tool such as Claude Code or OpenAI Codex loads when it needs a new trick. One marketplace filled up with more than 40,000 listed skills within months of the format showing up in &#8230; More &#8594; The post Malicious AI agent skills can slip "
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "The fake report message that ends with a stolen Reddit account",
+      "url": "https://www.helpnetsecurity.com/2026/07/09/reddit-false-report-scam-direct-message/",
+      "published": "2026-07-09T05:30:10",
+      "summary": "A direct message arrives on Reddit from a stranger, and it invites a reply. That reply is the point. This scheme runs on social engineering, with no malware and no malicious links, and it has spread across Reddit, Discord, and similar platforms. The goal is a single piece of information: a login or verification code that hands your account to someone else. &#8220;The conversation usually starts with one of two claims. Either the person says &#8230; More &#8594; The post The fake report message t"
+    }
+  ],
+  "reddit_posts": [],
+  "competitor_maps": [],
+  "competitor_changelogs": []
+}
