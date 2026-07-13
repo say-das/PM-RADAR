@@ -1,35 +1,357 @@
 {
-  "analyzed_at": "2026-07-13T09:32:58.575086",
-  "telecom_fraud_summary": "```json\n{\n  \"executive_summary\": \"The telecom industry is experiencing significant advancements in fraud detection and prevention, driven by AI integration in security systems. AI tools now enable faster and more comprehensive threat detection across telecom networks, significantly reducing the time required for analysis [ARTICLE_2]. Meanwhile, countries with the busiest SMS firewalls are being mapped, highlighting areas with heightened SMS-blocking activities [ARTICLE_1]. These developments underscore the ongoing efforts to bolster telecom security and address vulnerabilities in the rapidly evolving digital landscape.\",\n  \"top_trends\": [\n    {\n      \"title\": \"AI-Driven Security Enhancements\",\n      \"description\": \"AI is becoming integral to telecom security, allowing operators to detect vulnerabilities and threats more efficiently [ARTICLE_2]. This technology accelerates processes that previously required extensive manual analysis, offering greater visibility across networks. The business impact includes reduced operational costs and improved threat response times. Telecom companies should consider investing in AI-driven tools to stay ahead of evolving threats.\"\n    }\n  ],\n  \"regulatory_changes\": [],\n  \"immediate_attention\": [],\n  \"community_sentiment\": []\n}\n```",
-  "general_fraud_summary": null,
+  "analyzed_at": "2026-07-13T20:30:36.046274",
+  "telecom_fraud_summary": "```json\n[\n    {\n        \"title\": \"SMS Fraud via SMS Blasters\",\n        \"description\": \"SMS blasters are tools used to send large volumes of SMS messages, often for fraudulent purposes. These devices operate outside legitimate mobile networks, exploiting vulnerabilities in telecom systems to send scam messages that impersonate legitimate entities, such as telecom companies. The attack pattern involves setting up false base stations to intercept and send messages, making it difficult for recipients to distinguish between genuine and fraudulent communications. This type of fraud primarily affects mobile networks and their users, leading to financial losses and erosion of trust in SMS communications. Mitigation strategies include deploying advanced SMS firewalls, monitoring for radio and signaling anomalies, and educating consumers about potential scams.\",\n        \"citation_ids\": [10, 15, 16]\n    },\n    {\n        \"title\": \"SIM Swapping\",\n        \"description\": \"SIM swapping is a type of fraud where attackers manipulate telecom systems to transfer a victim's phone number to a new SIM card. This allows them to intercept calls and messages, including two-factor authentication codes, enabling unauthorized access to the victim's accounts. The attack typically involves social engineering tactics to deceive telecom employees into making the switch. Affected systems include mobile network operators and any service relying on SMS-based verification. The business impact includes financial theft and reputational damage. Mitigation strategies involve implementing stricter verification processes for SIM swaps, using multi-factor authentication that does not rely solely on SMS, and educating employees and customers about the risks.\",\n        \"citation_ids\": []\n    },\n    {\n        \"title\": \"Robocalls and Caller ID Spoofing\",\n        \"description\": \"Robocalls involve automated systems making a large volume of calls, often for fraudulent purposes such as phishing or scams. Caller ID spoofing is used to disguise the origin of the call, making it appear as though it is coming from a trusted source. This attack pattern is facilitated by platforms like Russian Coms, which was used to make over 1.8 million scam calls. Affected systems include telecom networks and consumers who receive these calls. The business impact includes financial losses for victims and increased regulatory scrutiny for telecom providers. Mitigation strategies include implementing call authentication technologies like STIR/SHAKEN, enhancing call-blocking features, and collaborating with law enforcement to shut down illegal platforms.\",\n        \"citation_ids\": [1]\n    },\n    {\n        \"title\": \"A2P Messaging Abuse\",\n        \"description\": \"Application-to-Person (A2P) messaging abuse involves the unauthorized use of telecom networks to send bulk messages, often for spam or fraudulent purposes. This can include sending unsolicited marketing messages or phishing attempts. The attack pattern involves exploiting vulnerabilities in telecom infrastructure to bypass legitimate messaging channels, often using compromised accounts or systems. Affected systems include SMS gateways and mobile networks. The business impact includes increased operational costs for handling spam and potential regulatory fines. Mitigation strategies involve implementing robust authentication for A2P messaging, monitoring for unusual traffic patterns, and enforcing strict penalties for abuse.\",\n        \"citation_ids\": [18]\n    },\n    {\n        \"title\": \"Verification Bypass via Malware\",\n        \"description\": \"Verification bypass attacks involve using malware to intercept and manipulate verification processes, such as one-time passwords (OTPs) sent via SMS. The RedWing malware, for instance, allows attackers to take over a victim's phone, steal banking credentials, and capture OTPs. This attack pattern is facilitated by malware-as-a-service platforms, making it accessible to low-skill criminals. Affected systems include mobile devices and any service relying on SMS-based verification. The business impact includes financial theft and compromised customer accounts. Mitigation strategies involve promoting the use of app-based authentication methods, deploying mobile security solutions, and educating users on recognizing and avoiding malware.\",\n        \"citation_ids\": [8]\n    },\n    {\n        \"title\": \"Telecom Infrastructure Attacks\",\n        \"description\": \"Telecom infrastructure attacks target the underlying systems and networks that support telecom services. These can include direct attacks on network components, such as switches and routers, or exploiting vulnerabilities in telecom software. The attack pattern often involves sophisticated techniques to disrupt services or intercept communications. Affected systems include core telecom infrastructure and any services relying on them. The business impact includes service outages, data breaches, and reputational damage. Mitigation strategies involve regular security audits, implementing network segmentation, and deploying intrusion detection systems to monitor for unusual activity.\",\n        \"citation_ids\": []\n    }\n]\n```",
+  "general_fraud_summary": "```json\n[\n    {\n        \"title\": \"Authentication Bypass\",\n        \"description\": \"Authentication bypass occurs when attackers exploit vulnerabilities to gain unauthorized access to systems without valid credentials. This can happen through flaws in the authentication process, such as weak session management or improper validation of user inputs. Attackers may use techniques like SQL injection or exploiting misconfigured security settings to bypass authentication mechanisms. Affected systems often include web applications, communication platforms, and any service relying on user authentication. Defensive measures include implementing multi-factor authentication, regularly auditing and updating authentication protocols, and employing intrusion detection systems to monitor suspicious activities.\",\n        \"citation_ids\": [12, 19]\n    },\n    {\n        \"title\": \"API Abuse\",\n        \"description\": \"API abuse involves exploiting vulnerabilities in application programming interfaces to perform unauthorized actions or access sensitive data. Attackers may manipulate API requests to bypass security controls, extract data, or perform actions beyond their intended scope. This threat affects systems that expose APIs, such as communication platforms and cloud services. To defend against API abuse, organizations should implement rate limiting, use API gateways for monitoring and control, and ensure robust authentication and authorization mechanisms are in place. Regular security testing and code reviews can also help identify and mitigate potential vulnerabilities.\",\n        \"citation_ids\": [6, 10]\n    },\n    {\n        \"title\": \"Credential Stuffing\",\n        \"description\": \"Credential stuffing is a type of cyberattack where attackers use automated tools to try large volumes of username and password combinations, typically obtained from previous data breaches, to gain unauthorized access to user accounts. This method exploits the common practice of password reuse across different services. Systems affected include any platform with user accounts, particularly those lacking multi-factor authentication. Defensive measures include implementing account lockout mechanisms, monitoring for unusual login patterns, and encouraging users to use unique, strong passwords for each service.\",\n        \"citation_ids\": [3, 19]\n    },\n    {\n        \"title\": \"Account Takeover\",\n        \"description\": \"Account takeover occurs when an attacker gains control of a user's account, often through phishing, credential stuffing, or exploiting weak security practices. Once inside, attackers can perform malicious activities such as data exfiltration, financial fraud, or spreading malware. Communication platforms are particularly vulnerable as they often hold sensitive information and facilitate further attacks. To prevent account takeovers, organizations should enforce strong authentication measures, monitor for suspicious account activity, and educate users on recognizing phishing attempts.\",\n        \"citation_ids\": [12, 16]\n    },\n    {\n        \"title\": \"Phishing\",\n        \"description\": \"Phishing is a social engineering attack where attackers impersonate legitimate entities to trick individuals into revealing sensitive information, such as login credentials or financial information. This is often done through deceptive emails, messages, or websites that appear authentic. Communication platforms are frequently targeted as they provide direct access to users. Defensive measures include implementing email filtering solutions, conducting user awareness training, and using domain-based message authentication, reporting, and conformance (DMARC) to protect against email spoofing.\",\n        \"citation_ids\": [12, 16]\n    },\n    {\n        \"title\": \"Data Breaches\",\n        \"description\": \"Data breaches involve unauthorized access to confidential data, often resulting in the exposure of sensitive information such as personal details, passwords, or proprietary data. Breaches can occur due to vulnerabilities in software, insider threats, or inadequate security measures. Communication platforms are prime targets due to the volume of sensitive data they handle. To mitigate the risk of data breaches, organizations should employ encryption, regularly update software, conduct security audits, and implement strict access controls to limit data exposure.\",\n        \"citation_ids\": [3, 20]\n    }\n]\n```",
   "competitive_intelligence_summary": null,
+  "reddit_community_summary": null,
+  "competitor_analysis": null,
   "categorized_counts": {
-    "telecom": 5,
-    "general": 0,
+    "telecom": 50,
+    "general": 112,
     "competitive": 0
   },
   "filtered_articles": [
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "UK charges suspects linked to Russian Coms call spoofing platform",
+      "url": "https://www.bleepingcomputer.com/news/security/uk-charges-suspects-linked-to-russian-coms-call-spoofing-platform/",
+      "published": "2026-07-13T13:23:30",
+      "summary": "UK authorities charged five people following a National Crime Agency (NCA) investigation into Russian Coms, a major caller ID spoofing platform used by criminals to make over 1.8 million scam calls. [...]",
+      "_gpt_score": 8,
+      "_gpt_reason": "Telecom keywords: 1, Fraud keywords: 1"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "\u2018Popa\u2019 Botnet Linked to Publicly-Traded Israeli Firm",
+      "url": "https://krebsonsecurity.com/2026/06/popa-botnet-linked-to-publicly-traded-israeli-firm/",
+      "published": "2026-06-18T17:37:58",
+      "summary": "For the past four years, a sprawling Android-based botnet called Popa has forced millions of consumer TV boxes to relay Internet traffic linked to advertising fraud, account takeovers, and mass data-scraping efforts. This week, researchers from multiple security firms concluded that the Popa botnet is linked to NetNut, a \"residential proxy\" provider operated by the publicly-traded Israeli firm Alarum Technologies Ltd [NASDAQ: ALAR].",
+      "_gpt_score": 9,
+      "_gpt_reason": "Telecom keywords: 1, Fraud keywords: 2"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "UK financial regulators to begin overseeing Critical Third Parties announced by Treasury",
+      "url": "https://www.fca.org.uk/news/statements/uk-financial-regulators-overseeing-critical-third-parties-announced-treasury",
+      "published": "2026-07-13T20:30:15.640927",
+      "summary": "The Bank of England (the Bank), the Prudential Regulation Authority (PRA) and the FCA will start overseeing the first critical third parties (CTPs) on Monday 13 July 2026, following designation by the Treasury.\n\nCTPs are technology and other service providers whose services underpin the UK financial system. Today, the Treasury has announced its first designations of 4 global cloud services and technology providers: Amazon Web Services EMEA SARL, Google Cloud EMEA Limited, Microsoft Ireland Operations Ltd, and Oracle Corporation UK Limited.As many firms rely on these services, disruption or failure could affect multiple firms or markets at the same time, potentially impacting UK financial stability and services used by millions of consumers and businesses.For the first time, the three regulators will jointly oversee these CTPs under a new, proportionate regime, focused on the resilience of the critical services they provide to the UK financial sector. The regulators will work together with the CTPs to address system-level risks and reduce the risk of disruption to the services they provide spreading across the UK financial system. This will strengthen system-wide resilience and improve coordination and information sharing across the UK financial sector.CTPs must identify and manage risks to their critical services effectively, and maintain open, timely communication with regulators and the firms that rely on them, particularly during major incidents.Together, these changes support a more resilient environment for firms to operate in, which will, in turn support financial stability and confidence in UK financial markets.This regime complements, but does not replace, existing outsourcing and operational resilience rules for regulated firms who remain responsible for managing their own third-party arrangements including due diligence, risk management and contingency planning.Sarah Breeden, deputy governor for financial stability at the Bank, said:'As critical third parties become increasingly embedded in the operations of financial institutions, they can introduce new forms of systemic risk. Our proportionate approach to overseeing these providers will ensure that these dependencies are managed in a way that safeguards financial stability.'Katharine Braddick, deputy governor for prudential regulation and CEO of the PRA, said: 'By bringing critical third parties into the scope of oversight, we are ensuring that the infrastructure underpinning UK financial services is robust enough to support UK financial stability and confidence. This directly supports the PRA\u2019s objective to promote the safety and soundness of regulated firms.'Nikhil Rathi, chief executive at the FCA, said: 'Critical third parties provide essential services which support innovation and growth. At the same time, when the same providers serve thousands of firms, a single failure can reverberate across the financial system. Operationalising this regime strengthens our ability to tackle those risks and improve overall resilience, ensuring the UK remains a safe and attractive place to do business.' Treasury is responsible for deciding which third party providers are designated as CTPs, and any future designations or de-designations. The regulators will periodically review whether CTPs continue to meet the designation criteria, making recommendations to Treasury, and evaluate the effectiveness of the oversight approach. The Bank, PRA and FCA will continue to work closely with Treasury, the financial services industry and designated CTPs as the regime is implemented, while supporting innovation, and UK growth and competitiveness.Notes to editorsThe regulations will come into effect on Monday 13 July 2026. Please refer to the government\u2019s website for Treasury\u2019s press release and CTP regulations published.You can find more information on the regulators\u2019 oversight regime on FCA\u2019s website and PRA\u2019s website.Treasury is responsible for deciding which third party suppliers should fall under the CTP regime, generally based on recommendations from the regulators. The scope of entities under the regime will continue to evolve as further designations are considered.Designation under this regime is not the same as authorisation by the regulators. Oversight is limited to the resilience of the services they provide to UK financial firms.Financial Services and Markets Act (FSMA) 2000 as amended by FSMA 2023 gave the Bank, PRA and FCA new powers to oversee critical third parties, strengthening the resilience of the services they provide to regulated firms and financial market infrastructures.In November 2024, the FCA, the Bank and PRA introduced the final rules and policy for the CTP regime. These came into effect on 1 January 2025 and apply immediately to CTPs once designated by Treasury.Alongside the final rules and policy, the regulators published their approach to regulatory oversight and a supervisory statement setting out expectations for CTPs on how to interpret and comply with the regulators\u2019 new rules.CTPs may also be regulated under similar regimes in other jurisdictions, including the EU\u2019s Digital Operational Resilience Act (DORA). The regulators have signed a Memorandum of Understanding to support coordination and information sharing on oversight of CTPs.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Telecom keywords: 2, Fraud keywords: 0"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "FCA cracks down on illegal promotions and market abuse in first year of new strategy",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-cracks-down-illegal-promotions-and-market-abuse-first-year-new-strategy",
+      "published": "2026-07-13T20:30:15.640948",
+      "summary": "The FCA led an international crackdown on illegal finfluencer promotions \u2013 resulting in 3 arrests and 650 social media takedown requests. It also secured a combined 11 years in prison for 2 cases of insider dealing in the first year of its 5-year strategy, according to its Annual report and accounts published today.\n\nThe FCA has focused its efforts on the most serious risks and harms. It has taken decisive action to protect consumers, fight financial crime and uphold market integrity, delivering an estimated \u00a35.6bn in benefits to consumers, firms and the wider economy.Helping consumersThe FCA significantly strengthened consumer protection through the launch of Firm Checker, a tool that helps consumers quickly check whether a firm is authorised and avoid dealing with fraudulent firms. It\u2019s estimated that the tool has been used over 1.9 million times since its introduction in January 2025. Following a successful advertising campaign at the start of 2026, firm warning messages helped protect an average of 694 consumers each week \u2013 an increase of 49%.Over the past year, the FCA also:Delivered estimated savings of around \u00a3157m a year for consumers paying monthly insurance premiums, using Consumer Duty fair-value rules.The FCA began major mortgage reforms. After clarifying affordability checks, most lenders updated their approach, meaning borrowers could access up to \u00a330,000 more.Confirmed final rules to support more consumers in making pensions and investment decisions with at least 18 million consumers expected to benefit over the next decade.Issued final rules for Buy Now Pay Later products, introducing clear consumer protections ahead of the regime coming into force in July 2026.Ashley Alder, chair of the FCA, said: 'We have made a strong start to our 5-year strategy. We set out to focus our efforts where they matter most \u2013 protecting consumers, maintaining market integrity and supporting a competitive economy. The progress we\u2019ve made in the first year demonstrates that a focused and decisive regulator delivers real benefits for consumers and supports growth.'Nikhil Rathi, chief executive of the FCA, said: 'In the past year we've shut down scams, pursued those who abuse markets through the courts, helped hundreds of thousands of consumers access better financial products and cut the cost of regulation for tens of thousands of firms. We've made greater use of data and technology to detect harm earlier and expanded our international presence to support UK financial services. There is more to do, but this is a solid foundation.'Fighting financial crimeWith investment fraud remaining a major threat, the FCA issued 2,329 warnings about unauthorised or potentially scam firms in 2025, up from 2,240 in 2024, and pursued serious market abuse through both enforcement and criminal prosecution. 17 criminal convictions were secured, including for fraud, insider dealing, money laundering and DPA offences. Two individuals received a combined 11 years' imprisonment for insider dealing and money laundering, while 12 individuals were fined a total of \u00a31.77m for market abuse offences.A coordinated 'week of action' on finfluencers, involving 9 international regulators in June 2025, resulted in 3 arrests, 6 criminal proceedings, 11 targeted warning or cease-and-desist letters, 50 warning list alerts and 650 social media takedown requests.The FCA also fined firms approximately \u00a314.4m for transaction reporting failures and control weaknesses and issued a \u00a342m fine to Barclays for anti-money laundering failures.The number of customers removed as money mules rose by 4.4% compared to last year, reaching 222,173 across 35 firms, reflecting both the growing scale of the risk and action taken by firms.Supporting growthThe FCA delivered nearly 50 pro-growth measures in 2025, supporting the UK\u2019s competitiveness, attracting international investment and reinforcing its position as a leader in financial services innovation. It received 132 applications to its AI Supercharged Regulatory Sandbox and launched a scale-up unit, alongside the PRA, to help firms scale sustainably.It approved 2 firms to operate under a new private markets framework (PISCES), designed to support trading in private company shares, with 2 more firms in the pipeline. The FCA also expanded its international presence through new offices in the US, Asia-Pacific and Singapore.Smarter regulatorThe FCA launched a single digital entry point for regulated firms to manage regulatory tasks, with 81% reported user satisfaction and fewer late returns. It also decommissioned outdated reporting returns across more than 90% of regulated firms, delivering a further \u00a316m annual saving in reporting costs. The regulator also replaced 43 portfolio letters with 9 focused market reports setting out clear regulatory priorities for each sector.AI automation has reduced the time it takes to handle simpler cases from up to 4 hours to about 6 minutes on average, allowing supervisors to focus on more important work.Notes to editorsToday, the FCA has published:Our Annual report and accounts 2025/26Outcomes and metrics: 2025/26 reportSecondary International Competitiveness and Growth Objective metrics 2025/26Use of our skilled person reports in 2025/26Operating service metrics 2025/26Response to the Cost Benefit Analysis (CBA) Panel's Annual Report 2024/25Prescribed Persons Annual Report 2025/26Pay review 2026: Equality Impact AssessmentPay gap data 2026On 6 October 2026 the FCA is hosting its Annual Public Meeting in Edinburgh and online. Register to attend.",
+      "_gpt_score": 10,
+      "_gpt_reason": "Telecom keywords: 1, Fraud keywords: 3"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Banks told to improve access to basic accounts",
+      "url": "https://www.fca.org.uk/news/press-releases/banks-told-improve-access-basic-accounts",
+      "published": "2026-07-13T20:30:15.640986",
+      "summary": "People struggling should find it easier to access basic bank accounts, after nine banks committed to improving widespread poor practice identified by the FCA.\n\nNine of the biggest UK banks and building societies are legally mandated to offer basic bank accounts. They exist to serve people who may not otherwise be able to access standard current accounts - providing access to essential services with no fees and no overdraft.A mystery shopping exercise by the FCA found a third of experiences with basic bank accounts rated as poor or very poor. The mystery shop revealed that the bank account providers were not consistently offering these accounts to customers who could benefit from them. This included people facing financial hardship or without standard identification, and especially those with no fixed address. The firms often failed to mention basic bank accounts at all and pushed customers in vulnerable circumstances towards online applications unsuitable for their needs. To address this, the banks and building societies have agreed to individual improvement plans and we\u2019ve worked with UK Finance to secure a collective commitment for the firms to: Provide the right account for customers, first time, with clear communication and minimal friction.Make it straightforward for customers without standard ID or a fixed address to open an account.Spot vulnerability early and offer accessible alternatives to online-only journeys.Emad Aladhal, director of retail banking at the FCA, said: 'Progress has been made with over 97% of UK adults having a current account, but our latest work shows that all too often banking firms\u2019 engagement with customers still needs improvement. Bank accounts are important for financial inclusion, and this is about making sure the very people who could benefit from basic bank accounts are not missing out.'That\u2019s why the biggest banks have now committed to improving how they are offered \u2013 and we\u2019ll be holding them to account to make sure change happens.'Peter Tyler, director of personal banking at UK Finance, said: 'A basic bank account can be an important first step towards financial independence, and while most customers who hold one have positive experiences, we recognise that more can be done to ensure consistently good outcomes for everyone. That is why UK Finance and our members are committed to raising industry standards and expanding access.'The recently expanded Breaking the Cycle initiative is a key part of this work, providing practical support to those facing barriers to accessing essential banking services, such as individuals without a fixed address'Notes to editorsRead the mystery shop findings here.The nine banking institutions that are legally required to offer Basic Bank Accounts are Barclays UK, The Co-operative Bank, HSBC UK, Lloyds Banking Group (including Halifax and Bank of Scotland brands), Nationwide Building Society, NatWest Group (including RBS and Ulster Bank brands), Santander UK, TSB and Virgin Money UK (now a brand of Nationwide Building Society).The mystery shopping exercise covered 298 interactions across branches and telephone. The exercise tested two scenarios: a person experiencing financial hardship with non-standard ID, and someone who had been through bankruptcy but had standard ID. Both showed characteristics of vulnerability.Across 298 mystery shops, the FCA rated 28% of interactions as good or very good, 38% as fair, 20% as poor and 14% as very poor.As revealed in the FCA\u2019s Financial Lives survey, in 2024, over 97% of UK adults having a current account. While 4.3 million UK adults had a basic bank account, around 0.9 million adults were unbanked (they had no current account). The survey also found that in the two years to May 2024, 10% of the 1.3m adults who recalled applying for a basic bank account said they were declined.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Telecom keywords: 2, Fraud keywords: 0"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Pension firms must do more for customers in older pensions and fund savings",
+      "url": "https://www.fca.org.uk/news/press-releases/pension-firms-must-do-more-customers-older-pensions-fund-savings",
+      "published": "2026-07-13T20:30:15.641015",
+      "summary": "The FCA has found that peopleholding legacy pension products,now closed to newsavers, could be receiving poorer value than those in newer ones.\n\nThe regulatoridentifiedsome good practices,butcomplexcharging structures,older product design andweakness infirms'datameantsome pension savers are not getting as much value as they could.What good looks likeSomeunit-linked non-workplace pension providers are working tosimplifyor rationalise their legacyproductsandfunds,orhaveplans to do so. There was evidence of firmscappingor reducingchargesfor customers in legacy products.Some were also comparing outcomes acrossdifferentcustomergroups andproducts, andmovingcustomers to better-value alternatives.The FCA is now calling on all pension providers toconsiderthe reportandtake on the good practiceidentified. The regulatoris also engaging with firms onbarriersthey face in improving the valuefor customers, particularly in closed books.Charlotte Clark, director of cross-cutting policy and strategyat the FCA said:'Consumers in older products shouldnot be left behind,and the good news is that some firms are already showing it doesn't have to be this way. We want to see that progress reflected right across the market.'This work supports wider reforms, including targeted support and pensions dashboards, to help consumersget the most fromtheirpensions.It is also a priority underthe FCA\u2019sPensions Regulatory Prioritiesand forms part ofitsbroader work on modernising pensions and long-term savings.Notes to editorsUnit-linked pensions and savings: multi-firm review of Consumer Duty price and value practices.The FCA recently launchedproposalsforthe self-invested personal pension (SIPP) market (CP26/20).The consultationcloses on24 August 2026.",
+      "_gpt_score": 8,
+      "_gpt_reason": "Telecom keywords: 2, Fraud keywords: 0"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "FCA sets landmark crypto rules to cement the UK\u2019s place as a global hub",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-landmark-crypto-rules-cement-uks-place-global-hub",
+      "published": "2026-07-13T20:30:15.641063",
+      "summary": "Firms supporting people to buy, trade and hold crypto will need to meet clear standards under landmark rules set out by the FCA.\n\nAll firms must meet financial resilience requirements including capital and stress testing. The FCA is also introducing new market integrity rules covering areas such as insider trading and market manipulation.The new framework also sets out specific rules for stablecoins, a type of cryptoasset designed to maintain a stable value, typically by being linked to a currency such as the pound. Stablecoins will be subject to clear, strong and transparent standards, helping to build trust in how they are used over time.Following consultation, the FCA has simplified key elements of the regime to make it more workable in practice including simpler capital requirements for stablecoin firms and tailoring trading rules to better reflect how crypto markets operate.The FCA drew upon international best practice, applying established financial services standards where risks are comparable, including the Consumer Duty.David Geale, executive director of payments and digital finance at the FCA said:'This is a significant moment for crypto regulation in the UK. We\u2019ve created a framework that doesn\u2019t force firms to choose between regulatory certainty and room to innovate \u2013 this regime means they can have both in a stable, competitive home to build and grow. For consumers, it means firms will be held to similar standards to other financial providers, though we can\u2019t regulate away risk.'Legislation in February 2026 brought cryptoassets into the FCA\u2019s remit, marking one of the most significant expansions of the regulator\u2019s oversight in years. Until the new rules come into effect in October 2027, the FCA\u2019s oversight of crypto will continue to be limited to financial promotions and anti-money laundering controls.Crypto firms, including trading platforms, intermediaries, custodians, stablecoin issuers, and firms arranging staking must obtain FCA authorisation to operate in the UK.The FCA is encouraging firms to prepare now and make use of its pre-application support meetings available from July. Firms can apply for authorisation between 30 September 2026 and 28 February 2027, so they are ready to start or continue to trade under the new mandatory regime which will come into force on 25 October 2027.Crypto remains high-risk and consumers should understand what protections apply before investing. The new rules set by the FCA provide the foundation for a more sustainable and trusted crypto market in the UK.Notes to editorsRead the policy statements.The FCA has also published consultations on non-handbook guidance for prudential requirements for cryptoasset firms:Read GC26/4: Non-Handbook Guidance on COREPRU 7: Overall risk assessment.Read GC26/5: Non-Handbook Guidance on CRYPTOPRU 7: Overall risk assessment for CRYPTOPRU firms.Read the Cost Benefit Analysis on the impact of the cryptoasset regime.Read the statement on joint supervision of stablecoin issuers by the FCA and Bank of England.The FCA will be hosting a webinar setting out its policy statements on 17 July.This follows legislation set out by the Government in February 2026 to bring cryptoassets into UK regulation.These publications mark the completion of the FCA\u2019s crypto roadmap.The authorisation gateway for firms will open on 30 September 2026. Pre-application support meetings are available.The FCA will publish a further policy statement in September 2026 setting out how the regulatory perimeter applies to cryptoasset activities.Later this year, the FCA will consult on decentralised finance (DeFi) guidance and separately on operational resilience guidance for firms using distributed ledger technology (DLT). It will also consult on updates to the Financial Crime Guide relevant to cryptoasset firms.The FCA and the Bank of England are working together on stablecoins and will consult later this year on how FCA rules will apply when a stablecoin issuer is recognised as systemic by HM Treasury.Find out more about the requirements firms must comply with and how firms can prepare for crypto authorisation.Rhiannon Butterfield, Director, Digital Money and Payments, UK Finance, said: 'We welcome the FCA\u2019s final Crypto Roadmap rules, which will provide clarity and help strengthen confidence in the UK market. UK Finance supports a balanced approach that encourages innovation and protects consumers while regulating risks. We look forward to working with the FCA in the coming months as it considers how stablecoin payments will connect with the wider Modernising Payments Regulations programme.'Su Carpenter, Executive Director, CryptoUK, said: 'At CryptoUK, we have worked for many years with our members and the regulators to find a framework that provides clarity alongside proportionate and balanced regulation for the UK digital asset sector. The FCA have engaged directly with the industry to review, revise and finalise their rules, and we welcome the collaborative and inclusive approach they have taken to ensure this sets out clear parameters for the UK market. The provision of a final set of guidance means the UK can move forward with more certainty and provide firms with an opportunity to develop and grow their businesses in a competitive jurisdiction. This provides an opportunity to build trust and confidence in the sector and realise the huge opportunities this industry can bring to the UK economy.'Emma Joyce, Head of EMEA, Global Blockchain Business Council, said: 'This marks an important step forward. Standards are what make markets work: they create the trust and common foundation needed for an industry to scale responsibly \u2013 and that is essential to the UK\u2019s strength as a global financial hub.'",
+      "_gpt_score": 8,
+      "_gpt_reason": "Telecom keywords: 2, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "RedWing MaaS Packages Android Bank Fraud as a Telegram Rental Service",
+      "url": "https://thehackernews.com/2026/07/redwing-maas-packages-android-bank.html",
+      "published": "2026-07-07T17:10:15",
+      "summary": "A new Android malware operation called RedWing is being rented out on Telegram as a ready-made bank-fraud service. It lets even low-skill criminals take over a victim's phone, steal their banking logins, and capture the one-time codes that protect their accounts.\n\nZimperium's zLabs, which found the operation, says it looks like a new variant of Oblivion, a $300-a-month rent-a-malware tool",
+      "_gpt_score": 9,
+      "_gpt_reason": "Telecom keywords: 2, Fraud keywords: 1"
+    },
     {
       "source": "Commsrisk",
       "category": "telecom_fraud",
       "title": "Which Countries Have the Busiest SMS Firewalls?",
       "url": "https://commsrisk.com/which-countries-operate-the-busiest-sms-firewalls/",
       "published": "2026-07-07T07:13:51",
-      "summary": "A new map in the Commsrisk Global Fraud Dashboard compares published SMS-blocking figures using a population-adjusted score. The post Which Countries Have the Busiest SMS Firewalls? appeared first on Commsrisk."
+      "summary": "<p>A new map in the Commsrisk Global Fraud Dashboard compares published SMS-blocking figures using a population-adjusted score.</p>\n<p>The post <a href=\"https://commsrisk.com/which-countries-operate-the-busiest-sms-firewalls/\">Which Countries Have the Busiest SMS Firewalls?</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "How to Detect SMS Blasters",
+      "url": "https://commsrisk.com/how-to-detect-sms-blasters/",
+      "published": "2026-06-30T03:25:01",
+      "summary": "<p>SMS blasters operate outside legitimate mobile networks, but their activity can still be detected. This article explains how operators and regulators can identify false base stations by looking for radio, signalling and location anomalies.</p>\n<p>The post <a href=\"https://commsrisk.com/how-to-detect-sms-blasters/\">How to Detect SMS Blasters</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "The Future of Commsrisk",
+      "url": "https://commsrisk.com/the-future-of-commsrisk/",
+      "published": "2026-06-23T11:08:15",
+      "summary": "<p>Future Commsrisk articles will focus on the Global Fraud Dashboard: new graphs, noteworthy data, related news, and insights based on objective data.</p>\n<p>The post <a href=\"https://commsrisk.com/the-future-of-commsrisk/\">The Future of Commsrisk</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "The Final Commsrisk Article: US Telcos Cannot Be Allowed to Dictate Global KYC",
+      "url": "https://commsrisk.com/the-final-commsrisk-article/",
+      "published": "2026-05-30T13:15:44",
+      "summary": "<p>I was thrown out of One Consortium, but that was the inevitable consequence of a plan I instigated in 2024. It is better to kill my career by issuing this final warning than by facilitating a sham designed to mislead regulators and hurt the public.</p>\n<p>The post <a href=\"https://commsrisk.com/the-final-commsrisk-article/\">The Final Commsrisk Article: US Telcos Cannot Be Allowed to Dictate Global KYC</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "AI Needs RA More than RA Needs AI",
+      "url": "https://commsrisk.com/ai-needs-ra-more-than-ra-needs-ai/",
+      "published": "2026-05-29T03:25:35",
+      "summary": "<p>SMS farms are being used to gain API access to the Claude LLM at one-tenth of the correct price. There has always been more to learn about revenue assurance than corporations care to learn.</p>\n<p>The post <a href=\"https://commsrisk.com/ai-needs-ra-more-than-ra-needs-ai/\">AI Needs RA More than RA Needs AI</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Disappointing Results Confirm Subex\u2019s Decline",
+      "url": "https://commsrisk.com/disappointing-results-confirm-subexs-decline/",
+      "published": "2026-05-27T03:25:00",
+      "summary": "<p>This Indian business was a pioneer of RAFM. CEO Nisha Dutt is failing to provide the firm with a new identity, purpose or sense of direction.</p>\n<p>The post <a href=\"https://commsrisk.com/disappointing-results-confirm-subexs-decline/\">Disappointing Results Confirm Subex&#8217;s Decline</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "YouTube SMS Blaster Ad Displays Scam Messages That Impersonate Telcos",
+      "url": "https://commsrisk.com/youtube-sms-blaster-ad-displays-scam-messages-that-impersonate-telcos/",
+      "published": "2026-05-25T03:25:11",
+      "summary": "<p>Google does some good work to tackle scams but its indifference to social media adverts for scam equipment is disgraceful. A new advert shows an SMS&#160;blaster impersonating Globe and Smart, the two largest telcos in the Philippines.</p>\n<p>The post <a href=\"https://commsrisk.com/youtube-sms-blaster-ad-displays-scam-messages-that-impersonate-telcos/\">YouTube SMS Blaster Ad Displays Scam Messages That Impersonate Telcos</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Chinese SMS Blaster Scammer Attacks Eurovision in Vienna",
+      "url": "https://commsrisk.com/chinese-sms-blaster-scammer-attacks-eurovision-in-vienna/",
+      "published": "2026-05-21T03:25:41",
+      "summary": "<p>A 32 year old Chinese national was arrested by Austria's Cobra tactical police unit outside the Eurovision Song Contest. The scammer's 6 year old son was also in the car.</p>\n<p>The post <a href=\"https://commsrisk.com/chinese-sms-blaster-scammer-attacks-eurovision-in-vienna/\">Chinese SMS Blaster Scammer Attacks Eurovision in Vienna</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Did a British SMS Honeypot Discover Election Fraud in the US Midterms?",
+      "url": "https://commsrisk.com/did-a-british-sms-honeypot-discover-election-fraud-in-the-us-midterms/",
+      "published": "2026-05-20T03:25:49",
+      "summary": "<p>A spam message about 'cell signal coverage' linked to a poll harvesting data about supporters of two Republicans competing in the Texas Senate primary.</p>\n<p>The post <a href=\"https://commsrisk.com/did-a-british-sms-honeypot-discover-election-fraud-in-the-us-midterms/\">Did a British SMS Honeypot Discover Election Fraud in the US Midterms?</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Telco Insiders Arrested; Accused of Aiding $41mn Bank Frauds with 580\u00a0million Scam Texts and 180,000 Spoofed Calls",
+      "url": "https://commsrisk.com/telco-insiders-arrested-accused-of-aiding-41mn-bank-frauds-with-580-million-scam-texts-and-180000-spoofed-calls/",
+      "published": "2026-05-18T03:25:22",
+      "summary": "<p>Arrests by South Korean police include the CEO of an SMS messaging platform and a systems administrator at an MVNO.</p>\n<p>The post <a href=\"https://commsrisk.com/telco-insiders-arrested-accused-of-aiding-41mn-bank-frauds-with-580-million-scam-texts-and-180000-spoofed-calls/\">Telco Insiders Arrested; Accused of Aiding $41mn Bank Frauds with 580&nbsp;million Scam Texts and 180,000 Spoofed Calls</a> appeared first on <a href=\"https://commsrisk.com\">Commsrisk</a>.</p>"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Webinar Recap: Collaborating for Confidence: Applying the Trust Framework Across Industries",
+      "url": "https://cfca.org/webinar-recap-collaborating-for-confidence-applying-the-trust-framework-across-industries/",
+      "published": "2026-07-02T20:49:09",
+      "summary": "Trust is the foundation of every successful customer interaction. But as fraud and spoofing risks keep rising, trust is harder to earn and easier to lose, especially across voice and [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "How Are You?\u00a0 Really?",
+      "url": "https://cfca.org/how-are-you-really/",
+      "published": "2026-06-25T20:50:28",
+      "summary": "By Stacy Graham, President, CFCA Every day we work to protect consumers, investigate fraud, solve complex problems, and support our organizations. We juggle deadlines, travel, long meetings, and the ever-changing [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Why Our Work Matters: Highlights from the CFCA Summer Educational Event 2026",
+      "url": "https://cfca.org/why-our-work-matters-highlights-from-the-cfca-summer-educational-event-2026/",
+      "published": "2026-06-24T16:13:12",
+      "summary": "Earlier this month CFCA Summer Educational Event 2026 brought together fraud management professionals, communications providers, technology vendors, and industry experts from around the world for two days of learning, collaboration, [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Detecting Synthetic Mule Accounts Starts with Better Identity Context",
+      "url": "https://cfca.org/detecting-synthetic-mule-accounts-starts-with-better-identity-context/",
+      "published": "2026-06-02T20:45:33",
+      "summary": "Synthetic mule accounts are not accidental anomalies. They are intentionally constructed identities designed to move fraud proceeds through the financial system while appearing legitimate. A traditional money mule uses a [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "The Most Common Fraud Threats Facing Financial Institutions (and How to Fight Back)",
+      "url": "https://cfca.org/the-most-common-fraud-threats-facing-financial-institutions-and-how-to-fight-back/",
+      "published": "2026-05-05T20:43:53",
+      "summary": "The New Cost of Doing Business According to a recent study commissioned by Somos, over 99% of financial institutions deal with fraud, with nine out of ten seeing a continued [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "TNS 2026 Robocall Report: What\u2019s Next \u2013 Going Further Than STIR/SHAKEN",
+      "url": "https://cfca.org/tns-2026-robocall-report-whats-next-going-further-than-stir-shaken/",
+      "published": "2026-03-24T12:59:51",
+      "summary": "The multi-year battle to secure the voice channel and combat scam and spam robocalls has hit a wall, so to speak, between the haves and the have-nots. The nation\u2019s top [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Top Five Takeaways from 2025: Robocalls, Robotexts, and the Battle for Voice Security",
+      "url": "https://cfca.org/top-five-takeaways-from-2025-robocalls-robotexts-and-the-battle-for-voice-security/",
+      "published": "2026-01-22T15:33:47",
+      "summary": "As the telecommunications industry continues its fight against bad actors, 2025 affirmed that despite progress in curbing robocall volume, bad actors remain highly adaptive and capable of exploiting any weakness [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "CFCA \u2013 A review\u00a0of 2025",
+      "url": "https://cfca.org/cfca-a-review-of-2025/",
+      "published": "2025-12-18T15:17:08",
+      "summary": "Before we all look to relax with family and loved ones over the holiday period, we thought we would have a lightning recap of 2025 and what it meant to [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Global Fraud Loss Survey 2025 Report Published",
+      "url": "https://cfca.org/global-fraud-loss-survey-2025-report-published/",
+      "published": "2025-12-10T17:57:38",
+      "summary": "The comprehensive survey undertaken recently highlights telecom service providers&#8217; current fraud threats, the challenges faced, and future threats. CFCA members can download the report by logging into the CFCA membership [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Defending Against Scam Attacks: Protecting Your Asset Perimeters in a Mediated Environment",
+      "url": "https://cfca.org/defending-against-scam-attacks-protecting-your-asset-perimeters-in-a-mediated-environment/",
+      "published": "2025-12-04T11:17:58",
+      "summary": "My friend Jenni got a strange text one afternoon claiming her bank account had been frozen.\u00a0 Worried, he called the number in the message without thinking twice. A calm voice [&#8230;]"
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Securing the Digital Highway: Modern Firewalls for Telcos",
+      "url": "https://globeteleservices.com/blog/securing-the-digital-highway-modern-firewalls-for-telcos/",
+      "published": "2025-09-26T08:43:09",
+      "summary": "Every call made, SMS sent, or data session streamed travels across a complex network\u2014vulnerable to fraud, cyberattacks, and service interruptions. In this fast-evolving landscape, the firewall is the silent guardian, ensuring secure and reliable connectivity for millions of users. For telcos, it\u2019s no longer just a defensive tool; it\u2019s a strategic enabler of revenue protection, customer trust, and innovation. The Rising Threat Landscape Telecom networks face increasingly sophisticated threats: VoIP and SMS frauds: From SIM box attacks to Wangiri scams, malicious actors exploit gaps in signaling and messaging protocols. DDoS attacks and ransomware: Distributed denial-of-service attacks can cripple network availability, affecting millions of subscribers in minutes. IoT vulnerabilities: The explosion of connected devices increases the attack surface, requiring continuous monitoring and adaptive defenses. AI-Powered Defenses for Real-Time Protection Traditional firewalls with static rules struggle to keep up with modern attacks. Today\u2019s telecom firewalls leverage AI and machine learning to detect anomalies, identify suspicious traffic patterns, and respond in real time. Key capabilities include: Intelligent traffic analysis: Machine learning models flag irregular call or messaging patterns indicative of fraud or abuse. Automated threat mitigation: Suspicious activity is blocked or quarantined automatically, reducing response times. Predictive insights: AI anticipates potential attack vectors, helping operators stay ahead of cybercriminals. Building a Resilient Security Firewall For telcos, effective firewall deployment goes beyond hardware placement: Layered security: Combine perimeter, application, and content filtering to reduce risk across all entry points. Integration with CPaaS platforms: Secure messaging and voice traffic without compromising service quality. Continuous monitoring and analytics: Track traffic, detect anomalies, and adjust policies dynamically to maintain security posture. Business Impact and Future Readiness The network security firewalls market is projected to grow from USD 7.4 billion in 2025 to USD 30.0 billion by 2035, reflecting the critical role of advanced defenses in telecom. A robust firewall strategy protects revenue streams, ensures regulatory compliance, and builds customer trust. Beyond protection, it enables innovation\u2014telcos can safely launch new digital services, IoT solutions, and personalized communication offerings. Globe Teleservices is empowering telcos to navigate this complex landscape with intelligent, AI-driven firewall solution, Armour. By combining real-time threat detection and seamless integration with enterprise communication platforms, it is helping operators protect revenue and enhance customer experience."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "A2P SMS in 2025: Maximizing Reach While Minimizing Risk",
+      "url": "https://globeteleservices.com/blog/a2p-sms-in-2025-maximizing-reach-while-minimizing-risk/",
+      "published": "2025-09-19T08:40:22",
+      "summary": "Every day, millions of messages travel across networks, connecting businesses to customers in real time. Some confirm a booking, others deliver a flash sale, and a few alert customers about critical updates. But behind every successful message lies a delicate balance\u2014ensuring reach, staying compliant, and avoiding the growing threat of fraud. This is the world of A2P (Application-to-Person) SMS in 2025, where businesses must navigate evolving regulations, sophisticated fraud tactics, and shifting consumer expectations to keep communication seamless and secure. The Evolving Challenges A2P SMS faces multiple hurdles that can impact effectiveness and revenue: Spam and DLT compliance: Regulatory mandates like Distributed Ledger Technology (DLT) in India require pre-registration of templates and sender IDs, or messages risk being blocked. OTT bypass and fraud: Unauthorized routes can divert messages away from legitimate channels, causing revenue leakage and customer distrust. Emerging fraud trends: Techniques such as SIM box fraud, AIT, and message spoofing are increasingly sophisticated, targeting both operators and enterprises. Proactive Measures for Smarter Messaging Businesses need a strategic, proactive approach to thrive: Template and route optimization: Use analytics to select the most effective routes while ensuring DLT or regional compliance. Real-time monitoring: Detect anomalies in delivery patterns or message volumes to prevent fraud before it impacts operations. AI/ML-driven insights: Predict traffic spikes, optimize timing, and identify potential revenue leakage in advance. Integration with CPaaS platforms: Centralized dashboards provide control over multiple campaigns, improving scalability and operational efficiency. Leveraging Analytics for Maximum Impact Analytics can transform raw A2P traffic into actionable insights: Customer engagement metrics: Track open rates, click-throughs, and conversions to refine messaging strategies. Revenue assurance: Detect inconsistencies in delivery or billing to prevent losses. Fraud detection: Identify suspicious traffic patterns or unauthorized sender IDs. The Market and The Road Ahead The A2P &#38; business messaging market is projected to reach $54.6 billion by 2030 from $51.7 billion in 2025, reflecting the growing reliance on SMS as a trusted communication channel. By combining robust compliance, intelligent monitoring, and data-driven optimization, A2P SMS remains a high-impact tool for enterprises and telcos. Those who balance reach, security, and compliance will gain a competitive advantage\u2014ensuring messages are delivered not just widely, but safely and effectively. Globe Teleservices helps businesses navigate this evolving landscape with real-time analytics, fraud prevention, and regulatory compliance for A2P SMS, empowering enterprises to connect confidently and maximize messaging impact."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "AI-Powered Defense: Protecting Networks, Securing Customers",
+      "url": "https://globeteleservices.com/blog/ai-powered-defense-protecting-networks-securing-customers/",
+      "published": "2025-08-15T08:27:29",
+      "summary": "Telecom fraud is no longer a simple nuisance\u2014it\u2019s a fast-evolving threat costing operators billions and eroding customer trust. From SMS spoofing and grey routes to Wangiri scams and Artificially Inflated Traffic (AIT), fraudsters are getting smarter. Traditional rule-based detection, once effective, can\u2019t keep pace with today\u2019s sophisticated attacks. With the Network Security Firewalls Market valued at USD 7.4 billion in 2025 and projected to hit USD 30.0 billion by 2035, the stakes for MNOs are higher than ever: protecting infrastructure and subscribers. This is where AI-powered firewalls are changing the game. Unlike traditional solutions that react after damage, AI-driven firewalls deliver proactive, real-time protection. By continuously learning from traffic patterns, they not only detect known fraud but also anticipate new ones\u2014an essential advantage in a landscape where fraud tactics evolve overnight. Why AI Makes the Difference Real-time threat detection and blocking: Fraudulent traffic is flagged and stopped instantly, before it impacts customers. Predictive analytics: Machine learning models analyze vast volumes of data to spot anomalies and emerging fraud patterns. Automated response and reporting: Instead of manual intervention, AI systems respond within milliseconds, ensuring minimal disruption and providing clear visibility into threats. Beyond these, operators gain end-to-end visibility across their networks, enabling them to understand and control traffic flows more effectively. The result is not just stronger fraud prevention, but also a seamless communication experience that reinforces customer trust. Staying Ahead with Smarter Protection For MNOs, the message is clear: fraudsters will continue to innovate but so must our defenses. A next-gen firewall ensures operators aren\u2019t just catching up\u2014they\u2019re staying a step ahead. It\u2019s about building resilience into the network, protecting revenues, and most importantly, ensuring subscribers can communicate without fear of fraud or service disruption. With our AI-powered firewall, Armour, operators can strengthen their networks, safeguard subscribers, and deliver secure, seamless communication experiences. Because when protection is proactive, customer trust grows stronger."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Telecom Fraud in 2025: Emerging Threats and Smarter Defenses",
+      "url": "https://globeteleservices.com/blog/telecom-fraud-in-2025-emerging-threats-and-smarter-defenses/",
+      "published": "2025-06-23T09:18:04",
+      "summary": "Telecom fraud has become increasingly sophisticated\u2014and costly. In 2023 alone, fraud in the global telecom industry surged by 12%, amounting to an estimated $38.95 billion in losses. As fraud tactics grow more advanced, staying ahead requires smarter, faster, and more adaptive defenses. Here are the top trends reshaping the telecom fraud landscape\u2014and how the industry can rise to the challenge. 1. AI-Powered Scams Generative AI tools like FraudGPT enable fraudsters to deploy hyper-personalized phishing campaigns, create malware automatically, and generate deepfake content at scale. These AI-driven scams double the speed and realism of attacks, making traditional firewall systems unable to detect these types of frauds. 2. SIM Box Fraud SIM Box devices reroute international calls through local networks, bypassing interconnect charges. This &#8220;bypass fraud&#8221; has costed carriers roughly $3.1\u202fbillion annually as of 2023. These devices exploit VoIP links, making global calls appear local. 3. International Revenue Share Fraud (IRSF) In IRSF, fraudsters direct unsuspecting callers to premium-rate numbers, profiting from artificially generated traffic. It remains among the industry\u2019s most lucrative fraud schemes. 4. AI-Powered Deepfake Voice Vishing Voice cloning lets fraudsters impersonate executives or officials in real-time. These deepfake voice calls have enabled highly convincing \u201cvishing\u201d scams which has caused direct financial losses, prompting urgent investment in voice biometrics and authentication systems. 5. AI-Enhanced Phishing Using generative AI, fraudsters now craft ultra-polished voice calls or WhatsApp messages that mimic credible communications from banks or telcos. AI Bots automate voice scams that bypass legacy firewall solutions and deliver near-human interactions, leading to higher success rates. 6. Wangiri Fraud: AI-Powered Callback Scams Modern Wangiri scams involve AI-driven auto-dialers that place thousands of brief calls, enticing the receiver into returning premium-rate calls. This results in billions in revenue losses for telecom operators. Turning the Tide with AI-Driven Defense These evolving threats underscore a critical reality &#8211; AI is a double-edged sword. While fraudsters continue to exploit emerging technologies to outpace traditional defenses, the telecom industry must respond with equal innovation and urgency. Telcos and enterprises must accelerate the adoption of AI-powered fraud management platforms like Armour, which deliver real-time analytics, anomaly detection, ML-driven threat intelligence, and deep reporting capabilities. The future of secure telecom lies not in playing catch-up\u2014but in staying ahead. Now is the time to act."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "The Critical Role of DLT in Combating SMS Fraud",
+      "url": "https://globeteleservices.com/blog/the-critical-role-of-dlt-in-combating-sms-fraud/",
+      "published": "2025-05-05T05:52:04",
+      "summary": "SMS remains a vital channel for Application-to-Person (A2P) communication, supporting critical functions like OTPs, banking alerts, and promotional messaging. However, the integrity of A2P messaging is increasingly compromised by fraudulent activities. In 2023 alone, between 19.8 billion and 35.7 billion fraudulent messages were sent, accounting for 4.8% of global messaging traffic, leading to significant financial losses for businesses and operators. What is Distributed Ledger Technology (DLT)? Distributed Ledger Technology (DLT), commonly associated with blockchain, is a decentralized database where data is recorded across multiple nodes. Each transaction is time-stamped, immutable, and cryptographically secured, ensuring data integrity and transparency. This decentralized nature makes DLT ideal for maintaining verifiable records, especially in sectors prone to data manipulation. Why DLT in Telecom? In the telecom sector, DLT offers a robust solution to verify sender identities, register and validate message templates, and provide traceability for every message. By creating a trusted ecosystem, DLT minimizes the chances of malicious activities, ensuring that only pre-approved entities and content can interact with end-users. How DLT Secures SMS Networks Sender Registration: Enterprises must register on the DLT platform, ensuring only verified entities can send messages. Template Approval: Each message template undergoes an approval process, eliminating spam or misleading messages. Consent Management: Customers&#8217; consent for receiving messages is recorded and auditable, giving control to the recipients. Real-Time Tracking: Every message can be traced back to its origin, with an immutable audit trail deterring spoofing and unauthorized routes. Limitations of DLT While DLT enhances security, it isn&#8217;t a comprehensive solution. It doesn&#8217;t address phishing via malicious links, AI-generated scam messages, or cross-border frauds. Moreover, its effectiveness depends on full ecosystem compliance; without universal adoption, its benefits can be limited. The Future of DLT in Telecom Security For DLT to reach its full potential, integration with advanced threat intelligence systems and AI-powered anomaly detection is essential. Global collaboration among operators, regulators, and enterprises can extend DLT&#8217;s scope beyond SMS to other communication platforms, ensuring secure and trusted digital communication."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Strengthening SMS Networks Against Modern Threats",
+      "url": "https://globeteleservices.com/blog/strengthening-sms-networks-against-modern-threats/",
+      "published": "2025-04-22T07:06:13",
+      "summary": "Telecom networks today face an escalating threat from a growing underground model known as Fraud-as-a-Service (FaaS). It allows fraudsters to offer ready-made fraud kits, enabling scammers to exploit SMS networks for malicious purposes. The financial toll of these scams is staggering, with telecom operators, enterprises, and end-users all suffering the consequences. The Rise of FaaS in SMS Fraud Fraud-as-a-Service is fueling a global surge in SMS scams, hitting telecom operators with major financial and reputational damage. FaaS and Its Impact on the SMS Network FaaS works by enabling fraudsters to manipulate SMS traffic through various illicit methods, including: Grey Routes &#38; SMS Bypass Fraud: Fraudsters use unlicensed routes to bypass legitimate networks, leading to lost revenue for telecom operators and degraded service for customers. SIM Farms: Criminals use large-scale SIM card farms to send out fraudulent messages in bulk, which are often used for scams or spam. SMS Phishing (Smishing): Scammers use fraudulent SMS messages to trick users into sharing sensitive information, leading to identity theft or financial losses. SMS Pumping Fraud: This technique involves tricking users into unknowingly sending premium-rate messages, adding charges to their phone bills. Flash Calls vs. SMS OTP Fraud: Fraudsters use flash calls (calls that disconnect immediately) to verify accounts, bypassing SMS OTP (One-Time Password) authentication systems, leading to unauthorized access to accounts. How Telecom Companies Are Fighting Back To combat this growing threat, telecom companies are adopting advanced technologies and strategies: AI-driven fraud detection: By analyzing SMS patterns in real-time, telecom companies can identify and block suspicious activity before it causes harm. Next-gen firewalls &#38; traffic filtering: Telecom companies can use firewalls and traffic filters to block grey routes and prevent unauthorized access to their networks. Regulatory compliance &#38; stricter authentication: Telecom operators must adhere to regulatory guidelines and implement stronger authentication methods to ensure secure SMS exchanges. Cross-industry collaboration: Telecom companies must work together with other industry players against FaaS networks, sharing intelligence and tools to combat telecom frauds. Fraud-as-a-Service is a growing threat to telecom networks, operators, and consumers. According to the Mobile Ecosystem Forum (MEF), 39% of consumers across ten surveyed countries encountered at least one SMS scam attempt in the past year. By understanding the mechanics of SMS scams and adopting next-gen AI-powered fraud management like Armour, telecom companies can protect their revenue, reputation, and customer trust."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Voice Frauds in Telecom: Safeguarding Revenue and Trust",
+      "url": "https://globeteleservices.com/blog/voice-frauds-in-telecom-safeguarding-revenue-and-trust/",
+      "published": "2025-03-10T12:49:18",
+      "summary": "Fraud in voice networks is not just about financial losses; it\u2019s about brand reputation, customer loyalty, and long-term sustainability. When fraudsters manipulate networks to bypass costs, inflate charges, or deceive customers, businesses take the hit\u2014not just in revenue but in credibility. According to the Communications Fraud Control Association (CFCA), global fraud losses in the telecom industry amount to a staggering $39.89 billion, nearly 2.22% of the total global revenue. Types of AI-Powered Voice Frauds Voice fraud is evolving rapidly, with AI playing a pivotal role in making scams more convincing. A survey found that 10% of internet users worldwide have encountered AI-generated voice scams, while another 15% know someone who has fallen victim to them. Here are some common voice frauds: Bypass Fraud: Fraudsters route calls through unauthorized networks to avoid paying legitimate termination fees, leading to revenue loss. Arbitrage Fraud: Criminals exploit differences in call termination rates to generate artificial traffic and siphon profits. Call Transfer Fraud: A fraudulent call gets transferred to a premium-rate number, racking up charges for the unsuspecting user or business. CNAM Revenue Pumping: Fraudsters manipulate Caller ID Name (CNAM) services to generate revenue from fake calls, damaging a business\u2019s credibility. How Can Operators Safeguard Their Network Fraudsters are constantly evolving their tactics, but operators can fight back with proactive strategies: AI-Powered Fraud Detection: Integrating an advanced fraud management tool that \u00a0detects, analyzes, and blocks suspicious activity in real time. Machine Learning-Based Monitoring: AI-driven monitoring continuously learns from fraud patterns and adapts to new threats. Network Security Audits: Regular audits can identify vulnerabilities and prevent fraud before it impacts revenue and trust. Voice fraud isn\u2019t just an operational challenge\u2014it\u2019s a direct attack on revenue and customer trust. As fraudsters become more sophisticated, stay ahead with our AI-powered fraud prevention solution that protect the network, ensuring that the first line of defense stays intact. &#160;"
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Beyond Prevention: AI in Fraud Management",
+      "url": "https://globeteleservices.com/blog/beyond-prevention-ai-in-fraud-management/",
+      "published": "2025-02-25T09:08:21",
+      "summary": "Telecom operators are constantly locked in a relentless battle against fraudsters. Imagine this: A network operator wakes up to discover thousands of fraudulent transactions overnight, resulting in millions in losses. This isn\u2019t just a hypothetical scenario &#8211; it\u2019s a growing reality. According to the Communications Fraud Control Association (CFCA), the telecom industry suffered an estimated $38.95 billion in fraud-related losses in 2023, a staggering 12% increase from previous years. Traditional fraud detection systems, which react after an attack, are no longer enough. The urgency to shift from reactive to proactive fraud management has never been greater. The Shift to Proactive Fraud Management For years, telecom and enterprise networks have relied on rule-based fraud detection methods. To stay ahead, networks must transition from merely responding to fraud incidents to actively preventing them before they occur. AI/ML-Driven Fraud Detection and Real-Time Threat Mitigation The integration of AI and Machine Learning (ML) is revolutionizing fraud management. Unlike traditional methods, AI-powered systems analyze vast amounts of data in real-time, identifying patterns that indicate fraudulent activities. Key capabilities include: Intelligent Traffic Monitoring: AI continuously scans network traffic to detect unusual patterns and block suspicious activities in real time. Adaptive Threat Detection: ML models evolve with emerging fraud tactics, identifying new attack vectors before they cause damage. Automated Risk Scoring: AI assigns risk scores to transactions, enabling instant decision-making and reducing false positives. The Future of Fraud Prevention in Telecom Networks As fraud tactics evolve, so too must prevention strategies. Future trends in telecom fraud management include: Blockchain for Secure Transactions: Ensuring data integrity and reducing the risk of tampering. Advanced Threat Intelligence Sharing: Collaboration between telecom operators to stay ahead of emerging threats. Hyperautomation in Fraud Detection: AI and ML working in tandem to automate fraud detection and response at scale. Network API: Provides real-time access to network intelligence, enabling instant fraud detection, automated security enforcement, and seamless authentication. In today\u2019s digital landscape, merely detecting fraud isn\u2019t enough. Safeguard your network, reputation and end-consumer by leveraging AI, behavioral analytics and real-time monitoring with our next-gen fraud management solution, Armour. The shift from reactive to proactive fraud management is not just a necessity\u2014it\u2019s the future of secure telecom operations. Get in touch with our expert to know more."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "AI vs. Fraud: The Next-Gen Battle for Security",
+      "url": "https://globeteleservices.com/blog/ai-vs-fraud-the-next-gen-battle-for-security/",
+      "published": "2025-02-11T09:04:02",
+      "summary": "Fraud is evolving, and so is the fight against it. With cybercriminals deploying increasingly sophisticated tactics, traditional fraud detection methods are no longer enough. AI is stepping in as a game changer, helping operators and enterprises safeguard their end-consumers with predictive analytics and real-time threat detection. The impact is evident\u2014according to Market.us, the AI in Fraud Detection Market was valued at USD 12.1 billion in 2023 and is set to reach USD 108.3 billion by 2033. The Rise of AI in Fraud Prevention AI has become the backbone of modern fraud management, leveraging Machine Learning (ML) and Generative AI (GenAI) to analyze vast amounts of data, detect patterns, and predict potential threats. Unlike traditional rule-based systems, AI-driven fraud detection evolves continuously, identifying anomalies and stopping fraudulent activities before they cause damage. AI-Powered Fraud Detection Techniques AI employs multiple techniques to combat fraud effectively: Behavioral Analysis: By monitoring user behavior, AI identifies deviations that may indicate fraudulent activity, such as unusual transaction patterns or login attempts. Anomaly Detection: AI detects irregularities in real-time, flagging suspicious activities that deviate from normal usage trends. Predictive Analytics: Using historical data, AI forecasts potential fraud attempts and enables proactive security measures. Real-Time Threat Monitoring: AI-driven systems provide continuous monitoring, allowing instant responses to fraudulent activities and minimizing financial losses. The Evolving Fraud Landscape Fraudsters are adapting, employing AI themselves to bypass security measures. From deepfake scams to AI-generated phishing attacks, threats are becoming more sophisticated. However, AI also evolves in response, strengthening security through continuous learning and adaptation. GenAI is particularly impactful, as it helps security systems simulate potential fraud attempts and prepare countermeasures in advance. Challenges and Ethical Concerns While AI-powered fraud prevention is highly effective, it comes with its own set of challenges: False Positives: Overzealous AI may flag legitimate transactions as fraudulent, leading to customer dissatisfaction. Data Privacy: AI relies on vast datasets, raising concerns about user privacy and compliance with regulations like GDPR. AI Bias: Improperly trained AI models may exhibit biases, potentially leading to unfair fraud assessments. What\u2019s Next? The Future of AI in Fraud Management AI will continue to revolutionize fraud management with advanced deep learning models, blockchain integration for enhanced security, and AI-driven cybersecurity solutions. Tackle fraud head on with our AI-powered solution, Armour, and redefine security. Get in touch with our experts to stay ahead in the evolving landscape."
+    },
+    {
+      "source": "Globe Teleservices",
+      "category": "telecom_fraud",
+      "title": "Achieving High-Performance Security for Modern Enterprises",
+      "url": "https://globeteleservices.com/blog/achieving-high-performance-security-for-modern-enterprises/",
+      "published": "2025-01-20T06:33:52",
+      "summary": "As cyber threats become more sophisticated, enterprises must implement robust security measures to protect their systems. However, many traditional security solutions often lead to network lag, slowing down operations and affecting overall performance. The solution lies in blending cutting-edge AI with advanced network infrastructure, enabling businesses to secure their systems in real-time without compromising on speed or performance. As per the latest report from GLF, 60% of carriers are using AI-driven systems to enhance fraud detection and prevention. In today\u2019s fast-paced digital landscape, companies need security that not only protects but also enhances customer experience without hindering performance. AI&#8217;s Role in Real-Time Protection AI can analyze massive volumes of data instantly, identifying potential threats and vulnerabilities before they affect the network. AI continuously learns and adapts, improving security measures with each new threat. Automated, AI-driven solutions enable businesses to detect, prevent, and respond to cyber threats instantly\u2014without human intervention or delays. Seamless, Scalable Security AI-based security measures can scale as the enterprise grows, protecting ever-expanding networks without degrading performance. This allows businesses to stay secure, even when dealing with high volumes of data or heavy network traffic. Advanced Threat Detection AI systems provide continuous monitoring of network traffic, analyzing patterns and behaviors in real-time. Suspicious activities or anomalies are flagged immediately, ensuring proactive threat mitigation. Reduced Human Error Automation through AI minimizes the risk of human error, offering a more reliable and effective security approach. Reducing manual intervention also speeds up responses to potential threats, improving overall efficiency. Real-Time Adaptability Unlike traditional security systems, AI can dynamically adjust to emerging threats, making it more effective against new and evolving risks. Achieving the Best of Both Worlds In an increasingly connected world, businesses can&#8217;t afford to compromise on security or speed. AI-powered solutions are bridging this gap, offering enterprises the ability to protect their networks without sacrificing performance. By leveraging AI, organizations can not only enhance their security but also maintain the seamless connectivity that drives growth and innovation. Ready for Secure, Fast, and Seamless Connectivity? At Globe Teleservices, we specialize in AI-driven fraud management solutions that ensure your network stays bulletproof without compromising on speed or performance. Ready to enhance your security without slowing down? Get in touch with our team to learn more about our solutions tailored to your enterprise\u2019s needs. &#160;"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Monday Roundup: Infoblox, Kentik, Sabey, Intrepid, Ubiquity",
+      "url": "https://www.telecomramblings.com/2026/07/monday-roundup-infoblox-kentik-sabey-intrepid-ubiquity/",
+      "published": "2026-07-13T12:19:22",
+      "summary": "Two bits of M&#38;A and a minority stake: &#8230; [visit site to read more]"
     },
     {
       "source": "Telecom Ramblings",
       "category": "telecom_fraud",
       "title": "AI Detection Makes Telecom Security More High Stakes",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWZBhxkw25AGdkCJXkaxXTv?utm_source=follow.it",
+      "url": "https://www.telecomramblings.com/2026/07/ai-detection-makes-telecom-security-more-high-stakes/",
       "published": "2026-07-10T07:07:00",
-      "summary": "This Industry Viewpoint was written by Todd Humphreys, WEI GTM Cybersecurity GTM Leader AI is now embedded across modern security tools and systems that help telecom operators detect vulnerabilities and threats faster and at a greater scale. Security processes that once took weeks of manual analysis can now be completed in just minutes, dramatically increasing visibility across distributed Radio Access Network (RAN) infrastructure, core networks and virtualized environments. &#8230; [visit site "
+      "summary": "This Industry Viewpoint was written by Todd Humphreys, WEI GTM Cybersecurity GTM Leader AI is now embedded across modern security tools and systems that help telecom operators detect vulnerabilities and threats faster and at a greater scale. Security processes that once took weeks of manual analysis can now be completed in just minutes, dramatically increasing [&#8230;]"
     },
     {
       "source": "Telecom Ramblings",
       "category": "telecom_fraud",
       "title": "Fiber Bytes: euNetworks, Lightpath, Kirkwood IG",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaX8iXGtoa6W-BCtHhrZJhjm?utm_source=follow.it",
+      "url": "https://www.telecomramblings.com/2026/07/fiber-bytes-eunetworks-lightpath-kirkwood-ig/",
       "published": "2026-07-09T12:08:10",
       "summary": "Three interesting new regional fiber projects, one by a new name: &#8230; [visit site to read more]"
     },
@@ -37,17 +359,1193 @@
       "source": "Telecom Ramblings",
       "category": "telecom_fraud",
       "title": "Infra Bytes: VFE, DE-CIX, South Front, Duos, Lumen",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWvHkLdkPY0MPhg6exDPqRd?utm_source=follow.it",
+      "url": "https://www.telecomramblings.com/2026/07/infra-bytes-vfe-de-cix-south-front-duos-lumen/",
       "published": "2026-07-08T11:40:44",
-      "summary": "Three metro expansion projects and one bit of M&A news: &#8230; [visit site to read more]"
+      "summary": "Three metro expansion projects and one bit of M&#38;A news: &#8230; [visit site to read more]"
     },
     {
       "source": "Telecom Ramblings",
       "category": "telecom_fraud",
       "title": "Tuesday Roundup: RETN, Nokia, DE-CIX, Nscale",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaUmFRgeBsPRZ5fa9AtxhdHe?utm_source=follow.it",
+      "url": "https://www.telecomramblings.com/2026/07/tuesday-roundup-retn-nokia-de-cix-nscale/",
       "published": "2026-07-07T12:37:24",
       "summary": "A few items from around the world: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "The grid is becoming telecom\u2019s problem, and its opportunity",
+      "url": "https://www.telecomramblings.com/2026/07/the-grid-is-becoming-telecoms-problem-and-its-opportunity/",
+      "published": "2026-07-06T07:01:00",
+      "summary": "This Industry Viewpoint was authored by Stephen Douglas, Head of Market Strategy, Spirent, a Keysight company Most of the energy conversation in our industry right now is about consumption. How much power AI data centers will pull, where the chips go, whether the models can run cheaper. Fair questions. But there&#8217;s a quieter shift underneath [&#8230;]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Fiber M&A: SummitIG Buys DF&I",
+      "url": "https://www.telecomramblings.com/2026/07/fiber-ma-summitig-buys-dfi/",
+      "published": "2026-07-02T13:21:05",
+      "summary": "There was some interesting fiber M&#38;A in one of the biggest infrastructure markets in the world the other day. SummitIG has announced the acquisition of Dark Fiber &#38; Infrastructure. SummitIG is majority owned by SDC Capital Partners, while DF&#38;I was part of the portfolio at Blue Owl Capital, and the two both have substantial assets [&#8230;]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Int\u2019l Bytes: Elea, DE-CIX, Tata, Epsilon, ESpanix",
+      "url": "https://www.telecomramblings.com/2026/07/intl-bytes-elea-de-cix-tata-epsilon-espanix/",
+      "published": "2026-07-01T12:31:59",
+      "summary": "Four expansion projects in four parts of the world to catch up with. &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "BT, Verizon Team Up For International Enterprise",
+      "url": "https://www.telecomramblings.com/2026/06/bt-verizon-team-up-for-international-enterprise/",
+      "published": "2026-06-30T11:30:57",
+      "summary": "This week we have some high profile consolidation in the networking business, specifically in the international enterprise arena. BT Group and Verizon have decided to create a 50/50 joint venture, combining BT International and Verizon&#8217;s international enterprise wireline going forward. &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Monday Roundup: Wyyerd, Colt, Extreme, MatSing, Shentel, GOCare",
+      "url": "https://www.telecomramblings.com/2026/06/monday-roundup-wyyerd-colt-extreme-matsing-shentel-gocare/",
+      "published": "2026-06-29T11:40:11",
+      "summary": "A few items to catch up with: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Thursday Roundup: Ripple Fiber, Blue Planet, Nokia, Telefonica, Databricks",
+      "url": "https://www.telecomramblings.com/2026/06/thursday-roundup-ripple-fiber-blue-planet-nokia-telefonica-databricks/",
+      "published": "2026-06-25T12:31:41",
+      "summary": "A bit of FTTx and a bunch of AI: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Wednesday Bytes: RETN, Race, NetIX",
+      "url": "https://www.telecomramblings.com/2026/06/wednesday-bytes-retn-race-netix/",
+      "published": "2026-06-24T12:29:23",
+      "summary": "Two network expansions and a bit of non-commercial support: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "No Manners Here: The Ruthless Rise of The Gentlemen Ransomware",
+      "url": "https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/",
+      "published": "2026-07-10T22:00:39",
+      "summary": "<p>Unit 42 explores The Gentlemen ransomware operations, revealing the affiliate model driving its rapid growth. Learn more here.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/the-gentlemen-ransomware/\">No Manners Here: The Ruthless Rise of The Gentlemen Ransomware</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector",
+      "url": "https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/",
+      "published": "2026-07-01T01:00:11",
+      "summary": "<p>Attackers can exploit LLM domain hallucinations through phantom squatting to target supply chains. Read the analysis to learn more. </p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/phantom-squatting-hallucinated-web-domains/\">Phantom Squatting: AI-Hallucinated Domains as a Software Supply Chain Vector</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Mitigating Large-Scale Credential Attacks",
+      "url": "https://unit42.paloaltonetworks.com/large-scale-credential-attacks/",
+      "published": "2026-06-26T19:05:33",
+      "summary": "<p>We provide guidance for preparing for and mitigating large-scale credential attacks, focusing on recent campaigns targeting security vendors' devices. </p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/large-scale-credential-attacks/\">Threat Brief: Mitigating Large-Scale Credential Attacks</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/",
+      "published": "2026-06-25T22:00:52",
+      "summary": "<p>Government entities and critical infrastructure were targeted for espionage in SE Asia by attackers using a hybrid toolkit, including custom TinyRCT backdoor. </p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/cl-sta-1062-tinyrct-backdoor/\">CL-STA-1062 Targets Southeast Asian Governments and Critical Infrastructure</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat",
+      "url": "https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/",
+      "published": "2026-06-23T22:00:51",
+      "summary": "<p>Unit 42's analysis of ClawHub revealed evasive malicious skills bypassing automated scanners to deploy infostealers and execute agentic financial fraud.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/openclaw-ai-supply-chain-risk/\">OpenClaw\u2019s Skill Marketplace and the Emerging AI Supply Chain Threat</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration",
+      "url": "https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/",
+      "published": "2026-06-22T22:00:04",
+      "summary": "<p>Unit 42 research details how attackers could exploit global name uniqueness in bucket hijacking to redirect cloud data streams across major CSPs.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/cloud-bucket-hijacking-risks/\">The Global Namespace Risk: Universal Bucket Hijacking Technique for Cloud Data Exfiltration</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Pickle in the Middle \u2013 Hijacking Vertex AI Model Uploads for Cross-Tenant RCE",
+      "url": "https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/",
+      "published": "2026-06-16T10:00:29",
+      "summary": "<p>Unit 42 discovered a Vertex AI Python SDK vulnerability that allows remote code execution via bucket squatting. Read the article for more. </p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/hijacking-vertex-ai-model/\">Pickle in the Middle \u2013 Hijacking Vertex AI Model Uploads for Cross-Tenant RCE</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Inside the Modern SOC: The 72-Minute Race",
+      "url": "https://unit42.paloaltonetworks.com/soc-72-minute-race/",
+      "published": "2026-06-15T23:00:19",
+      "summary": "<p>Attackers can move from access to exfiltration in 72 minutes. Learn how modern SOC teams close the speed gap with Unit 42's AI-driven automation, threat hunting, MDR and Managed XSIAM.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/soc-72-minute-race/\">Inside the Modern SOC: The 72-Minute Race</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Trust No Skill: Integrity Verification for AI Agent Supply Chains",
+      "url": "https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/",
+      "published": "2026-06-11T10:00:24",
+      "summary": "<p>Protect enterprise AI agents from supply chain risks by auditing third-party skills for hidden vulnerabilities and multi-stage attack chains.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/ai-agent-supply-chain-risks/\">Trust No Skill: Integrity Verification for AI Agent Supply Chains</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility",
+      "url": "https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/",
+      "published": "2026-06-09T22:00:21",
+      "summary": "<p>Unit 42 research examines attack scenarios targeting cloud logging services. Learn how to defend against log manipulation and defense evasion.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/cloud-logging-defense-evasion/\">Blinding the Watchmen: Abusing Cloud Logging Services for Defense Evasion and Visibility</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257",
+      "url": "https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/",
+      "published": "2026-06-09T14:05:42",
+      "summary": "<p>We include indicators of activity and mitigations for PAN-OS vulnerability CVE-2026-0257.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/active-exploitation-of-pan-os-cve-2026-0257/\">Threat Brief: Active Exploitation of PAN-OS CVE-2026-0257</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "When \u201cHi, This Is IT\u201d Comes Through Microsoft Teams",
+      "url": "https://unit42.paloaltonetworks.com/microsoft-teams-phishing/",
+      "published": "2026-06-08T23:00:45",
+      "summary": "<p>Attackers are increasingly targeting collaboration platforms like Microsoft Teams. Learn the risks and key steps to strengthen your organization's security.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/microsoft-teams-phishing/\">When \u201cHi, This Is IT\u201d Comes Through Microsoft Teams</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "How to Choose the Best Data Broker Removal Service for Your Organization",
+      "url": "https://www.zerofox.com/blog/best-data-broker-removal-service",
+      "published": "2026-07-08T10:08:34",
+      "summary": "<p>The market for data broker removal runs the full range, from free do-it-yourself opt-out guides to consumer subscriptions like DeleteMe to enterprise platforms built for corporate security teams. For an individual cleaning up their own digital footprint, almost any of these can help. For a security team responsible for protecting executives, their families, and a [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Is Doxxing Illegal? A State-by-State Breakdown for Security Teams",
+      "url": "https://www.zerofox.com/blog/is-doxxing-illegal",
+      "published": "2026-07-01T10:12:34",
+      "summary": "<p>Is Doxxing Illegal? Yes, doxxing is illegal in many circumstances, but the answer depends on three things: what information was shared, the intent behind sharing it, and what state you&#8217;re in. There is no single federal law that bans doxxing by name. Instead, the United States regulates it through a patchwork of state statutes, federal [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Intelligence That Acts: How the TIP Category Is Catching up to the Way Security Teams Work",
+      "url": "https://www.zerofox.com/blog/how-the-tip-category-is-catching-up",
+      "published": "2026-06-29T09:45:39",
+      "summary": "<p>For years, the threat intelligence platform (TIP) category rewarded data collection. The more feeds you ingested, the more indicators you normalized, the more dashboards you built, the better you scored. But ask any security team and they\u2019ll tell you, they don\u2019t need piles of data. TIPs in 2026 need to deliver intelligence that changes what [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Disrupting the Phish-Hunters: Inside a Coordinated Impersonation of the Brand Protection Industry",
+      "url": "https://www.zerofox.com/blog/coordinated-impersonation-of-the-brand-protection-industry",
+      "published": "2026-06-25T10:14:15",
+      "summary": "<p>TL;DR ZeroFox&#8217;s Signals Research Program has uncovered a sustained domain impersonation operation aimed squarely at the brand protection and threat intelligence industry. Seventy-three correlated domains, registered between July 2025 and June 2026, impersonate ZeroFox and at least four peer vendors (Corsearch (including its Incopro brand), Red Points, MarkScan, and Group-IB) alongside a long tail of [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "The Patch Will Not Save You: Why IoT Defense Is Becoming an Intelligence Problem",
+      "url": "https://www.zerofox.com/blog/iot-defense-becoming-intelligence-problem",
+      "published": "2026-06-24T12:53:00",
+      "summary": "<p>Attackers are not waiting for your vulnerability management program to catch up. They are mining twenty years of forgotten flaws, automating exploitation at machine speed, and walking through segmentation that was never built to hold. The organizations that survive the next wave of IoT-targeted attacks will be the ones watching the adversary, not just the [&hellip;]</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Zerofox Joins eco &#8211; Association of the Internet Industry",
+      "url": "https://www.zerofox.com/blog/zerofox-joins-eco",
+      "published": "2026-06-22T12:36:27",
+      "summary": "<p>Disrupting abuse starts with being in the room where relevant standards get made. When ZeroFox identifies a phishing site, a fraudulent social media profile, or an impersonation domain targeting one of our clients, the threat doesn&#8217;t disappear on its own. Someone has to get it removed. That means working directly with the registrars, hosting providers, [&hellip;]</p>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 2, Fraud keywords: 2"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "From CVE to Breach in Under an Hour",
+      "url": "https://www.zerofox.com/blog/from-cve-to-breach-in-under-an-hour",
+      "published": "2026-06-17T10:55:56",
+      "summary": "<p>How AI Is Closing the Window Between Disclosure and Exploitation Software vulnerability exploitation is having a moment. A very long moment that nobody can accurately predict the end of, because AI is accelerating how flaws get found and weaponized, shrinking the window from \u201cpublicly known\u201d to \u201cactively exploited\u201d from months to days to hours. Let\u2019s [&hellip;]</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malicious Insider Threats: How Trusted Employees Turn Into Attackers",
+      "url": "https://www.zerofox.com/blog/malicious-insider-threats-how-trusted-employees-turn-into-attackers",
+      "published": "2026-06-11T10:31:03",
+      "summary": "<p>TL;DR on Malicious Insiders What Are Malicious Insider Threats? Intentional, or malicious, insider threats represent a significant attack vector in which likely disgruntled employees compromise organizations by misusing access to sensitive networks and data or abusing advantageous positioning to enact harm against their employer. Unlike accidental insider threats, intentional insider threat actors take deliberate and [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malware Sandboxing for SOC Teams: How to Detonate Files and URLs Safely",
+      "url": "https://www.zerofox.com/blog/malware-sandboxing-detonate-files",
+      "published": "2026-06-10T09:03:41",
+      "summary": "<p>Most SOC shifts start the same way: a queue full of artifacts that might be malicious and not enough time to investigate every one deeply. A flagged attachment, a URL from a newly registered domain. Each one needs a verdict. Most are clean, but the one that isn&#8217;t could be the beginning of a breach, [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Security Threats at the 2026 FIFA World Cup: What Intelligence Reveals Before Kickoff",
+      "url": "https://www.zerofox.com/blog/security-threats-at-the-2026-fifa-world-cup-what-intelligence-reveals-before-kickoff",
+      "published": "2026-06-05T11:19:16",
+      "summary": "<p>Tickets for the 2026 FIFA World Cup are being sold on Telegram and credentials tied to fifa.com accounts are circulating on dark web marketplaces. A threat actor is even advertising server access allegedly linked to New York FIFA infrastructure. And the tournament hasn&#8217;t even started yet. The 2026 FIFA World Cup will be the biggest [&hellip;]</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Malware Attacks: More Than Just Ransomware",
+      "url": "https://www.zerofox.com/blog/malware-attacks-more-than-just-ransomware",
+      "published": "2026-06-03T10:08:05",
+      "summary": "<p>Ransomware is all the buzz, but it isn&#8217;t the only malware attack. Take a closer look at malware to better understand the risks and how they work together.</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Detonate Malware Safely: When to Sandbox, Block, or Escalate",
+      "url": "https://www.zerofox.com/blog/detonate-malware-safely",
+      "published": "2026-05-27T09:00:00",
+      "summary": "<p>Every suspicious artifact that hits a SOC analyst&#8217;s queue forces the same decision: do I need to understand this before I act, or do I already know enough to act now? Get it wrong in one direction and you waste time analyzing something you should have blocked ten minutes ago. Get it wrong in the [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "How a Leading Airline Shut Down Social Impersonators and Phishing Comments in Under a Week",
+      "url": "https://www.zerofox.com/blog/airline-shut-down-social-impersonators-and-phishing-comments",
+      "published": "2026-05-20T11:16:38",
+      "summary": "<p>A customer drops a frustrated comment under a post: \u201cCan someone help me with my booking?\u201d Within minutes, a \u201csupport\u201d account replies with a friendly tone, a sense of urgency, and a link that definitely doesn\u2019t belong there. It looks and sounds like customer service, but it\u2019s not. In reality, it&#8217;s a scammer acting at [&hellip;]</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "When Data Means Conversations and Code: How AI-Powered Adversaries Are Rewriting the Rules of Targeted Attacks",
+      "url": "https://www.zerofox.com/blog/ai-powered-adversaries",
+      "published": "2026-05-13T10:10:04",
+      "summary": "<p>For years, the security industry drew a fairly clear line around what &#8220;sensitive data&#8221; meant. Personal information, financial records, health data: the structured, regulated categories that compliance frameworks were built to protect. Encrypt it, tokenize it, and restrict access to it. The threat model was straightforward: if you protect the database, you protect the business. [&hellip;]</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "When Phishing Takedowns Are Not Enough: ZeroFox vs. Netcraft for Enterprise Brand Protection",
+      "url": "https://www.zerofox.com/blog/zerofox-vs-netcraft-enterprise-brand-protection",
+      "published": "2026-05-11T08:56:33",
+      "summary": "<p>Netcraft has been in the internet security game since 1995, and they&#8217;ve earned a credible reputation for fast phishing detection and domain phishing takedowns. If your primary concern is malicious domains, they bring speed, automation, and deep relationships with internet infrastructure providers. But modern brand abuse doesn&#8217;t stop at phishing sites. Threat actors now impersonate [&hellip;]</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "VPN service favored by ransomware groups is sanctioned by US",
+      "url": "https://therecord.media/first-vpn-administrator-us-sanctions-ransomware-groups",
+      "published": "2026-07-13T18:50:00",
+      "summary": "The U.S. Treasury Department announced sanctions against First VPN Service (1VPNS) and its Ukrainian administrator for aiding ransomware groups. Separately, a Belarusian man was sanctioned for malware \"cryptors.\"",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russian celebrity journalist Ksenia Sobchak says hackers accessed Telegram channels via email breach",
+      "url": "https://therecord.media/ksenia-sobchak-russian-hackers-leak",
+      "published": "2026-07-13T17:15:00",
+      "summary": "Following the breach of several of her Telegram channels, controversial Russian journalist Ksenia Sobchak claimed published screenshots of her correspondence with political figures were fake.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Russia's FSB blamed for Poland grid attack as UK and EU impose first joint cyber sanctions",
+      "url": "https://therecord.media/russia-blamed-for-poland-grid-cyberattack-in-joint-uk-eu-sanctions-package",
+      "published": "2026-07-12T23:00:00",
+      "summary": "The allies blamed Center 16, the FSB\u2019s signals intelligence arm, for acts of attempted cyber sabotage targeting Poland\u2019s energy sector and water treatment facilities, alongside \u201ca wide range of malicious cyber activities with growing severity.\u201d",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "Ryuk operator pleads guilty; Blackcat/AlphV conspirator gets nearly 6-year sentence",
+      "url": "https://therecord.media/ryuk-operator-pleads-guilty-alphv-conspirator-sentenced",
+      "published": "2026-07-10T17:01:00",
+      "summary": "One man accused of deploying Ryuk ransomware pleaded guilty Wednesday in an Oregon federal court to conspiracy and computer fraud, while another man received a 70-month federal prison sentence in a Florida court for helping the Blackcat/AlphV gang extort multiple victims.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Japan's largest taxi operator shuts systems after cyberattack",
+      "url": "https://www.bleepingcomputer.com/news/security/japans-largest-taxi-operator-shuts-systems-after-cyberattack/",
+      "published": "2026-07-13T20:18:59",
+      "summary": "Japan's largest taxi operator, Nihon Kotsu, announced that its systems were compromised in a cyberattack, forcing the company to shut down part of its infrastructure. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Hackers backdoor Jscrambler npm package with infostealer malware",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-backdoor-jscrambler-npm-package-with-infostealer-malware/",
+      "published": "2026-07-13T19:44:19",
+      "summary": "The Jscrambler client-side web security company disclosed that a threat actor published a malicious version of its npm package that has been downloaded almost 1,500 times. [...]",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New CrashStealer malware poses as Apple crash reporting tool",
+      "url": "https://www.bleepingcomputer.com/news/security/new-crashstealer-malware-poses-as-apple-crash-reporting-tool/",
+      "published": "2026-07-13T19:04:02",
+      "summary": "A new macOS information-stealing malware called CrashStealer pretends to be Apple's crash-reporting tool to steal credentials, keychain data, and crypto wallets. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "CISA warns of actively exploited RCE flaws in Joomla extensions",
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-actively-exploited-rce-flaws-in-joomla-extensions/",
+      "published": "2026-07-13T15:20:16",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning that attackers are exploiting vulnerabilities in the iCagenda and Balbooa Forms extensions for Joomla to achieve remote code execution through arbitrary file uploads. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Lidl discloses online shop breach after service provider hack",
+      "url": "https://www.bleepingcomputer.com/news/security/lidl-discloses-online-shop-breach-after-service-provider-hack/",
+      "published": "2026-07-13T14:19:43",
+      "summary": "German discount supermarket chain Lidl notified customers in Germany, Belgium, and the Netherlands that attackers stole their personal information in a breach at a service provider. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Breach at the Beach: Play the Ultimate Entra ID CTF",
+      "url": "https://www.bleepingcomputer.com/news/security/breach-at-the-beach-play-the-ultimate-entra-id-ctf/",
+      "published": "2026-07-13T14:01:11",
+      "summary": "Learn how attackers abuse Entra ID through a free hands-on Capture the Flag. Varonis created the Breach at the Beach CTF to teach defenders how to investigate Entra ID attack techniques using realistic scenarios. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "EU sanctions Russian GRU military hackers over cyberattacks",
+      "url": "https://www.bleepingcomputer.com/news/security/eu-and-uk-hit-russia-with-first-joint-cyber-sanctions-package/",
+      "published": "2026-07-13T11:19:05",
+      "summary": "The European Union and the United Kingdom jointly sanctioned dozens of Russian individuals and entities and accused Russia of coordinating a network of hacking groups responsible for attacks across Europe. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "US and allies warn of Russian critical infrastructure attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/us-and-allies-share-defense-tips-against-russian-hackers-targeting-critical-infrastructure/",
+      "published": "2026-07-13T09:32:23",
+      "summary": "Cybersecurity agencies from the United States and eight other countries have issued a joint warning that Russian state hackers are targeting vulnerable and poorly configured routers to infiltrate critical infrastructure networks. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "RedHook Android malware now uses Wireless ADB for shell access",
+      "url": "https://www.bleepingcomputer.com/news/security/redhook-android-malware-now-uses-wireless-adb-for-shell-access/",
+      "published": "2026-07-12T14:27:32",
+      "summary": "A new version of the RedHook Android malware abuses the Android Wireless Debugging (Wireless ADB) mechanism in a novel way to gain shell-level privileges without requiring a computer connection. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "Australia warns of global campaign targeting vulnerable CMS platforms",
+      "url": "https://www.bleepingcomputer.com/news/security/australia-warns-of-global-campaign-targeting-vulnerable-cms-platforms/",
+      "published": "2026-07-11T14:18:23",
+      "summary": "The Australian Cyber Security Centre (ACSC) issued an alert about a global exploitation campaign targeting vulnerable content management systems (CMS) and plugins. [...]",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "BleepingComputer",
+      "category": "security_news",
+      "title": "New U-Boot flaws could enable stealthy firmware attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
+      "published": "2026-07-10T21:59:02",
+      "summary": "Six vulnerabilities in the widely used U-Boot bootloader have been discovered that could allow attackers to execute malicious code during device boot, potentially enabling stealthy firmware attacks that compromise security protections and install persistent malware. [...]",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Lessons Learned from CISA\u2019s Recent GitHub Leak",
+      "url": "https://krebsonsecurity.com/2026/07/lessons-learned-from-cisas-recent-github-leak/",
+      "published": "2026-07-13T15:03:28",
+      "summary": "The Cybersecurity and Infrastructure Security Agency (CISA) has issued a postmortem on a data leak in which a contractor published dozens of internal CISA credentials -- including AWS Govcloud keys -- in a public GitHub repository for almost six months before being notified by KrebsOnSecurity. Experts say the gaps identified in the agency's initial response provide important lessons that all security teams should absorb.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Felons, Fraudsters Flog Offensive Cybersecurity Startup",
+      "url": "https://krebsonsecurity.com/2026/07/felons-fraudsters-flog-offensive-cybersecurity-startup/",
+      "published": "2026-07-08T12:31:39",
+      "summary": "A cybersecurity startup dangling millions of dollars to acquire zero-day security vulnerabilities in popular software is run by a pair of far-right conspiracy theorists and convicted felons whose most recent ventures included fake intelligence companies and a now-defunct AI-based lobbying platform they operated under assumed names.",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 1, Fraud keywords: 2"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "FBI Seizes NetNut Proxy Platform, Popa Botnet",
+      "url": "https://krebsonsecurity.com/2026/07/fbi-seizes-netnut-proxy-platform-popa-botnet/",
+      "published": "2026-07-02T19:27:33",
+      "summary": "The Federal Bureau of Investigation (FBI) said today it worked with industry partners to seize hundreds of domains associated with NetNut, a sprawling residential proxy service operated by the publicly-traded Israeli company Alarum Technologies [NASDAQ: ALAR]. The action comes roughly two weeks after KrebsOnSecurity published findings from multiple security firms connecting NetNut to the Popa botnet, a collection of at least two million devices that have been compromised by malicious software with little or no consent from victims.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Scattered Spider Hackers Plead Guilty on Day 1 of Trial",
+      "url": "https://krebsonsecurity.com/2026/06/scattered-spider-hackers-plead-guilty-on-day-1-of-trial/",
+      "published": "2026-06-23T16:12:49",
+      "summary": "Two men pleaded guilty in the United Kingdom this week to criminal charges stemming from an August 2024 cyberattack that crippled Transport for London, the entity responsible for the public transport network in the Greater London area. The duo were key members of a prolific cybercrime group known as Scattered Spider, and their guilty pleas came on the first day of what was expected to be a six-week trial.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Who Runs the Ransomware Group \u2018The Gentlemen?\u2019",
+      "url": "https://krebsonsecurity.com/2026/06/who-runs-the-ransomware-group-the-gentlemen/",
+      "published": "2026-06-10T14:03:44",
+      "summary": "A cybercrime group known as The Gentlemen has emerged as the second most active ransomware gang by victim count, rapidly attracting a talented pool of hackers through an aggressive recruitment strategy that promises affiliates 90 percent of any ransom paid by victims. This post examines clues pointing to a real life identity for the administrator of The Gentlemen ransomware group.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "A Record-Breaking Patch Tuesday for June 2026",
+      "url": "https://krebsonsecurity.com/2026/06/a-record-breaking-patch-tuesday-for-june-2026/",
+      "published": "2026-06-09T22:07:28",
+      "summary": "Microsoft today released software updates to plug nearly 200 security holes across its Windows operating systems and supported software, a record number of fixes for the company's monthly Patch Tuesday cycle. Nearly three dozen of those bugs earned Microsoft's most dire \"critical\" rating, and exploit code for at least three of the weaknesses is now publicly available.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Hackers Used Meta\u2019s AI Support Bot to Seize Instagram Accounts",
+      "url": "https://krebsonsecurity.com/2026/06/hackers-used-metas-ai-support-bot-to-seize-instagram-accounts/",
+      "published": "2026-06-01T17:32:50",
+      "summary": "The Instagram accounts for the Obama White House and the Chief Master Sergeant of the U.S. Space Force were briefly defaced with pro-Iranian images and messages over the weekend, after instructions began circulating on Telegram showing how to trick Meta's \"AI support assistant\" bot into resetting account passwords.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+      "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+      "published": "2026-05-25T13:21:49",
+      "summary": "Authorities in the Netherlands have arrested the co-owners of two related Internet hosting companies for operating IT infrastructure used by Russia to carry out cyberattacks, influence operations and disinformation campaigns inside the European Union. The two men were the focus of a 2025 KrebsOnSecurity story about how their hosting companies had assumed control over the technical infrastructure of Stark Industries Solutions, an Internet service provider sanctioned last year by the EU as a frequent staging ground for cyber mischief from Russia's intelligence agencies.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "Lawmakers Demand Answers as CISA Tries to Contain Data Leak",
+      "url": "https://krebsonsecurity.com/2026/05/lawmakers-demand-answers-as-cisa-tries-to-contain-data-leak/",
+      "published": "2026-05-22T16:34:24",
+      "summary": "Lawmakers in both houses of Congress are demanding answers from the U.S. Cybersecurity &#038; Infrastructure Security Agency (CISA) after KrebsOnSecurity reported this week that a CISA contractor intentionally published AWS GovCloud keys and a vast trove of other agency secrets on a public GitHub account. The inquiry comes as CISA is still struggling to contain the breach and invalidate the leaked credentials.",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Showing our workings: solving for growth, risk and trust",
+      "url": "https://www.fca.org.uk/news/speeches/showing-our-workings-solving-growth-risk-and-trust",
+      "published": "2026-07-13T20:30:15.640976",
+      "summary": "Speech by Sarah Pritchard, deputy chief executive, at a Breakfast Briefing at The Whitehall &amp; Industry Group.\n\nAs everyone who has wrestled with a problem knows, getting to the right answer is about more than just understanding the question.It\u2019s about having a firm grasp on your constants.We\u2019re working with 2. And they are, admittedly, significant. The first is our vision: deepening trust, rebalancing risk, supporting growth and improving lives.We want to see a fair, thriving financial services market that works for consumers and the wider economy.The second is our priorities: supporting growth, fighting financial crime, helping consumers and being a smarter regulator.We\u2019re now in the second year of our 5-year strategy (PDF), which shapes how we engage, prioritise and make decisions.But it isn\u2019t a fixed formula. Markets are always shifting. New threats and opportunities emerge daily, and with AI, faster than ever.So, while our strategy to 2030 provides consistency and predictability in our focus and work, we know good regulation means being both principled and agile \u2013 willing to pivot when we need to.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Eldens Finance Limited enters administration",
+      "url": "https://www.fca.org.uk/news/news-stories/eldens-finance-limited-enters-administration",
+      "published": "2026-07-13T20:30:15.640995",
+      "summary": "On Monday 6 July 2026, Eldens Finance Limited (Eldens) was placed into administration. Antony Batty and Hugh Jesseman of Antony Batty &amp; Company Ltd were appointed as Joint Administrators.\n\nEldens provided pawnbroking loans, primarily secured against high-value and luxury assets.The Joint Administrators are responsible for winding down the firm in an orderly way in the interests of its creditors.On 19 June 2026, Eldens agreed to enter into a voluntary requirement to restrict its ability to deal and dispose of assets and its permissions to carry out regulatory activities. More information about these requirements can be found on the FS Register.Eldens holds a number of customer items that were used as security for pawnbroking loans (these are known as pledged assets). We are engaging with Eldens and the Joint Administrators to support appropriate outcomes for customers in relation to these items.Customers who are struggling financially can get free and impartial guidance from MoneyHelper.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "FCA publishes\u202flandmark review into impact of AI on retail financial services",
+      "url": "https://www.fca.org.uk/news/press-releases/fca-publishes-landmark-review-impact-ai-retail-financial-services",
+      "published": "2026-07-13T20:30:15.641005",
+      "summary": "The review sets out how AI could reshape retail financial services for consumers, firms, markets and regulators by 2030 and beyond.\n\nLed by FCA executive director Sheldon Mills and commissioned by the Board, The Mills Review is the first work of its kind initiated by a regulator globally.Drawing on views from across the financial services landscape, the report identifies 4 major AI\u2011driven shifts likely to impact retail financial services: the transformation of firm operations; the evolution of consumer journeys; the reshaping of competition and market power; and the amplification of fraud and cyber risks.The report finds there is already consumer appetite for the use of agentic AI in personal finance, with research commissioned by the FCA showing that a fifth of people \u2013 equivalent to 11 million UK adults \u2013 are likely to use AI that can act autonomously within pre-set goals. But consumers in the survey are concerned about trust and control of AI.The Review concludes that AI is likely to become a defining force in retail financial services, transforming how firms operate, how consumers make financial decisions and how markets function. While AI has the potential to improve access, personalisation and efficiency, it could also amplify risks associated with fraud, cyber security, consumer harm and market concentration.Executive director Sheldon Mills said: 'Artificial intelligence will transform financial services by 2030. It creates significant opportunities for consumers, firms and the wider economy. This report sets out a roadmap for how industry regulators and government can prepare for the next phase of AI-driven change in our world-leading financial services sector.'Key recommendationsThe Mills Review also outlines 7 recommendations for the FCA Board and Executive to consider, which are as follows:Secure and adapt the regulatory perimeter.Strengthen system-wide coordination and oversight.Monitor the transition to autonomous models and adapt regulatory frameworks.Scale up the FCA's AI Lab to support AI models and system innovation in financial services.Enable the foundations for agentic finance.Build and adopt an AI-enabled agentic supervisory model.Develop a trusted public-interest AI-enabled financial capability service.FCA responseAshley Alder, Chair of the FCA, said: 'The Board is enormously grateful to Sheldon for the rich, comprehensive report he\u2019s delivered. His work anticipates the fundamental change agentic AI will bring to financial services. It highlights how consumers and firms can reap significant potential benefits as well how risks can be managed.'As is clear in the report, we need to keep pace with a rapidly changing environment and the principles-based, outcomes focussed approach we\u2019ve taken on AI \u2013 relying on the Consumer Duty and Senior Managers Regime \u2013 has been critical to us doing so. The recommendations build on work the FCA has been doing \u2013 not least allowing firms to test their use of AI with us \u2013 and our own use of AI to be a smarter regulator, more efficient and effective.'Notes to editorsRead The Mills Review.In January, the FCA launched a review into the implications of advanced AI on consumers, retail financial markets and regulators.The Review was led by Sheldon Mills and builds on the FCA\u2019s existing work on AI. This includes its AI Discussion Paper, AI Sprint, and AI Lab including AI Live Testing and its groundbreaking Supercharged Sandbox supported by NVIDIA.As part of The Mills Review, in April 2026, Yonder Consulting conducted a survey of more than 5,000 UK retail financial services consumers (PDF), defined as individuals holding a day-to-day bank account, such as a current or savings account.Quotas were set to ensure the survey was representative of the population of UK retail finance service consumers on key demographics including age, gender, ethnicity, region, housing tenure and internet ability.As part of the survey, consumers were presented with a range of plausible near\u2011term use cases for AI in financial services. The findings show that 20% of consumers would be likely to use AI capable of acting autonomously within pre-set goals.Running in parallel to this work, the FCA will launch an AI good and poor practice publication later this year. As part of this work, the regulator has engaged directly with firms to find out what is working well, where firms are facing challenges, and where further clarity would help.Find out more on how the FCA is engaging with firms to help shape its approach to AI.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Analysis of Ongoing Ousaban Attacks Targeting the Iberian Peninsula",
+      "url": "https://feeds.fortinet.com/~/958831322/0/fortinet/blog/threat-research~Analysis-of-Ongoing-Ousaban-Attacks-Targeting-the-Iberian-Peninsula",
+      "published": "2026-07-01T13:00:00",
+      "summary": "FortiGuard Labs analyzes a geofenced Ousaban campaign targeting Spain and Portugal with phishing PDFs, steganography, and evasive C2.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/958831322/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/958831322/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/958831322/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/958831322/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/958831322/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "From CI/CD to Cloud Data: How Shai Hulud Persistence Leads to Redshift Breach",
+      "url": "https://feeds.fortinet.com/~/958459373/0/fortinet/blog/threat-research~From-CICD-to-Cloud-Data-How-Shai-Hulud-Persistence-Leads-to-Redshift-Breach",
+      "published": "2026-06-26T13:00:00",
+      "summary": "See how Shai Hulud-linked CI/CD compromise exposed Jenkins credentials, enabled AWS escalation, and led to Redshift breach activity detected by FortiCNAPP<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/958459373/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/958459373/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/958459373/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/958459373/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/958459373/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Threat Actors Weaponize AI Hype to Deliver AsyncRAT",
+      "url": "https://feeds.fortinet.com/~/957950855/0/fortinet/blog/threat-research~Threat-Actors-Weaponize-AI-Hype-to-Deliver-AsyncRAT",
+      "published": "2026-06-11T13:00:00",
+      "summary": "FortiGuard Labs analyzes a multi-stage malware campaign that uses fake AI-themed documents, hidden PowerShell scripts, AutoHotkey loaders, and process injection to deploy AsyncRAT and maintain remote access.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/957950855/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/957950855/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/957950855/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/957950855/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/957950855/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Cybercriminals Are Targeting the FIFA World Cup 2026",
+      "url": "https://feeds.fortinet.com/~/957732002/0/fortinet/blog/threat-research~Cybercriminals-Are-Targeting-the-FIFA-World-Cup",
+      "published": "2026-06-04T13:00:00",
+      "summary": "FortiGuard Labs research shows how cybercriminals are exploiting the demand for the FIFA World Cup 2026 through phishing, fake tickets, malware, impersonation, and credential theft.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/957732002/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/957732002/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/957732002/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/957732002/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/957732002/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 5, Fraud keywords: 0"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Inside the Cross-Platform Propagation of a New Gafgyt Variant C0XMO",
+      "url": "https://feeds.fortinet.com/~/957685901/0/fortinet/blog/threat-research~Inside-the-CrossPlatform-Propagation-of-a-New-Gafgyt-Variant-CXMO",
+      "published": "2026-06-03T13:00:00",
+      "summary": "FortiGuard Labs analyzes C0XMO, a new Gafgyt variant leveraging DD-WRT exploitation and multi-architecture propagation to expand IoT botnet infections.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/957685901/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/957685901/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/957685901/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/957685901/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/957685901/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Phishing Campaign Deploys JavaScript-Driven PureLogs Variant to Steal Sensitive Data",
+      "url": "https://feeds.fortinet.com/~/957300263/0/fortinet/blog/threat-research~Phishing-Campaign-Deploys-JavaScriptDriven-PureLogs-Variant-to-Steal-Sensitive-Data",
+      "published": "2026-05-26T13:00:00",
+      "summary": "FortiGuard Labs analyzed a new phishing campaign that uses obfuscated JavaScript, PowerShell, process hollowing, and PureLogs to steal sensitive data<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/957300263/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/957300263/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/957300263/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/957300263/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/957300263/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Misconfigured, Enrolled and Dormant: Anatomy of a P2Pinfect Kubernetes Compromise",
+      "url": "https://feeds.fortinet.com/~/956771309/0/fortinet/blog/threat-research~Misconfigured-Enrolled-and-Dormant-Anatomy-of-a-PPinfect-Kubernetes-Compromise",
+      "published": "2026-05-20T13:00:00",
+      "summary": "FortiGuard Labs analyzed several P2PInfect compromises in GKE clusters, showing how exposed Redis instances can enable persistent botnet enrollment, dormancy, and cloud runtime risk.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/956771309/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/956771309/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/956771309/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/956771309/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/956771309/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "PureLogs: Delivery via PawsRunner Steganography",
+      "url": "https://feeds.fortinet.com/~/956103044/0/fortinet/blog/threat-research~PureLogs-Delivery-via-PawsRunner-Steganography",
+      "published": "2026-05-15T13:00:00",
+      "summary": "FortiGuard Labs has analyzed a steganography-based malware campaign that uses PawsRunner to deliver the PureLogs infostealer, highlighting evolving delivery methods and detection strategies.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/956103044/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/956103044/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/956103044/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/956103044/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/956103044/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "Tracking Mirai Variant Nexcorium: A Vulnerability-Driven IoT Botnet Campaign",
+      "url": "https://feeds.fortinet.com/~/953946956/0/fortinet/blog/threat-research~Tracking-Mirai-Variant-Nexcorium-A-VulnerabilityDriven-IoT-Botnet-Campaign",
+      "published": "2026-04-17T13:00:00",
+      "summary": "TBK DVRs targeted by Nexcorium: exploiting, persisting, brute-force attacks, and multi-architecture Mirai-style DDoS in a single campaign. From CVE-2024-3721 exploitation to CVE-2017-17215 reuse, this botnet demonstrates how quickly IoT threats continue to evolve.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/953946956/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/953946956/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/953946956/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/953946956/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/953946956/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "DPRK-Related Campaigns with LNK and GitHub C2",
+      "url": "https://feeds.fortinet.com/~/953053052/0/fortinet/blog/threat-research~DPRKRelated-Campaigns-with-LNK-and-GitHub-C",
+      "published": "2026-04-02T13:00:00",
+      "summary": "Analysis of DPRK-linked LNK-based attacks using GitHub as covert C2 infrastructure, detailing multi-stage PowerShell execution, persistence mechanisms, and data exfiltration techniques targeting Windows environments.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/953053052/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/953053052/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/953053052/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/953053052/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/953053052/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "CrashStealer macOS Malware Uses Notarized Dropper to Pass Gatekeeper Checks",
+      "url": "https://thehackernews.com/2026/07/crashstealer-macos-malware-uses.html",
+      "published": "2026-07-13T17:36:12",
+      "summary": "Cybersecurity researchers have flagged a new macOS information stealer called CrashStealer that's capable of harvesting sensitive data from compromised systems.\n\nUnlike other information stealers that are built on AppleScript droppers or Objective-C-based wrappers, CrashStealer is implemented in native C++, according to Jamf Threat Labs.\n\n\"It validates the victim's login password locally before",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "\u26a1 Weekly Recap: ShareFile Threat, Citrix Bleed 2 Ransomware, AI Coding Attacks, and More",
+      "url": "https://thehackernews.com/2026/07/weekly-recap-sharefile-threat-citrix.html",
+      "published": "2026-07-13T15:05:57",
+      "summary": "Somewhere right now, a security tool is quietly finding bugs faster than any human can fix them. That's supposed to be the good news. The catch is that the attackers have the same tools, pointed the other way, and they don't file tickets.\n\nThat's the shape of this week. Trusted code turns on the people who installed it. Old bugs from last year are still landing because the fix sat in a queue too",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New MemGhost Attack Plants Persistent False Memories in AI Agents Through One Email",
+      "url": "https://thehackernews.com/2026/07/new-memghost-attack-plants-persistent.html",
+      "published": "2026-07-13T13:49:48",
+      "summary": "Give an AI assistant a memory and access to your inbox, and you hand an attacker a way to rewrite what it thinks it knows about you. A single email can trick that agent into saving a false \"fact\" about the user, hide the change, and quietly steer its answers in later sessions.\n\nWhen it works, the person reads an ordinary-looking reply and never learns their assistant was tampered with.\n\nThe",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Forg365 PhaaS Targets Microsoft 365 with Device Code and AitM Session Theft",
+      "url": "https://thehackernews.com/2026/07/forg365-phaas-targets-microsoft-365.html",
+      "published": "2026-07-13T13:03:33",
+      "summary": "A new phishing-as-a-service (PhaaS) operation called Forg365 is using a combination of device code phishing, adversary-in-the-middle (AitM) tactics, antibot evasion, artificial intelligence (AI)-assisted lure creation, and post-compromise mailbox operations targeting Microsoft 365 accounts.\n\nDistributed via Telegram and costing $400 a month (or $3,800 per year), attack chains leverage phishing",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Thinking Fast and Slow in the SOC: The Case for Combining Autonomous AI with Analyst Copilots",
+      "url": "https://thehackernews.com/2026/07/thinking-fast-and-slow-in-soc-case-for.html",
+      "published": "2026-07-13T11:37:05",
+      "summary": "A few days ago, I was sitting with the CISO of a Fortune 50 company, walking through how his security team was thinking about AI agents in the SOC. Smart team. Serious program. They had already connected Claude to a few detection tools and were seeing real value in specific investigations. But as we mapped out the broader architecture, something kept nagging at me. The design they were building",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Attacker Uses Suspected AI-Generated PowerShell Script to Map Active Directory",
+      "url": "https://thehackernews.com/2026/07/attacker-uses-suspected-ai-generated.html",
+      "published": "2026-07-13T11:02:33",
+      "summary": "Cybersecurity researchers have flagged an intrusion in which an unknown threat actor leveraged a vibe-coded PowerShell script for Active Directory (AD) enumeration.\n\n\"The script looked for the Domain Controller (DC) and mapped users, computers, and domains, before creating a directory and exporting out a number of files, and finally creating AD_Report.html to measure the success of the",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Misconfigured Server Reveals Three Evilginx Phishing Operations Targeting Microsoft 365",
+      "url": "https://thehackernews.com/2026/07/misconfigured-server-reveals-three.html",
+      "published": "2026-07-13T07:30:00",
+      "summary": "An attacker running a live Microsoft 365 phishing operation left a Python web server listening on a public port with directory listing switched on. The command that did it:&nbsp;python3 -m http.server 8080, was still sitting in the readable&nbsp;.bash_history.\n\nFrom that one lapse, French security firm&nbsp;Lexfo&nbsp;lifted the operator's entire toolkit and pivoted through it to two more",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "iCagenda and Balbooa Forms Joomla Flaws Reportedly Exploited as Zero-Days",
+      "url": "https://thehackernews.com/2026/07/icagenda-and-balbooa-forms-joomla-flaws.html",
+      "published": "2026-07-13T05:36:02",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added two maximum-severity security flaws impacting iCagenda and Balbooa extensions for Joomla to its Known Exploited Vulnerabilities (KEV) catalog, following reports of zero-day exploitation in the wild.\n\nThe vulnerabilities, both rated 10.0 on the CVSS scoring system, are below -\n\n\n  CVE-2026-48939 - A vulnerability in the",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
+      "url": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+      "published": "2026-07-11T17:49:31",
+      "summary": "Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026.\n\n\"At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
+      "url": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
+      "published": "2026-07-11T06:45:55",
+      "summary": "Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution.\n\nThe vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier.\n\n\"The",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "URGENT - Progress Tells ShareFile Customers to Shut Down Storage Zone Controllers Over Security Threat",
+      "url": "https://thehackernews.com/2026/07/urgent-progress-tells-sharefile.html",
+      "published": "2026-07-10T16:30:00",
+      "summary": "Progress Software has told ShareFile customers to shut down the Windows servers running their Storage Zone Controllers, confirming to The Hacker News that it is responding to a \"credible external security threat.\"\n\nThe company has temporarily disabled access to the affected accounts, a step it says it took \"out of an abundance of caution\" while it works with internal and external security",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
+      "url": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
+      "published": "2026-07-10T16:29:00",
+      "summary": "Unknown threat actors compromised the Injective Labs SDK project's GitHub repository and leveraged it to publish a malicious package on the npm registry to steal cryptocurrency wallet private keys and mnemonic seed phrases.\n\nThe compromised version, @injectivelabs/sdk-ts@1.20.21, came embedded with fake telemetry functionality that exfiltrated data from cryptocurrency wallets. The version was",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
+      "url": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
+      "published": "2026-07-10T15:57:14",
+      "summary": "Researchers at firmware security firm&nbsp;Binarly&nbsp;have found six new flaws in U-Boot, the small program that starts up hardware as varied as home routers, smart cameras, and the management chips inside data-center servers.\n\nFour of the bugs can crash a device. The other two could let an attacker who slips a malicious image in front of the bootloader run their own code, before the device",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
+      "url": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
+      "published": "2026-07-10T14:51:49",
+      "summary": "Researchers at Ledger's&nbsp;Donjon security team&nbsp;have shown that a precisely timed laser pulse, aimed at the chip inside a Tangem crypto wallet card, can reset the card's password to anything the attacker picks.\n\nNo old password. No backup card. Once it is reset, whoever did it controls the wallet and can move the coins&nbsp;out.\n\nThis is not an emergency for most owners. The attack needs",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Researcher Details WhatsApp-to-Host Attack Chain Using Three OpenClaw Flaws",
+      "url": "https://thehackernews.com/2026/07/researcher-details-whatsapp-to-host.html",
+      "published": "2026-07-10T14:19:50",
+      "summary": "Details have emerged about three now-patched security flaws in the OpenClaw personal artificial intelligence (AI) assistant that, if successfully exploited, could enable credential theft, privilege escalation, and arbitrary code execution on the host.\n\nA brief description of the high-severity vulnerabilities is as follows&nbsp;-\n\n\n  GHSA-hjr6-g723-hmfm (CVSS score: 8.8) - An operating system",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New MODBEACON RAT Uses gRPC Streaming for Encrypted C2 Traffic",
+      "url": "https://thehackernews.com/2026/07/new-modbeacon-rat-uses-grpc-streaming.html",
+      "published": "2026-07-10T13:15:23",
+      "summary": "The China-linked cybercrime group known as Silver Fox has been attributed to a new Rust-based remote access trojan (RAR) called MODBEACON.\n\nChinese cybersecurity company QiAnXin said that while the threat cluster may appear like a low-sophistication, high-activity operation that propagates malware via counterfeit installers using SEO poisoning techniques, it belies their true organizational",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Exposed Hacker Server Reveals WP-SHELLSTORM Backdooring Thousands of WordPress Sites",
+      "url": "https://thehackernews.com/2026/07/exposed-hacker-server-reveals-wp.html",
+      "published": "2026-07-10T11:30:02",
+      "summary": "A cybercrime crew left one of its own servers wide open on the internet for three weeks, and it exposed the operation's inner workings: the hacking tools, the activity logs, and target lists naming more than 1.4 million websites.\n\nFar fewer were actually broken into, but the exposed files showed researchers how a mass site-hacking operation runs from the inside.\n\nThe operation, now tracked as",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Hackers Use Fake Microsoft Entra Passkey Enrollment to Gain Microsoft 365 Access",
+      "url": "https://thehackernews.com/2026/07/hackers-use-fake-microsoft-entra.html",
+      "published": "2026-07-10T10:30:20",
+      "summary": "A threat actor has been targeting organizations spanning multiple sectors with voice-based fake security requests that prompt Microsoft 365 users to enroll a new Entra passkey with an aim to carry out data extortion attacks.\n\nThe threat actor, tracked by Okta under the moniker O-UNC-066, has deployed a panel-controlled phishing kit that's capable of targeting the passkey enrollment process. The",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 5, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Attackers Exploit 'Ill Bloom' Vulnerability to Drain Over $5 Million From Cryptocurrency Wallets",
+      "url": "https://thehackernews.com/2026/07/attackers-exploit-ill-bloom.html",
+      "published": "2026-07-10T09:00:05",
+      "summary": "Security firm&nbsp;Coinspect&nbsp;has disclosed a crypto wallet flaw it calls&nbsp;Ill Bloom, and attackers are already using it. The flaw is in how some wallet software generated its recovery phrase, the words that control the money. When that phrase is made with weak randomness, an attacker can work it out and take everything it controls.\n\nThe firm has confirmed one coordinated sweep on May 27",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ransomware Negotiator Gets 70 Months in Prison for Aiding BlackCat Attacks",
+      "url": "https://thehackernews.com/2026/07/ransomware-negotiator-gets-70-months-in.html",
+      "published": "2026-07-10T08:10:12",
+      "summary": "A 41-year-old former ransomware negotiator has been sentenced to nearly six years (i.e., 70 months) in prison in the U.S. for their role in conspiring with the now-defunct BlackCat ransomware operators to extort multiple victims and working with two other cybersecurity professionals to target additional victims in 2023.\n\nIn a sentencing memorandum, federal prosecutors described Martino as a \"",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Dormant GitHub Accounts Help Attackers Blend In While Mapping Corporate Orgs",
+      "url": "https://thehackernews.com/2026/07/dormant-github-accounts-help-attackers.html",
+      "published": "2026-07-09T18:38:49",
+      "summary": "Datadog Security Labs is warning of \"several overlapping campaigns\" that are systematically enumerating corporate GitHub organizations, repositories, and user accounts through the GitHub&nbsp;API.\n\n\"Operators rely on automated scraping tooling with custom or legitimate-sounding user agents, leveraging GitHub 'ghost' accounts that are often years old, or compromised OAuth tokens and personal",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New GigaWiper Windows Backdoor Bundles Disk Wiping, Fake Ransomware, and Spyware",
+      "url": "https://thehackernews.com/2026/07/new-gigawiper-windows-backdoor-bundles.html",
+      "published": "2026-07-09T18:08:07",
+      "summary": "Microsoft has taken apart a destructive Windows backdoor it calls GigaWiper. What stands out is how it is built: not one tool but three older destructive programs bolted into one, offered as commands the operator can choose from.\n\nEach is a different way to break a machine: wipe the whole disk, overwrite the Windows drive, or run fake \"ransomware\" that scrambles files with a key it never saves",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "ThreatsDay: Cloud Bucket Hijacking, Windows LPE Chain, Global Fraud Bust + 17 More Stories",
+      "url": "https://thehackernews.com/2026/07/threatsday-cloud-bucket-hijacking.html",
+      "published": "2026-07-09T15:09:28",
+      "summary": "Most security mess starts as admin work. A link gets clicked. A tool gets trusted. A bucket name gets reused. A setting stays loose because nobody wants to touch&nbsp;it.\n\nThis week is full of that kind of damage. Not loud. Not clever. Just small gaps doing big jobs. The worst part is how normal it all looks until the bill arrives.\n\nThe full ThreatsDay list is below.\n\n\n\n\n\n  \n\n  \n  \n    Global",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "AI Attacks Move in Minutes. Join This Webinar on Building a Defense That Keeps Up",
+      "url": "https://thehackernews.com/2026/07/ai-attacks-move-in-minutes-join-this.html",
+      "published": "2026-07-09T12:26:58",
+      "summary": "AI has changed how fast attacks move. Work that once took an attacker days now takes minutes. Using models like Mythos, attackers write tailored bait, pick targets, test what lands, and jump to the next host before your team clears the first alert.\n\nThat is the gap, and it is not your fault. The tools and runbooks most teams run on were built for attackers who work at human speed. AI-driven",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "GodDamn Ransomware Uses PoisonX Driver to Disable Endpoint Defenses",
+      "url": "https://thehackernews.com/2026/07/goddamn-ransomware-uses-poisonx-driver.html",
+      "published": "2026-07-09T10:43:09",
+      "summary": "Cybersecurity researchers have flagged a new ransomware family called GodDamn that employs the PoisonX kernel driver to neutralize security software as part of its defense evasion strategy.\n\nAccording to a new report published by the Threat Hunter Team from Symantec, the ransomware was first publicly spotted in the wild on May 21, 2026. It's assessed to be a rebrand of the Beast ransomware,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Microsoft Patches RoguePlanet Defender Flaw That Can Grant SYSTEM Privileges",
+      "url": "https://thehackernews.com/2026/07/microsoft-patches-rogueplanet-defender.html",
+      "published": "2026-07-09T08:48:48",
+      "summary": "Microsoft has released security updates for a Defender vulnerability known as RoguePlanet, nearly a month after details of the flaw became public.\n\nThe vulnerability, tracked as CVE-2026-50656 (CVSS score: 7.8), is a privilege escalation issue in the Microsoft Malware Protection Engine (\"mpengine.dll\"), which provides scanning, detection, and cleaning capabilities for its antivirus and",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Top\u00a0AI Agents Built to Catch Malicious Code Can Be Tricked Into Running It",
+      "url": "https://thehackernews.com/2026/07/friendly-fire-ai-agents-built-to-catch.html",
+      "published": "2026-07-09T05:15:02",
+      "summary": "Ask an AI coding agent to scan open-source code for security holes, and it might run the attacker's code on your own machine instead.\n\nThat is the finding in a&nbsp;proof-of-concept published Wednesday&nbsp;by the AI Now Institute, an attack it calls \"Friendly Fire.\" It works against Anthropic's Claude Code and OpenAI's Codex when either is running in an autonomous mode that approves its own",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Fake 7-Zip Installers Turn Devices Into Residential Proxy Nodes",
+      "url": "https://thehackernews.com/2026/07/fake-7-zip-installers-turn-devices-into.html",
+      "published": "2026-07-09T04:01:49",
+      "summary": "Cybersecurity researchers have disclosed details of a new threat actor dubbed Lurking Lizard that has been operating an end-to-end malicious residential proxy business using an infrastructure comprising more than 230 lookalike domains.\n\nThe activity dates back to at least August 2022, according to DNS threat intelligence firm Infoblox. One such campaign, observed earlier this year, involved the",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "AI Coding Agents Found Triggering Endpoint Security Rules Built to Catch Attackers",
+      "url": "https://thehackernews.com/2026/07/ai-coding-agents-found-triggering.html",
+      "published": "2026-07-08T17:02:12",
+      "summary": "Sophos looked at a week of its own endpoint data and found that AI coding agents such as Claude Code, Cursor, and OpenAI Codex are setting off detection rules written to catch human intruders.\n\nThe agents are not malicious. They just do a lot of things that, to a behavioral engine, look exactly like an attack.\n\nDecrypting browser credentials, listing what sits in Windows' credential store,",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New HalluSquatting Attack Could Trick AI Coding Assistants Into Installing Botnet Malware",
+      "url": "https://thehackernews.com/2026/07/new-hallusquatting-attack-could-trick.html",
+      "published": "2026-07-08T15:07:24",
+      "summary": "AI coding assistants have a habit of making things up. Ask one to fetch a popular tool, and it will sometimes hand back a real-sounding name for a project that does not exist.\n\nNew research, which its authors call&nbsp;HalluSquatting, turns that habit into an attack: work out the fake names an AI reliably invents, register them first, and wait for the assistant to fetch your trap on a user's",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Ubiquiti Patches Critical UniFi Flaws Across Connect, Talk, Access, Protect, and OS",
+      "url": "https://thehackernews.com/2026/07/ubiquiti-patches-critical-unifi-flaws.html",
+      "published": "2026-07-08T14:38:05",
+      "summary": "Ubiquiti has shipped updates to address multiple critical security flaws impacting UniFi Connect, UniFi Talk, UniFi Access, UniFi Protect, and UniFi OS that could result in privilege escalation and arbitrary command execution.\n\nThe list of vulnerabilities is as follows -\n\n\n  CVE-2026-50746 (CVSS score: 10.0) - An improper access control vulnerability in UniFi Connect Application that an attacker",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "New Ghost Phishing Wave Is Breaking Traditional Email Security",
+      "url": "https://thehackernews.com/2026/07/new-ghost-phishing-wave-is-breaking.html",
+      "published": "2026-07-08T13:00:00",
+      "summary": "A recent EvilTokens campaign targeting businesses across the US and Europe is exposing a new email security blind spot. This \u201cghost phishing\u201d technique keeps the malicious page hidden until it decrypts and comes to life inside the victim\u2019s browser.\n\nFor security leaders, the risk is clear: traditional URL checks may miss the attack while Microsoft 365 access, sensitive data, and response time",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "SCMBANKER Malware Uses ClickFix Lures to Target Mexican Banking Users",
+      "url": "https://thehackernews.com/2026/07/scmbanker-malware-uses-clickfix-lures.html",
+      "published": "2026-07-08T12:52:15",
+      "summary": "A new banking fraudulent operation is targeting customers of Mexican banks, fintech, payment processors, and cryptocurrency exchanges using ClickFix lures.\n\nThe activity cluster, tracked by Elastic Security Labs under the moniker REF6045, involves infecting victims through fake CAPTCHA verification pages that deceive them into running a malicious command that installs a PowerShell toolkit dubbed",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 2, Fraud keywords: 2"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "The Verification Step Is the New ATO Battleground in 2026",
+      "url": "https://thehackernews.com/2026/07/the-verification-step-is-new-ato.html",
+      "published": "2026-07-08T11:30:00",
+      "summary": "For years, account takeover (ATO) followed a predictable script. Attackers bought stolen credentials in bulk, ran them through automated tools, and waited for matches. Credential stuffing was cheap, scalable, and for defenders, relatively well understood.\n\nThat era is ending. Not because attackers gave up, but because the front door finally got harder to kick in.\n\nPasskeys are now mainstream.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "China-Linked UAT-7810 Expands ORB Network With New LONGLEASH Malware",
+      "url": "https://thehackernews.com/2026/07/china-linked-uat-7810-expands-orb.html",
+      "published": "2026-07-08T09:04:33",
+      "summary": "A Chinese threat actor tracked as UAT-7810 is actively refining its bespoke malware to expand its Operational Relay Box (ORB) network by breaking into internet-facing networking devices.\n\nAccording to findings from Cisco Talos, UAT-7810 is an advanced persistent threat (APT) actor that's responsible for maintaining and proliferating LapDogs, an ORB network that first came to light in June 2025.",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+      "url": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+      "published": "2026-07-08T06:16:44",
+      "summary": "Researchers at&nbsp;Nebula Security&nbsp;have disclosed GhostLock (CVE-2026-43499), a 15-year-old Linux kernel flaw that lets any logged-in user take full&nbsp;root&nbsp;control of a machine that has not been patched.\n\nThe vulnerable code has shipped by default in essentially every mainstream distribution since 2011. The flaw needs no special permission, no unusual settings, and no network",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "url": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "published": "2026-07-08T05:33:12",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Tuesday added four security flaws to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-48282 (CVSS score: 10.0) - A path traversal vulnerability in Adobe ColdFusion that could lead to arbitrary code execution in the context of the",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "Rogue Agent Flaw Could Have Let Attackers Hijack Google Dialogflow CX Chatbots",
+      "url": "https://thehackernews.com/2026/07/rogue-agent-flaw-could-have-let.html",
+      "published": "2026-07-07T16:37:33",
+      "summary": "A critical flaw in Google's Dialogflow CX could have let an attacker with edit rights on one Code Block-enabled agent compromise other Code Block-enabled agents in the same Google Cloud project.\n\nFrom there, they could read live conversations, steal the data users shared, and make the bots send attacker-written messages, including requests to re-enter a password.\n\nSecurity firm Varonis found it",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Hackers breach Lidl\u2019s IT service provider, steal customer data",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/lidl-data-breach-customer-data/",
+      "published": "2026-07-13T16:34:55",
+      "summary": "<p>German discount supermarket chain Lidl has notified customers in Germany, Belgium, and the Netherlands that customer data was stolen after attackers breached one of its IT service providers. In notices published on its support websites in Belgium and the Netherlands, Lidl said it was informed of the incident last week. \u201cDespite high IT security standards, unidentified individuals were briefly able to access a separately stored file containing customer data and steal some of it. The &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/lidl-data-breach-customer-data/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/lidl-data-breach-customer-data/\">Hackers breach Lidl&#8217;s IT service provider, steal customer data</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "EU and UK blacklist Russia\u2019s cyber operators over efforts to destabilize Europe",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/eu-uk-russia-cyber-activity-sanctions/",
+      "published": "2026-07-13T14:52:51",
+      "summary": "<p>The EU and the UK jointly sanctioned dozens of Russian individuals and entities, accusing Moscow of coordinating a malicious cyber ecosystem targeting Europe, its member states, and international partners. The UK sanctioned 24 individuals and entities, while the EU imposed restrictive measures on nine individuals and four entities. &#8220;Cybercriminals, self-proclaimed hacktivists and private companies linked to Russia, including actors operating under its instructions, direction or control, have also carried out, enabled and facilitated a wide &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/eu-uk-russia-cyber-activity-sanctions/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/eu-uk-russia-cyber-activity-sanctions/\">EU and UK blacklist Russia&#8217;s cyber operators over efforts to destabilize Europe</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Tidal Cyber connects assets, vulnerabilities, and threats through Threat-Led Defense",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/tidal-cyber-threat-led-asset-visibility/",
+      "published": "2026-07-13T13:44:39",
+      "summary": "<p>Tidal Cyber has announced Threat-Led Asset Visibility and Vulnerability Prioritization, new innovations extending the company&#8217;s Threat-Led Defense platform. The announcement marks a significant advancement in defensive security, shifting the industry beyond static asset inventories, CVSS scoring, and disconnected exposure management toward an execution-centric model built on how adversaries actually execute attacks across the kill chain. At Tidal Cyber, adversary procedures are not another data point. They are the organizing principle that connects threats, assets, vulnerabilities, &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/tidal-cyber-threat-led-asset-visibility/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/tidal-cyber-threat-led-asset-visibility/\">Tidal Cyber connects assets, vulnerabilities, and threats through Threat-Led Defense</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 10,
+      "_gpt_reason": "Security keywords: 4, Fraud keywords: 0"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Cloudflare Precursor uses continuous behavioral analysis to stop advanced bots",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/cloudflare-precursor/",
+      "published": "2026-07-13T13:28:04",
+      "summary": "<p>Cloudflare has announced the general availability of Precursor, a next-generation, continuous behavioral validation engine for bot management. Precursor runs seamlessly inside web browsers to monitor entire user sessions in order to detect bot automation. Unlike static CAPTCHAs, it analyzes ongoing interactions in real time to catch advanced bots, improving detection precision without interrupting legitimate users. For the first time, automated bot traffic has eclipsed human activity on the Internet, now generating roughly 57% of all &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/cloudflare-precursor/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/cloudflare-precursor/\">Cloudflare Precursor uses continuous behavioral analysis to stop advanced bots</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Lumen expands managed detection and response with Cortex XSIAM integration",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/lumen-defender-amdr/",
+      "published": "2026-07-13T13:17:25",
+      "summary": "<p>Lumen Technologies has announced Lumen Defender Advanced Managed Detection and Response (AMDR) for Palo Alto Networks Cortex XSIAM. Attackers are increasingly operating earlier in the lifecycle while AI is accelerating threat speed. This expanded service will bring together Lumen\u2019s managed detection and response capabilities and Lumen Defender Threat Feed powered by Lumen\u2019s Black Lotus Labs network-embedded threat intelligence with Palo Alto Networks Cortex XSIAM AI-driven SOC platform to help enterprises modernize security operations, reduce alert &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/lumen-defender-amdr/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/lumen-defender-amdr/\">Lumen expands managed detection and response with Cortex XSIAM integration</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Ransomware negotiator who betrayed clients sentenced to 70 months in prison",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/ransomware-negotiator-blackcat-sentence/",
+      "published": "2026-07-13T12:22:17",
+      "summary": "<p>A former ransomware negotiator at incident response firm DigitalMint has been sentenced to 70 months in prison after admitting he shared confidential client information with the BlackCat ransomware group and later helped carry out ransomware attacks. Prosecutors say Angelo Martino, 41, abused his role at DigitalMint beginning in April 2023 by providing BlackCat operators with sensitive information gathered during ransomware negotiations. The information included victims&#8217; negotiating positions, insurance policy limits, and internal assessments, helping the &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/ransomware-negotiator-blackcat-sentence/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/ransomware-negotiator-blackcat-sentence/\">Ransomware negotiator who betrayed clients sentenced to 70 months in prison</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 9,
+      "_gpt_reason": "Security keywords: 3, Fraud keywords: 0"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Fake OAuth client IDs are helping attackers slip past sign-in logs",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/entra-id-oauth-client-id-spoofing/",
+      "published": "2026-07-13T12:10:50",
+      "summary": "<p>Attackers running account enumeration against Microsoft cloud tenants have added a step that keeps their probing out of the usual telemetry. They spoof the OAuth client ID, the globally unique identifier assigned to an application and passed as client_id in an authentication request. Microsoft Entra ID records that value as the application ID in its sign-in logs, and the way it handles unfamiliar identifiers opens a gap that operators have started to work through. Entra &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/entra-id-oauth-client-id-spoofing/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/entra-id-oauth-client-id-spoofing/\">Fake OAuth client IDs are helping attackers slip past sign-in logs</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Security threat prompts Progress to disable ShareFile accounts, tell customers to shut down servers",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/progress-sharefile-security-threat/",
+      "published": "2026-07-13T11:45:40",
+      "summary": "<p>A &#8220;credible external security threat&#8221; targeting Progress Software&#8217;s ShareFile Storage Zone Controllers (SZC) &#8211; the on-premises, customer-managed server components where organizations store files shared via this popular enterprise platform &#8211; has spurred the company to disable access to ShareFile accounts that are using them. The warning was sent to customers via email on July 10, urging them to manually shut down the server that is hosting their Storage Zone Controllers. The initial email alert from &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/progress-sharefile-security-threat/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/progress-sharefile-security-threat/\">Security threat prompts Progress to disable ShareFile accounts, tell customers to shut down servers</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "FastNetMon eliminates third-party bgp lookups with Netomics",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/fastnetmon-netomics/",
+      "published": "2026-07-13T09:27:07",
+      "summary": "<p>FastNetMon is introducing Netomics, a self-hosted BGP routing intelligence platform that combines live routing data, registry information, RPKI validation, routing history and AI-assisted querying into a single application. Built for internet service providers (ISPs), cloud providers, Internet Exchange Points (IXPs) and enterprises operating large IP networks, Netomics provides complete visibility into global internet routing without relying on third-party lookup services. Network engineers often need to consult multiple public tools to investigate routing incidents, validate prefix &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/fastnetmon-netomics/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/fastnetmon-netomics/\">FastNetMon eliminates third-party bgp lookups with Netomics</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
+    },
+    {
+      "source": "Help Net Security",
+      "category": "security_news",
+      "title": "Claude Code users keep 50% higher limits until July 19",
+      "url": "https://www.helpnetsecurity.com/2026/07/13/claude-code-weekly-limits-promotion-extended/",
+      "published": "2026-07-13T09:06:55",
+      "summary": "<p>Anthropic has extended a limited-time promotion that increases weekly usage limits in Claude Code by 50% through July 19, 2026, at 11:59 PM PT. When the promotion ends, weekly usage limits will return to their standard levels without any changes to users&#8217; plans or billing. The promotion is available to Pro, Max, and Team plans, as well as legacy seat-based users on Enterprise plans. Free plans and consumption-based Enterprise seats are not eligible. What&#8217;s included &#8230; <a href=\"https://www.helpnetsecurity.com/2026/07/13/claude-code-weekly-limits-promotion-extended/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/07/13/claude-code-weekly-limits-promotion-extended/\">Claude Code users keep 50% higher limits until July 19</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>",
+      "_gpt_score": 6,
+      "_gpt_reason": "Security-related content"
     }
   ]
 }

@@ -1,0 +1,87 @@
+{
+  "cached_at": "2026-07-13T20:30:17.630858",
+  "config": {
+    "competitors": [
+      {
+        "id": "vonage",
+        "name": "Vonage",
+        "urls": [
+          {
+            "url": "https://developer.vonage.com/en/fraud-defender/release-notes",
+            "product": "Fraud Defender",
+            "enabled": true,
+            "scrape_mode": "full",
+            "reason": "Dedicated fraud product - all updates relevant"
+          },
+          {
+            "url": "https://developer.vonage.com/en/verify/release-notes",
+            "product": "Verify API",
+            "enabled": true,
+            "scrape_mode": "keyword_filter",
+            "reason": "General product - filter for fraud/security only"
+          }
+        ]
+      },
+      {
+        "id": "bandwidth",
+        "name": "Bandwidth",
+        "urls": [
+          {
+            "url": "https://www.bandwidth.com/release-notes/?",
+            "product": "Platform",
+            "enabled": true,
+            "scrape_mode": "keyword_filter",
+            "reason": "Platform changelog - filter for fraud/security"
+          }
+        ]
+      },
+      {
+        "id": "sardine",
+        "name": "Sardine",
+        "urls": [
+          {
+            "url": "https://www.sardine.ai/changelog.html",
+            "product": "Fraud Prevention Platform",
+            "enabled": true,
+            "scrape_mode": "full",
+            "reason": "Dedicated fraud prevention platform - all updates relevant"
+          }
+        ]
+      },
+      {
+        "id": "abnormal",
+        "name": "Abnormal Security",
+        "urls": [
+          {
+            "url": "https://abnormal.ai/changelog",
+            "product": "Email Security",
+            "enabled": true,
+            "scrape_mode": "full",
+            "reason": "Email fraud and phishing prevention - all security updates relevant"
+          }
+        ]
+      }
+    ],
+    "extraction_settings": {
+      "lookback_days": 30,
+      "keywords": [
+        "fraud",
+        "security",
+        "verification",
+        "authentication",
+        "2FA",
+        "OTP",
+        "anti-spam",
+        "rate limit",
+        "abuse prevention",
+        "phishing",
+        "spoofing",
+        "threat",
+        "AIT"
+      ],
+      "cache_hours": 168,
+      "max_tokens_per_page": 10000
+    }
+  },
+  "data": []
+}
