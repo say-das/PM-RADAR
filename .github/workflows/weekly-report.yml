@@ -34,13 +34,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y gh
 
-    - name: Run PM Radar pipeline
+    - name: Run PM Radar V2 pipeline
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python scripts/main.py
+      run: python scripts/run_v2_pipeline.py fraud
 
     - name: Commit and push report
       run: |
