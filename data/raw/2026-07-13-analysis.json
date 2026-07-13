@@ -1,0 +1,53 @@
+{
+  "analyzed_at": "2026-07-13T09:32:58.575086",
+  "telecom_fraud_summary": "```json\n{\n  \"executive_summary\": \"The telecom industry is experiencing significant advancements in fraud detection and prevention, driven by AI integration in security systems. AI tools now enable faster and more comprehensive threat detection across telecom networks, significantly reducing the time required for analysis [ARTICLE_2]. Meanwhile, countries with the busiest SMS firewalls are being mapped, highlighting areas with heightened SMS-blocking activities [ARTICLE_1]. These developments underscore the ongoing efforts to bolster telecom security and address vulnerabilities in the rapidly evolving digital landscape.\",\n  \"top_trends\": [\n    {\n      \"title\": \"AI-Driven Security Enhancements\",\n      \"description\": \"AI is becoming integral to telecom security, allowing operators to detect vulnerabilities and threats more efficiently [ARTICLE_2]. This technology accelerates processes that previously required extensive manual analysis, offering greater visibility across networks. The business impact includes reduced operational costs and improved threat response times. Telecom companies should consider investing in AI-driven tools to stay ahead of evolving threats.\"\n    }\n  ],\n  \"regulatory_changes\": [],\n  \"immediate_attention\": [],\n  \"community_sentiment\": []\n}\n```",
+  "general_fraud_summary": null,
+  "competitive_intelligence_summary": null,
+  "categorized_counts": {
+    "telecom": 5,
+    "general": 0,
+    "competitive": 0
+  },
+  "filtered_articles": [
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Which Countries Have the Busiest SMS Firewalls?",
+      "url": "https://commsrisk.com/which-countries-operate-the-busiest-sms-firewalls/",
+      "published": "2026-07-07T07:13:51",
+      "summary": "A new map in the Commsrisk Global Fraud Dashboard compares published SMS-blocking figures using a population-adjusted score. The post Which Countries Have the Busiest SMS Firewalls? appeared first on Commsrisk."
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "AI Detection Makes Telecom Security More High Stakes",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWZBhxkw25AGdkCJXkaxXTv?utm_source=follow.it",
+      "published": "2026-07-10T07:07:00",
+      "summary": "This Industry Viewpoint was written by Todd Humphreys, WEI GTM Cybersecurity GTM Leader AI is now embedded across modern security tools and systems that help telecom operators detect vulnerabilities and threats faster and at a greater scale. Security processes that once took weeks of manual analysis can now be completed in just minutes, dramatically increasing visibility across distributed Radio Access Network (RAN) infrastructure, core networks and virtualized environments. &#8230; [visit site "
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Fiber Bytes: euNetworks, Lightpath, Kirkwood IG",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaX8iXGtoa6W-BCtHhrZJhjm?utm_source=follow.it",
+      "published": "2026-07-09T12:08:10",
+      "summary": "Three interesting new regional fiber projects, one by a new name: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Infra Bytes: VFE, DE-CIX, South Front, Duos, Lumen",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWvHkLdkPY0MPhg6exDPqRd?utm_source=follow.it",
+      "published": "2026-07-08T11:40:44",
+      "summary": "Three metro expansion projects and one bit of M&A news: &#8230; [visit site to read more]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Tuesday Roundup: RETN, Nokia, DE-CIX, Nscale",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaUmFRgeBsPRZ5fa9AtxhdHe?utm_source=follow.it",
+      "published": "2026-07-07T12:37:24",
+      "summary": "A few items from around the world: &#8230; [visit site to read more]"
+    }
+  ]
+}
