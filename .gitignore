@@ -42,8 +42,9 @@ env/
 ehthumbs.db
 Thumbs.db
 
-# Environment variables
+# Environment variables and sensitive configs
 .env
+config/recipients.yaml
 
 # Cache directories
 data/raw/.reddit_cache/
@@ -61,8 +62,20 @@ htmlcov/
 .coverage
 .tox/
 
-# Reports (keep structure, ignore content in some cases)
-# Uncomment below if you don't want to track generated reports
-# data/reports/*.html
-# data/reports/*.md
-# data/reports/*.pdf
+# Data directories - ignore all generated data
+data/raw/*.json
+data/raw/*.html
+data/reports/*.html
+data/reports/*.md
+data/reports/*.pdf
+
+# Keep directory structure with .gitkeep files
+!data/raw/.gitkeep
+!data/reports/.gitkeep
+
+# Archive - don't track old docs in git
+docs/archive/
+
+# Logs
+data/logs/
+*.log

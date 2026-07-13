@@ -33,21 +33,37 @@ class TopItemsSection(BaseSection):
         items = []
         try:
             if isinstance(summary_data, str):
-                data = json.loads(summary_data)
+                # Strip markdown code fences if present
+                clean_data = summary_data.strip()
+                if clean_data.startswith('```json'):
+                    clean_data = clean_data[7:]  # Remove ```json
+                if clean_data.startswith('```'):
+                    clean_data = clean_data[3:]  # Remove ```
+                if clean_data.endswith('```'):
+                    clean_data = clean_data[:-3]  # Remove trailing ```
+                clean_data = clean_data.strip()
+
+                data = json.loads(clean_data)
             else:
                 data = summary_data
 
-            # Look for common keys: top_threats, threats, items, trends
-            items = (
-                data.get("top_threats") or
-                data.get("threats") or
-                data.get("items") or
-                data.get("trends") or
-                []
-            )
+            # If data is a list, use it directly (v2 format)
+            if isinstance(data, list):
+                items = data
+            # Otherwise look for common keys (v1/v2 hybrid formats)
+            else:
+                items = (
+                    data.get("top_threats") or
+                    data.get("threats") or
+                    data.get("items") or
+                    data.get("trends") or
+                    data.get("top_trends") or  # v1 format
+                    []
+                )
 
-        except:
+        except Exception as e:
             # If not JSON, render plain text summary
+            print(f"    ⚠ Could not parse JSON for {title}: {e}")
             return f"## {title}\n\n{summary_data}\n"
 
         if not items:

@@ -3,7 +3,7 @@
 id: fraud
 name: "Fraud & Security Intelligence"
 enabled: true
-feature_flag_v2: false  # Start with v1, migrate gradually
+feature_flag_v2: true  # V2 enabled - using new architecture
 
 llm:
   provider: openai
@@ -42,6 +42,10 @@ report:
         category: "general_fraud"
         limit: 3
 
+    - type: reddit_community
+      config:
+        title: "## Twilio Community Discussions (Reddit)"
+
     - type: regulatory_changes
 
     - type: competitive_intel
@@ -51,10 +55,6 @@ report:
     - type: sources
 
 email:
-  recipients:
-    - saydas@twilio.com
-  # Production recipients (disabled for testing):
-  # - rlohan@twilio.com
-  # - tkilam@twilio.com
-  # - jhasan@twilio.com
-  # - vsharma@twilio.com
+  # Recipients are loaded from config/recipients.yaml (gitignored)
+  # See config/recipients.yaml.example for template
+  recipients_from_config: true

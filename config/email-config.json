@@ -1,15 +1,16 @@
 {
   "sender": {
-    "email": "sd5288@gmail.com",
-    "name": "PM Radar"
+    "email": "noreply@example.com",
+    "name": "PM Radar Intelligence"
   },
   "recipients": [
     {
-      "email": "saydas@twilio.com",
-      "name": "Saydas"
+      "email": "user@example.com",
+      "name": "User Name"
     }
   ],
-  "_comment_team": "Team members (disabled for testing): rlohan@twilio.com, tkilam@twilio.com, jhasan@twilio.com, vsharma@twilio.com",
+  "_comment": "This config is now deprecated. Use config/recipients.yaml for email addresses.",
+  "_comment_recipients": "Recipients are loaded from config/recipients.yaml (gitignored)",
   "subject_template": "PM Radar Weekly Intelligence Digest - {date}",
-  "_comment": "Sender email must be verified in Brevo dashboard at https://app.brevo.com/senders"
+  "_comment_brevo": "Sender email must be verified in Brevo dashboard at https://app.brevo.com/senders"
 }

@@ -16,5 +16,7 @@ styling:
 email:
   smtp_provider: "brevo"
   smtp_key_env: "BREVO_API_KEY"
-  from_email: "sd5288@gmail.com"
-  from_name: "PM Radar"
+  # Sender email is loaded from config/recipients.yaml (gitignored)
+  # Fallback values (used if recipients.yaml not found):
+  from_email: "noreply@example.com"
+  from_name: "PM Radar Intelligence"

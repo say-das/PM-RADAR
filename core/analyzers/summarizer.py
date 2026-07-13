@@ -120,6 +120,11 @@ class ContentSummarizer(BaseAnalyzer):
         # Score other articles with LLM
         scored_articles = self._gpt_categorize_articles(other_articles)
 
+        # If LLM categorization failed (empty result), use fallback categorization
+        if not scored_articles and other_articles:
+            print("    ⚠️  LLM categorization failed, using fallback categorization")
+            scored_articles = self._fallback_categorization(other_articles)
+
         # Add scored articles to categories
         for score_info in scored_articles:
             article_id = score_info.get('id', 0)
@@ -183,6 +188,69 @@ class ContentSummarizer(BaseAnalyzer):
         except Exception as e:
             print(f"    ✗ LLM categorization error: {type(e).__name__}: {str(e)[:100]}")
             return []
+
+    def _fallback_categorization(self, articles: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Fallback categorization using keyword matching when LLM fails.
+
+        This ensures we don't lose content due to LLM errors.
+        """
+        telecom_keywords = [
+            'sms', 'sim', 'robocall', 'voip', 'telecom', 'carrier', 'mobile',
+            'a2p', 'messaging', 'call', 'phone', 'stir/shaken', 'signaling'
+        ]
+
+        security_keywords = [
+            'security', 'breach', 'vulnerability', 'malware', 'phishing',
+            'attack', 'threat', 'hack', 'exploit', 'ransomware', 'credential'
+        ]
+
+        fraud_keywords = [
+            'fraud', 'scam', 'fraudster', 'fraudulent', 'social engineering',
+            'identity theft', 'account takeover'
+        ]
+
+        results = []
+
+        for i, article in enumerate(articles, 1):
+            title_lower = article.get('title', '').lower()
+            summary_lower = article.get('summary', '').lower()
+            content = title_lower + ' ' + summary_lower
+
+            # Score based on keyword matches
+            telecom_score = sum(1 for kw in telecom_keywords if kw in content)
+            fraud_score = sum(1 for kw in fraud_keywords if kw in content)
+            security_score = sum(1 for kw in security_keywords if kw in content)
+
+            # Determine category and score
+            if telecom_score >= 2 or (telecom_score >= 1 and fraud_score >= 1):
+                category = 'telecom'
+                score = min(10, 6 + telecom_score + fraud_score)
+                reason = f'Telecom keywords: {telecom_score}, Fraud keywords: {fraud_score}'
+            elif fraud_score >= 2 or security_score >= 3:
+                category = 'general'
+                score = min(10, 6 + fraud_score + security_score)
+                reason = f'Security keywords: {security_score}, Fraud keywords: {fraud_score}'
+            elif security_score >= 1:
+                category = 'general'
+                score = 6
+                reason = f'Security-related content'
+            else:
+                # Low relevance, will be filtered out
+                category = 'general'
+                score = 4
+                reason = 'General content (fallback)'
+
+            results.append({
+                'id': i,
+                'category': category,
+                'score': score,
+                'reason': reason,
+                'duplicate_of': None
+            })
+
+        print(f"    → Fallback categorization: {len([r for r in results if r['score'] >= 6])} articles scored ≥6")
+        return results
 
     def _analyze_category(self, category_data: Dict[str, List], category_name: str) -> str:
         """Analyze a content category"""

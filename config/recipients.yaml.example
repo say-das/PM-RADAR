@@ -1,0 +1,22 @@
+# Email Recipients Configuration
+# Copy this to recipients.yaml and add your email addresses
+
+# Default sender (used if not specified in email-config.json)
+sender:
+  name: "PM Radar Intelligence"
+  email: "noreply@yourcompany.com"
+
+# Topic-specific recipients
+topics:
+  fraud:
+    - your-email@example.com
+    - team-lead@example.com
+  
+  # Example for other topics:
+  # compliance:
+  #   - compliance-team@example.com
+  #   - manager@example.com
+
+# Global recipients (receive all reports)
+global:
+  # - all-hands@example.com
