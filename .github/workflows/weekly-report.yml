@@ -34,13 +34,17 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y gh
 
+    - name: Create recipients config
+      run: |
+        echo "${{ secrets.RECIPIENTS_YAML }}" > config/recipients.yaml
+
     - name: Run PM Radar V2 pipeline
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python scripts/run_v2_pipeline.py fraud
+      run: python scripts/run_v2_pipeline.py fraud --deliver
 
     - name: Commit and push report
       run: |
