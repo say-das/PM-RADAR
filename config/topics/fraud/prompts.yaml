@@ -22,24 +22,62 @@ categorization: |
 
 analysis:
   telecom_fraud: |
-    Identify telecom-specific fraud threats from these articles.
-    For each threat: describe attack pattern (4-5 sentences with editorial room),
-    affected systems, business impact, and mitigation strategies.
+    Summarize ONLY the telecom-fraud threats that are ACTUALLY REPORTED in the
+    articles provided below. You are a summarizer, not an author.
+
+    STRICT RULES — DO NOT VIOLATE:
+    - Use ONLY facts stated in the provided article text. Do NOT add outside
+      knowledge, background, or explanation of what the fraud type "is".
+    - NEVER invent or estimate figures, percentages, dates, regions, company
+      names, or sources. If a detail is not in the article, leave it out.
+    - Do NOT write generic/definitional descriptions. Report the specific event,
+      finding, advisory, or trend the article describes.
+    - Attribute each item to its reporting source and use only the timeframe the
+      article gives. One item maps to the distinct incident it came from.
+    - Cover every distinct, well-supported incident in the articles — do NOT
+      collapse unrelated incidents into one item to keep the list short. Only
+      omit an item if the articles do not actually support it (never fabricate).
+
+    Each "description" (3-5 sentences) should: lead with what the article reported
+    (the specific event/finding), name the reporting source, and include only the
+    concrete specifics the article actually states (named entities, regions,
+    figures, method). Do not fabricate a business-impact claim the article
+    does not support.
 
     Focus on: SMS fraud, SIM swapping, robocalls, A2P messaging abuse,
     verification bypass, telecom infrastructure attacks.
 
     Format: JSON array of {"title", "description", "citation_ids"}
+    ("citation_ids" = the [N] numbers of the source article(s) each item is drawn from.)
 
   general_fraud: |
-    Identify general security threats relevant to communications platforms.
-    For each threat: describe vulnerability (4-5 sentences with editorial room),
-    exploitation method, affected systems, and defensive measures.
+    Summarize ONLY the general security threats — relevant to communications
+    platforms — that are ACTUALLY REPORTED in the articles provided below.
+    You are a summarizer, not an author.
+
+    STRICT RULES — DO NOT VIOLATE:
+    - Use ONLY facts stated in the provided article text. Do NOT add outside
+      knowledge, background, or explanation of what the technique "is".
+    - NEVER invent or estimate figures, percentages, dates, regions, company
+      names, or sources. If a detail is not in the article, leave it out.
+    - Do NOT write generic/definitional descriptions. Report the specific breach,
+      advisory, campaign, or disclosed vulnerability the article describes.
+    - Attribute each item to its reporting source and use only the timeframe the
+      article gives. One item maps to the distinct incident it came from.
+    - Cover every distinct, well-supported incident in the articles — do NOT
+      collapse unrelated incidents into one item to keep the list short. Only
+      omit an item if the articles do not actually support it (never fabricate).
+
+    Each "description" (3-5 sentences) should: lead with what the article reported
+    (the specific incident), name the reporting source, and include only the
+    concrete specifics the article actually states (named entities, regions, scale,
+    method). Do not fabricate a defensive-implication claim the article does not support.
 
     Focus on: Authentication bypass, API abuse, credential stuffing,
     account takeover, phishing, data breaches affecting communication platforms.
 
     Format: JSON array of {"title", "description", "citation_ids"}
+    ("citation_ids" = the [N] numbers of the source article(s) each item is drawn from.)
 
   regulatory: |
     Identify regulatory changes affecting fraud prevention and data security.

@@ -73,11 +73,11 @@ class RecipientsLoader:
         """
         config = self.load()
 
-        # Get topic-specific recipients
-        topic_recipients = config.get("topics", {}).get(topic_id, [])
+        # Get topic-specific recipients (coerce None -> [] for empty YAML keys)
+        topic_recipients = (config.get("topics") or {}).get(topic_id) or []
 
         # Add global recipients
-        global_recipients = config.get("global", [])
+        global_recipients = config.get("global") or []
 
         # Combine and deduplicate
         all_recipients = list(set(topic_recipients + global_recipients))
@@ -92,13 +92,13 @@ class RecipientsLoader:
             Dict mapping topic_id to list of email addresses
         """
         config = self.load()
-        topics = config.get("topics", {})
-        global_recipients = config.get("global", [])
+        topics = config.get("topics") or {}
+        global_recipients = config.get("global") or []
 
         # Add global recipients to each topic
         result = {}
         for topic_id, recipients in topics.items():
-            result[topic_id] = list(set(recipients + global_recipients))
+            result[topic_id] = list(set((recipients or []) + global_recipients))
 
         return result
 

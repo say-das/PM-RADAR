@@ -27,6 +27,8 @@ categories:
 prompts_path: prompts.yaml
 
 report:
+  # Only analyze articles published within this many days (past week)
+  lookback_days: 7
   sections:
     - type: executive_summary
 

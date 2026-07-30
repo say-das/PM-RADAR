@@ -38,6 +38,14 @@ class ContentSummarizer(BaseAnalyzer):
         print(f"  ✓ General Fraud: {general_count} items")
         print(f"  ✓ Competitive Intelligence: {competitive_count} items")
 
+        # Build the master citation list (telecom first, then general) and
+        # stamp each article with a stable global citation id. The analysis
+        # prompts show these ids to the LLM so the citation_ids it returns
+        # index directly into filtered_articles / the Sources section.
+        filtered_articles = categorized['telecom']['articles'] + categorized['general']['articles']
+        for idx, article in enumerate(filtered_articles, 1):
+            article['_citation_id'] = idx
+
         analysis = {
             "analyzed_at": datetime.now().isoformat(),
             "telecom_fraud_summary": None,
@@ -50,23 +58,30 @@ class ContentSummarizer(BaseAnalyzer):
                 "general": general_count,
                 "competitive": competitive_count
             },
-            "filtered_articles": categorized['telecom']['articles'] + categorized['general']['articles']
+            "filtered_articles": filtered_articles
         }
+
+        # Target item counts come from the report section limits so the
+        # summarizer produces as many grounded items as the report can show.
+        telecom_limit = self._get_section_limit('telecom_fraud', 5)
+        general_limit = self._get_section_limit('general_fraud', 3)
 
         # Analyze each category
         if telecom_count > 0:
-            print("→ Analyzing Telecom Fraud content...")
+            print(f"→ Analyzing Telecom Fraud content (target up to {telecom_limit} items)...")
             analysis["telecom_fraud_summary"] = self._analyze_category(
                 categorized['telecom'],
-                "Telecom Fraud"
+                "Telecom Fraud",
+                max_items=telecom_limit
             )
             print("  ✓ Telecom Fraud analysis complete")
 
         if general_count > 0:
-            print("→ Analyzing General Fraud content...")
+            print(f"→ Analyzing General Fraud content (target up to {general_limit} items)...")
             analysis["general_fraud_summary"] = self._analyze_category(
                 categorized['general'],
-                "General Fraud & Security"
+                "General Fraud & Security",
+                max_items=general_limit
             )
             print("  ✓ General Fraud analysis complete")
 
@@ -110,6 +125,14 @@ class ContentSummarizer(BaseAnalyzer):
         articles = collected_data.get("rss_articles", [])
         if not articles:
             return categorized
+
+        # Filter to recent articles only (default: past week)
+        lookback_days = self.topic_config.get("report", {}).get("lookback_days", 7)
+        before = len(articles)
+        articles = self._filter_recent_articles(articles, days=lookback_days)
+        dropped = before - len(articles)
+        if dropped:
+            print(f"  → Recency filter (last {lookback_days}d): kept {len(articles)}, dropped {dropped} older articles")
 
         # Separate telecom_fraud source articles (auto-include)
         telecom_source_articles = [a for a in articles if a.get('category') == 'telecom_fraud']
@@ -252,21 +275,46 @@ class ContentSummarizer(BaseAnalyzer):
         print(f"    → Fallback categorization: {len([r for r in results if r['score'] >= 6])} articles scored ≥6")
         return results
 
-    def _analyze_category(self, category_data: Dict[str, List], category_name: str) -> str:
-        """Analyze a content category"""
+    def _get_section_limit(self, category_key: str, default: int) -> int:
+        """Look up the render limit for a top_items section by its category key.
+
+        Keeps the summarizer's target item count in sync with what the report
+        will actually display (config/topics/<topic>/topic.yaml -> report.sections).
+        """
+        sections = self.topic_config.get('report', {}).get('sections', [])
+        for section in sections:
+            if section.get('type') == 'top_items':
+                cfg = section.get('config', {})
+                if cfg.get('category') == category_key:
+                    return cfg.get('limit', default)
+        return default
+
+    def _analyze_category(self, category_data: Dict[str, List], category_name: str, max_items: int = 5) -> str:
+        """Analyze a content category
+
+        Args:
+            category_data: dict with 'articles' and 'posts'
+            category_name: human-readable category name
+            max_items: target number of distinct items to surface (from the
+                report section limit) so coverage matches what the report shows
+        """
         articles = category_data['articles']
         posts = category_data['posts']
 
         if not articles and not posts:
             return None
 
+        # Show the highest-scored articles first so a low-relevance item can't
+        # crowd out a high-relevance one when the list is capped.
+        articles = sorted(articles, key=lambda a: a.get('_gpt_score', 0), reverse=True)
+
         # Prepare content for analysis
         content_parts = []
 
         if articles:
             article_text = "\n\n".join([
-                f"[{i+1}] [{a['source']}] {a['title']}\nPublished: {a['published']}\nSummary: {a['summary']}"
-                for i, a in enumerate(articles[:20])
+                f"[{a.get('_citation_id', i+1)}] [{a['source']}] {a['title']}\nPublished: {a['published']}\nSummary: {a['summary']}"
+                for i, a in enumerate(articles[:30])
             ])
             content_parts.append(f"ARTICLES:\n{article_text}")
 
@@ -285,7 +333,14 @@ class ContentSummarizer(BaseAnalyzer):
         else:
             prompt_template = self.prompts.get('analysis', {}).get('general_fraud', '')
 
-        prompt = f"{prompt_template}\n\n{combined_content}"
+        coverage_instruction = (
+            f"\n\nProduce UP TO {max_items} distinct items — one item per distinct "
+            f"incident/story, ranked most significant first. Do NOT merge unrelated "
+            f"incidents into a single item, and do NOT drop a well-supported incident "
+            f"just to keep the list short. If there are fewer than {max_items} clearly "
+            f"supported incidents, return only those (still never fabricate)."
+        )
+        prompt = f"{prompt_template}\n\n{combined_content}{coverage_instruction}"
 
         system_prompt = f"You are a security analyst specializing in {category_name}. Analyze the provided content and identify key threats, trends, and actionable insights."
 
@@ -294,7 +349,7 @@ class ContentSummarizer(BaseAnalyzer):
                 prompt=prompt,
                 system_prompt=system_prompt,
                 temperature=0.3,
-                max_tokens=2000
+                max_tokens=3000
             )
 
             return response
@@ -366,6 +421,34 @@ class ContentSummarizer(BaseAnalyzer):
         """Analyze competitor changelogs (stub - returns raw data)"""
         # NOTE: Full changelog analysis deferred - return raw data for now
         return changelogs
+
+    def _filter_recent_articles(self, articles: List[Dict[str, Any]], days: int = 7) -> List[Dict[str, Any]]:
+        """Filter RSS articles to a recent timeframe by published date.
+
+        Articles with a missing or unparseable date are kept (undated feed
+        items are typically current), so the filter only drops items we can
+        positively identify as older than the cutoff.
+        """
+        cutoff = datetime.now() - timedelta(days=days)
+        recent = []
+
+        for article in articles:
+            published = article.get('published')
+            if not published:
+                recent.append(article)
+                continue
+            try:
+                dt = datetime.fromisoformat(published.replace('Z', '+00:00'))
+                # Compare naively (published dates are stored without tz)
+                if dt.tzinfo is not None:
+                    dt = dt.replace(tzinfo=None)
+                if dt >= cutoff:
+                    recent.append(article)
+            except Exception:
+                # Unparseable date -> keep to avoid dropping valid content
+                recent.append(article)
+
+        return recent
 
     def _filter_recent_posts(self, posts: List[Dict[str, Any]], days: int = 30) -> List[Dict[str, Any]]:
         """Filter posts to recent timeframe"""

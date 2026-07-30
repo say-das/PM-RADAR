@@ -11,10 +11,19 @@ from pathlib import Path
 
 
 class EmailSender:
-    def __init__(self, config_path="config/email-config.json"):
-        """Initialize email sender with configuration."""
+    def __init__(self, config_path="config/email-config.json", topic="fraud"):
+        """Initialize email sender with configuration.
+
+        Sender and recipients are resolved from config/recipients.yaml
+        (gitignored; injected from a secret in CI) when available, so real
+        addresses never need to live in the committed email-config.json.
+        email-config.json still supplies the subject template and acts as a
+        fallback.
+        """
         with open(config_path) as f:
             self.config = json.load(f)
+
+        self.topic = topic
 
         # Check for Brevo API key
         self.api_key = os.getenv("BREVO_API_KEY")
@@ -26,6 +35,29 @@ class EmailSender:
             )
 
         self.api_url = "https://api.brevo.com/v3/smtp/email"
+
+    def _resolve_sender_and_recipients(self):
+        """Resolve (sender, recipients) preferring recipients.yaml.
+
+        Returns:
+            (sender_dict, recipients_list) where recipients_list is a list of
+            {"email", "name"} dicts. Falls back to email-config.json values if
+            recipients.yaml is absent or has no recipients for the topic.
+        """
+        # Try the gitignored recipients.yaml first
+        try:
+            from core.recipients_loader import get_recipients_loader
+            loader = get_recipients_loader()
+            emails = loader.get_recipients_for_topic(self.topic)
+            if emails:
+                sender = loader.get_sender()
+                recipients = [{"email": e, "name": e.split("@")[0]} for e in emails]
+                return sender, recipients
+        except Exception as e:
+            print(f"  ⚠ recipients.yaml not usable ({e}); falling back to email-config.json")
+
+        # Fallback: values from email-config.json
+        return self.config["sender"], self.config["recipients"]
 
     def markdown_to_html(self, markdown_content):
         """
@@ -138,20 +170,23 @@ class EmailSender:
         print("  → Converting markdown to HTML...")
         html_content = self.markdown_to_html(markdown_content)
 
+        # Resolve sender + recipients (prefers recipients.yaml)
+        sender, recipients = self._resolve_sender_and_recipients()
+
         # Build email
         subject = self.config["subject_template"].format(date=date_str)
 
         email_data = {
             "sender": {
-                "name": self.config["sender"]["name"],
-                "email": self.config["sender"]["email"]
+                "name": sender["name"],
+                "email": sender["email"]
             },
             "to": [
                 {
                     "email": recipient["email"],
                     "name": recipient["name"]
                 }
-                for recipient in self.config["recipients"]
+                for recipient in recipients
             ],
             "subject": subject,
             "htmlContent": html_content
@@ -170,7 +205,7 @@ class EmailSender:
                 "name": f"PM-Radar-Report-{date_str}.html"
             }]
 
-        print(f"  → Sending to {len(self.config['recipients'])} recipient(s)...")
+        print(f"  → Sending to {len(recipients)} recipient(s)...")
 
         # Send via Brevo API
         try:
@@ -189,7 +224,7 @@ class EmailSender:
                 return {
                     "success": True,
                     "message_id": response.json().get("messageId"),
-                    "recipients": len(self.config["recipients"])
+                    "recipients": len(recipients)
                 }
             else:
                 print(f"  ✗ Email failed: {response.status_code}")

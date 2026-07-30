@@ -44,7 +44,15 @@ jobs:
         SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
         BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: python scripts/run_v2_pipeline.py fraud --deliver
+      run: python scripts/run_v2_pipeline.py fraud
+
+    - name: Send report email
+      # v2 pipeline's built-in --deliver is a stub; the working sender is the
+      # v1 email_sender, which reads recipients from config/recipients.yaml
+      # (created above from the RECIPIENTS_YAML secret).
+      env:
+        BREVO_API_KEY: ${{ secrets.BREVO_API_KEY }}
+      run: python -m scripts.deliver.email_sender
 
     - name: Commit and push report
       run: |
