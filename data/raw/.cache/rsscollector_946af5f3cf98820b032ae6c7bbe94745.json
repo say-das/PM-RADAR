@@ -1,5 +1,5 @@
 {
-  "cached_at": "2026-10-01T19:01:12.439576",
+  "cached_at": "2026-10-08T19:21:00.374836",
   "config": {
     "sources": [
       {
@@ -104,6 +104,22 @@
     {
       "source": "Commsrisk",
       "category": "telecom_fraud",
+      "title": "SMS Blaster Car Drove Slowly Back and Forth Along Jakarta Metro Route",
+      "url": "https://commsrisk.com/sms-blaster-car-drove-slowly-back-and-forth-along-jakarta-metro-route/",
+      "published": "2026-10-07T03:25:03",
+      "summary": "Police arrested five people after finding an SMS blaster in a car that travelled slowly back and forth beside a busy Jakarta metro route, with the gang aiming to send 20,000 smishing messages a day."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
+      "title": "Mobileum Sued by Former CFO Over $20mn Fraud Defence Collateral",
+      "url": "https://commsrisk.com/mobileum-sued-by-former-cfo-over-20mn-fraud-defence-collateral/",
+      "published": "2026-10-05T03:25:54",
+      "summary": "The legal fight over allegations that Moblieum fraudulently boosted its valuation by booking false revenues escalates with a new intervention by former Mobileum Chief Financial Officer Andrew Warner."
+    },
+    {
+      "source": "Commsrisk",
+      "category": "telecom_fraud",
       "title": "Germany Disconnects 9,304 Numbers in Telco \u2018Crime-as-a-Service\u2019 Crackdown, Orders Tighter KYC Checks",
       "url": "https://commsrisk.com/germany-shuts-9304-numbers-in-telco-crime-as-a-service-crackdown-orders-tighter-kyc-checks/",
       "published": "2026-10-01T03:25:56",
@@ -166,20 +182,84 @@
       "summary": "Police linked more than 6,000 smishing messages to 16 WhatsApp account hijacking frauds that caused losses exceeding HKD300,000."
     },
     {
-      "source": "Commsrisk",
+      "source": "CFCA",
       "category": "telecom_fraud",
-      "title": "Malaysian Regulator Stops SMS Blaster Bypassing Telco Filters",
-      "url": "https://commsrisk.com/malaysian-regulator-stops-sms-blaster-bypassing-telco-filters/",
-      "published": "2026-07-31T06:08:59",
-      "summary": "MCMC found a 23 year old man driving around Johor Bahru with an SMS blaster that sent scam links. This was its fifth special operation against the devices during 2026."
+      "title": "DNO+(Do Not Originate Plus): Giving Enterprise Calls the Trust They Deserve",
+      "url": "https://cfca.org/dnodo-not-originate-plus-giving-enterprise-calls-the-trust-they-deserve/",
+      "published": "2026-09-03T11:17:40",
+      "summary": "The communications industry has made significant progress in restoring trust in the telephone network. STIR/SHAKEN has given us a way to identify who signed a call and the level of [&#8230;]"
     },
     {
-      "source": "Commsrisk",
+      "source": "CFCA",
       "category": "telecom_fraud",
-      "title": "Contribute to European Union Research on Spoofing and Traceback",
-      "url": "https://commsrisk.com/contribute-to-european-union-research-on-spoofing-and-traceback/",
-      "published": "2026-07-29T16:55:44",
-      "summary": "Commsrisk has been asked to conduct research on behalf of the European Union into methods that prevent the spoofing of electronic communications and enable communications to be traced to their origin."
+      "title": "AI ChatBot Feature Added to CFCA website",
+      "url": "https://cfca.org/ai-chatbot-feature-added-to-cfca-website/",
+      "published": "2026-08-30T11:18:20",
+      "summary": "When you log into the CFCA membership website, you will notice a small icon at the bottom left of the page Our new AI Chatbot Feature!The chatbot is powered by [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "World Day Against Trafficking in Persons: Why Telecoms and Banks Must Work Together",
+      "url": "https://cfca.org/world-day-against-trafficking-in-persons-why-telecoms-and-banks-must-work-together/",
+      "published": "2026-07-29T09:27:03",
+      "summary": "Every year on 30 July, the United Nations marks World Day Against Trafficking in Persons, highlighting one of the world&#8217;s most serious human rights abuses. While trafficking is commonly associated [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "World Day Against Trafficking in Persons: The Bigger Picture and Connecting the Dots \u2013 Handset Trafficking",
+      "url": "https://cfca.org/world-day-against-trafficking-in-persons-the-bigger-picture-and-connecting-the-dots-handset-trafficking/",
+      "published": "2026-07-27T11:30:00",
+      "summary": "Each year on&#160;30 July, the United Nations marks the&#160;World Day Against Trafficking in Persons, raising awareness of one of the world&#8217;s most serious human rights violations and calling for stronger [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Webinar Recap: Collaborating for Confidence: Applying the Trust Framework Across Industries",
+      "url": "https://cfca.org/webinar-recap-collaborating-for-confidence-applying-the-trust-framework-across-industries/",
+      "published": "2026-07-02T20:49:09",
+      "summary": "Trust is the foundation of every successful customer interaction. But as fraud and spoofing risks keep rising, trust is harder to earn and easier to lose, especially across voice and [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "How Are You?\u00a0 Really?",
+      "url": "https://cfca.org/how-are-you-really/",
+      "published": "2026-06-25T20:50:28",
+      "summary": "By Stacy Graham, President, CFCA Every day we work to protect consumers, investigate fraud, solve complex problems, and support our organizations. We juggle deadlines, travel, long meetings, and the ever-changing [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Why Our Work Matters: Highlights from the CFCA Summer Educational Event 2026",
+      "url": "https://cfca.org/why-our-work-matters-highlights-from-the-cfca-summer-educational-event-2026/",
+      "published": "2026-06-24T16:13:12",
+      "summary": "Earlier this month CFCA Summer Educational Event 2026 brought together fraud management professionals, communications providers, technology vendors, and industry experts from around the world for two days of learning, collaboration, [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "Detecting Synthetic Mule Accounts Starts with Better Identity Context",
+      "url": "https://cfca.org/detecting-synthetic-mule-accounts-starts-with-better-identity-context/",
+      "published": "2026-06-02T20:45:33",
+      "summary": "Synthetic mule accounts are not accidental anomalies. They are intentionally constructed identities designed to move fraud proceeds through the financial system while appearing legitimate. A traditional money mule uses a [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "The Most Common Fraud Threats Facing Financial Institutions (and How to Fight Back)",
+      "url": "https://cfca.org/the-most-common-fraud-threats-facing-financial-institutions-and-how-to-fight-back/",
+      "published": "2026-05-05T20:43:53",
+      "summary": "The New Cost of Doing Business According to a recent study commissioned by Somos, over 99% of financial institutions deal with fraud, with nine out of ten seeing a continued [&#8230;]"
+    },
+    {
+      "source": "CFCA",
+      "category": "telecom_fraud",
+      "title": "TNS 2026 Robocall Report: What\u2019s Next \u2013 Going Further Than STIR/SHAKEN",
+      "url": "https://cfca.org/tns-2026-robocall-report-whats-next-going-further-than-stir-shaken/",
+      "published": "2026-03-24T12:59:51",
+      "summary": "The multi-year battle to secure the voice channel and combat scam and spam robocalls has hit a wall, so to speak, between the haves and the have-nots. The nation\u2019s top [&#8230;]"
     },
     {
       "source": "Globe Teleservices",
@@ -260,6 +340,22 @@
       "url": "https://globeteleservices.com/blog/achieving-high-performance-security-for-modern-enterprises/",
       "published": "2025-01-20T06:33:52",
       "summary": "As cyber threats become more sophisticated, enterprises must implement robust security measures to protect their systems. However, many traditional security solutions often lead to network lag, slowing down operations and affecting overall performance. The solution lies in blending cutting-edge AI with advanced network infrastructure, enabling businesses to secure their systems in real-time without compromising on speed or performance. As per the latest report from GLF, 60% of carriers are using AI-driven systems to enhance fraud detection and prevention. In today\u2019s fast-paced digital landscape, companies need security that not only protects but also enhances customer experience without hindering performance. AI&#8217;s Role in Real-Time Protection AI can analyze massive volumes of data instantly, identifying potential threats and vulnerabilities before they affect the network. AI continuously learns and adapts, improving security measures with each new threat. Automated, AI-driven solutions enable businesses to detect, prevent, and respond to cyber threats instantly\u2014without human intervention or delays. Seamless, Scalable Security AI-based security measures can scale as the enterprise grows, protecting ever-expanding networks without degrading performance. This allows businesses to stay secure, even when dealing with high volumes of data or heavy network traffic. Advanced Threat Detection AI systems provide continuous monitoring of network traffic, analyzing patterns and behaviors in real-time. Suspicious activities or anomalies are flagged immediately, ensuring proactive threat mitigation. Reduced Human Error Automation through AI minimizes the risk of human error, offering a more reliable and effective security approach. Reducing manual intervention also speeds up responses to potential threats, improving overall efficiency. Real-Time Adaptability Unlike traditional security systems, AI can dynamically adjust to emerging threats, making it more effective against new and evolving risks. Achieving the Best of Both Worlds In an increasingly connected world, businesses can&#8217;t afford to compromise on security or speed. AI-powered solutions are bridging this gap, offering enterprises the ability to protect their networks without sacrificing performance. By leveraging AI, organizations can not only enhance their security but also maintain the seamless connectivity that drives growth and innovation. Ready for Secure, Fast, and Seamless Connectivity? At Globe Teleservices, we specialize in AI-driven fraud management solutions that ensure your network stays bulletproof without compromising on speed or performance. Ready to enhance your security without slowing down? Get in touch with our team to learn more about our solutions tailored to your enterprise\u2019s needs. &#160;"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Evolution of Web3 in Cloud Supply Chain Attacks",
+      "url": "https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/",
+      "published": "2026-10-07T22:00:16",
+      "summary": "<p>Unit 42 details how threat actors leverage Web3 infrastructure and open-source supply chain attacks to breach enterprise cloud environments</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/web3-cloud-supply-chain-attacks/\">Evolution of Web3 in Cloud Supply Chain Attacks</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+    },
+    {
+      "source": "Unit 42 (Palo Alto)",
+      "category": "threat_intelligence",
+      "title": "Blinder Tunnel Campaign Targets Iraqi Infrastructure",
+      "url": "https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/",
+      "published": "2026-10-06T10:00:33",
+      "summary": "<p>Analysis of Blinder Tunnel, an Iran-nexus campaign using fake Dubai Airports recruitment lures and GitHub C2 malware to target critical infrastructure.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/blinder-tunnel-targets-critical-infrastructure/\">Blinder Tunnel Campaign Targets Iraqi Infrastructure</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
     },
     {
       "source": "Unit 42 (Palo Alto)",
@@ -366,20 +462,12 @@
       "summary": "<p>Learn how the Spring Ring campaign abuses Microsoft Teams and voice phishing to deploy malware and target enterprise domain controllers.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/spring-ring-voice-phishing-campaigns/\">Spring Ring: An Inside Look at Voice Phishing Campaigns in Microsoft Teams</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
     },
     {
-      "source": "Unit 42 (Palo Alto)",
-      "category": "threat_intelligence",
-      "title": "Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety",
-      "url": "https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/",
-      "published": "2026-08-28T22:00:07",
-      "summary": "<p>New research reveals that AI safety refusal lives in a thin neural layer, highlighting the critical need for external, multi-layered security.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/perturbation-probing-llm-safety/\">Perturbation Probing: A New Diagnostic for the Fragility of LLM Safety</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
-    },
-    {
-      "source": "Unit 42 (Palo Alto)",
-      "category": "threat_intelligence",
-      "title": "The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution",
-      "url": "https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/",
-      "published": "2026-08-25T10:00:57",
-      "summary": "<p>Explore Unit 42 research on AI-enabled malware. Learn how existing behavioral detection and endpoint analytics stop AI-authored code before execution.</p>\n<p>The post <a href=\"https://unit42.paloaltonetworks.com/ai-enabled-malware-analysis/\">The State of AI-Enabled Malware August 2026: From Brand Abuse to Agentic Execution</a> appeared first on <a href=\"https://unit42.paloaltonetworks.com\">Unit 42</a>.</p>"
+      "source": "ZeroFox",
+      "category": "dark_web",
+      "title": "Dark AI: Inside the Underground Market for Malicious LLMs",
+      "url": "https://www.zerofox.com/blog/dark-ai-malicious-llms-dark-web",
+      "published": "2026-10-07T09:39:05",
+      "summary": "<p>In mid-2023, a vendor on an underground forum started selling access to a language model with the safety guardrails stripped out. The product was called WormGPT, and it was marketed to people running business email compromise and phishing campaigns. It had a monthly subscription price, a documentation page, and a regular update schedule. That listing [&hellip;]</p>"
     },
     {
       "source": "ZeroFox",
@@ -502,172 +590,172 @@
       "summary": "<p>We\u2019re excited to introduce ZeroFox HNTR Executive Protection, and we can\u2019t wait to put it in front of the teams who protect leaders.&nbsp; Executives get targeted everywhere at once. Consider how a fake profile spreads on social media, a home address can go up for sale on a data broker site, or a hostile crowd [&hellip;]</p>"
     },
     {
-      "source": "ZeroFox",
-      "category": "dark_web",
-      "title": "Deepfake Protection: Best Practices to Detect and Remove Synthetic Media Threats",
-      "url": "https://www.zerofox.com/blog/deepfake-protection-best-practices-to-detect-and-remove-synthetic-media-threats",
-      "published": "2026-07-30T11:00:00",
-      "summary": "<p>A deepfake of your CFO is live on Instagram, telling followers to move money into a crypto wallet. Every minute it stays up, more people see it and act on it, and the scam keeps paying out. Your team can confirm the video is fake almost immediately, but a verdict doesn&#8217;t pull it off the [&hellip;]</p>"
+      "source": "The Record",
+      "category": "cybersecurity_news",
+      "title": "DOJ charges ransomware recovery CEO for secretly paying hackers",
+      "url": "https://therecord.media/ransomware-recovery-charges-doj",
+      "published": "2026-10-08T17:00:00",
+      "summary": "The owner of a ransomware recovery firm was hit with wire fraud charges for allegedly making secret ransom payments while overcharging the victims of attacks."
     },
     {
       "source": "The Record",
       "category": "cybersecurity_news",
-      "title": "Researchers find Chinese hacking campaigns targeting AI firms, Asian governments",
-      "url": "https://therecord.media/china-linked-phishing-scheme-backdoor-taiwan",
-      "published": "2026-10-01T18:16:00",
-      "summary": "Two separate reports by cybersecurity companies highlight China-linked hacking operations, including a phishing campaign that impersonated Western experts."
+      "title": "ASOS: Hackers tricked way into employee account before sending rogue push notification",
+      "url": "https://therecord.media/asos-says-hackers-tricked-employee-access-push-notification",
+      "published": "2026-10-08T16:57:00",
+      "summary": "The company said its investigation, carried out with external experts, found the attackers had accessed \u201csome personal information, including names and contact details, and certain non-personal account related information.\u201d"
     },
     {
       "source": "The Record",
       "category": "cybersecurity_news",
-      "title": "Police disrupt KillSec ransomware, arrest suspected teenage leader",
-      "url": "https://therecord.media/killsec-ransomware-raas-arrests-europe",
-      "published": "2026-10-01T15:55:00",
-      "summary": "European police said raids against the KillSec ransomware-as-a-service operation included the arrest of a high-profile teen suspect."
+      "title": "Crypto thief who splurged on gold grills sentenced in London",
+      "url": "https://therecord.media/cryptocurrency-sim-swap-london",
+      "published": "2026-10-08T15:45:00",
+      "summary": "A 25-year-old man who helped steal nearly $260,000 in cryptocurrency through a SIM-swapping fraud scheme was sentenced to two and a half years in prison at a London court."
     },
     {
       "source": "The Record",
       "category": "cybersecurity_news",
-      "title": "Cyberattack on major Polish invoicing platform exposes customer data",
-      "url": "https://therecord.media/poland-cyberattack-invoice-software",
-      "published": "2026-10-01T12:30:00",
-      "summary": "One of Poland\u2019s major online invoicing platforms suffered a data breach that may have exposed information belonging to its users, their customers and business partners."
+      "title": "Leaked chats show Russian extortion gang sending \u2018agents\u2019 into US law firms",
+      "url": "https://therecord.media/leaked-chats-show-russian-extortion-gang-sending-agents-to-law-firms",
+      "published": "2026-10-08T14:46:00",
+      "summary": "In leaked chats, members track dozens of victims, haggle over multimillion-dollar payments and direct operatives based in the United States whom they call \u201cagents.\u201d"
     },
     {
       "source": "The Record",
       "category": "cybersecurity_news",
-      "title": "US sanctions 10 over ATM malware scheme tied to Tren de Aragua",
-      "url": "https://therecord.media/us-sanctions-10-atm-jackpotting-tren-de-aragua",
-      "published": "2026-09-30T22:35:00",
-      "summary": "Treasury\u2019s Office of Foreign Assets Control (OFAC) targeted multiple Venezuelan nationals and several companies they control that are part of the effort to launder the money stolen from dozens of ATMs."
-    },
-    {
-      "source": "The Record",
-      "category": "cybersecurity_news",
-      "title": "Automakers routinely share personally identifiable connected-car data with third parties, report says",
-      "url": "https://therecord.media/automakers-routinely-share-connected-car-data-third-parties",
-      "published": "2026-09-30T20:32:00",
-      "summary": "A new study reveals fresh details about how drivers are exposed to a web of large corporations participating in the advertising ecosystem."
+      "title": "Hackers target two South Korean megachurches, potentially exposing congregant data",
+      "url": "https://therecord.media/south-korea-hackers-megachurches",
+      "published": "2026-10-08T13:55:56",
+      "summary": "Two of South Korea's largest Protestant churches are investigating cyberattacks that may have exposed sensitive information about hundreds of thousands of members, including personal details, financial records and internal documents."
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Police dismantle KillSec ransomware gang allegedly led by 16-year-old",
-      "url": "https://www.bleepingcomputer.com/news/security/police-dismantle-killsec-ransomware-gang-allegedly-led-by-16-year-old/",
-      "published": "2026-10-01T14:25:14",
-      "summary": "An international law enforcement operation dubbed \"Operation KillSwitch\" seized the KillSec ransomware gang's data leak site and servers, led to three arrests, and identified a 16-year-old as the group's alleged administrator. [...]"
+      "title": "Low-cost Android phones ship with residential proxy malware",
+      "url": "https://www.bleepingcomputer.com/news/security/low-cost-android-phones-ship-with-residential-proxy-malware/",
+      "published": "2026-10-08T19:20:33",
+      "summary": "A malware campaign dubbed 'Midnight Mimosa' has been discovered on low-cost Android smartphones that ship with malicious software embedded in their firmware, allowing attackers to silently install apps, perform ad fraud, and turn devices into residential proxies. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "The Day-One Hole in Zero Trust Architecture",
-      "url": "https://www.bleepingcomputer.com/news/security/the-day-one-hole-in-zero-trust-architecture/",
-      "published": "2026-10-01T14:01:11",
-      "summary": "Zero Trust can verify users once they are established, but onboarding creates a gap where organizations must decide who to trust before strong authentication exists. Specops explains why identity verification should begin before credentials, MFA methods, and access are issued. [...]"
+      "title": "FakeGit malware campaign returns with 17,610 malicious GitHub repos",
+      "url": "https://www.bleepingcomputer.com/news/security/fakegit-malware-campaign-returns-with-17-610-malicious-github-repos/",
+      "published": "2026-10-08T17:10:55",
+      "summary": "More than 17,000 fake repositories on GitHub are distributing the SmartLoader malware after the FakeGit campaign reactivated earlier this month to push the StealC infostealer. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Kiteworks patches max severity code injection vulnerability",
-      "url": "https://www.bleepingcomputer.com/news/security/kiteworks-patches-max-severity-email-protection-gateway-code-injection-vulnerability/",
-      "published": "2026-10-01T13:51:08",
-      "summary": "Secure file-sharing software company Kiteworks has released security updates to address 126 vulnerabilities, including a max-severity flaw affecting its Email Protection Gateway (EPG) security solution. [...]"
+      "title": "Cisco warns of critical flaws allowing Nexus switch takeover",
+      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-flaws-allowing-nexus-switch-takeover/",
+      "published": "2026-10-08T15:26:33",
+      "summary": "Cisco released security advisories for five critical vulnerabilities in its NX-OS data center network operating system that could be exploited to run arbitrary code with root privileges on Nexus switches. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Microsoft enables Windows settings backup by default for orgs",
-      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-enables-windows-settings-backup-by-default-for-orgs/",
-      "published": "2026-10-01T11:14:28",
-      "summary": "Microsoft announced that Windows settings backup and restore is now enabled by default on all Microsoft Entra-joined or Microsoft Entra hybrid-joined enterprise systems upgraded to Windows 11 26H2. [...]"
+      "title": "OAuth grants pile up faster than you can review them. Here's how to keep up.",
+      "url": "https://www.bleepingcomputer.com/news/security/oauth-grants-pile-up-faster-than-you-can-review-them-heres-how-to-keep-up/",
+      "published": "2026-10-08T14:00:10",
+      "summary": "OAuth grants create data highways between SaaS apps, AI agents, and other tools. And, they are multiplying faster than any security team can review them. As the recent Klue breach showed, attackers are taking notice and exploiting forgotten OAuth grants to gain access to corporate data. This article covers why OAuth risks are so hard [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Hackers stole Pentagon personnel records of over 3 million people",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-breach-pentagon-human-resources-management-system-steal-data-of-nearly-3-million-people/",
-      "published": "2026-10-01T09:44:28",
-      "summary": "The Pentagon's Defense Manpower Data Center (DMDC) is notifying millions of military service members that hackers stole their data after breaching the Pentagon's human resources management system in October 2025. [...]"
+      "title": "Uranium crypto exchange hacker convicted for stealing $53 million",
+      "url": "https://www.bleepingcomputer.com/news/security/uranium-crypto-exchange-hacker-found-guilty-of-53-million-theft/",
+      "published": "2026-10-08T13:18:36",
+      "summary": "A Maryland man was found guilty of stealing more than $53 million after hacking the decentralized crypto exchange Uranium Finance twice in April 2021. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Metamask discloses security incident affecting its infrastructure",
-      "url": "https://www.bleepingcomputer.com/news/security/metamask-discloses-security-incident-affecting-its-infrastructure/",
-      "published": "2026-10-01T07:33:57",
-      "summary": "On Thursday, cryptocurrency wallet provider MetaMask has disclosed an ongoing infrastructure security incident affecting some of its infrastructure. [...]"
+      "title": "Microsoft Teams to get support for third-party deepfake detection tools",
+      "url": "https://www.bleepingcomputer.com/news/security/microsoft-teams-to-add-third-party-deepfake-detection-impersonation-protection/",
+      "published": "2026-10-08T12:08:16",
+      "summary": "Microsoft will soon introduce support for third-party deepfake detection solutions and impersonation protection in Teams meetings. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Russian state hackers use new RedFlick technique to push malware",
-      "url": "https://www.bleepingcomputer.com/news/security/russian-state-hackers-use-new-redflick-technique-to-push-malware/",
-      "published": "2026-09-30T20:34:01",
-      "summary": "The Russian state actor Star Blizzard has been using a new malware installation tactic dubbed \"RedFlick\" to deploy its signature CosmicPulse backdoor. [...]"
+      "title": "ASOS links data breach to social engineering attack, credential theft",
+      "url": "https://www.bleepingcomputer.com/news/security/asos-links-data-breach-to-social-engineering-attack-credential-theft/",
+      "published": "2026-10-08T11:42:46",
+      "summary": "ASOS is sending updates to affected customers about the cybersecurity incident it suffered earlier this week, confirming that hackers accessed some personal data. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "DIVD says Zammad zero-days enabled AI-driven network breach",
-      "url": "https://www.bleepingcomputer.com/news/security/divd-says-zammad-zero-days-enabled-ai-driven-network-breach/",
-      "published": "2026-09-30T19:49:15",
-      "summary": "The Dutch Institute for Vulnerability Disclosure (DIVD) says that the breach of its network was possible by exploiting a chain of two zero-day vulnerabilities in the open-source Zammad ticketing system. [...]"
+      "title": "Owner of Empire cybercrime market gets 40 years in prison",
+      "url": "https://www.bleepingcomputer.com/news/security/owner-of-empire-cybercrime-market-gets-40-years-in-prison/",
+      "published": "2026-10-08T10:29:19",
+      "summary": "The co-creator of Empire Market, one of the largest dark web marketplaces before its shutdown, has been sentenced to 40 years in prison for facilitating $430 million in illegal transactions from 2018 to 2020. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Over 543,000 valid credentials exposed in public GitHub repositories",
-      "url": "https://www.bleepingcomputer.com/news/security/over-543-000-valid-credentials-exposed-in-public-github-repositories/",
-      "published": "2026-09-30T18:08:34",
-      "summary": "More than 543,000 credentials exposed in public GitHub repositories were still valid in July despite the platform's security measures to prevent accidental leaks of sensitive data. [...]"
+      "title": "Samsung Galaxy S26 hacked three more times at Pwn2Own Ireland",
+      "url": "https://www.bleepingcomputer.com/news/security/samsung-galaxy-s26-hacked-three-more-times-at-pwn2own-ireland/",
+      "published": "2026-10-08T06:32:16",
+      "summary": "\u200b\u200b\u200bOn the second day of Pwn2Own Ireland 2026, security researchers collected $232,500 in cash awards after exploiting 45 unique zero-day vulnerabilities. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "CISA warns of critical pre-auth RCE flaw in MikroTik RouterOS",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-critical-pre-auth-rce-flaw-in-mikrotik-routeros/",
-      "published": "2026-09-30T15:49:29",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) is warning of a new critical vulnerability in MikroTik RouterOS that could lead to remote code execution or cause a denial-of-service condition. [...]"
+      "title": "Ransomware recovery CEO charged over secret ransom payments",
+      "url": "https://www.bleepingcomputer.com/news/security/ransomware-recovery-ceo-charged-over-secret-ransom-payments/",
+      "published": "2026-10-07T23:04:37",
+      "summary": "The owner of ransomware remediation company MonsterCloud has been charged with allegedly defrauding ransomware victims by secretly paying their attackers for decryptors while claiming to use proprietary technology to recover encrypted data. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Cisco warns of new SD-WAN zero-day exploited in attacks",
-      "url": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-new-sd-wan-authentication-bypass-zero-day-exploited-in-attacks/",
-      "published": "2026-09-30T14:46:40",
-      "summary": "Cisco\u00a0released security updates to address a critical zero-day in the Catalyst SD-WAN Manager (tracked as\u00a0CVE-2026-76504) that attackers are actively exploiting to\u00a0escalate to admin privileges. [...]"
+      "title": "FBI: Ongoing FortiBleed attacks lock out FortiGate VPN admins",
+      "url": "https://www.bleepingcomputer.com/news/security/fbi-ongoing-fortibleed-attacks-lock-out-fortigate-vpn-admins/",
+      "published": "2026-10-07T21:28:54",
+      "summary": "The FBI is warning that FortiBleed attacks are still ongoing, targeting exposed Fortinet FortiGate firewalls and SSL VPN gateways and locking out legitimate administrators. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "AI's Third Wave: Coworkers Break the Security Model That Worked for Agents",
-      "url": "https://www.bleepingcomputer.com/news/security/ais-third-wave-coworkers-break-the-security-model-that-worked-for-agents/",
-      "published": "2026-09-30T14:01:11",
-      "summary": "Persistent AI coworkers may operate continuously with standing access, creating identity risks that existing security models were not designed to handle. Token Security explains why these agents need their own identities, owners, scoped permissions, and lifecycle controls. [...]"
+      "title": "Hackers hijack Google domains after breaching ccTLD registries",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-hijack-google-domains-after-breaching-cctld-registries/",
+      "published": "2026-10-07T20:50:13",
+      "summary": "Hackers obtained unauthorized HTTPS certificates for several Google domains and hijacked domains in the country-code top-level domains (ccTLDs) for Ghana, American Samoa, and Sierra Leone after compromising third-party operators and modifying authoritative DNS records. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Microsoft to block Entra ID script injection attacks starting October",
-      "url": "https://www.bleepingcomputer.com/news/security/microsoft-to-block-entra-id-script-injection-attacks-starting-october/",
-      "published": "2026-09-30T13:37:15",
-      "summary": "Microsoft has reminded customers that the Entra ID authentication system will get better protection against external script injection attacks starting next month. [...]"
+      "title": "Microsoft Outlook to block MSIX attachments starting November",
+      "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-outlook-to-block-msix-attachments-used-in-attacks/",
+      "published": "2026-10-07T15:44:22",
+      "summary": "Microsoft announced that it will add .msix and .msixbundle attachments to the list of blocked attachments in Outlook Web and the new Outlook Windows client starting next month. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "TeamViewer urges users to patch severe flaws \u201cas soon as possible\u201d",
-      "url": "https://www.bleepingcomputer.com/news/security/teamviewer-urges-users-to-patch-severe-flaws-as-soon-as-possible/",
-      "published": "2026-09-30T12:25:10",
-      "summary": "Remote access software company TeamViewer warned customers on Tuesday to immediately patch a set of high-severity vulnerabilities affecting its client and host software. [...]"
+      "title": "PoeLLM malware infects exposed AI servers in cryptomining attacks",
+      "url": "https://www.bleepingcomputer.com/news/security/poellm-malware-infects-exposed-ai-servers-in-cryptomining-attacks/",
+      "published": "2026-10-07T15:04:08",
+      "summary": "A cryptomining campaign targeting exposed AI services is using PoeLLM malware to turn compromised servers into scanners and exploit\u00a0launchpads. [...]"
     },
     {
       "source": "BleepingComputer",
       "category": "security_news",
-      "title": "Bitget hacked via zero-day in third-party security products",
-      "url": "https://www.bleepingcomputer.com/news/security/bitget-hacked-via-zero-day-in-third-party-security-products/",
-      "published": "2026-09-30T11:11:46",
-      "summary": "Cryptocurrency exchange Bitget revealed today that attackers who stole $387.5 million last week breached its systems after exploiting a zero-day flaw in third-party security products. [...]"
+      "title": "Ransomware has a new target. Is your backup ready?",
+      "url": "https://www.bleepingcomputer.com/news/security/ransomware-has-a-new-target-is-your-backup-ready/",
+      "published": "2026-10-07T14:01:11",
+      "summary": "Ransomware groups are increasingly targeting backup infrastructure to eliminate recovery options and increase pressure on victims to pay. Kaseya explains why organizations need isolated, immutable, and regularly tested backups that attackers cannot easily reach. [...]"
+    },
+    {
+      "source": "Krebs on Security",
+      "category": "investigative",
+      "title": "ShinyHunters Extorted Boeing Spin-off Prior to Arrests",
+      "url": "https://krebsonsecurity.com/2026/10/shinyhunters-extorted-boeing-spin-off-prior-to-arrests/",
+      "published": "2026-10-07T13:48:45",
+      "summary": "A teenager from Amman, Jordan suspected of leading the prolific data theft and extortion group ShinyHunters has been detained and is reportedly cooperating with the FBI to identify other members of the hacking gang. KrebsOnSecurity has learned that the suspect, who uses the hacker handle \"Rey,\" was detained as ShinyHunters was in the process of extorting a business unit recently divested by the global aerospace company Boeing, which manufactures the fleet of planes used by the employer of Rey's father -- Royal Jordanian Airlines."
     },
     {
       "source": "Krebs on Security",
@@ -742,19 +830,51 @@
       "summary": "A 26-year-old Canadian man once described as one of the most consequential cybercrime threat actors of 2024 has pleaded guilty to computer fraud and conspiracy to hack and extort more than 165 organizations that used the cloud data storage provider Snowflake. Connor Riley Moucka, of Kitchener, Ontario, also admitted to stealing call and text history records of more than 100 million AT&#038;T customers."
     },
     {
-      "source": "Krebs on Security",
-      "category": "investigative",
-      "title": "Read This Before You Buy That TV Streaming Stick",
-      "url": "https://krebsonsecurity.com/2026/07/read-this-before-you-buy-that-tv-streaming-stick/",
-      "published": "2026-07-30T16:49:00",
-      "summary": "Security experts have been sounding the alarm for years about the risks of using generic TV boxes that promise unlimited content streaming for a one-time fee, warning that they secretly rent the user's Internet connection out to strangers. But a groundbreaking new analysis finds these devices also routinely spoof themselves as mobile phones clicking ads on AI-generated websites as part of sprawling operation that seeks to defraud online merchants and advertising networks."
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Strong compliance functions support trusted corporate finance markets",
+      "url": "https://www.fca.org.uk/news/blogs/strong-compliance-functions-support-trusted-corporate-finance-markets",
+      "published": "2026-10-08T19:20:57.331470",
+      "summary": "Corporate finance firms help businesses raise funding and implement strategic transactions, supporting investment and growth.This brings responsibility: clients need to be able to trust that firms will act with integrity and manage any conflicts of interest. That trust underpins effective wholesale markets activity.In our Regulatory Priorities Report, we said we would assess corporate finance firms\u2019 compliance functions and their ability to challenge the business effectively. We surveyed 411 corporate finance firms about their compliance resources and activities, receiving 382 responses. Although most firms reported carrying out key compliance activities, the findings also show where more needs to be done.There is no single blueprint for what effective compliance looks like. We found that firms operate a range of different practices. But the findings also underline an overarching principle that compliance cannot be seen as simply a series of tasks, but a culture that senior managers must embed throughout the business."
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "New rules to make long-term investment funds clearer",
+      "url": "https://www.fca.org.uk/news/press-releases/new-rules-make-long-term-investment-funds-clearer",
+      "published": "2026-10-08T19:20:57.331481",
+      "summary": "The FCA has set out clearer expectations for asset managers about long-term investments, such as property.\n\nThis will help give the market more confidence to invest in funds that support private markets.The new rules mean that investors will have to give 90 days' notice to access their funds but will be more certain that they will receive their money.For investors, this means the fund should be clearer from the start about how quickly they can get their money back and whether the fund is right for their needs.Currently some of these funds allow people to take money out daily with no notice period. During periods of stress or volatility there is a risk that some funds may suspend all payments due to lack of available cash. Some are also holding extra cash, leaving less invested in their intended assets.Rushed sales can lower prices, harm investors who stay invested and put pressure on markets.The new notice period would give managers time to sell assets in an orderly way and make liquidity-driven suspensions less likely.Existing funds would have 2 years to comply and give investors at least 1 year\u2019s notice.The proposals bring the UK into line with new international liquidity standards for open ended funds.Michelle Beck, director, markets, at the FCA, said: 'Funds should be clear about whether they offer quick access or are built for longer-term investments like property. Our rules will help firms make that clearer and give the market more confidence to invest.'Notes to editorsRead CP26/35: Fair redemption terms for authorised funds investing in illiquid assets.The FCA is asking for feedback on the proposals by 11 December 2026.The consultation covers authorised fund managers of non-UCITS retail schemes, known as NURS.The FCA uses the term 'inherently illiquid assets' for assets that cannot normally be sold quickly without a significant loss in value. These can include property and infrastructure investments.Fund managers could set a notice period longer than the minimum where the fund\u2019s assets or investment strategy require it."
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Looking at how we interact with whistleblowers",
+      "url": "https://www.fca.org.uk/news/blogs/looking-how-we-interact-whistleblowers",
+      "published": "2026-10-08T19:20:57.331487",
+      "summary": "Just over a week ago, we received the incredibly sad news that a whistleblower, Simon Andriesz, who we had been in contact with over many years, had died. We\u2019ve shared our condolences, and our thoughts are with his family and loved ones.We\u2019re often in contact with people in challenging circumstances.They may be sharing information about a firm we regulate that they\u2019re concerned about, or in the middle of a dispute affecting their financial security.The personal stress of those situations, and dealing with an official body like us, can be \u2013 and for many, is \u2013 significant.I know the many colleagues who are in contact with whistleblowers and vulnerable individuals always aim to treat them as the people they are \u2013 with empathy and professionalism, not simply cases to be managed.That\u2019s vital if people are to feel confident coming to us with their concerns. We\u2019re grateful so many do, with the number of whistleblowing reports increasing 22% last year.To build greater confidence, we\u2019re sharing more information with whistleblowers about the action we take. We provided feedback on each of the 1,252 whistleblowing reports we closed last year. Overall, 42% of these led to direct action to manage or reduce harm. A further 53% informed our wider work and supported harm prevention.We know, though, frustrations remain. Legal restrictions can mean we\u2019re not able to share as much as people understandably want, and sometimes the actions we take don\u2019t meet people\u2019s expectations.None of this means that there aren\u2019t things we could improve.We\u2019ve asked Lea Paterson, who has just joined our Board as an independent non-executive director, to review how we interacted with Mr Andriesz. Lea will look at whether there are things we could have done better, and she\u2019ll help us learn for the future.We must be open and consider if there are ways in which we can improve, especially in how we interact with people who may be particularly vulnerable. I\u2019m grateful to Lea for taking on this important work. We plan to share any lessons she thinks we should learn from, and how we\u2019ll take them forward, early next year."
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Reforming UK capital markets to ensure they work well for our economy",
+      "url": "https://www.fca.org.uk/news/speeches/reforming-uk-capital-markets-ensure-they-work-well-our-economy",
+      "published": "2026-10-08T19:20:57.331493",
+      "summary": "Speech by Jon Relleen, director of infrastructure and exchanges, at the Reform of the UK Public and Private Capital Markets Summit 2026.\n\nThe Economic Secretary to the Treasury has discussed the contribution of UK markets to economic growth.I want to build on that by talking about the FCA\u2019s role in reforming capital market rules.The headline is that we've been very busy over the past few years.We\u2019ve now completed major aspects of a multi-year programme of work, to ensure capital markets work well for our economy and support growth.This has already delivered positive changes. But there\u2019s plenty more to come.We are working on further reforms, while also adapting to rapid changes in markets and use of technology.In fact, areas such as tokenisation, AI and markets for trading private company shares have become central to our capital markets policy programme.And that tells us something important. As markets change, our approach has had to change too.The question has not been whether regulation changes. It has been how we adjust in a way that preserves trust while also supporting innovation and growth.Let me start by talking about our approach to the work.We have been working with the Treasury, the Bank of England and in close dialogue with the private sector, on a raft of wholesale market reforms.These draw on formal reports, like the Wholesale Markets Review, our process of reviewing inherited EU regulation, and issues raised by market contacts.Some have suggested the work programme is a list not a strategy. But I think that underestimates it. There are some key principles running through it."
+    },
+    {
+      "source": "FCA (UK) Warnings",
+      "category": "regulatory",
+      "title": "Firms\u2019 confidence, satisfaction and trust in the FCA rise",
+      "url": "https://www.fca.org.uk/news/news-stories/firms-confidence-satisfaction-and-trust-fca-rise",
+      "published": "2026-10-08T19:20:57.331498",
+      "summary": "The latest FCA and Practitioner Panel survey shows rising levels of satisfaction, confidence and trust in the FCA among firms, alongside a strong understanding of Consumer Duty expectations.\n\nThe FCA and Practitioner Panel annual survey of regulated firms provides valuable insights into how firms think we\u2019re performing.The latest survey shows 79% of firms are highly satisfied with their relationship with the FCA, up from 74% last year. The proportion of firms rating the FCA as a highly effective regulator also increased from 69% to 76%, while 75% reported high levels of trust.Firms were most confident in our work to protect consumers (87%), ensure markets work well (85%) and enhance the integrity of the UK financial system (85%). There was a 27-percentage point increase in firms\u2019 understanding of the Secondary International Competitiveness and Growth Objective and a 25-percentage point increase in confidence in our delivery of it.We took on board feedback from last year\u2019s survey and provided further guidance to help firms embed the Consumer Duty. This year, 88% of firms say they understand what we expect on supporting consumers and embedding the Duty.The findings also provide valuable insight into where firms would like to see further progress, including on regulatory burden. We\u2019re already simplifying reporting by removing outdated or duplicated data returns for 90% of firms.Nikhil Rathi, chief executive of the FCA, said: 'A year into our strategy it's encouraging to see growing confidence across many areas of our work. We know there is more to do. For example, while we can\u2019t do our job without the data firms provide, we should continue to simplify requests and make them easier to manage.'Matt Hammerstein, chair of the FCA Practitioner Panel, said: 'This year\u2019s survey results indicate firms continue to have broadly positive views of the FCA, including strong understanding of expectations under the Consumer Duty and significant growth in confidence in the FCA\u2019s ability to deliver on its secondary objectives focused on growth and competitiveness.'The Panel is encouraging the FCA to be clearer about the outcomes it expects its priorities to produce, and more vocal about the progress it is making against these, to strengthen confidence in the UK as a leading global financial centre and attractive place to invest.'In the first year of our strategy, we've delivered an estimated \u00a35.6bn in benefits to consumers and the economy, including launching My FCA, reducing reporting burdens to save firms around \u00a316m annually, and introducing nearly 50 pro-growth measures to boost UK competitiveness and innovation.Since the survey was conducted, we\u2019ve continued our work to deliver landmark reforms, including working with HM Treasury and the Financial Ombudsman Service to modernise the redress framework, support industry delivery of the Advice Guidance Boundary Review, regulating Buy Now Pay Later products, establishing a new regime for cryptoassets, and progressing the PISCES private markets framework."
     },
     {
       "source": "FCA (UK) Warnings",
       "category": "regulatory",
       "title": "FCA announces new Board appointments",
       "url": "https://www.fca.org.uk/news/news-stories/fca-announces-new-board-appointments-lea-paterson-matthew-tobin-sarah-pritchard",
-      "published": "2026-10-01T19:01:10.636075",
+      "published": "2026-10-08T19:20:57.331503",
       "summary": "Three new appointments have been made to our Board, bringing additional experience in public policy, financial services, regulation and corporate leadership as we continue to deliver our strategy.\n\nLea Paterson CBE and Matthew Tobin have been appointed by the Treasury as non-executive directors, while deputy chief executive Sarah Pritchard has joined the Board as an executive member.Lea Paterson CBE has a career spanning economics, financial journalism, public policy and regulation. She is currently chair of the Senior Salaries Review Body, a Civil Service Commissioner and a board member of the Independent Parliamentary Standards Authority (IPSA).Lea previously held several senior roles at the Bank of England, including executive director for People and Culture and the Bank\u2019s first director of Independent Evaluation. Earlier in her career, she was economics editor at The Times and also worked at The Independent. She was awarded a CBE for services to the economy in 2023.Matthew Tobin is a senior financing lawyer and former partner at Slaughter and May, with more than 20 years\u2019 experience advising HM Government, regulators and major financial institutions.Matthew\u2019s work has covered systemic risk, statutory schemes and significant interventions across banking, capital markets and lending. He advised HM Treasury on interventions including the Asset Protection Scheme, Credit Guarantee Scheme, COVID Corporate Financing Facility and the nationalisation of Bradford &amp; Bingley.He has also advised FTSE 100 and FTSE 250 boards and treasury functions on financing strategy, regulatory change, disclosure and operational resilience. Matthew holds a BA in modern history from the University of Oxford.Our deputy chief executive Sarah Pritchard has also been appointed to the FCA Board. Sarah has held several senior leadership roles at the FCA and, as deputy chief executive, plays a key role in delivering our 5-year strategy. Her appointment will bring her experience and knowledge of the organisation directly to the Board.Ashley Alder, chair of the FCA, said: 'I am delighted to welcome Lea and Matthew to the FCA Board. Their experience and fresh perspectives will be invaluable as we continue to deliver our strategy for consumers, markets and the wider economy.'I am also delighted that Sarah Pritchard has joined the Board. Sarah has made a significant contribution to the FCA\u2019s leadership, and her deep understanding of our work will be a great asset as we continue to support growth and innovation while protecting consumers and market integrity.'Lea, Matthew and Sarah will take up their Board roles on 1 October 2026."
     },
     {
@@ -762,7 +882,7 @@
       "category": "regulatory",
       "title": "FCA opens the gateway to regulated crypto",
       "url": "https://www.fca.org.uk/news/press-releases/fca-opens-gateway-regulated-crypto",
-      "published": "2026-10-01T19:01:10.636094",
+      "published": "2026-10-08T19:20:57.331509",
       "summary": "From today, crypto firms can apply for authorisation from the FCA, marking a landmark moment as the UK takes a step closer towards becoming one of the most trusted places in the world to build and invest in cryptoasset businesses.\n\nFor the first time, crypto firms operating in the UK will be brought into full FCA regulation, with clear standards covering consumer protection, safeguarding, market integrity and financial resilience. This is a significant milestone, not just for the industry, but it signals to those who invest in crypto that the UK is serious in giving them protections they have never had before. It also gives the sector clarity and legitimacy that comes with a proper regulatory framework.Firms that intend to continue operating in the UK should apply by 28 February 2027, ahead of the new regime coming into force on 25 October 2027.Authorisation is not automatic. Firms will need to clearly demonstrate that they meet the FCA\u2019s requirements, and those that cannot show the necessary standards will not be authorised to operate in the UK market. This reflects the government and FCA\u2019s determination that the UK\u2019s crypto sector should be defined by integrity and trust, along with growth and innovation.Dominic Cashman, director of authorisation at the FCA said: 'The UK\u2019s new crypto regime will give consumers greater protections and firms a clear framework to operate in. Firms can now apply for authorisation and start preparing for regulation.'The FCA is supporting firms to prepare for authorisation including through pre-application discussions and webinars.Notes to editorsIn June 2026, the FCA published its final crypto rules and guidance.The FCA expects to determine applications submitted during the application period before the new regime comes into force.Existing firms that apply during the application period can continue providing cryptoasset services, including taking on new business, while their application is being assessed if a decision has not been made before the new regime comes into force.Firms are assessed against the FCA's standards on consumer protection, safeguarding of customer assets, market integrity and financial resilience. Firms that do not meet these standards will not be authorised and will not be able to continue offering regulated cryptoasset services in the UK.Firms can request a pre-application support meeting before applying for authorisation.The FCA has hosted webinars to help firms understand its rules and prepare for authorisation which are available on demand."
     },
     {
@@ -770,7 +890,7 @@
       "category": "regulatory",
       "title": "FCA secures bankruptcy order against Arthur Temlett",
       "url": "https://www.fca.org.uk/news/news-stories/fca-secures-bankruptcy-order-against-arthur-temlett",
-      "published": "2026-10-01T19:01:10.636102",
+      "published": "2026-10-08T19:20:57.331514",
       "summary": "We asked the Court to make Arthur Temlett, trading as Abacus Insurance Consultants ('Abacus'), bankrupt. This is known as sequestration in Scotland. The Sheriff granted our application on 27 August 2026.\n\nEmma Porter of Aver Chartered Accountants ('Aver') was appointed as trustee. She will now assess Mr Temlett\u2019s financial affairs and seek to distribute any recovered funds to creditors.Arthur Temlett is awaiting trial on embezzlement charges brought following an investigation by Police Scotland.On 21 January 2025, we took action to protect consumers by stopping Arthur Temlett from carrying out any regulated activities, including acting as an insurance broker. This was because of concerns that he may have sold home and motor insurance without passing premium payments on to the insurance provider."
     },
     {
@@ -778,7 +898,7 @@
       "category": "regulatory",
       "title": "FCA secures money back for victims of crypto fraud",
       "url": "https://www.fca.org.uk/news/press-releases/fca-secures-money-back-victims-crypto-fraud",
-      "published": "2026-10-01T19:01:10.636111",
+      "published": "2026-10-08T19:20:57.331519",
       "summary": "Victims of a \u00a31.5m crypto investment fraud will recover lost funds after the FCA obtained confiscation orders against Raymondip Bedi and Patrick Mavanga.\n\nAt a hearing at Southwark Crown Court on 28 September 2026, Raymondip Bedi was ordered to pay \u00a3603,404.28 and Patrick Mavanga \u00a3247,997.99.Between February 2017 and June 2019, Bedi and Mavanga operated a fraudulent investment scheme, cold-calling consumers and persuading them to invest in fake cryptoasset opportunities through companies including CCX Capital and Astaria Group LLP. At least 65 investors were defrauded and lost \u00a31,541,799.The FCA has identified and contacted victims of the fraud and will ensure that funds recovered through the confiscation process are returned to victims.In July 2025, following an FCA prosecution, Raymondip Bedi was sentenced to 5 years and 4 months' imprisonment and Patrick Mavanga was sentenced to 6 years and 6 months' imprisonment for their roles in the scheme.Steve Smart, joint executive director of enforcement and market oversight at the FCA, said:'Bedi and Mavanga defrauded investors and left them out of pocket. These orders bring victims a step closer to getting money back.'We\u2019ll keep coming after fraudsters and holding them to account.'Notes to editorsRaymondip Bedi\u2019s date of birth is 9 October 1989.Patrick Mavanga\u2019s date of birth is 24 November 1984.FCA secures convictions against two individuals for \u00a31.5m fraud.Two individuals sentenced to a combined 12 years for \u00a31.5m crypto fraud.Confiscation orders are made under the Proceeds of Crime Act 2002 and require offenders to repay the benefit they gained from criminal conduct or the value of their available assets, whichever is lower.If the defendants fail to pay the confiscation orders within 3 months, Bedi will face up to an additional 5 years in prison and Mavanga could face up to 2 years.The FCA has previously sought to contact affected investors. Anyone who believes they may have been affected and has not heard from the FCA should contact the FCA's Consumer Helpline.Fighting financial crime is a priority in the FCA\u2019s 5 year strategy.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more information about the FCA."
     },
     {
@@ -786,7 +906,7 @@
       "category": "regulatory",
       "title": "InterestMe Financial Planning Limited (IMFP) and the appointed representative InterestMe Advisers Limited (IMA) enter administration",
       "url": "https://www.fca.org.uk/news/news-stories/imfp-appointed-representative-ima-enter-administration",
-      "published": "2026-10-01T19:01:10.636119",
+      "published": "2026-10-08T19:20:57.331525",
       "summary": "On 24 September 2026, IMFP and IMA entered administration. Robert Goodhew and Geoff Bouchier of Kroll Advisory Limited were appointed joint administrators for both firms.\n\nThe joint administrators are responsible for managing the affairs of the firms during the administration process. They are officers of the court and need to comply with all insolvency law.IMFP is authorised by the FCA. IMA is an appointed representative of IMFP.The firms carry out regulated activities, including financial planning and advice on pensions, mortgages and wider financial planning matters.On 24 July 2026, IMFP agreed to a voluntary requirement which restricted the activities it can carry out.Below we set out for customers:How to contact the joint administrators.Information about the administration.What to do if you are concerned about your investments.What to do if you have a complaint with the firms.How to protect yourself from fraudsters claiming to act on behalf of the firms, the joint administrators or the FCA."
     },
     {
@@ -794,7 +914,7 @@
       "category": "regulatory",
       "title": "ITI Capital Ltd enters special administration",
       "url": "https://www.fca.org.uk/news/news-stories/iti-capital-ltd-enters-special-administration",
-      "published": "2026-10-01T19:01:10.636127",
+      "published": "2026-10-08T19:20:57.331531",
       "summary": "On 25 September 2026, ITI Capital Ltd (ITI Capital) entered special administration. Duncan Perring and David Soden, both of Teneo Financial Advisory Ltd (Teneo), were appointed as special administrators.\n\nITI Capital is a FCA authorised and regulated brokerage company that helped customers invest in shares and bonds and looked after their investments.On 10 August 2025, ITI Capital agreed to stop carrying out most regulated activity (UK and overseas) and to stop accepting any new client money or custody assets."
     },
     {
@@ -802,7 +922,7 @@
       "category": "regulatory",
       "title": "Twenty-four CFD firms closing in crackdown on misuse of UK authorisation",
       "url": "https://www.fca.org.uk/news/press-releases/twenty-four-cfd-firms-closing-crackdown-misuse-uk-authorisation",
-      "published": "2026-10-01T19:01:10.636135",
+      "published": "2026-10-08T19:20:57.331536",
       "summary": "Twenty-one Contracts for Differences (CFD) firms have closed since 2025, following a FCA crackdown.\n\nThe FCA was concerned the firms were misusing their authorised status to mislead consumers. Three other firms are currently cancelling their permissions.The FCA has been challenging CFD firms that carry out little UK business but use their authorisation as a badge to make linked overseas companies look more trustworthy than they really are. This creates the misleading impression that consumers are dealing directly with a UK-regulated firm and benefit from UK protections when they do not.Firms have faced a range of actions, including restricting their trading abilities, requiring independent reviews of their business and opening enforcement investigations in the 2 most serious cases.Dominic Holland, director of sell-side supervision at the FCA, said:'Consumers need to know exactly who they're dealing with and what protections they have. When firms blur the lines between their UK-regulated activities and overseas businesses, we will step in. These closures show we're prepared to take action to protect consumers.'Consumers thinking about trading CFDs should remember that these products are complex and often involve high levels of leverage, meaning large losses can build up very quickly.Before opening an account, consumers should check carefully that they are dealing with a UK authorised firm if they want the protections that come with FCA regulation.Consumers should also use our Firm Checker to check they are dealing with a UK-authorised firm, and not an overseas firm with a very similar name to a UK firm. In the latter situation, UK regulatory protections are unlikely to apply.Notes to editorsCFDs are complex financial products used to speculate on the movement in prices on a wide range of assets. As a result, they carry a considerable risk of substantial losses.In 2019, the FCA restricted the sale of CFDs to retail customers.In 2024, the FCA set out priorities for the CFD sector (PDF).In 2025, the FCA warned investors in CFDs at risk of losing UK protections through redirection offshore."
     },
     {
@@ -810,7 +930,7 @@
       "category": "regulatory",
       "title": "Building the next generation of market infrastructure",
       "url": "https://www.fca.org.uk/news/speeches/building-next-generation-market-infrastructure",
-      "published": "2026-10-01T19:01:10.636142",
+      "published": "2026-10-08T19:20:57.331542",
       "summary": "Speech by Nikhil Rathi, FCA chief executive at TheCityUK dinner, sponsored by Nasdaq.\n\nThank you to TheCityUK and Nasdaq for bringing us together this evening.It\u2019s a fitting venue for us to discuss market transitions: the former HQ of Midland Bank, which of course became part of HSBC.And now HSBC Orion has become the first entrant approved to provide live Digital Securities Depository services.A useful reminder that financial infrastructure never stands still, and neither can we.A few years ago, discussions about digital assets were dominated by the technology itself. Could you tokenise a fund? Could you put a bond on a distributed ledger?Today, the conversations are about what the technology can enable, at what scale, and how fast\u2026What this means practically for liquidity, capital formation, settlement.In other words: will these new technologies make markets work better? And how do we make that happen globally?"
     },
     {
@@ -818,7 +938,7 @@
       "category": "regulatory",
       "title": "Firms crack down on money mules but need to do more",
       "url": "https://www.fca.org.uk/news/press-releases/firms-crack-down-money-mules-need-do-more",
-      "published": "2026-10-01T19:01:10.636150",
+      "published": "2026-10-08T19:20:57.331547",
       "summary": "Financial firms are shutting down hundreds of thousands of suspected money mule accounts, but organised criminal groups are still shifting dirty money through multiple bank accounts before cashing out.\n\nAn FCA survey found firms have closed an increasing number of suspected mule accounts over the last 3 years: 238,396 suspected mules had their accounts closed in 2025, up from 184,935 in 2023 and 233,269 in 2024.An increase in account closures could reflect broader customer growth alongside improvements in identifying and acting on suspected mule activity, rather than necessarily meaning mules make up a higher proportion of firms\u2019 business.The National Crime Agency (NCA) estimates more than \u00a3100bn is laundered through the UK or UK corporate structures each year. Money mule activity is one way criminals move these funds, by using people\u2019s bank accounts to receive or transfer money on their behalf.Account closures were highest among customers aged 26 to 39 (91,073), while the sharpest increase was among customers aged 40 to 49 (37,274 in 2025 up from 25,760 in 2024). Customers aged 25 and under (85,425) also represented a significant proportion of closures.The financial regulator also found evidence that criminals moved fraudulent funds through multiple accounts, usually cashing out between the second and fifth account. By this stage, payments are harder to detect and trace, and shows that firms need to crack down on activity as early as possible.Some accounts had been used repeatedly for mule activity before firms shut them down and had also been used for fraud. This points to an established criminal infrastructure rather than opportunistic, isolated incidents.The FCA, NCA, Home Office, the Treasury and industry are leading on 9 system priorities (PDF) as part of the UK\u2019s response to economic crime. The FCA is playing a key role on the money mules priority by working with industry on an action plan to tackle the problem, including better ways for firms and law enforcement to share intelligence on suspected money mule activity.Steve Smart, executive director of enforcement and market oversight at the FCA, said:'Money muling is a crime and it's not victimless. It makes it harder to recover stolen cash and helps criminals move and hide the proceeds of serious offending. People should be wary of contact out of the blue, including via online channels, asking them to funnel money through their account as they could face prosecution.'It's good that financial firms are taking action on mules, but banks, law enforcement, technology companies and consumers all have a role to play in stopping people being drawn into criminal activity.'Notes to editorsRead our multi-firm review: Money mules: mule activity and cashing out findings.Alongside the National Economic Crime Centre, the FCA is alerting firms to its latest findings.Fighting financial crime is one of the FCA\u2019s strategic priorities (PDF).The FCA surveyed 35 retail banks, building societies, challenger banks, payment institutions and e-money institutions. The FCA also established a public/private cell in 2025 \u2013 a working group with 22 regulated firms. The cell looked at 140 cases, covering 7 types of fraud.The FCA found card payments were the most common cash-out method and used to make lots of low-value transactions, or higher-value payments to local businesses and retailers. This can resemble legitimate consumer spending and be harder for firms to detect.  Retail banks accounted for most transactions passing through mule accounts, whereas other firms experience lower volumes but higher-value transactions. This suggests different criminal behaviours, cash-out strategies and risk concentrations.The Home Office\u2019s Fraud Strategy 2026 to 2029 recognises the role that money mule networks play in facilitating fraud and financial crime.This work follows previous publications on detecting and preventing money mules, and firms' use of the National Fraud Database (NFD) and money mule detection tools.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA."
     },
     {
@@ -826,7 +946,7 @@
       "category": "regulatory",
       "title": "Debt advice warning: spot the red flags",
       "url": "https://www.fca.org.uk/news/press-releases/debt-advice-warning-spot-red-flags",
-      "published": "2026-10-01T19:01:10.636158",
+      "published": "2026-10-08T19:20:57.331552",
       "summary": "People seeking debt advice are being urged to watch out for red flags.\n\nFree debt advice is available to everyone. However, the FCA is concerned that some consumers are being steered towards fee-paying debt solutions that may not be suitable for their needs, sometimes through high pressure sales tactics, misleading information or being advised by firms that do not have the appropriate permissions.Red flags include:Pressure tactics: Feeling hassled, or repeatedly contacted, particularly after an online enquiry or unexpected phone call, and being pressured to agree to a debt solution quickly over the phone or via WhatsApp, without time to properly consider their options.Changing details: Being asked or encouraged to change details about income or outgoings on an application or assessment form, or being 'coached' to say certain things.Failing to disclose, or discouraging, fee-free alternatives: Being steered towards a fee-charging debt solution, such as Individual Voluntary Arrangements (IVAs) or some debt management plans, without alternative debt solutions being properly explained or offered first.Unclear identity: The person contacting the consumer does not explain who they work for, or their details do not match with the firm\u2019s official details.Alison Walters, director of consumer finance at the FCA, said:'Anyone struggling with debt deserves advice that puts their interests first. Free, impartial debt advice is available to everyone, and no one should be pressured or misled into paying for a debt solution that may not be right for them.'The FCA recently took action against debt advice firm Curtis Faraday (PDF), after identifying serious concerns, which included leading customers to give answers that made them appear to qualify for a fee-charging IVA, rather than being offered impartial advice and a debt solution that may have better suited their circumstances. The FCA has stopped the firm from providing debt advice to new customers. The FCA has also recently banned Mr Howard Duckett, senior manager at debt advice firm Beauforce Corporation Limited, for a lack of honesty and integrity. The FCA is urging consumers who currently have a debt management plan arranged with Beauforce Corporation Limited to stop payments and seek alternative support. Notes to editorsRegulatory Priorities report: consumer finance (PDF)"
     },
     {
@@ -834,7 +954,7 @@
       "category": "regulatory",
       "title": "FCA takes Hunter Jones to High Court over alleged unauthorised activity",
       "url": "https://www.fca.org.uk/news/press-releases/fca-takes-hunter-jones-high-court-over-alleged-unauthorised-activity",
-      "published": "2026-10-01T19:01:10.636166",
+      "published": "2026-10-08T19:20:57.331558",
       "summary": "The FCA has begun High Court proceedings against Osborne Baldwin Limited, which trades as Hunter Jones and Hunter Jones Group.\n\nThe FCA alleges that Hunter Jones, which sells loan notes, carries out regulated activity without authorisation. The FCA is asking the court to stop Hunter Jones carrying out regulated activity and require money to be returned to investors.The proceedings are at an early stage. The court has not yet determined the claim and no trial date has been set.Consumers who deal with unauthorised firms are at greater risk and may lose access to important protections if things go wrong. The FCA strongly encourages consumers to use its Firm Checker.Anyone who has invested through Hunter Jones and is concerned about what this means for them, or has information to share with the FCA, should contact AvillConsumers@fca.org.uk.The FCA will provide more information for investors when it is able to do so."
     },
     {
@@ -842,7 +962,7 @@
       "category": "regulatory",
       "title": "FCA and partners join forces to help improve financial security for millions",
       "url": "https://www.fca.org.uk/news/press-releases/fca-partners-help-improve-financial-security-millions",
-      "published": "2026-10-01T19:01:10.636173",
+      "published": "2026-10-08T19:20:57.331563",
       "summary": "The FCA is partnering across sectors to expand protection insurance coverage for millions of unprotected people.\n\nWhile the market is working well for consumers who have protection insurance, millions of people remain unprotected.Around 58% of adults have no life insurance, critical illness cover or income protection \u2013 and 59% of that group has never considered it. This means that millions could be left vulnerable in the event of a death in the family, serious illness or loss of income.To help more people consider whether protection insurance is right for them, the FCA will join forces with partners from industry, government and consumer groups. Actions include:The Money and Pensions Service and the Digital Property Market Steering Group will prompt people to think about protection at key moments - such as becoming a parent or buying or renting a home. The FCA is also exploring how other partners can help put protection on people\u2019s radar when it matters most.The Protection Distributors' Group will lead a consumer awareness campaign, targeted at groups who are less likely to take out protection products.The Association of Mortgage Intermediaries will lead work to help advisers improve how they discuss protection with their customers.The work follows the FCA\u2019s Pure Protection Market Study. The work will focus on groups who are disproportionately unprotected \u2013 such as renters, the self-employed and gig economy workers, those on lower incomes and people with pre-existing medical conditions.Graeme Reynolds, director of competition at the FCA, commented:'Competition in protection insurance works well for existing customers. But we\u2019re working with partners to increase coverage \u2013 so that more people are protected when they or their families need it most.'The FCA wants to see greater innovation in this market. It will hold a webinar for firms to address any misunderstandings about its rules and expectations that may be seen as barriers. It will also work with the Association of British Insurers to reduce delays in obtaining medical records and is inviting firms to take part in a TechSprint - they should express their interest by 13 November. Wider issuesThe FCA has also published findings on switching, claims experiences, and fair value in the protection market. Generally it found that competition works well in the market, but it has reminded firms of requirements and good practice under the Consumer Duty and its product governance rules. It isn\u2019t planning new market-wide measures, but will take action where firms fall short of requirements.Firms should review the examples and findings in the report and consider whether they need to improve how they deliver, and evidence, good outcomes for consumers.Notes to editorsRead MS24/1.5: Pure Protection Market Study Final report."
     },
     {
@@ -850,7 +970,7 @@
       "category": "regulatory",
       "title": "Video",
       "url": "https://www.fca.org.uk/news/news-stories/video",
-      "published": "2026-10-01T19:01:10.636182",
+      "published": "2026-10-08T19:20:57.331569",
       "summary": ""
     },
     {
@@ -858,7 +978,7 @@
       "category": "regulatory",
       "title": "Infographics",
       "url": "https://www.fca.org.uk/news/news-stories/infographics",
-      "published": "2026-10-01T19:01:10.636190",
+      "published": "2026-10-08T19:20:57.331574",
       "summary": ""
     },
     {
@@ -866,48 +986,16 @@
       "category": "regulatory",
       "title": "Images",
       "url": "https://www.fca.org.uk/news/news-stories/images",
-      "published": "2026-10-01T19:01:10.636197",
+      "published": "2026-10-08T19:20:57.331579",
       "summary": ""
     },
     {
-      "source": "FCA (UK) Warnings",
-      "category": "regulatory",
-      "title": "Building a stronger UK investment culture",
-      "url": "https://www.fca.org.uk/news/speeches/building-stronger-uk-investment-culture",
-      "published": "2026-10-01T19:01:10.636205",
-      "summary": "Speech by Lucy Castledine, director of consumer investments, at the 2026 Investor Summit.\n\nSpeaker: Lucy Castledine, director, consumer investmentsEvent: Investor Summit 2026, LondonDelivered: 18 September 2026Note: This is the speech as drafted and may differ from the delivered versionReading time: 7 minutesKey points:How the FCA is supporting growth, innovation and wider access to investments.Why a wider range of support and clearer, simpler information is vital to helping people invest with confidence.How stronger action against scams and illegal promotions can build trust in markets."
-    },
-    {
-      "source": "FCA (UK) Warnings",
-      "category": "regulatory",
-      "title": "Financial crime: protecting the hive",
-      "url": "https://www.fca.org.uk/news/speeches/financial-crime-protecting-hive",
-      "published": "2026-10-01T19:01:10.636213",
-      "summary": "Speech by Steve Smart, executive director of enforcement and market oversight, at the Law Society Economic Crime Conference 2026.\n\nIntroductionA few weeks ago, I visited the Bank of England Museum to see a new exhibition on financial crime. I had expected banknotes and gold bars \u2013 not bees.Rather than bullion, I saw a working beehive and learnt how colonies defend themselves by reading signals, sharing information and taking collective action.Every bee gets checked at the door. If something\u2019s off, the colony responds \u2013 together, and quickly.That same instinct and partnership are what we need to fight financial crime.The criminals we\u2019re up against don\u2019t present themselves for checking, and the system we\u2019re protecting is much larger than a hive.And with the threat of financial crime getting worse, the stakes are higher than ever.Fraud accounted for nearly half of all crime in England and Wales last year, and estimates suggest that over \u00a3100bn is laundered through or within the UK each year.Two sides of the same coin: fraud makes the money. Laundering moves and 'cleans' it.Increases in global instability and rapid technological change have made it easier than ever to commit both at scale.At the FCA, we disrupt financial crime every day across thousands of firms. And we are acting against the full spectrum of financial crime \u2013 from fraud and online scams to money laundering and insider dealing.But we still don\u2019t have the whole picture, or all the answers.Nobody does.If we\u2019re going to take this on, we have to do it together, and work across the system as partners."
-    },
-    {
-      "source": "FCA (UK) Warnings",
-      "category": "regulatory",
-      "title": "FCA sets out steps to support small businesses' access to finance",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-sets-out-steps-support-small-businesses-access-finance",
-      "published": "2026-10-01T19:01:10.636220",
-      "summary": "Small and medium-sized enterprises (SMEs) could access finance more easily after the FCA sets out practical steps to help.\n\nAn FCA review found no evidence that its regulation is a major barrier for SME access to finance. Many of the challenges identified relate to wider market, information and capability challenges.The review found that the challenges are often greatest for microbusinesses, which make up 95.5% of all SMEs and are less likely to use external finance. Limited awareness of finance options, complex application processes, duplicated checks, and difficulties accessing products suited to businesses with limited collateral or largely intangible assets were all highlighted as issues.As part of its commitment to supporting growth, the FCA is focusing its next steps in three areas to help reduce friction:Supporting a more proportionate regulatory regime through Consumer Credit Act reform.Helping unlock the benefits of open finance, including prioritising SME lending as a key use case.Monitoring industry work to explore whether digital verification could reduce duplication in customer checks, while maintaining effective financial crime controls.Graeme Reynolds, FCA director of competition, said:'Small businesses need to be able to access the finance they need at the right time to start up, grow and invest. Our regulation is not a major obstacle - that does not mean the system works as well as it could. We're focusing on where we can make a practical difference by reducing unnecessary friction, supporting a more proportionate regulatory framework and helping unlock the benefits of open finance.'The review complements wider government and regulatory work to improve access to finance for smaller businesses. Where stakeholders identified issues that fall outside the FCA's remit, such as on alternative lending, it has shared those findings with the relevant government departments and bodies best placed to address them.Notes to editorsThe FCA's review examined whether its regulation affects SMEs\u2019 ability to access finance.It was carried out as part of the FCA's wider commitment to support sustainable economic growth and improve the effectiveness of financial markets.The review was informed by extensive engagement with SME representative organisations, lenders, trade associations, government departments and public bodies involved in SME finance, as well as academic research benchmarking SME lending in the UK against global comparators.The review considered both the role of regulation and wider market factors affecting access to finance for SMEs.The review focused on the part of SME lending most directly affected by FCA regulation, namely business lending of \u00a325,000 or less to sole traders and small partnerships, which generally falls within the consumer credit regulatory perimeter. Much SME lending, including lending to limited companies, business lending above \u00a325,000 and parts of the alternative lending market, falls outside the FCA\u2019s remit.The FCA recently published its open finance roadmap and will continue developing proposals for the first open finance scheme. An upcoming discussion paper will outline options and considerations for the first open finance scheme, with SME lending one of two prioritised use cases. The FCA will continue engagement, further infrastructure testing and TechSprints.The Treasury is reforming the Consumer Credit Act to support a more modern and outcomes-based regime, while retaining key protections. Following legislative reform, the FCA will consult on the future regulatory framework, helping to address concerns about the cost and complexity of some regulated SME lending.UK Finance is supporting work on a voluntary digital verification service that could reduce duplication in customer checks. The FCA is monitoring this industry-led initiative to understand whether it could help reduce friction for SMEs while maintaining effective financial crime controls."
-    },
-    {
-      "source": "FCA (UK) Warnings",
-      "category": "regulatory",
-      "title": "FCA and partners continues crackdown on illegal crypto trading",
-      "url": "https://www.fca.org.uk/news/press-releases/fca-and-partners-continues-crackdown-illegal-crypto-trading",
-      "published": "2026-10-01T19:01:10.636228",
-      "summary": "The FCA and partners have taken further action against illegal peer-to-peer crypto trading in London.\n\nThe FCA has carried out further operations with partners to disrupt illegal peer-to-peer crypto trading across multiple London locations.Working with HM Revenue &amp; Customs (HMRC) and the Metropolitan Police Service, the FCA targeted 3 premises suspected of illegal peer-to-peer crypto trading.Cease and desist letters were issued at all 3 premises, requiring traders to stop any suspected illegal crypto businesses.Peer-to-peer trading is when individuals buy and sell crypto directly with each other. Anyone doing this by way of business in the UK requires appropriate registration. A small number of FCA-registered firms carry on peer-to-peer cryptoasset activities as part of a broader range of registered activities. However, there are currently no solely FCA-registered peer-to-peer crypto businesses operating in the UK.Unregistered peer-to-peer crypto traders operating by way of business in the UK can provide a route for criminals to move and launder illicit funds. By operating outside the FCA\u2019s registration regime, they avoid controls designed to detect and prevent money laundering.Steve Smart, executive director of enforcement and market oversight at the FCA said:'Working with partners, we continue to track and disrupt illegal crypto activity. Anyone running an unregistered peer-to-peer crypto business should assume we are looking at them.'Detective sergeant Sathish Alalasundaram at the Metropolitan Police Service said:'Law enforcement and partner agencies are working significantly hard to tackle criminal activity involving digital assets. The complex nature of cryptocurrency, combined with the speed at which funds can be moved across jurisdictions, presents ongoing challenges for those investigating.'As criminals continue to adapt their methods, the Met Police continues to evolve and adapt our investigative capabilities and disruption tactics to bring those who break the law to justice.'This operation follows action taken by FCA against illegal peer-to-peer crypto trading businesses in April. Evidence gathered during that operation is being used to support criminal investigations and other enforcement action.The FCA has a track record of tackling illegal cryptoasset activity, including prosecuting the operator of an unlawful crypto ATM network and supporting the arrest of two individuals suspected of running an illegal crypto exchange.The FCA continues to work with its partners across the UK and abroad to fight financial crime and protect consumers.Consumers can check whether a crypto firm is correctly registered with the FCA using the FCA\u2019s Firm Checker.Notes to editorsAction was taken under the Money Laundering, Terrorist Financing and Transfer of Funds (Information on the Payer) Regulations 2017.The action took place on 10 September 2026.Crypto is a high-risk investment and remains largely unregulated in the UK, except for anti-money laundering and financial promotion until October 2027.Use the FCA's Firm Checker to check a firm\u2019s permissions.The FCA enables a fair and thriving financial services market for the good of consumers and the economy. Find out more about the FCA."
-    },
-    {
-      "source": "FCA (UK) Warnings",
-      "category": "regulatory",
-      "title": "Better outcomes begin when payment firms understand customers\u2019 needs",
-      "url": "https://www.fca.org.uk/news/blogs/better-outcomes-payment-firms-understand-customer-needs",
-      "published": "2026-10-01T19:01:10.636235",
-      "summary": "During our review of consumer vulnerability, we saw how relatively simple changes can make a real difference. One payments provider serving small business customers found that some customers were struggling to set up and manage their accounts because of limited IT literacy.The firm responded by arranging callback support to help customers set up their accounts. As a result, customers were able to manage their accounts successfully, without needing to invest in expensive new systems or roll out elaborate new processes."
+      "source": "FortiGuard Labs",
+      "category": "threat_landscape",
+      "title": "ClingSTUN Linux Backdoor Abuses Public STUN Infrastructure",
+      "url": "https://feeds.fortinet.com/~/971007764/0/fortinet/blog/threat-research~ClingSTUN-Linux-Backdoor-Abuses-Public-STUN-Infrastructure",
+      "published": "2026-10-05T13:00:00",
+      "summary": "FortiGuard Labs examines how ClingSTUN exploits vulnerable devices and abuses public STUN servers to support a Linux proxy backdoor.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/971007764/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/971007764/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/971007764/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/971007764/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/971007764/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>"
     },
     {
       "source": "FortiGuard Labs",
@@ -982,12 +1070,28 @@
       "summary": "See how Shai Hulud-linked CI/CD compromise exposed Jenkins credentials, enabled AWS escalation, and led to Redshift breach activity detected by FortiCNAPP<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/958459373/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/958459373/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/958459373/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/958459373/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/958459373/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>"
     },
     {
-      "source": "FortiGuard Labs",
-      "category": "threat_landscape",
-      "title": "Threat Actors Weaponize AI Hype to Deliver AsyncRAT",
-      "url": "https://feeds.fortinet.com/~/957950855/0/fortinet/blog/threat-research~Threat-Actors-Weaponize-AI-Hype-to-Deliver-AsyncRAT",
-      "published": "2026-06-11T13:00:00",
-      "summary": "FortiGuard Labs analyzes a multi-stage malware campaign that uses fake AI-themed documents, hidden PowerShell scripts, AutoHotkey loaders, and process injection to deploy AsyncRAT and maintain remote access.<div style=\"clear: both; padding-top: 0.2em;\"><a href=\"https://feeds.fortinet.com/_/28/957950855/fortinet/blog/threat-research\" title=\"Like on Facebook\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/fblike20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/29/957950855/fortinet/blog/threat-research,\" title=\"Pin it!\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/pinterest20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/24/957950855/fortinet/blog/threat-research\" title=\"Post to X.com\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/x.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/19/957950855/fortinet/blog/threat-research\" title=\"Subscribe by email\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/email20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&#160;<a href=\"https://feeds.fortinet.com/_/20/957950855/fortinet/blog/threat-research\" title=\"Subscribe by RSS\"><img height=\"20\" src=\"https://assets.feedblitz.com/i/rss20.png\" style=\"border: 0; margin: 0; padding: 0;\" /></a>&nbsp;&#160;</div>"
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Thursday Bytes: Midgard Infra, Lumen, Arelion, Nokia, DE-CIX, TOWARDEX",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaXov92X3juhJdMnMhfkJSMi?utm_source=follow.it",
+      "published": "2026-10-08T13:02:56",
+      "summary": "<img alt=\"Thursday Bytes: Midgard Infra, Lumen, Arelion, Nokia, DE-CIX, TOWARDEX\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/XanF0jLpJ7MO-5hV57EkgOGkz6RCC25z\" title=\"Thursday Bytes: Midgard Infra, Lumen, Arelion, Nokia, DE-CIX, TOWARDEX\" width=\"1\" /> <p>Some fiber, some AI, some nextgen gear, and some interconnection: \u2026 [<a href=\"https://www.telecomramblings.com/2026/10/thursday-bytes-midgard-infra-lumen-arelion-nokia-de-cix-towardex/\">visit site to read more</a>]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Int\u2019l Bytes: Applied Digital, Ciena, Telstra, Epsilon, Megaport",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaUnR1pSffEDMPa6spQ9QuM1?utm_source=follow.it",
+      "published": "2026-10-07T12:41:37",
+      "summary": "<img alt=\"Int\u2019l Bytes: Applied Digital, Ciena, Telstra, Epsilon, Megaport\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/95vH2w_Ix501me4i-LRDe-Gkz6RCC25z\" title=\"Int\u2019l Bytes: Applied Digital, Ciena, Telstra, Epsilon, Megaport\" width=\"1\" /> <p>Three expansion projects and an upgrade from around the world: \u2026 [<a href=\"https://www.telecomramblings.com/2026/10/intl-bytes-applied-digital-ciena-telstra-epsilon-megaport/\">visit site to read more</a>]"
+    },
+    {
+      "source": "Telecom Ramblings",
+      "category": "telecom_fraud",
+      "title": "Monday Roundup: atNorth, CX Tech, Sabey, Rightfiber",
+      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaW5-nm4cjzwKg2pXdDBPm6i?utm_source=follow.it",
+      "published": "2026-10-05T14:37:06",
+      "summary": "<img alt=\"Monday Roundup: atNorth, CX Tech, Sabey, Rightfiber\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/MQXhCTLuBDHw2u2biMmdVeGkz6RCC25z\" title=\"Monday Roundup: atNorth, CX Tech, Sabey, Rightfiber\" width=\"1\" /> <p>Three data center bytes and one bit of fiber M&amp;A news: \u2026 [<a href=\"https://www.telecomramblings.com/2026/10/monday-roundup-atnorth-cx-tech-sabey-rightfiber/\">visit site to read more</a>]"
     },
     {
       "source": "Telecom Ramblings",
@@ -1126,508 +1230,484 @@
       "summary": "<img alt=\"Corning to Supply Verizon\u2019s AI Fiber Appetite\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/CgVUahncx0GwDqPGnWeng-Gkz6RCC25z\" title=\"Corning to Supply Verizon\u2019s AI Fiber Appetite\" width=\"1\" /> <p>Long term deals for massive amounts of fiber seem to be a thing this year, and Corning is certainly enjoying it. Yesterday Verizon and Corning <a href=\"https://newswire.telecomramblings.com/2026/09/verizon-and-corning-announce-multi-year-multi-billion-dollar-supply-agreement-for-broadband-expansion-and-next-gen-ai-infrastructure/\">announced a multi-year, multi-billion dollar supply agreement</a> targeting demand over the next six years or so. &#8230; [<a href=\"https://www.telecomramblings.com/2026/09/corning-to-supply-verizons-ai-fiber-appetite/\">visit site to read more</a>]"
     },
     {
-      "source": "Telecom Ramblings",
-      "category": "telecom_fraud",
-      "title": "Int\u2019l Bytes: Telxius, Broadpeak, Ciena, Telstra, Spark",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaV_Cu80slHSbtkJpq8uIFgM?utm_source=follow.it",
-      "published": "2026-09-08T12:57:41",
-      "summary": "<img alt=\"Int\u2019l Bytes: Telxius, Broadpeak, Ciena, Telstra, Spark\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/TQcFZvoPCek1me4i-LRDe-Gkz6RCC25z\" title=\"Int\u2019l Bytes: Telxius, Broadpeak, Ciena, Telstra, Spark\" width=\"1\" /> <p>Two from Latin America and two from Down Under: &#8230; [<a href=\"https://www.telecomramblings.com/2026/09/intl-bytes-telxius-broadpeak-ciena-telstra-spark/\">visit site to read more</a>]"
-    },
-    {
-      "source": "Telecom Ramblings",
-      "category": "telecom_fraud",
-      "title": "The techco trap: you don\u2019t have a technology problem, you have a measurement problem",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaWSRmQWDOQj1fhg6exDPqRd?utm_source=follow.it",
-      "published": "2026-09-04T07:08:00",
-      "summary": "<img alt=\"The techco trap: you don\u2019t have a technology problem, you have a measurement problem\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/cnoa6Hrvu4GyPeZesFWFXeGkz6RCC25z\" title=\"The techco trap: you don\u2019t have a technology problem, you have a measurement problem\" width=\"1\" /> <p><em><a href=\"https://www.telecomramblings.com/files/2026/08/Biju-Anidil-Regional-VP-Sales-EMEA-APAC-Evergent.jpeg\"><img alt=\"\" class=\"alignright size-medium wp-image-42746\" height=\"150\" src=\"https://www.telecomramblings.com/files/2026/08/Biju-Anidil-Regional-VP-Sales-EMEA-APAC-Evergent-300x300.jpeg\" width=\"150\" /></a>This Industry Viewpoint was authored by Biju Anidil, Regional VP Sales, EMEA &amp; APAC, Evergent</em></p><p>Every monetisation vendor, mine included, will tell you to modernise your BSS. You have heard it a hundred times, which is why most of you have not acted. The advice is not wrong. It is incomplete, and the missing part is the reason operators stay stuck. &#8230; [<a href=\"https://www.telecomramblings.com/2026/09/the-techco-trap-you-dont-have-a-technology-problem-you-have-a-measurement-problem/\">visit site to read more</a>]"
-    },
-    {
-      "source": "Telecom Ramblings",
-      "category": "telecom_fraud",
-      "title": "Thursday Roundup:",
-      "url": "https://api.follow.it/track-rss-story-click/v3/3xQfXjxpBaXIdpDJlycIfYnDZ7Hbdbvs?utm_source=follow.it",
-      "published": "2026-09-03T12:07:45",
-      "summary": "<img alt=\"Thursday Roundup:\" border=\"0\" height=\"1\" src=\"https://api.follow.it/track-rss-story-loaded/v1/pEnu5qlUKc2Xvg_t8qZ2N-Gkz6RCC25z\" title=\"Thursday Roundup:\" width=\"1\" /> <p>Two M&amp;A completions, an expansion, and some quantum: &#8230; [<a href=\"https://www.telecomramblings.com/2026/09/thursday-roundup/\">visit site to read more</a>]"
+      "source": "The Hacker News",
+      "category": "security_news",
+      "title": "FBI Says China-Linked Hackers Ran Portal Giving Third Parties Access to Stolen Emails",
+      "url": "https://thehackernews.com/2026/10/fbi-says-china-linked-hackers-ran.html",
+      "published": "2026-10-08T18:32:21",
+      "summary": "Hackers tied to a Chinese cybersecurity company stole email from government organizations, law enforcement agencies, healthcare systems, and religious institutions in Southeast Asia, the FBI and agencies in 6 other countries said on October 8.\n\nThe company, Integrity Technology Group, has been sanctioned by the U.S. and the UK. The hackers scanned websites for flaws using a tool containing more"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Police Arrest 16-Year-Old Suspected of Running KillSec, Seize Ransomware Leak Site and Servers",
-      "url": "https://thehackernews.com/2026/10/police-arrest-16-year-old-suspected-of.html",
-      "published": "2026-10-01T16:55:57",
-      "summary": "Police in Spain have arrested a 16-year-old whom investigators suspect of running the KillSec ransomware group. KillSec is accused of stealing data from organizations and threatening to publish it on its leak site unless they paid.\n\nThe 16-year-old was one of 3 people arrested on September 30, when police also took control of that site.\n\nInvestigators identified him as KillSec's suspected"
+      "title": "ThreatsDay: Ransomware Affiliate Betrayal, WhatsApp RAT, Exposed Hacker Tools and 12 More Stories",
+      "url": "https://thehackernews.com/2026/10/threatsday-ransomware-affiliate.html",
+      "published": "2026-10-08T17:58:02",
+      "summary": "The crooks have trust problems of their own. One ransomware affiliate decided to keep the profits for himself. Elsewhere, an attacker left a server exposed, complete with tools and traces of an intrusion. Apparently, keeping things secure is a problem on both sides of the fence.\n\nThe rest of the week isn't much more reassuring. Malicious code turned up in developer packages and extensions that"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "ThreatsDay: AI-Powered Zero-Day Chain, 543K Live Secrets, Model Inspection RCE and 13 More Stories",
-      "url": "https://thehackernews.com/2026/10/threatsday-ai-powered-zero-day-chain.html",
-      "published": "2026-10-01T16:45:38",
-      "summary": "This week, the useful words are boring ones: inspect, cache, compile, store, trust. Each sounds harmless. Each can become an attack path when a system does a little more than people expect. A model check can run code. A cache can mix up requests. A public secret can stay useful for years.\n\nThat is the lesson running through the list. Attackers do not always need a brilliant new trick. They can"
+      "title": "Japan Sees Sharp Rise in Web Data Leaks Amid Mobile API Abuse and Metabase Attacks",
+      "url": "https://thehackernews.com/2026/10/japan-sees-sharp-rise-in-web-data-leaks.html",
+      "published": "2026-10-08T15:45:56",
+      "summary": "Attackers behind a string of personal data leaks at Japanese organizations have abused APIs for mobile apps and targeted known software flaws, the JPCERT Coordination Center (JPCERT/CC) said.\n\nThe Tokyo-based center, which takes incident reports, based its&nbsp;October 8, 2026 alert&nbsp;on those reports and other information. The alert names no attacker and no affected organization.\n\nJPCERT/"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "WordPress Backdoor Rebuilds Itself After Cleanup Using Files, Database, and Shared Memory",
-      "url": "https://thehackernews.com/2026/10/wordpress-backdoor-rebuilds-itself.html",
-      "published": "2026-10-01T14:37:35",
-      "summary": "Cybersecurity researchers have shed light on a WordPress compromise in which threat actors deployed multiple persistence mechanisms to ensure that the final payload kept returning without having to infect the site again.\n\nThe backdoor has been codenamed SC after the \"SC_\" markers present in the injected content. Sucuri has described the malware as a \"self-healing mesh\" that's"
+      "title": "UAC-0099 Targets Ukrainian Government Personnel With ASHVEIN RAT Hiding Commands in HTML",
+      "url": "https://thehackernews.com/2026/10/uac-0099-targets-ukrainian-government.html",
+      "published": "2026-10-08T15:26:56",
+      "summary": "The Russia-aligned threat actor known as UAC-0099 has been attributed to a previously undocumented .NET infostealer and remote access trojan (RAT) codenamed ASHVEIN.\n\nAccording to TrendAI, the malware has been put to use in attacks targeting Ukrainian government personnel. The cybersecurity company is tracking the cluster under the name Earth Sirrush (previously SHADOW-EARTH-065).\n\nASHVEIN,"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "How Financial Services Companies Can Modernize Their Software Supply Chain",
-      "url": "https://thehackernews.com/2026/10/how-financial-services-companies-can.html",
-      "published": "2026-10-01T11:45:00",
-      "summary": "Every security leader at a bank, insurer, or asset manager has had a version of this conversation: Security wants to eliminate a class of vulnerabilities. Engineering explains what it would take to upgrade the platform where they live. Somebody prices out the regression testing. Somebody else raises the change-freeze calendar. The finding gets an exception, a compensating control, and a date"
+      "title": "ARTEX AI Pentesting Tool Used in Data Theft Attacks on South Korean Financial Firms",
+      "url": "https://thehackernews.com/2026/10/artex-ai-pentesting-tool-used-in-data.html",
+      "published": "2026-10-08T14:12:34",
+      "summary": "Cybersecurity researchers have disclosed details of a targeted campaign aimed at South Korean financial organizations that used an artificial intelligence (AI) pen testing tool named ARTEX to carry out the attacks.\n\nThe activity, per CrowdStrike Intelligence, was active from late September to early October 2026, and resulted in data exfiltration.\n\n\"In this activity, the threat actor leveraged"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "OpenAI Disrupts Reasoning Extraction Campaign Linked to Moonshot AI Associates",
-      "url": "https://thehackernews.com/2026/10/openai-disrupts-reasoning-extraction.html",
-      "published": "2026-10-01T10:42:36",
-      "summary": "OpenAI on Wednesday said it identified and disrupted a coordinated distillation campaign that was designed to illicitly extract protected reasoning from its artificial intelligence (AI) models.\n\nA \"core cluster of the activity,\" going back to the first week of July, has been attributed to individuals associated with Moonshot AI, a Chinese AI company based in Beijing. It did not cite any"
+      "title": "Wazza Phishkit Targets Banking, Government, and Manufacturing Across the US, EU, and Australia",
+      "url": "https://thehackernews.com/2026/10/wazza-phishkit-targets-banking.html",
+      "published": "2026-10-08T10:30:00",
+      "summary": "Phishing kits are no longer limited to copying a familiar login page and waiting for a victim to enter credentials. Attackers are increasingly building filtering, session management, and traffic controls into the infrastructure that delivers the phishing page itself.\n\nANY.RUN has identified Wazza, a new phishkit targeting banking, manufacturing, and government organizations across the US, Europe"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "CISA Adds Exploited Cisco Catalyst SD-WAN Manager Auth Bypass to KEV",
-      "url": "https://thehackernews.com/2026/10/cisa-adds-exploited-cisco-catalyst-sd.html",
-      "published": "2026-10-01T10:33:16",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Wednesday added a critical authentication bypass flaw impacting Cisco Catalyst SD-WAN Manager to its Known Exploited Vulnerabilities (KEV), following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-76504 (CVSS score: 9.8), could allow an unauthenticated, remote attacker to access an affected system with"
+      "title": "16 Malicious Firefox Extensions Pose as Rabby and OKX Wallets to Steal Recovery Phrases",
+      "url": "https://thehackernews.com/2026/10/16-malicious-firefox-extensions-pose-as.html",
+      "published": "2026-10-08T09:46:32",
+      "summary": "Cybersecurity researchers have discovered a cluster of 16 malicious Mozilla Firefox extensions that are capable of stealing cryptocurrency wallet recovery phrases and private keys.\n\n\"The extensions masquerade as wallet portals, desktop utilities, and browser tools, but their code intercepts recovery phrases and private keys during wallet import flows and attempts to send those secrets to"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Google Rolls Out Gemini 4 Argon to Trusted Cyber Defenders, Plans Guardrail-Free Version",
-      "url": "https://thehackernews.com/2026/10/google-rolls-out-gemini-4-argon-to.html",
-      "published": "2026-10-01T07:49:36",
-      "summary": "Google on Wednesday announced its latest frontier artificial intelligence (AI) model, Gemini 4 Argon, that it said is being rolled out to a set of trusted cyber defenders through its Fairwind Program.\n\n\"It delivers frontier performance in complex workflows across real-world software engineering, enterprise knowledge work like legal and finance, and cybersecurity defense,\" Koray Kavukcuoglu,"
+      "title": "U.S. Offers Up to $10 Million for Tips on Zhang Yu, Charged in HAFNIUM Hacks",
+      "url": "https://thehackernews.com/2026/10/us-offers-up-to-10-million-for-tips-on.html",
+      "published": "2026-10-08T07:42:04",
+      "summary": "The U.S. State Department is offering up to $10 million for information leading to the identification or location of Zhang Yu, a Chinese national charged in the United States in connection with the 2021 Microsoft Exchange Server attacks known as HAFNIUM.\n\nThe reward is for information leading to his identification or location, the news outlet&nbsp;NTD reported&nbsp;this week, citing a notice"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Apple CoreGraphics PoC Emerges as WhatsApp PDF Checks Hint at Possible Delivery Path",
-      "url": "https://thehackernews.com/2026/10/apple-coregraphics-poc-emerges-as.html",
-      "published": "2026-10-01T05:54:41",
-      "summary": "Security researchers have published the first public proof-of-concept for CVE-2026-86950, an Apple CoreGraphics flaw Apple says may have been used in attacks against specific targeted individuals.\n\nThe trigger is a malicious PDF with a crafted embedded font that crashes unpatched iPhones and Macs. The code causes a crash, not an execution error. Turning the memory corruption into a working"
+      "title": "MonsterCloud Owner Accused of Billing Over $19M While Secretly Paying Ransoms to Decrypt Data",
+      "url": "https://thehackernews.com/2026/10/monstercloud-owner-accused-of-billing.html",
+      "published": "2026-10-08T07:41:44",
+      "summary": "The U.S. Department of Justice (DoJ) on Wednesday announced charges against a 50-year-old U.S. and Israeli national for allegedly defrauding ransomware victims by secretly paying the attackers to obtain decryptors while claiming to use proprietary tools to recover their data.\n\nZohar Pinhasi (aka Zack Silver and Zack Green) has been charged with two counts of wire fraud and one count of wire"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Bitget Confirms Third-Party Zero-Day Behind $387.5 Million Cryptocurrency Theft",
-      "url": "https://thehackernews.com/2026/10/bitget-confirms-third-party-zero-day.html",
-      "published": "2026-10-01T05:21:10",
-      "summary": "Cryptocurrency exchange Bitget on Wednesday confirmed that attackers who stole $387.5 million last week exploited a zero-day flaw in third-party security products, citing ongoing investigation findings from SlowMist.\n\n\"Their investigation identified malicious activity involving third-party security products, including a zero-day vulnerability, and recovered a customized tool used by the attacker"
+      "title": "Tensorlake npm Package Compromised to Deliver Shai-Hulud Credential-Stealing Worm",
+      "url": "https://thehackernews.com/2026/10/tensorlake-npm-package-compromised-to.html",
+      "published": "2026-10-08T05:46:20",
+      "summary": "The npm package known as \"tensorlake,\" a TypeScript software development kit (SDK) for Tensorlake applications, sandboxes, and cloud services, was compromised as part of a ChainDrop / Shai-Hulud supply chain attack.\n\nThe malicious version 0.5.144 \"contains obfuscated malware that harvests credentials, exfiltrates secrets, establishes persistence, and executes remotely supplied code,\" Socket said"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "MetaMask Security Incident Prompts Exit of Affected Ethereum Validators",
-      "url": "https://thehackernews.com/2026/10/metamask-security-incident-prompts-exit.html",
-      "published": "2026-10-01T05:10:09",
-      "summary": "MetaMask on Thursday said it's responding to what it described as an \"ongoing security incident\" impacting part of its infrastructure.\n\n\"We are actively addressing and remediating the issue internally, in coordination with external partners and security advisors,\" the software cryptocurrency wallet maker said. \"At this time, we have identified no immediate threat to MetaMask wallets.\"\n\nMetaMask"
+      "title": "Attackers Hijack .gh, .sl, and .as Registries to Obtain Certificates for Google Domains",
+      "url": "https://thehackernews.com/2026/10/attackers-hijack-gh-sl-and-as.html",
+      "published": "2026-10-07T18:48:17",
+      "summary": "Attackers compromised three country-code top-level domains (ccTLDs) and obtained unauthorized HTTPS certificates for several Google domains, Google&nbsp;said on October 6.\n\nGoogle's own systems were not breached, but any domain ending in .gh (Ghana), .sl (Sierra Leone) or .as (American Samoa) was put at risk. With such a certificate, an attacker could pose as the real site over an encrypted"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Citrix NetScaler Post-Exploitation Payload Creates Superuser, Maps Web Shell to CSS-Like URLs",
-      "url": "https://thehackernews.com/2026/10/citrix-netscaler-post-exploitation.html",
-      "published": "2026-10-01T04:35:34",
-      "summary": "Threat actors have been observed exploiting a critical pre-authentication command injection vulnerability in Citrix NetScaler ADC and NetScaler Gateway to drop web shells and attempt theft of configuration data.\n\nLevelBlue's Threat Hunt Operations &amp; Research (THOR) team, which analyzed the exploitation activity across multiple customer environments, said it identified malicious NetScaler"
+      "title": "Eight Malicious npm Packages Downloaded 40,767 Times Deliver Overlord RAT and Stealer",
+      "url": "https://thehackernews.com/2026/10/eight-malicious-npm-packages-downloaded.html",
+      "published": "2026-10-07T17:43:20",
+      "summary": "Cybersecurity researchers have disclosed details of a long-running npm supply chain malware campaign that pushes information stealers and remote access trojans (RAT) to compromised hosts.\n\nThe campaign has been codenamed MALFEX by CloudSEK and Checkmarx. The activity is assessed to be the work of a lone threat actor who appears to have published 12 packages since August 2023, eight of which have"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Attackers Exploit Zimbra Flaw to Deploy Web Shells and Harvest Authentication Secrets",
-      "url": "https://thehackernews.com/2026/09/attackers-exploit-zimbra-flaw-to-deploy.html",
-      "published": "2026-09-30T16:46:29",
-      "summary": "Threat actors have weaponized a now-patched security flaw in Zimbra Collaboration Suite (ZCS) to deploy web shells and access mailbox data, according to findings from the Microsoft Security Research team.\n\nThe attack exploits CVE-2026-73570 (CVSS score: 8.9), an unauthenticated operating system command injection flaw that can lead to remote code execution when Simple Network Management Protocol"
+      "title": "SonicWall Patches CVSS 10.0 Pre-Authentication SSRF Flaw in SMA1000 Appliances",
+      "url": "https://thehackernews.com/2026/10/sonicwall-patches-cvss-100-pre.html",
+      "published": "2026-10-07T16:17:44",
+      "summary": "SonicWall has released hotfixes for four flaws in its SMA1000 appliances, the gateways that give remote workers access to a company's network and applications. The most serious could allow an attacker without a login to send requests through the appliance and reach internal functions.\n\nSonicWall rates it 10.0 on the CVSS scale and says it has no evidence that any of the four flaws is being"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Attackers Abuse MSP360 to Deploy ScreenConnect in Dual-RMM Phishing Attacks",
-      "url": "https://thehackernews.com/2026/09/attackers-abuse-msp360-to-deploy.html",
-      "published": "2026-09-30T16:32:59",
-      "summary": "Microsoft has warned of phishing campaigns distributing an installer for the MSP360 Remote Monitoring and Management (RMM) software under the guise of meeting invitations, PDF-themed lures, software update prompts, and other social-engineering content.\n\n\"Once executed, the legitimate MSP360 installer, distributed under a deceptive file name established remote management access on affected"
+      "title": "Unpatched Critical LMCache Flaw Lets Unauthenticated Attackers Run Code Remotely",
+      "url": "https://thehackernews.com/2026/10/unpatched-critical-lmcache-flaw-lets.html",
+      "published": "2026-10-07T15:34:53",
+      "summary": "A critical vulnerability in LMCache, open-source software that speeds up large language model (LLM) servers such as vLLM, lets an attacker run code on the cache server without logging in, and no fixed version is available.\n\nThe flaw is in LMCache's&nbsp;multiprocess mode, where the cache runs as a standalone server that LLM workers reach over the ZeroMQ messaging library. A single network"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Cisco Warns of Attackers Exploiting Critical Authentication Bypass in SD-WAN Manager",
-      "url": "https://thehackernews.com/2026/09/cisco-warns-of-attackers-exploiting.html",
-      "published": "2026-09-30T15:24:54",
-      "summary": "Attackers are exploiting a new critical zero-day flaw in Cisco Catalyst SD-WAN Manager, the system companies use to manage their Cisco SD-WAN networks, Cisco said in an&nbsp;advisory&nbsp;on September 30.\n\nThe flaw, CVE-2026-76504, could allow a remote attacker with no login access to use the Manager's API as the admin user. Fixed releases are available, and there is no workaround. It carries a"
+      "title": "PoeLLM Malware Infects 3,400+ Servers to Expand Crypto Mining Botnet",
+      "url": "https://thehackernews.com/2026/10/poellm-malware-infects-3400-servers-to.html",
+      "published": "2026-10-07T15:33:51",
+      "summary": "Cybersecurity researchers are calling attention to a new malware family that has been observed targeting exposed artificial intelligence (AI) and large language model (LLM) infrastructure with an aim to deploy cryptocurrency miners and further expand the scale of the botnet.\n\nThe financially motivated campaign, dubbed Canto Incognito, has been found to install cryptocurrency miners, including"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Attackers Abuse ChatGPT Custom GPTs to Deliver RAT via ClickFix Lures",
-      "url": "https://thehackernews.com/2026/09/attackers-abuse-chatgpt-custom-gpts-to.html",
-      "published": "2026-09-30T15:00:15",
-      "summary": "Threat actors are abusing ChatGPT Custom GPTs to disguise them as legitimate product offerings and direct unsuspecting victims to malicious sites that employ ClickFix lures to deliver malware.\n\nHuntress, which observed the activity in late September 2026, said it marks the abuse of yet another feature in trusted artificial intelligence (AI) platforms. Prior campaigns have weaponized shared"
+      "title": "The Sixth Voice of the CISO Data Shows Cyber Risk Has Moved Inside the Workflow",
+      "url": "https://thehackernews.com/2026/10/the-sixth-voice-of-ciso-data-shows.html",
+      "published": "2026-10-07T11:57:05",
+      "summary": "The 2026 findings are not just a year-over-year shift. They mark the latest point in a five-year arc where resilience, AI governance, human risk, and board scrutiny are converging inside the systems where work actually happens.\n\nFor years, the enterprise cybersecurity story has been told as a straight line of escalation: more attacks, more data loss, more pressure, and more urgency. That"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Know Your Enemy: Browser-Based Attack Techniques in 2026",
-      "url": "https://thehackernews.com/2026/09/know-your-enemy-browser-based-attack.html",
-      "published": "2026-09-30T11:58:00",
-      "summary": "Given that the browser is where business apps are accessed and used, it makes sense that attacks are happening there too. Most breaches today begin in a browser session. Often, they never leave it, with the entire attack chain from initial access to exfiltration playing out in the browser.\n\nHere are the six most dangerous techniques that should be on every security team's radar in 2026.\n\n1."
+      "title": "FBI Warns FortiBleed Remains Active After Amassing 86,644 Fortinet Device Credentials",
+      "url": "https://thehackernews.com/2026/10/fbi-warns-fortibleed-remains-active.html",
+      "published": "2026-10-07T11:56:56",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) and Secret Service (USSS) on Tuesday warned that the FortiBleed credential harvesting campaign remains an active threat aimed at internet-facing Fortinet FortiGate firewalls and secure socket layer (SSL) virtual private network (VPN) gateways.\n\n\"The campaign exploits reused or leaked credentials and legacy SHA-256 password storage, enabling threat"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "AI Coding Agents Exposed 13,000 Internal Images, Including Billing Records, on GitHub",
-      "url": "https://thehackernews.com/2026/09/ai-coding-agents-exposed-13000-internal.html",
-      "published": "2026-09-30T11:30:00",
-      "summary": "AI coding agents asked to share screenshots of code changes for review have put internal company images in public GitHub repositories, security company Glow said.\n\nIts researchers found more than 13,000 internal images from developers at over 300 organizations, including customer billing records and screens of features not yet released. In most cases, they sat under developers' personal accounts"
+      "title": "Atlassian Data Center Flaw Draws Exploitation Attempts Within Two Hours of Public Details",
+      "url": "https://thehackernews.com/2026/10/atlassian-data-center-flaw-draws.html",
+      "published": "2026-10-07T11:49:26",
+      "summary": "Threat actors have begun to exploit a newly disclosed critical security flaw impacting Atlassian Data Center products that could allow access to sensitive files under certain conditions.\n\nThe arbitrary file access flaw, tracked as CVE-2026-21589 (CVSS score: 9.3) affects multiple products, including Bitbucket Data Center, Confluence Data Center, Jira Service Management Data Center, Jira Software"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "US-Focused CSuite Phishing Steals Microsoft 365 Sessions and Deploys RMM Tools for Remote Access",
-      "url": "https://thehackernews.com/2026/09/us-focused-csuite-phishing-steals.html",
-      "published": "2026-09-30T10:45:00",
-      "summary": "ANY.RUN researchers traced a US-focused CSuite phishing campaign across 351 sandbox analyses, with 51% of submissions coming from the United States. Technology, manufacturing, government, and consulting organizations showed the highest exposure.\n\nBy combining Microsoft 365 session theft with remote-access tool deployment, CSuite can turn a phishing incident into broader account compromise, fraud"
+      "title": "What Is Agentic Pentesting? What It Proves, and Where It Stops.",
+      "url": "https://thehackernews.com/2026/10/what-is-agentic-pentesting-what-it.html",
+      "published": "2026-10-07T11:42:24",
+      "summary": "If you\u2019re evaluating an agentic pentesting solution right now, you\u2019ve probably heard the same pitch more than once: point it at a target, and it discovers, validates, and exploits attack paths autonomously, the way a real attacker would.\n\nThat promise is worth taking seriously. It\u2019s also worth pressure testing, and three questions do the heavy lifting.&nbsp;\n\n\n  What can the assessment actually"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Attackers Exploit NetScaler Flaw for Root Access, Deploy WHIPSHOT and SLAPSHOT",
-      "url": "https://thehackernews.com/2026/09/attackers-exploit-netscaler-flaw-for.html",
-      "published": "2026-09-30T08:24:35",
-      "summary": "Unknown threat actors have been observed exploiting a newly patched security flaw in Citrix NetScaler ADC and NetScaler Gateway appliances to target organizations in North America and Europe.\n\nThe activity, observed by Mandiant Consulting and Google Threat Intelligence Group (GTIG) in September 2026, has targeted government, financial services, technology, education, and legal and professional"
+      "title": "Anthropic Expands Claude Access for Vetted Cyber Teams as Glasswing Finds 129,000 Flaws",
+      "url": "https://thehackernews.com/2026/10/anthropic-expands-claude-access-for.html",
+      "published": "2026-10-07T08:07:38",
+      "summary": "Anthropic on Tuesday said it's expanding a program that allows vetted cybersecurity professionals to test its advanced artificial intelligence (AI) models with reduced safeguards and blocking classifiers, as the company claimed its Project Glasswing initiative uncovered at least 129,000 verified software vulnerabilities between April and July 2026.\n\nThe company said it also found an additional"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "OpenSSL Fixes High-Severity DTLS Flaw That Can Leak Heap Memory Unencrypted",
-      "url": "https://thehackernews.com/2026/09/openssl-fixes-high-severity-dtls-flaw.html",
-      "published": "2026-09-30T08:09:28",
-      "summary": "A High-severity OpenSSL flaw can leak heap memory to the other side of a DTLS connection or crash the program,&nbsp;OpenSSL said&nbsp;on September 29 as it released fixes.\n\nDTLS, the TLS variant used for UDP traffic, resends a handshake message if no reply arrives before the timer expires. The leak or crash can happen when such a resend starts while a larger handshake message is stuck part-way"
+      "title": "100+ Compromised Websites Use Fake Cloudflare Checks to Deliver LunexStealer",
+      "url": "https://thehackernews.com/2026/10/100-compromised-websites-use-fake.html",
+      "published": "2026-10-07T06:57:54",
+      "summary": "The Computer Emergency Response Team of Ukraine (CERT-UA) has identified more than 100 compromised websites that have been injected with malicious JavaScript to serve an information-stealing malware called LunexStealer (aka Psychedelic Stealer).\n\nThe activity, which was observed by the agency in September 2026, has been attributed to a threat cluster dubbed UAC-0277. It did not disclose who the"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Citrix NetScaler CVE-2026-88772 Exploit Details Show Pre-Auth Path to Shellcode Execution",
-      "url": "https://thehackernews.com/2026/09/citrix-netscaler-cve-2026-88772-exploit.html",
-      "published": "2026-09-30T05:30:30",
-      "summary": "Cybersecurity researchers have disclosed technical details of a recently patched critical security flaw in Citrix NetScaler ADC and Gateway that has come under active exploitation in the wild.\n\nThe vulnerability, tracked as CVE-2026-88772 (CVSS score: 9.5), has been described as a memory overflow bug in the Datagram Transport Layer Security (DTLS) protocol handling that's rooted in the NetScaler"
+      "title": "Fake ChatGPT, Gemini, and Claude Ad Portals Capture Credentials and MFA Codes",
+      "url": "https://thehackernews.com/2026/10/fake-chatgpt-gemini-and-claude-ad.html",
+      "published": "2026-10-06T18:38:55",
+      "summary": "Cybersecurity researchers have disclosed details of a \"human-operated phishing platform\" that impersonates advertising products for artificial intelligence (AI) chatbots like Google Gemini, Anthropic Claude, OpenAI ChatGPT, Perplexity, Meta Muse, and Manus.\n\nThe products, which claim to offer campaign optimization, spend audits, and business-account connections, are designed with one goal in"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "French Tax Data Theft Using Stolen Staff Passwords Went Undetected for Seven Weeks",
-      "url": "https://thehackernews.com/2026/09/french-tax-data-theft-using-stolen.html",
-      "published": "2026-09-29T17:47:01",
-      "summary": "An attacker used stolen passwords of staff at France's tax administration to take tax data on hundreds of thousands of taxpayers and businesses in June and July.\n\nNeither the tax administration nor France's national cybersecurity agency saw the data leave. The attack was not sophisticated, the agency, ANSSI, says in a&nbsp;report&nbsp;(in French) published on Tuesday: it worked because of weak"
+      "title": "Linux Backdoors Impersonate Email Security Tools to Evade Detection in Korea and Taiwan",
+      "url": "https://thehackernews.com/2026/10/linux-backdoors-impersonate-email.html",
+      "published": "2026-10-06T18:24:25",
+      "summary": "Linux backdoors targeting telecom and network appliances in South Korea and Taiwan have been disguising their traffic as email services and seemingly legitimate processes to blend in and evade detection.\n\nThreat actors are known to name their malicious software after a legitimate operating system component or a process as a defense evasion measure. By borrowing the name of a real binary, it may"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "New Spectre-v2 BTR Attack Leaks Linux Memory Despite Existing Defenses",
-      "url": "https://thehackernews.com/2026/09/new-spectre-v2-btr-attack-leaks-linux.html",
-      "published": "2026-09-29T17:20:17",
-      "summary": "A group of academics from VUSec and Scuola Superiore Sant'Anna have disclosed details of a new Spectre CPU vulnerability variant that affects Just-In-Time (JIT) engines present in web browsers, language runtimes, and the operating system kernel, across multiple CPU vendors.\n\nThe new Spectre v2 variant has been codenamed Branch Target Reuse (BTR).\n\n\"The key insight is that, while modern CPUs"
+      "title": "LibreOffice and OpenOffice Flaws Let Malicious Spreadsheets Run Code Without Macro Warnings",
+      "url": "https://thehackernews.com/2026/10/libreoffice-and-openoffice-flaws-let.html",
+      "published": "2026-10-06T11:57:00",
+      "summary": "A malicious spreadsheet can make LibreOffice and Apache OpenOffice run an attacker's code as soon as the file is opened, security researchers have shown. There is no warning first, of the kind either program shows before it runs a macro.\n\nThe attack works only when the program's Java support is enabled. So far, it has only been shown as a proof of concept, and there are no reports of its use in"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Russia's Star Blizzard Targets 100+ Organizations With Fake Event Invites to Deliver Backdoor",
-      "url": "https://thehackernews.com/2026/09/russias-star-blizzard-targets-100.html",
-      "published": "2026-09-29T17:20:08",
-      "summary": "Russian state hackers known as Star Blizzard have been using fake event invitations to trick people into installing a backdoor on their Windows computers,&nbsp;according to Microsoft.\n\nThe campaigns, aimed at people and organizations tied to Ukraine, have affected more than 100 organizations since January, mostly in the U.S. and U.K. At least one computer was infected, but the number of breached"
+      "title": "Wikimedia Says OpenAI Agents Tried to Compromise Etherpad and Use Wiki Tools as Proxies",
+      "url": "https://thehackernews.com/2026/10/wikimedia-says-openai-agents-tried-to.html",
+      "published": "2026-10-06T11:26:25",
+      "summary": "The Wikimedia Foundation, which hosts Wikipedia, has confirmed that it has discovered activity by rogue OpenAI agents on its platforms, including unsuccessful efforts to compromise Etherpad, a public note-taking tool, and edit Wikipedia pages.\n\n\"The unauthorized bot activities included edits to our wikis, some unsuccessful attempts to exploit a public note-taking tool we host, and heavy traffic,"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Kiteworks Fixes Critical Flaw Found During Nine-Hour Precautionary Shutdown",
-      "url": "https://thehackernews.com/2026/09/kiteworks-fixes-critical-flaw-found.html",
-      "published": "2026-09-29T14:13:20",
-      "summary": "Kiteworks on Monday said it worked with federal intelligence authorities over the weekend as it identified and addressed a critical security vulnerability during the scheduled precautionary shutdown.\n\n\"During the shutdown, this activity led to the discovery of a previously unknown critical vulnerability confined to a capability that is enabled for less than 1% of the customer base,\" the company"
+      "title": "Welcome to the Jungle: What We Found Inside 15,465 Public MCP Servers",
+      "url": "https://thehackernews.com/2026/10/welcome-to-jungle-what-we-found-inside.html",
+      "published": "2026-10-06T11:02:30",
+      "summary": "In 2024, MCP (Model Context Protocol) set out to become the USB-C of AI: one standard for connecting models, agents, and IDEs to tools and data. The protocol delivered. Thousands of developers built servers, and enterprises plugged them into agent workflows.\n\nThe ecosystem around it fell short. Earlier this year, our team at OX Security,&nbsp; traced critical vulnerabilities in Anthropic's MCP"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "101 Malicious npm Packages Add Developers' WhatsApp Accounts to Groups Without Consent",
-      "url": "https://thehackernews.com/2026/09/101-malicious-npm-packages-add.html",
-      "published": "2026-09-29T13:45:10",
-      "summary": "Cybersecurity researchers have identified a cluster of 101 npm packages that are used to trap developers into a WhatsApp group subscriber campaign dubbed PhantomSub.\n\n\"The malicious packages abuse the 'Baileys' WhatsApp open source project to add the victims to groups without their consent,\" OX Security researchers Nir Zadok, Moshe Siman Tov Bustan, and Vitalii Chepurko said in a technical"
+      "title": "Google Pauses OSS Product Bug Bounty Rewards After Surge in Invalid Automated Reports",
+      "url": "https://thehackernews.com/2026/10/google-pauses-oss-product-bug-bounty.html",
+      "published": "2026-10-06T09:21:47",
+      "summary": "Google has stopped accepting product vulnerability reports through its bug bounty program for its open-source software.\n\nThe change, in effect since October 1, means researchers can no longer submit security flaws in the code of projects such as Go, Angular, and Protocol Buffers there for a reward. Reports about supply chain compromises are still accepted, and reports filed before October 1 are"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Dutch Police Arrest 24-Year-Old Amsterdam Man in ShinyHunters Investigation",
-      "url": "https://thehackernews.com/2026/09/dutch-police-arrest-24-year-old.html",
-      "published": "2026-09-29T08:35:10",
-      "summary": "Dutch authorities have confirmed that they arrested a 24-year-old man from Amsterdam in connection with the ShinyHunters group.\n\n\"It is true that this month a 24-year-old man from Amsterdam was arrested in an investigation into the hacker group ShinyHunters,\" the Politie Landelijke Opsporing en Interventies said in an X post Monday.\n\nPolice said the individual is expected to appear before the"
+      "title": "Critical Atlassian Flaw Lets Unauthenticated Attackers Read Known Files Across 8 Products",
+      "url": "https://thehackernews.com/2026/10/critical-atlassian-flaw-lets.html",
+      "published": "2026-10-06T06:58:56",
+      "summary": "A critical flaw in 8 Atlassian Data Center products, which customers host themselves, allows an attacker with no login access to read specific files in each product's web application root directory.\n\nThe attacker must already know a file's exact name and path and cannot list what the directory holds. Atlassian&nbsp;disclosed the flaw, CVE-2026-21589, on October 5, rated it 9.3 out of 10, and"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Official MCP Python SDK Flaw Can Let Malicious Servers Steal OAuth Credentials",
-      "url": "https://thehackernews.com/2026/09/official-mcp-python-sdk-flaw-can-let.html",
-      "published": "2026-09-29T06:08:25",
-      "summary": "A malicious MCP server could trick an application built on the official&nbsp;MCP Python SDK&nbsp;into handing over the OAuth credentials it uses to log in to a real service, the SDK's maintainers said in a security advisory.\n\nAffected versions sent the client secret, the authorization code, and the PKCE proof key to a token endpoint the attacker controlled. The fix is in versions 1.30.0 and"
+      "title": "FBI Removes Accenture Contractor After Patch Failure Led to ShinyHunters Breach",
+      "url": "https://thehackernews.com/2026/10/fbi-removes-accenture-contractor-after.html",
+      "published": "2026-10-06T06:56:57",
+      "summary": "The U.S. Federal Bureau of Investigation (FBI) has removed an Accenture contractor for their alleged role in a ShinyHunters-breach that led to the theft of personal details of thousands of bureau employees.\n\nThat's according to a report from Reuters, citing two sources familiar with the matter.\n\n\"To date, our review has determined that the incident occurred as the result of a security failure \u200b"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "OpenAI Shelves GPT-6.1 Astra After Tests Find Deception and Unauthorized Actions",
-      "url": "https://thehackernews.com/2026/09/openai-shelves-gpt-61-astra-after-tests.html",
-      "published": "2026-09-29T05:12:32",
-      "summary": "OpenAI on Monday shelved plans to release GPT-6.1 Astra, a next-generation artificial intelligence (AI) model that was planned for an October launch, after it failed internal safety and alignment audits.\n\nThe development was first reported by The Wall Street Journal. The move \"marks a rare case of a major AI developer ditching a new release because of safety concerns,\" the news publication said."
+      "title": "Denmark Says Attackers Accessed CPR Data for 8.8 Million People via Company Account",
+      "url": "https://thehackernews.com/2026/10/denmark-says-attackers-accessed-cpr.html",
+      "published": "2026-10-06T06:00:30",
+      "summary": "Unauthorized parties have gained access to the names, addresses, and personal identification numbers of about 8.8 million people, living and dead, in Denmark's national population register, the country's digitalization ministry&nbsp;said on October 5.\n\nThey used a private Danish company's lawful right to look up records in the Central Person Register (CPR). The ministry has told people never to"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "OpenAI Pauses Tool Use After Agent Bypasses Internet Controls to Reach External Chatbot",
-      "url": "https://thehackernews.com/2026/09/openai-pauses-tool-use-after-agent.html",
-      "published": "2026-09-29T04:45:20",
-      "summary": "OpenAI said it has made the decision to pause training of its most powerful models after one of its agents during reinforcement learning (RL) training contacted an external chatbot by exploiting a loophole in its internet-access restrictions.\n\n\"An agent attempting to complete a search-based training task queried a public chatbot service through a gap in our internet-access restrictions:"
+      "title": "ClickFix Smuggles Payloads Through Browser Cache to Bypass Windows Run Limits",
+      "url": "https://thehackernews.com/2026/10/clickfix-smuggles-payloads-through.html",
+      "published": "2026-10-06T05:22:55",
+      "summary": "A new type of ClickFix attack is using compromised websites to trick users into executing a malicious payload cached in a web browser's cache.\n\n\"Instead of downloading and executing remote payloads like the typical attack pattern, in this attack, the websites pre-fetch a script payload into the browser cache disguised as a PNG file,\" the Microsoft Threat Intelligence team said in a post on X."
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Apple Patches CoreGraphics Flaw Possibly Exploited in Targeted Attacks",
-      "url": "https://thehackernews.com/2026/09/apple-patches-coregraphics-flaw.html",
-      "published": "2026-09-28T19:18:01",
-      "summary": "Apple has released security updates to address a vulnerability in older versions of iOS, iPadOS, and macOS that it said may have been exploited in targeted attacks.\n\nThe vulnerability, tracked as CVE-2026-86950, refers to an out-of-bounds write impacting the CoreGraphics component that could lead to arbitrary code execution when processing a maliciously crafted file.\n\nThe iPhone maker said the"
+      "title": "Microsoft Exchange Flaw Lets Authenticated Attackers Read Other Users' Mailboxes",
+      "url": "https://thehackernews.com/2026/10/microsoft-exchange-flaw-lets.html",
+      "published": "2026-10-05T16:21:52",
+      "summary": "Microsoft has released out-of-band security updates to address a high-severity flaw in Microsoft Exchange Server that could allow an attacker to escalate privileges under certain conditions.\n\nThe vulnerability, tracked as CVE-2026-96940, is rated 8.8 on the CVSS scoring system.\n\n\"Weak authorization in Microsoft Exchange Server allows an authenticated attacker to elevate privileges over a"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Hackers Use NeedyMantis to Maintain Long-Term Access in Breached Networks",
-      "url": "https://thehackernews.com/2026/09/hackers-use-needymantis-to-maintain.html",
-      "published": "2026-09-28T18:35:42",
-      "summary": "Hackers have used a malware family called NeedyMantis to maintain long-term access to networks they had already breached, Microsoft said in&nbsp;a technical analysis.\n\nThe malware has been seen in a small number of targeted intrusions at telecommunications organizations, universities, medical nonprofits, intergovernmental organizations, and government contractors. Its use goes back to at least"
+      "title": "\u26a1 Weekly Recap: NetScaler and FortiMail 0-Days, AI Coding Leaks, Spectre v2 and Ransomware Arrests",
+      "url": "https://thehackernews.com/2026/10/weekly-recap-netscaler-and-fortimail-0.html",
+      "published": "2026-10-05T14:20:43",
+      "summary": "A blank field. A public repo. One reply to an email. A box left exposed. None of this sounds dramatic, which is partly the problem. This week\u2019s threats keep finding leverage in small things that were easy to overlook.\n\nThere are actively exploited bugs in the mix, cleaner intrusion paths, smarter automation, and a long patch list waiting behind them. Some attacks are getting more capable. Others"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "IAM for AI agents: A Practical Enterprise Framework",
-      "url": "https://thehackernews.com/2026/09/iam-for-ai-agent.html",
-      "published": "2026-09-28T18:20:38",
-      "summary": "What is IAM for AI agents?\n\nAI agents authenticate, invoke tools, and act across enterprise systems with delegated authority. IAM for AI Agents is the identity-control architecture that governs those actors. This guide covers the limits of conventional provisioning, the components that matter, how to evaluate framework choices, and what runtime evidence proves an agent behaved as intended."
+      "title": "The Credential Layer Is Expanding Faster Than Security Teams Can See It",
+      "url": "https://thehackernews.com/2026/10/the-credential-layer-is-expanding.html",
+      "published": "2026-10-05T11:55:00",
+      "summary": "Every modern enterprise depends on credentials. This is how humans, systems, and now AI, all connect to data, services, and each other securely. GitGuardian helps secure that credential layer through three connected capabilities: Detect, Remediate, and Prevent. The journey starts with detection, because organizations first need to understand what credentials exist, where they live, and what they"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Bitget Says Attacker Exploited Third-Party Security Product Flaw to Steal $388M",
-      "url": "https://thehackernews.com/2026/09/bitget-says-attacker-exploited-third.html",
-      "published": "2026-09-28T17:42:18",
-      "summary": "The attacker who stole about $388 million from the cryptocurrency exchange Bitget gained access through a vulnerability in a third-party security product the exchange used, Bitget said on Monday.\n\nThe attacker exploited the flaw to obtain high-level internal credentials and then, on September 24, used them to send fraudulent withdrawal commands to Bitget's wallet system.\n\nExchanges keep most"
+      "title": "Realtek Jungle SDK Exploit Attempts Deliver Cling Botnet With STUN-Based C2",
+      "url": "https://thehackernews.com/2026/10/realtek-jungle-sdk-exploit-attempts.html",
+      "published": "2026-10-05T11:46:25",
+      "summary": "Threat actors have been observed attempting to exploit a now-patched critical security flaw impacting the Realtek Jungle software development kit (SDK) to deploy a botnet malware called Cling.\n\n\"Cling is notable not because it introduces a new propagation technique, but because it repurposes ordinary STUN behavior into a practical command-and-control channel,\" Nozomi Networks said in a report"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "RatHat Android Malware Console Uses Gemini to Identify Higher-Value Victims",
-      "url": "https://thehackernews.com/2026/09/rathat-android-malware-console-uses.html",
-      "published": "2026-09-28T17:38:33",
-      "summary": "RatHat's operators build and publish the Android banking trojan and control infected phones from a web console, according to security company Cleafy. Cleafy has&nbsp;traced nearly 100 deployments&nbsp;of that console since April 2026. It said this fits a malware-as-a-service model, in which each customer runs a separate copy.\n\nThe console stores what the malware collects from each phone,"
+      "title": "Apple Plans Tighter macOS Full Disk Access Controls Over AI Agent Data Access",
+      "url": "https://thehackernews.com/2026/10/apple-plans-tighter-macos-full-disk.html",
+      "published": "2026-10-05T10:38:50",
+      "summary": "Apple has announced that it's taking steps to tighten controls around a macOS setting called Full Disk Access (FDA) due to security risks posed by artificial intelligence (AI) agents.\n\n\"Some developers are using Full Disk Access in ways that could put users at risk, exposing everything on their systems\u2014including files, mail, messages, and even browsing history \u2013 without users' full knowledge"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "\u26a1 Weekly Recap: $387M Crypto Hack, Citrix Exploits, AI Agents Go Off-Script, and More Threats",
-      "url": "https://thehackernews.com/2026/09/weekly-recap-387m-crypto-hack-citrix.html",
-      "published": "2026-09-28T14:00:53",
-      "summary": "A domain used as harmless placeholder text showed up in roughly 1,700 repositories. Then somebody registered it and started serving malicious lures. That is the kind of week this was: forgotten assumptions turning into live attack surface.\n\nElsewhere, weak service accounts, old bugs, exposed systems, phishing kits, and strangely easy exploit paths kept doing useful work for attackers. Nothing"
+      "title": "Attackers Target Rejetto HFS Flaw That Enables Admin Session Forgery and RCE",
+      "url": "https://thehackernews.com/2026/10/attackers-target-rejetto-hfs-flaw-that.html",
+      "published": "2026-10-05T08:09:23",
+      "summary": "A critical security flaw impacting Rejetto HTTP File Server (HFS) is witnessing active exploitation attempts, according to VulnCheck.\n\nThe vulnerability in question is CVE-2026-61500 (CVSS score: 9.3), a case of session forgery stemming from the use of a weak pseudo-random number generator (PRNG) that can lead to a predictable key, which an attacker can then use to gain unauthorized access and"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Webinar: How to Govern AI Agents, Reduce Excessive Access, and Control Shadow AI",
-      "url": "https://thehackernews.com/2026/09/webinar-how-to-govern-ai-agents-reduce.html",
-      "published": "2026-09-28T11:58:00",
-      "summary": "AI agents are moving into production faster than security teams can govern them. They are connecting to apps, handling data, calling APIs, and acting across business systems\u2014often without the same controls applied to human users.\n\nAccording to Okta\u2019s Global CISO Insights 2026 report, only 47% of CISOs are confident they can identify every AI agent in their environment. Even among those who feel"
+      "title": "New NetScaler Zero-Day Exploited in Targeted Attacks Can Knock SAML Deployments Offline",
+      "url": "https://thehackernews.com/2026/10/new-netscaler-zero-day-exploited-in.html",
+      "published": "2026-10-05T06:40:19",
+      "summary": "Citrix has released security updates for a high-severity security flaw in NetScaler ADC and NetScaler Gateway that has been exploited as part of targeted zero-day attacks.\n\nThe vulnerability, tracked as CVE-2026-88779, carries a CVSS score of 8.7 out of 10.0.\n\n\"CVE-2026-88779 is a memory overflow vulnerability in Citrix NetScaler ADC and Citrix NetScaler Gateway that can lead to"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Carbonato Botnet Compromises Docker Hosts to Deploy Telegram-Controlled Hermes AI Agent",
-      "url": "https://thehackernews.com/2026/09/carbonato-botnet-compromises-docker.html",
-      "published": "2026-09-28T11:46:00",
-      "summary": "Cybersecurity researchers have disclosed details of a new botnet malware called Carbonato that's targeting exposed Docker daemons to deploy an open-source artificial intelligence (AI) agent framework called Hermes Agent.\n\n\"The implant installs the framework unchanged, then overwrites its SOUL.md persona file,\" ThreatDown said. \"The 39-line prompt directs it to execute tasks received through"
+      "title": "ShinyHunters Suspect Rey Reportedly Detained in Jordan, Helping FBI Identify Group Members",
+      "url": "https://thehackernews.com/2026/10/shinyhunters-suspect-rey-reportedly.html",
+      "published": "2026-10-04T07:22:05",
+      "summary": "A suspected member of the ShinyHunters digital extortion group, who goes by the online alias \"Rey,\" has been allegedly detained by authorities in Jordan, Reuters reported, citing three people familiar with the matter.\n\nRey, whose real name is Saif \u200cal-Din Khader, is said to have been brought into custody on September 29, 2026, and cooperating with the U.S. Federal Bureau of Investigation (FBI)"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "JADEPUFFER-Linked Attackers Used Compromised Service Principals to Delete Azure Resources",
-      "url": "https://thehackernews.com/2026/09/jadepuffer-linked-attackers-used.html",
-      "published": "2026-09-28T09:08:21",
-      "summary": "The threat actor known as JADEPUFFER has been observed orchestrating destructive actions within a Microsoft Azure environment using compromised service principals.\n\nMicrosoft, which is tracking the activity under the name Storm-3168, has called it an evolution of the threat actor's tradecraft. The attack took place in early June 2026 over a period of about 18 hours.\n\n\"The destructive operations"
+      "title": "China-Aligned TA419 Targets U.S. AI Policy Experts With Microsoft AitM Phishing",
+      "url": "https://thehackernews.com/2026/10/china-aligned-ta419-targets-us-ai.html",
+      "published": "2026-10-04T07:20:32",
+      "summary": "A new China-nexus cyber espionage group known as TA419 has been attributed to multiple credential phishing campaigns targeting artificial intelligence (AI) experts working for U.S. think tanks, universities, and legal sector organizations.\n\nThe campaigns have impersonated prominent economists and AI policymakers, as well as a prominent Anthropic employee, to single out an AI policy expert at a"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "CISA Says Attackers Are Exploiting Two Critical Citrix NetScaler Flaws Globally",
-      "url": "https://thehackernews.com/2026/09/cisa-says-attackers-are-exploiting-two.html",
-      "published": "2026-09-28T07:21:49",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Sunday added two critical Citrix NetScaler ADC and Gateway flaws to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-88771 (CVSS score: 9.5) - An improper input validation vulnerability that could allow an unauthenticated attacker to"
+      "title": "MI5 Says China\u2019s MSS Funded Research Involving 100+ U.K.-Linked Academics",
+      "url": "https://thehackernews.com/2026/10/mi5-says-chinas-mss-funded-research.html",
+      "published": "2026-10-03T14:38:46",
+      "summary": "The U.K.'s domestic intelligence and security agency has warned that more than 100 academics have helped China boost its intelligence gathering efforts on behalf of Beijing's state security service.\n\nIn a \"Security Service Espionage Alert\" issued on September 30, 2026, MI5 said the \"primary purpose of the China General Technology Research Institute (CGTRI) \u4e2d\u56fd\u901a\u7528\u6280\u672f\u7814\u7a76\u9662 is to fund research that"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
-      "url": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
-      "published": "2026-09-27T07:47:57",
-      "summary": "Two critical vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway that allow remote code execution have been exploited in the wild, Citrix confirmed on September 27. It released fixes for both, along with six other flaws. One of the two affects every deployment on an affected version, including those in the default configuration.\n\nThe bulletin came a day after security firm watchTowr"
+      "title": "Warlock Exploits SharePoint Flaws to Disable Security Tools and Deploy Ransomware",
+      "url": "https://thehackernews.com/2026/10/warlock-exploits-sharepoint-flaws-to.html",
+      "published": "2026-10-03T14:36:33",
+      "summary": "The suspected China-linked threat actor known as Warlock is still continuing to weaponize Microsoft SharePoint vulnerabilities, likely both old and new, in attacks targeting organizations in Portuguese- and Spanish-speaking countries.\n\nThe activity, observed by the Symantec and Carbon Black Threat Hunter Team, has hit critical infrastructure, government, and education organizations.\n\n\"In the"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Lunex Stealer Abuses AMD Driver to Disable Security Monitoring and Steal Browser Credentials",
-      "url": "https://thehackernews.com/2026/09/lunex-stealer-abuses-amd-driver-to.html",
-      "published": "2026-09-26T18:22:52",
-      "summary": "The Psychedelic Stealer malware distributed via compromised Ukrainian websites using ClickFix-style Cloudflare verification checks is part of a wider malware-as-a-service (MaaS) platform called Lunex.\n\nThe new findings come from Ontinue, which described the activity as a four-stage attack chain aimed at targeting Ukrainian-speaking users.\n\n\"The attack chain begins with a fake CAPTCHA page and"
+      "title": "The State of Cybersecurity in 2026:\u00a0Key Segments, Insights, and Innovations",
+      "url": "https://thehackernews.com/2026/10/the-state-of-cybersecurity-in-2026key.html",
+      "published": "2026-10-03T11:00:00",
+      "summary": "Featuring:\n\n\n\nCybersecurity is being reshaped by the expansion of cloud infrastructure, AI, distributed systems, and increasingly complex digital environments. As organizations manage more identities, devices, data, and internet-facing infrastructure, security is shifting toward continuous visibility, control, and the ability to respond to risk at scale.\n\nThis report examines how core areas of"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Attackers Bypass WAFs to Exploit Oracle PeopleSoft Flaw and Deploy Web Shells",
-      "url": "https://thehackernews.com/2026/09/attackers-bypass-wafs-to-exploit-oracle.html",
-      "published": "2026-09-26T11:46:40",
-      "summary": "Google is warning of renewed mass exploitation of a known security vulnerability in Oracle PeopleSoft as part of a campaign targeting multiple sectors globally.\n\nThe ShinyHunters-linked activity involves the weaponization of CVE-2026-35273 (CVSS score: 9.8), a critical security flaw that could result in unauthenticated remote code execution.\n\nThe vulnerability was first exploited as a zero-day"
+      "title": "GitLab Patches Critical 9.9 AI Gateway Flaw Allowing Command Execution on Self-Hosted Servers",
+      "url": "https://thehackernews.com/2026/10/gitlab-patches-critical-self-hosted-ai.html",
+      "published": "2026-10-02T17:33:31",
+      "summary": "A critical flaw in GitLab's AI Gateway could let a logged-in user with Duo Agent Platform access run commands on the gateway under certain conditions, GitLab&nbsp;said in an advisory.\n\nThe gateway is the service that connects a GitLab instance to AI models, and only organizations that host their own gateway need to act. The flaw is fixed in gateway versions 19.2.4, 19.3.2, and 19.4.1.\n\nThe flaw"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Zero Trust for AI Agents Starts With Fixing Zero Visibility",
-      "url": "https://thehackernews.com/2026/09/zero-trust-for-ai-agents-starts-with.html",
-      "published": "2026-09-26T10:30:00",
-      "summary": "The way we talk about AI agents is shifting, and the way we implement them requires an even more fundamental shift. While earlier discourse focused on how quickly organizations could stand up agents and how much productivity they could promise, a string of recent incidents, including a widely discussed intrusion at Hugging Face during an evaluation of OpenAI agents, has spurred organizations to"
+      "title": "Antino Backdoor Uses Outlook and OneDrive for C2 in China-Nexus Espionage Campaign",
+      "url": "https://thehackernews.com/2026/10/antino-backdoor-uses-outlook-and.html",
+      "published": "2026-10-02T17:33:16",
+      "summary": "Government and policy organizations across Asia have become the target of a new campaign orchestrated by a China-nexus threat actor.\n\nThe activity, which has targeted government and policy organizations in Taiwan, India, the Philippines, Cambodia, Pakistan, Thailand, and Myanmar, involves the deployment of a previously undocumented backdoor codenamed Antino. Cisco Talos is tracking the cluster"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Elementor CSRF Flaw Lets Attackers Take Over Sites After Admin Clicks Crafted Link",
-      "url": "https://thehackernews.com/2026/09/elementor-csrf-flaw-lets-attackers-take.html",
-      "published": "2026-09-26T09:55:22",
-      "summary": "Details have emerged about a high-severity security flaw in the Elementor Website Builder WordPress plugin that could be exploited by an unauthenticated attacker to create rogue administrator accounts and take control of a site.\n\nThe cross-site request forgery (CSRF) vulnerability, which has yet to be assigned a CVE identifier, carries a CVSS score of 8.8 out of 10.0. It only affects versions"
+      "title": "Dell CSM Flaws Enable Unauthenticated Admin Access and Root on Kubernetes Nodes",
+      "url": "https://thehackernews.com/2026/10/dell-csm-flaws-enable-unauthenticated.html",
+      "published": "2026-10-02T17:02:12",
+      "summary": "Dell has released security updates to address multiple critical security flaws in Dell Container Storage Modules (CSM) that could be exploited by bad actors to take over susceptible systems.\n\nThe vulnerabilities are listed below -\n\n\n  CVE-2026-63688 (CVSS score: 10.0) - A missing authentication for critical function vulnerability in the csm-authorization-storage gRPC server that an"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "SharePoint RCE and MikroTik RouterOS Flaws Actively Exploited in the Wild",
-      "url": "https://thehackernews.com/2026/09/sharepoint-rce-and-mikrotik-routeros.html",
-      "published": "2026-09-26T08:49:53",
-      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Friday added two security flaws impacting Microsoft SharePoint and Mikrotik RouterOS to its Known Exploited Vulnerabilities (KEV) catalog, citing evidence of active exploitation.\n\nThe vulnerabilities in question are as follows -\n\n\n  CVE-2026-65660 (CVSS score: 8.8) - A code injection vulnerability in Microsoft Office SharePoint"
+      "title": "OpenAI Parts Ways With Three Safety Researchers Over Sensitive Information Mishandling",
+      "url": "https://thehackernews.com/2026/10/openai-parts-ways-with-three-safety.html",
+      "published": "2026-10-02T12:23:15",
+      "summary": "OpenAI has parted ways with three members of its safety team after they leaked private information in violation of company policies, The Wall Street Journal reported.\n\n\"We have parted ways with three individuals for violating our policies on accessing and handling sensitive company information,\" a spokesperson for the company was quoted as saying. \"Our investigation confirmed that these"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Kiteworks Urges Customers to Shut Down Systems for 9 Hours Over Possible Cyber Attack",
-      "url": "https://thehackernews.com/2026/09/kiteworks-urges-customers-to-shut-down.html",
-      "published": "2026-09-26T07:48:33",
-      "summary": "Kiteworks (formerly Accellion) is urging customers to shut down their systems as a precautionary measure for nine hours over the weekend after it received threat intelligence about an imminent cyber attack.\n\n\"Kiteworks received credible threat intelligence from federal intelligence authorities indicating that a threat actor may attempt to target some Kiteworks systems,\" said Frank Balonis, Chief"
+      "title": "Why CISOs Struggle to Answer the Board's Three Hardest Questions, and How to Fix the Report",
+      "url": "https://thehackernews.com/2026/10/why-cisos-struggle-to-answer-boards.html",
+      "published": "2026-10-02T11:30:00",
+      "summary": "The quarterly board meeting is two weeks out. The security team is pulling exports from the identity provider, the cloud posture tool, the vulnerability scanner, the SIEM and the EDR console. Someone is building a spreadsheet to reconcile them. Someone else is turning that spreadsheet into slides.\n\nThen a board member asks three questions:\n\n\n  How secure is the organization, overall?\n  What is"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "Compromised GitHub Actions Came Back Online and Resumed Executing Mini Shai-Hulud Malware",
-      "url": "https://thehackernews.com/2026/09/compromised-github-actions-came-back.html",
-      "published": "2026-09-25T14:44:41",
-      "summary": "Two actions-cool GitHub Actions have been disabled for a second time after the repositories became accessible last week, months after they were compromised during the May 2026 Mini Shai-Hulud campaign.\n\nThe affected GitHub Actions are listed below -\n\n\n  actions-cool/issues-helper\n  actions-cool/maintain-one-comment\n\nVisiting either of the repositories now shows the message: \"Access to this"
+      "title": "Android 17 Advanced Protection Locks Accessibility Services to Verified Accessibility Tools",
+      "url": "https://thehackernews.com/2026/10/android-17-advanced-protection-locks.html",
+      "published": "2026-10-02T08:01:30",
+      "summary": "Google has announced a new security measure that limits access to Android's accessibility services to verified applications classified as Accessibility Tools when Advanced Protection is enabled.\n\nWith malicious Android applications abusing the API serving as the main conduit for malware and financial fraud, the tech giant said the move would block a major attack pathway. Advanced Protection is a"
     },
     {
       "source": "The Hacker News",
       "category": "security_news",
-      "title": "PamStealer macOS Malware Adds Live C2 Payload Decryption and Multi-Layer Persistence",
-      "url": "https://thehackernews.com/2026/09/pamstealer-macos-malware-adds-live-c2.html",
-      "published": "2026-09-25T13:18:06",
-      "summary": "Cybersecurity researchers have flagged a new version of PamStealer that ensures that the main payload can only be recovered using a server-side decryption chain.\n\nThe latest artifacts, per Jamf Threat Labs, continue to rely on the same JavaScript for Automation (JXA) dropper mechanism, but modify the lure and the delivery method.\n\n\"Where earlier variants embedded their payload key material"
-    },
-    {
-      "source": "The Hacker News",
-      "category": "security_news",
-      "title": "The SOC Doesn't Need to Start Over with Every Alert",
-      "url": "https://thehackernews.com/2026/09/the-soc-doesnt-need-to-start-over-with.html",
-      "published": "2026-09-25T11:30:00",
-      "summary": "Security leaders keep debating whether AI will produce an entirely new class of cyberattack. The nearer change is quieter and already visible: AI has made a failed attack cheap to retry.\n\nThe routine version looks like this. An attacker lands on a low-privilege cloud account, and the first try at privilege escalation goes nowhere. That dead end used to cost hours of documentation reading,"
+      "title": "Critical FortiMail Zero-Day Flaw Exploited in Attacks Allows Unauthenticated Arbitrary File Writes",
+      "url": "https://thehackernews.com/2026/10/critical-fortimail-zero-day-flaw.html",
+      "published": "2026-10-02T05:49:50",
+      "summary": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA), on Thursday, added a critical security flaw impacting Fortinet FortiMail to its Known Exploited Vulnerabilities (KEV) catalog, following reports of active exploitation.\n\nThe vulnerability, tracked as CVE-2026-104286 (CVSS score: 9.8), allows unauthenticated attackers to write arbitrary files on the underlying system.\n\n\"An improper"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "16-year-old suspected leader of KillSec ransomware group arrested",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/killsec-ransomware-16-year-old-main-operator-arrested/",
-      "published": "2026-10-01T13:59:02",
-      "summary": "<p>A 16-year-old is suspected of being the main operator of KillSec, a ransomware group that Eurojust says is responsible for almost 1,000 attacks worldwide. Seizure notice (Source: Eurojust) According to Eurojust, KillSec has been active since 2024. The group got into organizations&#8217; systems by exploiting poorly secured access, particularly access linked to cloud storage. \u201cOnce inside, the KillSec group stole data and copied it to their own infrastructure. They then threatened to make the stolen &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/killsec-ransomware-16-year-old-main-operator-arrested/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/killsec-ransomware-16-year-old-main-operator-arrested/\">16-year-old suspected leader of KillSec ransomware group arrested</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Authorities seize sites selling hacked, stolen intimate images of 17,000 women and girls",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/",
+      "published": "2026-10-08T12:51:42",
+      "summary": "<p>The FBI and French law enforcement have seized two websites that sold hacked and stolen sexually explicit images and videos of young women and girls, and arrested their suspected administrator in northern France. Seizure notice (Source: US Department of Justice) The U.S. Attorney\u2019s Office for the Eastern District of Virginia announced on Wednesday that the seized domains belonged to NudeLeaksTeens (NLT), and that the operation was carried out with the FBI Washington Field Office and &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/nudeleaksteens-seized-fbi-france/\">Authorities seize sites selling hacked, stolen intimate images of 17,000 women and girls</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "DeepKeep\u2019s AI Lens flags coding agent data leaks and routes destructive commands for approval",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/",
-      "published": "2026-10-01T13:57:07",
-      "summary": "<p>DeepKeep has announced AI Lens for Developers, a new extension to the company&#8217;s AI usage control and runtime protection modules to secure software developers and their coding agents that can write, modify, and execute code on their behalf. The capability gives security teams policy enforcement, audit visibility, and runtime security over coding agents such as Cursor and Claude Code, closing a critical gap most security programs have ever had to cover before. 90% of developers &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/deepkeeps-ai-lens-flags-coding-agent-data-leaks-and-routes-destructive-commands-for-approval/\">DeepKeep\u2019s AI Lens flags coding agent data leaks and routes destructive commands for approval</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "YouTubers targeted with fake sponsorships and \u201cchannel verification\u201d phishing",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/",
+      "published": "2026-10-08T12:41:43",
+      "summary": "<p>Scammers are going after YouTube creators&#8217; Google accounts by posing as a brand looking for sponsorship partners. By sending out personalized emails that reference a creator&#8217;s own videos and directing targeted creators to a convincing fake collaboration platform, the fraudsters walk them through what looks like a routine brand deal, right up until the moment they&#8217;re asked to sign in with Google. According to researchers at ESET, one recent campaign impersonates Hollyland, a legitimate manufacturer &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/scams-targeting-youtube-creators-sponsorship/\">YouTubers targeted with fake sponsorships and &#8220;channel verification&#8221; phishing</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "Exabeam brings AI-assisted security investigations to data that must stay on-premises",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/",
-      "published": "2026-10-01T13:50:04",
-      "summary": "<p>Exabeam has introduced a new wave of capabilities that bring the Agentic SOC to life in the cloud and on-premises environments, combining AI-driven investigation, execution, and governance. Analyst workflows alone can\u2019t keep pace with machine-speed threats or the growing complexity of goal-driven AI agents and autonomous workflows. The future of the SOC is agentic. For more than a decade, Exabeam has built applied machine learning into security operations, beginning with its pioneering work in user &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/exabeam-agentic-soc/\">Exabeam brings AI-assisted security investigations to data that must stay on-premises</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Anthropic\u2019s new budget model gets much better at ignoring hidden commands",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/",
+      "published": "2026-10-08T11:24:16",
+      "summary": "<p>Anthropic\u2019s Claude Haiku 5.5 model, designed for quick, repetitive workloads and speed-sensitive tasks, is now better at finding vulnerabilities and writing exploits than its predecessor. The company has given it stricter cybersecurity safeguards than Haiku 4.5, though lighter ones than its more advanced models, whose offensive skills remain well ahead. Cybersecurity capabilities and safeguards Anthropic measured the model\u2019s offensive abilities with its cybersecurity safeguards switched off. In a test involving known flaws in Chrome\u2019s V8 &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/anthropic-claude-haiku-5-5/\">Anthropic&#8217;s new budget model gets much better at ignoring hidden commands</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "RadarFirst helps teams investigate AI bias, data exposure and unintended actions",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/",
-      "published": "2026-10-01T13:39:15",
-      "summary": "<p>RadarFirst has announced the general availability of Radar AI Incident Management, a purpose-built solution that helps organizations investigate, manage, and document AI-related incidents. As organizations deploy AI across customer experiences, employee workflows, business operations, and decision-making processes, adverse events can create risks that span privacy, security, legal, compliance, and product teams. Harmful outputs, biased outcomes, sensitive data exposure, unexpected AI actions, and policy failures can quickly require a coordinated response. Radar AI Incident Management provides &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/radarfirst-ai-incident-management/\">RadarFirst helps teams investigate AI bias, data exposure and unintended actions</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Cryptomining botnet hides C2 addresses in GitHub poem, infects over 3,400 servers",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/",
+      "published": "2026-10-08T10:24:57",
+      "summary": "<p>Thousands of hijacked servers have been looking up their command and control (C2) server in a poem posted on GitHub, according to Black Lotus Labs. The malware reading it, dubbed PoeLLM, breaks into exposed AI services and open-source tools, mines cryptocurrency on them and uses them to hunt for new victims. The researchers call the campaign Canto Incognito and believe it is the work of an Italian-speaking threat actor who appears to be in it &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/poellm-malware-github-poem-ai-servers/\">Cryptomining botnet hides C2 addresses in GitHub poem, infects over 3,400 servers</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "Sophos uses agentic AI to show businesses which security fixes deserve funding",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/",
-      "published": "2026-10-01T13:25:12",
-      "summary": "<p>Sophos has launched Sophos CISO Advantage, an agentic AI-enabled solution that connects security operations to security strategy. The solution gives organizations a picture of their cyber risk, a prioritized plan to reduce it, and measurable proof of progress, in plain language that business leaders can understand, fund, and act on. Sophos CISO Advantage defines a new category in the market, turning security data into strategy and measurable improvement, driven by agentic AI. The offering assesses &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/sophos-ciso-advantage/\">Sophos uses agentic AI to show businesses which security fixes deserve funding</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "GitHub adds AI to catch passwords before a code push",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/",
+      "published": "2026-10-08T09:02:11",
+      "summary": "<p>GitHub has announced an AI detector, developed with Microsoft Applied Sciences, to help prevent developers from uploading passwords and other credentials to code repositories. The ModernBERT-based classifier will expand GitHub\u2019s push protection, which checks code for secrets and can block a push before a credential enters repository history. How the detector works Existing checks recognize many credentials by their formats. The new classifier examines surrounding code to identify unstructured secrets, such as database passwords with &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/github-push-protection-modernbert/\">GitHub adds AI to catch passwords before a code push</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "AI agent used Zammad zero-days to breach Dutch vulnerability disclosure non-profit",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/",
-      "published": "2026-10-01T13:13:14",
-      "summary": "<p>An agentic AI-powered attack that hit the Dutch Institute for Vulnerability Disclosure (DIVD) on September 21 exploited two zero-day vulnerabilities in Zammad, an open-source helpdesk and customer support ticketing system. &#8220;Used together, [the two flaws] allowed the attackers to hijack sessions, run code remotely and escalate privileges from the Zammad user to root, in seconds, due to the agentic part of this hack. From there they were able to access other services and read and &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/divd-agentic-ai-attack-breach/\">AI agent used Zammad zero-days to breach Dutch vulnerability disclosure non-profit</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "What is MATCHBOIL? The Russia-aligned malware that installs a spying backdoor",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/",
+      "published": "2026-10-08T09:00:54",
+      "summary": "<p>ESET researchers traced almost two years of changes to MATCHBOIL, a downloader that the Russia-aligned group UAC-0099 uses to plant a second program on Windows machines in Ukraine. GUI displayed at MATCHBOIL\u2019s runtime (Source: ESET) Every victim in ESET&#8217;s telemetry was in Ukraine: transportation companies in July and August 2025, a manufacturer in December 2025, and an energy company in June 2026. The program MATCHBOIL installs is a spying tool, and the access it creates &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/matchboil-malware-uac-0099/\">What is MATCHBOIL? The Russia-aligned malware that installs a spying backdoor</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "Legit Security extends automated fixes to vulnerable open-source dependencies",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/",
-      "published": "2026-10-01T13:04:31",
-      "summary": "<p>Legit Security has announced an expansion of its Agentic Remediation capability to cover vulnerabilities found in open-source dependencies, not just first-party code, enabling development teams to move from vulnerability detection to a verified fix without manual triage. The expansion addresses a growing gap in application security: as AI-generated code accelerates software delivery, most modern codebases are made up largely of open-source dependencies, and every new package introduces potential exposure to known vulnerabilities. Traditional find-it, fix-it &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/legit-security-agentic-remediation-expansion/\">Legit Security extends automated fixes to vulnerable open-source dependencies</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Ransomware recovery firm boss charged with secretly paying attackers and overcharging victims",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/",
+      "published": "2026-10-08T08:00:39",
+      "summary": "<p>The owner of Florida-based ransomware remediation company MonsterCloud has been charged with fraud for allegedly paying ransomware gangs behind his clients\u2019 backs and billing them far more than the ransom. Zohar Pinhasi (aka \u201cZack Silver\u201d and \u201cZack Green\u201d), a 50-year-old US and Israeli national from Hollywood, Florida, allegedly billed MonsterCloud clients more than $19 million while paying more than $8 million to the ransomware gangs that attacked them. According to the indictment, Pinhasi told prospective &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/monstercloud-owner-ransomware-fraud-charges/\">Ransomware recovery firm boss charged with secretly paying attackers and overcharging victims</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "Pentagon breach exposes personal data of more than 3 million people",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/pentagon-dmdc-data-breach-3-million-people/",
-      "published": "2026-10-01T12:21:03",
-      "summary": "<p>The Pentagon\u2019s Defense Manpower Data Center (DMDC) is notifying millions of people that hackers gained access to their personal data. The breach affects 2.76 million living individuals, a group that can include current and former defense personnel and their dependents, along with 294,000 deceased individuals, a Defense Department official told CNN. Established in 1974, DMDC serves as a central hub for US Department of Defense data on military personnel, service status and benefits eligibility. According &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/pentagon-dmdc-data-breach-3-million-people/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/pentagon-dmdc-data-breach-3-million-people/\">Pentagon breach exposes personal data of more than 3 million people</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Pricing your bad days and how to build an economic model for security decisions",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/",
+      "published": "2026-10-08T06:00:01",
+      "summary": "<p>Ivan Milenkovic, VP Risk Technology EMEA at Qualys, explains how security leaders can build an economic model that puts money behind their decisions. He suggests starting with a few loss scenarios, then working down to the assets that drive them. He covers how to rank fixes by value at risk, what CFOs expect to see, and how to show the worth of incidents that never happened. He also looks at how one model can serve &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/ivan-milenkovic-qualys-cyber-risk-quantification/\">Pricing your bad days and how to build an economic model for security decisions</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "Armadin raises $255.5 million to expand AI offensive security platform",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/armadin-raises-255-5-million-funding/",
-      "published": "2026-10-01T11:16:53",
-      "summary": "<p>Armadin has raised $255.5 million in Series B funding co-led by Andreessen Horowitz (a16z) and Accel that brings the company\u2019s valuation to over $2.5 billion. The round includes participation from new investors Bain Capital Ventures (BCV) and Redpoint. Existing investors 8VC, Ballistic Ventures, Google Ventures, In-Q-Tel, Kleiner Perkins, and Menlo Ventures also returned, reflecting their continued confidence, bringing Armadin\u2019s total funding to $445 million. Seven months after emerging from stealth, Armadin is running agentic attack &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/armadin-raises-255-5-million-funding/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/armadin-raises-255-5-million-funding/\">Armadin raises $255.5 million to expand AI offensive security platform</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "Who watches the AI watching your street?",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/",
+      "published": "2026-10-08T05:30:13",
+      "summary": "<p>Yusaku Fujii, a professor at Gunma University in Japan, has designed audits and penalties to stop operators from misusing AI that analyzes street camera footage. His system adds an independent record-keeper and unannounced spot checks to the AI&#8217;s outputs. Fujii&#8217;s test setting is what he calls a Fully Monitored Public Space (FMPS): streets where cameras are dense enough to follow people and vehicles continuously. It can be built with existing network cameras and encrypted storage. &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/ai-surveillance-cameras-privacy/\">Who watches the AI watching your street?</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     },
     {
       "source": "Help Net Security",
       "category": "security_news",
-      "title": "New Cisco SD-WAN zero-day exploited in-the-wild (CVE-2026-76504)",
-      "url": "https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/",
-      "published": "2026-10-01T10:18:21",
-      "summary": "<p>For the fifth time this year, Cisco revealed attackers have exploited a vulnerability (CVE-2026-76504) in its SD-WAN solution in zero-day attacks. The vendor&#8217;s incident responders became aware of active exploitation of this vulnerability in September 2026, after getting pinged and resolving a Cisco Technical Assistance Center (TAC) support case. Cisco has yet to share any details about the attacks, but it has provided indicators of compromise defenders should look for to check whether they have &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/01/new-cisco-sd-wan-zero-day-exploited-in-the-wild-cve-2026-76504/\">New Cisco SD-WAN zero-day exploited in-the-wild (CVE-2026-76504)</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
+      "title": "How AI can fix cybersecurity compliance: From dashboards to continuous execution",
+      "url": "https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/",
+      "published": "2026-10-08T05:00:08",
+      "summary": "<p>Most compliance work goes into proving security, not improving it. That isn&#8217;t because the rules are unreasonable. Regulators, customers, and cyber insurers are right to expect organizations to implement hundreds of technical and administrative controls, monitor their environments, respond to incidents, and prove that all of it works. The problem is the cost of delivering it. The Pentagon&#8217;s own estimate puts a small contractor&#8217;s CMMC level 2 compliance at roughly $105,000 over three years. That &#8230; <a href=\"https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/\" rel=\"nofollow\">More <span class=\"meta-nav\">&#8594;</span></a></p>\n<p>The post <a href=\"https://www.helpnetsecurity.com/2026/10/08/espresso-labs-ai-cybersecurity-compliance/\">How AI can fix cybersecurity compliance: From dashboards to continuous execution</a> appeared first on <a href=\"https://www.helpnetsecurity.com\">Help Net Security</a>.</p>"
     }
   ]
 }
