@@ -242,33 +242,64 @@ class EmailSender:
             }
 
 
+def find_latest_report(reports_dir="data/reports", max_age_days=2, today=None):
+    """Return the newest report by the date in its filename (YYYY-MM-DD.md).
+
+    Never falls back to a stale report: raises ValueError if no report exists
+    or the newest one is older than max_age_days (default 2) or dated in the
+    future. File mtime is deliberately ignored (it is meaningless after a
+    fresh checkout).
+    """
+    from datetime import date, datetime, timezone
+
+    today = today or datetime.now(timezone.utc).date()
+    dated = []
+    for p in Path(reports_dir).glob("*.md"):
+        try:
+            dated.append((date.fromisoformat(p.stem), p))
+        except ValueError:
+            continue  # ignore files not named YYYY-MM-DD.md
+
+    if not dated:
+        raise ValueError(f"No dated reports (YYYY-MM-DD.md) found in {reports_dir}/")
+
+    report_date, path = max(dated)
+    age = (today - report_date).days
+    if age < 0 or age > max_age_days:
+        raise ValueError(
+            f"Latest report {path.name} is {age} day(s) from today ({today}); "
+            f"refusing to send (max age {max_age_days}). Generate a fresh report first."
+        )
+    return path
+
+
 def main():
-    """Test email sender."""
+    """Send the latest (fresh) report. Exits non-zero on any failure.
+
+    Usage: python -m scripts.deliver.email_sender [--dry-run]
+      --dry-run  select the report and resolve recipients, but send nothing
+    """
+    import sys
+
+    dry_run = "--dry-run" in sys.argv
     print("=" * 60)
-    print("EMAIL SENDER TEST")
+    print("EMAIL SENDER" + (" (DRY RUN - nothing will be sent)" if dry_run else ""))
     print("=" * 60 + "\n")
 
-    # Load environment variables
     from dotenv import load_dotenv
     load_dotenv()
 
     try:
+        latest_report = find_latest_report()
+        date_str = latest_report.stem
+        print(f"Report: {latest_report}\n")
+
         sender = EmailSender()
 
-        # Find most recent report
-        reports_dir = Path("data/reports")
-        report_files = list(reports_dir.glob("*.md"))
-
-        if not report_files:
-            print("✗ No reports found in data/reports/")
-            print("  Run the main pipeline first: python -m scripts.main")
+        if dry_run:
+            _, recipients = sender._resolve_sender_and_recipients()
+            print(f"✓ Dry run OK: would send {latest_report.name} to {len(recipients)} recipient(s)")
             return
-
-        # Use most recent report
-        latest_report = max(report_files, key=lambda p: p.stat().st_mtime)
-        date_str = latest_report.stem  # filename without .md
-
-        print(f"Testing with report: {latest_report}\n")
 
         result = sender.send_report(latest_report, date_str)
 
@@ -277,22 +308,22 @@ def main():
         print("=" * 60)
 
         if result["success"]:
-            print(f"✓ Email sent successfully")
+            print("✓ Email sent successfully")
             print(f"  Message ID: {result['message_id']}")
             print(f"  Recipients: {result['recipients']}")
         else:
             print(f"✗ Email failed: {result['error']}")
+            sys.exit(1)
 
     except ValueError as e:
-        print(f"\n✗ Configuration error: {e}")
-        print("\nTo fix:")
-        print("1. Get Brevo API key from: https://app.brevo.com/settings/keys/api")
-        print("2. Add BREVO_API_KEY to .env file")
+        print(f"\n✗ Error: {e}")
+        sys.exit(1)
 
     except Exception as e:
         print(f"\n✗ Error: {e}")
         import traceback
         traceback.print_exc()
+        sys.exit(1)
 
 
 if __name__ == "__main__":
