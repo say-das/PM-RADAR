@@ -5,6 +5,11 @@ on:
     # Runs every Thursday at 1:30 PM UTC (7:00 PM IST)
     - cron: '30 13 * * 4'
   workflow_dispatch:  # Allows manual trigger
+    inputs:
+      resend_to_extra_only:
+        description: "Skip the pipeline; re-send the latest report only to EXTRA_RECIPIENTS"
+        type: boolean
+        default: false
 
 jobs:
   generate-report:
@@ -39,7 +44,19 @@ jobs:
       run: |
         echo "${{ secrets.RECIPIENTS_YAML }}" > config/recipients.yaml
 
+    - name: Merge extra recipients
+      env:
+        EXTRA_RECIPIENTS: ${{ secrets.EXTRA_RECIPIENTS }}
+        ONLY_EXTRA: ${{ inputs.resend_to_extra_only }}
+      run: |
+        if [ "$ONLY_EXTRA" = "true" ]; then
+          python scripts/merge_extra_recipients.py fraud --only-extra
+        else
+          python scripts/merge_extra_recipients.py fraud
+        fi
+
     - name: Run PM Radar V2 pipeline
+      if: ${{ !inputs.resend_to_extra_only }}
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SOCIAVAULT_API_KEY: ${{ secrets.SOCIAVAULT_API_KEY }}
