@@ -62,8 +62,7 @@ class RedditCollector(BaseCollector):
                         author = post.get("author", {}).get("username", "[deleted]")
 
                         # Convert timestamp
-                        published_at = post.get("published_at", 0)
-                        created_utc = datetime.fromtimestamp(published_at).isoformat() if published_at else datetime.now().isoformat()
+                        created_utc = self._parse_created(post.get("published_at"))
 
                         post_data = {
                             "query": query_name,
@@ -91,6 +90,24 @@ class RedditCollector(BaseCollector):
         self._save_to_cache(posts)
 
         return posts
+
+    @staticmethod
+    def _parse_created(value) -> str:
+        """Normalize SocialCrawl's published_at to an ISO string.
+
+        The API returns an ISO-8601 string (e.g. "2026-07-12T17:34:01.000Z");
+        older responses may use epoch seconds. Falls back to now if unparseable.
+        """
+        try:
+            if isinstance(value, (int, float)) and value:
+                return datetime.fromtimestamp(value).isoformat()
+            if isinstance(value, str) and value:
+                if value.replace(".", "", 1).isdigit():
+                    return datetime.fromtimestamp(float(value)).isoformat()
+                return datetime.fromisoformat(value.replace("Z", "+00:00")).replace(tzinfo=None).isoformat()
+        except (ValueError, OverflowError, OSError):
+            pass
+        return datetime.now().isoformat()
 
     def _api_call(self, subreddit: str, query: str, timeframe: str) -> dict:
         """Make SocialCrawl API call"""

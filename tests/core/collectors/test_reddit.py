@@ -38,3 +38,28 @@ def test_reddit_collector_requires_api_key():
 
     with pytest.raises(ValueError, match="SOCIALCRAWL_API_KEY"):
         collector.collect()
+
+
+def test_collect_handles_iso_string_published_at(monkeypatch):
+    """SocialCrawl returns published_at as an ISO string; must not crash."""
+    config = {
+        "subreddits": ["twilio"],
+        "queries": [{"name": "q", "keywords": ["fraud"], "timeframe": "week", "limit": 5}],
+    }
+    collector = RedditCollector(config, api_key="x")
+    monkeypatch.setattr(collector, "_should_use_cache", lambda **kw: False)
+    monkeypatch.setattr(collector, "_save_to_cache", lambda posts: None)
+    monkeypatch.setattr(collector, "_api_call", lambda *a, **k: {"data": {"items": [
+        {"post": {"id": "abc", "published_at": "2026-07-12T17:34:01.000Z",
+                  "content": {"text": "hello"}, "author": {"username": "u"},
+                  "engagement": {"likes": 2, "comments": 5}, "ext": {"subreddit": "twilio"}}},
+        {"post": {"id": "def", "published_at": 1752341641,
+                  "content": {"text": "epoch"}, "engagement": {}}},
+        {"post": {"id": "ghi", "published_at": None, "content": {"text": "none"}}},
+    ]}})
+
+    posts = collector.collect()
+
+    assert len(posts) == 3
+    assert posts[0]["created_utc"].startswith("2026-07-12T17:34:01")
+    assert all("created_utc" in p for p in posts)
