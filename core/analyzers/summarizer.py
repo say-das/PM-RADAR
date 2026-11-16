@@ -99,6 +99,7 @@ class ContentSummarizer(BaseAnalyzer):
             if recent_posts:
                 print(f"→ Analyzing Reddit Community ({len(recent_posts)} posts)...")
                 analysis["reddit_community_summary"] = self._analyze_reddit_community(recent_posts)
+                analysis["reddit_posts_analyzed"] = len(recent_posts)
                 print("  ✓ Reddit analysis complete")
 
         # Analyze competitor changelogs
