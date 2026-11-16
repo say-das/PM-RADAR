@@ -10,6 +10,10 @@ on:
         description: "Generate the report and upload it as an artifact; do NOT email or commit"
         type: boolean
         default: false
+      test_recipient:
+        description: "If set, email ONLY this address (ignores the saved recipient list)"
+        type: string
+        default: ""
 
 jobs:
   generate-report:
@@ -47,7 +51,13 @@ jobs:
     - name: Merge extra recipients
       env:
         EXTRA_RECIPIENTS: ${{ secrets.EXTRA_RECIPIENTS }}
-      run: python scripts/merge_extra_recipients.py fraud
+        TEST_RECIPIENT: ${{ inputs.test_recipient }}
+      run: |
+        if [ -n "$TEST_RECIPIENT" ]; then
+          EXTRA_RECIPIENTS="$TEST_RECIPIENT" python scripts/merge_extra_recipients.py fraud --only-extra
+        else
+          python scripts/merge_extra_recipients.py fraud
+        fi
 
     - name: Run PM Radar V2 pipeline
       env:
