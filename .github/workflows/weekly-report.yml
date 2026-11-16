@@ -8,7 +8,8 @@ on:
 
 jobs:
   generate-report:
-    runs-on: ubuntu-latest
+    # Pinned: ubuntu-latest moved to 26.04, which Playwright doesn't support yet
+    runs-on: ubuntu-24.04
 
     steps:
     - name: Checkout repository
