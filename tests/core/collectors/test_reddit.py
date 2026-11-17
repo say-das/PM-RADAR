@@ -63,3 +63,25 @@ def test_collect_handles_iso_string_published_at(monkeypatch):
     assert len(posts) == 3
     assert posts[0]["created_utc"].startswith("2026-07-12T17:34:01")
     assert all("created_utc" in p for p in posts)
+
+
+def test_collect_drops_off_subreddit_results(monkeypatch):
+    """API returns site-wide posts when r/twilio has no matches; drop them."""
+    config = {
+        "subreddits": ["twilio"],
+        "queries": [{"name": "q", "keywords": ["fraud"], "timeframe": "week", "limit": 25}],
+    }
+    collector = RedditCollector(config, api_key="x")
+    monkeypatch.setattr(collector, "_should_use_cache", lambda **kw: False)
+    monkeypatch.setattr(collector, "_save_to_cache", lambda posts: None)
+
+    def post(pid, sub):
+        return {"post": {"id": pid, "published_at": "2026-11-10T00:00:00.000Z",
+                         "content": {"text": "t"}, "ext": {"subreddit": sub}}}
+
+    monkeypatch.setattr(collector, "_api_call", lambda *a, **k: {"data": {"items": [
+        post("1", "linkedin"), post("2", "Twilio"), post("3", "Steam")]}})
+
+    posts = collector.collect()
+
+    assert [p["subreddit"] for p in posts] == ["Twilio"]

@@ -48,10 +48,17 @@ class RedditCollector(BaseCollector):
                     response = self._api_call(subreddit, search_query, timeframe)
                     items = response.get("data", {}).get("items", [])
 
+                    skipped = 0
                     for item in items[:limit]:
                         post = item.get("post", {})
                         post_id = post.get("id", "")
                         subreddit_name = post.get("ext", {}).get("subreddit", subreddit)
+
+                        # The API falls back to site-wide results when the
+                        # subreddit has no matches; keep only the requested one.
+                        if str(subreddit_name).lower() != subreddit.lower():
+                            skipped += 1
+                            continue
 
                         # Construct Reddit URL
                         post_url = f"https://reddit.com/r/{subreddit_name}/comments/{post_id}"
@@ -81,6 +88,9 @@ class RedditCollector(BaseCollector):
                         }
 
                         posts.append(post_data)
+
+                    if skipped:
+                        print(f"  ⚠ r/{subreddit}: ignored {skipped} off-subreddit result(s) returned by the API")
 
                 except Exception as e:
                     print(f"  ✗ Error collecting from r/{subreddit}: {e}")
