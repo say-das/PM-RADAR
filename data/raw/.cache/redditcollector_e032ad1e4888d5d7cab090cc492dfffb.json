@@ -1,0 +1,33 @@
+{
+  "cached_at": "2026-11-19T21:49:47.235734",
+  "config": {
+    "subreddits": [
+      "twilio"
+    ],
+    "queries": [
+      {
+        "name": "Twilio Fraud Monitoring",
+        "keywords": [
+          "fraud",
+          "scam",
+          "hacked",
+          "breach",
+          "compromise",
+          "vulnerability",
+          "attack",
+          "phishing"
+        ],
+        "timeframe": "week",
+        "limit": 25
+      }
+    ],
+    "user_agent": "ProductResearch/1.0",
+    "fetch_comments": true,
+    "comments_threshold": {
+      "min_score": 5,
+      "min_comments": 3
+    },
+    "max_comments_per_post": 10
+  },
+  "data": []
+}
